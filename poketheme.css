@@ -2213,7 +2213,9 @@ body > .content {
     margin-left: -14px !important;
     margin-top: -3px !important;
 }
-
+.mod-toolbox .tb-popup {background-color:#333;}
+.tb-popup-header,.tb-popup-footer{background-color:#222;}
+.utagger-user-note {background: rgba(255,255,255,0.08);color: white;border-color:rgba(255,255,255,0.16);}
 /* modmail page
 --------------------------------------------------------------------------------*/
 .side>.moderator.messages-page a.author{color:white!important;}
