@@ -2265,18 +2265,31 @@ input[type=text].c-form-control{
     color: black;
 }
 
-/* user notes
+/* user notes & history
 --------------------------------------------------------------------------------*/
-.thing #add-user-tag {
+.thing .user-history-button.tb-bracket-button {
     top: -22px;
     left: 450px;
     position: absolute;
     visibility: visible;
 }
-.thing.comment #add-user-tag {
+.thing.comment .user-history-button.tb-bracket-button {
     left: 360px;
     top: -24px;
 }
+
+
+.thing #add-user-tag {
+    top: -22px;
+    left: 470px;
+    position: absolute;
+    visibility: visible;
+}
+.thing.comment #add-user-tag {
+    left: 380px;
+    top: -24px;
+}
+
 
 /********************************************************************************
 * SEARCH PAGE
