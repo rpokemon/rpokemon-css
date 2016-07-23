@@ -1137,7 +1137,7 @@ hr {
     display: block;
     position: absolute!important;
     top: -23px;
-    left: 0px;
+    left: -2px;
     background: rgba(0,0,0,.4); /* #141414 */
     border: 1px solid #262626;
     border-radius: 3px 3px 0 0;
