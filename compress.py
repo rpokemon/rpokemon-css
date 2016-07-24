@@ -9,7 +9,8 @@ from csscompressor import compress
 def top():
     return (
         '/*\n' +
-        '    CSS theme for /r/pokemon \n\n' +
+        '    CSS theme for /r/pokemon \n' +
+        '    Created by: Hero_of_Legend, technophonix1, Atooz, & kwwxis\n\n' +
         '    Unminified CSS is at https://github.com/matthew0x40/r-pokemon \n' +
         '        message /u/kwwxis with your github username for access\n\n' +
         '    >>> Please remember to commit and push once you\'re done with the stylesheet <<< \n'
