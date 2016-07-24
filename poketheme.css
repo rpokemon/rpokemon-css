@@ -2419,6 +2419,10 @@ body > .content {
     position: absolute;
     left: 44px;
     bottom: 1px
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 206px;
 }
 .flair:after {
     content: "";
