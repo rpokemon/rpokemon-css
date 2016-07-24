@@ -88,7 +88,7 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
 .dropdown.srdrop .selected { background-image: none; }
 .dropdown.srdrop .selected:after { content: "▼";}
 
-#sr-header-area .drop-choices a.choice { color: #000 !important; }
+#sr-header-area .drop-choices a.choice { color: #aaa !important; }
 #sr-header-area .drop-choices a.choice:hover {
     background-color: #59f;
     color: #fff !important;
@@ -412,7 +412,7 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     right: 120px;
 }
 
-/* tool tips */
+/* tabmenu tooltips */
 .listing-page #header-bottom-left .tabmenu li a:not([href="javascript:;"]):after {
     content: '';
     display: block;
@@ -428,7 +428,7 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
     border-radius: 3px;
-    transition: bottom 200ms ease, opacity 200ms ease-in;
+    transition: bottom 150ms ease, opacity 150ms ease-in;
     bottom: 60%;
     opacity: 0;
     color: white;
@@ -664,6 +664,12 @@ select#comment-visits {
 }
 .usertext .RESBigEditorPop { margin-top: 6px; font-size: 11px; }
 
+body.mod-toolbox .tb-action-button.tb-top-macro-select {
+    margin-top: 5px;
+    background-color: rgba(255,255,255,0.5) !important;
+    color: white !important;
+}
+
 /* usertext md
 --------------------------------------------------------------------------------*/
 
@@ -676,7 +682,6 @@ select#comment-visits {
     color: #bdc3c7;
     position: relative;
     left: 5px;
-    margin-bottom: 15px;
 }
 
 .md .expando-button {
@@ -714,6 +719,11 @@ hr {
 }
 .md blockquote {
     border-left: 2px solid #bdc3c7;
+}
+
+.md code, .md pre {
+    background-color: rgba(255,255,255,0.15);
+    border: 0;
 }
 
 /* new comment
@@ -845,7 +855,7 @@ hr {
 }
 .res .link .RES-keyNav-activeElement {
     background: transparent !important;
-    border: 0;
+    border-color: transparent !important;
 }
 .res .RES-keyNav-activeElement .md-container {
     background: transparent !important;
@@ -861,7 +871,7 @@ hr {
 }
 
 /* self posts in comment pages don't have expandos */
-.comments-page .link.self p.title {
+.comments-page:not(.comment-permalink-page) .link.self p.title {
     margin-left: 5px;
 }
 
@@ -869,7 +879,6 @@ hr {
 .link a.title {
     color: #bdc3c7;
     font-size: 19px;
-    text-transform: capitalize;
     position: relative;
 }
 .link a.title:hover{color:#bdc3c7}
@@ -1179,7 +1188,12 @@ hr {
 }
 
 /* comment author submitter color */
-.comment .author.submitter {
+.res .thing .tagline .author.moderator, .res .thing .tagline .author.moderator:hover,
+.res .thing .tagline .author.submitter, .res .thing .tagline .author.submitter:hover {
+    background-color: transparent !important;
+}
+
+.comment .author.submitter, .res .thing .tagline .author.submitter, .res .thing .tagline .author.submitter:hover {
     color: #dd4b39 !important;
 }
 .author.submitter:after {
@@ -1190,7 +1204,9 @@ hr {
 .link .author.moderator, .comment .author.moderator {
     background-position: 0 -216px;
 }
-.link .moderator, .comment .moderator {
+.link .moderator, .comment .moderator,
+.res .thing .tagline .author.moderator,
+.res .thing .tagline .author.submitter.moderator {
     color: white !important;
 }
 .author.moderator:after {
@@ -1223,7 +1239,7 @@ hr {
 
 /* special users color panel */
 .author[href$="/AutoModerator"] { background-position: 0 -36px; }
-.author[href$="/A_Wild_Abra"] { background-position: 0 -144px; color: white !important; }
+.thing .author[href$="/A_Wild_Abra"] { background-position: 0 -144px; color: white !important; }
 .author[href$="/A_Wild_Abra"] ~ .flair:after { background: url(%%balls%%) -49px -128px!important;}
 /*---Greatballs---*/
 .author[href$="/Raiyou"]~ .flair:after, .author[href$="/chibikurai"]~ .flair:after, .author[href$="/likeitsmaddie"]~ .flair:after,  .author[href$="/ParisaXOXO"]~ .flair:after, .author[href$="/Will-TVR"]~ .flair:after, .author[href$="/wtfReddit"]~ .flair:after, .author[href$="/Fuwante0"]~ .flair:after, .author[href$="/Seagrove"]~ .flair:after, .author[href$="/WolfeyVG"]~ .flair:after, .author[href$="/13Yoshi37"] ~ .flair:after{
