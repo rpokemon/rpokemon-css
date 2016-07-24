@@ -1087,6 +1087,11 @@ hr {
     background-color: transparent!important;
 }
 
+.thing .tagline .author.moderator{
+    padding: 3px 0 0 45px!important;
+    background-color: transparent!important;
+}
+
 /* link author */
 .link .author {
     top: -25px;
