@@ -2626,8 +2626,8 @@ body.res.mod-toolbox.combined-search-page .tabmenu + .tabmenu {
     padding-left: 0;
 }
 .NERPageMarker {
-    background-color: transparent;
-    border: 1px solid #222;
+    background-color: transparent!important;
+    border: 1px solid #222!important;
 }
 .message-count {
     background-color: #333333;
