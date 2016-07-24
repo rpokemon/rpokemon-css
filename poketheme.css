@@ -751,9 +751,6 @@ hr {
 /* RES Active Thing
 --------------------------------------------------------------------------------*/
 
-.res .RES-keyNav-activeThing {
-    border: 0 !important;
-}
 .res .comment .RES-keyNav-activeElement,
 .res .link.RES-keyNav-activeThing {
     background: rgba(0,0,0,0.25) !important;
@@ -785,6 +782,7 @@ hr {
     color: #bdc3c7;
     font-size: 19px;
     text-transform: capitalize;
+    position: relative;
 }
 .link a.title:hover{color:#bdc3c7}
 /* domain */
@@ -1164,7 +1162,7 @@ hr {
 
 .expando-button.expanded:after { background-position: -37px -197px; }
 
-/* link flair label
+/* link flairs / linkflairs / flair filters
 --------------------------------------------------------------------------------*/
 .linkflairlabel {
     display: block;
@@ -1198,7 +1196,39 @@ hr {
     border-bottom-color: #e6d76d;
 }
 
-/* link flair filters */
+/* spoiler */
+.linkflair-spoiler .linkflairlabel {
+    color: #919290;
+    border-bottom-color: #919290;
+}
+.linkflair-spoiler a.title {
+    min-width: 215px;
+}
+.link.linkflair-spoiler a.title:before {
+    content: 'Spoiler - hover to view title';
+    display: block;
+    position: absolute;
+    background: #919290;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #606060 !important;
+    padding: 3px;
+    text-transform: initial;
+    font-size: 15px;
+    opacity: 1;
+    transition: opacity 200ms;
+    transition-delay: 200ms;
+}
+.link.linkflair-spoiler a.title:hover:before {
+    opacity: 0;
+}
+html:lang(ns) .link.linkflair-spoiler a.title:before {
+    display: none;
+}
+
+/* filters */
 html:lang(im) .link:not(.linkflair-image):not(.linkflair-imagespoiler),
 html:lang(me) .link:not(.linkflair-media),
 html:lang(di) .link:not(.linkflair-discussion),
@@ -2314,15 +2344,30 @@ body > .content {
 
 /* flair selector
 --------------------------------------------------------------------------------*/
-.flairselector {box-shadow: 1px 1px 5px #ccc;}
+.flairselector {
+    box-shadow: 1px 1px 10px #000;
+    border: 1px solid #353535 !important;
+}
 .flairselector h2{background: rgba(255,255,255,0.08);}
 .flairselector ul {
-    width: auto !important;
 }
 .flairselector .linkflairlabel {
     position: static !important;
 }
-
+.flairselector a.title {
+    display: none;
+}
+.flairselector li {
+    padding: 4px 5px;
+    margin-top: 2px;
+}
+.flairselector li:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+.flairselector .flairselection .linkflairlabel {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
 
 /* flair page
 --------------------------------------------------------------------------------*/
