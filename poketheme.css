@@ -1873,6 +1873,12 @@ html:lang(na) .link.linkflair-art {
 
 /* pokemon go teams
 --------------------------------------------------------------------------------*/
+.side .md h4:first-of-type,
+.side .md h4:first-of-type + ul {
+    display: none; /* HIDDEN FOR NOW */
+}
+
+
 .side .md h4:first-of-type {
     padding-left: 20px;
 }
