@@ -2176,7 +2176,7 @@ html:lang(na) .link.linkflair-art {
 .sidecontentbox .helplink ~ .content li {
     position: relative;
     min-height: 26px;
-    padding-top: 6px;
+    padding-top: 3px;
     margin-bottom: 6px;
     background: rgba(255,255,255,0.05);
     border-radius: 16px 3px 3px 16px;
