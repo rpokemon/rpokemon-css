@@ -2625,6 +2625,13 @@ body.res.mod-toolbox.combined-search-page .tabmenu + .tabmenu {
     margin-left: 190px !important;
     padding-left: 0;
 }
+.NERPageMarker {
+    background-color: transparent;
+    border: 1px solid #222;
+}
+.message-count {
+    background-color: #333333;
+}
 
 /* Search area wrapper
 --------------------------------------------------------------------------------*/
