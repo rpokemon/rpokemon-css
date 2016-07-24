@@ -173,7 +173,6 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     align-items: center;
     position: absolute;
     top: 100% !important;
-    margin-top: 1px;
     bottom: auto !important;
     right: 0;
     padding: 0;
@@ -226,7 +225,41 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     font-size: 0;
 }
 #header-bottom-right .user > * { font-size: 12px; }
-#header-bottom-right .user > .userkarma { margin-left: 5px; }
+
+/* user a */
+#header-bottom-right .user > a {
+    background: #1c1c1c;
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 0 0 0 3px;
+}
+
+/* user karma */
+#header-bottom-right .user > .userkarma {
+    padding: 0 5px;
+}
+
+/* res account switcher stuff */
+.res #header-bottom-right .user > a {
+    padding-right: 17px;
+}
+.res #RESAccountSwitcherIcon {
+    margin-left: -15px;
+    background-image: none !important;
+}
+
+.res #RESAccountSwitcherIcon:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #666;
+    position: relative;
+    top: 5px;
+    left: 1px;
+}
 
 /* userbar icons
 --------------------------------------------------------------------------------*/
@@ -668,6 +701,10 @@ hr {
 * THING - LINK AND COMMENTS
 *********************************************************************************/
 
+.thing {
+    overflow: visible !important;
+}
+
 /* Link element
 --------------------------------------------------------------------------------*/
 .link {
@@ -922,9 +959,6 @@ hr {
     top: -26px;
     right: -1px;
 }
-.comments-page .tagline time:not(.edited-timestamp) {
-    right: 4px;
-}
 
 .tagline time:not(.edited-timestamp):before {
     content: "";
@@ -980,9 +1014,8 @@ hr {
 }
 
 .userTagLink.hasTag {
-    background: rgba(0,0,0,.2) !important;
-    padding: 3px 5px;
-    border: none;
+    padding: 2px 5px !important;
+    border: 1px solid #555 !important;
 }
 
 .RESUserTagImage:after {
@@ -1281,7 +1314,9 @@ html:lang(nf) .link:not(.linkflair-image):not(.linkflair-media):not(.linkflair-d
     margin: 0;
 }
 
-.side .md > h6, .side .md > h2 {
+/* sidebar common header
+--------------------------------------------------------------------------------*/
+.side .md > h6, .side .md > h2, .side .md > h4:first-of-type, .side a[href="https://redd.it/4jt9sa"] {
     display: block;
     position: relative;
     padding-left: 61px;
@@ -1297,16 +1332,28 @@ html:lang(nf) .link:not(.linkflair-image):not(.linkflair-media):not(.linkflair-d
     font-size: 18px;
     color: white;
 }
-.side .md > h6:before, .side .md > h2:before {
+.side .md > h6:before, .side .md > h2:before, .side a[href="https://redd.it/4jt9sa"]:before {
     content: "";
     display: block;
     position: absolute;
     width: 30px;
     height: 30px;
     background: url(%%pokesheet%%);
-    background-position: 1600px -1340px;
     top: 2px;
     left: 21px;
+}
+
+.side .md > h2:before {
+    background-position: 1600px -1340px;
+}
+.side a[href="https://redd.it/4jt9sa"]:before {
+    background-position: -54px -340px;
+}
+.side .md > h6:nth-of-type(1):before {
+    background-position: -180px -373px;
+}
+.side .md > h6:nth-of-type(2):before {
+    background-position: -87px -403px;
 }
 
 /* Search
@@ -1659,6 +1706,59 @@ html:lang(nf) .link:not(.linkflair-image):not(.linkflair-media):not(.linkflair-d
     margin-bottom: 5px;
 }
 
+
+/* pokemon go teams
+--------------------------------------------------------------------------------*/
+.side .md h4:first-of-type {
+    padding-left: 20px;
+}
+
+.side .md h4:first-of-type + ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.side .md h4:first-of-type + ul li {
+    line-height: 32px;
+    height: 32px;
+    padding: 0 15px 0 48px;
+    font-size: 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+    background: rgba(0,0,0,.4);
+    margin-bottom: 15px;
+}
+.side .md h4:first-of-type + ul li strong {
+    font-size: 12px;
+}
+.side .md h4:first-of-type + ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    background: url(%%go-teams%%) no-repeat;
+    left: -5px;
+    top: -10px;
+}
+
+.side .md h4:first-of-type + ul li:nth-child(1):before { background-position: 0 0; }
+.side .md h4:first-of-type + ul li:nth-child(2):before { background-position: -48px 0; }
+.side .md h4:first-of-type + ul li:nth-child(3):before { background-position: -96px 0; }
+
+.side .md h4:first-of-type + ul li:nth-child(1) {
+    box-shadow: 0 .5px 0 2px #0076EC;
+}
+.side .md h4:first-of-type + ul li:nth-child(2) {
+    box-shadow: 0 .5px 0 2px #FAD207;
+}
+.side .md h4:first-of-type + ul li:nth-child(3) {
+    box-shadow: 0 .5px 0 2px #F71106;
+}
+
 /* submission rules
 --------------------------------------------------------------------------------*/
 
@@ -1743,28 +1843,7 @@ html:lang(nf) .link:not(.linkflair-image):not(.linkflair-media):not(.linkflair-d
 }
 
 /* header title */
-.side a[href="https://redd.it/4jt9sa"] {
-    content: "Submission Filters";
-    display: block;
-    position: relative;
-    line-height: 30px;
-    font-size: 18px;
-    padding-left: 61px;
-    background: url(%%sidepattern2%%) no-repeat -5px 1px;
-    color: white;
-    transition: color .5s linear;
-    margin: 13px -7px;
-}
 .side a[href="https://redd.it/4jt9sa"]:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: url(%%pokesheet%%);
-    background-position: 1600px -1340px;
-    top: 2px;
-    left: 21px;
     transition: left .5s ease-out; 
 }
 .side a[href="https://redd.it/4jt9sa"]:hover { color: #0079d3; }
@@ -1851,7 +1930,7 @@ html:lang(nf) .link:not(.linkflair-image):not(.linkflair-media):not(.linkflair-d
 /* main links */
 .side .md h6 + blockquote p {
     font-size: 0;
-    background: rgba(255,255,255,0.03);
+    background: rgba(255,255,255,0.02);
     padding: 0 5px;
     
     display: flex;
@@ -1869,13 +1948,13 @@ html:lang(nf) .link:not(.linkflair-image):not(.linkflair-media):not(.linkflair-d
     margin-top: 4px;
     color: #b7b7b7;
     padding: 0 5px;
-    background: rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.05);
     
     flex-grow: 1;
     text-align: center;
 }
 .side .md h6 + blockquote p a:hover {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.12);
 }
 
 /* related subs */
@@ -2244,6 +2323,18 @@ body > .content {
     position: static !important;
 }
 
+
+/* flair page
+--------------------------------------------------------------------------------*/
+.flaircell {
+    margin-right: 0;
+    margin-left: 4ex;
+}
+.flaircell .linkflairlabel {
+    position: static !important;
+    visibility: visible !important;
+}
+
 /* report form, post sharing and things
 --------------------------------------------------------------------------------*/
 .post-sharing,
@@ -2269,27 +2360,24 @@ input[type=text].c-form-control{
 --------------------------------------------------------------------------------*/
 .thing .user-history-button.tb-bracket-button {
     top: -22px;
-    left: 450px;
+    right: 105px;
     position: absolute;
     visibility: visible;
 }
-.thing.comment .user-history-button.tb-bracket-button {
-    left: 360px;
-    top: -24px;
-}
-
 
 .thing #add-user-tag {
     top: -22px;
-    left: 470px;
+    right: 128px;
     position: absolute;
     visibility: visible;
 }
-.thing.comment #add-user-tag {
-    left: 380px;
-    top: -24px;
-}
 
+/* metrics expand list
+--------------------------------------------------------------------------------*/
+#tb-metrics-expand-list {
+    right: 10px !important;
+    left: auto !important;
+}
 
 /********************************************************************************
 * SEARCH PAGE
