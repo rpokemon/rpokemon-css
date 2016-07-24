@@ -1130,18 +1130,18 @@ hr {
 
 .author[href$="/TheGhost983"] ~ .flair {
     background-image:url(%%adminflairs%%)!important;
-    background-position: 0px -14px
+    background-position: 0px -13px
 }
 
 
 .author[href$="/David920"] ~ .flair {
     background-image:url(%%adminflairs%%)!important;
-    background-position: -36px -2px
+    background-position: -36px -14px
 }
 
 .author[href$="/technophonix1"] ~ .flair {
     background-image:url(%%adminflairs%%)!important;
-    background-position: -69px -0px
+    background-position: -69px -16px;
 }
 
 .author[href$="/RepeatBall"] ~ .flair {
