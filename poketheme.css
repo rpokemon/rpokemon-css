@@ -1132,7 +1132,10 @@ hr {
 .author[href$="/AutoModerator"] { background-position: 0 -36px; }
 .author[href$="/A_Wild_Abra"] { background-position: 0 -144px; color: white !important; }
 .author[href$="/A_Wild_Abra"] ~ .flair:after { background: url(%%balls%%) 254px -160px !important; }
-
+.author[href$="/WolfeyVG"] ~ .flair:after { background-position: 0 -36px; }
+.author[href$="/13Yoshi37"] ~ .flair:after { background-position: 0 -36px; }
+.author[href$="/James_Versus"] ~ .flair:after { background-position: 0 -36px; }
+.author[href$="/ParisaXOXO"] ~ .flair:after { background-position: 0 -36px; }
 /* Tagline misc
 --------------------------------------------------------------------------------*/
 
@@ -2336,7 +2339,7 @@ body > .content {
     width: 30px;
     height: 30px;
     display: inline-block;
-    background: url(%%pokesheet%%);
+    background: url(%%balls%%);
     background-position: 1600px -1340px;
     visibility: visible;
     position: absolute;
