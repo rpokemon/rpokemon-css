@@ -1083,7 +1083,7 @@ hr {
 }
 
 .thing .tagline .author.submitter{
-    padding: 3px 0 0 45px;
+    padding: 3px 0 0 45px!important;
     background-color: transparent!important;
 }
 
