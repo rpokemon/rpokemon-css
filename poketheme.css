@@ -111,6 +111,22 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     color: #B1B1B1 !important;
 }
 
+.res:not(.res-nightmode) .commentarea .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: transparent!important;
+    margin-top: 11px!important;
+    padding-top: 2px!important;
+}
 /********************************************************************************
 * HEADER (DOESN'T INCLUDE USER AREA & TABMENU)
 *********************************************************************************/
@@ -1064,6 +1080,11 @@ hr {
     margin-right: 4px;
     color: #48f;
     white-space: nowrap;
+}
+
+.thing .tagline .author.submitter{
+    padding: 3px 0 0 45px;
+    background-color: transparent!important;
 }
 
 /* link author */
@@ -2066,7 +2087,8 @@ html:lang(na) .link.linkflair-art {
 /* item */
 .sidecontentbox .helplink ~ .content li {
     position: relative;
-    min-height: 32px;
+    min-height: 26px;
+    padding-top: 6px;
     margin-bottom: 6px;
     background: rgba(255,255,255,0.05);
     border-radius: 16px 3px 3px 16px;
