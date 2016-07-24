@@ -1169,7 +1169,7 @@ hr {
     display: block;
     position: absolute!important;
     top: -23px;
-    left: 0px;
+    left: -2px;
     background: rgba(0,0,0,.4); /* #141414 */
     border: 1px solid #262626;
     border-radius: 3px 3px 0 0;
@@ -2351,7 +2351,9 @@ body > .content {
     margin-left: -14px !important;
     margin-top: -3px !important;
 }
-
+.mod-toolbox .tb-popup {background-color:#333;}
+.tb-popup-header,.tb-popup-footer{background-color:#222;}
+.utagger-user-note {background: rgba(255,255,255,0.08);color: white;border-color:rgba(255,255,255,0.16);}
 /* modmail page
 --------------------------------------------------------------------------------*/
 .side>.moderator.messages-page a.author{color:white!important;}
