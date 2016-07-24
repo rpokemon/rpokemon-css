@@ -736,11 +736,11 @@ hr {
 /* permalinked comment
 --------------------------------------------------------------------------------*/
 .usertext.border .usertext-body {
-    background-color: transparent;
+    background-color: rgba(230,215,109,0.05);
 }
 
 .comment-permalink-page .commentarea > .sitetable > .thing > .entry {
-    border: 1px solid #f6e69f;
+    border-top: 1px solid #f6e69f;
 }
 
 .comment-permalink-page .commentarea > .infobar {
