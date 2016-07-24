@@ -369,8 +369,8 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     display: block;
     width: 33px;
     height: 33px;
-    overflow: hidden;
     font-size: 0;
+    position: relative;
 }
 
 .listing-page #header-bottom-left .tabmenu li a:not([href="javascript:;"]):before {
@@ -406,10 +406,72 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
 .tabmenu li a[href="javascript:;"] {
     position: absolute;
     right: 17px;
-    top: -100%;
+    top: -105px;
 }
 .tabmenu li.tb-metrics a[href="javascript:;"] {
     right: 120px;
+}
+
+/* tool tips */
+.listing-page #header-bottom-left .tabmenu li a:not([href="javascript:;"]):after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-bottom: 5px;
+    font-size: 12px;
+    background: rgba(166,166,166,0.34);
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 3px;
+    transition: bottom 200ms ease, opacity 200ms ease-in;
+    bottom: 60%;
+    opacity: 0;
+    color: white;
+}
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:not([href="javascript:;"]):after,
+.listing-page:not(.res) #header-bottom-left .tabmenu li:nth-of-type(8) a:not([href="javascript:;"]):after {
+    left: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    right: -10px;
+}
+.listing-page #header-bottom-left .tabmenu li a:not([href="javascript:;"]):hover:after {
+    bottom: 100%;
+    opacity: 1;
+}
+
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(1) a:not([href="javascript:;"]):after {
+    content: 'hot';
+}
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(2) a:not([href="javascript:;"]):after {
+    content: 'new';
+}
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(3) a:not([href="javascript:;"]):after {
+    content: 'rising';
+}
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(4) a:not([href="javascript:;"]):after {
+    content: 'controversial';
+}
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(5) a:not([href="javascript:;"]):after {
+    content: 'top';
+}
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(6) a:not([href="javascript:;"]):after {
+    content: 'gilded';
+}
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(7) a:not([href="javascript:;"]):after {
+    content: 'wiki';
+}
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(8) a:not([href="javascript:;"]):after {
+    content: 'promoted';
+}
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:not([href="javascript:;"]):after {
+    content: 'view images';
 }
 
 /********************************************************************************
