@@ -2375,7 +2375,7 @@ body > .content {
 /* top announcement flair positioning
 --------------------------------------------------------------------------------*/
 .side .md > blockquote:first-of-type > p > a[href*="https://www.redd.it/4lo8vf"]:before{
-    background-position: -440px -448px; /* TODO: Change this sprite weekly */
+    background-position: -240px -448px; /* TODO: Change this sprite weekly (PoTW) */
 }
 .side .md > blockquote:first-of-type > p > a[href*="https://redd.it/4tf3n7"]:before{
     background-position: -800px -32px; 
