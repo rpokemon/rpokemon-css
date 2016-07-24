@@ -1133,62 +1133,61 @@ hr {
 .author[href$="/A_Wild_Abra"] { background-position: 0 -144px; color: white !important; }
 .author[href$="/A_Wild_Abra"] ~ .flair:after { background: url(%%balls%%) -49px -128px!important;}
 /*---Greatballs---*/
-.author[href$="/Raiyou"]:before, .author[href$="/chibikurai"]:before, .author[href$="/likeitsmaddie"]:before,  .author[href$="/ParisaXOXO"]:before, .author[href$="/Will-TVR"]:before, .author[href$="/wtfReddit"]:before, .author[href$="/Fuwante0"]:before, .author[href$="/Seagrove"]:before, .author[href$="/WolfeyVG"]:before, .author[href$="/13Yoshi37"]:before ~ .flair:after{
+.author[href$="/Raiyou"]~ .flair:after, .author[href$="/chibikurai"]~ .flair:after, .author[href$="/likeitsmaddie"]~ .flair:after,  .author[href$="/ParisaXOXO"]~ .flair:after, .author[href$="/Will-TVR"]~ .flair:after, .author[href$="/wtfReddit"]~ .flair:after, .author[href$="/Fuwante0"]~ .flair:after, .author[href$="/Seagrove"]~ .flair:after, .author[href$="/WolfeyVG"]~ .flair:after, .author[href$="/13Yoshi37"] ~ .flair:after{
 background-position:-32px -210px;
 }
 /*---Ultraballs---*/
-.author[href$="/thesuzerain"]:before, .author[href$="/Bobdor"]:before, .author[href$="/electricpenguin7"]:before, .author[href$="/Kyle1337"]:before, .author[href$="/Larkman22"]:before ~ .flair:after{
+.author[href$="/thesuzerain"]~ .flair:after, .author[href$="/Bobdor"]~ .flair:after, .author[href$="/electricpenguin7"]~ .flair:after, .author[href$="/Kyle1337"]~ .flair:after, .author[href$="/Larkman22"] ~ .flair:after{
 background-position:-64px -210px;
 }
 /*---Masterballs---*/
-.author[href$="/Captainium"]:before, .author[href$="/TownIdiot25"]:before, .author[href$="/Dragon_Claw"]:before ~ .flair:after{
+.author[href$="/Captainium"]~ .flair:after, .author[href$="/TownIdiot25"]~ .flair:after, .author[href$="/Dragon_Claw"] ~ .flair:after{
 background-position:-119px -14px;
 }
 /*---SafariBalls---*/
-.author[href$="/technophonix1"]:before ~ .flair:after{
+.author[href$="/technophonix1"] ~ .flair:after{
 background-position:-128px -210px;
 }
 /*---Repeatballs---*/
-.author[href$="/RepeatBall"]:before ~ .flair:after{
+.author[href$="/RepeatBall"] ~ .flair:after{
 background-position:-64px -274px;
 }
 /*---Timerballs---*/
-.author[href$="/Kingfin128"]:before, .author[href$="/CrimsonMudkip"]:before, .author[href$="/cabforpitt"]:before, .author[href$="/keskisormi"]:before, .author[href$="/bigslothonmyface"]:before ~ .flair:after{
+.author[href$="/Kingfin128"]~ .flair:after, .author[href$="/CrimsonMudkip"]~ .flair:after, .author[href$="/cabforpitt"]~ .flair:after, .author[href$="/keskisormi"]~ .flair:after, .author[href$="/bigslothonmyface"] ~ .flair:after{
 background-position:-96px -274px;
 }
 /*---Premierballs---*/
-.author[href$="/neelim98"]:before ~ .flair:after{
+.author[href$="/neelim98"] ~ .flair:after{
 background-position:-32px -274px;
 }
 /*---Friendshipball---*/
 /*---Netball---*/
 /*---Diveball---*/
-.author[href$="/jensenj2"]:before, .author[href$="/Gnifle"]:before, .author[href$="/pieraite_cannerball"]:before, .author[href$="/yineedname"]:before, .author[href$="/Grandfather_Clock"]:before, .author[href$="/Not_A_Yam"]:before, .author[href$="/estrellitadelmar"]:before ~ .flair:after{
+.author[href$="/jensenj2"]~ .flair:after, .author[href$="/Gnifle"]~ .flair:after, .author[href$="/pieraite_cannerball"]~ .flair:after, .author[href$="/yineedname"]~ .flair:after, .author[href$="/Grandfather_Clock"]~ .flair:after, .author[href$="/Not_A_Yam"]~ .flair:after, .author[href$="/estrellitadelmar"] ~ .flair:after{
 background-position:-0 -306px;
 }
 /*---Luxuryball---*/
-.author[href$="/HexKor"]:before, .author[href$="/KKBlitz11"]:before, .author[href$="/lyouke"]:before, .author[href$="/SeraphixRaleigh"]:before, .author[href$="/xzmeister"]:before, .author[href$="/Striaton"]:before, .author[href$="/SynergizerSyd"]:before, .author[href$="/TheRoto"]:before, .author[href$="/ElStrawFedora"]:before ~ .flair:after{
+.author[href$="/HexKor"]~ .flair:after, .author[href$="/KKBlitz11"]~ .flair:after, .author[href$="/lyouke"]~ .flair:after, .author[href$="/SeraphixRaleigh"]~ .flair:after, .author[href$="/xzmeister"]~ .flair:after, .author[href$="/Striaton"]~ .flair:after, .author[href$="/SynergizerSyd"]~ .flair:after, .author[href$="/TheRoto"]~ .flair:after, .author[href$="/ElStrawFedora"] ~ .flair:after{
 background-position:-32px -306px;
 }
 /*---Healball---*/
 /*---Quickball---*/
-.author[href$="/Ferretsroq"]:before, .author[href$="/MintyFreshNipples"]:before, .author[href$="/Pokefanatic230"]:before, .author[href$="/Crusader1998123"]:before, .author[href$="/TheShavvy"]:before, .author[href$="/SHINX_FUCKER"]:before, author[href$="/James_Versus"]:before ~ .flair:after{
+.author[href$="/Ferretsroq"]~ .flair:after, .author[href$="/MintyFreshNipples"]~ .flair:after, .author[href$="/Pokefanatic230"]~ .flair:after, .author[href$="/Crusader1998123"]~ .flair:after, .author[href$="/TheShavvy"]~ .flair:after, .author[href$="/SHINX_FUCKER"]~ .flair:after, author[href$="/James_Versus"] ~ .flair:after{
 background-position:-96px -306px;
 }
 /*---Duskball---*/
-.author[href$="/dr_crispin"]:before, .author[href$="/myheadisahammer"]:before, .author[href$="/duskull11"]:before, .author[href$="/LogieBlackBear"]:before ~ .flair:after{
+.author[href$="/dr_crispin"]~ .flair:after, .author[href$="/myheadisahammer"]~ .flair:after, .author[href$="/duskull11"]~ .flair:after, .author[href$="/LogieBlackBear"] ~ .flair:after{
 background-position:-128px -306px;
 }
-/*---Cherishball---*/
-.author[href$="/TheGhost983"]:before, .author[href$="/h_n_g_m_n"]:before, .author[href$="/SalomonG18"]:before, .author[href$="/Katsuro_Naginata"]:before, .author[href$="/LucarioPrime"]:before, .author[href$="/mannerson"]:before, .author[href$="/operrett"]:before, .author[href$="/InfamousPeace"]:before, .author[href$="/h_n_g_m_n"]:before, .author[href$="/SalomonG18"]:before ~ .flair:after{
+.author[href$="/TheGhost983"]~ .flair:after, .author[href$="/h_n_g_m_n"]~ .flair:after, .author[href$="/SalomonG18"]~ .flair:after, .author[href$="/Katsuro_Naginata"]~ .flair:after, .author[href$="/LucarioPrime"]~ .flair:after, .author[href$="/mannerson"]~ .flair:after, .author[href$="/operrett"]~ .flair:after, .author[href$="/InfamousPeace"]~ .flair:after, .author[href$="/h_n_g_m_n"]~ .flair:after, .author[href$="/SalomonG18"] ~ .flair:after{
 background-position:-160px -306px;
 }
 /*---Parkball---*/
-.author[href$="/KrishaCZ"]:before, .author[href$="/scottmonster"]:before, .author[href$="/karinasuperkul"]:before, .author[href$="/quantumcamel"]:before, .author[href$="/AssiveAggressive"]:before ~ .flair:after{
+.author[href$="/KrishaCZ"]~ .flair:after, .author[href$="/scottmonster"]~ .flair:after, .author[href$="/karinasuperkul"]~ .flair:after, .author[href$="/quantumcamel"]~ .flair:after, .author[href$="/AssiveAggressive"] ~ .flair:after{
 background-position:-0 -338px;
 }
 /*---Dreamball---*/
-.author[href$="/foggiewindow"]:before, .author[href$="/Starrodkirby86"]:before, .author[href$="/KaSlaps"]:before, .author[href$="/chronafox"]:before, .author[href$="/castoweary"]:before ~ .flair:after{
+.author[href$="/foggiewindow"]~ .flair:after, .author[href$="/Starrodkirby86"]~ .flair:after, .author[href$="/KaSlaps"]~ .flair:after, .author[href$="/chronafox"]~ .flair:after, .author[href$="/castoweary"] ~ .flair:after{
 background-position:-32px -338px;
 }
 /* Tagline misc
