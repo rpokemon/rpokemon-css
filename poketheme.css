@@ -641,11 +641,21 @@ hr {
     border-color: #e5e5e5;
 }
 
-.comment .md {
-    color: #fafafa;
+.comment .md p, .link .md p {
+    margin: 0;
+    padding: 5px 0;
 }
 
-/* new comment */
+.md blockquote, .md del {
+    color: #b9bec1;
+    margin-left: 0;
+}
+.md blockquote {
+    border-left: 2px solid #bdc3c7;
+}
+
+/* new comment
+--------------------------------------------------------------------------------*/
 .new-comment .usertext-body {
     border: 0;
     background: #1F2428;
@@ -2337,9 +2347,11 @@ body > .content {
     display: block;
     width: 210px;
     height: 32px;
+    box-sizing: border-box;
     background: url(%%pokesheet%%) 0 -215px;
     margin: 0;
     margin-right: 30px;
+    padding: 1px;
 }
 
 .side .md > blockquote:first-of-type > p > a {
