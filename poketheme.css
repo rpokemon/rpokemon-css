@@ -1213,6 +1213,9 @@ hr {
     content: ' [M]';
 }
 
+/* css mod color (so people know we're legit since we can't distinguish) */
+.comment .author[href$="/kwwxis"] ~ .flair:before { color: #e6d76d; }
+
 /* admin */
 .author.admin:after { content: ' [A]';}
 
