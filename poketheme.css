@@ -1128,25 +1128,25 @@ hr {
 /* admin */
 .author.admin:after { content: ' [A]';}
 
-.author[href$="/TheGhost983"]~.flair {
-background-image:url(%%adminflairs%%)!important;
-background-position:0px 0
+.author[href$="/TheGhost983"] ~ .flair {
+    background-image:url(%%adminflairs%%)!important;
+    background-position: 0px -14px
 }
 
 
-.author[href$="/David920"]~.flair {
-background-image:url(%%adminflairs%%)!important;
-background-position:-36px -2px
+.author[href$="/David920"] ~ .flair {
+    background-image:url(%%adminflairs%%)!important;
+    background-position: -36px -2px
 }
 
-.author[href$="/technophonix1"]~.flair {
-background-image:url(%%adminflairs%%)!important;
-background-position: -69px -0px
+.author[href$="/technophonix1"] ~ .flair {
+    background-image:url(%%adminflairs%%)!important;
+    background-position: -69px -0px
 }
 
-.author[href$="/RepeatBall"]~.flair {
-background-image:url(%%adminflairs%%)!important;
-background-position:0 -2px
+.author[href$="/RepeatBall"] ~ .flair {
+    background-image:url(%%adminflairs%%)!important;
+    background-position: 0 -2px
 }
 
 /* special users color panel */
@@ -2542,6 +2542,27 @@ body > .content {
 .flaircell .linkflairlabel {
     position: static !important;
     visibility: visible !important;
+}
+
+/* flair grant */
+.flairgrant .tagline {
+    visibility: visible;
+    position: relative;
+    width: 45ex;
+    padding-left: 20px;
+}
+.flairgrant .tagline .flair {
+    left: -23px;
+    top: -0;
+}
+.flairgrant .RESUserTag {
+    position: static !important;
+    margin: 0px;
+    padding: 0;
+}
+.flairgrant .RESUserTag .userTagLink {
+    margin-top: 5px;
+    margin-bottom: -8px;
 }
 
 /* report form, post sharing and things
