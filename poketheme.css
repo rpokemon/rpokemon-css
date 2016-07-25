@@ -3074,18 +3074,24 @@ html:lang(dm) .titlebox form.toggle.flairtoggle:after {
 html:lang(dm) .side .md h3 {
     border-bottom-color: #e3e3e3;
 }
-
+html:lang(dm) .side .md h3+ul+ol:after {
+    background: #e3e3e3;
+}
 html:lang(dm) .side .md h3,
 html:lang(dm) .side .md h3+ul,
 html:lang(dm) .side .md h3+ul+ol {
     border-left-color: #e3e3e3;
 }
-
 html:lang(dm) .side .md h3+ul+ol>li:before {
-    background-color: #fff;
-    border-color: #fff;
+    background: white;
+    border-color: #e3e3e3;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 13px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    left: -36px;
+    top: 3px;
 }
 
 html:lang(dm) .titlebox .users-online,
