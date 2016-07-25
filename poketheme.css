@@ -1130,7 +1130,7 @@ hr {
     opacity: .5;
 }
 
-html:not(:lang(dm)) .RESUserTagImage:after {
+html:not([lang$="dm"]) .RESUserTagImage:after {
     content: "" !important;
 }
 
@@ -2872,109 +2872,109 @@ body.res.mod-toolbox.combined-search-page .tabmenu + .tabmenu {
 * DAY MODE
 *********************************************************************************/
 
-html:lang(dm) body {
+html[lang$="dm"] body {
     background: #f2f3f4;
 }
 
-html:lang(dm) .side {
+html[lang$="dm"] .side {
     border: 1px solid #e3e3e3;
 }
 
-html:lang(dm) .child,
-html:lang(dm) .child > .sitetable,
-html:lang(dm) .comments-page .comment,
-html:lang(dm) .comments-page .comment .comment { background: transparent !important; }
+html[lang$="dm"] .child,
+html[lang$="dm"] .child > .sitetable,
+html[lang$="dm"] .comments-page .comment,
+html[lang$="dm"] .comments-page .comment .comment { background: transparent !important; }
 
-html:lang(dm) .RESUserTagImage:after {
+html[lang$="dm"] .RESUserTagImage:after {
     background-image: none !important;
 }
 
-html:lang(dm) .md code, html:lang(dm) .md pre {
+html[lang$="dm"] .md code, html[lang$="dm"] .md pre {
     background: rgba(0,0,0,0.08);
 }
 
-html:lang(dm) .message-count {
+html[lang$="dm"] .message-count {
     background: #FF7500;
     color: white !important;
 }
 
 /* thing */
-html:lang(dm) .entry,
-html:lang(dm) .thing.link,
-html:lang(dm) .side,
-html:lang(dm) #header-bottom-right .user > a,
-html:lang(dm) .sidecontentbox,
-html:lang(dm) .sidecontentbox .content,
-html:lang(dm) .icon-menu a,
-html:lang(dm) .side .md h5,
-html:lang(dm) .side .md h5+ul,
-html:lang(dm) .linkinfo .shortlink input,
-html:lang(dm) .titlebox form.toggle,
-html:lang(dm) .titlebox .leavemoderator,
-html:lang(dm) .titlebox .leavecontributor-button,
-html:lang(dm) .side #searchexpando,
-html:lang(dm) #previoussearch,
-html:lang(dm) .combined-search-page #previoussearch,
-html:lang(dm) .combined-search-page .search-result-group {
+html[lang$="dm"] .entry,
+html[lang$="dm"] .thing.link,
+html[lang$="dm"] .side,
+html[lang$="dm"] #header-bottom-right .user > a,
+html[lang$="dm"] .sidecontentbox,
+html[lang$="dm"] .sidecontentbox .content,
+html[lang$="dm"] .icon-menu a,
+html[lang$="dm"] .side .md h5,
+html[lang$="dm"] .side .md h5+ul,
+html[lang$="dm"] .linkinfo .shortlink input,
+html[lang$="dm"] .titlebox form.toggle,
+html[lang$="dm"] .titlebox .leavemoderator,
+html[lang$="dm"] .titlebox .leavecontributor-button,
+html[lang$="dm"] .side #searchexpando,
+html[lang$="dm"] #previoussearch,
+html[lang$="dm"] .combined-search-page #previoussearch,
+html[lang$="dm"] .combined-search-page .search-result-group {
     background: white !important;
     color: #333;
     border-color: #cecdcd!important;
 }
-html:lang(dm) .flair:before,
-html:lang(dm) .gadget .reddit-entry a,
-html:lang(dm) .link .score.unvoted { color: #333; }
-html:lang(dm) .link { border: 1px solid #e3e3e3; box-shadow: none; }
-html:lang(dm) .link .entry { border-color: transparent !important; }
-html:lang(dm) .comment .entry,
-html:lang(dm) .linkinfo {border: 1px solid #e3e3e3 !important;}
+html[lang$="dm"] .flair:before,
+html[lang$="dm"] .gadget .reddit-entry a,
+html[lang$="dm"] .link .score.unvoted { color: #333; }
+html[lang$="dm"] .link { border: 1px solid #e3e3e3; box-shadow: none; }
+html[lang$="dm"] .link .entry { border-color: transparent !important; }
+html[lang$="dm"] .comment .entry,
+html[lang$="dm"] .linkinfo {border: 1px solid #e3e3e3 !important;}
 
-html:lang(dm) .side .md>blockquote:nth-of-type(2) h4 a,
-html:lang(dm) .side .md>blockquote:nth-of-type(2) h2 a {
+html[lang$="dm"] .side .md>blockquote:nth-of-type(2) h4 a,
+html[lang$="dm"] .side .md>blockquote:nth-of-type(2) h2 a {
     background: white;
     box-shadow: none;
 }
 
-html:lang(dm) .side .md a[href*="pokemonflairbot"],
-html:lang(dm) .side .md>h2+ul li a {
+html[lang$="dm"] .side .md a[href*="pokemonflairbot"],
+html[lang$="dm"] .side .md>h2+ul li a {
     background: white;
     box-shadow: none;
     color: #333;
     border-color: #e3e3e3;
 }
 
-html:lang(dm).res .comment .RES-keyNav-activeElement,
-html:lang(dm).res .link.RES-keyNav-activeThing {
+html[lang$="dm"].res .comment .RES-keyNav-activeElement,
+html[lang$="dm"].res .link.RES-keyNav-activeThing {
     background: #f7f7f7 !important;
 }
 
-html:lang(dm) .new-comment .usertext-body {
+html[lang$="dm"] .new-comment .usertext-body {
     background-color: #e5efff;
 }
 
-html:lang(dm) .drop-choices {
+html[lang$="dm"] .drop-choices {
     background: white;
     border: 1px solid #e3e3e3;
 }
 
-html:lang(dm) .thing .md hr {
+html[lang$="dm"] .thing .md hr {
     background: rgba(0,0,0,0.14);
 }
 
 /* tagline stuff */
-html:lang(dm) .tagline time:not(.edited-timestamp),
-html:lang(dm) .comment .score.unvoted,
-html:lang(dm) .comment .score.likes,
-html:lang(dm) .comment .score.dislikes {
+html[lang$="dm"] .tagline time:not(.edited-timestamp),
+html[lang$="dm"] .comment .score.unvoted,
+html[lang$="dm"] .comment .score.likes,
+html[lang$="dm"] .comment .score.dislikes {
     color: #333;
     background: white;
     border: 1px solid #e3e3e3;
     padding-left: 2px;
 }
 
-html:lang(dm) .tagline time {
+html[lang$="dm"] .tagline time {
     right: 4px;
 }
-html:lang(dm) .linkflairlabel {
+html[lang$="dm"] .linkflairlabel {
     color: #333;
     background: white;
     border-top-color: #e3e3e3;
@@ -2984,119 +2984,119 @@ html:lang(dm) .linkflairlabel {
     border-bottom-width: 2px;
     left: -1px;
 }
-html:lang(dm) .tagline time:not(.edited-timestamp):before { display: none; }
-html:lang(dm) .tagline time:not(.edited-timestamp):after {border-top-color: #e3e3e3;}
+html[lang$="dm"] .tagline time:not(.edited-timestamp):before { display: none; }
+html[lang$="dm"] .tagline time:not(.edited-timestamp):after {border-top-color: #e3e3e3;}
 
-html:lang(dm) .link a.title {
+html[lang$="dm"] .link a.title {
     color: rgba(0,0,0,0.8);
 }
-html:lang(dm) .thing .title:visited,
-html:lang(dm) .thing.visited .title,
-html:lang(dm) .link a.title:visited  {
+html[lang$="dm"] .thing .title:visited,
+html[lang$="dm"] .thing.visited .title,
+html[lang$="dm"] .link a.title:visited  {
     color: #423d56;
 }
 
 /* md */
-html:lang(dm) .md-container-small .md .-text,
-html:lang(dm) .side .md .-text,
-html:lang(dm) .md-container-small .md p,
-html:lang(dm) .side .md p,
-html:lang(dm) .md-container-small .md pre>code,
-html:lang(dm) .side .md pre>code,
-html:lang(dm) .md-container-small .md th,
-html:lang(dm) .side .md th,
-html:lang(dm) .md-container-small .md td,
-html:lang(dm) .side .md td,
-html:lang(dm) .md-container-small .md li,
-html:lang(dm) .side .md li,
-html:lang(dm) .side h1,
-html:lang(dm) .side h2,
-html:lang(dm) .side h3,
-html:lang(dm) .side h4,
-html:lang(dm) .side h5,
-html:lang(dm) .side h6,
-html:lang(dm) .md,
-html:lang(dm) .md p,
-html:lang(dm) .md ul,
-html:lang(dm) .md ol {
+html[lang$="dm"] .md-container-small .md .-text,
+html[lang$="dm"] .side .md .-text,
+html[lang$="dm"] .md-container-small .md p,
+html[lang$="dm"] .side .md p,
+html[lang$="dm"] .md-container-small .md pre>code,
+html[lang$="dm"] .side .md pre>code,
+html[lang$="dm"] .md-container-small .md th,
+html[lang$="dm"] .side .md th,
+html[lang$="dm"] .md-container-small .md td,
+html[lang$="dm"] .side .md td,
+html[lang$="dm"] .md-container-small .md li,
+html[lang$="dm"] .side .md li,
+html[lang$="dm"] .side h1,
+html[lang$="dm"] .side h2,
+html[lang$="dm"] .side h3,
+html[lang$="dm"] .side h4,
+html[lang$="dm"] .side h5,
+html[lang$="dm"] .side h6,
+html[lang$="dm"] .md,
+html[lang$="dm"] .md p,
+html[lang$="dm"] .md ul,
+html[lang$="dm"] .md ol {
     color: #222;
 }
 
 /* author panel */
-html:lang(dm) .thing .author,
-html:lang(dm) .side .tagline .author {
+html[lang$="dm"] .thing .author,
+html[lang$="dm"] .side .tagline .author {
     background-position: 0 -36px;
 }
 
 /* side */
-html:lang(dm) .sidecontentbox {
+html[lang$="dm"] .sidecontentbox {
     border-color: #eee;
 }
 
-html:lang(dm) .sidecontentbox .helplink ~ .content li.more a,
-html:lang(dm) .sidecontentbox a.helplink {
+html[lang$="dm"] .sidecontentbox .helplink ~ .content li.more a,
+html[lang$="dm"] .sidecontentbox a.helplink {
     border-top: 1px solid #6d3484;
     background: white;
 }
-html:lang(dm) .gadget .reddit-entry { border: 0; background: #fafafa !important; }
+html[lang$="dm"] .gadget .reddit-entry { border: 0; background: #fafafa !important; }
 
 /* footer */
-html:lang(dm) .footer .col li.title { color: #555 }
-html:lang(dm) .footer .col li:not(.title) a { color: #555 }
-html:lang(dm) .bottommenu,
-html:lang(dm) .bottommenu a { color: #777; }
+html[lang$="dm"] .footer .col li.title { color: #555 }
+html[lang$="dm"] .footer .col li:not(.title) a { color: #555 }
+html[lang$="dm"] .bottommenu,
+html[lang$="dm"] .bottommenu a { color: #777; }
 
 
 /* comment menus and usertext */
-html:lang(dm) .commentarea>.panestack-title,
-html:lang(dm) .commentarea>.menuarea,
-html:lang(dm) .commentarea>.usertext,
-html:lang(dm) .commentarea .child>.usertext,
-html:lang(dm) .gold-accent.comment-visits-box,
-html:lang(dm) .comment-permalink-page .commentarea>.infobar {
+html[lang$="dm"] .commentarea>.panestack-title,
+html[lang$="dm"] .commentarea>.menuarea,
+html[lang$="dm"] .commentarea>.usertext,
+html[lang$="dm"] .commentarea .child>.usertext,
+html[lang$="dm"] .gold-accent.comment-visits-box,
+html[lang$="dm"] .comment-permalink-page .commentarea>.infobar {
     background: white;
     border-left: 1px solid #e3e3e3;
     border-right: 1px solid #e3e3e3;
 }
-html:lang(dm) .infobar { box-shadow: none; }
-html:lang(dm) .commentarea>.menuarea { background: rgba(0,0,0,0.01); }
-html:lang(dm) .commentarea>.panestack-title,
-html:lang(dm) .comment-permalink-page .commentarea>.menuarea { border-top: 1px solid #e3e3e3; }
-html:lang(dm) .commentarea .child>.usertext,
-html:lang(dm) .gold-accent.comment-visits-box,
-html:lang(dm) .comment-permalink-page .commentarea>.infobar { border-bottom: 1px solid #e3e3e3 }
-html:lang(dm) select#comment-visits,
-html:lang(dm) body.mod-toolbox .tb-action-button.tb-top-macro-select {
+html[lang$="dm"] .infobar { box-shadow: none; }
+html[lang$="dm"] .commentarea>.menuarea { background: rgba(0,0,0,0.01); }
+html[lang$="dm"] .commentarea>.panestack-title,
+html[lang$="dm"] .comment-permalink-page .commentarea>.menuarea { border-top: 1px solid #e3e3e3; }
+html[lang$="dm"] .commentarea .child>.usertext,
+html[lang$="dm"] .gold-accent.comment-visits-box,
+html[lang$="dm"] .comment-permalink-page .commentarea>.infobar { border-bottom: 1px solid #e3e3e3 }
+html[lang$="dm"] select#comment-visits,
+html[lang$="dm"] body.mod-toolbox .tb-action-button.tb-top-macro-select {
     background: rgba(0,0,0,0.05) !important; color: #555 !important; }
 
-html:lang(dm) .commentarea > .usertext textarea,
-html:lang(dm) .comments-page .usertext textarea,
-html:lang(dm) .combined-search-page #search input[type=text] {
+html[lang$="dm"] .commentarea > .usertext textarea,
+html[lang$="dm"] .comments-page .usertext textarea,
+html[lang$="dm"] .combined-search-page #search input[type=text] {
     background: white;
     border: 1px solid #c8ccd0 !important;
     color: #333 !important;
 }
 
-html:lang(dm) .panestack-title .title,
-html:lang(dm).res .commentingAs,
-html:lang(dm) .titlebox .subscribers {
+html[lang$="dm"] .panestack-title .title,
+html[lang$="dm"].res .commentingAs,
+html[lang$="dm"] .titlebox .subscribers {
     color: #333;
 }
 
-html:lang(dm) .side .md>h6,
-html:lang(dm) .side .md>h2,
-html:lang(dm) .side .md>h4:first-of-type,
-html:lang(dm) .side a[href="https://redd.it/4jt9sa"] {
+html[lang$="dm"] .side .md>h6,
+html[lang$="dm"] .side .md>h2,
+html[lang$="dm"] .side .md>h4:first-of-type,
+html[lang$="dm"] .side a[href="https://redd.it/4jt9sa"] {
     background: transparent;
     color: #333;
 }
 
-html:lang(dm) .side .md>h6:after,
-html:lang(dm) .side .md>h2:after,
-html:lang(dm) .side .md>h4:first-of-type:after,
-html:lang(dm) .side a[href="https://redd.it/4jt9sa"]:after,
-html:lang(dm) .titlebox form.toggle.res-sr-style-toggle:after,
-html:lang(dm) .titlebox form.toggle.flairtoggle:after {
+html[lang$="dm"] .side .md>h6:after,
+html[lang$="dm"] .side .md>h2:after,
+html[lang$="dm"] .side .md>h4:first-of-type:after,
+html[lang$="dm"] .side a[href="https://redd.it/4jt9sa"]:after,
+html[lang$="dm"] .titlebox form.toggle.res-sr-style-toggle:after,
+html[lang$="dm"] .titlebox form.toggle.flairtoggle:after {
     content: '';
     background: url(%%sidepattern2%%) no-repeat -5px 1px;
     position: absolute;
@@ -3107,18 +3107,18 @@ html:lang(dm) .titlebox form.toggle.flairtoggle:after {
     opacity: 0.08;
 }
 
-html:lang(dm) .side .md h3 {
+html[lang$="dm"] .side .md h3 {
     border-bottom-color: #e3e3e3;
 }
-html:lang(dm) .side .md h3+ul+ol:after {
+html[lang$="dm"] .side .md h3+ul+ol:after {
     background: #e3e3e3;
 }
-html:lang(dm) .side .md h3,
-html:lang(dm) .side .md h3+ul,
-html:lang(dm) .side .md h3+ul+ol {
+html[lang$="dm"] .side .md h3,
+html[lang$="dm"] .side .md h3+ul,
+html[lang$="dm"] .side .md h3+ul+ol {
     border-left-color: #e3e3e3;
 }
-html:lang(dm) .side .md h3+ul+ol>li:before {
+html[lang$="dm"] .side .md h3+ul+ol>li:before {
     background: white;
     border-color: #e3e3e3;
     font-weight: bold;
@@ -3130,32 +3130,32 @@ html:lang(dm) .side .md h3+ul+ol>li:before {
     top: 3px;
 }
 
-html:lang(dm) .titlebox .users-online,
-html:lang(dm) .toggle.fancy-toggle-button .option.active,
-html:lang(dm).res .res-fancy-toggle-button {
+html[lang$="dm"] .titlebox .users-online,
+html[lang$="dm"] .toggle.fancy-toggle-button .option.active,
+html[lang$="dm"].res .res-fancy-toggle-button {
     background: #f0f0f0;
     color: #333;
 }
 
-html:lang(dm) .titlebox form.toggle.res-sr-style-toggle,
-html:lang(dm) .titlebox form.toggle.flairtoggle {
+html[lang$="dm"] .titlebox form.toggle.res-sr-style-toggle,
+html[lang$="dm"] .titlebox form.toggle.flairtoggle {
     color: #333;
 }
-html:lang(dm) .titlebox form.toggle.res-sr-style-toggle:after,
-html:lang(dm) .titlebox form.toggle.flairtoggle:after {
+html[lang$="dm"] .titlebox form.toggle.res-sr-style-toggle:after,
+html[lang$="dm"] .titlebox form.toggle.flairtoggle:after {
     background: url(%%sidepattern1%%) repeat;
 }
-html:lang(dm) .side .md h6+blockquote p a { background: #f3f3f3 !important; }
+html[lang$="dm"] .side .md h6+blockquote p a { background: #f3f3f3 !important; }
 
 /* top announcements */
-html:lang(dm) .side .md>blockquote:first-of-type>p {
+html[lang$="dm"] .side .md>blockquote:first-of-type>p {
     background: #fafafa;
     color: #333;
     border-radius: 16px;
 }
-html:lang(dm) .side .md>blockquote:first-of-type>p>a strong {color: #333}
+html[lang$="dm"] .side .md>blockquote:first-of-type>p>a strong {color: #333}
 
-html:lang(dm) .listing-page .content>.menuarea .spacer {
+html[lang$="dm"] .listing-page .content>.menuarea .spacer {
     background: white;
     border: 1px solid #e3e3e3;
 }
