@@ -2881,6 +2881,10 @@ html:lang(dm) .RESUserTagImage:after {
     background-image: none !important;
 }
 
+html:lang(dm) .md code, html:lang(dm) .md pre {
+    background: rgba(0,0,0,0.08);
+}
+
 /* thing */
 html:lang(dm) .entry,
 html:lang(dm) .thing.link,
