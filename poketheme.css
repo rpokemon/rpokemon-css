@@ -2919,7 +2919,9 @@ html:not(:lang(nm)) .titlebox .leavecontributor-button,
 html:not(:lang(nm)) .side #searchexpando,
 html:not(:lang(nm)) #previoussearch,
 html:not(:lang(nm)) .combined-search-page #previoussearch,
-html:not(:lang(nm)) .combined-search-page .search-result-group {
+html:not(:lang(nm)) .combined-search-page .search-result-group,
+html:not(:lang(nm)) .post-sharing,
+html:not(:lang(nm)) .subreddit-report-form {
     background: white !important;
     color: #333;
     border-color: #cecdcd!important;
@@ -3171,6 +3173,10 @@ html:not(:lang(nm)) .side a[href="https://redd.it/4jt9sa"]::after,
 html:not(:lang(nm)) .titlebox form.toggle.res-sr-style-toggle::after,
 html:not(:lang(nm)) .titlebox form.toggle.flairtoggle::after {
     pointer-events: none;
+}
+html:not(:lang(nm)) .titlebox form.toggle.res-sr-style-toggle *, html:not(:lang(nm)) .titlebox form.toggle.flairtoggle * {
+    position: relative;
+    z-index: 5;
 }
 
 /********************************************************************************
