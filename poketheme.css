@@ -2320,13 +2320,7 @@ html:lang(na) .link.linkflair-art {
     font-weight: bold;
     background: #333;
     border-radius: 3px 3px 0 0;
-    transition: border-color 1s ease-in, color 1s ease-in;
 }
-.sidecontentbox .helplink ~ .content li.more a:hover{
-    border-color: white;
-    color:white;
-}
-
 /* message the moderators link */
 .sidecontentbox a.helplink {
     display: block;
@@ -2345,12 +2339,9 @@ html:lang(na) .link.linkflair-art {
     border-top: none;
     color: #59f;
     font-size: 13px;
-    transition: border-color 1s ease-out, color 1s ease-out;
+    border-top: 1px solid #6d3484;
 }
-.sidecontentbox a.helplink:hover {
-    border-color: white;
-    color: white;
-}
+
 /* sidebar misc
 --------------------------------------------------------------------------------*/
 .reddit-link {
@@ -2899,6 +2890,7 @@ html:lang(dm) .titlebox .leavemoderator,
 html:lang(dm) .titlebox .leavecontributor-button {
     background: white !important;
     color: #333;
+    border-color: #cecdcd!important;
 }
 html:lang(dm) .flair:before,
 html:lang(dm) .gadget .reddit-entry a,
@@ -3009,6 +3001,7 @@ html:lang(dm) .sidecontentbox {
 
 html:lang(dm) .sidecontentbox .helplink ~ .content li.more a,
 html:lang(dm) .sidecontentbox a.helplink {
+    border-top: 1px solid #6d3484;
     background: white;
 }
 html:lang(dm) .gadget .reddit-entry { border: 0; background: #fafafa !important; }
