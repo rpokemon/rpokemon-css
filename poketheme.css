@@ -2894,7 +2894,8 @@ html:lang(dm) .titlebox .leavecontributor-button {
     color: #333;
 }
 html:lang(dm) .flair:before,
-html:lang(dm) .gadget .reddit-entry a { color: #333; }
+html:lang(dm) .gadget .reddit-entry a,
+html:lang(dm) .link .score.unvoted { color: #333; }
 html:lang(dm) .link { border: 1px solid #e3e3e3; box-shadow: none; }
 html:lang(dm) .link .entry { border-color: transparent !important; }
 html:lang(dm) .comment .entry,
@@ -2927,15 +2928,31 @@ html:lang(dm) .new-comment .usertext-body {
 html:lang(dm) .tagline time:not(.edited-timestamp),
 html:lang(dm) .comment .score.unvoted,
 html:lang(dm) .comment .score.likes,
-html:lang(dm) .comment .score.dislikes,
-html:lang(dm) .linkflairlabel {
+html:lang(dm) .comment .score.dislikes {
     color: #333;
     background: white;
     border: 1px solid #e3e3e3;
     padding-left: 2px;
 }
+html:lang(dm) .linkflairlabel {
+    color: #333;
+    background: white;
+    border-top-color: #e3e3e3;
+    border-left-color: #e3e3e3;
+    border-right-color: #e3e3e3;
+    padding-left: 2px;
+}
 html:lang(dm) .tagline time:not(.edited-timestamp):before { display: none; }
 html:lang(dm) .tagline time:not(.edited-timestamp):after {border-top-color: #e3e3e3;}
+
+html:lang(dm) .link a.title {
+    color: rgba(0,0,0,0.8);
+}
+html:lang(dm) .thing .title:visited,
+html:lang(dm) .thing.visited .title,
+html:lang(dm) .link a.title:visited  {
+    color: #423d56;
+}
 
 /* md */
 html:lang(dm) .md-container-small .md .-text,
