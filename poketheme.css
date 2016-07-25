@@ -2878,10 +2878,13 @@ html:lang(dm) .side {
     border: 1px solid #e3e3e3;
 }
 
+html:lang(dm) .child,
+html:lang(dm) .child > .sitetable,
+html:lang(dm) .comments-page .comment,
+html:lang(dm) .comments-page .comment .comment { background: transparent !important; }
+
 /* thing */
-html:lang(dm) .thing,
 html:lang(dm) .entry,
-html:lang(dm) .comment,
 html:lang(dm) .thing.link,
 html:lang(dm) .side,
 html:lang(dm) #header-bottom-right .user > a,
@@ -2926,6 +2929,11 @@ html:lang(dm).res .link.RES-keyNav-activeThing {
 
 html:lang(dm) .new-comment .usertext-body {
     background-color: #e5efff;
+}
+
+html:lang(dm) .drop-choices {
+    background: white;
+    border: 1px solid #e3e3e3;
 }
 
 /* tagline stuff */
