@@ -2885,6 +2885,11 @@ html:lang(dm) .md code, html:lang(dm) .md pre {
     background: rgba(0,0,0,0.08);
 }
 
+html:lang(dm) .message-count {
+    background: #FF7500;
+    color: white !important;
+}
+
 /* thing */
 html:lang(dm) .entry,
 html:lang(dm) .thing.link,
