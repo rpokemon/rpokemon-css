@@ -1115,7 +1115,6 @@ hr {
 }
 
 .RESUserTagImage:after {
-    content: "" !important;
     margin: 3px 5px;
     width:  12px;
     height: 13px;
@@ -1123,6 +1122,10 @@ hr {
     display: block;
     background-position: -195px -159px;
     opacity: .5;
+}
+
+html:not(:lang(dm)) .RESUserTagImage:after {
+    content: "" !important;
 }
 
 /* link author user tag*/
@@ -2873,6 +2876,10 @@ html:lang(dm) .child,
 html:lang(dm) .child > .sitetable,
 html:lang(dm) .comments-page .comment,
 html:lang(dm) .comments-page .comment .comment { background: transparent !important; }
+
+html:lang(dm) .RESUserTagImage:after {
+    background-image: none !important;
+}
 
 /* thing */
 html:lang(dm) .entry,
