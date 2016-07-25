@@ -1202,7 +1202,7 @@ hr {
 
 /* Moderator comment color panel */
 .link .author.moderator, .comment .author.moderator {
-    background-position: 0 -216px;
+    background-position: 0 -216px !important;
 }
 .link .moderator, .comment .moderator,
 .res .thing .tagline .author.moderator,
@@ -1241,7 +1241,7 @@ hr {
 }
 
 /* special users color panel */
-.author[href$="/AutoModerator"] { background-position: 0 -36px; }
+.author[href$="/AutoModerator"] { background-position: 0 -36px !important; }
 .thing .author[href$="/A_Wild_Abra"] { background-position: 0 -144px; color: white !important; }
 .author[href$="/A_Wild_Abra"] ~ .flair:after { background: url(%%balls%%) -49px -128px!important;}
 /*---Greatballs---*/
@@ -2865,6 +2865,229 @@ body.res.mod-toolbox.combined-search-page .tabmenu + .tabmenu {
     border-color: #2A66D6;
     box-shadow: inset 0 1px 0 #669BFF;
 }
+
+/********************************************************************************
+* DAY MODE
+*********************************************************************************/
+
+html:lang(dm) body {
+    background: #f2f3f4;
+}
+
+/* thing */
+html:lang(dm) .thing,
+html:lang(dm) .entry,
+html:lang(dm) .comment,
+html:lang(dm) .thing.link,
+html:lang(dm) .side,
+html:lang(dm) #header-bottom-right .user > a,
+html:lang(dm) .sidecontentbox,
+html:lang(dm) .sidecontentbox .content,
+html:lang(dm) .icon-menu a,
+html:lang(dm) .side .md h5,
+html:lang(dm) .side .md h5+ul,
+html:lang(dm) .linkinfo .shortlink input,
+html:lang(dm) .titlebox form.toggle,
+html:lang(dm) .titlebox .leavemoderator,
+html:lang(dm) .titlebox .leavecontributor-button {
+    background: white !important;
+    color: #333;
+}
+html:lang(dm) .flair:before,
+html:lang(dm) .gadget .reddit-entry a { color: #333; }
+html:lang(dm) .link { border: 1px solid #e3e3e3; box-shadow: none; }
+html:lang(dm) .link .entry { border-color: transparent !important; }
+html:lang(dm) .comment .entry,
+html:lang(dm) .linkinfo {border: 1px solid #e3e3e3 !important;}
+
+html:lang(dm) .side .md>blockquote:nth-of-type(2) h4 a,
+html:lang(dm) .side .md>blockquote:nth-of-type(2) h2 a {
+    background: white;
+    box-shadow: none;
+}
+
+html:lang(dm) .side .md a[href*="pokemonflairbot"],
+html:lang(dm) .side .md>h2+ul li a {
+    background: white;
+    box-shadow: none;
+    color: #333;
+    border-color: #e3e3e3;
+}
+
+html:lang(dm).res .comment .RES-keyNav-activeElement,
+html:lang(dm).res .link.RES-keyNav-activeThing {
+    background: #f7f7f7 !important;
+}
+
+html:lang(dm) .new-comment .usertext-body {
+    background-color: #e5efff;
+}
+
+/* tagline stuff */
+html:lang(dm) .tagline time:not(.edited-timestamp),
+html:lang(dm) .comment .score.unvoted,
+html:lang(dm) .comment .score.likes,
+html:lang(dm) .comment .score.dislikes,
+html:lang(dm) .linkflairlabel {
+    color: #333;
+    background: white;
+    border: 1px solid #e3e3e3;
+    padding-left: 2px;
+}
+html:lang(dm) .tagline time:not(.edited-timestamp):before { display: none; }
+html:lang(dm) .tagline time:not(.edited-timestamp):after {border-top-color: #e3e3e3;}
+
+/* md */
+html:lang(dm) .md-container-small .md .-text,
+html:lang(dm) .side .md .-text,
+html:lang(dm) .md-container-small .md p,
+html:lang(dm) .side .md p,
+html:lang(dm) .md-container-small .md pre>code,
+html:lang(dm) .side .md pre>code,
+html:lang(dm) .md-container-small .md th,
+html:lang(dm) .side .md th,
+html:lang(dm) .md-container-small .md td,
+html:lang(dm) .side .md td,
+html:lang(dm) .md-container-small .md li,
+html:lang(dm) .side .md li,
+html:lang(dm) .side h1,
+html:lang(dm) .side h2,
+html:lang(dm) .side h3,
+html:lang(dm) .side h4,
+html:lang(dm) .side h5,
+html:lang(dm) .side h6,
+html:lang(dm) .md,
+html:lang(dm) .md p,
+html:lang(dm) .md ul,
+html:lang(dm) .md ol {
+    color: #222;
+}
+
+/* author panel */
+html:lang(dm) .thing .author,
+html:lang(dm) .side .tagline .author {
+    background-position: 0 -36px;
+}
+
+/* side */
+html:lang(dm) .sidecontentbox {
+    border-color: #eee;
+}
+
+html:lang(dm) .sidecontentbox .helplink ~ .content li.more a,
+html:lang(dm) .sidecontentbox a.helplink {
+    background: white;
+}
+html:lang(dm) .gadget .reddit-entry { border: 0; background: #fafafa !important; }
+
+/* footer */
+html:lang(dm) .footer .col li.title { color: #555 }
+html:lang(dm) .footer .col li:not(.title) a { color: #555 }
+html:lang(dm) .bottommenu,
+html:lang(dm) .bottommenu a { color: #777; }
+
+
+/* comment menus and usertext */
+html:lang(dm) .commentarea>.panestack-title,
+html:lang(dm) .commentarea>.menuarea,
+html:lang(dm) .commentarea>.usertext,
+html:lang(dm) .commentarea .child>.usertext,
+html:lang(dm) .gold-accent.comment-visits-box {
+    background: white;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+}
+
+html:lang(dm) .commentarea>.menuarea { background: rgba(0,0,0,0.01); }
+html:lang(dm) .commentarea>.panestack-title { border-top: 1px solid #e3e3e3; }
+html:lang(dm) .commentarea .child>.usertext,
+html:lang(dm) .gold-accent.comment-visits-box { border-bottom: 1px solid #e3e3e3 }
+html:lang(dm) select#comment-visits,
+html:lang(dm) body.mod-toolbox .tb-action-button.tb-top-macro-select {
+    background: rgba(0,0,0,0.05) !important; color: #555 !important; }
+
+html:lang(dm) .commentarea > .usertext textarea {
+    background: white;
+    border: 1px solid #c8ccd0;
+    color: #333;
+}
+
+html:lang(dm) .panestack-title .title,
+html:lang(dm).res .commentingAs {
+    color: #333;
+}
+
+html:lang(dm) .side .md>h6,
+html:lang(dm) .side .md>h2,
+html:lang(dm) .side .md>h4:first-of-type,
+html:lang(dm) .side a[href="https://redd.it/4jt9sa"] {
+    background: transparent;
+    color: #333;
+}
+
+html:lang(dm) .side .md>h6:after,
+html:lang(dm) .side .md>h2:after,
+html:lang(dm) .side .md>h4:first-of-type:after,
+html:lang(dm) .side a[href="https://redd.it/4jt9sa"]:after,
+html:lang(dm) .titlebox form.toggle.res-sr-style-toggle:after,
+html:lang(dm) .titlebox form.toggle.flairtoggle:after {
+    content: '';
+    background: url(%%sidepattern2%%) no-repeat -5px 1px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.08;
+}
+
+html:lang(dm) .side .md h3 {
+    border-bottom-color: #e3e3e3;
+}
+
+html:lang(dm) .side .md h3,
+html:lang(dm) .side .md h3+ul,
+html:lang(dm) .side .md h3+ul+ol {
+    border-left-color: #e3e3e3;
+}
+
+html:lang(dm) .side .md h3+ul+ol>li:before {
+    background-color: #fff;
+    border-color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+html:lang(dm) .titlebox .users-online,
+html:lang(dm) .toggle.fancy-toggle-button .option.active,
+html:lang(dm).res .res-fancy-toggle-button {
+    background: #f0f0f0;
+    color: #333;
+}
+
+html:lang(dm) .titlebox form.toggle.res-sr-style-toggle,
+html:lang(dm) .titlebox form.toggle.flairtoggle {
+    color: #333;
+}
+html:lang(dm) .titlebox form.toggle.res-sr-style-toggle:after,
+html:lang(dm) .titlebox form.toggle.flairtoggle:after {
+    background: url(%%sidepattern1%%) repeat;
+}
+html:lang(dm) .side .md h6+blockquote p a { background: #f3f3f3 !important; }
+
+/* top announcements */
+html:lang(dm) .side .md>blockquote:first-of-type>p {
+    background: #fafafa;
+    color: #333;
+    border-radius: 16px;
+}
+html:lang(dm) .side .md>blockquote:first-of-type>p>a strong {color: #333}
+
+html:lang(dm) .listing-page .content>.menuarea .spacer {
+    background: white;
+    border: 1px solid #e3e3e3;
+}
+
 /********************************************************************************
 *                                ATTENTION!!!
 * No CSS should come after here, please put new CSS within their respective
