@@ -1213,8 +1213,8 @@ hr {
     content: ' [M]';
 }
 
-/* css mod color (so people know we're legit since we can't distinguish) */
-.comment .author[href$="/kwwxis"] ~ .flair:before { color: #e6d76d; }
+/* css mod color (so people know we're legit since we can't distinguish yet) */
+.comment .author[href$="/kwwxis"] ~ .flair:before { color: #856fa6; font-weight: bold; }
 
 /* admin */
 .author.admin:after { content: ' [A]';}
@@ -2946,6 +2946,10 @@ html:lang(dm) .comment .score.dislikes {
     border: 1px solid #e3e3e3;
     padding-left: 2px;
 }
+
+html:lang(dm) .tagline time {
+    right: 4px;
+}
 html:lang(dm) .linkflairlabel {
     color: #333;
     background: white;
@@ -3021,21 +3025,25 @@ html:lang(dm) .commentarea>.panestack-title,
 html:lang(dm) .commentarea>.menuarea,
 html:lang(dm) .commentarea>.usertext,
 html:lang(dm) .commentarea .child>.usertext,
-html:lang(dm) .gold-accent.comment-visits-box {
+html:lang(dm) .gold-accent.comment-visits-box,
+html:lang(dm) .comment-permalink-page .commentarea>.infobar {
     background: white;
     border-left: 1px solid #e3e3e3;
     border-right: 1px solid #e3e3e3;
 }
-
+html:lang(dm) .infobar { box-shadow: none; }
 html:lang(dm) .commentarea>.menuarea { background: rgba(0,0,0,0.01); }
-html:lang(dm) .commentarea>.panestack-title { border-top: 1px solid #e3e3e3; }
+html:lang(dm) .commentarea>.panestack-title,
+html:lang(dm) .comment-permalink-page .commentarea>.menuarea { border-top: 1px solid #e3e3e3; }
 html:lang(dm) .commentarea .child>.usertext,
-html:lang(dm) .gold-accent.comment-visits-box { border-bottom: 1px solid #e3e3e3 }
+html:lang(dm) .gold-accent.comment-visits-box,
+html:lang(dm) .comment-permalink-page .commentarea>.infobar { border-bottom: 1px solid #e3e3e3 }
 html:lang(dm) select#comment-visits,
 html:lang(dm) body.mod-toolbox .tb-action-button.tb-top-macro-select {
     background: rgba(0,0,0,0.05) !important; color: #555 !important; }
 
-html:lang(dm) .commentarea > .usertext textarea {
+html:lang(dm) .commentarea > .usertext textarea,
+html:lang(dm) .comments-page .usertext textarea {
     background: white;
     border: 1px solid #c8ccd0;
     color: #333;
