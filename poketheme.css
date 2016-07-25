@@ -726,6 +726,12 @@ hr {
     border: 0;
 }
 
+.thing .md hr {
+    height: 1px;
+    background: white;
+    margin-right: 10px;
+}
+
 /* new comment
 --------------------------------------------------------------------------------*/
 .new-comment .usertext-body {
@@ -1245,7 +1251,7 @@ html:not(:lang(dm)) .RESUserTagImage:after {
 
 /* special users color panel */
 .author[href$="/AutoModerator"] { background-position: 0 -36px !important; }
-.thing .author[href$="/A_Wild_Abra"] { background-position: 0 -144px; color: white !important; }
+.thing .author[href$="/A_Wild_Abra"] { background-position: 0 -144px !important; color: white !important; }
 .author[href$="/A_Wild_Abra"] ~ .flair:after { background: url(%%balls%%) -49px -128px!important;}
 /*---Greatballs---*/
 .author[href$="/Raiyou"]~ .flair:after, .author[href$="/chibikurai"]~ .flair:after, .author[href$="/likeitsmaddie"]~ .flair:after,  .author[href$="/ParisaXOXO"]~ .flair:after, .author[href$="/Will-TVR"]~ .flair:after, .author[href$="/wtfReddit"]~ .flair:after, .author[href$="/Fuwante0"]~ .flair:after, .author[href$="/Seagrove"]~ .flair:after, .author[href$="/WolfeyVG"]~ .flair:after, .author[href$="/13Yoshi37"] ~ .flair:after{
@@ -1564,7 +1570,7 @@ html:lang(na) .link.linkflair-art {
     margin: 7px;
 }
 
-.md hr {
+.side .md hr {
     background: transparent;
 }
 
@@ -2905,7 +2911,11 @@ html:lang(dm) .side .md h5+ul,
 html:lang(dm) .linkinfo .shortlink input,
 html:lang(dm) .titlebox form.toggle,
 html:lang(dm) .titlebox .leavemoderator,
-html:lang(dm) .titlebox .leavecontributor-button {
+html:lang(dm) .titlebox .leavecontributor-button,
+html:lang(dm) .side #searchexpando,
+html:lang(dm) #previoussearch,
+html:lang(dm) .combined-search-page #previoussearch,
+html:lang(dm) .combined-search-page .search-result-group {
     background: white !important;
     color: #333;
     border-color: #cecdcd!important;
@@ -2946,6 +2956,10 @@ html:lang(dm) .drop-choices {
     border: 1px solid #e3e3e3;
 }
 
+html:lang(dm) .thing .md hr {
+    background: rgba(0,0,0,0.14);
+}
+
 /* tagline stuff */
 html:lang(dm) .tagline time:not(.edited-timestamp),
 html:lang(dm) .comment .score.unvoted,
@@ -2967,6 +2981,8 @@ html:lang(dm) .linkflairlabel {
     border-left-color: #e3e3e3;
     border-right-color: #e3e3e3;
     padding-left: 2px;
+    border-bottom-width: 2px;
+    left: -1px;
 }
 html:lang(dm) .tagline time:not(.edited-timestamp):before { display: none; }
 html:lang(dm) .tagline time:not(.edited-timestamp):after {border-top-color: #e3e3e3;}
@@ -3054,10 +3070,11 @@ html:lang(dm) body.mod-toolbox .tb-action-button.tb-top-macro-select {
     background: rgba(0,0,0,0.05) !important; color: #555 !important; }
 
 html:lang(dm) .commentarea > .usertext textarea,
-html:lang(dm) .comments-page .usertext textarea {
+html:lang(dm) .comments-page .usertext textarea,
+html:lang(dm) .combined-search-page #search input[type=text] {
     background: white;
-    border: 1px solid #c8ccd0;
-    color: #333;
+    border: 1px solid #c8ccd0 !important;
+    color: #333 !important;
 }
 
 html:lang(dm) .panestack-title .title,
