@@ -3078,7 +3078,8 @@ html:lang(dm) .combined-search-page #search input[type=text] {
 }
 
 html:lang(dm) .panestack-title .title,
-html:lang(dm).res .commentingAs {
+html:lang(dm).res .commentingAs,
+html:lang(dm) .titlebox .subscribers {
     color: #333;
 }
 
