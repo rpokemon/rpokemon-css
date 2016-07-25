@@ -2874,6 +2874,10 @@ html:lang(dm) body {
     background: #f2f3f4;
 }
 
+html:lang(dm) .side {
+    border: 1px solid #e3e3e3;
+}
+
 /* thing */
 html:lang(dm) .thing,
 html:lang(dm) .entry,
