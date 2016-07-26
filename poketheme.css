@@ -734,7 +734,8 @@ hr {
 html:not([lang$="sn"]) .md a {
     color: #48f;
 }
-html:not([lang$="sn"]) .md a:visited {
+html:not([lang$="sn"]) .md a:visited,
+html:not([lang$="sn"]) .comment .md p > a:visited {
     color: #8271ff;
 }
 
