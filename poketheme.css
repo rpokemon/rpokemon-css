@@ -219,7 +219,7 @@ button:active, input[type="submit"]:active {
 
 /* user a */
 #header-bottom-right .user > a {
-    background: #1c1c1c;
+    background: #282b30;
     display: inline-block;
     padding: 0 5px;
     border-radius: 0 0 0 3px;
@@ -419,7 +419,7 @@ body:not(.listing-page) .tabmenu li a {
 .commentarea > .usertext,
 .commentarea .child > .usertext,
 .gold-accent.comment-visits-box {
-    background: rgba(0,0,0,.4);
+    background: #282b30;
     display: block;
     margin: 0;
     padding: 2px 10px;
@@ -443,7 +443,7 @@ body:not(.listing-page) .tabmenu li a {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: rgba(0,0,0,0.3);
+    background: #2d3035;
 }
 .commentarea > .menuarea .spacer { margin: 0; }
 
@@ -491,7 +491,7 @@ body:not(.listing-page) .tabmenu li a {
 .gold-accent.comment-visits-box {
     border-radius: 0;
     width: 100%;
-    background: rgba(0,0,0,0.35);
+    background: #2b2e33;
     max-width: none !important;
     padding: 10px;
     box-sizing: border-box;
@@ -752,11 +752,10 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 --------------------------------------------------------------------------------*/
 .link {
     background: #282b30!important;
-    border: solid 1px #36393e;
-    box-shadow: 0 0 0 1px #1e2124;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
     padding: 8px;
     position: relative;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 .link.last-clicked {
     overflow: visible;
@@ -772,7 +771,7 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 .thing.spam {
     background: transparent;
 }
-.thing.spam > .entry { border: 3px solid #E74C3C; }
+.thing.spam > .entry { border: 3px solid #E74C3C !important; }
 .thing.spam > .entry .buttons li[title*="removed"] { color: #E74C3C; padding-bottom: 4px;}
 .thing.spam > .child, .message.spam > .child { background-color: transparent; }
 
@@ -932,7 +931,6 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
     visibility: visible;
     position: relative;
     float: left;
-    /*background: rgba(0,0,0,.3);     Test*/
     font-weight: bold;
     border-radius: 3px;
     line-height: 20px;
@@ -997,7 +995,7 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
     width: 80px;
     text-align: center;
     padding-left: 20px;
-    top: -26px;
+    top: -23px;
     right: -1px;
 }
 
@@ -1011,18 +1009,6 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
     top: 4px;
     left: 4px;
     opacity: .4;
-}
-
-.tagline time:not(.edited-timestamp):after {
-    content: "";
-    display: block;
-    border: 3px solid transparent;
-    width: 0;
-    height: 0;
-    border-color: rgba(0,0,0,.4) transparent transparent transparent;
-    position: absolute;
-    right: 45%;
-    bottom: -6px;
 }
 
 /* edited */
@@ -1123,7 +1109,7 @@ html:not([lang$="sn"]) .RESUserTagImage:after {
 
 /* link author */
 .link .author {
-    top: -25px;
+    top: -22px;
     left: 140px;
 }
 
@@ -1312,11 +1298,11 @@ background-position:-45px -90px;
 .linkflairlabel {
     display: block;
     position: absolute!important;
-    top: -23px;
-    left: -2px;
+    top: -22px;
+    left: 0;
     background: #282b30;
-    border: 1px solid #1e2124;
-    border-radius: 3px 3px 0 0;
+    border: 0;
+    border-radius: 3px;
     min-width: 130px!important;
     line-height: 20px;
     text-align: center;
@@ -1326,37 +1312,29 @@ background-position:-45px -90px;
 
 .linkflair-image .linkflairlabel, .flairselector .linkflair-image .linkflairlabel {
     color: #a7565c;
-    border-bottom-color: #a7565c;
 }
 .linkflair-media .linkflairlabel, .flairselector .linkflair-media .linkflairlabel {
     color: #856fa6;
-    border-bottom-color: #856fa6;
 }
 .linkflair-discussion .linkflairlabel, .flairselector .linkflair-discussion .linkflairlabel {  
     color: #76c374;
-    border-bottom-color: #76c374;
 }
 .linkflair-info .linkflairlabel, .flairselector .linkflair-info .linkflairlabel {  
     color: #e6d76d;
-    border-bottom-color: #e6d76d;
 }
 .linkflair-art .linkflairlabel, .flairselector .linkflair-art .linkflairlabel {
     color: #E868C1;
-    border-bottom-color: #E868C1;
 }
 .linkflair-noob .linkflairlabel, .flairselector .linkflair-noob .linkflairlabel {
     color: #3498DB;
-    border-bottom-color: #3498DB;
 }
 .linkflair-rule .linkflairlabel {
     color:#e74c3c;
-    border-bottom-color:#e74c3c;
 }
 
 /* spoiler */
 .linkflair-spoiler .linkflairlabel, .flairselector .linkflair-spoiler .linkflairlabel {
     color: #E74C3C;
-    border-bottom-color: #E74C3C;
 }
 
 .linkflair-spoiler a.title {
@@ -1499,12 +1477,9 @@ html:lang(na) .link.linkflair-art {
     top: 15px;
 }
 
-.md-container-small .md .-text, .side .md .-text, .md-container-small .md p,
-.side .md p, .md-container-small .md pre>code, .side .md pre>code, .md-container-small .md th,
-.side .md th, .md-container-small .md td, .side .md td, .md-container-small .md li, .side .md li,
-.side h1,.side h2,.side h3,.side h4,.side h5,.side h6 { color: white; }
+.side .md, .side .md * { color: white; }
 
-.md-container-small .md, .side .md {
+.side .md {
     margin: 7px;
 }
 
@@ -1590,7 +1565,6 @@ html:lang(na) .link.linkflair-art {
     z-index: 999;
     background: #222;
     border-color: #222;
-    box-shadow: 0 1px 2px rgba(246, 230, 159, 0.25);
 }
 
 /* Titlebox stuff
@@ -1620,8 +1594,10 @@ html:lang(na) .link.linkflair-art {
     margin: 0 auto;
 }
 
-/* hide bottom */
-.titlebox .bottom { display: none; }
+/* hide stuff */
+.titlebox .bottom,
+.titlebox .leavemoderator:before, .moderator.toggle .main:before,
+.titlebox form.leavecontributor-button:before { display: none; }
 
 /* toggles */
 .titlebox form.toggle, .titlebox .leavemoderator, .titlebox .leavecontributor-button {
@@ -1629,11 +1605,6 @@ html:lang(na) .link.linkflair-art {
     background: transparent;
     text-align: left;
     padding: 3px 20px;
-}
-
-.titlebox .leavemoderator:before, .moderator.toggle .main:before,
-.titlebox form.leavecontributor-button:before {
-    display: none;
 }
 
 /* Subscribers/Users online
@@ -1692,19 +1663,44 @@ html:lang(na) .link.linkflair-art {
 .res-fancy-toggle-button.RESshortcut { left: 116px }
 .res-fancy-toggle-button.RESDashboardToggle { right: 25px; }
 
+/* common sidebar button and checkboxes
+--------------------------------------------------------------------------------*/
+
+/* common button */
+.side .md a[href*="flairbot"], .side .md > h2 + ul li a,
+.sidecontentbox .helplink ~ .content li.more a,
+.sidecontentbox a.helplink {
+    background: #383c42;
+    border: solid 1px #222428;
+    box-shadow: 0 1px 0 1px #222428;
+    border-radius: 3px;
+    transition: outline .2s ease;
+    color: #ccc;
+    text-align: center;
+}
+.side .md a[href*="flairbot"]:hover,
+.side .md > h2 + ul li a:hover {
+    outline: 1px solid #0082f0!important;
+}
+
+
+/* common checkboxes */
+.titlebox form.toggle.flairtoggle, .titlebox form.toggle.res-sr-style-toggle {
+    color: white;
+    position: absolute;
+    padding: 0 0 0 30px;
+    height: 18px;
+    background: url(%%sidepattern1%%) repeat;
+}
+
 /* edit flair area
 --------------------------------------------------------------------------------*/
 
 /* flair toggle */
 .titlebox form.toggle.flairtoggle {
-    position: absolute;
     top: 185px;
-    height: 18px;
     display: flex;
     align-items: center;
-    padding-left: 30px;
-    color: white;
-    background: url(%%sidepattern1%%) repeat;
 }
 
 .flairtoggle label {
@@ -1720,41 +1716,25 @@ html:lang(na) .link.linkflair-art {
 }
 
 /* edit flair link */
-.side .md a[href*="pokemonflairbot"] {
-    background: rgba(0,0,0,.4);
-    border: solid 1px #333;
-    box-shadow: 0 1px 0 2px rgba(0,0,0,.4);
+.side .md a[href*="flairbot"] {
     line-height: 26px;
     display: block;
-    color: #ccc;
     position: absolute;
     top: 260px;
     left: 30px;
     right: 30px;
-    padding: 0 10px;
-    border-radius: 3px;
-    transition: outline .2s ease;
     
 }
-.side .md a[href*="pokemonflairbot"]:hover{
-    outline: 1px solid #0082f0!important;
-    box-shadow: 0 3px 0 rgba(0,0,0,.4);
-}
+
 /* checkboxes
 --------------------------------------------------------------------------------*/
 
 /* stylesheet toggle */
 .titlebox form.toggle.res-sr-style-toggle {
-    color: white;
     text-transform: capitalize;
-    position: absolute;
     top: 70px;
-    padding: 0;
-    padding-left: 30px;
     left: 0;
     right: 0;
-    height: 18px;
-    background: url(%%sidepattern1%%) repeat;
 }
 
 .res-sr-style-toggle input { display: none; }
@@ -1772,6 +1752,51 @@ html:lang(na) .link.linkflair-art {
 .flairtoggle input[type=checkbox]:not(:checked) ~ label:before { background: url(%%pokesheet%%) -178px -195px; }
 .flairtoggle input[type=checkbox]:checked ~ label:before, .res-sr-style-toggle label:before { background: url(%%pokesheet%%) -194px -195px; }
 .flairtoggle input[type=checkbox] { display: none; }
+
+/* Submit links
+--------------------------------------------------------------------------------*/
+.side .md > h2 {
+    position: absolute;
+    top: 450px;
+    margin: 0;
+}
+.side .md>h2+ul+hr { display: none; }
+
+/* list */
+.side .md > h2 + ul {
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 475px;
+    left: 0;
+    right: 0;
+}
+.side .md > h2 + ul li a {
+    line-height: 30px;
+    display: inline-block;
+    left: 30px;
+    position: relative;
+    margin: 2px auto;
+    width: 244px;
+}
+
+/* icons */
+.side .md > h2 + ul li a:before {
+    content:"";
+    background: url(%%Flair%%);
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.side .md a[href$="/submit"]:before { background-position: -960px 0px; }
+.side .md a[href$="/submit?selftext=true"]:before { background-position: -440px -416px; }
+.side .md a[href*="/4lpffw"]:before { background-position: -800px -32px; }
+.side .md a[href*="/r/pokemontrades/submit"]:before { background-position: -1080px -64px; }
+.side .md a[href*="/r/pokememes/submit"]:before { background-position: -480px -64px; }
+.side .md a[href*="/r/shinypokemon/submit"]:before { background-position: -720px -768px; }
 
 /* subreddit description
 --------------------------------------------------------------------------------*/
@@ -1812,6 +1837,7 @@ Night/day mode switch (easy search: nm switch/dm switch/sn switch/sun switch/moo
     padding-right: 10px;
     position: relative;
 }
+
 .side .md h1:first-of-type a:before {
     content: '';
     display: block;
@@ -1826,22 +1852,14 @@ Night/day mode switch (easy search: nm switch/dm switch/sn switch/sun switch/moo
     left: 3px;
     background-position: -157px -405px;
 }
-html:not([lang$="sn"]) .side .md h1:first-of-type a:last-child:before {
-    background-position: -157px -437px;
-}
-html:not([lang$="sn"]) .side .md h1:first-of-type a:last-child {
-    color: #2DA8E8;
-}
-html:not([lang$="sn"]) .side .md h1:first-of-type a:first-child {
-    font-weight: normal;
-}
 
-html[lang$="sn"] .side .md h1:first-of-type a:first-child:before {
-    background-position: -125px -437px;
-}
-html[lang$="sn"] .side .md h1:first-of-type a:first-child {
-    color: #E3B34D;
-}
+html:not([lang$="sn"]) .side .md h1:first-of-type a:last-child:before { background-position: -157px -437px; }
+html:not([lang$="sn"]) .side .md h1:first-of-type a:last-child { color: #2DA8E8; }
+
+html[lang$="sn"] .side .md h1:first-of-type a:first-child:before { background-position: -125px -437px; }
+html[lang$="sn"] .side .md h1:first-of-type a:first-child { color: #E3B34D; }
+
+html:not([lang$="sn"]) .side .md h1:first-of-type a:first-child,
 html[lang$="sn"] .side .md h1:first-of-type a:last-child {
     font-weight: normal;
 }
@@ -1851,62 +1869,6 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
 .nub, .sidebox.submit-link .morelink, .sidebox.submit-text .morelink, .sidebox.create .spacer { display: none; }
 .sidebox.create .morelink { background: transparent;  border: 0; }
 
-/* Submit links
---------------------------------------------------------------------------------*/
-.side .md > h2 {
-    position: absolute;
-    top: 450px;
-    margin: 0;
-}
-.side .md>h2+ul+hr { display: none; }
-
-/* list */
-.side .md > h2 + ul {
-    padding: 0;
-    list-style-type: none;
-    position: absolute;
-    top: 475px;
-    left: 0;
-    right: 0;
-}
-.side .md > h2 + ul li a {
-    display: inline-block;
-    width: 244px;
-    background: rgba(0,0,0,.4);
-    box-shadow: 0 1px 0 2px rgba(0,0,0,.4);
-    border: solid 1px #333;
-    color: #ccc;
-    border-radius: 3px;
-    left: 30px;
-    position:relative;
-    text-align: center;
-    text-decoration: none;
-    line-height:30px;
-    margin: 2px auto;
-    transition: outline .2s ease;
-}
-.side .md > h2 + ul li a:hover {
-    outline: 1px solid #0082f0!important;
-    box-shadow: 0 3px 0 rgba(0,0,0,.4);
-}
-
-/* icons */
-.side .md > h2 + ul li a:before {
-    content:"";
-    background: url(%%Flair%%);
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 32px;
-    margin-bottom: 10px;
-}
-
-.side .md a[href$="/submit"]:before { background-position: -960px 0px; }
-.side .md a[href$="/submit?selftext=true"]:before { background-position: -440px -416px; }
-.side .md a[href*="/4lpffw"]:before { background-position: -800px -32px; }
-.side .md a[href*="/r/pokemontrades/submit"]:before { background-position: -1080px -64px; }
-.side .md a[href*="/r/pokememes/submit"]:before { background-position: -480px -64px; }
-.side .md a[href*="/r/shinypokemon/submit"]:before { background-position: -720px -768px; }
 
 /* PSA box
 --------------------------------------------------------------------------------*/
@@ -2076,11 +2038,11 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
     height: 32px;
     line-height: 32px;
     text-align: center;
-    background: #222 url(%%pokesheet%%) -55px -177px;
+    background: #282b30 url(%%pokesheet%%) -55px -177px;
     left: -39px;
     top: 0;
     box-sizing: content-box;
-    border: 3px solid #222;
+    border: 3px solid #282b30;
     border-radius: 50%;
     -webkit-transform: scale(0.86);
     transform: scale(0.86);
@@ -2168,7 +2130,7 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
 .side .md > blockquote:nth-of-type(2) h4:nth-child(10) a {
     border-color: #E868C1; color: #E868C1;}
     
-.side .md > blockquote:nth-of-type(2) h2:nth-child(1) a {
+.side .md > blockquote:nth-of-type(2) h2:nth-of-type(1) a {
     border-color: #919290; color: #919290;}
     
 .side .md > blockquote:nth-of-type(2) h2:nth-of-type(2) a {
@@ -2246,12 +2208,10 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
 --------------------------------------------------------------------------------*/
 
 .sidecontentbox {
-    display: flex;
-    flex-direction: column;
     margin: 7px;
     padding: 5px;
-    background-color: #222;
-    border-top: 1px solid #2a2a2a;
+    background-color: transparent;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 /* title */
@@ -2268,14 +2228,11 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
 
 /* list */
 .sidecontentbox .content {
-    order: 2;
     border: none;
 }
 
 /* sidecontentbox moderators
 --------------------------------------------------------------------------------*/
-
-.sidecontentbox .helplink ~ .title { order: 0; }
 
 /* item */
 .sidecontentbox .helplink ~ .content li {
@@ -2307,47 +2264,22 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
 
 /* about mod team */
 .sidecontentbox .helplink ~ .content li.more {
-    background: rgba(255,255,255,0.05);
-    margin-left: 16px;
-    border-radius: 3px 3px 0 0;
-    padding-top: 0px;
-    margin-bottom: 0;
+    border-radius: 3px;
+    background: transparent;
 }
 .sidecontentbox .helplink ~ .content li.more:before { display: none; }
+
 .sidecontentbox .helplink ~ .content li.more a {
+    height: 26px;
+    line-height: 26px;
     display: block;
-    height: 32px;
-    line-height: 30px;
-    top: 0;
-    text-align: left;
-    padding-left: 22px;
-    text-transform: capitalize;
-    border: 1px solid #A7565C;
-    border-bottom: none;
-    color: #a7565c;
-    font-weight: bold;
-    background: #333;
-    border-radius: 3px 3px 0 0;
+    margin: 5px 0 0 5px;
 }
 /* message the moderators link */
 .sidecontentbox a.helplink {
-    display: block;
-    width: 250px;
-    background: #333;
-    color: gray;
-    border-radius: 0 0 3px 3px;
-    line-height: 34px;
-    text-transform: capitalize;
-    margin-top: -8px;
-    order: 3;
-    margin-left: 21px;
-    padding-left: 22px;
-    box-sizing: border-box;
-    border: 1px solid #59f;
-    border-top: none;
-    color: #59f;
-    font-size: 13px;
-    border-top: 1px solid #6d3484;
+    line-height: 18px;
+    padding: 0 10px;
+    margin-right: 5px;
 }
 
 /* sidebar misc
@@ -2370,10 +2302,10 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
 .gadget .reddit-link-end { padding-top: 5px; }
 
 .icon-menu a {
-    background: #222;
+    background: transparent;
 }
 .sidebox .spacer{
-    background: #222;
+    background: transparent;
     margin: 10px;
 }
 
@@ -2495,10 +2427,8 @@ body > .content {
     text-indent: -9999px
 }
 .link .flair {
-    font-size: x-small;
-    margin-top: -1px;
     left: 138px;
-    top: -25px;
+    top: -22px;
 }
 .flair:before {
     content: attr(title);
@@ -2937,26 +2867,25 @@ html[lang$="sn"] .side .md>blockquote:nth-of-type(2) h2 a {
     box-shadow: none;
 }
 
-html[lang$="sn"] .side .md a[href*="pokemonflairbot"],
-html[lang$="sn"] .side .md>h2+ul li a {
+html[lang$="sn"] .side .md a[href*="flairbot"],
+html[lang$="sn"] .side .md>h2+ul li a,
+.sidecontentbox .helplink ~ .content li.more a,
+.sidecontentbox a.helplink {
     background: white;
     box-shadow: none;
     color: #333;
     border-color: #e3e3e3;
 }
 
-html[lang$="sn"].res .comment .RES-keyNav-activeElement,
-html[lang$="sn"].res .link.RES-keyNav-activeThing {
-    background: #1e2124!important;
-}
-
 html[lang$="sn"] .new-comment .usertext-body {
     background-color: #e5efff;
 }
 
-html[lang$="sn"] .drop-choices {
+html[lang$="sn"] .drop-choices,
+html[lang$="sn"] .side .md>p:first-of-type {
     background: white;
     border: 1px solid #e3e3e3;
+    color: #222;
 }
 
 html[lang$="sn"] .thing .md hr {
@@ -2975,17 +2904,17 @@ html[lang$="sn"] .comment .score.dislikes {
 }
 
 html[lang$="sn"] .tagline time {
-    right: 4px;
+    right: 0;
+    top: -25px;
 }
 html[lang$="sn"] .linkflairlabel {
     color: #333;
     background: white;
-    border-top-color: #e3e3e3;
-    border-left-color: #e3e3e3;
-    border-right-color: #e3e3e3;
+    border: 1px solid #e3e3e3;
     padding-left: 2px;
     border-bottom-width: 2px;
     left: -1px;
+    top: -25px;
 }
 html[lang$="sn"] .tagline time:not(.edited-timestamp):before { display: none; }
 html[lang$="sn"] .tagline time:not(.edited-timestamp):after {border-top-color: #e3e3e3;}
@@ -3000,28 +2929,10 @@ html[lang$="sn"] .link a.title:visited  {
 }
 
 /* md */
-html[lang$="sn"] .md-container-small .md .-text,
-html[lang$="sn"] .side .md .-text,
-html[lang$="sn"] .md-container-small .md p,
-html[lang$="sn"] .side .md p,
-html[lang$="sn"] .md-container-small .md pre>code,
-html[lang$="sn"] .side .md pre>code,
-html[lang$="sn"] .md-container-small .md th,
-html[lang$="sn"] .side .md th,
-html[lang$="sn"] .md-container-small .md td,
-html[lang$="sn"] .side .md td,
-html[lang$="sn"] .md-container-small .md li,
-html[lang$="sn"] .side .md li,
-html[lang$="sn"] .side h1,
-html[lang$="sn"] .side h2,
-html[lang$="sn"] .side h3,
-html[lang$="sn"] .side h4,
-html[lang$="sn"] .side h5,
-html[lang$="sn"] .side h6,
+html[lang$="sn"] .side .md,
+html[lang$="sn"] .side .md *,
 html[lang$="sn"] .md,
-html[lang$="sn"] .md p,
-html[lang$="sn"] .md ul,
-html[lang$="sn"] .md ol {
+html[lang$="sn"] .md * {
     color: #222;
 }
 
@@ -3036,11 +2947,6 @@ html[lang$="sn"] .sidecontentbox {
     border-color: #eee;
 }
 
-html[lang$="sn"] .sidecontentbox .helplink ~ .content li.more a,
-html[lang$="sn"] .sidecontentbox a.helplink {
-    border-top: 1px solid #6d3484;
-    background: white;
-}
 html[lang$="sn"] .gadget .reddit-entry { border: 0; background: #fafafa !important; }
 
 /* footer */
@@ -3177,15 +3083,13 @@ html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle *, html[lang$="sn"] .
     z-index: 5;
 }
 
-html[lang$="sn"] #header-bottom-left {
-    background-image: url(%%daymodeheader%%);
-}
 html[lang$="sn"] #sr-header-area {
     background: white !important;
     border-bottom: 1px solid #e3e3e3;
 }
 html[lang$="sn"] #header {
-    background: #e3e3e3;
+    background-image: url(%%daymodeheader%%);
+    border-bottom-color: #fff;
 }
 html[lang$="sn"] .listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):before {
     opacity: 1;
@@ -3202,6 +3106,14 @@ html[lang$="sn"] .side .md h1:first-of-type a {
 
 html[lang$="sn"] .side .md h1:first-of-type a:last-child {
     border-left-color: #dedede;
+}
+
+html[lang$="sn"] .link.linkflair-spoiler a.title:before {
+    background: #eaeaea;
+}
+
+html[lang$="sn"] .side .md table td, html[lang$="sn"] .side .md table td a {
+    color: #555;
 }
 
 /********************************************************************************
