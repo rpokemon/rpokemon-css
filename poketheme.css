@@ -731,6 +731,14 @@ hr {
     margin-right: 10px;
 }
 
+html:not([lang$="sn"]) .md a {
+    color: #48f;
+}
+html:not([lang$="sn"]) .md a:visited {
+    color: #8271ff;
+}
+
+
 /* new comment
 --------------------------------------------------------------------------------*/
 .new-comment .usertext-body {
