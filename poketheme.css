@@ -1,7 +1,7 @@
 /********************************************************************************
 * BODY
 *********************************************************************************/
-body { background: #333; color: #bdc3c7;
+body { background: #36393e; color: #bdc3c7;
 font-family: Verdana, Geneva, sans-serif; }
 
 body > .content { margin-right: 335px; margin-left: 20px;}
@@ -821,9 +821,9 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 /* Link element
 --------------------------------------------------------------------------------*/
 .link {
-    background: rgba(0,0,0,.4) !important;
-    border: solid 1px #333;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.4);
+    background: #282b30!important;
+    border: solid 1px #36393e;
+    box-shadow: 0 0 0 1px #1e2124;
     padding: 8px;
     position: relative;
     margin-top: 35px;
@@ -892,11 +892,11 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 
 /* title - actual link*/
 .link a.title {
-    color: #bdc3c7;
+    color: hsla(0,0%,100%,.7);
     font-size: 19px;
     position: relative;
 }
-.link a.title:hover{color:#bdc3c7}
+.link a.title:hover{color:hsla(0,0%,100%,.7);}
 /* domain */
 .domain {
     color: transparent;
@@ -940,8 +940,8 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 --------------------------------------------------------------------------------*/
 
 .entry {
-    background: #1f1f1f;
-    border: 1px solid #1f1f1f;
+    background: #282b30;
+    border: 1px solid #282b30;
     border-radius: 4px;
     overflow: hidden;
     margin: 17px 0 0 0 !important;
@@ -1058,7 +1058,7 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 
 .tagline time:not(.edited-timestamp) {
     visibility: visible;
-    background: rgba(0,0,0,.3);
+    background: #282b30;
     font-size: 9px;
     font-weight: bold;
     border-radius: 3px;
@@ -1384,8 +1384,8 @@ background-position:-45px -90px;
     position: absolute!important;
     top: -23px;
     left: -2px;
-    background: rgba(0,0,0,.4); /* #141414 */
-    border: 1px solid #262626;
+    background: #282b30;
+    border: 1px solid #1e2124;
     border-radius: 3px 3px 0 0;
     min-width: 130px!important;
     line-height: 20px;
@@ -1436,7 +1436,7 @@ background-position:-45px -90px;
     content: 'Spoiler - hover to view title';
     display: block;
     position: absolute;
-    background: #919290;
+    background: #36393e;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1558,7 +1558,7 @@ html:lang(na) .link.linkflair-art {
 --------------------------------------------------------------------------------*/
 .side {
     /* background-color: #222222; */
-    background-color: #1a1a1a;
+    background-color: #282b30;
     margin-top: 75px;
     position: relative;
     padding-top: 735px;
@@ -1851,8 +1851,8 @@ html:lang(na) .link.linkflair-art {
     top: 305px;
     margin: 0 16px;
     padding: 8px;
-    background: rgba(255,255,255,0.03);
-    color: #ccc;
+    background: #2e3136;
+    color: #fff;
 }
 
 /*
@@ -1986,7 +1986,7 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
     margin: 0 -7px;
     padding: 10px 25px;
     list-style-type: none;
-    background: #202020;
+    background: #2e3136;
 }
 .side .md h5 {
     font-weight: normal;
@@ -3020,7 +3020,7 @@ html[lang$="sn"] .side .md>h2+ul li a {
 
 html[lang$="sn"].res .comment .RES-keyNav-activeElement,
 html[lang$="sn"].res .link.RES-keyNav-activeThing {
-    background: #f7f7f7 !important;
+    background: #1e2124!important;
 }
 
 html[lang$="sn"] .new-comment .usertext-body {
