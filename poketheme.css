@@ -20,7 +20,7 @@ body.mod-toolbox .tb-general-button:hover, body.mod-toolbox li a.tb-general-butt
 /********************************************************************************
 * DEFAULT BUTTONS
 *********************************************************************************/
-button, .wiki-page .wiki-page-content .wiki_button {
+button, input[type="submit"] {
     display: inline-block;
     margin: 3px;
     padding: 0 8px 1px;
@@ -34,16 +34,15 @@ button, .wiki-page .wiki-page-content .wiki_button {
     text-transform: capitalize;
     
     line-height: 26px;
-    cursor: pointer;
     outline: none !important;
     box-shadow: inset 0 1px 0 #669BFF;
 }
 
-button:hover, .wiki-page .wiki-page-content .wiki_button:hover {
+button:hover, input[type="submit"]:hover {
     background-color: #5d99ff;
 }
 
-button:active, .wiki-page .wiki-page-content .wiki_button:active {
+button:active, input[type="submit"]:active {
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
 }
 
@@ -54,17 +53,14 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
 #sr-header-area {
     height: 18px;
     background-color: #333;
-    color: #AAA;
     border-bottom: 1px solid #333;
 }
 
-#sr-header-area a {
+#sr-header-area a, .sr-bar .separator {
     color: #CCC;
-    font-family: Verdana, Geneva, sans-serif;
 }
 #sr-header-area a:hover {
     color: #48f;
-    text-decoration: none;
 }
 
 #sr-more-link {
@@ -72,8 +68,6 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     background-color: #333;
     color: #CCC;
 }
-
-.sr-bar .separator { color: #000; }
 
 /* drop choices */
 #sr-header-area .width-clip .dropdown.srdrop .selected.title {
@@ -95,19 +89,9 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
 }
 
 /* RES things */
-.res #RESShortcutsEditContainer {
-    top: 1px !important;
-    background-color: transparent !important;
-}
-
-.res #RESShortcutsSort,.res #RESShortcutsRight,.res #RESShortcutsLeft,.res #RESShortcutsAdd,.res #RESShortcutsTrash {
+.res #RESShortcutsEditContainer, .res #RESShortcutsSort,.res #RESShortcutsRight,.res #RESShortcutsLeft,.res #RESShortcutsAdd,.res #RESShortcutsTrash {
     background-color: transparent !important;
     color: #979797 !important;
-}
-
-.res #RESShortcutsSort {
-    width: 20px !important;
-    color: #B1B1B1 !important;
 }
 
 .res:not(.res-nightmode) .commentarea .comment,
@@ -135,14 +119,9 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
 
 #header {
     height: 166px;
-    background: #1C1C1C;
-    border-bottom: 0 solid;
+    background: url(%%header%%)  no-repeat 50% 19px / cover;
+    border-bottom: 1px solid #1c1c1c;
     overflow: visible !important;
-}
-
-#header-bottom-left {
-    background: #1C1C1C url(%%header%%)  no-repeat 50% 0 / cover;
-    height: 145px; /* 166px (height of header) - 19px (height of sr header area) - 2px (height of border) */
 }
 
 #header-img {
@@ -157,20 +136,18 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
 /* Page name
 --------------------------------------------------------------------------------*/
 .pagename {
-    visibility: hidden;
+    font-size: 0;
 }
 
 .pagename a {
     top: 45px;
-    width: 300px;
+    width: 220px;
     height: 80px;
     display: block;
-    visibility: visible!important;
     position: absolute;
     left: 240px;
     z-index: 99;
     background: url(%%logo%%) no-repeat 0 0;
-    font-size: 0;
 }
 
 .pagename a:hover {
@@ -190,8 +167,7 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     top: 100% !important;
     bottom: auto !important;
     right: 0;
-    padding: 0;
-    padding-right: 15px;
+    padding: 0 15px 0 0;
     line-height: 27px;
     height: 27px;
     background-color: transparent;
@@ -279,29 +255,29 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
 /* userbar icons
 --------------------------------------------------------------------------------*/
 
+
+#mail { display: inline-block; overflow: visible; }
+#mail.havemail { background: -121px -374px; }
+#mail.nohavemail { background: -54px -310px; }
+
+#modmail { top: -2px; margin-bottom: -6px; }
+#modmail.havemail { background: -54px -404px; }
+#modmail.nohavemail { background: -152px -374px; }
+
+.gearIcon { background: -116px -339px!important; top: 5px; }
+.gearIcon:after { display: none; }
+
 #mail, #modmail, .gearIcon {
     height: 28px!important;
     width: 28px!important;
     background-image: url(%%pokesheet%%)!important;
 }
 
-#mail { display: inline-block; overflow: visible; }
-#mail.havemail { background-position: -121px -374px; }
-#mail.nohavemail { background-position: -54px -310px; }
-
-#modmail { top: -2px; margin-bottom: -6px; }
-#modmail.havemail { background-position: -54px -404px; }
-#modmail.nohavemail { background-position: -152px -374px; }
-
-.gearIcon { background-position: -116px -339px!important; top: 5px; }
-.gearIcon:after { display: none; }
-
 /* opacity hover/no hover
 --------------------------------------------------------------------------------*/
 #modmail, #mail, #header-bottom-right a.pref-lang, .loggedin .logout a, .gearIcon {
     opacity: .75;
 }
-
 #modmail:hover, #mail:hover, #header-bottom-right a.pref-lang:hover, .loggedin .logout a:hover, .gearIcon:hover {
     opacity: 1;
     text-decoration: none !important;
@@ -317,65 +293,50 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     justify-content: flex-end;
     position: absolute;
     bottom: 12px;
-    margin: 0;
     right: 0;
     left: 70px;
     padding: 0;
-    height: 30px;
-    background-color: transparent;
-    border-bottom: 0 solid;
-    color: #999;
-    list-style-type: none;
     text-transform: capitalize;
 }
 
-/* tabmenu items */
-.tabmenu li {
+.tabmenu li a {
     display: inline-block;
     height: 30px;
     line-height: 30px;
-}
-
-.tabmenu li a {
-    margin: 0 0px;
     padding: 0;
-    background-color: transparent;
-    border: 0 solid;
+    background-color: transparent !important;
+    border: 0 !important;
     color: #999;
     font-size: small;
     margin-right: 1px;
 }
 
-.tabmenu li a:hover {
+.tabmenu li a:hover, .tabmenu li.selected a {
     color: #48f;
-    text-decoration: none;
-    text-shadow: 1px 1px #000;
-    background-color: transparent;
-}
-
-.tabmenu li.selected a {
     z-index: 100;
-    background-color: transparent;
-    border: 0 solid;
-    color: #48f;
-    text-shadow: 1px 1px #000;
-    font-size: small;
 }
 
 /* tabmenu items with icon */
-.listing-page #header-bottom-left .tabmenu li a:not([href="javascript:;"]) {
-    border: 0;
+.listing-page #header-bottom-left .tabmenu li a:not([href^="j"]) {
     display: block;
-    width: 33px;
-    height: 33px;
     font-size: 0;
     position: relative;
 }
 
-.listing-page #header-bottom-left .tabmenu li a:not([href="javascript:;"]):before {
+/* tabmenu icons */
+.listing-page #header-bottom-left .tabmenu li:nth-child(1) a:before { background: -227px 0px; }
+.listing-page #header-bottom-left .tabmenu li:nth-child(2) a:before { background: -5px 0px; }
+.listing-page #header-bottom-left .tabmenu li:nth-child(3) a:before { background: -43px 0px; }
+.listing-page #header-bottom-left .tabmenu li:nth-child(4) a:before { background: -80px 0px; }
+.listing-page #header-bottom-left .tabmenu li:nth-child(5) a:before { background: -116px 0px; }
+.listing-page #header-bottom-left .tabmenu li:nth-child(6) a:before { background: -154px 0px; }
+.listing-page #header-bottom-left .tabmenu li:nth-child(7) a:before { background: -265px 0px; }
+.listing-page #header-bottom-left .tabmenu li:nth-child(8) a:before { background: -190px -0px; }
+.listing-page #header-bottom-left .tabmenu li:nth-child(9) a:before { background: -302px 0px; }
+.listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):before {
     content: "";
     display: inline-block;
-    background: url(%%tabmenu%%);
+    background-image: url(%%tabmenu%%);
     width: 33px;
     height: 32px;
     opacity: .6;
@@ -383,36 +344,22 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     transition: opacity 0.1s ease;
 }
 
-.listing-page #header-bottom-left .tabmenu li a:hover:before {
-    opacity: 1;
-}
-
-/* tabmenu icons */
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(1) a:before { background-position: -227px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(2) a:before { background-position: -5px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(3) a:before { background-position: -43px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(4) a:before { background-position: -80px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(5) a:before { background-position: -116px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(6) a:before { background-position: -154px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(7) a:before { background-position: -265px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(8) a:before { background-position: -190px -0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:before { background-position: -302px 0px; }
-
 /* mod toolbox */
-.tabmenu li a[href="javascript:;"], body:not(.listing-page) .tabmenu li a {
+.tabmenu li a[href^="j"],
+body:not(.listing-page) .tabmenu li a {
     margin-left: 5px;
 }
-.tabmenu li a[href="javascript:;"] {
+.tabmenu li a[href^="j"] {
     position: absolute;
     right: 17px;
     top: -105px;
 }
-.tabmenu li.tb-metrics a[href="javascript:;"] {
+.tabmenu li.tb-metrics a[href^="j"] {
     right: 120px;
 }
 
 /* tabmenu tooltips */
-.listing-page #header-bottom-left .tabmenu li a:not([href="javascript:;"]):after {
+.listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):after {
     content: '';
     display: block;
     position: absolute;
@@ -424,54 +371,37 @@ button:active, .wiki-page .wiki-page-content .wiki_button:active {
     padding: 0 10px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
     transform: translateX(-50%);
     border-radius: 3px;
+    -webkit-transition: bottom 150ms ease, opacity 150ms ease-in;
     transition: bottom 150ms ease, opacity 150ms ease-in;
     bottom: 60%;
     opacity: 0;
     color: white;
 }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:not([href="javascript:;"]):after,
-.listing-page:not(.res) #header-bottom-left .tabmenu li:nth-of-type(8) a:not([href="javascript:;"]):after {
-    left: auto;
-    -webkit-transform: none;
-    -moz-transform: none;
-    transform: none;
-    right: -10px;
-}
-.listing-page #header-bottom-left .tabmenu li a:not([href="javascript:;"]):hover:after {
+.listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):hover:after {
     bottom: 100%;
     opacity: 1;
 }
 
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(1) a:not([href="javascript:;"]):after {
-    content: 'hot';
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:not([href^="j"]):after,
+.listing-page:not(.res) #header-bottom-left .tabmenu li:nth-of-type(8) a:not([href^="j"]):after {
+    left: auto;
+    -webkit-transform: none;
+    transform: none;
+    right: -10px;
 }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(2) a:not([href="javascript:;"]):after {
-    content: 'new';
-}
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(3) a:not([href="javascript:;"]):after {
-    content: 'rising';
-}
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(4) a:not([href="javascript:;"]):after {
-    content: 'controversial';
-}
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(5) a:not([href="javascript:;"]):after {
-    content: 'top';
-}
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(6) a:not([href="javascript:;"]):after {
-    content: 'gilded';
-}
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(7) a:not([href="javascript:;"]):after {
-    content: 'wiki';
-}
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(8) a:not([href="javascript:;"]):after {
-    content: 'promoted';
-}
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:not([href="javascript:;"]):after {
-    content: 'view images';
-}
+
+
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(1) a:after { content: 'hot'; }
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(2) a:after { content: 'new'; }
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(3) a:after { content: 'rising'; }
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(4) a:after { content: 'controversial'; }
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(5) a:after { content: 'top'; }
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(6) a:after { content: 'gilded'; }
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(7) a:after { content: 'wiki'; }
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(8) a:after { content: 'promoted'; }
+.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:after { content: 'view images'; }
 
 /********************************************************************************
 * COMMENTS PAGE
@@ -1557,7 +1487,6 @@ html:lang(na) .link.linkflair-art {
 /* Element
 --------------------------------------------------------------------------------*/
 .side {
-    /* background-color: #222222; */
     background-color: #1a1a1a;
     margin-top: 75px;
     position: relative;
@@ -1589,7 +1518,7 @@ html:lang(na) .link.linkflair-art {
 
 /* sidebar common header
 --------------------------------------------------------------------------------*/
-.side .md > h6, .side .md > h2, .side .md > h4:first-of-type, .side a[href="https://redd.it/4jt9sa"] {
+.side .md > h6, .side .md > h2, .side .md > h4:first-of-type, .side .md > h4 > a {
     display: block;
     position: relative;
     padding-left: 61px;
@@ -1605,7 +1534,7 @@ html:lang(na) .link.linkflair-art {
     font-size: 18px;
     color: white;
 }
-.side .md > h6:before, .side .md > h2:before, .side a[href="https://redd.it/4jt9sa"]:before {
+.side .md > h6:before, .side .md > h2:before, .side .md > h4 > a:before {
     content: "";
     display: block;
     position: absolute;
@@ -1619,7 +1548,7 @@ html:lang(na) .link.linkflair-art {
 .side .md > h2:before {
     background-position: 1600px -1340px;
 }
-.side a[href="https://redd.it/4jt9sa"]:before {
+.side .md > h4 > a:before {
     background-position: -54px -340px;
 }
 .side .md > h6:nth-of-type(1):before {
@@ -2184,11 +2113,11 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
 }
 
 /* header title */
-.side a[href="https://redd.it/4jt9sa"]:before {
+.side .md > h4 > a:before {
     transition: left .5s ease-out; 
 }
-.side a[href="https://redd.it/4jt9sa"]:hover { color: #0079d3; }
-.side a[href="https://redd.it/4jt9sa"]:hover:before { left: 220px; }
+.side .md > h4 > a:hover { color: #0079d3; }
+.side .md > h4 > a:hover:before { left: 220px; }
 
 /* filter links */
 .side .md > blockquote:nth-of-type(2) h4,
@@ -2208,9 +2137,7 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
 .side .md > blockquote:nth-of-type(2) h2 a {
     display: block;
     background: rgba(0,0,0,.4);
-    box-shadow: 2px 1px 0 2px rgba(0,0,0,.4);
-    border: solid 1px #333;
-    color: #ccc;
+    border: 1px solid;
     border-radius: 3px;
     line-height: 30px;
     height: 30px;
@@ -2218,36 +2145,36 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
     text-align: center;
 }
 
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(odd) a { border-top-right-radius: 0; border-bottom-right-radius: 0; }
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(even) a { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.side .md > blockquote:nth-of-type(2) h4:nth-child(odd) a { border-radius: 3px 0 0 3px; }
+.side .md > blockquote:nth-of-type(2) h4:nth-child(even) a { border-radius: 0 3px 3px 0; }
 
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(1) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(2) a {
+.side .md > blockquote:nth-of-type(2) h4:nth-child(1) a,
+.side .md > blockquote:nth-of-type(2) h4:nth-child(2) a {
     border-color: #a7565c; color: #a7565c;}
     
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(3) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(4) a {
+.side .md > blockquote:nth-of-type(2) h4:nth-child(3) a,
+.side .md > blockquote:nth-of-type(2) h4:nth-child(4) a {
     border-color: #856fa6; color: #856fa6;}
     
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(5) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(6) a {
+.side .md > blockquote:nth-of-type(2) h4:nth-child(5) a,
+.side .md > blockquote:nth-of-type(2) h4:nth-child(6) a {
     border-color: #76c374; color: #76c374;}
     
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(7) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(8) a {
+.side .md > blockquote:nth-of-type(2) h4:nth-child(7) a,
+.side .md > blockquote:nth-of-type(2) h4:nth-child(8) a {
     border-color: #e6d76d; color: #e6d76d;}
     
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(9) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-of-type(10) a {
+.side .md > blockquote:nth-of-type(2) h4:nth-child(9) a,
+.side .md > blockquote:nth-of-type(2) h4:nth-child(10) a {
     border-color: #E868C1; color: #E868C1;}
     
-.side .md > blockquote:nth-of-type(2) h2:nth-of-type(1) a {
+.side .md > blockquote:nth-of-type(2) h2:nth-child(1) a {
     border-color: #919290; color: #919290;}
     
 .side .md > blockquote:nth-of-type(2) h2:nth-of-type(2) a {
     border-color: #59f; color: #59f; }
     
-.side .md > blockquote:nth-of-type(2) h4 a:hover, .side .md > blockquote:nth-of-type(2) h2 a:hover { font-weight: 700;}
+.side .md > blockquote:nth-of-type(2) * a:hover { font-weight: 700;}
 
 /* sidebar calendar
 --------------------------------------------------------------------------------*/
@@ -3162,7 +3089,7 @@ html[lang$="sn"] .titlebox .subscribers {
 html[lang$="sn"] .side .md>h6,
 html[lang$="sn"] .side .md>h2,
 html[lang$="sn"] .side .md>h4:first-of-type,
-html[lang$="sn"] .side a[href="https://redd.it/4jt9sa"],
+html[lang$="sn"] .side .md > h4 > a,
 html[lang$="sn"] #sr-header-area a {
     background: transparent;
     color: #333;
@@ -3171,7 +3098,7 @@ html[lang$="sn"] #sr-header-area a {
 html[lang$="sn"] .side .md>h6:after,
 html[lang$="sn"] .side .md>h2:after,
 html[lang$="sn"] .side .md>h4:first-of-type:after,
-html[lang$="sn"] .side a[href="https://redd.it/4jt9sa"]:after,
+html[lang$="sn"] .side .md > h4 > a:after,
 html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle:after,
 html[lang$="sn"] .titlebox form.toggle.flairtoggle:after {
     content: '';
@@ -3237,12 +3164,12 @@ html[lang$="sn"] .listing-page .content>.menuarea .spacer {
     border: 1px solid #e3e3e3;
 }
 
-html[lang$="sn"] .side .md > h6::after,
-html[lang$="sn"] .side .md > h2::after,
-html[lang$="sn"] .side .md > h4:first-of-type::after,
-html[lang$="sn"] .side a[href="https://redd.it/4jt9sa"]::after,
-html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle::after,
-html[lang$="sn"] .titlebox form.toggle.flairtoggle::after {
+html[lang$="sn"] .side .md > h6:after,
+html[lang$="sn"] .side .md > h2:after,
+html[lang$="sn"] .side .md > h4:first-of-type:after,
+html[lang$="sn"] .side .md > h4 > a:after,
+html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle:after,
+html[lang$="sn"] .titlebox form.toggle.flairtoggle:after {
     pointer-events: none;
 }
 html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle *, html[lang$="sn"] .titlebox form.toggle.flairtoggle * {
@@ -3255,13 +3182,12 @@ html[lang$="sn"] #header-bottom-left {
 }
 html[lang$="sn"] #sr-header-area {
     background: white !important;
-    color: #333;
     border-bottom: 1px solid #e3e3e3;
 }
 html[lang$="sn"] #header {
     background: #e3e3e3;
 }
-html[lang$="sn"] .listing-page #header-bottom-left .tabmenu li a:not([href="javascript:;"]):before {
+html[lang$="sn"] .listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):before {
     opacity: 1;
 }
 
