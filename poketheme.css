@@ -2498,9 +2498,9 @@ body > .content {
 .flair-mystic {background:-565px -799px}
 .flair-instinct {background:-518px -799px}
 .flair-valor {background:-610px -799px}
-.flair-722 {background:-400px -800px}
-.flair-725 {background:-440px -800px}
-.flair-728 {background:-480px -800px}
+.flair-722{background:-1196px -770px}
+.flair-725{background:-1236px -770px}
+.flair-728{background:-1275px -770px}
 
 .flair {
     background-image: url(%%Flair%%);
@@ -2591,22 +2591,22 @@ body > .content {
 }
 
 /* flair grant */
-.flairgrant .tagline {
+.flairgrant .tagline, .flairrow .tagline {
     visibility: visible;
     position: relative;
     width: 45ex;
     padding-left: 20px;
 }
-.flairgrant .tagline .flair {
+.flairgrant .tagline .flair, .flairrow .tagline .flair {
     left: -23px;
     top: -0;
 }
-.flairgrant .RESUserTag {
+.flairgrant .RESUserTag, .flairrow .RESUserTag {
     position: static !important;
     margin: 0px;
     padding: 0;
 }
-.flairgrant .RESUserTag .userTagLink {
+.flairgrant .RESUserTag .userTagLink, .flairrow .RESUserTag .userTagLink {
     margin-top: 5px;
     margin-bottom: -8px;
 }
