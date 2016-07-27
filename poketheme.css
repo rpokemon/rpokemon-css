@@ -1258,6 +1258,14 @@ background-position:-45px -90px;
     left: 310px;
 }
 
+/* gilded icon */
+.gilded-icon {
+    position: absolute;
+    visibility: visible;
+    top: 5px;
+    right: 5px;
+}
+
 /* Expando buttons
 --------------------------------------------------------------------------------*/
 
@@ -3015,6 +3023,7 @@ html[lang$="sn"] .titlebox form.toggle.flairtoggle:after {
     left: 0;
     top: 0;
     opacity: 0.08;
+    z-index: 0;
 }
 
 html[lang$="sn"] .side .md h3 {
