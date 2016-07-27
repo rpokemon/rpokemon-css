@@ -2487,17 +2487,20 @@ body > .content {
 .flair-rb8 {background:-1078px -768px}
 .flair-rb9 {background:-1119px -768px}
 .flair-rb10 {background:-1158px -768px}
-.flair-badge1 {background:1px -798px}
-.flair-badge2 {background: -38px -798px}
-.flair-badge3 {background:-78px -798px}
-.flair-badge4 {background:-119px -798px}
-.flair-badge5 {background:-161px -798px}
-.flair-badge6 {background:-202px -798px}
-.flair-badge7 {background:-241px -798px}
-.flair-badge8 {background:-284px -798px}
+
+.flair-badge1{background: 4px -802px}
+.flair-badge2{background:-35px -802px}
+.flair-badge3{background:-74px -802px}
+.flair-badge4{background:-115px -802px}
+.flair-badge5{background:-156px -802px}
+.flair-badge6{background:-198px -802px}
+.flair-badge7{background:-236px -802px}
+.flair-badge8{background:-280px -802px}
+
 .flair-mystic {background:-565px -799px}
 .flair-instinct {background:-518px -799px}
 .flair-valor {background:-610px -799px}
+
 .flair-722{background:-1196px -770px}
 .flair-725{background:-1236px -770px}
 .flair-728{background:-1275px -770px}
