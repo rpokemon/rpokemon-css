@@ -13,7 +13,7 @@ def get_vars():
     with open("variables.dat", "r") as f:
         for line in f:
             lstrip = line.strip()
-            if (len(lstrip) == 0 || lstrip.startswith('#') || lstrip.startswith('//')):
+            if (len(lstrip) == 0 or lstrip.startswith('#') or lstrip.startswith('//')):
                 continue
                 
             line_data = line.split("=", 1)
@@ -21,7 +21,6 @@ def get_vars():
 
 def rep_vars(text):
     global rep
-    print(rep)
     
     if not rep:
         return text;
