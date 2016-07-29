@@ -2076,7 +2076,6 @@ html:not([lang$="nm"]) .side .md h1:first-of-type a:last-child {
 /* main links */
 .side .md h6 + blockquote p {
     font-size: 0;
-    background: rgba(255,255,255,0.02);
     padding: 0 5px;
     
     display: flex;
@@ -2094,25 +2093,17 @@ html:not([lang$="nm"]) .side .md h1:first-of-type a:last-child {
     margin-top: 4px;
     color: #b7b7b7;
     padding: 0 5px;
-    background: rgba(255,255,255,0.05);
     
     flex-grow: 1;
     text-align: center;
 }
-.side .md h6 + blockquote p a:hover {
-    background: rgba(255,255,255,0.12);
-}
 
 /* related subs */
 .side .md h6 + blockquote h4 {
-    background: rgba(255,255,255,0.08);
     margin: 0;
     padding: 7px 5px 7px 5px;
     font-size: 13px;
     text-align: center;
-}
-.side .md h6 + blockquote h4 a {
-    color: #b7b7b7;
 }
 
 /* sidecontentbox
