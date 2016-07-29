@@ -1,7 +1,7 @@
 /********************************************************************************
 * BODY
 *********************************************************************************/
-body { background: $body_bg$; color: $body_color$; font-family: $body_font$ }
+body { background: $body_bg_color$; color: $body_color$; font-family: $body_font$ }
 
 body > .content { margin-right: 335px; margin-left: 20px;}
 .sheets {margin-right:0;}
