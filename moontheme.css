@@ -1,0 +1,412 @@
+html[lang$="nm"] body {
+    background: #36393e;
+    color: #bdc3c7;
+}
+
+html[lang$="nm"] .md a {
+    color: #48f;
+}
+html[lang$="nm"] .link .md a:visited,
+html[lang$="nm"] .comment .md a:visited,
+html[lang$="nm"] .comment .md p > a:visited {
+    color: #8271ff;
+}
+
+/* top announcements
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .side .md>blockquote:first-of-type>p {
+    background: #282b30;
+    color: #aaa;
+    border-radius: 16px;
+}
+html[lang$="nm"] .side .md>blockquote:first-of-type>p>a strong {color: #aaa}
+
+/* header
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] #sr-header-area {
+    background: #282b30 !important;
+    border-bottom: 1px solid #282b30;
+}
+html[lang$="nm"] #header {
+    background-image: url(%%header%%);
+    border-bottom-color: #1c1c1c;
+}
+
+html[lang$="nm"] #sr-header-area a {
+    background: transparent;
+    color: #aaa;
+}
+
+html[lang$="nm"] .message-count {
+    background-color: #aaa333;
+}
+
+
+/********************************************************************************
+* RESET
+*********************************************************************************/
+html[lang$="nm"] .entry,
+html[lang$="nm"] .thing.link,
+html[lang$="nm"] .side,
+html[lang$="nm"] #header-bottom-right .user > a,
+html[lang$="nm"] .sidecontentbox,
+html[lang$="nm"] .sidecontentbox .content,
+html[lang$="nm"] .icon-menu a,
+html[lang$="nm"] .side .md h5,
+html[lang$="nm"] .side .md h5+ul,
+html[lang$="nm"] .linkinfo .shortlink input,
+html[lang$="nm"] .titlebox form.toggle,
+html[lang$="nm"] .titlebox .leavemoderator,
+html[lang$="nm"] .titlebox .leavecontributor-button,
+html[lang$="nm"] .side #searchexpando,
+html[lang$="nm"] #previoussearch,
+html[lang$="nm"] .combined-search-page #previoussearch,
+html[lang$="nm"] .combined-search-page .search-result-group,
+html[lang$="nm"] .post-sharing,
+html[lang$="nm"] .subreddit-report-form {
+    background: #282b30 !important;
+    color: #aaa;
+    border-color: #282b30!important;
+}
+
+/********************************************************************************
+* THING
+*********************************************************************************/
+
+html[lang$="nm"] .link { border: 1px solid transparent; box-shadow: none; }
+html[lang$="nm"] .link .entry { border-color: transparent !important; }
+
+html[lang$="nm"] .comment .entry  {border: 1px solid transparent !important;}
+
+html[lang$="nm"] .flair:before,
+html[lang$="nm"] .link .score.unvoted { color: #aaa; }
+
+html[lang$="nm"] .new-comment .usertext-body {
+    background-color: #e5efff;
+}
+
+/* tagline stuff - timestamp, comment votes, linkflairlabel
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .tagline time:not(.edited-timestamp),
+html[lang$="nm"] .comment .score.unvoted,
+html[lang$="nm"] .comment .score.likes,
+html[lang$="nm"] .comment .score.dislikes {
+    color: #aaa;
+    background: #282b30;
+    border: 1px solid transparent;
+    padding-left: 2px;
+}
+
+html[lang$="nm"] .tagline time {
+    right: 0;
+    top: -25px;
+}
+html[lang$="nm"] .linkflairlabel {
+    color: #aaa;
+    background: #282b30;
+    border: 1px solid transparent;
+    padding-left: 2px;
+    border-bottom-width: 2px;
+    left: -1px;
+    top: -25px;
+}
+html[lang$="nm"] .tagline time:not(.edited-timestamp):before { display: none; }
+html[lang$="nm"] .tagline time:not(.edited-timestamp):after {border-top-color: transparent;}
+
+/* thing title
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .link a.title {
+    color: rgba(255,255,255,0.8);
+}
+html[lang$="nm"] .thing .title:visited,
+html[lang$="nm"] .thing.visited .title,
+html[lang$="nm"] .link a.title:visited  {
+    color: #423d56;
+}
+
+/* author panel - set to dark version
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .thing .author,
+html[lang$="nm"] .side .tagline .author {
+    background-position: 0 0;
+}
+
+
+/* spoiler overlay
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .link.linkflair-spoiler a.title:before {
+    background: #eaeaea;
+}
+
+
+/********************************************************************************
+* COMMENT AREA
+*********************************************************************************/
+html[lang$="nm"] .commentarea > .panestack-title,
+html[lang$="nm"] .commentarea > .menuarea,
+html[lang$="nm"] .commentarea > .usertext,
+html[lang$="nm"] .commentarea .child > .usertext,
+html[lang$="nm"] .gold-accent.comment-visits-box,
+html[lang$="nm"] .comment-permalink-page .commentarea > .infobar {
+    background: #282b30;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+html[lang$="nm"] .commentarea > .panestack-title,
+html[lang$="nm"] .comment-permalink-page .commentarea > .menuarea {
+    border-top: 1px solid transparent;
+}
+html[lang$="nm"] .commentarea .child > .usertext,
+html[lang$="nm"] .gold-accent.comment-visits-box,
+html[lang$="nm"] .comment-permalink-page .commentarea > .infobar {
+    border-bottom: 1px solid transparent;
+}
+html[lang$="nm"] .commentarea > .menuarea { background: rgba(0,0,0,0.01); }
+
+/* comment visits select and tb macro */
+html[lang$="nm"] select#comment-visits,
+html[lang$="nm"] body.mod-toolbox .tb-action-button.tb-top-macro-select {
+    background: rgba(0,0,0,0.05) !important; color: #555 !important;
+}
+
+/* text inputs */
+html[lang$="nm"] .commentarea > .usertext textarea,
+html[lang$="nm"] .comments-page .usertext textarea,
+html[lang$="nm"] .combined-search-page #search input[type=text] {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    color: #aaa !important;
+}
+
+html[lang$="nm"] .panestack-title .title,
+html[lang$="nm"].res .commentingAs {
+    color: #aaa;
+}
+
+/********************************************************************************
+* SIDE
+*********************************************************************************/
+html[lang$="nm"] .side {
+    border: 0;
+}
+
+/* sidecontentbox
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .sidecontentbox {
+    border-color: #eee;
+}
+
+html[lang$="nm"] .linkinfo {border: 1px solid transparent !important;}
+
+html[lang$="nm"] .gadget .reddit-entry {
+    border: 0;
+    background: rgba(255,255,255,0.02) !important;
+}
+html[lang$="nm"] .gadget .score,
+html[lang$="nm"] .gadget .reddit-entry a {
+    color: #aaa;
+}
+
+/* sub description
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .side .md > p:first-of-type {
+    background: rgba(255,255,255,0.03);
+    color: #c7c7c7;
+    border: 0;
+}
+
+/* sidebar common header
+--------------------------------------------------------------------------------*/
+
+/* reset common header stuff */
+html[lang$="nm"] .side .md > h6,
+html[lang$="nm"] .side .md > h2,
+html[lang$="nm"] .side .md > h4:first-of-type,
+html[lang$="nm"] .side .md > h4 > a {
+    background: transparent;
+    color: #aaa;
+}
+
+html[lang$="nm"] .side .md > h6:after,
+html[lang$="nm"] .side .md > h2:after,
+html[lang$="nm"] .side .md > h4:first-of-type:after,
+html[lang$="nm"] .side .md > h4 > a:after,
+html[lang$="nm"] .titlebox form.toggle.res-sr-style-toggle:after,
+html[lang$="nm"] .titlebox form.toggle.flairtoggle:after {
+    content: '';
+    background: url(%%sidepattern2%%) no-repeat -5px 1px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.08;
+    z-index: 0;
+}
+
+/* sidebar common button
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .side .md a[href*="flairbot"],
+html[lang$="nm"] .side .md>h2+ul li a,
+.sidecontentbox .helplink ~ .content li.more a,
+.sidecontentbox a.helplink {
+    background: #282b30;
+    box-shadow: none;
+    color: #aaa;
+    border-color: #e3e3e3;
+}
+
+/* toggles and subscription stuff
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .titlebox .subscribers {
+    color: #aaa;
+}
+
+html[lang$="nm"] .titlebox .users-online,
+html[lang$="nm"] .toggle.fancy-toggle-button .option.active,
+html[lang$="nm"].res .res-fancy-toggle-button {
+    background: rgba(0,0,0,0.4);
+    color: #aaa;
+}
+
+html[lang$="nm"] .titlebox form.toggle.res-sr-style-toggle,
+html[lang$="nm"] .titlebox form.toggle.flairtoggle {
+    color: #aaa;
+}
+html[lang$="nm"] .titlebox form.toggle.res-sr-style-toggle:after,
+html[lang$="nm"] .titlebox form.toggle.flairtoggle:after {
+    background: url(%%sidepattern1%%) repeat;
+}
+
+
+/* sidebar rules
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .side .md h3 {
+    border-bottom-color: #e3e3e3;
+}
+html[lang$="nm"] .side .md h3+ul+ol:after {
+    background: #e3e3e3;
+}
+html[lang$="nm"] .side .md h3,
+html[lang$="nm"] .side .md h3+ul,
+html[lang$="nm"] .side .md h3+ul+ol {
+    border-left-color: #e3e3e3;
+}
+html[lang$="nm"] .side .md h3+ul+ol>li:before {
+    background: #282b30;
+    border-color: #e3e3e3;
+    font-weight: bold;
+    font-size: 13px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    left: -36px;
+    top: 3px;
+}
+
+/* submission filters
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .side .md>blockquote:nth-of-type(2) h4 a,
+html[lang$="nm"] .side .md>blockquote:nth-of-type(2) h2 a {
+    background: #282b30;
+    box-shadow: none;
+}
+
+/* side community links
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .side .md h6+blockquote p {
+    background: rgba(255,255,255,0.02);
+}
+
+html[lang$="nm"] .side .md h6+blockquote p a {
+    background: rgba(255,255,255,0.05) !important;
+}
+html[lang$="nm"] .side .md h6 + blockquote p a:hover {
+    background: rgba(255,255,255,0.12) !important;
+}
+
+html[lang$="nm"] .side .md h6 + blockquote h4 {
+    background: rgba(255,255,255,0.08);
+}
+
+
+/* side bg patterns
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .side .md > h6:after,
+html[lang$="nm"] .side .md > h2:after,
+html[lang$="nm"] .side .md > h4:first-of-type:after,
+html[lang$="nm"] .side .md > h4 > a:after,
+html[lang$="nm"] .titlebox form.toggle.res-sr-style-toggle:after,
+html[lang$="nm"] .titlebox form.toggle.flairtoggle:after {
+    pointer-events: none;
+}
+html[lang$="nm"] .titlebox form.toggle.res-sr-style-toggle *, html[lang$="nm"] .titlebox form.toggle.flairtoggle * {
+    position: relative;
+    z-index: 5;
+}
+
+
+/* sun/moon switch day mode
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .side .md h1:first-of-type {
+    background: rgba(255,255,255,0.08);
+}
+html[lang$="nm"] .side .md h1:first-of-type a {
+    color: white;
+}
+html[lang$="nm"] .side .md h1:first-of-type a:last-child {
+    border-left: 1px solid rgba(255,255,255,0.15);
+}
+
+/********************************************************************************
+* MISC
+*********************************************************************************/
+
+/* listing page sort menu
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .listing-page .content>.menuarea .spacer {
+    background: #282b30;
+    border: 1px solid transparent;
+}
+
+/* md
+--------------------------------------------------------------------------------*/
+
+html[lang$="nm"] .side .md,
+html[lang$="nm"] .side .md *,
+html[lang$="nm"] .md,
+html[lang$="nm"] .md * {
+    color: #c7c7c7;
+}
+html[lang$="nm"] .thing .md hr {
+    background: rgba(0,0,0,0.14);
+}
+html[lang$="nm"] .md code, html[lang$="nm"] .md pre {
+    background: rgba(0,0,0,0.08);
+}
+
+html[lang$="nm"] .side .md table td,
+html[lang$="nm"] .side .md table td a {
+    color: #a5a5a5;
+}
+
+/* footer
+--------------------------------------------------------------------------------*/
+html[lang$="nm"] .footer .col li.title { color: #555 }
+html[lang$="nm"] .footer .col li:not(.title) a { color: #555 }
+html[lang$="nm"] .bottommenu,
+html[lang$="nm"] .bottommenu a { color: #777; }
+
+
+/* misc
+--------------------------------------------------------------------------------*/
+
+html[lang$="nm"] .RESUserTagImage:after {
+    background-image: none !important;
+}
+
+html[lang$="nm"] .drop-choices {
+    background: #282b30;
+    border: 1px solid #e3e3e3;
+    color: #222;
+}
