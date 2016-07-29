@@ -1,17 +1,232 @@
-# body element 
-body_bg     = #36393e
+# README
+#
+# Syntax:
+#   [variable_name] = [value]
+#   Comments must be on their own line, cannot go at the end of a variable line
+#   variables must be alphanumeric and can contain underscores (but not hyphens)
+# 
+# Naming convention within this file
+#   Like in css, "color" alone is text color (body_color)
+#   bg_color or just bg is background color (body_bg)
+#
+#   Be specific with variable names, I'd rather have a long variable than a
+#   short, undescriptive one
+#
+#   Feel free to use abbreviations but clarify in a nearby comment
+#
+# Renaming variables
+#   When you rename a variable here, make sure to rename it in poketheme.css
+#   and vice versa
+#   But don't worry about forgetting to rename within poketheme.css as both the
+#   dist.css and compress.py will warn you if a variable was not replaced
+#
+# Common Abbreviations
+#   bg - BackGround
+#   btn - BuTtoN
+#   bsd - Box ShaDow
+#
+# -------------------------------------------------------------------------------
+
+# common_bg = #282b30
+common_bg = #fff
+
+# body element
+# body_bg     = #36393e
+body_bg     = #f2f3f4
 body_color  = #bdc3c7
 body_font   = Verdana, Geneva, sans-serif
 
-# mod toolbox buttons
-tb_btn_bg            = rgba(255,255,255,0.06)
-tb_btn_border_color  = rgba(255,255,255,0.1)
-tb_btn_color         = #ccc
+# mod toolbox (tb) buttons
+tb_btn_bg      = rgba(255,255,255,0.06)
+tb_btn_border  = rgba(255,255,255,0.1)
+tb_btn_color   = #ccc
 
 # default button
+defbtn_bg          = #48f
+defbtn_border      = #2A66D6
+defbtn_bsd_color   = #669BFF
+defbtn_hover_bg    = #5d99ff
+defbtn_active_bsd  = rgba(0,0,0,0.2)
 
-defbtn_bg            = #48f
-defbtn_border_color  = #2A66D6
-defbtn_shadow_color  = #669BFF
-defbtn_hover_bg      = #5d99ff
-defbtn_active_inset  = rgba(0,0,0,0.2)
+# drop choices
+dropchoice_bg = #262626
+dropchoice_border = #454545
+dropchoice_sel_color = #2A66D6
+
+# -------------------------------------------------------------------------------
+# HEADER
+# -------------------------------------------------------------------------------
+
+# sr-header-area
+sr_bg                = #333
+sr_color             = #ccc
+sr_hover_color       = #48f
+sr_res_color         = #979797
+
+sr_drop_color        = #aaa
+sr_drop_hover_bg     = #59f
+sr_drop_hover_color  = #fff
+
+# header
+header_border_bottom = #1c1c1c
+
+# header-bottom-right (hbr)
+hbr_bg           = transparent
+hbr_color        = #777
+hbr_hover_color  = #fff
+hbr_user_a_bg    = $common_bg$
+hbr_res_acctswitcher_arrow_color = #666
+
+# tab menu (tm)
+tm_a_color           = #999
+tm_a_hoversel_color  = #48f
+tm_a_tooltip_bg      = rgba(166,166,166,0.34)
+tm_a_tooltip_color   = #fff
+
+# -------------------------------------------------------------------------------
+# COMMENT AREA MENUS (CA)
+# -------------------------------------------------------------------------------
+
+# common bg for panestack title, menuarea, top usertext editor, gold visits box
+ca_common_bg = $common_bg$
+ca_menuarea_bg = #2d3035
+
+# contest mode infobar
+ca_contest_infobar_bg      = #48f
+ca_contest_infobar_border  = #2A66D6
+ca_contest_infobar_color   = rgba(255,255,255,0.85)
+
+# comments visits box
+ca_goldaccent_bg            = #2b2e33
+ca_goldaccent_color         = #444
+ca_goldaccent_select_bg     = rgba(255,255,255,0.05)
+ca_goldaccent_select_color  = #ccc
+
+# usertext editor
+ca_editor_textarea_bg     = rgba(255,255,255,0.08)
+ca_editor_textarea_color  = white
+
+# usertext editor submit/cancel buttons
+ca_editor_submit_btn_bg      = #48f
+ca_editor_submit_btn_border  = #2A66D6
+ca_editor_submit_btn_bsd     = #669BFF
+
+ca_editor_cancel_btn_bg      = rgba(255,255,255,0.14)
+ca_editor_cancel_btn_border  = rgba(255,255,255,0.07)
+ca_editor_cancel_btn_bsd     = rgba(255,255,255,0.15)
+
+# usertext RES editor stuff
+ca_resmd_editbtn_bg              = rgba(255,255,255,0.03)
+ca_resmd_commentingas_color      = rgba(255,255,255,0.3)
+ca_resmd_commentingasuser_color  = #2A66D6
+
+ca_bottom_area_color           = #555
+ca_bottom_area_tb_macro_bg     = rgba(255,255,255,0.5)
+ca_bottom_area_tb_macro_color  = white
+
+# -------------------------------------------------------------------------------
+# thing md
+# -------------------------------------------------------------------------------
+
+md_color = #bdc3c7
+md_hr = #e5e5e5
+md_hr_bg = white
+
+md_blockquote_color = #b9bec1
+md_blockquote_border_left = #bdc3c7
+
+md_code_bg = rgba(255,255,255,0.15)
+
+md_a_color          = #48f
+md_a_visited_color  = #8271ff
+
+# -------------------------------------------------------------------------------
+# thing special highlights and listing page misc
+# -------------------------------------------------------------------------------
+
+new_comment_bg = #1F2428
+
+# permalinked comment
+permathing_bg = rgba(230,215,109,0.05)
+permathing_border_top = #f6e69f
+
+# permalinked info bar
+permabar_border_top = #f6e69f
+permabar_bg = rgba(0,0,0,0.5)
+
+# listing page sort menu
+lpmenu_bg      = rgba(0,0,0,.3)
+lpmenu_sprite  = url(%%pokesheet%%) -55px -177px
+
+# -------------------------------------------------------------------------------
+# Thing
+# -------------------------------------------------------------------------------
+
+# common background
+link_bg       = $common_bg$
+entry_bg      = $common_bg$
+entry_border  = $common_bg$
+timestamp_bg  = $common_bg$
+linkflair_bg  = $common_bg$
+
+# link box shadow
+link_bsd      = 0 2px 5px rgba(0,0,0,0.12)
+
+# timestamp edited hover bg
+timestamp_edited_hover_bg = rgba(255,255,255,0.04);
+
+# last clicked border
+link_lastclicked_border   = 1px groove #0082f0
+
+# link title
+link_title_color          = hsla(0,0%,100%,.7)
+link_title_hover_color    = hsla(0,0%,100%,.7)
+link_title_visited_color  = #606060
+
+# link thumbnail
+link_domain_color         = transparent
+
+link_thumbnail_border     = #111
+
+# thing score
+score_unvoted_color   = #ff
+score_liked_color     = #e15a5a
+score_disliked_color  = #598be0
+
+comment_scorebox_bg   = rgba(0,0,0,.3)
+
+# RES user tag
+usertag_color = #ecf0f1
+
+# author
+author_color     = #48f
+submitter_color  = #dd4b39
+moderator_color  = white
+
+# comment expand (the +/-)
+comment_expand_color  = #999
+comment_expand_bg     = transparent
+
+# linkflair colors
+linkflair_image       = #a7565c
+linkflair_media       = #856fa6
+linkflair_discussion  = #76c374
+linkflair_info        = #e6d76d
+linkflair_art         = #E868C1
+linkflair_noob        = #3498DB
+linkflair_rule        = #e74c3c
+linkflair_spoiler     = #E74C3C
+
+# spoiler title hider
+spoileroverlay_bg     = #36393e
+spoileroverlay_color  = #606060
+
+# -------------------------------------------------------------------------------
+# Side
+# -------------------------------------------------------------------------------
+
+side_bg = $common_bg$
+side_md_color = white
+
+side_searchexpando_bg      = #222
+side_searchexpando_border  = #222

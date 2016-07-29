@@ -11,7 +11,7 @@ body.mod-toolbox .tb-general-button, body.mod-toolbox li a.tb-general-button,
 body.mod-toolbox .tb-bracket-button, .RESSubscriptionButton,
 body.mod-toolbox .tb-general-button:hover, body.mod-toolbox li a.tb-general-button:hover {
     background-color: $tb_btn_bg$;
-    border-color: $tb_btn_border_color$;
+    border-color: $tb_btn_border$;
     color: $tb_btn_color$;
     padding: 2px 4px;
 }
@@ -24,7 +24,7 @@ button, input[type="submit"] {
     margin: 3px;
     padding: 0 8px 1px;
     background-color: $defbtn_bg$;
-    border: 1px solid $defbtn_border_color$;
+    border: 1px solid $defbtn_border$;
     border-radius: 2px;
     
     color: white;
@@ -34,7 +34,7 @@ button, input[type="submit"] {
     
     line-height: 26px;
     outline: none !important;
-    box-shadow: inset 0 1px 0 $defbtn_shadow_color$;
+    box-shadow: inset 0 1px 0 $defbtn_bsd_color$;
 }
 
 button:hover, input[type="submit"]:hover {
@@ -42,7 +42,7 @@ button:hover, input[type="submit"]:hover {
 }
 
 button:active, input[type="submit"]:active {
-    box-shadow: inset 0 2px 4px $defbtn_active_inset$;
+    box-shadow: inset 0 2px 4px $defbtn_active_bsd$;
 }
 
 /********************************************************************************
@@ -51,46 +51,51 @@ button:active, input[type="submit"]:active {
 
 #sr-header-area {
     height: 18px;
-    background-color: #333;
-    border-bottom: 1px solid #333;
+    background-color: $sr_bg$;
+    border-bottom: 1px solid $sr_bg$;
 }
 
 #sr-header-area a, .sr-bar .separator {
-    color: #CCC;
+    color: $sr_color$;
 }
 #sr-header-area a:hover {
-    color: #48f;
+    color: $sr_hover_color$;
 }
 
 #sr-more-link {
     position: absolute;
-    background-color: #333;
-    color: #CCC;
+    background-color: $sr_bg$;
+    color: $sr_color$;
 }
 
 /* drop choices */
 #sr-header-area .width-clip .dropdown.srdrop .selected.title {
-    color: #CCC;
+    color: $sr_color$;
     font-size: 9px;
     font-weight: 700;
     padding-right: 3px;
 }
 
-#sr-header-area .width-clip .dropdown.srdrop .selected.title:hover { color: #48f; }
+#sr-header-area .width-clip .dropdown.srdrop .selected.title:hover { color: $sr_hover_color$; }
 
 .dropdown.srdrop .selected { background-image: none; }
 .dropdown.srdrop .selected:after { content: "▼";}
 
-#sr-header-area .drop-choices a.choice { color: #aaa !important; }
+#sr-header-area .drop-choices a.choice { color: $sr_drop_color$ !important; }
 #sr-header-area .drop-choices a.choice:hover {
-    background-color: #59f;
-    color: #fff !important;
+    background-color: $sr_drop_hover_bg$;
+    color: $sr_drop_hover_color$ !important;
 }
 
 /* RES things */
-.res #RESShortcutsEditContainer, .res #RESShortcutsSort,.res #RESShortcutsRight,.res #RESShortcutsLeft,.res #RESShortcutsAdd,.res #RESShortcutsTrash {
+.res #RESShortcutsEditContainer,
+.res #RESShortcutsSort,
+.res #RESShortcutsRight,
+.res #RESShortcutsLeft,
+.res #RESShortcutsAdd,
+.res #RESShortcutsTrash {
     background-color: transparent !important;
-    color: #979797 !important;
+    color: $sr_res_color$ !important;
 }
 
 .res:not(.res-nightmode) .commentarea .comment,
@@ -119,7 +124,7 @@ button:active, input[type="submit"]:active {
 #header {
     height: 166px;
     background: url(%%header%%)  no-repeat 50% 19px / cover;
-    border-bottom: 1px solid #1c1c1c;
+    border-bottom: 1px solid $header_border_bottom$;
     overflow: visible !important;
 }
 
@@ -151,6 +156,7 @@ button:active, input[type="submit"]:active {
 
 .pagename a:hover {
     background-position: 0 -80px;
+    text-decoration: none;
 }
 
 /********************************************************************************
@@ -169,17 +175,17 @@ button:active, input[type="submit"]:active {
     padding: 0 15px 0 0;
     line-height: 27px;
     height: 27px;
-    background-color: transparent;
+    background-color: $hbr_bg$;
 }
 
 #header-bottom-right a {
-    color: #777;
+    color: $hbr_color$;
     font-weight: 400;
     font-size: small;
 }
 
 #header-bottom-right a:hover {
-    color: #fff;
+    color: $hbr_hover_color$;
     text-decoration: none;
 }
 
@@ -199,7 +205,7 @@ button:active, input[type="submit"]:active {
 /* userbar
 --------------------------------------------------------------------------------*/
 .res #userbarToggle {
-    color: #777;
+    color: $hbr_color$;
     background-color: transparent !important;
     border: none;
 }
@@ -218,7 +224,7 @@ button:active, input[type="submit"]:active {
 
 /* user a */
 #header-bottom-right .user > a {
-    background: #282b30;
+    background: $hbr_user_a_bg$;
     display: inline-block;
     padding: 0 5px;
     border-radius: 0 0 0 3px;
@@ -245,7 +251,7 @@ button:active, input[type="submit"]:active {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 5px solid #666;
+    border-top: 5px solid $hbr_res_acctswitcher_arrow_color$;
     position: relative;
     top: 5px;
     left: 1px;
@@ -305,13 +311,13 @@ button:active, input[type="submit"]:active {
     padding: 0;
     background-color: transparent !important;
     border: 0 !important;
-    color: #999;
+    color: $tm_a_color$;
     font-size: small;
     margin-right: 1px;
 }
 
 .tabmenu li a:hover, .tabmenu li.selected a {
-    color: #48f;
+    color: $tm_a_hoversel_color$;
     z-index: 100;
 }
 
@@ -364,7 +370,7 @@ body:not(.listing-page) .tabmenu li a {
     position: absolute;
     margin-bottom: 5px;
     font-size: 12px;
-    background: rgba(166,166,166,0.34);
+    background: $tm_a_tooltip_bg$;
     height: 20px;
     line-height: 20px;
     padding: 0 10px;
@@ -376,7 +382,7 @@ body:not(.listing-page) .tabmenu li a {
     transition: bottom 150ms ease, opacity 150ms ease-in;
     bottom: 60%;
     opacity: 0;
-    color: white;
+    color: $tm_a_tooltip_color$;
 }
 .listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):hover:after {
     bottom: 100%;
@@ -406,7 +412,7 @@ body:not(.listing-page) .tabmenu li a {
 * COMMENTS PAGE
 *********************************************************************************/
 
-/* commentarea menus
+/* commentarea menus / menu areas
 --------------------------------------------------------------------------------*/
 
 .commentarea > .sitetable {
@@ -418,7 +424,7 @@ body:not(.listing-page) .tabmenu li a {
 .commentarea > .usertext,
 .commentarea .child > .usertext,
 .gold-accent.comment-visits-box {
-    background: #282b30;
+    background: $ca_common_bg$;
     display: block;
     margin: 0;
     padding: 2px 10px;
@@ -442,7 +448,7 @@ body:not(.listing-page) .tabmenu li a {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #2d3035;
+    background: $ca_menuarea_bg$;
 }
 .commentarea > .menuarea .spacer { margin: 0; }
 
@@ -453,15 +459,15 @@ body:not(.listing-page) .tabmenu li a {
     opacity: 10;
     cursor: pointer;
     
-    color: #2A66D6;
+    color: $dropchoice_sel_color$;
     display: inline-flex;
     align-items: center;
 }
 .menuarea .dropdown.lightdrop .selected:hover { color: #48f; }
 .menuarea .dropdown.lightdrop .selected:after { content: " ≡"; opacity: .5; margin-left: 2px; }
 .drop-choices {
-    background: #262626;
-    border: 1px solid #454545;
+    background: $dropchoice_bg$;
+    border: 1px solid $dropchoice_border$;
 }
 .drop-choices a.choice { padding: 3px 5px 3px 5px; }
 
@@ -479,9 +485,9 @@ body:not(.listing-page) .tabmenu li a {
 .contest-mode.infobar.mellow {
     display: block;
     margin: 10px 0;
-    background-color: #48f;
-    border: 1px solid #2A66D6;
-    color: rgba(255,255,255,0.85);
+    background-color: $ca_contest_infobar_bg$;
+    border: 1px solid $ca_contest_infobar_border$;
+    color: $ca_contest_infobar_color$;
     border-radius: 3px;
 }
 
@@ -490,18 +496,18 @@ body:not(.listing-page) .tabmenu li a {
 .gold-accent.comment-visits-box {
     border-radius: 0;
     width: 100%;
-    background: #2b2e33;
+    background: $ca_goldaccent_bg$;
     max-width: none !important;
     padding: 10px;
     box-sizing: border-box;
-    color: #444;
+    color: $ca_goldaccent_color$;
 }
 .gold-accent.comment-visits-box .title { font-weight: 500; }
 
 select#comment-visits {
-    background: rgba(255,255,255,0.05);
+    background: $ca_goldaccent_select_bg$;
     border: 0;
-    color: #ccc;
+    color: $ca_goldaccent_select_color$;
     padding: 3px 4px;
     margin-left: 5px;
 }
@@ -513,12 +519,12 @@ select#comment-visits {
     padding-top: 10px
 }
 .res .markdownEditor .edit-btn:not(.btn-macro) {
-    background-color: rgba(255,255,255,0.03);
+    background-color: $ca_resmd_editbtn_bg$;
     border: 0;
     border-radius: 0;
 }
-.res .commentingAs { color: rgba(255,255,255,0.3); font-size: 12px; }
-.res .commentingAsUser { color: #2A66D6; }
+.res .commentingAs { color: $ca_resmd_commentingas_color$; font-size: 12px; }
+.res .commentingAsUser { color: $ca_resmd_commentingasuser_color$; }
 
 .commentarea .child > .usertext {
     margin: 5px 0 15px 30px;
@@ -527,9 +533,9 @@ select#comment-visits {
 }
 
 .comments-page .usertext textarea {
-    background: rgba(255,255,255,0.08);
+    background: $ca_editor_textarea_bg$;
     border: 0;
-    color: white;
+    color: $ca_editor_textarea_color$;
     padding: 4px;
 }
 
@@ -556,14 +562,14 @@ select#comment-visits {
 }
 
 .usertext button[type=submit] {
-    background-color: #48f;
-    border-color: #2A66D6;
-    box-shadow: inset 0 1px 0 #669BFF;
+    background-color: $ca_editor_submit_btn_bg$;
+    border-color: $ca_editor_submit_btn_border$;
+    box-shadow: inset 0 1px 0 $ca_editor_submit_btn_bsd$;
 }
 .usertext button.cancel {
-    background-color: rgba(255,255,255,0.14);
-    border-color: rgba(255,255,255,0.07);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);
+    background-color: $ca_editor_cancel_btn_bg$;
+    border-color: $ca_editor_cancel_btn_border$;
+    box-shadow: inset 0 1px 0 $ca_editor_cancel_btn_bsd$;
 }
 
 .usertext .RESBigEditorPop {
@@ -582,20 +588,20 @@ select#comment-visits {
 }
 .usertext a.reddiquette, .usertext .RESBigEditorPop, .usertext .help-toggle {
     display: inline-block;
-    color: #555 !important;
+    color: $ca_bottom_area_color$ !important;
     margin: 5px 0 0 10px;
     line-height: 14px;
     cursor: pointer;
 }
 .usertext .toggle .option.active {
-    color: #555 !important;
+    color: $ca_bottom_area_color$ !important;
 }
 .usertext .RESBigEditorPop { margin-top: 6px; font-size: 11px; }
 
 body.mod-toolbox .tb-action-button.tb-top-macro-select {
     margin-top: 5px;
-    background-color: rgba(255,255,255,0.5) !important;
-    color: white !important;
+    background-color: $ca_bottom_area_tb_macro_bg$ !important;
+    color: $ca_bottom_area_tb_macro_color$ !important;
 }
 
 /* usertext md
@@ -607,7 +613,7 @@ body.mod-toolbox .tb-action-button.tb-top-macro-select {
 
 .thing .md {
     background: transparent !important;
-    color: #bdc3c7;
+    color: $md_color$;
     position: relative;
     left: 5px;
 }
@@ -623,17 +629,16 @@ body.mod-toolbox .tb-action-button.tb-top-macro-select {
 }
 
 .comments-page .comment .md {
-    color: #bdc3c7;
+    color: $md_color$;
     font-weight: 400;
     font-size: 14px;
-    font-family: Arial,sans-serif;
     line-height: 1.35em;
 }
 
 hr {
     border-width: 1px;
     border-style: solid;
-    border-color: #e5e5e5;
+    border-color: $md_hr$;
 }
 
 .comment .md p, .link .md p {
@@ -642,31 +647,31 @@ hr {
 }
 
 .md blockquote, .md del {
-    color: #b9bec1;
+    color: $md_blockquote_color$;
     margin-left: 0;
 }
 .md blockquote {
-    border-left: 2px solid #bdc3c7;
+    border-left: 2px solid $md_blockquote_border_left$;
 }
 
 .md code, .md pre {
-    background-color: rgba(255,255,255,0.15);
+    background-color: $md_code_bg$;
     border: 0;
 }
 
 .thing .md hr {
     height: 1px;
-    background: white;
+    background: $md_hr_bg$;
     margin-right: 10px;
 }
 
 html:not([lang$="sn"]) .md a {
-    color: #48f;
+    color: $md_a_color$;
 }
 html:not([lang$="sn"]) .link .md a:visited,
 html:not([lang$="sn"]) .comment .md a:visited,
 html:not([lang$="sn"]) .comment .md p > a:visited {
-    color: #8271ff;
+    color: $md_a_visited_color$;
 }
 
 
@@ -674,17 +679,17 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 --------------------------------------------------------------------------------*/
 .new-comment .usertext-body {
     border: 0;
-    background: #1F2428;
+    background: $new_comment_bg$;
 }
 
 /* permalinked comment
 --------------------------------------------------------------------------------*/
 .usertext.border .usertext-body {
-    background-color: rgba(230,215,109,0.05);
+    background-color: $permathing_bg$;
 }
 
 .comment-permalink-page .commentarea > .sitetable > .thing > .entry {
-    border-top: 1px solid #f6e69f;
+    border-top: 1px solid $permathing_border_top$;
 }
 
 .comment-permalink-page .commentarea > .infobar {
@@ -692,8 +697,8 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
     border: 0;
     width: 100%;
     box-sizing: border-box;
-    border-top: 2px solid #f6e69f;
-    background: rgba(0,0,0,0.5);
+    border-top: 2px solid $permabar_border_top$;
+    background: $permabar_bg$;
     padding: 10px;
 }
 
@@ -708,7 +713,7 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 }
 
 .listing-page .content > .menuarea .spacer {
-    background: rgba(0,0,0,.3);
+    background: $lpmenu_bg$;
     padding: 0 10px 0 40px;
     line-height: 32px;
     border-radius: 16px;
@@ -721,7 +726,7 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
     position: absolute;
     width: 32px;
     height: 32px;
-    background: url(%%pokesheet%%) -55px -177px;
+    background: $lpmenu_sprite$;
     top: 0;
     left: 0;
 }
@@ -750,15 +755,15 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 /* Link element
 --------------------------------------------------------------------------------*/
 .link {
-    background: #282b30!important;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+    background: $link_bg$ !important;
+    box-shadow: $link_bsd$;
     padding: 8px;
     position: relative;
     margin-top: 30px;
 }
 .link.last-clicked {
     overflow: visible;
-    border: 1px groove #0082f0!important;
+    border: $link_lastclicked_border$ !important;
 }
 
 .rank {
@@ -820,26 +825,23 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 
 /* title - actual link*/
 .link a.title {
-    color: hsla(0,0%,100%,.7);
+    color: $link_title_color$;
     font-size: 19px;
     position: relative;
 }
-.link a.title:hover{color:hsla(0,0%,100%,.7);}
+.link a.title:hover{ color: $link_title_hover_color$; }
+
 /* domain */
 .domain {
-    color: transparent;
+    color: $link_domain_color$;
     position: absolute;
     right: 3px;
     bottom: 3px;
     font-size: 9px;
 }
 
-.domain a {
-    opacity: .4;
-}
-
 .thing .title:visited, .thing.visited .title {
-    color: #606060;
+    color: $link_title_visited_color$;
 }
 
 /* Thumbnails
@@ -850,7 +852,7 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
     height: 70px !important;
     background: url(%%pokesheet%%);
     border-radius: 50%;
-    border: 1px solid #111;
+    border: 1px solid $link_thumbnail_border$;
 }
 
 .thumbnail.self   { background-position: 0 0; }
@@ -868,8 +870,8 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 --------------------------------------------------------------------------------*/
 
 .entry {
-    background: #282b30;
-    border: 1px solid #282b30;
+    background: $entry_bg$;
+    border: 1px solid $entry_border$;
     border-radius: 4px;
     overflow: hidden;
     margin: 17px 0 0 0 !important;
@@ -941,9 +943,9 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 .link .score {
     font-size: 13px;
 }
-.link .score.unvoted { color: #fff; }
-.link .score.likes { color: #e15a5a; }
-.link .score.dislikes { color: #598be0; }
+.link .score.unvoted { color: $score_unvoted_color$; }
+.link .score.likes { color: $score_liked_color$; }
+.link .score.dislikes { color: $score_disliked_color$; }
 
 /* comment score */
 .comment .score {
@@ -958,11 +960,11 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
     overflow: hidden;
 }
 .comment .score.unvoted, .comment .score.likes, .comment .score.dislikes { 
-    color: #fff;
-    background: rgba(0,0,0,.3);
+    color: $score_unvoted_color$;
+    background: $comment_scorebox_bg$;
 }
-.comment .score.likes {color:#e15a5a;}
-.comment .score.dislikes {color:#598be0;}
+.comment .score.likes {color: $score_liked_color$;}
+.comment .score.dislikes {color: $score_disliked_color$;}
 
 /* Vote arrows
 --------------------------------------------------------------------------------*/
@@ -985,7 +987,7 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 
 .tagline time:not(.edited-timestamp) {
     visibility: visible;
-    background: #282b30;
+    background: $timestamp_bg$;
     font-size: 9px;
     font-weight: bold;
     border-radius: 3px;
@@ -1026,14 +1028,14 @@ html:not([lang$="sn"]) .comment .md p > a:visited {
 }
 
 .tagline .edited-timestamp:hover {
-    background: rgba(255,255,255,0.04);
+    background: $timestamp_edited_hover_bg$;
 }
 
 /* Tagline - RES user tag
 --------------------------------------------------------------------------------*/
 .RESUserTag {
     visibility: visible;
-    color: #ecf0f1;
+    color: $usertag_color$;
     border: none !important;
     position: absolute;
     padding: 3px;
@@ -1092,7 +1094,7 @@ html:not([lang$="sn"]) .RESUserTagImage:after {
     font-size: 10px;
     font-weight: bold;
     margin-right: 4px;
-    color: #48f;
+    color: $author_color$;
     white-space: nowrap;
 }
 
@@ -1127,7 +1129,7 @@ html:not([lang$="sn"]) .RESUserTagImage:after {
 }
 
 .comment .author.submitter, .res .thing .tagline .author.submitter, .res .thing .tagline .author.submitter:hover {
-    color: #dd4b39 !important;
+    color: $submitter_color$ !important;
 }
 .author.submitter:after {
     content: ' [S]';
@@ -1140,14 +1142,11 @@ html:not([lang$="sn"]) .RESUserTagImage:after {
 .link .moderator, .comment .moderator,
 .res .thing .tagline .author.moderator,
 .res .thing .tagline .author.submitter.moderator {
-    color: white !important;
+    color: $moderator_color$ !important;
 }
 .author.moderator:after {
     content: ' [M]';
 }
-
-/* css mod color (so people know we're legit since we can't distinguish yet) */
-.comment .author[href$="/kwwxis"] ~ .flair:before { color: #856fa6; font-weight: bold; }
 
 /* admin */
 .author.admin:after { content: ' [A]';}
@@ -1248,8 +1247,8 @@ background-position:-45px -90px;
 
 /* comment show/hide */
 .comment .expand {
-    background-color: transparent;
-    color: #999 !important;
+    background-color: $comment_expand_bg$;
+    color: $comment_expand_color$ !important;
     visibility: visible;
     position: absolute;
     z-index: 5;
@@ -1307,7 +1306,7 @@ background-position:-45px -90px;
     position: absolute!important;
     top: -22px;
     left: 0;
-    background: #282b30;
+    background: $linkflair_bg$;
     border: 0;
     border-radius: 3px;
     min-width: 130px!important;
@@ -1318,30 +1317,30 @@ background-position:-45px -90px;
 }
 
 .linkflair-image .linkflairlabel, .flairselector .linkflair-image .linkflairlabel {
-    color: #a7565c;
+    color: $linkflair_image$;
 }
 .linkflair-media .linkflairlabel, .flairselector .linkflair-media .linkflairlabel {
-    color: #856fa6;
+    color: $linkflair_media$;
 }
 .linkflair-discussion .linkflairlabel, .flairselector .linkflair-discussion .linkflairlabel {  
-    color: #76c374;
+    color: $linkflair_discussion$;
 }
 .linkflair-info .linkflairlabel, .flairselector .linkflair-info .linkflairlabel {  
-    color: #e6d76d;
+    color: $linkflair_info$;
 }
 .linkflair-art .linkflairlabel, .flairselector .linkflair-art .linkflairlabel {
-    color: #E868C1;
+    color: $linkflair_art$;
 }
 .linkflair-noob .linkflairlabel, .flairselector .linkflair-noob .linkflairlabel {
-    color: #3498DB;
+    color: $linkflair_noob$;
 }
 .linkflair-rule .linkflairlabel {
-    color:#e74c3c;
+    color: $linkflair_rule$;
 }
 
 /* spoiler */
 .linkflair-spoiler .linkflairlabel, .flairselector .linkflair-spoiler .linkflairlabel {
-    color: #E74C3C;
+    color: $linkflair_spoiler$;
 }
 
 .linkflair-spoiler a.title {
@@ -1351,12 +1350,12 @@ background-position:-45px -90px;
     content: 'Spoiler - hover to view title';
     display: block;
     position: absolute;
-    background: #36393e;
+    background: $spoileroverlay_bg$;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    color: #606060 !important;
+    color: $spoileroverlay_color$ !important;
     padding: 3px;
     text-transform: initial;
     font-size: 15px;
@@ -1403,14 +1402,14 @@ html:lang(na) .link.linkflair-art {
 *********************************************************************************/
 
 .comments-page .comment {
-    background-color: #333 !important;
-    margin: 0 0 24px 0 !important;
-    padding-top: 2px !important;
+    background-color: transparent !important;
+    margin: 11px 0 24px 0 !important;
+    margin-top: 11px!important;
+    padding-top: 2px!important;
 }
 
 .comments-page .comment .comment {
-    background-color: #333 !important;
-    margin: 9px 0 0 30px !important;
+    margin: 11px 0 0 30px !important;
 }
 
 /* disable some stupid RES stuff */
@@ -1472,7 +1471,7 @@ html:lang(na) .link.linkflair-art {
 /* Element
 --------------------------------------------------------------------------------*/
 .side {
-    background-color: #282b30;
+    background-color: $side_bg$;
     margin-top: 75px;
     position: relative;
     padding-top: 735px;
@@ -1484,7 +1483,7 @@ html:lang(na) .link.linkflair-art {
     top: 15px;
 }
 
-.side .md, .side .md * { color: white; }
+.side .md, .side .md * { color: $side_md_color$; }
 
 .side .md {
     margin: 7px;
@@ -1570,8 +1569,8 @@ html:lang(na) .link.linkflair-art {
     left: 0;
     right: 0;
     z-index: 999;
-    background: #222;
-    border-color: #222;
+    background: $side_searchexpando_bg$;
+    border-color: $side_searchexpando_border$;
 }
 
 /* Titlebox stuff
@@ -1942,8 +1941,8 @@ html[lang$="sn"] .side .md h1:first-of-type a:last-child {
 
 /* pokemon go teams
 --------------------------------------------------------------------------------*/
-.side .md h4:first-of-type,
-.side .md h4:first-of-type + ul {
+.side .md > h4:first-of-type,
+.side .md > h4:first-of-type + ul {
     display: none; /* HIDDEN FOR NOW */
 }
 
@@ -2809,323 +2808,6 @@ body.res.mod-toolbox.combined-search-page .tabmenu + .tabmenu {
     box-shadow: inset 0 1px 0 #669BFF;
 }
 
-/********************************************************************************
-* DAY MODE / SUN MODE
-*********************************************************************************/
-
-html[lang$="sn"] body {
-    background: #f2f3f4;
-}
-
-html[lang$="sn"] .side {
-    border: 1px solid #e3e3e3;
-}
-
-html[lang$="sn"] .child,
-html[lang$="sn"] .child > .sitetable,
-html[lang$="sn"] .comments-page .comment,
-html[lang$="sn"] .comments-page .comment .comment { background: transparent !important; }
-
-html[lang$="sn"] .RESUserTagImage:after {
-    background-image: none !important;
-}
-
-html[lang$="sn"] .md code, html[lang$="sn"] .md pre {
-    background: rgba(0,0,0,0.08);
-}
-
-html[lang$="sn"] .message-count {
-    background: #FF7500;
-    color: white !important;
-}
-
-/* thing */
-html[lang$="sn"] .entry,
-html[lang$="sn"] .thing.link,
-html[lang$="sn"] .side,
-html[lang$="sn"] #header-bottom-right .user > a,
-html[lang$="sn"] .sidecontentbox,
-html[lang$="sn"] .sidecontentbox .content,
-html[lang$="sn"] .icon-menu a,
-html[lang$="sn"] .side .md h5,
-html[lang$="sn"] .side .md h5+ul,
-html[lang$="sn"] .linkinfo .shortlink input,
-html[lang$="sn"] .titlebox form.toggle,
-html[lang$="sn"] .titlebox .leavemoderator,
-html[lang$="sn"] .titlebox .leavecontributor-button,
-html[lang$="sn"] .side #searchexpando,
-html[lang$="sn"] #previoussearch,
-html[lang$="sn"] .combined-search-page #previoussearch,
-html[lang$="sn"] .combined-search-page .search-result-group,
-html[lang$="sn"] .post-sharing,
-html[lang$="sn"] .subreddit-report-form {
-    background: white !important;
-    color: #333;
-    border-color: #cecdcd!important;
-}
-html[lang$="sn"] .flair:before,
-html[lang$="sn"] .gadget .reddit-entry a,
-html[lang$="sn"] .link .score.unvoted { color: #333; }
-html[lang$="sn"] .link { border: 1px solid #e3e3e3; box-shadow: none; }
-html[lang$="sn"] .link .entry { border-color: transparent !important; }
-html[lang$="sn"] .comment .entry,
-html[lang$="sn"] .linkinfo {border: 1px solid #e3e3e3 !important;}
-
-html[lang$="sn"] .side .md>blockquote:nth-of-type(2) h4 a,
-html[lang$="sn"] .side .md>blockquote:nth-of-type(2) h2 a {
-    background: white;
-    box-shadow: none;
-}
-
-html[lang$="sn"] .side .md a[href*="flairbot"],
-html[lang$="sn"] .side .md>h2+ul li a,
-.sidecontentbox .helplink ~ .content li.more a,
-.sidecontentbox a.helplink {
-    background: white;
-    box-shadow: none;
-    color: #333;
-    border-color: #e3e3e3;
-}
-
-html[lang$="sn"] .new-comment .usertext-body {
-    background-color: #e5efff;
-}
-
-html[lang$="sn"] .drop-choices,
-html[lang$="sn"] .side .md>p:first-of-type {
-    background: white;
-    border: 1px solid #e3e3e3;
-    color: #222;
-}
-
-html[lang$="sn"] .thing .md hr {
-    background: rgba(0,0,0,0.14);
-}
-
-/* tagline stuff */
-html[lang$="sn"] .tagline time:not(.edited-timestamp),
-html[lang$="sn"] .comment .score.unvoted,
-html[lang$="sn"] .comment .score.likes,
-html[lang$="sn"] .comment .score.dislikes {
-    color: #333;
-    background: white;
-    border: 1px solid #e3e3e3;
-    padding-left: 2px;
-}
-
-html[lang$="sn"] .tagline time {
-    right: 0;
-    top: -25px;
-}
-html[lang$="sn"] .linkflairlabel {
-    color: #333;
-    background: white;
-    border: 1px solid #e3e3e3;
-    padding-left: 2px;
-    border-bottom-width: 2px;
-    left: -1px;
-    top: -25px;
-}
-html[lang$="sn"] .tagline time:not(.edited-timestamp):before { display: none; }
-html[lang$="sn"] .tagline time:not(.edited-timestamp):after {border-top-color: #e3e3e3;}
-
-html[lang$="sn"] .link a.title {
-    color: rgba(0,0,0,0.8);
-}
-html[lang$="sn"] .thing .title:visited,
-html[lang$="sn"] .thing.visited .title,
-html[lang$="sn"] .link a.title:visited  {
-    color: #423d56;
-}
-
-/* md */
-html[lang$="sn"] .side .md,
-html[lang$="sn"] .side .md *,
-html[lang$="sn"] .md,
-html[lang$="sn"] .md * {
-    color: #222;
-}
-
-/* author panel */
-html[lang$="sn"] .thing .author,
-html[lang$="sn"] .side .tagline .author {
-    background-position: 0 -36px;
-}
-
-/* side */
-html[lang$="sn"] .sidecontentbox {
-    border-color: #eee;
-}
-
-html[lang$="sn"] .gadget .reddit-entry { border: 0; background: #fafafa !important; }
-
-/* footer */
-html[lang$="sn"] .footer .col li.title { color: #555 }
-html[lang$="sn"] .footer .col li:not(.title) a { color: #555 }
-html[lang$="sn"] .bottommenu,
-html[lang$="sn"] .bottommenu a { color: #777; }
-
-
-/* comment menus and usertext */
-html[lang$="sn"] .commentarea>.panestack-title,
-html[lang$="sn"] .commentarea>.menuarea,
-html[lang$="sn"] .commentarea>.usertext,
-html[lang$="sn"] .commentarea .child>.usertext,
-html[lang$="sn"] .gold-accent.comment-visits-box,
-html[lang$="sn"] .comment-permalink-page .commentarea>.infobar {
-    background: white;
-    border-left: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
-}
-html[lang$="sn"] .infobar { box-shadow: none; }
-html[lang$="sn"] .commentarea>.menuarea { background: rgba(0,0,0,0.01); }
-html[lang$="sn"] .commentarea>.panestack-title,
-html[lang$="sn"] .comment-permalink-page .commentarea>.menuarea { border-top: 1px solid #e3e3e3; }
-html[lang$="sn"] .commentarea .child>.usertext,
-html[lang$="sn"] .gold-accent.comment-visits-box,
-html[lang$="sn"] .comment-permalink-page .commentarea>.infobar { border-bottom: 1px solid #e3e3e3 }
-html[lang$="sn"] select#comment-visits,
-html[lang$="sn"] body.mod-toolbox .tb-action-button.tb-top-macro-select {
-    background: rgba(0,0,0,0.05) !important; color: #555 !important; }
-
-html[lang$="sn"] .commentarea > .usertext textarea,
-html[lang$="sn"] .comments-page .usertext textarea,
-html[lang$="sn"] .combined-search-page #search input[type=text] {
-    background: white;
-    border: 1px solid #c8ccd0 !important;
-    color: #333 !important;
-}
-
-html[lang$="sn"] .panestack-title .title,
-html[lang$="sn"].res .commentingAs,
-html[lang$="sn"] .titlebox .subscribers {
-    color: #333;
-}
-
-html[lang$="sn"] .side .md>h6,
-html[lang$="sn"] .side .md>h2,
-html[lang$="sn"] .side .md>h4:first-of-type,
-html[lang$="sn"] .side .md > h4 > a,
-html[lang$="sn"] #sr-header-area a {
-    background: transparent;
-    color: #333;
-}
-
-html[lang$="sn"] .side .md>h6:after,
-html[lang$="sn"] .side .md>h2:after,
-html[lang$="sn"] .side .md>h4:first-of-type:after,
-html[lang$="sn"] .side .md > h4 > a:after,
-html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle:after,
-html[lang$="sn"] .titlebox form.toggle.flairtoggle:after {
-    content: '';
-    background: url(%%sidepattern2%%) no-repeat -5px 1px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: 0.08;
-    z-index: 0;
-}
-
-html[lang$="sn"] .side .md h3 {
-    border-bottom-color: #e3e3e3;
-}
-html[lang$="sn"] .side .md h3+ul+ol:after {
-    background: #e3e3e3;
-}
-html[lang$="sn"] .side .md h3,
-html[lang$="sn"] .side .md h3+ul,
-html[lang$="sn"] .side .md h3+ul+ol {
-    border-left-color: #e3e3e3;
-}
-html[lang$="sn"] .side .md h3+ul+ol>li:before {
-    background: white;
-    border-color: #e3e3e3;
-    font-weight: bold;
-    font-size: 13px;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    left: -36px;
-    top: 3px;
-}
-
-html[lang$="sn"] .titlebox .users-online,
-html[lang$="sn"] .toggle.fancy-toggle-button .option.active,
-html[lang$="sn"].res .res-fancy-toggle-button {
-    background: #f0f0f0;
-    color: #333;
-}
-
-html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle,
-html[lang$="sn"] .titlebox form.toggle.flairtoggle {
-    color: #333;
-}
-html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle:after,
-html[lang$="sn"] .titlebox form.toggle.flairtoggle:after {
-    background: url(%%sidepattern1%%) repeat;
-}
-html[lang$="sn"] .side .md h6+blockquote p a { background: #f3f3f3 !important; }
-
-/* top announcements */
-html[lang$="sn"] .side .md>blockquote:first-of-type>p {
-    background: #fafafa;
-    color: #333;
-    border-radius: 16px;
-}
-html[lang$="sn"] .side .md>blockquote:first-of-type>p>a strong {color: #333}
-
-html[lang$="sn"] .listing-page .content>.menuarea .spacer {
-    background: white;
-    border: 1px solid #e3e3e3;
-}
-
-html[lang$="sn"] .side .md > h6:after,
-html[lang$="sn"] .side .md > h2:after,
-html[lang$="sn"] .side .md > h4:first-of-type:after,
-html[lang$="sn"] .side .md > h4 > a:after,
-html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle:after,
-html[lang$="sn"] .titlebox form.toggle.flairtoggle:after {
-    pointer-events: none;
-}
-html[lang$="sn"] .titlebox form.toggle.res-sr-style-toggle *, html[lang$="sn"] .titlebox form.toggle.flairtoggle * {
-    position: relative;
-    z-index: 5;
-}
-
-html[lang$="sn"] #sr-header-area {
-    background: white !important;
-    border-bottom: 1px solid #e3e3e3;
-}
-html[lang$="sn"] #header {
-    background-image: url(%%daymodeheader%%);
-    border-bottom-color: #fff;
-}
-html[lang$="sn"] .listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):before {
-    opacity: 1;
-}
-
-/* sun/moon switch day mode */
-html[lang$="sn"] .side .md h1:first-of-type {
-    background: #f0f0f0;
-}
-
-html[lang$="sn"] .side .md h1:first-of-type a {
-    color: #555;
-}
-
-html[lang$="sn"] .side .md h1:first-of-type a:last-child {
-    border-left-color: #dedede;
-}
-
-html[lang$="sn"] .link.linkflair-spoiler a.title:before {
-    background: #eaeaea;
-}
-
-html[lang$="sn"] .side .md table td, html[lang$="sn"] .side .md table td a {
-    color: #555;
-}
 
 /********************************************************************************
 *                                ATTENTION!!!
