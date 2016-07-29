@@ -15,6 +15,10 @@ def run():
     with open('dist.css', 'wb') as outfile:
         with open('poketheme.css', 'rb') as readfile:
             shutil.copyfileobj(readfile, outfile)
+        with open('suntheme.css', 'rb') as readfile:
+            shutil.copyfileobj(readfile, outfile)
+        with open('moontheme.css', 'rb') as readfile:
+            shutil.copyfileobj(readfile, outfile)
                 
     # Compress
     with open('dist.css', 'r+') as outfile:
