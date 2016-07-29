@@ -1,7 +1,8 @@
 /********************************************************************************
 * BODY
 *********************************************************************************/
-body { background: $body_bg_color$; color: $body_color$; font-family: $body_font$ }
+body { background: #36393e; color: #bdc3c7;
+font-family: Verdana, Geneva, sans-serif; }
 
 body > .content { margin-right: 335px; margin-left: 20px;}
 .sheets {margin-right:0;}
@@ -10,9 +11,9 @@ body > .content { margin-right: 335px; margin-left: 20px;}
 body.mod-toolbox .tb-general-button, body.mod-toolbox li a.tb-general-button,
 body.mod-toolbox .tb-bracket-button, .RESSubscriptionButton,
 body.mod-toolbox .tb-general-button:hover, body.mod-toolbox li a.tb-general-button:hover {
-    background-color: $tb_btn_bg$;
-    border-color: $tb_btn_border_color$;
-    color: $tb_btn_color$;
+    background-color: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.1);
+    color: #ccc;
     padding: 2px 4px;
 }
 
@@ -23,8 +24,8 @@ button, input[type="submit"] {
     display: inline-block;
     margin: 3px;
     padding: 0 8px 1px;
-    background-color: $defbtn_bg$;
-    border: 1px solid $defbtn_border_color$;
+    background-color: #48f;
+    border: 1px solid #2A66D6;
     border-radius: 2px;
     
     color: white;
@@ -34,15 +35,15 @@ button, input[type="submit"] {
     
     line-height: 26px;
     outline: none !important;
-    box-shadow: inset 0 1px 0 $defbtn_shadow_color$;
+    box-shadow: inset 0 1px 0 #669BFF;
 }
 
 button:hover, input[type="submit"]:hover {
-    background-color: $defbtn_hover_bg$;
+    background-color: #5d99ff;
 }
 
 button:active, input[type="submit"]:active {
-    box-shadow: inset 0 2px 4px $defbtn_active_inset$;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
 }
 
 /********************************************************************************
