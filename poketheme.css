@@ -1105,9 +1105,6 @@ background-position:-83px -14px;
 background-position:-119px -14px;
 }
 /*---SafariBalls---*/
-.author[href$="/technophonix1"] ~ .flair:after{
-background-position:-152px -14px;
-}
 /*---Repeatballs---*/
 .author[href$="/RepeatBall"] ~ .flair:after{
 background-position:-187px -14px;
@@ -1150,6 +1147,14 @@ background-position:-9px -90px;
 /*---Dreamball---*/
 .author[href$="/foggiewindow"]~ .flair:after, .author[href$="/Starrodkirby86"]~ .flair:after, .author[href$="/KaSlaps"]~ .flair:after, .author[href$="/chronafox"]~ .flair:after, .author[href$="/castoweary"] ~ .flair:after{
 background-position:-45px -90px;
+}
+/*---new mods icon---*/
+.author[href$="/tennisace0227"] ~ .flair:after,.author[href$="/veshneresis"] ~ .flair:after,.author[href$="/Zloggt"] ~ .flair:after,.author[href$="/mlahk7"] ~ .flair:after,.author[href$="/mockturne"] ~ .flair:after,.author[href$="/davidluiszhair"] ~ .flair:after,.author[href$="/Thief-Noctis"] ~ .flair:after,.author[href$="/jaksida"] ~ .flair:after,.author[href$="/trozz1548"] ~ .flair:after,.author[href$="/ngbeslhang"] ~ .flair:after,.author[href$="/shinylinoone"] ~ .flair:after{
+    background-position: -83px -128px;
+}
+/*---technophonix stone---*/
+.author[href$="/technophonix1"] ~ .flair:after{
+    background-position: -119px -128px;
 }
 /* Tagline misc
 --------------------------------------------------------------------------------*/
