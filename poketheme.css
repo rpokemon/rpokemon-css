@@ -1156,6 +1156,10 @@ background-position:-45px -90px;
 .author[href$="/technophonix1"] ~ .flair:after{
     background-position: -119px -128px;
 }
+/*---bigsloth flair---*/
+.author[href$="/bigslothonmyface"] ~ .flair:after{
+    background-position:-154px -128px!important;
+}
 /* Tagline misc
 --------------------------------------------------------------------------------*/
 
