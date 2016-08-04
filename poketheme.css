@@ -776,6 +776,7 @@ body.mod-toolbox .tb-action-button.tb-top-macro-select {
 .thumbnail.default{ background-position: -0 -0; }
 .thumbnail.nsfw   { background-position: -70px 0; }
 .linkflair-spoiler .thumbnail { background-position: -70px -70px; }
+.linkflair-rotation .thumbnail{background-position: 0px 0px;}
 .stickied .thumbnail.self { background-position: -140px 0; }
 .linkflair-noob .thumbnail.default, .linkflair-noob .thumbnail.self {
     background-position: -140px -70px!important;
@@ -1267,7 +1268,10 @@ background-position:-45px -90px;
 .linkflair-spoiler .linkflairlabel, .flairselector .linkflair-spoiler .linkflairlabel {
     color: #E74C3C;
 }
-
+.linkflair-rotation .linkflairlabel, .flairselector .linkflair-rotation .linkflairlabel{
+    color: #76c374;
+    border-bottom-color: #76c374;
+}
 .linkflair-spoiler a.title {
     min-width: 215px;
 }
