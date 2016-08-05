@@ -1298,7 +1298,24 @@ background-position:-45px -90px;
 html:lang(ns) .link.linkflair-spoiler a.title:before {
     display: none;
 }
+/*intext spoilers*/
+a[href$="#spoiler"] {
+    color: #515151!important;;
+    background-color: #515151;
+    transition: ease-in-out 0.15s;
+    transition: color 0.2s ease;
+}
 
+a[href$="#spoiler"]:hover {
+    transition: ease-in-out 0.5s;
+    color: white!important;
+}
+
+a[href$="#spoiler"]:before {
+    content:"SPOILER: ";
+    text-shadow: none;
+    color: white;
+} 
 /* filters */
 
 html:lang(im) .link:not(.linkflair-image),
