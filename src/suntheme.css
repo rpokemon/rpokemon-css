@@ -2,16 +2,6 @@ body {
     background: #f2f3f4;
 }
 
-/* top announcements
---------------------------------------------------------------------------------*/
-.side .md > blockquote:first-of-type > p {
-    background: #fafafa;
-    color: #333;
-    border-radius: 16px;
-    border: 1px solid #e0e0e0;
-}
-.side .md > blockquote:first-of-type > p > a strong {color: #333}
-
 /* header
 --------------------------------------------------------------------------------*/
 #sr-header-area {
@@ -50,7 +40,6 @@ html:not([lang$="nm"]) .listing-page #header-bottom-left .tabmenu li a:not([href
 .entry,
 .thing.link,
 .side,
-#header-bottom-right .user > a,
 .sidecontentbox,
 .sidecontentbox .content,
 .icon-menu a,
@@ -95,33 +84,6 @@ html:not([lang$="nm"]) .listing-page #header-bottom-left .tabmenu li a:not([href
 .entry .buttons .first:before {
     display: none;
 }
-
-/* tagline stuff - timestamp, comment votes, linkflairlabel
---------------------------------------------------------------------------------*/
-.tagline time:not(.edited-timestamp),
-.comment .score.unvoted,
-.comment .score.likes,
-.comment .score.dislikes {
-    color: #333;
-    background: white;
-    border: 1px solid #cecdcd;
-    padding-left: 2px;
-}
-
-.tagline time:not(.edited-timestamp) {
-    top: -25px;
-}
-.linkflairlabel {
-    color: #333;
-    background: white;
-    border: 1px solid #cecdcd;
-    padding-left: 2px;
-    border-bottom-width: 2px;
-    left: -1px;
-    top: -25px;
-}
-.tagline time:not(.edited-timestamp):before { display: none; }
-.tagline time:not(.edited-timestamp):after {border-top-color: #cecdcd;}
 
 /* thing title
 --------------------------------------------------------------------------------*/

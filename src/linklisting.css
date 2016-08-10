@@ -1,0 +1,42 @@
+
+/********************************************************************************
+* LISTING PAGE MISC
+*********************************************************************************/
+.listing-page .content > .menuarea {
+    border: 0;
+    margin-bottom: 30px;
+    padding-left: 3px;
+    overflow: visible;
+}
+
+.listing-page .content > .menuarea .spacer {
+    background: rgba(0,0,0,.3);
+    padding: 0 10px 0 40px;
+    line-height: 32px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.listing-page .content > .menuarea .spacer:before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url(%%pokesheet%%) -55px -177px;
+    top: 0;
+    left: 0;
+}
+
+/* ads */
+.organic-listing {
+    background: transparent !important;
+    border: 0;
+    margin-bottom: 50px;
+}
+.link.promotedlink {
+    overflow: visible;
+}
+.link.promotedlink p.title {
+    margin-left: 5px;
+}

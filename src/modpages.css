@@ -1,0 +1,102 @@
+
+/********************************************************************************
+* FIX STUFF - MOD TOOLS / MOD PAGES & THINGS
+*********************************************************************************/
+.mod-toolbox .menuarea.modtools {
+    margin: 0 !important;
+}
+.mod-toolbox .menuarea.modtools a.tb-general-button {
+    background: #d4d4d4;
+}
+.menuarea.modtools a.pretty-button {
+    margin-left: 1px;
+}
+
+.thing.comment > input[type=checkbox] {
+    position: absolute;
+    z-index: 5;
+    margin-left: -14px !important;
+    margin-top: -3px !important;
+}
+
+/* modmail page
+--------------------------------------------------------------------------------*/
+.moderator.messages-page a.author {
+    background: 0 !important;
+    height: auto !important;
+    width: auto !important;
+    color: #228822!important;
+}
+.moderator.messages-page .tagline {visibility: visible !important;height: auto !important;margin-bottom: 10px;}
+.moderator.messages-page .tagline * { position: static !important;  padding: 0 !important; width: auto !important;background: transparent !important; }
+.moderator.messages-page .flair {display:none;}
+.moderator.messages-page .RESUserTagImage:after { margin: 0; }
+.sitetable {margin-top:10px;}
+.subreddit-rules-page:before {top: 52px;}
+.subreddit-rules-page {padding-top: 51px;}
+
+/* flair selector
+--------------------------------------------------------------------------------*/
+.flairselector {
+    box-shadow: 1px 1px 10px #000;
+    border: 1px solid #353535 !important;
+}
+.flairselector h2{background: rgba(255,255,255,0.08);}
+.flairselector ul {
+}
+.flairselector .linkflairlabel {
+    position: static !important;
+}
+.flairselector a.title {
+    display: none;
+}
+.flairselector li {
+    padding: 4px 5px;
+    margin-top: 2px;
+}
+.flairselector li:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+.flairselector .flairselection .linkflairlabel {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* flair page
+--------------------------------------------------------------------------------*/
+.flaircell {
+    margin-right: 0;
+    margin-left: 4ex;
+}
+.flaircell .linkflairlabel {
+    position: static !important;
+    visibility: visible !important;
+}
+
+/* flair grant */
+.flairgrant .tagline, .flairrow .tagline {
+    visibility: visible;
+    position: relative;
+    width: 45ex;
+    padding-left: 20px;
+}
+.flairgrant .tagline .flair, .flairrow .tagline .flair {
+    left: -23px;
+    top: -0;
+}
+.flairgrant .RESUserTag, .flairrow .RESUserTag {
+    position: static !important;
+    margin: 0px;
+    padding: 0;
+}
+.flairgrant .RESUserTag .userTagLink, .flairrow .RESUserTag .userTagLink {
+    margin-top: 5px;
+    margin-bottom: -8px;
+}
+
+/* metrics expand list
+--------------------------------------------------------------------------------*/
+#tb-metrics-expand-list {
+    right: 10px !important;
+    left: auto !important;
+}

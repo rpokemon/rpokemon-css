@@ -12,16 +12,6 @@ html[lang$="nm"] .comment .md p > a:visited {
     color: #8271ff;
 }
 
-/* top announcements
---------------------------------------------------------------------------------*/
-html[lang$="nm"] .side .md>blockquote:first-of-type>p {
-    background: #282b30;
-    color: #aaa;
-    border-radius: 16px;
-    border: 0;
-}
-html[lang$="nm"] .side .md>blockquote:first-of-type>p>a strong {color: #aaa}
-
 /* header
 --------------------------------------------------------------------------------*/
 html[lang$="nm"] #sr-header-area {
@@ -53,7 +43,6 @@ html[lang$="nm"] .res #userbarToggle {
 html[lang$="nm"] .entry,
 html[lang$="nm"] .thing.link,
 html[lang$="nm"] .side,
-html[lang$="nm"] #header-bottom-right .user > a,
 html[lang$="nm"] .sidecontentbox,
 html[lang$="nm"] .sidecontentbox .content,
 html[lang$="nm"] .icon-menu a,
@@ -103,32 +92,14 @@ html[lang$="nm"] .entry .buttons .first:before {
     display: inline-block;
 }
 
-/* tagline stuff - timestamp, comment votes, linkflairlabel
+/* tagline stuff
 --------------------------------------------------------------------------------*/
 html[lang$="nm"] .tagline time:not(.edited-timestamp),
 html[lang$="nm"] .comment .score.unvoted,
 html[lang$="nm"] .comment .score.likes,
 html[lang$="nm"] .comment .score.dislikes {
     color: #aaa;
-    background: #282b30;
-    border: 1px solid transparent;
-    padding-left: 2px;
 }
-
-html[lang$="nm"] .tagline time:not(.edited-timestamp) {
-    top: -25px;
-}
-html[lang$="nm"] .linkflairlabel {
-    color: #aaa;
-    background: #282b30;
-    border: 1px solid transparent;
-    padding-left: 2px;
-    border-bottom-width: 2px;
-    left: -1px;
-    top: -25px;
-}
-html[lang$="nm"] .tagline time:not(.edited-timestamp):before { display: none; }
-html[lang$="nm"] .tagline time:not(.edited-timestamp):after {border-top-color: transparent;}
 
 /* thing title
 --------------------------------------------------------------------------------*/

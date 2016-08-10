@@ -1,0 +1,598 @@
+
+/********************************************************************************
+* THING - LINK AND COMMENTS
+*********************************************************************************/
+
+.thing {
+    overflow: visible !important;
+}
+
+/* Link element
+--------------------------------------------------------------------------------*/
+.link {
+    background: #282b30!important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+    padding: 8px 8px 0 57px;
+    padding-top: 8px;
+    position: relative;
+    margin-top: 0;
+}
+.link.last-clicked {
+    overflow: visible;
+    border: 1px groove #0082f0!important;
+}
+
+.rank {
+    display: none;
+}
+
+/* spam
+--------------------------------------------------------------------------------*/
+.thing.spam {
+    background: transparent;
+}
+.thing.spam > .entry { border: 3px solid #E74C3C !important; }
+.thing.spam > .entry .buttons li[title*="removed"] { color: #E74C3C; padding-bottom: 4px;}
+.thing.spam > .child, .message.spam > .child { background-color: transparent; }
+
+/* Tagline container element
+--------------------------------------------------------------------------------*/
+.tagline, .comment .tagline {
+    display: -webkit-flex !important;
+    display: flex !important;
+    justify-content: flex-end;
+    font-size: 0;
+    height: 20px;
+    width: 100%;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tagline > * {
+    font-size: x-small;
+}
+
+.comment .tagline {
+    position: static;
+    margin-bottom: -15px;
+}
+
+/* RES Active Thing
+--------------------------------------------------------------------------------*/
+
+.res .link .RES-keyNav-activeElement {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+.res .RES-keyNav-activeElement .md-container {
+    background: transparent !important;
+}
+
+/* Link Title
+--------------------------------------------------------------------------------*/
+.link p.title {
+    font-size: 18px;
+    margin: 10px 0 5px 10px;
+}
+
+/* self posts in comment pages don't have expandos */
+.comments-page:not(.comment-permalink-page) .link.self p.title {
+    margin-left: 5px;
+}
+
+/* title - actual link*/
+.link a.title {
+    font-size: 18px;
+    font-size: 19px;
+    position: relative;
+    font-family: Segoe,"Segoe UI",Optima,Arial,sans-serif;
+}
+
+/* domain */
+.domain {
+    color: transparent;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    font-size: 9px;
+}
+
+.domain a {
+    opacity: .4;
+}
+
+.thing .title:visited, .thing.visited .title {
+    color: #606060;
+}
+
+/* Thumbnails
+--------------------------------------------------------------------------------*/
+
+.thumbnail, .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, .linkflair-spoiler .thumbnail {
+    width:  70px;
+    height: 70px !important;
+    background: url(%%pokesheet%%);
+    border-radius: 50%;
+    border: 1px solid #111;
+    position: relative;
+}
+
+.thumbnail.self   { background-position: 0 0; }
+.thumbnail.default{ background-position: -0 -0; }
+.thumbnail.nsfw   { background-position: -70px 0; }
+.linkflair-spoiler .thumbnail { background-position: -70px -70px; }
+.linkflair-spoiler .thumbnail img { display: none; }
+.stickied .thumbnail.self { background-position: -140px 0; }
+.linkflair-rotation .thumbnail, .linkflair-rotation .thumbnail.self { background: url(%%extrasheet%%) 0 0; }
+.linkflair-noob .thumbnail.default, .linkflair-noob .thumbnail.self {
+    background-position: -140px -70px!important;
+}
+
+.thumbnail img { width: 100%; height: 100%; }
+
+/* entry
+--------------------------------------------------------------------------------*/
+
+.entry {
+    background: #282b30;
+    border: 1px solid #282b30;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 17px 0 0 0 !important;
+}
+
+.comment .entry {
+    overflow: visible;
+    padding-left: 70px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* entry buttons
+--------------------------------------------------------------------------------*/
+
+.thing:hover .buttons, .entry .buttons .first { visibility: visible; }
+
+/* midcol element
+--------------------------------------------------------------------------------*/
+.midcol {
+    position: relative;
+    left: -3px;
+    top: 0;
+    text-align: center;
+    width: 46px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.link .midcol {
+    background: rgba(0,0,0,0.02);
+    margin-bottom: 6px;
+    border-right: 1px solid #ececec;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.comment .midcol {
+    margin: 0 10px;
+    top: 25px;
+    width: 36px !important;
+    left: 15px;
+    z-index: 5;
+}
+
+/* Score
+--------------------------------------------------------------------------------*/
+
+.score {
+    display: none;
+}
+
+.likes .score.likes,
+.dislikes .score.dislikes,
+.unvoted .score.unvoted {
+    display: block;
+    position: relative;
+    float: left;
+    font-weight: bold;
+    border-radius: 3px;
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+/* link score */
+.link .score {
+    font-size: 13px;
+}
+.link .score.unvoted { color: #fff; }
+.link .score.likes { color: #e15a5a; }
+.link .score.dislikes { color: #598be0; }
+
+/* comment score */
+.comment .score {
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    top: -25px;
+    left: 0;
+    display: none;
+    word-spacing: 100px;
+    width: 60px;
+    position: absolute !important;
+    overflow: hidden;
+}
+
+.comment .unvoted .score.unvoted,
+.comment .likes .score.likes,
+.comment .dislikes .score.dislikes { 
+    display: table-caption !important;
+    background: white;
+    border: 1px solid #cecdcd;
+}
+.comment .score.likes {color:#e15a5a;}
+.comment .score.dislikes {color:#598be0;}
+
+/* Vote arrows
+--------------------------------------------------------------------------------*/
+
+.arrow {
+    width: 33px;
+    height: 33px;
+    background: url(%%downupsumo%%) !important;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    margin: -2px auto;
+}
+.arrow.up { background-position: 0px -2px!important; }
+.arrow.down { background-position: 0px -208px!important; }
+.arrow.upmod { background-position: 0px -146px!important; }
+.arrow.downmod { background-position: 0px -66px!important; }
+
+/* Tagline - time
+--------------------------------------------------------------------------------*/
+
+.tagline time:not(.edited-timestamp) {
+    line-height: 20px;
+    width: 80px;
+    text-align: center;
+    font-weight: normal;
+    font-family: Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    font-size: 11px;
+}
+
+/* edited */
+.tagline time.edited-timestamp {
+    line-height: 20px;
+}
+
+/* Tagline - RES user tag
+--------------------------------------------------------------------------------*/
+.RESUserTag {
+    border: none !important;
+    padding: 3px;
+    position: absolute;
+    left: 430px;
+}
+.comment .RESUserTag {
+    left: 350px;
+    top: -22px;
+}
+
+.userTagLink.hasTag {
+    padding: 2px 5px !important;
+    border: 1px solid #555 !important;
+}
+
+.RESUserTagImage:after {
+    margin: 3px 5px;
+    width:  12px;
+    height: 13px;
+    background: url(%%pokesheet%%);
+    display: block;
+    background-position: -195px -159px;
+    opacity: .5;
+}
+
+/* md user tag */
+.md .RESUserTag, .side .RESUserTag {
+    padding: 0;
+}
+.md .RESUserTagImage:after, .side .RESUserTag:after {
+    margin: 0;
+    margin-bottom: -2px;
+}
+
+/* Tagline - author
+--------------------------------------------------------------------------------*/
+.thing .author, .side .tagline .author {
+    visibility: visible;
+    width: 280px;
+    height: 36px;
+    background: url(%%FlairBG%%);
+    position: absolute;
+    padding: 3px 0 0 45px !important;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 4px;
+    color: #48f;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.thing .tagline .author.submitter,
+.thing .tagline .author.moderator {
+    background-color: transparent!important;
+}
+
+/* link author */
+.link .author {
+    top: -5px;
+    left: 147px;
+}
+
+/* comment author */
+.comment .author {
+    font-weight: bold;
+    overflow: visible;
+    left: 70px;
+    top: -28px;
+}
+
+/* side tagline */
+.side .tagline .author {
+    left: 0;
+}
+.side .tagline {
+    visibility: hidden;
+}
+
+/* comment author submitter color */
+.res .thing .tagline .author.moderator, .res .thing .tagline .author.moderator:hover,
+.res .thing .tagline .author.submitter, .res .thing .tagline .author.submitter:hover {
+    background-color: transparent !important;
+}
+
+.comment .author.submitter, .res .thing .tagline .author.submitter, .res .thing .tagline .author.submitter:hover {
+    color: #dd4b39 !important;
+}
+
+/* Moderator comment color panel */
+.link .author.moderator, .comment .author.moderator {
+    background-position: 0 -216px !important;
+}
+.link .moderator, .comment .moderator,
+.res .thing .tagline .author.moderator,
+.res .thing .tagline .author.submitter.moderator {
+    color: white !important;
+}
+
+
+.tagline .userattrs     { display: none; }
+.author.submitter:after { content: ' [S]'; }
+.author.moderator:after { content: ' [M]'; }
+.author.admin:after     { content: ' [A]';}
+
+/* Tagline misc
+--------------------------------------------------------------------------------*/
+
+/* approval checkmark */
+.approval-checkmark {
+}
+
+/* comment show/hide */
+.comment .expand {
+    background-color: transparent;
+    color: #999!important;
+    visibility: visible;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2px;
+    transition: background-color 150ms, color 150ms;
+    font-size: 9px;
+}
+
+.comment .expand:hover {
+    background-color: #669bff;
+    color: white !important;
+    text-decoration: none;
+}
+
+/* RES voteweight */
+.tagline > a.voteWeight {
+    display: none !important;
+}
+
+/* stickied tagline */
+.link .tagline .stickied-tagline {
+    background: #228822;
+    color: white;
+    height: 14px;
+    padding: 2px 5px;
+    margin: 4px;
+    left: 440px;
+    border-radius: 3px;
+    opacity: 0.8;
+}
+
+/* user notes & history
+--------------------------------------------------------------------------------*/
+
+.tagline .tb-bracket-button {
+    line-height: 19px;
+    height: 19px;
+    width: 19px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 !important;
+}
+
+.thing .user-history-button.tb-bracket-button {
+}
+
+.thing #add-user-tag {
+}
+
+/* link buttons
+--------------------------------------------------------------------------------*/
+.link .flat-list {
+    margin-top: 2px;
+}
+
+/* Expando buttons
+--------------------------------------------------------------------------------*/
+
+.expando-button, .expando-button.video, .expando-button.video-muted, .expando-button.image {
+    position: relative;
+    background: transparent !important;
+    width: 16px;
+    height: 17px;
+    max-width: 16px !important;
+    max-height: 17px !important;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    opacity: .4;
+}
+
+.expando-button:after {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 17px;
+    background: url(%%pokesheet%%) -37px -175px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.expando-button.expanded:after { background-position: -37px -197px; }
+
+/* link flairs / linkflairs / flair filters
+--------------------------------------------------------------------------------*/
+.linkflairlabel {
+    display: block;
+    position: absolute !important;
+    text-align: center;
+    line-height: 20px;
+    background: rgba(0,0,0,.035);
+    min-width: 50px!important;
+    padding: 0 10px;
+    top: 5px;
+    left: 0px; 
+    /* right: 12px; */
+    margin: 0;
+    margin: 27px 0px 0px -49px;
+    width: 67px;
+    transform: rotate(-90deg);
+    border: 0;
+    border-radius: 3px 3px 0 0;
+    z-index: 10;
+    font-family: Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.link.linkflair:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 21px;
+    top: -1px;
+    right: 100%;
+    margin-right: -5px;
+    bottom: -1px;
+    border-radius: 3px 0 0 3px;
+    z-index: 5;
+    background: #ccc;
+}
+
+.link.linkflair-image:before, .linkflair-image .linkflairlabel, .flairselector .linkflair-image .linkflairlabel {
+    background: #a7565c;
+}
+.link.linkflair-media:before, .linkflair-media .linkflairlabel, .flairselector .linkflair-media .linkflairlabel {
+    background: #856fa6;
+}
+.link.linkflair-discussion:before, .linkflair-discussion .linkflairlabel, .flairselector .linkflair-discussion .linkflairlabel {  
+    background: #76c374;
+}
+.link.linkflair-info:before, .linkflair-info .linkflairlabel, .flairselector .linkflair-info .linkflairlabel {  
+    background: #e6d76d;
+}
+.link.linkflair-art:before, .linkflair-art .linkflairlabel, .flairselector .linkflair-art .linkflairlabel {
+    background: #E868C1;
+}
+.link.linkflair-noob:before, .linkflair-noob .linkflairlabel, .flairselector .linkflair-noob .linkflairlabel {
+    background: #3498DB;
+}
+.link.linkflair-rule:before, .linkflair-rule .linkflairlabel, .flairselector .linkflair-rule .linkflairlabel {
+    background: #e74c3c;
+}
+
+/* spoiler linkflairlabel and title overlay
+--------------------------------------------------------------------------------*/
+.linkflair-spoiler .linkflairlabel, .flairselector .linkflair-spoiler .linkflairlabel {
+    color: #E74C3C;
+}
+
+.linkflair-spoiler a.title {
+    min-width: 215px;
+}
+.link.linkflair-spoiler a.title:before {
+    content: 'Spoiler - hover to view title';
+    display: block;
+    position: absolute;
+    background: #36393e;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #606060 !important;
+    padding: 3px;
+    text-transform: initial;
+    font-size: 15px;
+    opacity: 1;
+    transition: opacity 200ms;
+    transition-delay: 200ms;
+}
+.link.linkflair-spoiler a.title:hover:before {
+    opacity: 0;
+}
+html:lang(ns) .link.linkflair-spoiler a.title:before {
+    display: none;
+}
+
+/* filters
+--------------------------------------------------------------------------------*/
+
+html:lang(im) .link:not(.linkflair-image),
+html:lang(ni) .link.linkflair-image {
+    display: none !important;
+}
+
+html:lang(me) .link:not(.linkflair-media),
+html:lang(ne) .link.linkflair-media {
+    display: none !important;
+}
+
+html:lang(di) .link:not(.linkflair-discussion),
+html:lang(nd) .link.linkflair-discussion {
+    display: none !important;
+}
+
+html:lang(fo) .link:not(.linkflair-info),
+html:lang(nf) .link.linkflair-info {
+    display: none !important;
+}
+
+html:lang(ao) .link:not(.linkflair-art),
+html:lang(na) .link.linkflair-art {
+    display: none !important;
+}
