@@ -95,6 +95,15 @@ button:active, input[type="submit"]:active {
     height: 50px;
 }
 
+#header-bottom-left {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 /* Page name
 --------------------------------------------------------------------------------*/
 .pagename {
@@ -151,7 +160,6 @@ button:active, input[type="submit"]:active {
     height: 25px;
     font-size: 0;
     margin: 0;
-    position: relative;
 }
 #header-bottom-right a.pref-lang{height: 30px;}
 
@@ -705,12 +713,9 @@ body.mod-toolbox .tb-action-button.tb-top-macro-select {
     visibility: hidden;
 }
 .comment .tagline {
-    display: inline-block !important;
-    position: relative;
-    left: -20px;
-    padding-right: 25px;
-    right: 0;
+    display: inline-block!important;
     width: 100%;
+    height: 5px;
 }
 
 /* RES Active Thing
@@ -776,7 +781,9 @@ body.mod-toolbox .tb-action-button.tb-top-macro-select {
 .thumbnail.default{ background-position: -0 -0; }
 .thumbnail.nsfw   { background-position: -70px 0; }
 .linkflair-spoiler .thumbnail { background-position: -70px -70px; }
+.linkflair-spoiler .thumbnail img { display: none; }
 .stickied .thumbnail.self { background-position: -140px 0; }
+.linkflair-rotation .thumbnail, .linkflair-rotation .thumbnail.self { background: url(%%extrasheet%%) 0 0; }
 .linkflair-noob .thumbnail.default, .linkflair-noob .thumbnail.self {
     background-position: -140px -70px!important;
 }
@@ -796,7 +803,8 @@ body.mod-toolbox .tb-action-button.tb-top-macro-select {
 
 .comment .entry {
     overflow: visible;
-    padding-left: 60px;
+    padding-left: 70px;
+    position: relative;
 }
 
 /* entry buttons
@@ -838,6 +846,8 @@ body.mod-toolbox .tb-action-button.tb-top-macro-select {
     margin: 0 10px;
     top: 25px;
     width: 36px !important;
+    left: 15px;
+    z-index: 5;
 }
 
 /* Score
@@ -869,7 +879,7 @@ body.mod-toolbox .tb-action-button.tb-top-macro-select {
     font-size: 10px;
     letter-spacing: 0.2px;
     top: -25px;
-    left: -40px;
+    left: 0;
     display: table-caption !important;
     word-spacing: 100px;
     width: 60px;
@@ -1003,7 +1013,7 @@ html:not([lang$="sn"]) .RESUserTagImage:after {
 .thing .author, .side .tagline .author {
     visibility: visible;
     width: 235px;
-    height: 34px;
+    height: 33px;
     background: url(%%FlairBG%%);
     position: absolute;
     padding: 3px 0 0 45px;
@@ -1034,7 +1044,7 @@ html:not([lang$="sn"]) .RESUserTagImage:after {
 .comment .author {
     font-weight: bold;
     overflow: visible;  
-    left: 25px;
+    left: 70px;
     top: -28px;
 }
 
@@ -1169,12 +1179,22 @@ background-position:-45px -90px;
 /* comment show/hide */
 .comment .expand {
     background-color: transparent;
-    color: #999 !important;
+    color: #999!important;
     visibility: visible;
     position: absolute;
     z-index: 5;
-    top: -24px;
-    left: 310px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2px;
+    transition: background-color 150ms, color 150ms;
+    font-size: 9px;
+}
+
+.comment .expand:hover {
+    background-color: #669bff;
+    color: white !important;
+    text-decoration: none;
 }
 
 /* gilded icon */
@@ -1255,7 +1275,7 @@ background-position:-45px -90px;
 .linkflair-noob .linkflairlabel, .flairselector .linkflair-noob .linkflairlabel {
     color: #3498DB;
 }
-.linkflair-rule .linkflairlabel {
+.linkflair-rule .linkflairlabel, .flairselector .linkflair-rule .linkflairlabel {
     color:#e74c3c;
 }
 
@@ -1290,6 +1310,25 @@ background-position:-45px -90px;
 html:lang(ns) .link.linkflair-spoiler a.title:before {
     display: none;
 }
+
+/*spoiler in-text stuff*/
+a[href$="#spoiler"] {
+    color: #515151!important;;
+    background-color: #515151;
+    transition: ease-in-out 0.15s;
+    transition: color 0.2s ease;
+}
+
+a[href$="#spoiler"]:hover {
+    transition: ease-in-out 0.5s;
+    color: white!important;
+}
+
+a[href$="#spoiler"]:before {
+    content:"SPOILER: ";
+    text-shadow: none;
+    color: white;
+} 
 
 /* filters */
 
@@ -1352,8 +1391,6 @@ html:lang(na) .link.linkflair-art {
 .comment.deleted > .midcol, .comment.deleted > .entry .tagline time:before, .comment.deleted > .entry .tagline time:after { display: none; }
 .comment.collapsed.deleted .usertext { display: block; }
 .thing.comment.deleted > .entry .md { margin: 0; }
-.comment.deleted > .entry .expand {
-    top: auto; left: 0; top: 8px; }
 .comment.deleted > .entry .numchildren {
     visibility: visible;
     position: absolute;
@@ -2361,7 +2398,7 @@ body > .content {
     border-radius: 0;
     position: absolute;
     top: -28px;
-    left: 24px;
+    left: 67px;
     z-index: 2;
     text-indent: -9999px
 }
@@ -2688,10 +2725,33 @@ body.res.mod-toolbox.combined-search-page .tabmenu + .tabmenu {
 /****** END search page ******/
 
 /********************************************************************************
-* Submission Page
+* announcement bar
 *********************************************************************************/
 
+.side .md > blockquote:nth-of-type(4) {
+    position: absolute;
+    top: -73px;
+    right: 100%;
+    width: calc(100vw - 347px);
+}
+body > .content {
+    padding-top: 70px;
+}
+.side .md > blockquote:first-of-type {
+    top: -40px;
+}
 
+.side .md > blockquote:nth-of-type(4) p {
+    display: inline-block;
+    padding: 5px;
+}
+
+.side .md > blockquote:nth-of-type(4) p {
+    background: #fcfcfc;
+}
+html[lang$="nm"] .side .md > blockquote:nth-of-type(4) p {
+    background: url(%%sidepattern1%%) repeat;
+}
 
 /********************************************************************************
 *                                ATTENTION!!!

@@ -87,6 +87,15 @@ html:not([lang$="nm"]) .listing-page #header-bottom-left .tabmenu li a:not([href
     background-color: #e5efff;
 }
 
+.thumbnail, .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, .linkflair-spoiler .thumbnail {
+    background-image: url(%%whitesheet%%);
+    border: 1px solid #aaa;
+}
+
+.entry .buttons .first:before {
+    display: none;
+}
+
 /* tagline stuff - timestamp, comment votes, linkflairlabel
 --------------------------------------------------------------------------------*/
 .tagline time:not(.edited-timestamp),
