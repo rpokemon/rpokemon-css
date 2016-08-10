@@ -8,8 +8,9 @@ body {
     background: white !important;
     border-bottom: 1px solid #e3e3e3;
 }
+
 #header {
-    background-image: url(%%daymodeheader%%);
+    background: url(%%daymodeheader%%) no-repeat -10px 19px / 124%;
     border-bottom-color: #cecdcd;
 }
 
@@ -99,7 +100,8 @@ html:not([lang$="nm"]) .listing-page #header-bottom-left .tabmenu li a:not([href
 /* author panel - set to white version
 --------------------------------------------------------------------------------*/
 .thing .author,
-.side .tagline .author {
+.side .tagline .author,
+.flairrow .author {
     background-position: 0 -36px;
 }
 

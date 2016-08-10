@@ -13,13 +13,8 @@
 }
 
 .md .expando-button {
-    width: 0 !important;
     position: relative;
-    top: -13px;
-    left: 10px;
-    right: 0;
-    bottom: 0;
-    margin-right: 20px;
+    margin-bottom: 3px;
 }
 
 .comments-page .comment .md {

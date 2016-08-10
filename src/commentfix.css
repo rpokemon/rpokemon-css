@@ -72,7 +72,6 @@
 .parent *, .parent .RESUserTagImage:after { position: static !important; margin: 0; }
 .parent .expando-button { position: relative !important; left:0; top: -5px; margin-right: 10px; }
 .parent .RESUserTagImage { margin-bottom: -3px}
-.parent a.title { color: white !important; }
 
 /* new comment
 --------------------------------------------------------------------------------*/

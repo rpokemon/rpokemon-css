@@ -19,12 +19,13 @@ html[lang$="nm"] #sr-header-area {
     background: #282b30 !important;
     border-bottom: 1px solid #282b30;
 }
+
 html[lang$="nm"] #header {
-    background-image: url(%%header%%);
-    border-bottom-color: #1c1c1c;
+    background: url(%%header%%) no-repeat 50% 19px / cover;
 }
 
-html[lang$="nm"] #sr-header-area a {
+html[lang$="nm"] #sr-header-area a,
+html[lang$="nm"] #sr-header-area .width-clip .dropdown.srdrop .selected.title {
     background: transparent;
     color: #aaa;
 }
@@ -57,11 +58,15 @@ html[lang$="nm"] .tabmenu li a[href^="j"] {
     color: rgba(255,255,255,0.3);
 }
 
+html[lang$="nm"] body:not(.listing-page) .tabmenu li a:not([href^="j"]) {
+    background: rgba(255,255,255,0.04) !important;
+}
+
 /********************************************************************************
 * ANNOUNCEMENT BAR
 *********************************************************************************/
 html[lang$="nm"] .side .md > blockquote:nth-of-type(4) {
-    background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.5);
     color: rgba(0,0,0,0.6);
 }
 
@@ -70,6 +75,7 @@ html[lang$="nm"] .side .md > blockquote:nth-of-type(4) p {
 }
 html[lang$="nm"] .side .md > blockquote:nth-of-type(4):after {
     background: rgba(255,255,255,0.45);
+    box-shadow: inset 0 0px 3px rgba(0,0,0,0.6),inset 0 0px 3px rgba(0,0,0,0.35);
 }
 
 /********************************************************************************
@@ -156,7 +162,8 @@ html[lang$="nm"] .link a.title:visited  {
 /* author panel - set to dark version
 --------------------------------------------------------------------------------*/
 html[lang$="nm"] .thing .author,
-html[lang$="nm"] .side .tagline .author {
+html[lang$="nm"] .side .tagline .author,
+html[lang$="nm"] .flairrow .author {
     background-position: 0 0;
 }
 
@@ -417,6 +424,10 @@ html[lang$="nm"] .md code, html[lang$="nm"] .md pre {
 html[lang$="nm"] .side .md table td,
 html[lang$="nm"] .side .md table td a {
     color: #a5a5a5;
+}
+
+html[lang$="nm"] .reddit-infobar .md * {
+    color: rgb(32,32,32);
 }
 
 /* footer

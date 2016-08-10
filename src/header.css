@@ -19,7 +19,7 @@
 }
 
 .dropdown.srdrop .selected { background-image: none; }
-.dropdown.srdrop .selected:after { content: "?";}
+.dropdown.srdrop .selected:after { display: none; }
 
 /* RES things */
 .res #RESShortcutsEditContainer, .res #RESShortcutsSort,.res #RESShortcutsRight,.res #RESShortcutsLeft,.res #RESShortcutsAdd,.res #RESShortcutsTrash {
@@ -244,7 +244,10 @@
     top: 100%;
     right: auto;
     bottom: auto;
-    left: 174px;
+    left: 352px; /* move left end of tabmenu to approximately where the middle of the sub logo is */
+    -webkit-transform: translate(-50%); /* ^ and use transform to center at that point */
+    -moz-transform: translate(-50%);
+    transform: translate(-50%);
     
     margin-top: -6px;
     background: white;
@@ -272,7 +275,7 @@
     z-index: 100;
 }
 
-/* listing page icons
+/* listing-page tabmenu items
 --------------------------------------------------------------------------------*/
 
 /* tabmenu items with icon */
@@ -301,6 +304,33 @@
     opacity: .6;
     -webkit-transition: opacity 0.1s ease;
     transition: opacity 0.1s ease;
+}
+
+/* not-listing-page tabmenu items
+--------------------------------------------------------------------------------*/
+body:not(.listing-page) .tabmenu li {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+body:not(.listing-page) .tabmenu li a:not([href^="j"]) {
+    background: rgba(0,0,0,0.05) !important;
+    margin: 0;
+    margin-top: 1px;
+    padding: 0 5px;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+body:not(.listing-page) .tabmenu li:first-of-type a {
+    border-radius: 15px 0 0 15px;
+}
+
+body.res:not(.listing-page) .tabmenu li:nth-of-type(3) a,
+body:not(.res):not(.listing-page) .tabmenu li:nth-of-type(2) a,
+body:not(.listing-page) .tabmenu li:last-of-type {
+    border-radius: 0 15px 15px 0;
+    margin-right: 2px;
 }
 
 /* mod toolbox
@@ -355,15 +385,6 @@ body:not(.listing-page) .tabmenu li a {
     opacity: 1;
 }
 
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:not([href^="j"]):after,
-.listing-page:not(.res) #header-bottom-left .tabmenu li:nth-of-type(8) a:not([href^="j"]):after {
-    left: auto;
-    -webkit-transform: none;
-    transform: none;
-    right: -10px;
-}
-
-
 .listing-page #header-bottom-left .tabmenu li:nth-of-type(1) a:after { content: 'hot'; }
 .listing-page #header-bottom-left .tabmenu li:nth-of-type(2) a:after { content: 'new'; }
 .listing-page #header-bottom-left .tabmenu li:nth-of-type(3) a:after { content: 'rising'; }
@@ -372,4 +393,4 @@ body:not(.listing-page) .tabmenu li a {
 .listing-page #header-bottom-left .tabmenu li:nth-of-type(6) a:after { content: 'gilded'; }
 .listing-page #header-bottom-left .tabmenu li:nth-of-type(7) a:after { content: 'wiki'; }
 .listing-page #header-bottom-left .tabmenu li:nth-of-type(8) a:after { content: 'promoted'; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:after { content: 'view images'; }
+.res.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:after { content: 'view images'; }

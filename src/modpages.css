@@ -6,7 +6,9 @@
     margin: 0 !important;
 }
 .mod-toolbox .menuarea.modtools a.tb-general-button {
-    background: #d4d4d4;
+    background: rgba(0,0,0,0.07);
+    color: #333;
+    border: 1px solid #ccc;
 }
 .menuarea.modtools a.pretty-button {
     margin-left: 1px;
@@ -27,13 +29,62 @@
     width: auto !important;
     color: #228822!important;
 }
-.moderator.messages-page .tagline {visibility: visible !important;height: auto !important;margin-bottom: 10px;}
-.moderator.messages-page .tagline * { position: static !important;  padding: 0 !important; width: auto !important;background: transparent !important; }
+.moderator.messages-page .tagline {
+    justify-content: flex-start;
+    position: static;
+    align-items: center;
+}
+.moderator.messages-page .tagline *,
+.parent *,
+.thing .parent .author {
+    position: static !important;
+    padding: 0 !important;
+    width: auto !important;
+    background: transparent !important;
+    height: auto;
+    margin-top: 0!important;
+    margin: 0 2px;
+}
 .moderator.messages-page .flair {display:none;}
 .moderator.messages-page .RESUserTagImage:after { margin: 0; }
 .sitetable {margin-top:10px;}
 .subreddit-rules-page:before {top: 52px;}
 .subreddit-rules-page {padding-top: 51px;}
+
+.moderator.messages-page .link .moderator, .comment .moderator,
+.moderator.messages-page.res .thing .tagline .author.moderator {
+    color: #282 !important;
+}
+
+.moderator.messages-page .link .moderator, .comment .admin,
+.moderator.messages-page.res .thing .tagline .author.admin {
+    color: #ff0011 !important;
+}
+
+/* queue pages
+--------------------------------------------------------------------------------*/
+body:not(.listing-page):not(.comments-page) .thing {
+    margin-bottom: 10px;
+}
+
+.comment .parent {
+    padding: 5px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.comment .parent ~ .entry {
+    margin-top: 25px !important;
+}
+
+.comment .parent:before {
+    content: 'Commented to ';
+}
+
+.comment .parent ~ .midcol {
+    top: 7px;
+}
 
 /* flair selector
 --------------------------------------------------------------------------------*/
@@ -80,18 +131,30 @@
     width: 45ex;
     padding-left: 20px;
 }
-.flairgrant .tagline .flair, .flairrow .tagline .flair {
+.flairgrant .tagline .flair, .flairrow .tagline .flair, .flairrow .author {
     left: -23px;
-    top: -0;
+    top: 0;
 }
 .flairgrant .RESUserTag, .flairrow .RESUserTag {
-    position: static !important;
-    margin: 0px;
-    padding: 0;
+    display: none;
 }
-.flairgrant .RESUserTag .userTagLink, .flairrow .RESUserTag .userTagLink {
-    margin-top: 5px;
-    margin-bottom: -8px;
+
+.flairgrant .usertable, .flairlist.usertable, .flairrow, .flairrow, .flairtemplate.flairrow > form {
+    padding-left: 250px;
+}
+.flairrow, .flairtemplate.flairrow > form {
+    margin-left: -250px;
+    position: relative;
+    margin-bottom: 1px;
+}
+.flairtemplate.flairrow > form {
+    min-height: 36px;
+}
+.flairgrant .tagline, .flairrow .tagline {
+    position: absolute;
+    left: 0;
+    height: 40px;
+    width: 150px;
 }
 
 /* metrics expand list

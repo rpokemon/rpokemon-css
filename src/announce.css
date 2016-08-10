@@ -92,7 +92,7 @@ body > .content {
     min-height: 120px;
     border-left: 3px solid #48f;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    padding-top: 23px;
+    padding-top: 27px;
     box-sizing: border-box;
     font-family: Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: 13px;
@@ -104,6 +104,9 @@ body > .content {
     margin: 0;
     position: relative;
     z-index: 5;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    margin: 0 5px;
+    padding: 4px 5px;
 }
 
 /* title */

@@ -309,7 +309,7 @@
 
 /* Tagline - author
 --------------------------------------------------------------------------------*/
-.thing .author, .side .tagline .author {
+.thing .author, .side .tagline .author, .flairrow .author {
     visibility: visible;
     width: 280px;
     height: 36px;
@@ -367,10 +367,10 @@
 }
 .link .moderator, .comment .moderator,
 .res .thing .tagline .author.moderator,
-.res .thing .tagline .author.submitter.moderator {
+.res .thing .tagline .author.submitter.moderator,
+.author.moderator ~ .flair:before {
     color: white !important;
 }
-
 
 .tagline .userattrs     { display: none; }
 .author.submitter:after { content: ' [S]'; }
@@ -476,16 +476,14 @@
     position: absolute !important;
     text-align: center;
     line-height: 20px;
-    background: rgba(0,0,0,.035);
+    background: #ccc;
     min-width: 50px!important;
     padding: 0 10px;
     top: 5px;
     left: 0px; 
     /* right: 12px; */
     margin: 0;
-    margin: 27px 0px 0px -49px;
     width: 67px;
-    transform: rotate(-90deg);
     border: 0;
     border-radius: 3px 3px 0 0;
     z-index: 10;
@@ -493,6 +491,19 @@
     color: #fff !important;
     font-weight: bold;
     font-size: 12px;
+}
+
+.link .linkflairlabel {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin: 27px 0px 0px -49px;
+}
+.flairselector .linkflairlabel {
+    -moz-transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+    margin: 0;
 }
 
 .link.linkflair:before {
