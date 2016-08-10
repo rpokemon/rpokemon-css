@@ -41,8 +41,9 @@ dist_file   = 'dist.css'
 def top(build_ver):
     return ('/*\n' +
             '    CSS theme for /r/Pokemon' + '\n' +
-            '    Authors: Hero_of_Legend, technophonix1, Atooz, kwwxis' + '\n' +
-            '    Build: ' + str(build_ver) + '\n' +
+            '    Authors: Hero_of_Legend, technophonix1, Atooz, & kwwxis' + '\n' +
+            '    Build: ' + str(build_ver) + '\n\n' +
+            '    Unminified CSS is at https://github.com/matthew0x40/r-pokemon' + '\n' +
             ' */')
 
 def run():

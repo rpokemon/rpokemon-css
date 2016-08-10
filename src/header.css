@@ -94,13 +94,14 @@
     background: white;
     border-bottom: 1px solid #cecdcd;
     box-shadow: 0 -2px 3px rgba(0,0,0,0.05);
+    z-index: 1;
 }
 /* announcement module and search full-width bar*/
 #header:after {
     content: '';
     display: block;
     top: 100%;
-    margin-top: 28px;
+    margin-top: 27px;
     position: absolute;
     right: 0;
     left: 0;
@@ -126,6 +127,7 @@
     line-height: 27px;
     height: 27px;
     background-color: transparent;
+    z-index: 2;
 }
 
 #header-bottom-right a {

@@ -43,11 +43,12 @@
     justify-content: flex-end;
     font-size: 0;
     height: 20px;
-    width: 100%;
     font-size: 0;
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    padding-right: 4px;
 }
 .tagline > * {
     font-size: x-small;
@@ -421,22 +422,16 @@
     opacity: 0.8;
 }
 
-/* user notes & history
+/* toolbox buttons
 --------------------------------------------------------------------------------*/
 
 .tagline .tb-bracket-button {
     line-height: 19px;
     height: 19px;
-    width: 19px;
+    min-width: 19px;
     box-sizing: border-box;
     display: inline-block;
     padding: 0 !important;
-}
-
-.thing .user-history-button.tb-bracket-button {
-}
-
-.thing #add-user-tag {
 }
 
 /* link buttons
@@ -512,6 +507,9 @@
     border-radius: 3px 0 0 3px;
     z-index: 5;
     background: #ccc;
+}
+.comments-page .link.linkflair:before {
+    width: 6px;
 }
 
 .link.linkflair-image:before, .linkflair-image .linkflairlabel, .flairselector .linkflair-image .linkflairlabel {

@@ -12,8 +12,9 @@ html[lang$="nm"] .comment .md p > a:visited {
     color: #8271ff;
 }
 
-/* header
---------------------------------------------------------------------------------*/
+/********************************************************************************
+* HEADER
+*********************************************************************************/
 html[lang$="nm"] #sr-header-area {
     background: #282b30 !important;
     border-bottom: 1px solid #282b30;
@@ -37,6 +38,40 @@ html[lang$="nm"] .res #userbarToggle {
     color: #aaa;
 }
 
+/* header bars */
+html[lang$="nm"] #header:before {
+    background: #282b30;
+    border-bottom: 0;
+}
+
+html[lang$="nm"] #header:after {
+    background: #2F3238;
+}
+
+html[lang$="nm"] #header .tabmenu {
+    background: #282b30;
+    border-color: #212428;
+}
+
+html[lang$="nm"] .tabmenu li a[href^="j"] {
+    color: rgba(255,255,255,0.3);
+}
+
+/********************************************************************************
+* ANNOUNCEMENT BAR
+*********************************************************************************/
+html[lang$="nm"] .side .md > blockquote:nth-of-type(4) {
+    background: rgba(255,255,255,0.4);
+    color: rgba(0,0,0,0.6);
+}
+
+html[lang$="nm"] .side .md > blockquote:nth-of-type(4) p {
+    color: rgba(0,0,0,0.8);
+}
+html[lang$="nm"] .side .md > blockquote:nth-of-type(4):after {
+    background: rgba(255,255,255,0.45);
+}
+
 /********************************************************************************
 * RESET
 *********************************************************************************/
@@ -57,7 +92,8 @@ html[lang$="nm"] #previoussearch,
 html[lang$="nm"] .combined-search-page #previoussearch,
 html[lang$="nm"] .combined-search-page .search-result-group,
 html[lang$="nm"] .post-sharing,
-html[lang$="nm"] .subreddit-report-form {
+html[lang$="nm"] .subreddit-report-form,
+html[lang$="nm"] .comment .score {
     background: #282b30 !important;
     color: #aaa;
     border-color: #282b30!important;
@@ -92,6 +128,11 @@ html[lang$="nm"] .entry .buttons .first:before {
     display: inline-block;
 }
 
+html[lang$="nm"] .link .midcol {
+    background: rgba(255,255,255,0.01);
+    border-right-color: rgba(255,255,255,0.03);
+}
+
 /* tagline stuff
 --------------------------------------------------------------------------------*/
 html[lang$="nm"] .tagline time:not(.edited-timestamp),
@@ -123,7 +164,7 @@ html[lang$="nm"] .side .tagline .author {
 /* spoiler overlay
 --------------------------------------------------------------------------------*/
 html[lang$="nm"] .link.linkflair-spoiler a.title:before {
-    background: #eaeaea;
+    background: #9a9a9a;
 }
 
 /* stuff
