@@ -3,8 +3,19 @@
 * FIX STUFF - MOD TOOLS / MOD PAGES & THINGS
 *********************************************************************************/
 .mod-toolbox .menuarea.modtools {
-    margin: 0 !important;
+    margin: 0 0 0 10px !important;
+    min-width: 1020px !important;
+    display: flex;
+    flex-wrap: wrap;
 }
+.mod-toolbox .menuarea.modtools > span:not(:last-child) {
+    padding: 0 4px;
+}
+.mod-toolbox .menuarea.modtools > .lightdrop {
+    flex-grow: 1;
+    text-align: right;
+}
+
 .mod-toolbox .menuarea.modtools a.tb-general-button {
     background: rgba(0,0,0,0.07);
     color: #333;
@@ -63,14 +74,45 @@
 
 /* queue pages
 --------------------------------------------------------------------------------*/
-body:not(.listing-page):not(.comments-page) .thing {
+body:not(.listing-page):not(.comments-page):not(.comment-permalink-page) .thing {
     margin-bottom: 10px;
 }
 
-.comment .parent {
+body:not(.comments-page):not(.comment-permalink-page) .comment {
+    border: 1px solid #cecdcd;
+    background: #f7f7f7;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.03);
+}
+
+body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
     display: -webkit-flex;
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
+    background: #fff;
+    border: 1px solid #f3f3f3;
+    border-top: 0;
+    padding: 5px 0 5px 20px;
+}
+
+body:not(.comments-page):not(.comment-permalink-page) .thing.comment > input[type=checkbox] {
+    position: static;
+    margin: 5px -20px 0 5px !important;
+}
+
+body:not(.comments-page):not(.comment-permalink-page) .comment .midcol {
+    top: 5px;
+}
+
+html[lang$="nm"] body:not(.comments-page):not(.comment-permalink-page) .comment {
+    background: rgba(42, 45, 50, 0.4);
+    border-color: rgba(0,0,0,0.15);
+}
+html[lang$="nm"] body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
+    background: rgba(0,0,0,0.1);
+    border: 0;
 }
 
 /* flair selector

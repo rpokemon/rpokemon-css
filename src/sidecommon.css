@@ -1,0 +1,98 @@
+
+/* sidebar common header
+--------------------------------------------------------------------------------*/
+.side .md > h6,
+.side .md > h2,
+.side .md > h4:first-of-type,
+.side .md > h4 > a {
+    display: block;
+    position: relative;
+    padding-left: 61px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px -7px;
+    text-decoration:none;
+    font-size: 18px;
+    background: transparent;
+    color: #333;
+}
+
+.side .md > h2:before { background: 1600px -1340px; }
+.side .md > h4 > a:before { background: -54px -340px; }
+.side .md > h6:nth-of-type(1):before { background: -180px -373px; }
+.side .md > h6:nth-of-type(2):before { background: -87px -403px; }
+
+/* header pokeboll and sprites */
+.side .md > h6:before, .side .md > h2:before, .side .md > h4 > a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(%%pokesheet%%);
+    top: 2px;
+    left: 21px;
+}
+
+/* common header bg */
+.side .md > h6:after,
+.side .md > h2:after,
+.side .md > h4:first-of-type:after,
+.side .md > h4 > a:after,
+.titlebox form.toggle.res-sr-style-toggle:after,
+.titlebox form.toggle.flairtoggle:after {
+    content: '';
+    background: url(%%sidepattern2%%) no-repeat -5px 1px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.titlebox form.toggle.res-sr-style-toggle *,
+.titlebox form.toggle.flairtoggle * {
+    position: relative;
+    z-index: 5;
+}
+
+/* common sidebar button and common checkboxes
+--------------------------------------------------------------------------------*/
+
+/* common button */
+.side .md a[href*="flairbot"], .side .md > h2 + ul li a,
+.sidecontentbox .helplink ~ .content li.more a,
+.sidecontentbox a.helplink {
+    background: #383c42;
+    border: solid 1px #222428;
+    box-shadow: 0 1px 0 1px #222428;
+    border-radius: 3px;
+    transition: outline .2s ease;
+    color: #ccc;
+    text-align: center;
+}
+.side .md a[href*="flairbot"]:hover,
+.side .md > h2 + ul li a:hover {
+    outline: 1px solid #0082f0!important;
+}
+
+
+/* common checkboxes */
+.titlebox form.toggle.flairtoggle, .titlebox form.toggle.res-sr-style-toggle {
+    color: white;
+    position: absolute;
+    padding: 0 0 0 30px;
+    height: 18px;
+}
+
+.titlebox form.toggle.res-sr-style-toggle:after,
+.titlebox form.toggle.flairtoggle:after {
+    background: url(%%sidepattern1%%) repeat;
+}

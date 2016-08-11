@@ -95,7 +95,10 @@ html[lang$="nm"] .combined-search-page #previoussearch,
 html[lang$="nm"] .combined-search-page .search-result-group,
 html[lang$="nm"] .post-sharing,
 html[lang$="nm"] .subreddit-report-form,
-html[lang$="nm"] .comment .score {
+html[lang$="nm"] .comment .score,
+html[lang$="nm"] .combined-search-page #previoussearch .res-search-pane,
+html[lang$="nm"] ul.res-search-tabs li.res-search-tab-active,
+html[lang$="nm"] .submit-page .roundfield {
     background: #282b30 !important;
     color: #aaa;
     border-color: #282b30!important;
@@ -112,6 +115,7 @@ html[lang$="nm"] .comment .entry  {border: 1px solid transparent !important;}
 
 html[lang$="nm"] .flair:before,
 html[lang$="nm"] .link .score.unvoted { color: #aaa; }
+html[lang$="nm"] .comment .score.unvoted { color: #fff; }
 
 html[lang$="nm"] .new-comment .usertext-body {
     background-color: #e5efff;
@@ -133,6 +137,10 @@ html[lang$="nm"] .entry .buttons .first:before {
 html[lang$="nm"] .link .midcol {
     background: rgba(255,255,255,0.01);
     border-right-color: rgba(255,255,255,0.03);
+}
+
+html[lang$="nm"] .RES-keyNav-activeElement, html[lang$="nm"] .RES-keyNav-activeElement .md-container {
+    background-color: transparent !important;
 }
 
 /* tagline stuff
@@ -215,7 +223,11 @@ html[lang$="nm"] body.mod-toolbox .tb-action-button.tb-top-macro-select {
 /* text inputs */
 html[lang$="nm"] .commentarea > .usertext textarea,
 html[lang$="nm"] .comments-page .usertext textarea,
-html[lang$="nm"] .combined-search-page #search input[type=text] {
+html[lang$="nm"] .combined-search-page #search input[type=text],
+html[lang$="nm"] .submit-page .roundfield textarea,
+html[lang$="nm"] .submit-page .roundfield input[type=text],
+html[lang$="nm"] .submit-page .roundfield input[type=url],
+html[lang$="nm"] #newlink-with-image-upload .image-upload-drop-target {
     background: rgba(255,255,255,0.05);
     color: #aaa !important;
     border: 1px solid rgba(255,255,255,0.15) !important;
@@ -407,7 +419,8 @@ html[lang$="nm"] .listing-page .content>.menuarea .spacer {
 html[lang$="nm"] .side .md,
 html[lang$="nm"] .side .md *,
 html[lang$="nm"] .md,
-html[lang$="nm"] .md * {
+html[lang$="nm"] .md *,
+html[lang$="nm"] .submit-page .roundfield > .title {
     color: #c7c7c7;
 }
 html[lang$="nm"] .thing .md hr {
@@ -448,4 +461,17 @@ html[lang$="nm"] .drop-choices {
 }
 html[lang$="nm"] .drop-choices a.choice:hover {
     background: rgba(255,255,255,0.06);
+}
+
+/********************************************************************************
+* SEARCH AND SUBMIT PAGE MISC
+*********************************************************************************/
+
+html[lang$="nm"] .search-expando.collapsed:before {
+    display: none;
+}
+
+html[lang$="nm"] #newlink-with-image-upload .image-upload-drop-target {
+    border-width: 2px !important;
+    border-style: dashed !important;
 }

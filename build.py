@@ -5,34 +5,38 @@ import time
 import datetime
 from csscompressor import compress
 
-# -------------- FILE NAME --------- PURPOSE --------------
+# -------------- FILE NAME ------------ PURPOSE --------------
                
-order       = [ 'etc.css',         # body, buttons, and wiki
-                'header.css',      # subreddit header
+order       = [ 'etc.css',            # body, buttons, and wiki
+                'header.css',         # subreddit header
+                'submit.css',         # submit form
                 
-                'linklisting.css', # styles for the link listing page
-                'thing.css',       # styles for thing elements (links and comments alike)
-                'tagline.css',     # thing tagline
-                'linkflair.css',   # link flair and filters
+                'linklisting.css',    # styles for the link listing page
+                'thing.css',          # styles for thing elements (links and comments alike)
+                'tagline.css',        # thing tagline
+                'linkflair.css',      # link flair and filters
                 
-                'commentfix.css',  # styles for specifically comments
-                'commentpage.css', # styles for the comment page menus, usertext editor, etc.
-                'usertextmd.css',  # styles for the markdown
+                'commentfix.css',     # styles for specifically comments
+                'commentpage.css',    # styles for the comment page menus, usertext editor, etc.
+                'usertextmd.css',     # styles for the markdown
                 
-                'sidebar.css',     # subreddit sidebar
+                'sidecommon.css',     # sidebar common header and checkboxes
+                'sidebar.css',        # sidebar
+                'sidemd.css',         # sidebar md
+                'sidecontentbox.css', # sidebar md
                 
-                'announce.css',    # announcements modules and bar
+                'announce.css',       # announcements modules and bar
                 
-                'search.css',      # search page (does not include search input in sidebar, which is in sidebar.css)
-                'footer.css',      # subreddit footer
-                'modpages.css',    # any moderator pages that required additional CSS and also flair selector stuff
+                'search.css',         # search page (does not include search input in sidebar, which is in sidebar.css)
+                'footer.css',         # subreddit footer
+                'modpages.css',       # any moderator pages that required additional CSS and also flair selector stuff
                 
-                'userflair.css',   # user flairs
+                'userflair.css',      # user flairs
                 
-                'suntheme.css',    # day mode
-                'moontheme.css',   # night mode
+                'suntheme.css',       # day mode
+                'moontheme.css',      # night mode
                 
-                'banner.css',      # banner
+                'banner.css',         # banner
               ]      
                 
 # input/output variables

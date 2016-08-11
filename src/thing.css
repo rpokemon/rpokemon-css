@@ -30,6 +30,9 @@
 .thing.spam {
     background: transparent;
 }
+.thing.spam > .entry {
+    background: rgb(244, 210, 211) !important;
+}
 .thing.spam > .entry * {
     color: #111;
 }
@@ -175,7 +178,7 @@
     text-align: center;
 }
 
-.score.unvoted { color: #fff; }
+.score.unvoted { color: #333; }
 .score.likes { color: #e15a5a; }
 .score.dislikes { color: #598be0; }
 
@@ -197,6 +200,7 @@
     position: absolute !important;
     overflow: hidden;
     border: 1px solid #cecdcd;
+    background: #fff;
 }
 
 /* show score */
@@ -231,11 +235,11 @@
 /* Expando buttons
 --------------------------------------------------------------------------------*/
 
-.expando-button, .expando-button.video, .expando-button.video-muted, .expando-button.image {
+.expando-button, .expando-button.video, .expando-button.video-muted, .expando-button.image, .parent .expando-button {
     position: relative;
     background: url(%%pokesheet%%) -36px -175px !important;
-    width: 18px;
-    height: 17px;
+    width: 18px !important;
+    height: 17px !important;
     max-width: 18px !important;
     max-height: 17px !important;
     top: 0;

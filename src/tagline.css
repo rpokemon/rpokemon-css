@@ -90,8 +90,8 @@
 .side .tagline .author {
     left: 0;
 }
-.side .tagline {
-    visibility: hidden;
+.flairselectbtn {
+    display: none;
 }
 
 /* comment author submitter color */

@@ -1,0 +1,206 @@
+/* PSA box
+--------------------------------------------------------------------------------*/
+
+.side .md h5, .side .md h5 + ul {
+    margin: 0 -7px;
+    padding: 10px 25px;
+    list-style-type: none;
+    background: #2e3136;
+}
+.side .md h5 {
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    padding-bottom: 5px;
+    position: relative;
+}
+.side .md h5 + ul {
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+.side .md h5 + ul p {
+    margin: 0;
+    padding: 2.5px 0;
+}
+
+/* pokemon go teams
+--------------------------------------------------------------------------------*/
+.side .md > h4:first-of-type,
+.side .md > h4:first-of-type + ul {
+    display: none; /* HIDDEN FOR NOW */
+}
+
+
+.side .md h4:first-of-type {
+    padding-left: 20px;
+}
+
+.side .md h4:first-of-type + ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.side .md h4:first-of-type + ul li {
+    line-height: 32px;
+    height: 32px;
+    padding: 0 15px 0 48px;
+    font-size: 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+    background: rgba(0,0,0,.4);
+    margin-bottom: 15px;
+}
+.side .md h4:first-of-type + ul li strong {
+    font-size: 12px;
+}
+.side .md h4:first-of-type + ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    background: url(%%go-teams%%) no-repeat;
+    left: -5px;
+    top: -10px;
+}
+
+.side .md h4:first-of-type + ul li:nth-child(1):before { background-position: 0 0; }
+.side .md h4:first-of-type + ul li:nth-child(2):before { background-position: -48px 0; }
+.side .md h4:first-of-type + ul li:nth-child(3):before { background-position: -96px 0; }
+
+.side .md h4:first-of-type + ul li:nth-child(1) {
+    box-shadow: 0 .5px 0 2px #0076EC;
+}
+.side .md h4:first-of-type + ul li:nth-child(2) {
+    box-shadow: 0 .5px 0 2px #FAD207;
+}
+.side .md h4:first-of-type + ul li:nth-child(3) {
+    box-shadow: 0 .5px 0 2px #F71106;
+}
+
+/* submission rules
+--------------------------------------------------------------------------------*/
+
+.side .md h3, .side .md h3 + ul, .side .md h3 + ul + ol {
+    border-left: 1px solid rgba(255,255,255,0.2);
+    margin: 0;
+    padding-left: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+}
+.side .md h3 {
+    border-left: 0;
+    border-bottom:  1px solid rgba(255,255,255,0.2);
+    width: 50%;
+    font-size: 13px;
+    padding-bottom: 5px
+}
+
+.side .md h3+ul a {
+    display: inline-block;
+    background: rgba(255,255,255,0.04);
+    color: #ccc;
+    padding: 6px 8px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.side .md h3 + ul + ol {
+    margin-bottom: 20px;
+    counter-reset: siderules;
+    position: relative;
+}
+
+.side .md h3 + ul + ol > li {
+    position: relative;
+    min-height: 30px;
+    padding-top: 10px
+}
+
+.side .md h3 + ul + ol > li:before {
+    counter-increment: siderules;
+    content: counter(siderules);
+    position:absolute;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #282b30 url(%%pokesheet%%) -55px -177px;
+    left: -39px;
+    top: 0;
+    box-sizing: content-box;
+    border: 3px solid #282b30;
+    border-radius: 50%;
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+    font-size: 14px;
+}
+
+.side .md h3 + ul + ol:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+}
+
+/* sidebar calendar
+--------------------------------------------------------------------------------*/
+
+.side .md table th {
+    border: 0;
+}
+.side .md table td {
+    border: 0;
+}
+
+.side .md table tr:nth-child(even) { background: rgba(255,255,255,0.04); }
+.side .md table tr:nth-child(odd) { background: rgba(255,255,255,0.01); }
+.side .md table th + th, .side .md table td + td { border-left: 1px solid rgba(255,255,255,0.03); }
+
+/* sidebar community links
+--------------------------------------------------------------------------------*/
+.side .md h6 + blockquote {
+    padding: 0;
+    margin: 0 5px;
+    margin-bottom: 20px;
+}
+
+/* main links */
+.side .md h6 + blockquote p {
+    font-size: 0;
+    padding: 0 5px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.side .md h6 + blockquote p:last-of-type { padding-bottom: 10px;}
+
+.side .md h6 + blockquote p a {
+    font-size: 13px;
+    line-height: 22px;
+    display: inline-block;
+    margin-right: 3px;
+    margin-top: 4px;
+    color: #b7b7b7;
+    padding: 0 5px;
+    
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* related subs */
+.side .md h6 + blockquote h4 {
+    margin: 0;
+    padding: 7px 5px 7px 5px;
+    font-size: 13px;
+    text-align: center;
+}
