@@ -12,7 +12,6 @@
     top: 0;
     left: 0;
     right: 0;
-    padding-right: 4px;
 }
 .tagline > * {
     font-size: x-small;
@@ -25,24 +24,16 @@
 
 /* Tagline - time
 --------------------------------------------------------------------------------*/
-
-.tagline time:not(.edited-timestamp) {
+.tagline time {
     line-height: 20px;
-    width: 80px;
-    text-align: center;
-    font-weight: normal;
     font-family: Segoe,"Segoe UI",Optima,Arial,sans-serif;
     font-size: 11px;
-}
-
-/* edited */
-.tagline time.edited-timestamp {
-    line-height: 20px;
+    padding: 0 4px;
 }
 
 /* Tagline - RES user tag
 --------------------------------------------------------------------------------*/
-.RESUserTag {
+.tagline > .RESUserTag {
     border: none !important;
     padding: 3px;
     position: absolute;
@@ -51,11 +42,6 @@
 .comment .RESUserTag {
     left: 350px;
     top: -22px;
-}
-
-.userTagLink.hasTag {
-    padding: 2px 5px !important;
-    border: 1px solid #555 !important;
 }
 
 .RESUserTagImage:after {
@@ -68,30 +54,19 @@
     opacity: .5;
 }
 
-/* md user tag */
-.md .RESUserTag, .side .RESUserTag {
-    padding: 0;
-}
-.md .RESUserTagImage:after, .side .RESUserTag:after {
-    margin: 0;
-    margin-bottom: -2px;
-}
-
 /* Tagline - author
 --------------------------------------------------------------------------------*/
 .thing .author, .side .tagline .author, .flairrow .author {
-    visibility: visible;
     width: 280px;
     height: 36px;
     background: url(%%FlairBG%%);
     position: absolute;
     padding: 3px 0 0 45px !important;
-    font-size: 10px;
     font-weight: bold;
-    margin-right: 4px;
     color: #48f;
     white-space: nowrap;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .thing .tagline .author.submitter,
@@ -107,8 +82,6 @@
 
 /* comment author */
 .comment .author {
-    font-weight: bold;
-    overflow: visible;
     left: 70px;
     top: -28px;
 }
@@ -142,6 +115,7 @@
     color: white !important;
 }
 
+/* user attributes */
 .tagline .userattrs     { display: none; }
 .author.submitter:after { content: ' [S]'; }
 .author.moderator:after { content: ' [M]'; }
@@ -150,14 +124,10 @@
 /* Tagline misc
 --------------------------------------------------------------------------------*/
 
-/* approval checkmark */
-.approval-checkmark {
-}
-
 /* comment show/hide */
 .comment .expand {
     background-color: transparent;
-    color: #999!important;
+    color: #999;
     visibility: visible;
     position: absolute;
     z-index: 5;
@@ -171,7 +141,7 @@
 
 .comment .expand:hover {
     background-color: #669bff;
-    color: white !important;
+    color: white;
     text-decoration: none;
 }
 

@@ -10,7 +10,6 @@
 /* Link element
 --------------------------------------------------------------------------------*/
 .link {
-    background: #282b30!important;
     box-shadow: 0 2px 5px rgba(0,0,0,0.12);
     padding: 8px 8px 0 57px;
     padding-top: 8px;
@@ -31,25 +30,26 @@
 .thing.spam {
     background: transparent;
 }
-.thing.spam > .entry { border: 3px solid #E74C3C !important; }
-.thing.spam > .entry .buttons li[title*="removed"] { color: #E74C3C; padding-bottom: 4px;}
-.thing.spam > .child, .message.spam > .child { background-color: transparent; }
+.thing.spam > .entry * {
+    color: #111;
+}
+.thing.spam > .entry .buttons li[title*="removed"] * {
+    color: #E74C3C;
+}
 
 /* RES Active Thing
 --------------------------------------------------------------------------------*/
 
-.res .link .RES-keyNav-activeElement {
-    background: transparent !important;
-    border-color: transparent !important;
-}
+.child,
+.res .link .RES-keyNav-activeElement,
 .res .RES-keyNav-activeElement .md-container {
     background: transparent !important;
+    border-color: transparent !important;
 }
 
 /* Link Title
 --------------------------------------------------------------------------------*/
 .link p.title {
-    font-size: 18px;
     margin: 10px 0 5px 10px;
 }
 
@@ -60,9 +60,8 @@
 
 /* title - actual link*/
 .link a.title {
-    font-size: 18px;
+    position: relative; /* relative for spoiler overlay */
     font-size: 19px;
-    position: relative;
     font-family: Segoe,"Segoe UI",Optima,Arial,sans-serif;
 }
 
@@ -95,16 +94,16 @@
     position: relative;
 }
 
-.thumbnail.self   { background-position: 0 0; }
-.thumbnail.default{ background-position: -0 -0; }
-.thumbnail.nsfw   { background-position: -70px 0; }
+.thumbnail.self    { background-position: 0 0; }
+.thumbnail.default { background-position: -0 -0; }
+.thumbnail.nsfw    { background-position: -70px 0; }
+
 .linkflair-spoiler .thumbnail { background-position: -70px -70px; }
 .linkflair-spoiler .thumbnail img { display: none; }
+
 .stickied .thumbnail.self { background-position: -140px 0; }
 .linkflair-rotation .thumbnail, .linkflair-rotation .thumbnail.self { background: url(%%extrasheet%%) 0 0; }
-.linkflair-noob .thumbnail.default, .linkflair-noob .thumbnail.self {
-    background-position: -140px -70px!important;
-}
+.linkflair-noob .thumbnail.default, .linkflair-noob .thumbnail.self { background-position: -140px -70px!important; }
 
 .thumbnail img { width: 100%; height: 100%; }
 
@@ -112,24 +111,20 @@
 --------------------------------------------------------------------------------*/
 
 .entry {
-    background: #282b30;
-    border: 1px solid #282b30;
     border-radius: 4px;
     overflow: hidden;
     margin: 17px 0 0 0 !important;
 }
 
 .comment .entry {
+    position: relative;
     overflow: visible;
     padding-left: 70px;
-    position: relative;
     padding-bottom: 5px;
 }
 
 /* entry buttons
 --------------------------------------------------------------------------------*/
-
-.thing:hover .buttons, .entry .buttons .first { visibility: visible; }
 
 .link .flat-list {
     margin-top: 2px;
@@ -171,12 +166,6 @@
 
 .score {
     display: none;
-}
-
-.likes .score.likes,
-.dislikes .score.dislikes,
-.unvoted .score.unvoted {
-    display: block;
     position: relative;
     float: left;
     font-weight: bold;
@@ -186,13 +175,15 @@
     text-align: center;
 }
 
+.score.unvoted { color: #fff; }
+.score.likes { color: #e15a5a; }
+.score.dislikes { color: #598be0; }
+
+
 /* link score */
 .link .score {
     font-size: 13px;
 }
-.link .score.unvoted { color: #fff; }
-.link .score.likes { color: #e15a5a; }
-.link .score.dislikes { color: #598be0; }
 
 /* comment score */
 .comment .score {
@@ -205,17 +196,21 @@
     width: 60px;
     position: absolute !important;
     overflow: hidden;
+    border: 1px solid #cecdcd;
 }
 
+/* show score */
 .comment .unvoted .score.unvoted,
 .comment .likes .score.likes,
 .comment .dislikes .score.dislikes { 
     display: table-caption !important;
-    background: white;
-    border: 1px solid #cecdcd;
 }
-.comment .score.likes {color:#e15a5a;}
-.comment .score.dislikes {color:#598be0;}
+
+.likes .score.likes,
+.dislikes .score.dislikes,
+.unvoted .score.unvoted {
+    display: block;
+}
 
 /* Vote arrows
 --------------------------------------------------------------------------------*/
@@ -238,26 +233,15 @@
 
 .expando-button, .expando-button.video, .expando-button.video-muted, .expando-button.image {
     position: relative;
-    background: transparent !important;
-    width: 16px;
+    background: url(%%pokesheet%%) -36px -175px !important;
+    width: 18px;
     height: 17px;
-    max-width: 16px !important;
+    max-width: 18px !important;
     max-height: 17px !important;
     top: 0;
     left: 0;
     margin-left: 10px;
     opacity: .4;
 }
-
-.expando-button:after {
-    display: block;
-    content: "";
-    width: 16px;
-    height: 17px;
-    background: url(%%pokesheet%%) -37px -175px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.expando-button.expanded:after { background-position: -37px -197px; }
+.expando-button:hover { opacity: 0.8; }
+.expando-button.expanded { background-position: -37px -197px !important; }

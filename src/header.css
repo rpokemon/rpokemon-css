@@ -18,11 +18,11 @@
     padding-right: 3px;
 }
 
-.dropdown.srdrop .selected { background-image: none; }
+.dropdown.srdrop .selected { background: 0; }
 .dropdown.srdrop .selected:after { display: none; }
 
 /* RES things */
-.res #RESShortcutsEditContainer, .res #RESShortcutsSort,.res #RESShortcutsRight,.res #RESShortcutsLeft,.res #RESShortcutsAdd,.res #RESShortcutsTrash {
+.res [id^="RESShortcut"] {
     background-color: transparent !important;
     color: #979797 !important;
 }
@@ -130,11 +130,6 @@
     z-index: 2;
 }
 
-#header-bottom-right a {
-    font-weight: 400;
-    font-size: small;
-}
-
 #header-bottom-right a:hover {
     text-decoration: none;
 }
@@ -143,13 +138,12 @@
     display: inline-block;
     background: url(%%pokesheet%%) -55px -371px;
     width: 25px;
-    height: 25px;
-    font-size: 0;
+    height: 30px;
+    font-size: 0 !important;
     margin: 0;
 }
-#header-bottom-right a.pref-lang{height: 30px;}
 
-.loggedin .logout a { height: 30px; background-position: -90px -372px; font-size: 0 !important; }
+.loggedin .logout a { background-position: -90px -372px }
 
 /* userbar
 --------------------------------------------------------------------------------*/
@@ -164,16 +158,13 @@
 }
 
 #header-bottom-right .user {
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     font-size: 0;
 }
-#header-bottom-right .user > * { font-size: 12px; }
-
-/* user a */
-#header-bottom-right .user > a {
-    display: inline-block;
-    padding: 0 5px;
+#header-bottom-right .user > * {
+    font-size: 12px;
 }
 
 /* user karma */
@@ -187,7 +178,7 @@
 }
 .res #RESAccountSwitcherIcon {
     margin-left: -15px;
-    background-image: none !important;
+    background: 0 !important;
 }
 
 .res #RESAccountSwitcherIcon:before {
@@ -206,12 +197,12 @@
 /* userbar icons
 --------------------------------------------------------------------------------*/
 #mail { display: inline-block; overflow: visible; }
-#mail.havemail { background: -121px -374px; }
 #mail.nohavemail { background: -54px -310px; }
+#mail.havemail { background: -121px -374px; }
 
 #modmail { top: -2px; margin-bottom: -6px; }
-#modmail.havemail { background: -54px -404px; }
 #modmail.nohavemail { background: -152px -374px; }
+#modmail.havemail { background: -54px -404px; }
 
 .gearIcon { background: -116px -339px!important; top: 5px; }
 .gearIcon:after { display: none; }
@@ -224,13 +215,11 @@
 
 /* opacity hover/no hover
 --------------------------------------------------------------------------------*/
-#modmail, #mail, #header-bottom-right a.pref-lang, .loggedin .logout a, .gearIcon {
+#modmail, #mail, a.pref-lang, .loggedin .logout a, .gearIcon {
     opacity: .75;
 }
-#modmail:hover, #mail:hover, #header-bottom-right a.pref-lang:hover, .loggedin .logout a:hover, .gearIcon:hover {
+#modmail:hover, #mail:hover, a.pref-lang:hover, .loggedin .logout a:hover, .gearIcon:hover {
     opacity: 1;
-    text-decoration: none !important;
-    border-bottom: 0px solid !important;
 }
 
 /********************************************************************************
@@ -242,8 +231,6 @@
     justify-content: flex-start;
     position: absolute;
     top: 100%;
-    right: auto;
-    bottom: auto;
     left: 352px; /* move left end of tabmenu to approximately where the middle of the sub logo is */
     -webkit-transform: translate(-50%); /* ^ and use transform to center at that point */
     -moz-transform: translate(-50%);
@@ -254,66 +241,64 @@
     border: 1px solid #cecdcd;
     height: 34px;
     border-radius: 18px;
-    padding: 0;
-    padding-top: 2px;
+    padding: 2px 0 0 0;
     text-transform: capitalize;
+}
+
+#header .tabmenu li {
+    margin: 0;
 }
 
 .tabmenu li a {
     display: inline-block;
+    position: relative;
     height: 30px;
     line-height: 30px;
     padding: 0;
     background-color: transparent !important;
     border: 0 !important;
     font-size: small;
-    margin-right: 1px;
+    margin-right: 4px;
 }
 
-.tabmenu li a:hover, .tabmenu li.selected a {
+.tabmenu li a:hover,
+.tabmenu li.selected a {
     color: #48f;
-    z-index: 100;
 }
 
 /* listing-page tabmenu items
 --------------------------------------------------------------------------------*/
 
-/* tabmenu items with icon */
-.listing-page #header-bottom-left .tabmenu li a:not([href^="j"]) {
-    display: block;
-    font-size: 0;
-    position: relative;
-}
-
 /* tabmenu icons */
-.listing-page #header-bottom-left .tabmenu li:nth-child(1) a:before { background: -227px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-child(2) a:before { background: -5px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-child(3) a:before { background: -43px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-child(4) a:before { background: -80px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-child(5) a:before { background: -116px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-child(6) a:before { background: -154px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-child(7) a:before { background: -265px 0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-child(8) a:before { background: -190px -0px; }
-.listing-page #header-bottom-left .tabmenu li:nth-child(9) a:before { background: -302px 0px; }
-.listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):before {
+.listing-page #header .tabmenu li:nth-child(1) a { background: -227px 0 }
+.listing-page #header .tabmenu li:nth-child(2) a { background: -5px 0 }
+.listing-page #header .tabmenu li:nth-child(3) a { background: -43px 0 }
+.listing-page #header .tabmenu li:nth-child(4) a { background: -80px 0 }
+.listing-page #header .tabmenu li:nth-child(5) a { background: -116px 0 }
+.listing-page #header .tabmenu li:nth-child(6) a { background: -154px 0 }
+.listing-page #header .tabmenu li:nth-child(7) a { background: -265px 0 }
+.listing-page #header .tabmenu li:nth-child(8) a { background: -190px 0 }
+.listing-page #header .tabmenu li:nth-child(9) a { background: -302px 0 }
+.listing-page #header .tabmenu li a[href^="j"]   { background: -340px 0 }
+.listing-page #header .tabmenu li a {
     content: "";
     display: inline-block;
-    background-image: url(%%tabmenu%%);
+    background-image: url(%%tabmenu%%) !important;
     width: 33px;
     height: 32px;
     opacity: .6;
+    font-size: 0;
     -webkit-transition: opacity 0.1s ease;
     transition: opacity 0.1s ease;
+}
+.listing-page #header .tabmenu li a:hover {
+    opacity: 1;
 }
 
 /* not-listing-page tabmenu items
 --------------------------------------------------------------------------------*/
-body:not(.listing-page) .tabmenu li {
-    margin-right: 0;
-    margin-left: 0;
-}
 
-body:not(.listing-page) .tabmenu li a:not([href^="j"]) {
+body:not(.listing-page) .tabmenu li a {
     background: rgba(0,0,0,0.05) !important;
     margin: 0;
     margin-top: 1px;
@@ -322,46 +307,13 @@ body:not(.listing-page) .tabmenu li a:not([href^="j"]) {
     margin-left: 3px;
 }
 
-body:not(.listing-page) .tabmenu li:first-of-type a {
-    border-radius: 15px 0 0 15px;
-}
-
-body.res:not(.listing-page) .tabmenu li:nth-of-type(3) a,
-body:not(.res):not(.listing-page) .tabmenu li:nth-of-type(2) a,
-body:not(.listing-page) .tabmenu li:last-of-type {
-    border-radius: 0 15px 15px 0;
-    margin-right: 2px;
-}
-
-/* mod toolbox
---------------------------------------------------------------------------------*/
-
-.tabmenu li a[href^="j"],
-body:not(.listing-page) .tabmenu li a {
-    margin-left: 5px;
-}
-.tabmenu li a[href^="j"] {
-    position: absolute;
-    top: auto;
-    left: 100%;
-    right: auto;
-    font-weight: normal;
-    font-size: 12px;
-    color: rgba(0,0,0,0.3);
-}
-.tabmenu li.tb-metrics a[href^="j"] {
-    margin-left: 90px;
-}
-
-.tabmenu li.tb-metrics, .tabmenu li.tb-metrics ~ li {
-    margin: 0;
-}
+body #header .tabmenu li:first-of-type a { border-radius: 15px 0 0 15px; }
+body #header .tabmenu li:last-of-type a { border-radius: 0 15px 15px 0; margin-right: 3px; }
 
 /* tabmenu tooltips
 --------------------------------------------------------------------------------*/
 
-.listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):after {
-    content: '';
+.listing-page #header .tabmenu li a:after {
     display: block;
     position: absolute;
     margin-bottom: 8px;
@@ -371,26 +323,29 @@ body:not(.listing-page) .tabmenu li a {
     line-height: 20px;
     padding: 0 10px;
     left: 50%;
+    border-radius: 3px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    border-radius: 3px;
     -webkit-transition: bottom 150ms ease, opacity 150ms ease-in;
     transition: bottom 150ms ease, opacity 150ms ease-in;
     bottom: 60%;
     opacity: 0;
     color: white;
 }
-.listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):hover:after {
+.listing-page #header .tabmenu li a:hover:after {
     bottom: 100%;
     opacity: 1;
 }
 
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(1) a:after { content: 'hot'; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(2) a:after { content: 'new'; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(3) a:after { content: 'rising'; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(4) a:after { content: 'controversial'; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(5) a:after { content: 'top'; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(6) a:after { content: 'gilded'; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(7) a:after { content: 'wiki'; }
-.listing-page #header-bottom-left .tabmenu li:nth-of-type(8) a:after { content: 'promoted'; }
-.res.listing-page #header-bottom-left .tabmenu li:nth-of-type(9) a:after { content: 'view images'; }
+.listing-page #header .tabmenu li:nth-child(1) a:after { content: 'hot'; }
+.listing-page #header .tabmenu li:nth-child(2) a:after { content: 'new'; }
+.listing-page #header .tabmenu li:nth-child(3) a:after { content: 'rising'; }
+.listing-page #header .tabmenu li:nth-child(4) a:after { content: 'controversial'; }
+.listing-page #header .tabmenu li:nth-child(5) a:after { content: 'top'; }
+.listing-page #header .tabmenu li:nth-child(6) a:after { content: 'gilded'; }
+.listing-page #header .tabmenu li:nth-child(7) a:after { content: 'wiki'; }
+.listing-page #header .tabmenu li:nth-child(8) a:after { content: 'promoted'; }
+.res.listing-page #header .tabmenu li:nth-child(9) a:after { content: 'view images'; }
+
+.listing-page #header .tabmenu li a[href^="j"]:after { content: 'queue'; }
+.listing-page #header .tabmenu li.tb-metrics a[href^="j"]:after { content: 'metrics'; }
