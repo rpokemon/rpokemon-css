@@ -1,0 +1,8 @@
+
+#header {
+    background: url(%%daymodeheader%%) no-repeat left center / cover;
+}
+
+html[lang$="nm"] #header {
+    background: url(%%header%%) no-repeat 50% 19px / cover;
+}

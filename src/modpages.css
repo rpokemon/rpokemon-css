@@ -68,22 +68,9 @@ body:not(.listing-page):not(.comments-page) .thing {
 }
 
 .comment .parent {
-    padding: 5px;
     display: -webkit-flex;
     display: flex;
     align-items: center;
-}
-
-.comment .parent ~ .entry {
-    margin-top: 25px !important;
-}
-
-.comment .parent:before {
-    content: 'Commented to ';
-}
-
-.comment .parent ~ .midcol {
-    top: 7px;
 }
 
 /* flair selector
@@ -155,11 +142,4 @@ body:not(.listing-page):not(.comments-page) .thing {
     left: 0;
     height: 40px;
     width: 150px;
-}
-
-/* metrics expand list
---------------------------------------------------------------------------------*/
-#tb-metrics-expand-list {
-    right: 10px !important;
-    left: auto !important;
 }

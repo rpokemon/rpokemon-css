@@ -5,13 +5,16 @@ import time
 import datetime
 from csscompressor import compress
 
-# -------------- FILE NAME ------ PURPOSE --------------
+# -------------- FILE NAME --------- PURPOSE --------------
                
 order       = [ 'etc.css',         # body, buttons, and wiki
                 'header.css',      # subreddit header
                 
                 'linklisting.css', # styles for the link listing page
-                'thing.css',       # styles for .thing elements (links and comments alike)
+                'thing.css',       # styles for thing elements (links and comments alike)
+                'tagline.css',     # thing tagline
+                'linkflair.css',   # link flair and filters
+                
                 'commentfix.css',  # styles for specifically comments
                 'commentpage.css', # styles for the comment page menus, usertext editor, etc.
                 'usertextmd.css',  # styles for the markdown
@@ -24,13 +27,12 @@ order       = [ 'etc.css',         # body, buttons, and wiki
                 'footer.css',      # subreddit footer
                 'modpages.css',    # any moderator pages that required additional CSS and also flair selector stuff
                 
-                'userflair.css',    # night mode
+                'userflair.css',   # user flairs
                 
                 'suntheme.css',    # day mode
-                
-                'redesign-test.css', ##### Redesign Test
-                
                 'moontheme.css',   # night mode
+                
+                'banner.css',      # banner
               ]      
                 
 # input/output variables

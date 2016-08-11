@@ -9,11 +9,6 @@ body {
     border-bottom: 1px solid #e3e3e3;
 }
 
-#header {
-    background: url(%%daymodeheader%%) no-repeat -10px 19px / 124%;
-    border-bottom-color: #cecdcd;
-}
-
 #sr-header-area a {
     background: transparent;
     color: #333;
