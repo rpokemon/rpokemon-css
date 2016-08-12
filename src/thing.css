@@ -2,70 +2,61 @@
 /********************************************************************************
 * THING - LINK AND COMMENTS
 *********************************************************************************/
-
 .thing {
-    overflow: visible !important;
+    overflow: visible!important
 }
 
 /* Link element
 --------------------------------------------------------------------------------*/
 .link {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
     padding: 8px 8px 0 57px;
-    padding-top: 8px;
     position: relative;
-    margin-top: 0;
+    margin-top: 0
 }
 .link.last-clicked {
     overflow: visible;
-    border: 1px groove #0082f0 !important;
-}
-
-.rank {
-    display: none;
+    border: 1px groove #0082f0!important
 }
 
 /* spam
 --------------------------------------------------------------------------------*/
 .thing.spam {
-    background: transparent;
+    background: 0 0
 }
-.thing.spam > .entry {
-    background: rgb(244, 210, 211) !important;
+.thing.spam>.entry {
+    background: #f4d2d3!important
 }
-.thing.spam > .entry * {
-    color: #111;
+.thing.spam>.entry * {
+    color: #111
 }
-.thing.spam > .entry .buttons li[title*="removed"] * {
-    color: #E74C3C;
+.thing.spam>.entry .buttons li[title*=removed] * {
+    color: #e74c3c
 }
 
 /* RES Active Thing
 --------------------------------------------------------------------------------*/
-
 .child,
-.res .link .RES-keyNav-activeElement,
-.res .RES-keyNav-activeElement .md-container {
-    background: transparent !important;
-    border-color: transparent !important;
+.res .RES-keyNav-activeElement .md-container,
+.res .link .RES-keyNav-activeElement {
+    background: 0 !important;
+    border-color: transparent!important
 }
 
 /* Link Title
 --------------------------------------------------------------------------------*/
 .link p.title {
-    margin: 10px 0 5px 10px;
+    margin: 10px 0 5px 10px
 }
 
 /* self posts in comment pages don't have expandos */
 .comments-page:not(.comment-permalink-page) .link.self p.title {
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 /* title - actual link*/
 .link a.title {
     position: relative; /* relative for spoiler overlay */
-    font-size: 19px;
-    font-family: Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    font-size: 19px
 }
 
 /* domain */
@@ -74,63 +65,78 @@
     position: absolute;
     right: 3px;
     bottom: 3px;
-    font-size: 9px;
+    font-size: 9px
 }
-
 .domain a {
-    opacity: .4;
-}
-
-.thing .title:visited, .thing.visited .title {
-    color: #606060;
+    opacity: .4
 }
 
 /* Thumbnails
 --------------------------------------------------------------------------------*/
 
-.thumbnail, .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, .linkflair-spoiler .thumbnail {
-    width:  70px;
-    height: 70px !important;
-    background: url(%%pokesheet%%);
-    border-radius: 50%;
-    border: 1px solid #111;
-    position: relative;
+
+.thumbnail.default, .thumbnail.self {
+    background-position: 0px 0px
+}
+.thumbnail.nsfw {
+    background: -70px 0
+}
+.linkflair-spoiler .thumbnail {
+    background: -70px -70px
+}
+.stickied .thumbnail.self {
+    background: -140px 0
+}
+.linkflair-noob .thumbnail.default, .linkflair-noob .thumbnail.self {
+    background: -140px -70px
 }
 
-.thumbnail.self    { background-position: 0 0; }
-.thumbnail.default { background-position: -0 -0; }
-.thumbnail.nsfw    { background-position: -70px 0; }
+.linkflair-spoiler .thumbnail,
+.thumbnail,
+.thumbnail.default,
+.thumbnail.nsfw,
+.thumbnail.self {
+    width: 70px;
+    height: 70px!important;
+    background-image: url(%%whitesheet%%) !important;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    position: relative
+}
 
-.linkflair-spoiler .thumbnail { background-position: -70px -70px; }
-.linkflair-spoiler .thumbnail img { display: none; }
+.linkflair-rotation .thumbnail,
+.linkflair-rotation .thumbnail.self {
+    background: url(%%extrasheet%%) !important
+}
 
-.stickied .thumbnail.self { background-position: -140px 0; }
-.linkflair-rotation .thumbnail, .linkflair-rotation .thumbnail.self { background: url(%%extrasheet%%) 0 0; }
-.linkflair-noob .thumbnail.default, .linkflair-noob .thumbnail.self { background-position: -140px -70px!important; }
+.thumbnail img {
+    width: 100%;
+    height: 100%
+}
 
-.thumbnail img { width: 100%; height: 100%; }
+.rank,
+.linkflair-spoiler .thumbnail img {
+    display: none
+}
 
 /* entry
 --------------------------------------------------------------------------------*/
-
 .entry {
     border-radius: 4px;
     overflow: hidden;
-    margin: 17px 0 0 0 !important;
+    margin: 17px 0 0!important
 }
-
 .comment .entry {
     position: relative;
     overflow: visible;
     padding-left: 70px;
-    padding-bottom: 5px;
+    padding-bottom: 5px
 }
 
 /* entry buttons
 --------------------------------------------------------------------------------*/
-
 .link .flat-list {
-    margin-top: 2px;
+    margin-top: 2px
 }
 
 /* midcol element
@@ -140,112 +146,128 @@
     left: -3px;
     top: 0;
     text-align: center;
-    width: 46px !important;
+    width: 46px!important;
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
-
 .link .midcol {
-    background: rgba(0,0,0,0.02);
-    margin-bottom: 6px;
+    background: rgba(0, 0, 0, .02);
     border-right: 1px solid #ececec;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    margin: 0;
+    margin: 0
 }
-
 .comment .midcol {
     margin: 0 10px;
     top: 25px;
-    width: 36px !important;
+    width: 36px!important;
     left: 15px;
-    z-index: 5;
+    z-index: 5
 }
 
 /* Score
 --------------------------------------------------------------------------------*/
 
-.score {
+.thing .score {
     display: none;
     position: relative;
     float: left;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 3px;
     line-height: 20px;
     height: 20px;
-    text-align: center;
+    text-align: center
 }
-
-.score.unvoted { color: #333; }
-.score.likes { color: #e15a5a; }
-.score.dislikes { color: #598be0; }
-
+.score.unvoted {
+    color: #333
+}
+.score.likes {
+    color: #e15a5a
+}
+.score.dislikes {
+    color: #598be0
+}
 
 /* link score */
 .link .score {
-    font-size: 13px;
+    font-size: 13px
 }
 
 /* comment score */
 .comment .score {
     font-size: 10px;
-    letter-spacing: 0.2px;
+    letter-spacing: .2px;
     top: -25px;
     left: 0;
     display: none;
     word-spacing: 100px;
     width: 60px;
-    position: absolute !important;
+    position: absolute!important;
     overflow: hidden;
     border: 1px solid #cecdcd;
-    background: #fff;
+    background: #fff
 }
 
 /* show score */
-.comment .unvoted .score.unvoted,
+.comment .dislikes .score.dislikes,
 .comment .likes .score.likes,
-.comment .dislikes .score.dislikes { 
-    display: table-caption !important;
+.comment .unvoted .score.unvoted {
+    display: table-caption!important
 }
-
-.likes .score.likes,
 .dislikes .score.dislikes,
+.likes .score.likes,
 .unvoted .score.unvoted {
-    display: block;
+    display: block
 }
 
 /* Vote arrows
 --------------------------------------------------------------------------------*/
 
+.arrow.up {
+    background: 0 -2px
+}
+.arrow.down {
+    background: 0 -208px
+}
+.arrow.upmod {
+    background: 0 -146px
+}
+.arrow.downmod {
+    background: 0 -66px
+}
+
 .arrow {
     width: 33px;
     height: 33px;
-    background: url(%%downupsumo%%) !important;
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    margin: -2px auto;
+    background-image: url(%%downupsumo%%)!important;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+    margin: -2px auto
 }
-.arrow.up { background-position: 0px -2px!important; }
-.arrow.down { background-position: 0px -208px!important; }
-.arrow.upmod { background-position: 0px -146px!important; }
-.arrow.downmod { background-position: 0px -66px!important; }
 
 /* Expando buttons
 --------------------------------------------------------------------------------*/
-
-.expando-button, .expando-button.video, .expando-button.video-muted, .expando-button.image, .parent .expando-button {
+.expando-button,
+.expando-button.image,
+.expando-button.video,
+.expando-button.video-muted,
+.parent .expando-button {
     position: relative;
-    background: url(%%pokesheet%%) -36px -175px !important;
-    width: 18px !important;
-    height: 17px !important;
-    max-width: 18px !important;
-    max-height: 17px !important;
+    background: url(%%pokesheet%%) -36px -175px!important;
+    width: 18px!important;
+    height: 17px!important;
+    max-width: 18px!important;
+    max-height: 17px!important;
     top: 0;
     left: 0;
     margin-left: 10px;
-    opacity: .4;
+    opacity: .4
 }
-.expando-button:hover { opacity: 0.8; }
-.expando-button.expanded { background-position: -37px -197px !important; }
+.expando-button:hover {
+    opacity: .8
+}
+.expando-button.expanded {
+    background-position: -37px -197px!important
+}

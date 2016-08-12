@@ -1,8 +1,9 @@
-
+/********************************************************************************
+* BANNER
+*********************************************************************************/
 #header {
-    background: url(%%daymodeheader%%) no-repeat left center / cover;
+    background: url(%%daymodeheader%%) left center/cover no-repeat
 }
-
-html[lang$="nm"] #header {
-    background: url(%%header%%) no-repeat 50% 19px / cover;
+html[lang$=nm] #header {
+    background: url(%%header%%) 50% 19px/cover no-repeat
 }

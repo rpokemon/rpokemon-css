@@ -1,269 +1,281 @@
+
+/********************************************************************************
+* SUN MODE
+*********************************************************************************/
+
 body {
-    background: #f2f3f4;
+    background: #ECF0F1 url(%%bg%%)
 }
 
 /* header
 --------------------------------------------------------------------------------*/
 #sr-header-area {
-    background: white !important;
-    border-bottom: 1px solid #e3e3e3;
+    background: #fff!important;
+    border-bottom: 1px solid #e3e3e3
 }
-
 #sr-header-area a {
-    background: transparent;
-    color: #333;
+    background: 0 0;
+    color: #333
 }
-
 .message-count {
-    background: #FF7500;
-    color: white !important;
+    background: #ff7500;
+    color: #fff!important
 }
-
 #header-bottom-right a,
+.flair:before,
+.link .score.unvoted,
 .res #userbarToggle {
-    color: #333;
+    color: #333
 }
 
 /* tab menu
 --------------------------------------------------------------------------------*/
-html:not([lang$="nm"]) .listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):before {
-    opacity: 1;
+html:not([lang$=nm]) .listing-page #header-bottom-left .tabmenu li a:not([href^="j"]):before {
+    opacity: 1
+}
+
+/* TODO what the hell is this doing here */
+html[lang$=nm] .side .md>h2:after,
+html[lang$=nm] .side .md>h4:first-of-type:after,
+html[lang$=nm] .side .md>h4>a:after,
+html[lang$=nm] .side .md>h6:after,
+html[lang$=nm] .titlebox form.toggle.flairtoggle:after,
+html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle:after {
+    opacity: .15
 }
 
 /********************************************************************************
 * RESET
 *********************************************************************************/
-.entry,
-.thing.link,
-.side,
-.sidecontentbox,
-.sidecontentbox .content,
-.icon-menu a,
-.side .md h5,
-.side .md h5+ul,
-.linkinfo .shortlink input,
-.titlebox form.toggle,
-.titlebox .leavemoderator,
-.titlebox .leavecontributor-button,
-.side #searchexpando,
 #previoussearch,
 .combined-search-page #previoussearch,
 .combined-search-page .search-result-group,
+.entry,
+.icon-menu a,
+.linkinfo .shortlink input,
 .post-sharing,
-.subreddit-report-form {
-    background: white !important;
+.side,
+.side #searchexpando,
+.sidecontentbox,
+.sidecontentbox .content,
+.subreddit-report-form,
+.thing.link,
+.titlebox .leavecontributor-button,
+.titlebox .leavemoderator,
+.titlebox form.toggle {
+    background: #fff!important;
     color: #333;
-    border-color: #cecdcd!important;
+    border-color: #cecdcd!important
 }
 
 /********************************************************************************
 * THING
 *********************************************************************************/
-
-.link { border: 1px solid #cecdcd !important; box-shadow: none; }
-.link .entry { border-color: transparent !important; }
-
-.comment .entry  {border: 1px solid #cecdcd !important;}
-
-.flair:before,
-.link .score.unvoted { color: #333; }
-
+.link {
+    border: 1px solid #cecdcd!important;
+    box-shadow: none
+}
+.link .entry {
+    border-color: transparent!important
+}
+.comment .entry {
+    border: 1px solid #cecdcd!important
+}
 .new-comment .usertext-body {
-    background-color: #e5efff;
+    background-color: #e5efff
 }
-
-.thumbnail, .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, .linkflair-spoiler .thumbnail {
-    background-image: url(%%whitesheet%%);
-    border: 1px solid #aaa;
-}
-
 .entry .buttons .first:before {
-    display: none;
+    display: none
+}
+
+.link.RES-keyNav-activeThing {
+    background: #F0F3FC !important
 }
 
 /* thing title
 --------------------------------------------------------------------------------*/
 .link a.title {
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, .8)
 }
+.link a.title:visited,
 .thing .title:visited,
-.thing.visited .title,
-.link a.title:visited  {
-    color: #423d56;
+.thing.visited .title {
+    color: #423d56
 }
 
 /* author panel - set to white version
 --------------------------------------------------------------------------------*/
-.thing .author,
+.flairrow .author,
 .side .tagline .author,
-.flairrow .author {
-    background-position: 0 -36px;
+.thing .author {
+    background-position: 0 -36px
 }
-
 
 /* spoiler overlay
 --------------------------------------------------------------------------------*/
 .link.linkflair-spoiler a.title:before {
-    background: #eaeaea;
+    background: #eaeaea
 }
-
 
 /********************************************************************************
 * COMMENT AREA
 *********************************************************************************/
-.commentarea > .panestack-title,
-.commentarea > .menuarea,
-.commentarea > .usertext,
-.commentarea .child > .usertext,
-.gold-accent.comment-visits-box,
-.comment-permalink-page .commentarea > .infobar {
-    background: white;
+.comment-permalink-page .commentarea>.infobar,
+.commentarea .child>.usertext,
+.commentarea>.menuarea,
+.commentarea>.panestack-title,
+.commentarea>.usertext,
+.gold-accent.comment-visits-box {
+    background: #fff;
     border-left: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3
 }
-.commentarea > .panestack-title,
-.comment-permalink-page .commentarea > .menuarea {
-    border-top: 1px solid #e3e3e3;
+.comment-permalink-page .commentarea>.menuarea,
+.commentarea>.panestack-title {
+    border-top: 1px solid #e3e3e3
 }
-.commentarea .child > .usertext,
-.gold-accent.comment-visits-box,
-.comment-permalink-page .commentarea > .infobar {
-    border-bottom: 1px solid #e3e3e3;
+.comment-permalink-page .commentarea>.infobar,
+.commentarea .child>.usertext,
+.gold-accent.comment-visits-box {
+    border-bottom: 1px solid #e3e3e3
 }
-.commentarea > .menuarea { background: rgba(0,0,0,0.01); }
+.commentarea>.menuarea {
+    background: #fafafa;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .1)
+}
 
 /* comment visits select and tb macro */
-select#comment-visits,
-body.mod-toolbox .tb-action-button.tb-top-macro-select {
-    background: rgba(0,0,0,0.05) !important; color: #555 !important;
+body.mod-toolbox .tb-action-button.tb-top-macro-select,
+select#comment-visits {
+    background: rgba(0, 0, 0, .05)!important;
+    color: #555!important
 }
 
 /* text inputs */
-.commentarea > .usertext textarea,
-.comments-page .usertext textarea,
-.combined-search-page #search input[type=text] {
-    background: white;
-    color: #333 !important;
-    border: 1px solid #c8ccd0 !important;
+.combined-search-page #search input[type=text],
+.commentarea>.usertext textarea,
+.comments-page .usertext textarea {
+    background: #fff;
+    color: #333!important;
+    border: 1px solid #c8ccd0!important
 }
 #search input[type=text] {
-    background: white;
-    color: #333 !important;
+    background: #fff;
+    color: #333!important
 }
-
+.gadget .reddit-entry a,
 .panestack-title .title,
 html.res .commentingAs {
-    color: #333;
+    color: #333
 }
 
 /********************************************************************************
 * SIDE
 *********************************************************************************/
 .side {
-    border: 1px solid #e3e3e3;
+    border: 1px solid #e3e3e3
 }
-
-/* sidecontentbox
---------------------------------------------------------------------------------*/
-.sidecontentbox {
-    border-color: #eee;
+.linkinfo {
+    border: 1px solid #e3e3e3!important
 }
-
-.linkinfo {border: 1px solid #e3e3e3 !important;}
-
-.gadget .reddit-entry { border: 0; background: #fafafa !important; }
-.gadget .reddit-entry a { color: #333; }
+.gadget .reddit-entry {
+    border: 0;
+    background: #fafafa!important
+}
 
 /* sub description
 --------------------------------------------------------------------------------*/
-.side .md > p:first-of-type {
-    background: rgba(0,0,0,0.025);
+.side .md>p:first-of-type {
+    background: rgba(0, 0, 0, .025);
     color: #222;
-    border: 0;
+    border: 0
 }
 
 /* sidebar common button
 --------------------------------------------------------------------------------*/
-.side .md a[href*="flairbot"],
-.side .md>h2+ul li a,
-.sidecontentbox .helplink ~ .content li.more a,
-.sidecontentbox a.helplink {
-    background: white;
-    box-shadow: none;
-    color: #333;
-    border-color: #e3e3e3;
-}
-.sidecontentbox .helplink ~ .content li {
-    background: rgba(0,0,0,0.05);
+.sidecontentbox .helplink~.content li {
+    background: rgba(0, 0, 0, .05)
 }
 
 /* toggles and subscription stuff
 --------------------------------------------------------------------------------*/
 .titlebox .subscribers {
-    color: #333;
+    color: #333
 }
-
 .titlebox .users-online,
 .toggle.fancy-toggle-button .option.active,
 html.res .res-fancy-toggle-button {
     background: #f0f0f0;
-    color: #333;
+    color: #333
+}
+.titlebox form.toggle.flairtoggle,
+.titlebox form.toggle.res-sr-style-toggle {
+    color: #333
 }
 
-.titlebox form.toggle.res-sr-style-toggle,
-.titlebox form.toggle.flairtoggle {
-    color: #333;
+/* sidebar psa box
+--------------------------------------------------------------------------------*/
+.side .md h5,
+.side .md h5+ul {
+    background: rgba(0,0,0,0.02);
+}
+.side .md h5 {
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+.side .md h5+ul {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 /* sidebar rules
 --------------------------------------------------------------------------------*/
 .side .md h3 {
-    border-bottom-color: #e3e3e3;
+    border-bottom-color: #e3e3e3
 }
 .side .md h3+ul+ol:after {
-    background: #e3e3e3;
+    background: #e3e3e3
 }
 .side .md h3,
 .side .md h3+ul,
 .side .md h3+ul+ol {
-    border-left-color: #e3e3e3;
+    border-left-color: #e3e3e3
 }
 .side .md h3+ul+ol>li:before {
-    background: white;
+    background: #fff;
     border-color: #e3e3e3;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 13px;
     width: 24px;
     height: 24px;
     line-height: 24px;
     left: -36px;
-    top: 3px;
+    top: 3px
 }
 
 /* submission filters
 --------------------------------------------------------------------------------*/
-.side .md>blockquote:nth-of-type(2) h4 a,
-.side .md>blockquote:nth-of-type(2) h2 a {
-    background: white;
-    box-shadow: none;
+.side .md>blockquote:nth-of-type(2) h2 a,
+.side .md>blockquote:nth-of-type(2) h4 a {
+    background: #fff;
+    box-shadow: none
 }
 
 /* side community links
 --------------------------------------------------------------------------------*/
-.side .md h6+blockquote p a { background: #f3f3f3 !important; }
-
+.side .md h6+blockquote p a {
+    background: #f3f3f3!important
+}
 
 /* sun/moon switch day mode
 --------------------------------------------------------------------------------*/
 .side .md h1:first-of-type {
-    background: transparent;
-    border: 1px solid #dedede;
+    background: 0 0;
+    border: 1px solid #dedede
 }
 .side .md h1:first-of-type a {
-    color: #555;
+    color: #555
 }
 .side .md h1:first-of-type a:last-child {
-    border-left: 1px solid #dedede;
+    border-left: 1px solid #dedede
 }
 
 /********************************************************************************
@@ -273,48 +285,46 @@ html.res .res-fancy-toggle-button {
 /* listing page sort menu
 --------------------------------------------------------------------------------*/
 .listing-page .content>.menuarea .spacer {
-    background: white;
-    border: 1px solid #e3e3e3;
+    background: #fff;
+    border: 1px solid #e3e3e3
 }
 
 /* md
 --------------------------------------------------------------------------------*/
-
-.side .md,
-.side .md *,
 .md,
-.md * {
-    color: #222;
+.md *,
+.side .md,
+.side .md * {
+    color: #222
 }
 .thing .md hr {
-    background: rgba(0,0,0,0.14);
+    background: rgba(0, 0, 0, .14)
 }
-.md code, .md pre {
-    background: rgba(0,0,0,0.08);
-}
-
-.side .md table td,
-.side .md table td a {
-    color: #555;
+.md code,
+.md pre {
+    background: rgba(0, 0, 0, .08)
 }
 
 /* footer
 --------------------------------------------------------------------------------*/
-.footer .col li.title { color: #555 }
-.footer .col li:not(.title) a { color: #555 }
+.footer .col li.title,
+.footer .col li:not(.title) a,
+.side .md table td,
+.side .md table td a {
+    color: #555
+}
 .bottommenu,
-.bottommenu a { color: #777; }
-
+.bottommenu a {
+    color: #777
+}
 
 /* misc
 --------------------------------------------------------------------------------*/
-
 .RESUserTagImage:after {
-    background-image: none !important;
+    background-image: none!important
 }
-
 .drop-choices {
-    background: white;
+    background: #fff;
     border: 1px solid #e3e3e3;
-    color: #222;
+    color: #222
 }

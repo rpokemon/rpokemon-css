@@ -1,48 +1,44 @@
 
-
 /********************************************************************************
 * COMMENTS PAGE
 *********************************************************************************/
 
 /* commentarea menus
 --------------------------------------------------------------------------------*/
-
-.commentarea > .sitetable {
-    margin-top: 30px;
+.commentarea>.sitetable {
+    margin-top: 30px
 }
-
-.commentarea > .panestack-title,
-.commentarea > .menuarea,
-.commentarea > .usertext,
-.commentarea .child > .usertext,
+.commentarea .child>.usertext,
+.commentarea>.menuarea,
+.commentarea>.panestack-title,
+.commentarea>.usertext,
 .gold-accent.comment-visits-box {
-    background: #282b30;
     display: block;
-    margin: 0;
     padding: 2px 10px;
-    margin: 0 0px;
-    border: 0;
+    margin: 0;
+    border: 0
 }
 
 /* panestack title */
 .panestack-title .title {
     display: inline-block;
-    margin: 0;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px
 }
 
 /* menu area */
-.commentarea > .menuarea {
+.commentarea>.menuarea {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding-top: 10px;
-    padding-bottom: 10px;
-    background: #2d3035;
+    padding-bottom: 10px
 }
-.commentarea > .menuarea .spacer { margin: 0; }
+
+.commentarea>.menuarea .spacer {
+    margin: 0
+}
 
 /* drop choices */
 .menuarea .dropdown.lightdrop .selected {
@@ -50,37 +46,38 @@
     text-decoration: none;
     opacity: 10;
     cursor: pointer;
-    
-    color: #2A66D6;
+    color: #2a66d6;
     display: inline-flex;
-    align-items: center;
+    align-items: center
 }
-.menuarea .dropdown.lightdrop .selected:hover { color: #48f; }
-.menuarea .dropdown.lightdrop .selected:after { content: " ="; opacity: .5; margin-left: 2px; }
-.drop-choices {
-    background: #262626;
-    border: 1px solid #454545;
+.menuarea .dropdown.lightdrop .selected:hover {
+    color: #48f
 }
-.drop-choices a.choice { padding: 3px 5px 3px 5px; }
+.menuarea .dropdown.lightdrop .selected:after {
+    content: " =";
+    opacity: .5;
+    margin-left: 2px
+}
+.drop-choices a.choice {
+    padding: 3px 5px
+}
+
 
 .res #REScommentNavToggle {
     flex-basis: 100%;
-    margin-top: 3px;
+    margin-top: 3px
 }
-
 .commentarea .menuarea form.toggle {
     margin-left: 0;
-    margin-right: 8px;
+    margin-right: 8px
 }
-
-/* contest mode infobar */
 .contest-mode.infobar.mellow {
     display: block;
     margin: 10px 0;
     background-color: #48f;
-    border: 1px solid #2A66D6;
-    color: rgba(255,255,255,0.85);
-    border-radius: 3px;
+    border: 1px solid #2a66d6;
+    color: rgba(255, 255, 255, .85);
+    border-radius: 3px
 }
 
 /* visits box
@@ -88,98 +85,97 @@
 .gold-accent.comment-visits-box {
     border-radius: 0;
     width: 100%;
-    max-width: none !important;
+    max-width: none!important;
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
-.gold-accent.comment-visits-box .title { font-weight: 500; }
-
+.gold-accent.comment-visits-box .title {
+    font-weight: 500
+}
 select#comment-visits {
     border: 0;
     padding: 3px 4px;
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 /* usertext edit
 --------------------------------------------------------------------------------*/
-
-.commentarea > .usertext {
+.commentarea>.usertext {
     padding-top: 10px
 }
 .res .markdownEditor .edit-btn:not(.btn-macro) {
     border: 0;
-    border-radius: 0;
+    border-radius: 0
 }
-.res .commentingAs { font-size: 12px; }
-.res .commentingAsUser { color: #2A66D6; }
-
-.commentarea .child > .usertext {
+.res .commentingAs {
+    font-size: 12px
+}
+.res .commentingAsUser {
+    color: #2a66d6
+}
+.commentarea .child>.usertext {
     margin: 5px 0 15px 30px;
     border-radius: 3px;
-    padding-top: 10px;
+    padding-top: 10px
 }
-
 .comments-page .usertext textarea {
-    border: 0;
-    color: white;
-    padding: 4px;
+    padding: 4px
 }
 
 /* usertext edit - buttons
 --------------------------------------------------------------------------------*/
-.usertext button[type=submit], .usertext button.cancel {
+.usertext button.cancel,
+.usertext button[type=submit] {
     display: inline-block;
     border: 1px solid;
     border-radius: 3px;
-    color: white !important;
+    color: #fff!important;
     line-height: 29px;
     padding: 0 10px;
     min-width: 77px;
-    margin: 0;
+    margin: 0 5px 1px 0;
     outline: 0;
-    margin-right: 5px;
     font-size: 13px;
-    margin-bottom: 1px;
-    position: relative;
+    position: relative
 }
-.usertext button[type=submit]:active, .usertext button.cancel:active {
+.usertext button.cancel:active,
+.usertext button[type=submit]:active {
     margin-top: 1px;
-    margin-bottom: 0;
+    margin-bottom: 0
 }
-
 .usertext button[type=submit] {
     background-color: #48f;
-    border-color: #2A66D6;
-    box-shadow: inset 0 1px 0 #669BFF;
+    border-color: #2a66d6;
+    box-shadow: inset 0 1px 0 #669bff
 }
 .usertext button.cancel {
-    background-color: rgba(255,255,255,0.14);
-    border-color: rgba(255,255,255,0.07);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);
-}
-
-.usertext .RESBigEditorPop {
-    line-height: normal;
-    height: auto;
-    padding: 0;
-    border: 0;
-    background: none;
-    box-shadow: none;
+    background-color: rgba(255, 255, 255, .14);
+    border-color: rgba(255, 255, 255, .07);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15)
 }
 
 /* usertext edit - bottom area
 --------------------------------------------------------------------------------*/
 .usertext .bottom-area {
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
-.usertext a.reddiquette, .usertext .RESBigEditorPop, .usertext .help-toggle {
+.usertext .RESBigEditorPop,
+.usertext .help-toggle,
+.usertext a.reddiquette {
     display: inline-block;
     margin: 5px 0 0 10px;
     line-height: 14px;
-    cursor: pointer;
+    cursor: pointer
 }
-.usertext .RESBigEditorPop { margin-top: 6px; font-size: 11px; }
-
+.usertext .RESBigEditorPop {
+    height: auto;
+    padding: 0;
+    border: 0;
+    background: 0;
+    box-shadow: none;
+    margin-top: 6px;
+    font-size: 11px
+}
 body.mod-toolbox .tb-action-button.tb-top-macro-select {
-    margin-top: 5px;
+    margin-top: 5px
 }

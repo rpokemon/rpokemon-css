@@ -2,16 +2,20 @@
 /********************************************************************************
 * FOOTER
 *********************************************************************************/
+.footer, .footer .col { border: 0; border-radius: 0 }
+.footer-parent { padding-top: 100px }
 
-.footer, .footer .flat-vert.title, .bottommenu { font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
-.footer, .footer .col { border: 0; border-radius: 0; }
-.footer-parent { padding-top: 100px; }
-.footer { display: flex; display: -webkit-flex; justify-content: center; max-width: none; }
+.footer {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    max-width: none
+}
 
-.footer .col:not(:last-child){margin-right:80px}
-.footer .col{flex:initial}
-.footer .col .title{font-size:16px;margin-bottom:12px;text-transform:capitalize}
-.footer .col li:not(.title) a{font-size:13px;line-height:18px}
+.footer .col:not(:last-child) { margin-right: 80px }
+.footer .col { flex: initial }
+.footer .col .title { font-size: 16px; margin-bottom: 12px; text-transform: capitalize }
 
-.bottommenu, .bottommenu a { font-size: 11px; }
-.bottommenu a.updated { color: #208623; }
+.footer .col li:not(.title) a { font-size: 13px; line-height: 18px }
+.bottommenu, .bottommenu a { font-size: 11px }
+.bottommenu a.updated { color: #208623 }

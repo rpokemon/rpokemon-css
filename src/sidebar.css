@@ -1,4 +1,5 @@
 
+
 /********************************************************************************
 * SIDEBAR
 *********************************************************************************/
@@ -8,124 +9,112 @@
 .side {
     z-index: 500;
     margin-top: 107px;
-    
     position: relative;
     padding-top: 735px;
-    border-radius: 5px;
+    border-radius: 5px
 }
-
 .side .sponsorshipbox {
     position: relative;
-    top: 15px;
+    top: 15px
 }
-
-.side .md, .side .md * { color: white; }
-
 .side .md {
-    margin: 7px;
+    margin: 7px
 }
 
 /* we use hr split off blockquotes, we don't want the actual hr to show */
 .side .md hr {
-    background: transparent;
+    background: 0 0
 }
-
 .side .spacer {
-    margin: 0;
+    margin: 0
 }
-
 
 /* Search
 --------------------------------------------------------------------------------*/
 .side #search {
-    position: absolute;
     bottom: 100%;
-    left: 0;
     right: 0;
-    margin-bottom: 41px;
+    margin-bottom: 41px
 }
-
 #search input[type=text] {
     border: 0;
     height: 34px;
     line-height: 34px;
     border-radius: 3px;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, .1)
 }
-
-#search input[type="submit"] {
+#search input[type=submit] {
     position: absolute;
     display: block;
     right: 10px;
     top: 10px;
     border: 0;
-    box-shadow: none;
+    box-shadow: none
 }
-
 .side #searchexpando {
-    position: absolute;
-    left: 0;
     right: 0;
-    z-index: 999;
-    background: #222;
-    border-color: #222;
+    z-index: 999
 }
 
 /* Titlebox stuff
 --------------------------------------------------------------------------------*/
 .titlebox {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
-
-.titlebox > * { order: 1; }
-.titlebox > .leavemoderator, .titlebox > .leavecontributor-button { order: 2; }
+.titlebox>* {
+    order: 1
+}
+.titlebox>.leavecontributor-button,
+.titlebox>.leavemoderator {
+    order: 2
+}
 
 /* side top-logo */
-.titlebox > h1 {
-    position: absolute;
+.titlebox>h1 {
     top: 0;
-    left: 0;
-    right: 0;
+    right: 0
 }
-.titlebox > h1 a {
+.titlebox>h1 a {
     display: block;
     position: relative;
     font-size: 0;
     height: 60px;
     width: 100%;
-    background: url(%%sidelogo%%) no-repeat center bottom / 50%;
-    margin: 0 auto;
+    background: url(%%sidelogo%%) center bottom/50% no-repeat;
+    margin: 0 auto
 }
 
 /* hide stuff */
+.moderator.toggle .main:before,
 .titlebox .bottom,
-.titlebox .leavemoderator:before, .moderator.toggle .main:before,
-.titlebox form.leavecontributor-button:before { display: none; }
+.titlebox .leavemoderator:before,
+.titlebox form.leavecontributor-button:before {
+    display: none
+}
 
 /* toggles */
-.titlebox form.toggle, .titlebox .leavemoderator, .titlebox .leavecontributor-button {
-    color: rgba(255,255,255,0.2);
-    background: transparent;
+.titlebox .leavecontributor-button,
+.titlebox .leavemoderator,
+.titlebox form.toggle {
     text-align: left;
-    padding: 3px 20px;
+    padding: 3px 20px
 }
 
 /* Subscribers/Users online
 --------------------------------------------------------------------------------*/
-
-.titlebox .subscribers, .titlebox .users-online {
+.titlebox .subscribers,
+.titlebox .users-online {
     position: absolute;
     color: #FFF;
     top: 100px;
     left: 30px;
     right: 30px;
     padding-left: 65px;
-    line-height: 20px;
+    line-height: 20px
 }
 .titlebox .users-online {
-    top: 120px;
-    background: #0C0C0C;
+    top: 120px
 }
 
 .titlebox .users-online .number:before {
@@ -136,36 +125,47 @@
     width: 52px;
     height: 50px;
     bottom: -8px;
-    left: 0;
+    left: 0
 }
 
-.titlebox .number:after { content: " Pokémon Trainers"; }
-.titlebox .users-online .number:after { content: " Online Now"; }
-.titlebox .word, .users-online:before { display: none; }
+.titlebox .number:after {
+    content: " Pokémon Trainers"
+}
+.titlebox .users-online .number:after {
+    content: " Online Now"
+}
 
 /* subscription buttons
 --------------------------------------------------------------------------------*/
-
-.toggle.fancy-toggle-button .option.active, .res .res-fancy-toggle-button {
-    background: #0C0C0C;
+.titlebox .word,
+.users-online:before {
+    display: none
+}
+.res .res-fancy-toggle-button,
+.toggle.fancy-toggle-button .option.active {
+    background: #0c0c0c;
     border: 0;
     border-radius: 0;
     line-height: 20px;
     height: 20px;
     display: inline-block;
-    text-transform: capitalize;
+    text-transform: capitalize
 }
-
-.titlebox .fancy-toggle-button,
+.res-fancy-toggle-button.RESDashboardToggle,
 .res-fancy-toggle-button.RESshortcut,
-.res-fancy-toggle-button.RESDashboardToggle {
+.titlebox .fancy-toggle-button {
     position: absolute;
-    top: 150px;
+    top: 150px
 }
-
-.titlebox .fancy-toggle-button { left: 30px; }
-.res-fancy-toggle-button.RESshortcut { left: 116px }
-.res-fancy-toggle-button.RESDashboardToggle { right: 25px; }
+.titlebox .fancy-toggle-button {
+    left: 30px
+}
+.res-fancy-toggle-button.RESshortcut {
+    left: 116px
+}
+.res-fancy-toggle-button.RESDashboardToggle {
+    right: 25px
+}
 
 /* edit flair area
 --------------------------------------------------------------------------------*/
@@ -176,30 +176,28 @@
     display: flex;
     align-items: center;
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
-
 .flairtoggle label {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 /* flair preview tagline */
 .titlebox .tagline {
     position: absolute;
     left: -10px;
-    top: 210px;
+    top: 210px
 }
 
 /* edit flair link */
-.side .md a[href*="flairbot"] {
+.side .md a[href*=flairbot] {
     line-height: 26px;
     display: block;
     position: absolute;
     top: 260px;
     left: 30px;
-    right: 30px;
-    
+    right: 30px
 }
 
 /* checkboxes
@@ -210,79 +208,103 @@
     text-transform: capitalize;
     top: 70px;
     left: 0;
-    right: 0;
+    right: 0
 }
 
-.res-sr-style-toggle input { display: none; }
-.res-sr-style-toggle label { display: flex; align-items: center; }
+.res-sr-style-toggle input {
+    display: none
+}
+.res-sr-style-toggle label {
+    display: flex;
+    align-items: center
+}
 
 /* checkboxes */
-.flairtoggle input[type=checkbox] ~ label:before, .res-sr-style-toggle label:before {
+.flairtoggle input[type=checkbox]~label:before,
+.res-sr-style-toggle label:before {
     content: '';
     display: inline-block;
     width: 17px;
     height: 16px;
-    margin-right: 5px;
+    margin-right: 5px
 }
-
-.flairtoggle input[type=checkbox]:not(:checked) ~ label:before { background: url(%%pokesheet%%) -178px -195px; }
-.flairtoggle input[type=checkbox]:checked ~ label:before, .res-sr-style-toggle label:before { background: url(%%pokesheet%%) -194px -195px; }
-.flairtoggle input[type=checkbox] { display: none; }
+.flairtoggle input[type=checkbox],
+.side .md>h2+ul+hr {
+    display: none
+}
+.flairtoggle input[type=checkbox]:not(:checked)~label:before {
+    background: url(%%pokesheet%%) -178px -195px
+}
+.flairtoggle input[type=checkbox]:checked~label:before,
+.res-sr-style-toggle label:before {
+    background: url(%%pokesheet%%) -194px -195px
+}
 
 /* Submit links
 --------------------------------------------------------------------------------*/
-.side .md > h2 {
+.side .md>h2 {
     position: absolute;
     top: 450px;
-    margin: 0;
+    margin: 0
 }
-.side .md>h2+ul+hr { display: none; }
 
 /* list */
-.side .md > h2 + ul {
+.side .md>h2+ul {
     padding: 0;
     list-style-type: none;
     position: absolute;
     top: 475px;
     left: 0;
-    right: 0;
+    right: 0
 }
-.side .md > h2 + ul li a {
+.side .md>h2+ul li a {
     line-height: 30px;
     display: inline-block;
     left: 30px;
     position: relative;
     margin: 2px auto;
-    width: 244px;
+    width: 244px
 }
 
 /* icons */
-.side .md > h2 + ul li a:before {
-    content:"";
+.side .md>h2+ul li a:before {
+    content: "";
     background: url(%%Flair%%);
     display: block;
     position: absolute;
     width: 40px;
     height: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
-.side .md a[href$="/submit"]:before { background-position: -960px 0px; }
-.side .md a[href$="/submit?selftext=true"]:before { background-position: -440px -416px; }
-.side .md a[href*="/4lpffw"]:before { background-position: -800px -32px; }
-.side .md a[href*="/r/pokemontrades/submit"]:before { background-position: -1080px -64px; }
-.side .md a[href*="/r/pokememes/submit"]:before { background-position: -480px -64px; }
-.side .md a[href*="/r/shinypokemon/submit"]:before { background-position: -720px -768px; }
+
+.side .md a[href$="/submit"]:before {
+    background-position: -960px 0
+}
+.side .md a[href$="/submit?selftext=true"]:before {
+    background-position: -440px -416px
+}
+.side .md a[href*="/4lpffw"]:before {
+    background-position: -800px -32px
+}
+.side .md a[href*="/r/pokemontrades/submit"]:before {
+    background-position: -1080px -64px
+}
+.side .md a[href*="/r/pokememes/submit"]:before {
+    background-position: -480px -64px
+}
+.side .md a[href*="/r/shinypokemon/submit"]:before {
+    background-position: -720px -768px
+}
+
 
 /* subreddit description
 --------------------------------------------------------------------------------*/
-.side .md > p:first-of-type {
+.side .md>p:first-of-type {
     position: absolute;
     top: 305px;
     margin: 0 16px;
-    padding: 8px;
-    background: #2e3136;
-    color: #fff;
+    padding: 8px
 }
 
 /* Night/day mode switch (nm switch/dm switch/sn switch/sun switch/moon switch)
@@ -294,7 +316,7 @@
     right: 20px;
     height: 36px;
     border-radius: 18px;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 .side .md h1:first-of-type a {
     display: inline-block;
@@ -304,9 +326,8 @@
     font-size: 15px;
     text-align: right;
     padding-right: 10px;
-    position: relative;
+    position: relative
 }
-
 .side .md h1:first-of-type a:before {
     content: '';
     display: block;
@@ -315,141 +336,164 @@
     width: 27px;
     height: 27px;
     left: 10px;
-    top: 3px;
+    top: 3px
 }
 .side .md h1:first-of-type a:last-child:before {
     left: 3px;
-    background-position: -157px -405px;
+    background-position: -157px -405px
 }
 
-html[lang$="nm"] .side .md h1:first-of-type a:last-child:before { background-position: -157px -437px; }
-html[lang$="nm"] .side .md h1:first-of-type a:last-child { color: #2DA8E8; }
 
-html:not([lang$="nm"]) .side .md h1:first-of-type a:first-child:before { background-position: -125px -437px; }
-html:not([lang$="nm"]) .side .md h1:first-of-type a:first-child { color: #E3B34D; }
+html[lang$=nm] .side .md h1:first-of-type a:last-child:before {
+    background-position: -157px -437px
+}
+html[lang$=nm] .side .md h1:first-of-type a:last-child {
+    color: #2da8e8
+}
 
-html[lang$="nm"] .side .md h1:first-of-type a:first-child,
-html:not([lang$="nm"]) .side .md h1:first-of-type a:last-child {
-    font-weight: normal;
+html:not([lang$=nm]) .side .md h1:first-of-type a:first-child:before {
+    background-position: -125px -437px
+}
+html:not([lang$=nm]) .side .md h1:first-of-type a:first-child {
+    color: #e3b34d
+}
+
+html:not([lang$=nm]) .side .md h1:first-of-type a:last-child,
+html[lang$=nm] .side .md h1:first-of-type a:first-child {
+    font-weight: 400
 }
 
 /* Morelinks
 --------------------------------------------------------------------------------*/
-.nub, .sidebox.submit-link .morelink, .sidebox.submit-text .morelink, .sidebox.create .spacer { display: none; }
-.sidebox.create .morelink { background: transparent;  border: 0; }
+.nub,
+.sidebox.create .spacer,
+.sidebox.submit-link .morelink,
+.sidebox.submit-text .morelink {
+    display: none
+}
+.sidebox.create .morelink {
+    background: 0 0;
+    border: 0
+}
 
-    
 /* link info box
 --------------------------------------------------------------------------------*/
-
 .linkinfo {
     margin-right: 16px;
     margin-left: 23px;
     padding: 8px;
-    background: rgba(255,255,255,0.03);
-    border: 0;
-    text-align: center;
+    background: rgba(255, 255, 255, .03);
+    text-align: center
 }
-
 .linkinfo .date {
     text-transform: uppercase;
     font-size: 9px;
     color: #ccc;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
-
-.linkinfo .score .word, .linkinfo .shortlink {
-    font-size: 0;
+.linkinfo .score .word,
+.linkinfo .shortlink {
+    font-size: 0
 }
-
 .linkinfo .shortlink input {
     font-size: 13px;
     text-align: center;
     border: 0;
-    color: white;
-    background: rgba(255,255,255,0.08);
-    margin-top: 10px;
+    margin-top: 10px
 }
-
 .linkinfo .score {
     margin-bottom: 5px;
+    display: block;
+    width: 100%
 }
 
 /* submission filters
 --------------------------------------------------------------------------------*/
-
-.side .md > blockquote {
+.side .md>blockquote {
     border-left: 0;
-    padding: 0 5px;
+    padding: 0 5px
 }
-
-.side .md > blockquote:nth-of-type(2):after {
+.side .md>blockquote:nth-of-type(2):after {
     content: '';
     display: table;
-    clear: left;
+    clear: left
 }
 
 /* header title */
-.side .md > h4 > a:before {
-    transition: left .5s ease-out; 
+.side .md>h4>a:before {
+    transition: left .5s ease-out
 }
-.side .md > h4 > a:hover { color: #0079d3; }
-.side .md > h4 > a:hover:before { left: 220px; }
+.side .md>h4>a:hover {
+    color: #0079d3
+}
+.side .md>h4>a:hover:before {
+    left: 220px
+}
 
 /* filter links */
-.side .md > blockquote:nth-of-type(2) h4,
-.side .md > blockquote:nth-of-type(2) h2 {
+.side .md>blockquote:nth-of-type(2) h2,
+.side .md>blockquote:nth-of-type(2) h4 {
     width: 50%;
     height: 30px;
     display: block;
     float: left;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
+    padding: 0
 }
-.side .md > blockquote:nth-of-type(2) h2 {
-    width: 100%;
+.side .md>blockquote:nth-of-type(2) h2 {
+    width: 100%
 }
-.side .md > blockquote:nth-of-type(2) h4 a,
-.side .md > blockquote:nth-of-type(2) h2 a {
+.side .md>blockquote:nth-of-type(2) h2 a,
+.side .md>blockquote:nth-of-type(2) h4 a {
     display: block;
-    background: rgba(0,0,0,.4);
     border: 1px solid;
     border-radius: 3px;
     line-height: 30px;
     height: 30px;
     font-size: 12px;
-    text-align: center;
+    text-align: center
 }
 
-.side .md > blockquote:nth-of-type(2) h4:nth-child(odd) a { border-radius: 3px 0 0 3px; }
-.side .md > blockquote:nth-of-type(2) h4:nth-child(even) a { border-radius: 0 3px 3px 0; }
 
-.side .md > blockquote:nth-of-type(2) h4:nth-child(1) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-child(2) a {
-    border-color: #a7565c; color: #a7565c;}
-    
-.side .md > blockquote:nth-of-type(2) h4:nth-child(3) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-child(4) a {
-    border-color: #856fa6; color: #856fa6;}
-    
-.side .md > blockquote:nth-of-type(2) h4:nth-child(5) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-child(6) a {
-    border-color: #76c374; color: #76c374;}
-    
-.side .md > blockquote:nth-of-type(2) h4:nth-child(7) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-child(8) a {
-    border-color: #e6d76d; color: #e6d76d;}
-    
-.side .md > blockquote:nth-of-type(2) h4:nth-child(9) a,
-.side .md > blockquote:nth-of-type(2) h4:nth-child(10) a {
-    border-color: #E868C1; color: #E868C1;}
-    
-.side .md > blockquote:nth-of-type(2) h2:nth-of-type(1) a {
-    border-color: #919290; color: #919290;}
-    
-.side .md > blockquote:nth-of-type(2) h2:nth-of-type(2) a {
-    border-color: #59f; color: #59f; }
-    
-.side .md > blockquote:nth-of-type(2) * a:hover { font-weight: 700;}
-
+.side .md>blockquote:nth-of-type(2) h4:nth-child(odd) a {
+    border-radius: 3px 0 0 3px
+}
+.side .md>blockquote:nth-of-type(2) h4:nth-child(even) a {
+    border-radius: 0 3px 3px 0
+}
+.side .md>blockquote:nth-of-type(2) h4:nth-child(1) a,
+.side .md>blockquote:nth-of-type(2) h4:nth-child(2) a {
+    border-color: #a7565c;
+    color: #a7565c
+}
+.side .md>blockquote:nth-of-type(2) h4:nth-child(3) a,
+.side .md>blockquote:nth-of-type(2) h4:nth-child(4) a {
+    border-color: #856fa6;
+    color: #856fa6
+}
+.side .md>blockquote:nth-of-type(2) h4:nth-child(5) a,
+.side .md>blockquote:nth-of-type(2) h4:nth-child(6) a {
+    border-color: #76c374;
+    color: #76c374
+}
+.side .md>blockquote:nth-of-type(2) h4:nth-child(7) a,
+.side .md>blockquote:nth-of-type(2) h4:nth-child(8) a {
+    border-color: #e6d76d;
+    color: #e6d76d
+}
+.side .md>blockquote:nth-of-type(2) h4:nth-child(10) a,
+.side .md>blockquote:nth-of-type(2) h4:nth-child(9) a {
+    border-color: #e868c1;
+    color: #e868c1
+}
+.side .md>blockquote:nth-of-type(2) h2:nth-of-type(1) a {
+    border-color: #919290;
+    color: #919290
+}
+.side .md>blockquote:nth-of-type(2) h2:nth-of-type(2) a {
+    border-color: #59f;
+    color: #59f
+}
+.side .md>blockquote:nth-of-type(2) * a:hover {
+    font-weight: 700
+}

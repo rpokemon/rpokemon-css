@@ -1,125 +1,135 @@
 
+
 /* Tagline container element
 --------------------------------------------------------------------------------*/
-.tagline, .comment .tagline {
-    display: -webkit-flex !important;
-    display: flex !important;
+.comment .tagline,
+.tagline {
+    display: -webkit-flex!important;
+    display: flex!important;
     justify-content: flex-end;
-    font-size: 0;
     height: 20px;
     font-size: 0;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0
 }
-.tagline > * {
-    font-size: x-small;
+.tagline>* {
+    font-size: x-small
 }
-
 .comment .tagline {
     position: static;
-    margin-bottom: -15px;
+    margin-bottom: -15px
 }
 
 /* Tagline - time
 --------------------------------------------------------------------------------*/
 .tagline time {
     line-height: 20px;
-    font-family: Segoe,"Segoe UI",Optima,Arial,sans-serif;
     font-size: 11px;
-    padding: 0 4px;
+    padding: 0 4px
 }
 
 /* Tagline - RES user tag
 --------------------------------------------------------------------------------*/
-.tagline > .RESUserTag {
-    border: none !important;
+.tagline>.RESUserTag {
+    border: none!important;
     padding: 3px;
     position: absolute;
-    left: 430px;
+    left: 430px
 }
 .comment .RESUserTag {
     left: 350px;
-    top: -22px;
+    top: -22px
 }
-
 .RESUserTagImage:after {
     margin: 3px 5px;
-    width:  12px;
+    width: 12px;
     height: 13px;
-    background: url(%%pokesheet%%);
+    background: url(%%pokesheet%%) -195px -159px;
     display: block;
-    background-position: -195px -159px;
-    opacity: .5;
+    opacity: .5
+}
+.side .tagline .flairselectbtn,
+.tagline .userattrs {
+    display: none
 }
 
 /* Tagline - author
 --------------------------------------------------------------------------------*/
-.thing .author, .side .tagline .author, .flairrow .author {
+
+.thing .author, .flairrow .author, .side .tagline .author {
     width: 280px;
     height: 36px;
     background: url(%%FlairBG%%);
     position: absolute;
-    padding: 3px 0 0 45px !important;
-    font-weight: bold;
+    padding: 3px 0 0 45px!important;
+    font-weight: 700;
     color: #48f;
     white-space: nowrap;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0
 }
 
-.thing .tagline .author.submitter,
-.thing .tagline .author.moderator {
-    background-color: transparent!important;
+/* ensure transparent background (override RES user highlighter) */
+.res .thing .tagline .author.moderator,
+.res .thing .tagline .author.moderator:hover,
+.res .thing .tagline .author.submitter,
+.res .thing .tagline .author.submitter:hover,
+.thing .tagline .author.moderator,
+.thing .tagline .author.submitter {
+    background-color: transparent !important
 }
 
 /* link author */
 .link .author {
     top: -5px;
-    left: 147px;
+    left: 147px
 }
 
 /* comment author */
 .comment .author {
     left: 70px;
-    top: -28px;
+    top: -28px
 }
 
 /* side tagline */
 .side .tagline .author {
-    left: 0;
-}
-.side .tagline .flairselectbtn {
-    display: none;
+    left: 0
 }
 
-/* comment author submitter color */
-.res .thing .tagline .author.moderator, .res .thing .tagline .author.moderator:hover,
-.res .thing .tagline .author.submitter, .res .thing .tagline .author.submitter:hover {
-    background-color: transparent !important;
+/* submitter color */
+.comment .author.submitter,
+.res .thing .tagline .author.submitter,
+.res .thing .tagline .author.submitter:hover {
+    color: #dd4b39!important
 }
 
-.comment .author.submitter, .res .thing .tagline .author.submitter, .res .thing .tagline .author.submitter:hover {
-    color: #dd4b39 !important;
+/* moderator bubble */
+.comment .author.moderator,
+.link .author.moderator {
+    background-position: 0 -216px!important
 }
 
-/* Moderator comment color panel */
-.link .author.moderator, .comment .author.moderator {
-    background-position: 0 -216px !important;
-}
-.link .moderator, .comment .moderator,
+/* moderator bubble - ensure username is white */
+.author.moderator~.flair:before,
+.comment .moderator,
+.link .moderator,
 .res .thing .tagline .author.moderator,
-.res .thing .tagline .author.submitter.moderator,
-.author.moderator ~ .flair:before {
-    color: white !important;
+.res .thing .tagline .author.submitter.moderator {
+    color: #fff!important
 }
 
 /* user attributes */
-.tagline .userattrs     { display: none; }
-.author.submitter:after { content: ' [S]'; }
-.author.moderator:after { content: ' [M]'; }
-.author.admin:after     { content: ' [A]';}
+.author.submitter:after {
+    content: ' [S]'
+}
+.author.moderator:after {
+    content: ' [M]'
+}
+.author.admin:after {
+    content: ' [A]'
+}
 
 /* Tagline misc
 --------------------------------------------------------------------------------*/
@@ -136,40 +146,38 @@
     bottom: 0;
     padding: 2px;
     transition: background-color 150ms, color 150ms;
-    font-size: 9px;
+    font-size: 9px
 }
-
 .comment .expand:hover {
     background-color: #669bff;
-    color: white;
-    text-decoration: none;
+    color: #fff;
+    text-decoration: none
 }
 
 /* RES voteweight */
-.tagline > a.voteWeight {
-    display: none !important;
+.tagline>a.voteWeight {
+    display: none!important
 }
 
 /* stickied tagline */
 .link .tagline .stickied-tagline {
-    background: #228822;
-    color: white;
+    background: #282;
+    color: #fff;
     height: 14px;
     padding: 2px 5px;
     margin: 4px;
     left: 440px;
     border-radius: 3px;
-    opacity: 0.8;
+    opacity: .8
 }
 
 /* toolbox buttons
 --------------------------------------------------------------------------------*/
-
 .tagline .tb-bracket-button {
     line-height: 19px;
     height: 19px;
     min-width: 19px;
     box-sizing: border-box;
     display: inline-block;
-    padding: 0 !important;
+    padding: 0!important
 }

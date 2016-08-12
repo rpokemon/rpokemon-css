@@ -5,62 +5,59 @@
 
 /* RES + Mod Toolbox tabmenu compat fix
 --------------------------------------------------------------------------------*/
-body.res.mod-toolbox.combined-search-page .tabmenu + .tabmenu {
-    margin-left: 190px !important;
-    padding-left: 0;
+body.res.mod-toolbox.combined-search-page .tabmenu+.tabmenu {
+    margin-left: 190px!important;
+    padding-left: 0
 }
 .NERPageMarker {
     background-color: transparent!important;
-    border: 1px solid #222!important;
+    border: 1px solid #222!important
 }
 
 /* Search area wrapper
 --------------------------------------------------------------------------------*/
 .combined-search-page #previoussearch {
     margin-top: 20px;
-    border: 1px solid rgba(0,0,0,0.6);
+    border: 1px solid rgba(0, 0, 0, .6)
 }
-
 .combined-search-page #previoussearch,
 .combined-search-page .search-result-group {
-    background: rgba(0,0,0,0.4);
     padding: 0;
     margin-left: 20px;
-    max-width: 850px;
+    max-width: 850px
 }
 
-.combined-search-page .content[role="main"] > .search-result-listing > .search-result-group {
-    border: 1px solid rgba(0,0,0,0.6);
-    border-top: 0;
+.combined-search-page .content[role=main]>.search-result-listing>.search-result-group {
+    border: 1px solid rgba(0, 0, 0, .6);
+    border-top: 0
 }
 
 /* Search area
 --------------------------------------------------------------------------------*/
-.combined-search-page .searchpane { margin: 5px 5px 0 0; padding: 0; }
-.combined-search-page .searchpane > h4 { display: none; }
+.combined-search-page .searchpane {
+    margin: 5px 5px 0 0;
+    padding: 0
+}
+.combined-search-page .searchpane>h4 {
+    display: none
+}
 
 /* Search input area
 --------------------------------------------------------------------------------*/
 .combined-search-page #search {
-    position: relative !important;
-    padding-right: 0;
+    position: relative!important;
     margin: 0;
-    background: rgba(255,255,255,0.03);
+    background: rgba(255, 255, 255, .03);
     padding: 10px;
-    max-width: none;
+    max-width: none
 }
-
 .combined-search-page #search input[type=text] {
-    background: rgba(255,255,255,0.1);
-    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: 23px;
     line-height: 32px;
     border-radius: 0;
     width: 100%;
-    margin: 0;
-    max-width: none;
-    margin-bottom: 5px;
-    border: 1px solid rgba(255,255,255,0.1) !important;
+    margin: 0 0 5px;
+    max-width: none
 }
 
 /* Search icon
@@ -73,50 +70,86 @@ body.res.mod-toolbox.combined-search-page .tabmenu + .tabmenu {
     top: 11px;
     height: 32px;
     border-radius: 0;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, .1);
     box-shadow: none;
-    margin: 0 !important;
+    margin: 0!important
 }
 
-.combined-search-page .search-icon{background-image:none;position:relative;top:2px}.combined-search-page .search-icon:after,.combined-search-page .search-icon:before{content:'';display:block;position:absolute}.combined-search-page .search-icon:before{width:10px;height:10px;border:2px solid #333;border-radius:50%;top:0;left:0}.combined-search-page .search-icon:after{width:2px;height:8px;background:#333;transform:rotateZ(-47deg);bottom:2px;right:4px}
+.combined-search-page .search-icon {
+    background-image: none;
+    position: relative;
+    top: 2px
+}
+.combined-search-page .search-icon:after,
+.combined-search-page .search-icon:before {
+    content: '';
+    display: block;
+    position: absolute
+}
+.combined-search-page .search-icon:before {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    top: 0;
+    left: 0
+}
+.combined-search-page .search-icon:after {
+    width: 2px;
+    height: 8px;
+    background: #333;
+    transform: rotateZ(-47deg);
+    bottom: 2px;
+    right: 4px
+}
 
 /* Search area options
 --------------------------------------------------------------------------------*/
-.combined-search-page #moresearchinfo,.combined-search-page #previoussearch p,.combined-search-page #search>label{margin-left:10px}
+.combined-search-page #moresearchinfo,
+.combined-search-page #previoussearch p,
+.combined-search-page #search>label {
+    margin-left: 10px
+}
 
 /* RES search tabs
 --------------------------------------------------------------------------------*/
-.res ul.res-search-tabs, .combined-search-page #previoussearch .res-search-pane {
+.combined-search-page #previoussearch .res-search-pane,
+.res ul.res-search-tabs {
     margin: 0;
-    background: rgba(0,0,0,0.04);
-    border-top: 1px solid rgba(0,0,0,0.04);
+    background: rgba(0, 0, 0, .04);
+    border-top: 1px solid rgba(0, 0, 0, .04)
 }
 
-.res ul.res-search-tabs li { background: 0; }
+.res ul.res-search-tabs li {
+    background: 0
+}
 
 /* Search results header
 --------------------------------------------------------------------------------*/
 .combined-search-page .search-result-group-header {
     margin: 0;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
     height: 34px;
     display: flex;
     align-items: center;
-    font-family: Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
     padding-left: 10px;
     position: relative;
-    box-shadow: 0 -1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, .05)
 }
-
-.combined-search-page .search-header-label { flex-grow: 1; }
+.combined-search-page .search-header-label {
+    flex-grow: 1
+}
 
 /* Search results contents
 --------------------------------------------------------------------------------*/
-.combined-search-page .search-result-group .contents { padding: 10px 20px; }
+.combined-search-page .search-result-group .contents {
+    padding: 10px 20px
+}
 .combined-search-page .search-result-group footer .nav-buttons {
     border-top: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
-    padding: 20px 0;
+    padding: 20px 0
 }
-.combined-search-page #previoussearch .search-result-group footer .nav-buttons { border-bottom: 0; }
-/****** END search page ******/
+.combined-search-page #previoussearch .search-result-group footer .nav-buttons {
+    border-bottom: 0
+}

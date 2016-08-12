@@ -1,66 +1,58 @@
 
 /* usertext md
 --------------------------------------------------------------------------------*/
-
 .link .usertext-body .md {
-    border: none;
+    border: 0
 }
-
 .thing .md {
-    background: transparent !important;
+    background: 0 0!important;
     position: relative;
-    left: 5px;
+    left: 5px
 }
-
 .md .expando-button {
     position: relative;
-    margin-bottom: 3px;
+    margin-bottom: 3px
 }
-
 .comments-page .comment .md {
     font-weight: 400;
     font-size: 14px;
-    font-family: Arial,sans-serif;
-    line-height: 1.35em;
+    font-family: Arial, sans-serif;
+    line-height: 1.35em
 }
-
-.comment .md p, .link .md p {
+.comment .md p,
+.link .md p {
     margin: 0;
-    padding: 5px 0;
+    padding: 5px 0
 }
-
-.md blockquote, .md del {
-    margin-left: 0;
+.md blockquote,
+.md del {
+    margin-left: 0
 }
 .md blockquote {
-    border-left: 2px solid;
+    border-left: 2px solid
 }
-
-.md code, .md pre {
-    border: 0;
+.md code,
+.md pre {
+    border: 0
 }
-
 .thing .md hr {
     height: 1px;
-    margin-right: 10px;
+    margin-right: 10px
 }
 
 /*spoiler in-text stuff*/
 a[href$="#spoiler"] {
-    color: #515151!important;;
+    color: #515151!important;
     background-color: #515151;
-    transition: ease-in-out 0.15s;
-    transition: color 0.2s ease;
+    transition: ease-in-out .15s;
+    transition: color .2s ease
 }
-
 a[href$="#spoiler"]:hover {
-    transition: ease-in-out 0.5s;
-    color: white!important;
+    transition: ease-in-out .5s;
+    color: #fff!important
 }
-
 a[href$="#spoiler"]:before {
-    content:"SPOILER: ";
+    content: "SPOILER: ";
     text-shadow: none;
-    color: white;
-} 
-
+    color: #fff
+}

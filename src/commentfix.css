@@ -1,98 +1,128 @@
 
+
+
 /********************************************************************************
 * COMMENT FIX
 *********************************************************************************/
 
-.comments-page .comment, .res.comments-page .comment {
-    margin: 11px 0 24px 0 !important;
-    margin-top: 11px !important;
-    padding-top: 2px !important;
+.comments-page .comment,
+.res.comments-page .comment {
+    margin: 11px 0 24px!important;
+    padding-top: 2px!important
 }
-
 .comments-page .comment .comment {
-    margin: 11px 0 0 30px !important;
+    margin: 11px 0 0 30px!important
 }
 
 /* disable some stupid RES stuff */
-.res-commentBoxes .comment { border: none !important; margin-left: 0px !important; padding: 0 !important; }
+.res-commentBoxes .comment {
+    border: none!important;
+    margin-left: 0!important;
+    padding: 0!important
+}
 
-.newComments { color: red; }
-.comment .child, .comment .showreplies { margin: 0 !important; border-left: 0; }
+.newComments {
+    color: red
+}
 
+.comment .child,
+.comment .showreplies {
+    margin: 0!important;
+    border-left: 0
+}
 .deepthread {
     height: 31px;
     line-height: 31px;
     display: inline-block;
-    margin-top: -10px;
+    margin-top: -10px
 }
 
 /* deleted comments
 --------------------------------------------------------------------------------*/
 .comments-page .comment .comment.deleted {
-    margin-top: 1px !important;
+    margin-top: 1px!important
 }
-.comment.deleted > .entry {
-    margin-top: 0 !important;
-    padding-left: 20px;
+.comment.deleted>.entry {
+    margin-top: 0!important;
+    padding-left: 20px
 }
-.comment.deleted > .entry .tagline {
+.comment.deleted>.entry .tagline {
     margin-bottom: -23px;
-    line-height: 20px;
+    line-height: 20px
 }
-.comment.deleted > .entry .usertext { margin-top: -6px; padding-bottom: 0; }
-.usertext.grayed .usertext-body { background: transparent; }
-.comment.deleted > .midcol, .comment.deleted > .entry .tagline time:before, .comment.deleted > .entry .tagline time:after { display: none; }
-.comment.collapsed.deleted .usertext { display: block; }
-.thing.comment.deleted > .entry .md { margin: 0; }
-.comment.deleted > .entry .numchildren {
+.comment.deleted>.entry .usertext {
+    margin-top: -6px;
+    padding-bottom: 0
+}
+.usertext.grayed .usertext-body {
+    background: 0 0
+}
+.comment.deleted>.entry .tagline time:after,
+.comment.deleted>.entry .tagline time:before,
+.comment.deleted>.midcol {
+    display: none
+}
+.comment.collapsed.deleted .usertext {
+    display: block
+}
+.thing.comment.deleted>.entry .md {
+    margin: 0
+}
+.comment.deleted>.entry .numchildren {
     visibility: visible;
     position: absolute;
-    color: white;
+    color: #fff;
     top: 10px;
     left: 95px
 }
-.comment.deleted > .entry .tagline time {
+.comment.deleted>.entry .tagline time {
     top: 6px;
     background: 0;
-    right: 10px;
+    right: 10px
 }
 
 /* recent comments page - parent
 --------------------------------------------------------------------------------*/
-.parent .flair { display: none; }
-
+.parent .flair {
+    display: none
+}
 .parent a.author {
     display: inline-block;
-    background: 0 !important;
-    position: static !important;
-    width: auto !important;
-    padding: 0;
+    background: 0!important;
+    position: static!important;
+    width: auto!important;
+    padding: 0
 }
-
-.parent *, .parent .RESUserTagImage:after { position: static !important; margin: 0; }
-.parent .expando-button { margin-right: 10px; }
-.parent .RESUserTagImage { margin-bottom: -3px}
+.parent *,
+.parent .RESUserTagImage:after {
+    position: static!important;
+    margin: 0
+}
+.parent .expando-button {
+    margin-right: 10px
+}
+.parent .RESUserTagImage {
+    margin-bottom: -3px
+}
 
 /* new comment
 --------------------------------------------------------------------------------*/
 .new-comment .usertext-body {
     border: 0;
-    background: #1F2428;
+    background: #1f2428
 }
 
 /* permalinked comment
 --------------------------------------------------------------------------------*/
 
-.comment-permalink-page .commentarea > .sitetable > .thing > .entry {
-    border-top: 1px solid #f6e69f;
+.comment-permalink-page .commentarea>.sitetable>.thing>.entry {
+    border-top: 1px solid #f6e69f
 }
-
-.comment-permalink-page .commentarea > .infobar {
+.comment-permalink-page .commentarea>.infobar {
     margin: 0;
     border: 0;
     width: 100%;
     box-sizing: border-box;
     border-top: 2px solid #f6e69f;
-    background: rgba(0,0,0,0.5);
-    padding: 10px;
+    padding: 10px
 }

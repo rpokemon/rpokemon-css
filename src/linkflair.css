@@ -3,37 +3,34 @@
 --------------------------------------------------------------------------------*/
 .linkflairlabel {
     display: block;
-    position: absolute !important;
+    position: absolute!important;
     text-align: center;
     line-height: 20px;
     background: #ccc;
     min-width: 50px!important;
     padding: 0 10px;
     top: 5px;
-    left: 0px; 
-    /* right: 12px; */
+    left: 0;
     margin: 0;
     width: 67px;
     border: 0;
     border-radius: 3px 3px 0 0;
     z-index: 10;
-    font-family: Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    color: #fff !important;
-    font-weight: bold;
-    font-size: 12px;
+    color: #fff!important;
+    font-weight: 700;
+    font-size: 12px
 }
 
 .link .linkflairlabel {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    margin: 27px 0px 0px -49px;
+    margin: 27px 0 0 -49px
 }
 .flairselector .linkflairlabel {
-    -moz-transform: rotate(0deg) !important;
-    -webkit-transform: rotate(0deg) !important;
-    transform: rotate(0deg) !important;
-    margin: 0;
+    -moz-transform: rotate(0)!important;
+    -webkit-transform: rotate(0)!important;
+    transform: rotate(0)!important
 }
 
 .link.linkflair:before {
@@ -47,82 +44,95 @@
     bottom: -1px;
     border-radius: 3px 0 0 3px;
     z-index: 5;
-    background: #ccc;
+    background: #ccc
 }
 .comments-page .link.linkflair:before {
-    width: 6px;
+    width: 6px
 }
 
-.link.linkflair-image:before, .linkflair-image .linkflairlabel, .flairselector .linkflair-image .linkflairlabel {
-    background: #a7565c;
+.flairselector .linkflair-image .linkflairlabel,
+.link.linkflair-image:before,
+.linkflair-image .linkflairlabel {
+    background: #a7565c
 }
-.link.linkflair-media:before, .linkflair-media .linkflairlabel, .flairselector .linkflair-media .linkflairlabel {
-    background: #856fa6;
+.flairselector .linkflair-media .linkflairlabel,
+.link.linkflair-media:before,
+.linkflair-media .linkflairlabel {
+    background: #856fa6
 }
-.link.linkflair-discussion:before, .linkflair-discussion .linkflairlabel, .flairselector .linkflair-discussion .linkflairlabel {  
+.flairselector .linkflair-discussion .linkflairlabel,
+.link.linkflair-discussion:before,
+.linkflair-discussion .linkflairlabel {
+    background: #76c374
+}
+.flairselector .linkflair-info .linkflairlabel,
+.link.linkflair-info:before,
+.linkflair-info .linkflairlabel {
+    background: #e6d76d
+}
+.flairselector .linkflair-art .linkflairlabel,
+.link.linkflair-art:before,
+.linkflair-art .linkflairlabel {
+    background: #e868c1
+}
+.flairselector .linkflair-noob .linkflairlabel,
+.link.linkflair-noob:before,
+.linkflair-noob .linkflairlabel {
+    background: #3498db
+}
+.flairselector .linkflair-rule .linkflairlabel,
+.link.linkflair-rule:before,
+.linkflair-rule .linkflairlabel {
+    background: #e74c3c
+}
+.flairselector .linkflair-rotation .linkflairlabel,
+.link.linkflair-rotation:before,
+.linkflair-rotation .linkflairlabel {
     background: #76c374;
-}
-.link.linkflair-info:before, .linkflair-info .linkflairlabel, .flairselector .linkflair-info .linkflairlabel {  
-    background: #e6d76d;
-}
-.link.linkflair-art:before, .linkflair-art .linkflairlabel, .flairselector .linkflair-art .linkflairlabel {
-    background: #E868C1;
-}
-.link.linkflair-noob:before, .linkflair-noob .linkflairlabel, .flairselector .linkflair-noob .linkflairlabel {
-    background: #3498DB;
-}
-.link.linkflair-rule:before, .linkflair-rule .linkflairlabel, .flairselector .linkflair-rule .linkflairlabel {
-    background: #e74c3c;
 }
 
 /* spoiler linkflairlabel and title overlay
 --------------------------------------------------------------------------------*/
-.linkflair-spoiler .linkflairlabel, .flairselector .linkflair-spoiler .linkflairlabel {
-    color: #E74C3C;
+.flairselector .linkflair-spoiler .linkflairlabel,
+.linkflair-spoiler .linkflairlabel {
+    color: #e74c3c
 }
-
 .linkflair-spoiler a.title {
-    min-width: 215px;
+    min-width: 215px
 }
 .link.linkflair-spoiler a.title:before {
     content: 'Spoiler - hover to view title';
     display: block;
     position: absolute;
-    background: #36393e;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    color: #606060 !important;
+    color: #606060!important;
     padding: 3px;
     text-transform: initial;
     font-size: 15px;
     opacity: 1;
-    transition: opacity 200ms;
-    transition-delay: 200ms;
+    transition: opacity .2s;
+    transition-delay: .2s
 }
 .link.linkflair-spoiler a.title:hover:before {
-    opacity: 0;
+    opacity: 0
 }
 
 /* filters
 --------------------------------------------------------------------------------*/
 
-html:lang(ns) .link.linkflair-spoiler a.title:before,
-
-html:lang(im) .link:not(.linkflair-image),
-html:lang(ni) .link.linkflair-image,
-
-html:lang(me) .link:not(.linkflair-media),
-html:lang(ne) .link.linkflair-media,
-
-html:lang(di) .link:not(.linkflair-discussion),
-html:lang(nd) .link.linkflair-discussion,
-
-html:lang(fo) .link:not(.linkflair-info),
-html:lang(nf) .link.linkflair-info,
-
 html:lang(ao) .link:not(.linkflair-art),
-html:lang(na) .link.linkflair-art {
-    display: none !important;
+html:lang(di) .link:not(.linkflair-discussion),
+html:lang(fo) .link:not(.linkflair-info),
+html:lang(im) .link:not(.linkflair-image),
+html:lang(me) .link:not(.linkflair-media),
+html:lang(na) .link.linkflair-art,
+html:lang(nd) .link.linkflair-discussion,
+html:lang(ne) .link.linkflair-media,
+html:lang(nf) .link.linkflair-info,
+html:lang(ni) .link.linkflair-image,
+html:lang(ns) .link.linkflair-spoiler a.title:before {
+    display: none!important
 }

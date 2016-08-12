@@ -23,7 +23,7 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 'sidecommon.css',     # sidebar common header and checkboxes
                 'sidebar.css',        # sidebar
                 'sidemd.css',         # sidebar md
-                'sidecontentbox.css', # sidebar md
+                'sidecontentbox.css', # sidecontentbox
                 
                 'announce.css',       # announcements modules and bar
                 
@@ -43,13 +43,12 @@ order       = [ 'etc.css',            # body, buttons, and wiki
 src_dir     = 'src'
 dist_dir    = './'
 dist_file   = 'dist.css'
+unmin_file  = 'unmin.css'
 
 def top(build_ver):
     return ('/*\n' +
-            '    CSS theme for /r/Pokemon' + '\n' +
-            '    Authors: Hero_of_Legend, technophonix1, Atooz, & kwwxis' + '\n' +
-            '    Build: ' + str(build_ver) + '\n\n' +
-            '    Unminified CSS is at https://github.com/matthew0x40/r-pokemon' + '\n' +
+            '  CSS theme for /r/Pokemon; build #' + str(build_ver) + '\n' +
+            '  Authors: Hero_of_Legend, technophonix1, Atooz, & kwwxis' + '\n' +
             ' */')
 
 def run():
@@ -74,7 +73,9 @@ def run():
                     print('\nFailed: target file not found: ' + path + ';\n' +
                     'if this file is no longer in use then you must remove it from the "order" variable in build.py')
                     return
-                    
+        
+        shutil.copyfile(dist_dir + '\\' + dist_file, dist_dir + '\\' + unmin_file);
+        
         # Compress
         with open(dist_dir + '\\' + dist_file, 'r+') as outfile:
             raw  = outfile.read()
@@ -82,6 +83,20 @@ def run():
             outfile.seek(0)
             outfile.write(top(build_ver) + '\n' + mini)
             outfile.truncate()
+            
+        with open(dist_dir + '\\dist-trial-2.css', 'wb') as outfile:
+            with open('dist.css', 'rb') as readfile:
+                shutil.copyfileobj(readfile, outfile)
+                
+            with open('trial2.css', 'rb') as readfile:
+                shutil.copyfileobj(readfile, outfile)
+                
+        with open(dist_dir + '\\dist-trial-3.css', 'wb') as outfile:
+            with open('dist.css', 'rb') as readfile:
+                shutil.copyfileobj(readfile, outfile)
+                
+            with open('trial3.css', 'rb') as readfile:
+                shutil.copyfileobj(readfile, outfile)
             
         # Increment build version in build.dat afterwards in case of failure
         build.seek(0)

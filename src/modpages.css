@@ -3,89 +3,89 @@
 * FIX STUFF - MOD TOOLS / MOD PAGES & THINGS
 *********************************************************************************/
 .mod-toolbox .menuarea.modtools {
-    margin: 0 0 0 10px !important;
-    min-width: 1020px !important;
+    margin: 0 0 0 10px!important;
+    min-width: 1020px!important;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
-.mod-toolbox .menuarea.modtools > span:not(:last-child) {
-    padding: 0 4px;
+.mod-toolbox .menuarea.modtools>span:not(:last-child) {
+    padding: 0 4px
 }
-.mod-toolbox .menuarea.modtools > .lightdrop {
+.mod-toolbox .menuarea.modtools>.lightdrop {
     flex-grow: 1;
-    text-align: right;
+    text-align: right
 }
 
 .mod-toolbox .menuarea.modtools a.tb-general-button {
-    background: rgba(0,0,0,0.07);
+    background: rgba(0, 0, 0, .07);
     color: #333;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc
 }
 .menuarea.modtools a.pretty-button {
-    margin-left: 1px;
+    margin-left: 1px
 }
 
-.thing.comment > input[type=checkbox] {
+.thing.comment>input[type=checkbox] {
     position: absolute;
     z-index: 5;
-    margin-left: -14px !important;
-    margin-top: -3px !important;
+    margin-left: -14px!important;
+    margin-top: -3px!important
 }
 
 /* modmail page
 --------------------------------------------------------------------------------*/
 .moderator.messages-page a.author {
-    background: 0 !important;
-    height: auto !important;
-    width: auto !important;
-    color: #228822!important;
+    background: 0!important;
+    height: auto!important;
+    width: auto!important;
+    color: #282!important
 }
 .moderator.messages-page .tagline {
     justify-content: flex-start;
     position: static;
-    align-items: center;
+    align-items: center
 }
 .moderator.messages-page .tagline *,
 .parent *,
 .thing .parent .author {
-    position: static !important;
-    padding: 0 !important;
-    width: auto !important;
-    background: transparent !important;
+    position: static!important;
+    padding: 0!important;
+    width: auto!important;
+    background: 0 0!important;
     height: auto;
     margin-top: 0!important;
-    margin: 0 2px;
+    margin: 0 2px
 }
-.moderator.messages-page .flair {display:none;}
-.moderator.messages-page .RESUserTagImage:after { margin: 0; }
-.sitetable {margin-top:10px;}
-.subreddit-rules-page:before {top: 52px;}
-.subreddit-rules-page {padding-top: 51px;}
 
-.moderator.messages-page .link .moderator, .comment .moderator,
+.moderator.messages-page .flair { display: none }
+.moderator.messages-page .RESUserTagImage:after { margin: 0 }
+.sitetable { margin-top: 10px }
+.subreddit-rules-page:before { top: 52px }
+.subreddit-rules-page { padding-top: 51px }
+
+.comment .moderator,
+.moderator.messages-page .link .moderator,
 .moderator.messages-page.res .thing .tagline .author.moderator {
-    color: #282 !important;
+    color: #282!important
 }
-
-.moderator.messages-page .link .moderator, .comment .admin,
+.comment .admin,
+.moderator.messages-page .link .moderator,
 .moderator.messages-page.res .thing .tagline .author.admin {
-    color: #ff0011 !important;
+    color: #f01!important
 }
 
 /* queue pages
 --------------------------------------------------------------------------------*/
 body:not(.listing-page):not(.comments-page):not(.comment-permalink-page) .thing {
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
-
 body:not(.comments-page):not(.comment-permalink-page) .comment {
     border: 1px solid #cecdcd;
     background: #f7f7f7;
-    padding: 0 10px 10px 10px;
+    padding: 0 10px 10px;
     margin-bottom: 10px;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.03);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .03)
 }
-
 body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
     display: -webkit-flex;
     display: flex;
@@ -94,94 +94,105 @@ body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
     background: #fff;
     border: 1px solid #f3f3f3;
     border-top: 0;
-    padding: 5px 0 5px 20px;
+    padding: 5px 0 5px 20px
 }
-
-body:not(.comments-page):not(.comment-permalink-page) .thing.comment > input[type=checkbox] {
+.flairgrant .RESUserTag,
+.flairrow .RESUserTag,
+.flairselector a.title {
+    display: none
+}
+body:not(.comments-page):not(.comment-permalink-page) .thing.comment>input[type=checkbox] {
     position: static;
-    margin: 5px -20px 0 5px !important;
+    margin: 5px -20px 0 5px!important
 }
-
 body:not(.comments-page):not(.comment-permalink-page) .comment .midcol {
-    top: 5px;
+    top: 5px
 }
-
-html[lang$="nm"] body:not(.comments-page):not(.comment-permalink-page) .comment {
-    background: rgba(42, 45, 50, 0.4);
-    border-color: rgba(0,0,0,0.15);
+html[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment {
+    background: rgba(42, 45, 50, .4);
+    border-color: rgba(0, 0, 0, .15)
 }
-html[lang$="nm"] body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
-    background: rgba(0,0,0,0.1);
-    border: 0;
+html[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
+    background: rgba(0, 0, 0, .1);
+    border: 0
 }
 
 /* flair selector
 --------------------------------------------------------------------------------*/
 .flairselector {
     box-shadow: 1px 1px 10px #000;
-    border: 1px solid #353535 !important;
-}
-.flairselector h2{background: rgba(255,255,255,0.08);}
-.flairselector ul {
+    border: 1px solid #353535!important
 }
 .flairselector .linkflairlabel {
-    position: static !important;
+    position: absolute!important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 3px;
+    margin: auto
 }
-.flairselector a.title {
-    display: none;
+.flairselector ul {
+    width: 50%!important;
+    max-width: none
 }
-.flairselector li {
-    padding: 4px 5px;
-    margin-top: 2px;
+.flairselector .linkflair {
+    position: relative;
+    min-height: 22px;
+    margin: 2px
 }
-.flairselector li:hover {
-    background-color: rgba(0,0,0,0.3);
+.flairselector input[type=text] {
+    border: 1px solid #cecdcd;
+    padding: 5px
 }
-.flairselector .flairselection .linkflairlabel {
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
+
 
 /* flair page
 --------------------------------------------------------------------------------*/
 .flaircell {
     margin-right: 0;
-    margin-left: 4ex;
+    margin-left: 4ex
 }
 .flaircell .linkflairlabel {
-    position: static !important;
-    visibility: visible !important;
+    position: static!important;
+    visibility: visible!important
 }
-
-/* flair grant */
-.flairgrant .tagline, .flairrow .tagline {
+.flairgrant .tagline,
+.flairrow .tagline {
     visibility: visible;
-    position: relative;
-    width: 45ex;
-    padding-left: 20px;
+    padding-left: 20px
 }
-.flairgrant .tagline .flair, .flairrow .tagline .flair, .flairrow .author {
+.flairgrant .tagline .flair,
+.flairrow .author,
+.flairrow .tagline .flair {
     left: -23px;
-    top: 0;
+    top: 0
 }
-.flairgrant .RESUserTag, .flairrow .RESUserTag {
-    display: none;
+.flairgrant .usertable,
+.flairlist.usertable,
+.flairrow,
+.flairtemplate.flairrow>form {
+    padding-left: 250px
 }
-
-.flairgrant .usertable, .flairlist.usertable, .flairrow, .flairrow, .flairtemplate.flairrow > form {
-    padding-left: 250px;
-}
-.flairrow, .flairtemplate.flairrow > form {
+.flairrow,
+.flairtemplate.flairrow>form {
     margin-left: -250px;
     position: relative;
-    margin-bottom: 1px;
+    margin-bottom: 1px
 }
-.flairtemplate.flairrow > form {
-    min-height: 36px;
+.flair,
+.flair:after,
+.flair:before {
+    position: absolute
 }
-.flairgrant .tagline, .flairrow .tagline {
+.flairtemplate.flairrow>form {
+    min-height: 36px
+}
+.flairgrant .tagline,
+.flairrow .tagline {
     position: absolute;
     left: 0;
     height: 40px;
-    width: 150px;
+    width: 150px
 }

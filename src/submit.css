@@ -1,140 +1,137 @@
 
-.submit-page .content > h1 {
-    text-align: center;
-    margin: 30px 0 20px 0;
-    font-family: Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
-}
+/********************************************************************************
+* SUBMIT PAGE
+*********************************************************************************/
 
 /* Layout
 --------------------------------------------------------------------------------*/
-
-.submit-page .content[role="main"] {
-    max-width: 700px;
+.submit-page .content>h1 {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
 }
-
+.submit-page .content[role=main] {
+    max-width: 700px
+}
 .submit-page .submit.content {
     margin: 0 auto;
     max-width: 520px;
-    width: 100%;
+    width: 100%
 }
 
 /* Input elements
 --------------------------------------------------------------------------------*/
-
-.submit-page .roundfield textarea,
+.submit-page .roundfield .usertext-edit,
 .submit-page .roundfield input[type=text],
 .submit-page .roundfield input[type=url],
-.submit-page .roundfield .usertext-edit,
+.submit-page .roundfield textarea,
 .submit-page.res .markdownEditor-wrapper {
     width: 100%;
     border-color: #c3c3c3;
-    font-family: Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
 }
 
 /* Hide things we don't want
 --------------------------------------------------------------------------------*/
-
-.submit-page .formtabs-content .infobar,
+.formtabs-content>.spacer:first-child,
 .submit-page #suggested-reddits,
-.formtabs-content > .spacer:first-child {
-    display: none !important;
+.submit-page .formtabs-content .infobar {
+    display: none!important
 }
-
 
 /* Form container
 --------------------------------------------------------------------------------*/
-
 .submit-page .formtabs-content {
     border: 0;
     position: relative;
-    margin-bottom: 20px; /* distance between main form and info notice box */
+    margin-bottom: 20px;
     padding-top: 0;
-    max-width: 520px;
+    max-width: 520px
 }
 
 /* Tab menu
 --------------------------------------------------------------------------------*/
 .submit-page ul.tabmenu.formtab li {
-    height: auto;
+    height: auto
 }
-
 .submit-page ul.tabmenu.formtab li a {
     top: initial;
     height: initial;
     color: inherit;
-    background: transparent;
+    background: 0 0;
     border: 0;
     padding: 5px 15px;
     font-size: 18px;
     margin-right: 10px;
     text-align: center;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent
 }
-
 .submit-page ul.tabmenu.formtab li.selected a,
 .submit-page ul.tabmenu.formtab li:hover a {
     box-shadow: none;
-    border-bottom: 2px solid rgba(0,0,0,0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, .5)
 }
 .submit-page ul.tabmenu.formtab li:hover {
-    background: transparent;
+    background: 0 0
 }
-
 .submit-page ul.tabmenu.formtab {
-    background: transparent;
-    text-align: center;
+    background: 0 0;
+    text-align: center
 }
 
 /* Round fields
 --------------------------------------------------------------------------------*/
 .submit-page .roundfield {
-    background: white;
+    background: #fff;
     padding: 20px;
     box-sizing: border-box;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    border-radius: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 0
 }
 
 .submit-page .roundfield:not(.info-notice) {
     width: 100%;
     border: 1px solid #d6d6d6;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1)
 }
 
-.submit-page .roundfield > .title {
+.submit-page .roundfield>.title {
     font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     text-transform: uppercase;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, .4)
 }
 
-.submit-page #new-link-image-input > div {
-    color: rgba(0,0,0,0.65);
+.link a.title,
+.linkflairlabel,
+.tagline time {
+    font-family: Segoe, "Segoe UI", Optima, Arial, sans-serif
+}
+
+.submit-page #new-link-image-input>div {
+    color: rgba(0, 0, 0, .65)
 }
 
 /* remove margin on spacer, put margin on roundfield instead */
-.submit-page #newlink-with-image-upload > .spacer {
-    margin: 0;
+.submit-page #newlink-with-image-upload>.spacer {
+    margin: 0
 }
-
 .submit-page #newlink-with-image-upload .roundfield {
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 /* Submit
 --------------------------------------------------------------------------------*/
-
 .submit-page .content.submit .info-notice {
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 0;
-    width: 520px;
+    width: 520px
 }
-
-.submit-page button[name="submit"] {
+.submit-page button[name=submit] {
     display: inline-block;
     background: #6c8;
     border: 1px solid #5ac976;
     box-shadow: none;
-    color: white;
+    color: #fff;
     line-height: 28px;
-    padding: 0 20px;
+    padding: 0 20px
 }

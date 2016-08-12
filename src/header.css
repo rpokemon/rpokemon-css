@@ -2,30 +2,23 @@
 /********************************************************************************
 * SR HEADER AREA
 *********************************************************************************/
-
 #sr-header-area {
-    height: 18px;
+    height: 18px
 }
-
-#sr-more-link {
-    position: absolute;
-}
-
-/* drop choices */
 #sr-header-area .width-clip .dropdown.srdrop .selected.title {
     font-size: 9px;
     font-weight: 700;
-    padding-right: 3px;
+    padding-right: 3px
 }
 
-.dropdown.srdrop .selected { background: 0; }
-.dropdown.srdrop .selected:after { display: none; }
+.dropdown.srdrop .selected { background: 0 }
+.dropdown.srdrop .selected:after { display: none }
 
-/* RES things */
-.res [id^="RESShortcut"] {
-    background-color: transparent !important;
-    color: #979797 !important;
+.res [id^=RESShortcut] {
+    background-color: transparent!important;
+    color: #979797!important
 }
+
 
 /********************************************************************************
 * HEADER (DOESN'T INCLUDE USER AREA & TABMENU)
@@ -33,20 +26,17 @@
 
 /* Header
 --------------------------------------------------------------------------------*/
-
 #header {
     height: 166px;
-    background: no-repeat 50% 19px / cover;
-    overflow: visible !important;
+    overflow: visible!important
 }
 
 #header-img {
-    position: absolute;
     bottom: 10px;
     left: 5px;
     z-index: 99;
     width: 50px;
-    height: 50px;
+    height: 50px
 }
 
 #header-bottom-left {
@@ -55,60 +45,55 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0
 }
 
 /* Page name
 --------------------------------------------------------------------------------*/
 .pagename {
-    font-size: 0;
+    font-size: 0
 }
-
 .pagename a {
     top: 45px;
     width: 220px;
     height: 80px;
     display: block;
-    position: absolute;
     left: 240px;
     z-index: 99;
-    background: url(%%logo%%) no-repeat 0 0;
+    background: url(%%logo%%) no-repeat
 }
 
 .pagename a:hover {
-    background-position: 0 -80px;
+    background-position: 0 -80px
 }
 
 /* header bars
 --------------------------------------------------------------------------------*/
 
-/* tabmenu and user area full-width bar */
+#header:after,
 #header:before {
-    content: '';
     display: block;
-    position: absolute;
     top: 100%;
     left: 0;
+    position: absolute;
     right: 0;
-    height: 27px;
-    background: white;
-    border-bottom: 1px solid #cecdcd;
-    box-shadow: 0 -2px 3px rgba(0,0,0,0.05);
-    z-index: 1;
+    content: ''
 }
-/* announcement module and search full-width bar*/
+
+#header:before {
+    height: 27px;
+    background: #fff;
+    border-bottom: 1px solid #cecdcd;
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, .05);
+    z-index: 1
+}
 #header:after {
-    content: '';
-    display: block;
-    top: 100%;
     margin-top: 27px;
-    position: absolute;
-    right: 0;
-    left: 0;
     height: 46px;
     background: #fafafa;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .06)
 }
+
 
 /********************************************************************************
 * USER AREA
@@ -120,67 +105,65 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 100% !important;
-    bottom: auto !important;
+    top: 100%!important;
+    bottom: auto!important;
     right: 0;
     padding: 0 15px 0 0;
     line-height: 27px;
     height: 27px;
     background-color: transparent;
-    z-index: 2;
+    z-index: 2
 }
-
 #header-bottom-right a:hover {
-    text-decoration: none;
+    text-decoration: none
 }
 
-#header-bottom-right a.pref-lang, .loggedin .logout a {
+#header-bottom-right a.pref-lang,
+.loggedin .logout a {
     display: inline-block;
     background: url(%%pokesheet%%) -55px -371px;
     width: 25px;
     height: 30px;
-    font-size: 0 !important;
-    margin: 0;
+    font-size: 0!important;
+    margin: 0
 }
-
-.loggedin .logout a { background-position: -90px -372px }
+.loggedin .logout a {
+    background-position: -90px -372px
+}
 
 /* userbar
 --------------------------------------------------------------------------------*/
 .res #userbarToggle {
-    background-color: transparent !important;
-    border: none;
+    background-color: transparent!important;
+    border: 0
 }
-
 #header-bottom-right .separator {
     font-size: 0;
-    padding-left: 5px;
+    padding-left: 5px
 }
-
 #header-bottom-right .user {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    font-size: 0;
+    font-size: 0
 }
-#header-bottom-right .user > * {
-    font-size: 12px;
+#header-bottom-right .user>* {
+    font-size: 12px
 }
 
 /* user karma */
-#header-bottom-right .user > .userkarma {
-    padding: 0 5px;
+#header-bottom-right .user>.userkarma {
+    padding: 0 5px
 }
 
 /* res account switcher stuff */
-.res #header-bottom-right .user > a {
-    padding-right: 17px;
+.res #header-bottom-right .user>a {
+    padding-right: 17px
 }
 .res #RESAccountSwitcherIcon {
     margin-left: -15px;
-    background: 0 !important;
+    background: 0!important
 }
-
 .res #RESAccountSwitcherIcon:before {
     content: '';
     display: block;
@@ -191,62 +174,87 @@
     border-top: 5px solid #666;
     position: relative;
     top: 5px;
-    left: 1px;
+    left: 1px
 }
 
 /* userbar icons
 --------------------------------------------------------------------------------*/
-#mail { display: inline-block; overflow: visible; }
-#mail.nohavemail { background: -54px -310px; }
-#mail.havemail { background: -121px -374px; }
-
-#modmail { top: -2px; margin-bottom: -6px; }
-#modmail.nohavemail { background: -152px -374px; }
-#modmail.havemail { background: -54px -404px; }
-
-.gearIcon { background: -116px -339px!important; top: 5px; }
-.gearIcon:after { display: none; }
-
-#mail, #modmail, .gearIcon {
+#mail {
+    display: inline-block;
+    overflow: visible
+}
+#mail.nohavemail {
+    background: -54px -310px
+}
+#mail.havemail {
+    background: -121px -374px
+}
+#modmail {
+    top: -2px;
+    margin-bottom: -6px
+}
+#modmail.nohavemail {
+    background: -152px -374px
+}
+#modmail.havemail {
+    background: -54px -404px
+}
+.gearIcon {
+    background: -116px -339px!important;
+    top: 5px
+}
+.gearIcon:after {
+    display: none
+}
+#mail,
+#modmail,
+.gearIcon {
     height: 28px!important;
     width: 28px!important;
-    background-image: url(%%pokesheet%%)!important;
+    background-image: url(%%pokesheet%%)!important
 }
 
 /* opacity hover/no hover
 --------------------------------------------------------------------------------*/
-#modmail, #mail, a.pref-lang, .loggedin .logout a, .gearIcon {
-    opacity: .75;
+#mail,
+#modmail,
+.gearIcon,
+.loggedin .logout a,
+a.pref-lang {
+    opacity: .75
 }
-#modmail:hover, #mail:hover, a.pref-lang:hover, .loggedin .logout a:hover, .gearIcon:hover {
-    opacity: 1;
+
+#mail:hover,
+#modmail:hover,
+.gearIcon:hover,
+.loggedin .logout a:hover,
+a.pref-lang:hover {
+    opacity: 1
 }
 
 /********************************************************************************
 * TAB MENU
 *********************************************************************************/
-
 #header .tabmenu {
     display: flex;
     justify-content: flex-start;
     position: absolute;
     top: 100%;
-    left: 352px; /* move left end of tabmenu to approximately where the middle of the sub logo is */
-    -webkit-transform: translate(-50%); /* ^ and use transform to center at that point */
+    left: 352px;
+    -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
     transform: translate(-50%);
-    
     margin-top: -6px;
-    background: white;
+    background: #fff;
     border: 1px solid #cecdcd;
     height: 34px;
     border-radius: 18px;
-    padding: 2px 0 0 0;
-    text-transform: capitalize;
+    padding: 2px 0 0;
+    text-transform: capitalize
 }
 
 #header .tabmenu li {
-    margin: 0;
+    margin: 0
 }
 
 .tabmenu li a {
@@ -255,70 +263,94 @@
     height: 30px;
     line-height: 30px;
     padding: 0;
-    background-color: transparent !important;
-    border: 0 !important;
+    background-color: transparent!important;
+    border: 0!important;
     font-size: small;
-    margin-right: 4px;
+    margin-right: 4px
 }
 
 .tabmenu li a:hover,
 .tabmenu li.selected a {
-    color: #48f;
+    color: #48f
 }
 
 /* listing-page tabmenu items
 --------------------------------------------------------------------------------*/
 
-/* tabmenu icons */
-.listing-page #header .tabmenu li:nth-child(1) a { background: -227px 0 }
-.listing-page #header .tabmenu li:nth-child(2) a { background: -5px 0 }
-.listing-page #header .tabmenu li:nth-child(3) a { background: -43px 0 }
-.listing-page #header .tabmenu li:nth-child(4) a { background: -80px 0 }
-.listing-page #header .tabmenu li:nth-child(5) a { background: -116px 0 }
-.listing-page #header .tabmenu li:nth-child(6) a { background: -154px 0 }
-.listing-page #header .tabmenu li:nth-child(7) a { background: -265px 0 }
-.listing-page #header .tabmenu li:nth-child(8) a { background: -190px 0 }
-.listing-page #header .tabmenu li:nth-child(9) a { background: -302px 0 }
-.listing-page #header .tabmenu li a[href^="j"]   { background: -340px 0 }
+/* positions */
+.listing-page #header .tabmenu li:nth-child(1) a {
+    background: -227px 0
+}
+.listing-page #header .tabmenu li:nth-child(2) a {
+    background: -5px 0
+}
+.listing-page #header .tabmenu li:nth-child(3) a {
+    background: -43px 0
+}
+.listing-page #header .tabmenu li:nth-child(4) a {
+    background: -80px 0
+}
+.listing-page #header .tabmenu li:nth-child(5) a {
+    background: -116px 0
+}
+.listing-page #header .tabmenu li:nth-child(6) a {
+    background: -154px 0
+}
+.listing-page #header .tabmenu li:nth-child(7) a {
+    background: -265px 0
+}
+.listing-page #header .tabmenu li:nth-child(8) a {
+    background: -190px 0
+}
+.listing-page #header .tabmenu li:nth-child(9) a {
+    background: -302px 0
+}
+.listing-page #header .tabmenu li a[href^="j"] {
+    background: -340px 0
+}
+
+/* element */
 .listing-page #header .tabmenu li a {
     content: "";
     display: inline-block;
-    background-image: url(%%tabmenu%%) !important;
+    background-image: url(%%tabmenu%%)!important;
     width: 33px;
     height: 32px;
     opacity: .6;
     font-size: 0;
-    -webkit-transition: opacity 0.1s ease;
-    transition: opacity 0.1s ease;
+    -webkit-transition: opacity .1s ease;
+    transition: opacity .1s ease
 }
 .listing-page #header .tabmenu li a:hover {
-    opacity: 1;
+    opacity: 1
 }
 
-/* not-listing-page tabmenu items
+/* non-listing-page tabmenu items
 --------------------------------------------------------------------------------*/
-
 body:not(.listing-page) .tabmenu li a {
-    background: rgba(0,0,0,0.05) !important;
-    margin: 0;
-    margin-top: 1px;
+    background: rgba(0, 0, 0, .05)!important;
+    margin: 1px 0 0 3px;
     padding: 0 5px;
-    font-size: 12px;
-    margin-left: 3px;
+    font-size: 12px
 }
-
-body #header .tabmenu li:first-of-type a { border-radius: 15px 0 0 15px; }
-body #header .tabmenu li:last-of-type a { border-radius: 0 15px 15px 0; margin-right: 3px; }
+body #header .tabmenu li:first-of-type a {
+    border-radius: 15px 0 0 15px
+}
+body #header .tabmenu li:last-of-type a {
+    border-radius: 0 15px 15px 0;
+    margin-right: 3px
+}
 
 /* tabmenu tooltips
 --------------------------------------------------------------------------------*/
 
+/* element */
 .listing-page #header .tabmenu li a:after {
     display: block;
     position: absolute;
     margin-bottom: 8px;
     font-size: 12px;
-    background: rgba(200,200,200,0.4);
+    background: rgba(200, 200, 200, .4);
     height: 20px;
     line-height: 20px;
     padding: 0 10px;
@@ -330,22 +362,44 @@ body #header .tabmenu li:last-of-type a { border-radius: 0 15px 15px 0; margin-r
     transition: bottom 150ms ease, opacity 150ms ease-in;
     bottom: 60%;
     opacity: 0;
-    color: white;
+    color: #fff
 }
 .listing-page #header .tabmenu li a:hover:after {
     bottom: 100%;
-    opacity: 1;
+    opacity: 1
 }
 
-.listing-page #header .tabmenu li:nth-child(1) a:after { content: 'hot'; }
-.listing-page #header .tabmenu li:nth-child(2) a:after { content: 'new'; }
-.listing-page #header .tabmenu li:nth-child(3) a:after { content: 'rising'; }
-.listing-page #header .tabmenu li:nth-child(4) a:after { content: 'controversial'; }
-.listing-page #header .tabmenu li:nth-child(5) a:after { content: 'top'; }
-.listing-page #header .tabmenu li:nth-child(6) a:after { content: 'gilded'; }
-.listing-page #header .tabmenu li:nth-child(7) a:after { content: 'wiki'; }
-.listing-page #header .tabmenu li:nth-child(8) a:after { content: 'promoted'; }
-.res.listing-page #header .tabmenu li:nth-child(9) a:after { content: 'view images'; }
-
-.listing-page #header .tabmenu li a[href^="j"]:after { content: 'queue'; }
-.listing-page #header .tabmenu li.tb-metrics a[href^="j"]:after { content: 'metrics'; }
+/* tooltip text (this pains me to look at ;_;) */
+.listing-page #header .tabmenu li:nth-child(1) a:after {
+    content: 'hot'
+}
+.listing-page #header .tabmenu li:nth-child(2) a:after {
+    content: 'new'
+}
+.listing-page #header .tabmenu li:nth-child(3) a:after {
+    content: 'rising'
+}
+.listing-page #header .tabmenu li:nth-child(4) a:after {
+    content: 'controversial'
+}
+.listing-page #header .tabmenu li:nth-child(5) a:after {
+    content: 'top'
+}
+.listing-page #header .tabmenu li:nth-child(6) a:after {
+    content: 'gilded'
+}
+.listing-page #header .tabmenu li:nth-child(7) a:after {
+    content: 'wiki'
+}
+.listing-page #header .tabmenu li:nth-child(8) a:after {
+    content: 'promoted'
+}
+.res.listing-page #header .tabmenu li:nth-child(9) a:after {
+    content: 'view images'
+}
+.listing-page #header .tabmenu li a[href^="j"]:after {
+    content: 'queue'
+}
+.listing-page #header .tabmenu li.tb-metrics a[href^="j"]:after {
+    content: 'metrics'
+}

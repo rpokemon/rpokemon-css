@@ -1,111 +1,107 @@
 
 /* sidecontentbox
 --------------------------------------------------------------------------------*/
-
 .sidecontentbox {
     margin: 7px;
     padding: 5px;
     background-color: transparent;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, .1)
 }
 
 /* title */
-.side .sidecontentbox .title, .side .sidecontentbox .title h1 {
+.side .sidecontentbox .title,
+.side .sidecontentbox .title h1 {
     text-transform: uppercase;
-    font-weight: normal;
-    /*letter-spacing: 1px;*/
-    padding: 0px !important;
+    font-weight: 400;
+    padding: 0!important;
     margin: 5px;
     text-align: center;
-    line-height: 14px;
+    line-height: 14px
 }
 
 /* list */
 .sidecontentbox .content {
-    border: none;
+    border: 0
 }
 
 /* sidecontentbox moderators
 --------------------------------------------------------------------------------*/
 
 /* item */
-.sidecontentbox .helplink ~ .content li {
+.sidecontentbox .helplink~.content li {
     position: relative;
     min-height: 26px;
     padding-top: 3px;
     margin-bottom: 6px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 16px 3px 3px 16px;
+    border-radius: 16px 3px 3px 16px
 }
-
-.sidecontentbox .helplink ~ .content li:before {
+.sidecontentbox .helplink~.content li:before {
     content: '';
     display: block;
     position: absolute;
-    background: url(%%pokesheet%%);
-    background-position: -55px -177px;
+    background: url(%%pokesheet%%) -55px -177px;
     width: 32px;
     height: 32px;
     top: 0;
-    left: 0;
+    left: 0
 }
 
 /* author link */
-.sidecontentbox .helplink ~ .content li > a {
-    top: -6px;
-    position: relative;
+.sidecontentbox .helplink~.content li>a {
+    top: -3px;
+    position: relative
 }
 
 /* about mod team */
-.sidecontentbox .helplink ~ .content li.more {
+.sidecontentbox .helplink~.content li.more {
     border-radius: 3px;
-    background: transparent;
+    background: 0 0
 }
-.sidecontentbox .helplink ~ .content li.more:before { display: none; }
-
-.sidecontentbox .helplink ~ .content li.more a {
+.sidecontentbox .helplink~.content li.more:before {
+    display: none
+}
+.sidecontentbox .helplink~.content li.more a {
     height: 26px;
     line-height: 26px;
     display: block;
-    margin: 5px 0 0 5px;
+    margin: 5px 0 0 5px
 }
+
 /* message the moderators link */
 .sidecontentbox a.helplink {
     line-height: 18px;
     padding: 0 10px;
-    margin-right: 5px;
+    margin-right: 5px
 }
 
 /* sidebar misc
 --------------------------------------------------------------------------------*/
 .reddit-link {
-    position: relative;
+    position: relative
 }
 .gadget .reddit-entry {
     overflow: visible;
     min-height: 80px;
-    margin-top: 0 !important;
-    padding-top: 5px;
+    margin-top: 0!important;
+    padding-top: 5px
 }
 .gadget .reddit-entry .linkflairlabel {
-    position: static !important;
+    position: static!important
 }
-.gadget .reddit-link-end { padding-top: 5px; }
-
-.icon-menu a {
-    background: transparent;
+.gadget .reddit-link-end {
+    padding-top: 5px
 }
-.sidebox .spacer{
-    background: transparent;
-    margin: 10px;
+.sidebox .spacer {
+    background: 0 0;
+    margin: 10px
 }
 
 table {
-    font-size: .95em;
+    font-size: .95em
 }
 
 .account-activity-box a {
     display: inline-block;
     line-height: 28px;
-    margin-top: -10px;
+    margin-top: -10px
 }
