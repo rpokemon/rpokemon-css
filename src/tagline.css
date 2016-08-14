@@ -115,6 +115,8 @@
 .author.moderator~.flair:before,
 .comment .moderator,
 .link .moderator,
+.thing .tagline .author.moderator,
+.tagline .author.submitter.moderator,
 .res .thing .tagline .author.moderator,
 .res .thing .tagline .author.submitter.moderator {
     color: #fff!important

@@ -3,7 +3,9 @@
 * SR HEADER AREA
 *********************************************************************************/
 #sr-header-area {
-    height: 18px
+    height: 18px;
+    position: relative;
+    z-index: 20
 }
 #sr-header-area .width-clip .dropdown.srdrop .selected.title {
     font-size: 9px;
@@ -263,6 +265,7 @@ a.pref-lang:hover {
     height: 30px;
     line-height: 30px;
     padding: 0;
+    box-sizing: border-box;
     background-color: transparent!important;
     border: 0!important;
     font-size: small;
@@ -310,11 +313,16 @@ a.pref-lang:hover {
 }
 
 /* element */
+.listing-page #header .tabmenu li {
+    width: 38px;
+    height: 32px;
+    position: relative;
+}
 .listing-page #header .tabmenu li a {
     content: "";
     display: inline-block;
     background-image: url(%%tabmenu%%)!important;
-    width: 33px;
+    width: 34px;
     height: 32px;
     opacity: .6;
     font-size: 0;
@@ -323,6 +331,15 @@ a.pref-lang:hover {
 }
 .listing-page #header .tabmenu li a:hover {
     opacity: 1
+}
+
+#header .tabmenu li, #header .tabmenu li a, #header .tabmenu li a:hover {
+    transform: translate3d(0px,0px,0px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotate(0) translateZ(0);
+    -moz-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
 }
 
 /* non-listing-page tabmenu items

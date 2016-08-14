@@ -20,6 +20,9 @@
     margin-left: 0!important;
     padding: 0!important
 }
+html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[role=main] .commentarea .sitetable.nestedlisting .comment {
+    background: transparent !important;
+}
 
 .newComments {
     color: red

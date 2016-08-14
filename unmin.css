@@ -68,7 +68,9 @@ button:active, input[type=submit]:active {
 * SR HEADER AREA
 *********************************************************************************/
 #sr-header-area {
-    height: 18px
+    height: 18px;
+    position: relative;
+    z-index: 20
 }
 #sr-header-area .width-clip .dropdown.srdrop .selected.title {
     font-size: 9px;
@@ -328,6 +330,7 @@ a.pref-lang:hover {
     height: 30px;
     line-height: 30px;
     padding: 0;
+    box-sizing: border-box;
     background-color: transparent!important;
     border: 0!important;
     font-size: small;
@@ -375,11 +378,16 @@ a.pref-lang:hover {
 }
 
 /* element */
+.listing-page #header .tabmenu li {
+    width: 38px;
+    height: 32px;
+    position: relative;
+}
 .listing-page #header .tabmenu li a {
     content: "";
     display: inline-block;
     background-image: url(%%tabmenu%%)!important;
-    width: 33px;
+    width: 34px;
     height: 32px;
     opacity: .6;
     font-size: 0;
@@ -388,6 +396,15 @@ a.pref-lang:hover {
 }
 .listing-page #header .tabmenu li a:hover {
     opacity: 1
+}
+
+#header .tabmenu li, #header .tabmenu li a, #header .tabmenu li a:hover {
+    transform: translate3d(0px,0px,0px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotate(0) translateZ(0);
+    -moz-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
 }
 
 /* non-listing-page tabmenu items
@@ -611,7 +628,7 @@ body #header .tabmenu li:last-of-type a {
 *********************************************************************************/
 .listing-page .content>.menuarea {
     border: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-left: 3px;
     overflow: visible
 }
@@ -1035,6 +1052,8 @@ body #header .tabmenu li:last-of-type a {
 .author.moderator~.flair:before,
 .comment .moderator,
 .link .moderator,
+.thing .tagline .author.moderator,
+.tagline .author.submitter.moderator,
 .res .thing .tagline .author.moderator,
 .res .thing .tagline .author.submitter.moderator {
     color: #fff!important
@@ -1259,6 +1278,9 @@ html:lang(ns) .link.linkflair-spoiler a.title:before {
     margin-left: 0!important;
     padding: 0!important
 }
+html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[role=main] .commentarea .sitetable.nestedlisting .comment {
+    background: transparent !important;
+}
 
 .newComments {
     color: red
@@ -1468,7 +1490,8 @@ select#comment-visits {
 /* usertext edit
 --------------------------------------------------------------------------------*/
 .commentarea>.usertext {
-    padding-top: 10px
+    padding-top: 10px;
+    border-bottom: 1px solid #e3e3e3
 }
 .res .markdownEditor .edit-btn:not(.btn-macro) {
     border: 0;
@@ -1507,15 +1530,21 @@ select#comment-visits {
 }
 .usertext button.cancel:active,
 .usertext button[type=submit]:active {
-    margin-top: 1px;
-    margin-bottom: 0
+    top: 1px
 }
 .usertext button[type=submit] {
     background-color: #48f;
     border-color: #2a66d6;
     box-shadow: inset 0 1px 0 #669bff
 }
+
 .usertext button.cancel {
+    background-color: rgba(0,0,0,0.3);
+    border-color: rgba(0,0,0,0.15);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+}
+
+html[lang$=nm] .usertext button.cancel {
     background-color: rgba(255, 255, 255, .14);
     border-color: rgba(255, 255, 255, .07);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15)
@@ -3865,6 +3894,7 @@ html[lang$=nm] .commentarea>.panestack-title {
     border-top: 1px solid transparent
 }
 html[lang$=nm] .comment-permalink-page .commentarea>.infobar,
+html[lang$=nm] .commentarea >.usertext,
 html[lang$=nm] .commentarea .child>.usertext,
 html[lang$=nm] .gold-accent.comment-visits-box {
     border-bottom: 1px solid transparent

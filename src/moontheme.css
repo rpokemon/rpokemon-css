@@ -215,6 +215,7 @@ html[lang$=nm] .commentarea>.panestack-title {
     border-top: 1px solid transparent
 }
 html[lang$=nm] .comment-permalink-page .commentarea>.infobar,
+html[lang$=nm] .commentarea >.usertext,
 html[lang$=nm] .commentarea .child>.usertext,
 html[lang$=nm] .gold-accent.comment-visits-box {
     border-bottom: 1px solid transparent
