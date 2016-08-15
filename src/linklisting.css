@@ -31,7 +31,8 @@
 .organic-listing {
     background: 0 0!important;
     border: 0;
-    margin-bottom: 50px
+    margin-bottom: 20px;
+    overflow: visible !important
 }
 .link.promotedlink {
     overflow: visible

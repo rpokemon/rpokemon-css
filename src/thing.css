@@ -8,7 +8,7 @@
 
 /* Link element
 --------------------------------------------------------------------------------*/
-.link {
+.link, .link.promoted.promotedlink {
     padding: 8px 8px 0 57px;
     position: relative;
     margin-top: 0
