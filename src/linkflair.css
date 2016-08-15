@@ -27,12 +27,30 @@
     transform: rotate(-90deg);
     margin: 27px 0 0 -49px
 }
+/* reset rotation for flair selector */
 .flairselector .linkflairlabel {
     -moz-transform: rotate(0)!important;
     -webkit-transform: rotate(0)!important;
     transform: rotate(0)!important
 }
 
+/* increase label size for longer linkflairs */
+.linkflair[class*=spoiler] .title .linkflairlabel,
+.linkflair[class*=rotation] .title .linkflairlabel {
+    font-size: 10px;
+    overflow: visible;
+    text-indent: -9px;
+    width: 75px;
+    top: 9px;
+    left: -4px;
+}
+
+.link.linkflair[class*=spoiler],
+.link.linkflair[class*=rotation] {
+    padding-bottom: 10px;
+}
+
+/* linkflair - fill*/
 .link.linkflair:before {
     content: '';
     display: block;
@@ -50,6 +68,7 @@
     width: 6px
 }
 
+/* linkflair backgrounds */
 .flairselector .linkflair-image .linkflairlabel,
 .link.linkflair-image:before,
 .linkflair-image .linkflairlabel {
@@ -91,12 +110,15 @@
     background: #76c374;
 }
 
+.flairselector [class*=spoiler] .linkflairlabel,
+.link[class*=spoiler]:before,
+[class*=spoiler] .linkflairlabel {
+    background: #e4796b;
+}
+
 /* spoiler linkflairlabel and title overlay
 --------------------------------------------------------------------------------*/
-.flairselector .linkflair-spoiler .linkflairlabel,
-.linkflair-spoiler .linkflairlabel {
-    color: #e74c3c
-}
+
 .linkflair-spoiler a.title {
     min-width: 215px
 }
