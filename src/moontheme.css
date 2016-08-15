@@ -180,7 +180,8 @@ html[lang$=nm] .thing.visited .title {
 html[lang$=nm] .flairrow .author,
 html[lang$=nm] .side .tagline .author,
 html[lang$=nm] .thing .author {
-    background-position: 0 0
+    background-position: 0 0;
+    color: #48f
 }
 
 /* spoiler overlay
@@ -369,6 +370,9 @@ html[lang$=nm] .side .md h3+ul+ol>li:before {
     left: -36px;
     top: 3px
 }
+html[lang$=nm] .side .md h3+ul a {
+    color: #ccc;
+}
 
 /* submission filters
 --------------------------------------------------------------------------------*/
@@ -384,10 +388,10 @@ html[lang$=nm] .side .md h6+blockquote p {
     background: rgba(255, 255, 255, .02)
 }
 html[lang$=nm] .side .md h6+blockquote p a {
-    background: rgba(255, 255, 255, .05)!important
+    background: rgba(255, 255, 255, .05)
 }
 html[lang$=nm] .side .md h6+blockquote p a:hover {
-    background: rgba(255, 255, 255, .12)!important
+    background: rgba(255, 255, 255, .12)
 }
 html[lang$=nm] .side .md h6+blockquote h4 {
     background: rgba(255, 255, 255, .08)

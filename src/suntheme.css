@@ -250,6 +250,9 @@ html.res .res-fancy-toggle-button {
     left: -36px;
     top: 3px
 }
+.side .md h3+ul a {
+    color: #777;
+}
 
 /* submission filters
 --------------------------------------------------------------------------------*/
@@ -261,10 +264,22 @@ html.res .res-fancy-toggle-button {
 
 /* side community links
 --------------------------------------------------------------------------------*/
-.side .md h6+blockquote p a {
-    background: #f3f3f3!important
+.side .md h6+blockquote p {
+    background: rgba(0,0,0,0.03);
 }
 
+.side .md h6+blockquote p a {
+    background: rgba(0,0,0,0.04);
+    color: rgba(0,0,0,0.8);
+}
+.side .md h6+blockquote p a:hover {
+    background: rgba(0,0,0,0.08);
+}
+
+.side .md h6+blockquote h4 {
+    background: rgba(0,0,0,0.04);
+    color: rgba(0,0,0,0.8);
+}
 /* sun/moon switch day mode
 --------------------------------------------------------------------------------*/
 .side .md h1:first-of-type {
