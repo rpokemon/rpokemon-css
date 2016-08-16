@@ -136,7 +136,8 @@
 /* entry buttons
 --------------------------------------------------------------------------------*/
 .link .flat-list {
-    margin-top: 2px
+    margin-top: 2px;
+    margin-left: 10px
 }
 
 /* midcol element

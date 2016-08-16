@@ -187,7 +187,8 @@ html[lang$=nm] .thing .author {
 /* spoiler overlay
 --------------------------------------------------------------------------------*/
 html[lang$=nm] .link.linkflair-spoiler a.title:before {
-    background: #9a9a9a
+    border: 2px dashed #36393e;
+    background: #282b30
 }
 
 /* stuff

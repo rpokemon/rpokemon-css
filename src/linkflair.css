@@ -136,7 +136,8 @@
     font-size: 15px;
     opacity: 1;
     transition: opacity .2s;
-    transition-delay: .2s
+    transition-delay: .2s;
+    line-height: 17px
 }
 .link.linkflair-spoiler a.title:hover:before {
     opacity: 0

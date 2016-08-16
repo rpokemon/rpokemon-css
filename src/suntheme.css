@@ -114,7 +114,8 @@ html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle:after {
 /* spoiler overlay
 --------------------------------------------------------------------------------*/
 .link.linkflair-spoiler a.title:before {
-    background: #eaeaea
+    border: 2px dashed #eaeaea;
+    background: #fff;
 }
 
 /********************************************************************************
