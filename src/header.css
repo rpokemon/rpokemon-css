@@ -121,7 +121,8 @@
 }
 
 #header-bottom-right a.pref-lang,
-.loggedin .logout a {
+.loggedin .logout a:before {
+    content: '';
     display: inline-block;
     background: url(%%pokesheet%%) -55px -371px;
     width: 25px;
@@ -129,8 +130,17 @@
     font-size: 0!important;
     margin: 0
 }
-.loggedin .logout a {
+
+.loggedin .logout a:before {
     background-position: -90px -372px
+}
+
+.loggedin .logout a {
+    font-size: 0;
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    margin-top: 8px
 }
 
 /* userbar
@@ -221,7 +231,7 @@
 #mail,
 #modmail,
 .gearIcon,
-.loggedin .logout a,
+.loggedin .logout a:before,
 a.pref-lang {
     opacity: .75
 }
@@ -229,7 +239,7 @@ a.pref-lang {
 #mail:hover,
 #modmail:hover,
 .gearIcon:hover,
-.loggedin .logout a:hover,
+.loggedin .logout a:before:hover,
 a.pref-lang:hover {
     opacity: 1
 }
