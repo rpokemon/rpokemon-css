@@ -6,8 +6,8 @@
 .footer-parent { padding-top: 100px }
 
 .footer {
-    display: flex;
     display: -webkit-flex;
+    display: flex;
     justify-content: center;
     max-width: none
 }

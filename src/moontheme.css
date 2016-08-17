@@ -389,7 +389,8 @@ html[lang$=nm] .side .md h6+blockquote p {
     background: rgba(255, 255, 255, .02)
 }
 html[lang$=nm] .side .md h6+blockquote p a {
-    background: rgba(255, 255, 255, .05)
+    background: rgba(255, 255, 255, .05);
+    color: rgba(255,255,255,0.6);
 }
 html[lang$=nm] .side .md h6+blockquote p a:hover {
     background: rgba(255, 255, 255, .12)

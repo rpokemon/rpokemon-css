@@ -9,27 +9,32 @@
     background: #ccc;
     min-width: 50px!important;
     padding: 0 10px;
-    top: 5px;
-    left: -3px;
     margin: 0;
-    width: 67px;
+    width: auto;
     border: 0;
     border-radius: 3px 3px 0 0;
     z-index: 10;
     color: #fff!important;
     font-weight: 700;
-    font-size: 12px
+    font-size: 12px;
+    
+    -webkit-transform: rotate(-90deg) translate(-100%,-100%);
+    transform: rotate(-90deg) translate(-100%,-100%);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    top: 0;
+    left: 0;
+    margin-top: -1px;
+    margin-left: 2px;
 }
 
-.link .linkflairlabel {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    margin: 27px 0 0 -49px
+.listing-page .link .linkflairlabel {
+    width: 91px;
+    padding: 0;
 }
+
 /* reset rotation for flair selector */
 .flairselector .linkflairlabel {
-    -moz-transform: rotate(0)!important;
     -webkit-transform: rotate(0)!important;
     transform: rotate(0)!important
 }
@@ -37,12 +42,8 @@
 /* increase label size for longer linkflairs */
 .linkflair[class*=spoiler] .title .linkflairlabel,
 .linkflair[class*=rotation] .title .linkflairlabel {
-    font-size: 10px;
+    font-size: 9.5px;
     overflow: visible;
-    text-indent: -9px;
-    width: 75px;
-    top: 9px;
-    left: -7px;
 }
 
 .link.linkflair[class*=spoiler],

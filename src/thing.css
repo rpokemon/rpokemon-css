@@ -6,6 +6,12 @@
     overflow: visible!important
 }
 
+.link a.title,
+.linkflairlabel,
+.tagline time {
+    font-family: Segoe, "Segoe UI", Verdana, Arial, sans-serif
+}
+
 /* Link element
 --------------------------------------------------------------------------------*/
 .link, .link.promoted.promotedlink {
@@ -148,6 +154,7 @@
     top: 0;
     text-align: center;
     width: 46px!important;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     z-index: 50;

@@ -5,6 +5,7 @@
 .mod-toolbox .menuarea.modtools {
     margin: 0 0 0 10px!important;
     min-width: 1020px!important;
+    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap
 }

@@ -100,6 +100,12 @@ html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle:after {
     color: rgba(0, 0, 0, .8)
 }
 
+.link a.title:visited,
+.thing .title:visited,
+.thing.visited .title {
+    color: #7730b7;
+}
+
 /* author panel - set to white version
 --------------------------------------------------------------------------------*/
 .flairrow .author,

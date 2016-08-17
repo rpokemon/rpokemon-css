@@ -8,7 +8,7 @@
 .submit-page .content>h1 {
     text-align: center;
     margin: 30px 0 20px;
-    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif
 }
 .submit-page .content[role=main] {
     max-width: 700px
@@ -28,7 +28,7 @@
 .submit-page.res .markdownEditor-wrapper {
     width: 100%;
     border-color: #c3c3c3;
-    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif
 }
 
 /* Hide things we don't want
@@ -96,15 +96,9 @@
 }
 
 .submit-page .roundfield>.title {
-    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif;
     text-transform: uppercase;
     color: rgba(0, 0, 0, .4)
-}
-
-.link a.title,
-.linkflairlabel,
-.tagline time {
-    font-family: Segoe, "Segoe UI", Optima, Arial, sans-serif
 }
 
 .submit-page #new-link-image-input>div {

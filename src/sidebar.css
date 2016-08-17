@@ -59,6 +59,7 @@
 /* Titlebox stuff
 --------------------------------------------------------------------------------*/
 .titlebox {
+    display: -webkit-flex;
     display: flex;
     flex-direction: column
 }
@@ -173,12 +174,14 @@
 /* flair toggle */
 .titlebox form.toggle.flairtoggle {
     top: 185px;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     width: 100%;
     box-sizing: border-box
 }
 .flairtoggle label {
+    display: -webkit-flex;
     display: flex;
     align-items: center
 }
@@ -215,6 +218,7 @@
     display: none
 }
 .res-sr-style-toggle label {
+    display: -webkit-flex;
     display: flex;
     align-items: center
 }

@@ -29,6 +29,7 @@
 
 /* menu area */
 .commentarea>.menuarea {
+    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
