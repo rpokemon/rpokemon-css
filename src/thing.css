@@ -11,7 +11,7 @@
 .link, .link.promoted.promotedlink {
     padding: 8px 8px 0 57px;
     position: relative;
-    margin-top: 0
+    margin-top: 0;
 }
 .link.last-clicked {
     overflow: visible;
@@ -149,7 +149,8 @@
     text-align: center;
     width: 46px!important;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    z-index: 50;
 }
 .link .midcol {
     background: rgba(0, 0, 0, .02);

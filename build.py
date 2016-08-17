@@ -74,6 +74,7 @@ def run():
                     'if this file is no longer in use then you must remove it from the "order" variable in build.py')
                     return
         
+        # copy an unminified version of the stylesheet to a separate file
         shutil.copyfile(dist_dir + '\\' + dist_file, dist_dir + '\\' + unmin_file);
         
         # Compress
@@ -83,20 +84,6 @@ def run():
             outfile.seek(0)
             outfile.write(top(build_ver) + '\n' + mini)
             outfile.truncate()
-            
-        with open(dist_dir + '\\dist-trial-2.css', 'wb') as outfile:
-            with open('dist.css', 'rb') as readfile:
-                shutil.copyfileobj(readfile, outfile)
-                
-            with open('trial2.css', 'rb') as readfile:
-                shutil.copyfileobj(readfile, outfile)
-                
-        with open(dist_dir + '\\dist-trial-3.css', 'wb') as outfile:
-            with open('dist.css', 'rb') as readfile:
-                shutil.copyfileobj(readfile, outfile)
-                
-            with open('trial3.css', 'rb') as readfile:
-                shutil.copyfileobj(readfile, outfile)
             
         # Increment build version in build.dat afterwards in case of failure
         build.seek(0)

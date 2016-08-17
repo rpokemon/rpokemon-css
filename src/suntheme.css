@@ -4,7 +4,9 @@
 *********************************************************************************/
 
 body {
-    background: #ECF0F1 url(%%bg%%)
+    /* background: #ECF0F1 url(%%bg%%); */
+    background: url(%%bg%%), radial-gradient(ellipse at center, rgba(251, 253, 254, 1) 0,
+                rgba(251, 253, 254, 1) 49%, rgba(224, 242, 255, 1) 100%) fixed; /* BLUE PALETTE */
 }
 
 /* header
@@ -73,7 +75,7 @@ html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle:after {
 *********************************************************************************/
 .link {
     border: 1px solid #cecdcd!important;
-    box-shadow: none
+    box-shadow: 0 1px 3px rgba(173, 178, 255, 0.8); /* BLUE PALETTE */
 }
 .link .entry {
     border-color: transparent!important
@@ -96,11 +98,6 @@ html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle:after {
 --------------------------------------------------------------------------------*/
 .link a.title {
     color: rgba(0, 0, 0, .8)
-}
-.link a.title:visited,
-.thing .title:visited,
-.thing.visited .title {
-    color: #423d56
 }
 
 /* author panel - set to white version
@@ -308,9 +305,9 @@ html.res .res-fancy-toggle-button {
 /* md
 --------------------------------------------------------------------------------*/
 .md,
-.md *,
+.md *:not(a),
 .side .md,
-.side .md * {
+.side .md *:not(a) {
     color: #222
 }
 .thing .md hr {

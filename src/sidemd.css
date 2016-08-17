@@ -25,10 +25,6 @@
 
 /* pokemon go teams
 --------------------------------------------------------------------------------*/
-.side .md>h4:first-of-type,
-.side .md>h4:first-of-type+ul {
-    display: none /* TODO: hidden for now */
-}
 .side .md h4:first-of-type {
     padding-left: 20px
 }
@@ -46,8 +42,11 @@
     border: 1px solid transparent;
     border-radius: 3px;
     position: relative;
-    background: rgba(0, 0, 0, .4);
+    background: #fff;
     margin-bottom: 15px
+}
+html[lang$=nm] .side .md h4:first-of-type+ul li {
+    background: rgba(0, 0, 0, .4);
 }
 .side .md h4:first-of-type+ul li strong {
     font-size: 12px

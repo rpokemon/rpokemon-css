@@ -10,7 +10,7 @@
     min-width: 50px!important;
     padding: 0 10px;
     top: 5px;
-    left: 0;
+    left: -3px;
     margin: 0;
     width: 67px;
     border: 0;
@@ -42,7 +42,7 @@
     text-indent: -9px;
     width: 75px;
     top: 9px;
-    left: -4px;
+    left: -7px;
 }
 
 .link.linkflair[class*=spoiler],
@@ -58,7 +58,7 @@
     width: 21px;
     top: -1px;
     right: 100%;
-    margin-right: -5px;
+    margin-right: -2px;
     bottom: -1px;
     border-radius: 3px 0 0 3px;
     z-index: 5;
