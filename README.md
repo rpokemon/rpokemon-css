@@ -5,13 +5,11 @@ To run `compress.py` requires `pip install csscompressor`
 
 ---
 
-**CSS**
+## CSS
 
-CSS files are in `src/`, use `build.py` to concatenate and minify the files to `dist.css`
+CSS files are in `src/`, use `build.py` to concatenate the CSS files and create these two files:
+
+  - `dist.css` - full, minified stylesheet
+  - `unmin.css` - full, unminfied stylesheet
 
 See `build.py` for the order of concatenation and a brief description of each file.
-
-
-**Trial CSS**
-
-`trial2.css` and `trial3.css` are appended to dist.css to create `dist-trial-2.css` and `dist-trial-3.css` respectively.

@@ -120,6 +120,7 @@
 --------------------------------------------------------------------------------*/
 
 .linkflair-spoiler a.title {
+    display: inline-block;
     min-width: 215px
 }
 .link.linkflair-spoiler a.title:before {

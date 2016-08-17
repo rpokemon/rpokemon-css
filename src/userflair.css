@@ -128,7 +128,8 @@
 .author[href$="/AutoModerator"] {
     background-position: 0 -36px!important
 }
-.author[href$="/A_Wild_Abra"] {
+.thing .author[href$="/A_Wild_Abra"],
+.side .tagline .author[href$="/A_Wild_Abra"] {
     background-position: 0 -144px!important;
     color: #fff!important
 }
