@@ -8,6 +8,7 @@
 .footer {
     display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
     max-width: none
 }

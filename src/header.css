@@ -72,13 +72,11 @@
 /* header bars
 --------------------------------------------------------------------------------*/
 
-#header:after,
+.side:before,
 #header:before {
     display: block;
-    top: 100%;
-    left: 0;
-    position: absolute;
     right: 0;
+    position: absolute;
     content: ''
 }
 
@@ -87,13 +85,21 @@
     background: #fff;
     border-bottom: 1px solid #cecdcd;
     box-shadow: 0 -2px 3px rgba(0, 0, 0, .05);
-    z-index: 1
+    z-index: 1;
+    
+    top: 100%;
+    left: 0;
 }
-#header:after {
-    margin-top: 27px;
+.side:before {
+    margin-top: 28px;
     height: 46px;
     background: #fafafa;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .06)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
+    
+    bottom: 100%;
+    margin-bottom: 35px;
+    width: 100vw;
+    right: 0;
 }
 
 
@@ -251,6 +257,7 @@ a.pref-lang:hover {
 #header .tabmenu {
     display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: flex-start;
     justify-content: flex-start;
     position: absolute;
     top: 100%;

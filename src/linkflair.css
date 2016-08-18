@@ -1,7 +1,7 @@
 
 /* link flairs / linkflairs / flair filters
 --------------------------------------------------------------------------------*/
-.linkflairlabel {
+.thing .linkflairlabel {
     display: block;
     position: absolute!important;
     text-align: center;
@@ -16,7 +16,7 @@
     z-index: 10;
     color: #fff!important;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.7em;
     
     -webkit-transform: rotate(-90deg) translate(-100%,-100%);
     transform: rotate(-90deg) translate(-100%,-100%);
@@ -28,13 +28,13 @@
     margin-left: 2px;
 }
 
-.listing-page .link .linkflairlabel {
+.listing-page .thing.link .linkflairlabel {
     width: 91px;
     padding: 0;
 }
 
 /* reset rotation for flair selector */
-.flairselector .linkflairlabel {
+.thing .flairselector .linkflairlabel, .thing.reddit-link .linkflairlabel {
     -webkit-transform: rotate(0)!important;
     transform: rotate(0)!important
 }
@@ -42,7 +42,7 @@
 /* increase label size for longer linkflairs */
 .linkflair[class*=spoiler] .title .linkflairlabel,
 .linkflair[class*=rotation] .title .linkflairlabel {
-    font-size: 9.5px;
+    font-size: 0.6em;
     overflow: visible;
 }
 

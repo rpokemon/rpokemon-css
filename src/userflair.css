@@ -54,7 +54,7 @@
 
 /* sidecontentbox flair fix */
 .sidecontentbox .author,
-.sidecontentbox .author, .sidecontentbox .author:before, .sidecontentbox .author:after { margin-left: 38px; }
+.sidecontentbox .author, .sidecontentbox .author:before, .sidecontentbox .author:after { margin-left: 38px; font-size: 11px; }
 .sidecontentbox .flair { left: 0; top: -2px; margin-left: -5px; }
 .sidecontentbox .flair:after { left: 235px; }
 .sidecontentbox .flair:before { bottom: 3px; }
@@ -97,6 +97,8 @@
 .flair-722{background:-1196px -770px}
 .flair-725{background:-1236px -770px}
 .flair-728{background:-1275px -770px}
+
+.flair-yungoos { background: -1272px -800px; }
 
 .flair {
     background-image: url(%%Flair%%);

@@ -1,13 +1,13 @@
 
 /* PSA box
 --------------------------------------------------------------------------------*/
-.side .md h5,
+.side .md>h5,
 .side .md h5+ul {
     margin: 0 -7px;
     padding: 10px 25px;
     list-style-type: none
 }
-.side .md h5 {
+.side .md>h5 {
     font-weight: 400;
     font-size: 13px;
     padding-bottom: 5px;
@@ -19,22 +19,23 @@
 }
 .side .md h5+ul p {
     margin: 0;
-    padding: 2.5px 0
+    padding: 2.5px 0;
+    font-size: 11px !important
 }
 
 
 /* pokemon go teams
 --------------------------------------------------------------------------------*/
-.side .md h4:first-of-type {
+.side .md > h4:first-of-type {
     padding-left: 20px
 }
-.side .md h4:first-of-type+ul {
+.side .md > h4 + ul {
     list-style-type: none;
     padding: 0;
     margin: 15px 20px 30px
 }
 
-.side .md h4:first-of-type+ul li {
+.side .md > h4 + ul li {
     line-height: 32px;
     height: 32px;
     padding: 0 15px 0 48px;
@@ -45,13 +46,13 @@
     background: #fff;
     margin-bottom: 15px
 }
-html[lang$=nm] .side .md h4:first-of-type+ul li {
+html[lang$=nm] .side .md > h4 + ul li {
     background: rgba(0, 0, 0, .4);
 }
-.side .md h4:first-of-type+ul li strong {
+.side .md > h4 + ul li strong {
     font-size: 12px
 }
-.side .md h4:first-of-type+ul li:before {
+.side .md > h4 + ul li:before {
     content: '';
     display: block;
     position: absolute;
@@ -62,34 +63,21 @@ html[lang$=nm] .side .md h4:first-of-type+ul li {
     top: -10px
 }
 
-.side .md h4:first-of-type+ul li:nth-child(1):before {
-    background-position: 0 0
-}
-.side .md h4:first-of-type+ul li:nth-child(2):before {
-    background-position: -48px 0
-}
-.side .md h4:first-of-type+ul li:nth-child(3):before {
-    background-position: -96px 0
-}
+.side .md > h4 + ul li:nth-child(2):before { background-position: -48px 0 }
+.side .md > h4 + ul li:nth-child(3):before { background-position: -96px 0 }
 
-.side .md h3+ul a,
-.side .md table tr:nth-child(even) {
+.side .md h3+ul a, .side .md table tr:nth-child(even) {
     background: rgba(255, 255, 255, .04)
 }
-.side .md h4:first-of-type+ul li:nth-child(1) {
-    box-shadow: 0 .5px 0 2px #0076ec
-}
-.side .md h4:first-of-type+ul li:nth-child(2) {
-    box-shadow: 0 .5px 0 2px #fad207
-}
-.side .md h4:first-of-type+ul li:nth-child(3) {
-    box-shadow: 0 .5px 0 2px #f71106
-}
+
+.side .md > h4 + ul li:nth-child(1) { box-shadow: 0 .5px 0 2px #0076ec }
+.side .md > h4 + ul li:nth-child(2) { box-shadow: 0 .5px 0 2px #fad207 }
+.side .md > h4 + ul li:nth-child(3) { box-shadow: 0 .5px 0 2px #f71106 }
 
 /* submission rules
 --------------------------------------------------------------------------------*/
 
-.side .md h3,
+.side .md > h3,
 .side .md h3+ul,
 .side .md h3+ul+ol {
     border-left: 1px solid rgba(255, 255, 255, .2);
@@ -97,7 +85,7 @@ html[lang$=nm] .side .md h4:first-of-type+ul li {
     padding-left: 20px;
     list-style-type: none
 }
-.side .md h3 {
+.side .md > h3 {
     border-left: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .2);
     width: 50%;

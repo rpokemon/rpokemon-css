@@ -69,9 +69,13 @@
 
 /* message the moderators link */
 .sidecontentbox a.helplink {
-    line-height: 18px;
+    display: block;
+    float: none;
+    line-height: 28px;
+    font-size: 13px;
     padding: 0 10px;
-    margin-right: 5px
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 /* sidebar misc
@@ -86,7 +90,10 @@
     padding-top: 5px
 }
 .gadget .reddit-entry .linkflairlabel {
-    position: static!important
+    position: static!important;
+    border-radius: 0;
+    padding: 1px 2px;
+    min-width: initial !important
 }
 .gadget .reddit-link-end {
     padding-top: 5px

@@ -219,11 +219,11 @@ html.res .res-fancy-toggle-button {
 
 /* sidebar psa box
 --------------------------------------------------------------------------------*/
-.side .md h5,
+.side .md>h5,
 .side .md h5+ul {
     background: rgba(0,0,0,0.02);
 }
-.side .md h5 {
+.side .md>h5 {
     border-top: 1px solid rgba(0,0,0,0.05);
 }
 .side .md h5+ul {
@@ -232,13 +232,13 @@ html.res .res-fancy-toggle-button {
 
 /* sidebar rules
 --------------------------------------------------------------------------------*/
-.side .md h3 {
+.side .md > h3 {
     border-bottom-color: #e3e3e3
 }
 .side .md h3+ul+ol:after {
     background: #e3e3e3
 }
-.side .md h3,
+.side .md > h3,
 .side .md h3+ul,
 .side .md h3+ul+ol {
     border-left-color: #e3e3e3
@@ -286,14 +286,14 @@ html.res .res-fancy-toggle-button {
 }
 /* sun/moon switch day mode
 --------------------------------------------------------------------------------*/
-.side .md h1:first-of-type {
+.side .md > h1 {
     background: 0 0;
     border: 1px solid #dedede
 }
-.side .md h1:first-of-type a {
+.side .md > h1 a {
     color: #555
 }
-.side .md h1:first-of-type a:last-child {
+.side .md > h1 a:last-child {
     border-left: 1px solid #dedede
 }
 

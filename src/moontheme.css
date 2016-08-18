@@ -335,11 +335,11 @@ html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle {
 
 /* sidebar psa box
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .side .md h5,
+html[lang$=nm] .side .md > h5,
 html[lang$=nm] .side .md h5+ul {
     background: rgba(255,255,255,0.02);
 }
-html[lang$=nm] .side .md h5 {
+html[lang$=nm] .side .md > h5 {
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 html[lang$=nm] .side .md h5+ul {
@@ -349,13 +349,13 @@ html[lang$=nm] .side .md h5+ul {
 
 /* sidebar rules
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .side .md h3 {
+html[lang$=nm] .side .md > h3 {
     border-bottom-color: #e3e3e3
 }
 html[lang$=nm] .side .md h3+ul+ol:after {
     background: #e3e3e3
 }
-html[lang$=nm] .side .md h3,
+html[lang$=nm] .side .md > h3,
 html[lang$=nm] .side .md h3+ul,
 html[lang$=nm] .side .md h3+ul+ol {
     border-left-color: #e3e3e3
@@ -401,14 +401,14 @@ html[lang$=nm] .side .md h6+blockquote h4 {
 
 /* sun/moon switch day mode
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .side .md h1:first-of-type {
+html[lang$=nm] .side .md > h1 {
     background: rgba(255, 255, 255, .08);
     border: 1px solid rgba(255, 255, 255, .15)
 }
-html[lang$=nm] .side .md h1:first-of-type a {
+html[lang$=nm] .side .md > h1 a {
     color: #fff
 }
-html[lang$=nm] .side .md h1:first-of-type a:last-child {
+html[lang$=nm] .side .md > h1 a:last-child {
     border-left: 1px solid rgba(255, 255, 255, .15)
 }
 

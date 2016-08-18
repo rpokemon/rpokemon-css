@@ -7,7 +7,6 @@
 /* Element
 --------------------------------------------------------------------------------*/
 .side {
-    z-index: 500;
     margin-top: 107px;
     position: relative;
     padding-top: 735px;
@@ -23,7 +22,7 @@
 
 /* we use hr split off blockquotes, we don't want the actual hr to show */
 .side .md hr {
-    background: 0 0
+    background: 0
 }
 .side .spacer {
     margin: 0
@@ -59,16 +58,8 @@
 /* Titlebox stuff
 --------------------------------------------------------------------------------*/
 .titlebox {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column
-}
-.titlebox>* {
-    order: 1
-}
-.titlebox>.leavecontributor-button,
-.titlebox>.leavemoderator {
-    order: 2
+    margin-top: 12px;
+    font-size: 1.2em;
 }
 
 /* side top-logo */
@@ -99,7 +90,11 @@
 .titlebox .leavemoderator,
 .titlebox form.toggle {
     text-align: left;
-    padding: 3px 20px
+    padding: 5px 20px
+}
+
+.side .md hr:first-of-type {
+    display: none;
 }
 
 /* Subscribers/Users online
@@ -200,7 +195,8 @@
     position: absolute;
     top: 260px;
     left: 30px;
-    right: 30px
+    right: 30px;
+    font-size: 12px
 }
 
 /* checkboxes
@@ -308,12 +304,14 @@
     position: absolute;
     top: 305px;
     margin: 0 16px;
-    padding: 8px
+    padding: 8px;
+    line-height: 16px;
+    font-size: 12px
 }
 
 /* Night/day mode switch (nm switch/dm switch/sn switch/sun switch/moon switch)
 --------------------------------------------------------------------------------*/
-.side .md h1:first-of-type {
+.side .md > h1 {
     position: absolute;
     top: 385px;
     left: 20px;
@@ -322,17 +320,17 @@
     border-radius: 18px;
     box-sizing: border-box
 }
-.side .md h1:first-of-type a {
+.side .md > h1 a {
     display: inline-block;
-    width: 49%;
+    width: 48%;
     box-sizing: border-box;
     line-height: 36px;
-    font-size: 15px;
+    font-size: 14px;
     text-align: right;
     padding-right: 10px;
     position: relative
 }
-.side .md h1:first-of-type a:before {
+.side .md > h1 a:before {
     content: '';
     display: block;
     position: absolute;
@@ -342,28 +340,28 @@
     left: 10px;
     top: 3px
 }
-.side .md h1:first-of-type a:last-child:before {
+.side .md > h1 a:last-child:before {
     left: 3px;
     background-position: -157px -405px
 }
 
 
-html[lang$=nm] .side .md h1:first-of-type a:last-child:before {
+html[lang$=nm] .side .md > h1 a:last-child:before {
     background-position: -157px -437px
 }
-html[lang$=nm] .side .md h1:first-of-type a:last-child {
+html[lang$=nm] .side .md > h1 a:last-child {
     color: #2da8e8
 }
 
-html:not([lang$=nm]) .side .md h1:first-of-type a:first-child:before {
+html:not([lang$=nm]) .side .md > h1 a:first-child:before {
     background-position: -125px -437px
 }
-html:not([lang$=nm]) .side .md h1:first-of-type a:first-child {
+html:not([lang$=nm]) .side .md > h1 a:first-child {
     color: #e3b34d
 }
 
-html:not([lang$=nm]) .side .md h1:first-of-type a:last-child,
-html[lang$=nm] .side .md h1:first-of-type a:first-child {
+html:not([lang$=nm]) .side .md > h1 a:last-child,
+html[lang$=nm] .side .md > h1 a:first-child {
     font-weight: 400
 }
 
@@ -417,7 +415,7 @@ html[lang$=nm] .side .md h1:first-of-type a:first-child {
     border-left: 0;
     padding: 0 5px
 }
-.side .md>blockquote:nth-of-type(2):after {
+.side .md h4+blockquote:after {
     content: '';
     display: table;
     clear: left
@@ -435,20 +433,23 @@ html[lang$=nm] .side .md h1:first-of-type a:first-child {
 }
 
 /* filter links */
-.side .md>blockquote:nth-of-type(2) h2,
-.side .md>blockquote:nth-of-type(2) h4 {
+.side .md h4+blockquote > * {
     width: 50%;
     height: 30px;
     display: block;
     float: left;
     margin: 0 0 10px;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: Verdana,Geneva,sans-serif;
 }
-.side .md>blockquote:nth-of-type(2) h2 {
+.side .md h4+blockquote > h6 {
     width: 100%
 }
-.side .md>blockquote:nth-of-type(2) h2 a,
-.side .md>blockquote:nth-of-type(2) h4 a {
+
+.side .md h4+blockquote > * a {
     display: block;
     border: 1px solid;
     border-radius: 3px;
@@ -457,47 +458,37 @@ html[lang$=nm] .side .md h1:first-of-type a:first-child {
     font-size: 12px;
     text-align: center
 }
+.side .md h4+blockquote > *:nth-child(odd) a { border-radius: 3px 0 0 3px }
+.side .md h4+blockquote > *:nth-child(even) a { border-radius: 0 3px 3px 0 }
 
-
-.side .md>blockquote:nth-of-type(2) h4:nth-child(odd) a {
-    border-radius: 3px 0 0 3px
-}
-.side .md>blockquote:nth-of-type(2) h4:nth-child(even) a {
-    border-radius: 0 3px 3px 0
-}
-.side .md>blockquote:nth-of-type(2) h4:nth-child(1) a,
-.side .md>blockquote:nth-of-type(2) h4:nth-child(2) a {
+.side .md h4+blockquote h1 a {
     border-color: #a7565c;
     color: #a7565c
 }
-.side .md>blockquote:nth-of-type(2) h4:nth-child(3) a,
-.side .md>blockquote:nth-of-type(2) h4:nth-child(4) a {
+.side .md h4+blockquote h2 a {
     border-color: #856fa6;
     color: #856fa6
 }
-.side .md>blockquote:nth-of-type(2) h4:nth-child(5) a,
-.side .md>blockquote:nth-of-type(2) h4:nth-child(6) a {
+.side .md h4+blockquote h3 a {
     border-color: #76c374;
     color: #76c374
 }
-.side .md>blockquote:nth-of-type(2) h4:nth-child(7) a,
-.side .md>blockquote:nth-of-type(2) h4:nth-child(8) a {
+.side .md h4+blockquote h4 a {
     border-color: #e6d76d;
     color: #e6d76d
 }
-.side .md>blockquote:nth-of-type(2) h4:nth-child(10) a,
-.side .md>blockquote:nth-of-type(2) h4:nth-child(9) a {
+.side .md h4+blockquote h5 a {
     border-color: #e868c1;
     color: #e868c1
 }
-.side .md>blockquote:nth-of-type(2) h2:nth-of-type(1) a {
+.side .md h4+blockquote h6:nth-of-type(1) a {
     border-color: #919290;
     color: #919290
 }
-.side .md>blockquote:nth-of-type(2) h2:nth-of-type(2) a {
+.side .md h4+blockquote h6:nth-of-type(2) a {
     border-color: #59f;
     color: #59f
 }
-.side .md>blockquote:nth-of-type(2) * a:hover {
+.side .md h4+blockquote * a:hover {
     font-weight: 700
 }

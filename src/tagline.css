@@ -6,6 +6,7 @@
 .tagline {
     display: -webkit-flex!important;
     display: flex!important;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
     height: 20px;
     font-size: 0;
@@ -68,7 +69,8 @@
     white-space: nowrap;
     box-sizing: border-box;
     margin: 0;
-    color: #03C
+    color: #03C;
+    font-size: 10px;
 }
 
 /* ensure transparent background (override RES user highlighter) */

@@ -24,6 +24,12 @@
     border: 1px groove #0082f0!important
 }
 
+.expand-media.preview-object {
+    overflow: visible;
+    margin-top: -8px;
+    padding-top: 8px;
+}
+
 /* spam
 --------------------------------------------------------------------------------*/
 .thing.spam {
@@ -156,6 +162,7 @@
     width: 46px!important;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
     z-index: 50;
 }
