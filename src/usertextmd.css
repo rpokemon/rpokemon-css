@@ -34,7 +34,8 @@
 }
 .md code,
 .md pre {
-    border: 0
+    border: 0;
+    background: rgba(0, 0, 0, .08)
 }
 .thing .md hr {
     height: 1px;

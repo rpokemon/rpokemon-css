@@ -18,10 +18,13 @@
     padding: 8px 8px 0 57px;
     position: relative;
     margin-top: 0;
+    background: #fff;
+    border: 1px solid #cecdcd;
+    box-shadow: 0 1px 3px rgba(173, 178, 255, 0.8); /* BLUE PALETTE */
 }
 .link.last-clicked {
     overflow: visible;
-    border: 1px groove #0082f0!important
+    border: 1px groove #0082f0
 }
 
 .expand-media.preview-object {
@@ -54,6 +57,10 @@
     border-color: transparent!important
 }
 
+.link.RES-keyNav-activeThing {
+    background: #F0F3FC
+}
+
 /* Link Title
 --------------------------------------------------------------------------------*/
 .link p.title {
@@ -68,7 +75,14 @@
 /* title - actual link*/
 .link a.title {
     position: relative; /* relative for spoiler overlay */
-    font-size: 19px
+    font-size: 19px;
+    color: rgba(0, 0, 0, .8)
+}
+
+.link a.title:visited,
+.thing .title:visited,
+.thing.visited .title {
+    color: #7730b7;
 }
 
 /* domain */
@@ -138,13 +152,17 @@
     overflow: hidden;
     margin: 17px 0 0!important
 }
+.link .entry {
+    border-color: transparent
+}
 .comment .entry {
     position: relative;
     overflow: visible;
     padding-left: 70px;
-    padding-bottom: 5px
+    padding-bottom: 5px;
+    border: 1px solid #cecdcd;
+    background: #fff;
 }
-
 /* entry buttons
 --------------------------------------------------------------------------------*/
 .link .flat-list {

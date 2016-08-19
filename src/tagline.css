@@ -62,7 +62,7 @@
 .thing .author, .flairrow .author, .side .tagline .author {
     width: 280px;
     height: 36px;
-    background: url(%%FlairBG%%);
+    background: url(%%FlairBG%%) 0 -36px;
     position: absolute;
     padding: 3px 0 0 45px!important;
     font-weight: 700;
@@ -154,7 +154,7 @@
 }
 .comment .expand:hover {
     background-color: #669bff;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none
 }
 

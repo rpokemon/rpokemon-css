@@ -10,12 +10,18 @@
     margin-top: 107px;
     position: relative;
     padding-top: 735px;
-    border-radius: 5px
+    border-radius: 5px;
+    border: 1px solid #e3e3e3
 }
 .side .sponsorshipbox {
     position: relative;
     top: 15px
 }
+.ad300x250 {
+    height: 250px;
+    margin-top: 15px;
+}
+
 .side .md {
     margin: 7px
 }
@@ -102,7 +108,7 @@
 .titlebox .subscribers,
 .titlebox .users-online {
     position: absolute;
-    color: #FFF;
+    color: #333;
     top: 100px;
     left: 30px;
     right: 30px;
@@ -110,7 +116,8 @@
     line-height: 20px
 }
 .titlebox .users-online {
-    top: 120px
+    top: 120px;
+    background: #f0f0f0;
 }
 
 .titlebox .users-online .number:before {
@@ -139,13 +146,14 @@
 }
 .res .res-fancy-toggle-button,
 .toggle.fancy-toggle-button .option.active {
-    background: #0c0c0c;
     border: 0;
     border-radius: 0;
     line-height: 20px;
     height: 20px;
     display: inline-block;
-    text-transform: capitalize
+    text-transform: capitalize;
+    background: #f0f0f0;
+    color: #333
 }
 .res-fancy-toggle-button.RESDashboardToggle,
 .res-fancy-toggle-button.RESshortcut,
@@ -306,7 +314,10 @@
     margin: 0 16px;
     padding: 8px;
     line-height: 16px;
-    font-size: 12px
+    font-size: 12px;
+    
+    background: rgba(0, 0, 0, .025);
+    color: #222;
 }
 
 /* Night/day mode switch (nm switch/dm switch/sn switch/sun switch/moon switch)
@@ -318,7 +329,10 @@
     right: 20px;
     height: 36px;
     border-radius: 18px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    
+    background: 0;
+    border: 1px solid #dedede
 }
 .side .md > h1 a {
     display: inline-block;
@@ -328,8 +342,13 @@
     font-size: 14px;
     text-align: right;
     padding-right: 10px;
-    position: relative
+    position: relative;
+    color: #555
 }
+.side .md > h1 a:last-child {
+    border-left: 1px solid #dedede
+}
+
 .side .md > h1 a:before {
     content: '';
     display: block;
@@ -385,6 +404,7 @@ html[lang$=nm] .side .md > h1 a:first-child {
     margin-left: 23px;
     padding: 8px;
     background: rgba(255, 255, 255, .03);
+    border: 1px solid #e3e3e3;
     text-align: center
 }
 .linkinfo .date {
@@ -492,3 +512,11 @@ html[lang$=nm] .side .md > h1 a:first-child {
 .side .md h4+blockquote * a:hover {
     font-weight: 700
 }
+
+
+.side .md h4+blockquote * a:last-child {
+    display: none;
+}
+
+html[lang$="nm"] .side .md h4+blockquote * a:first-child { display: none; }
+html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }

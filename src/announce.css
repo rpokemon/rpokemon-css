@@ -30,7 +30,8 @@ body>.content {
     display: block;
     padding-left: 38px;
     position: relative;
-    top: -2px
+    top: -2px;
+    color: #333;
 }
 .side .md>blockquote:first-of-type>p>a strong {
     display: block;
@@ -69,7 +70,7 @@ body>.content {
 /********************************************************************************
 * ANNOUNCEMENT BAR
 *********************************************************************************/
-.side .md>blockquote:nth-of-type(4) {
+.side .md>blockquote:nth-of-type(2) {
     position: absolute;
     top: 0;
     z-index: 500;
@@ -87,7 +88,7 @@ body>.content {
     font-family: Segoe, "Segoe UI", Verdana, Arial, sans-serif;
     font-size: 13px
 }
-.side .md>blockquote:nth-of-type(4) p {
+.side .md>blockquote:nth-of-type(2) p {
     background: 0 0;
     position: relative;
     z-index: 5;
@@ -97,7 +98,7 @@ body>.content {
 }
 
 /* title */
-.side .md>blockquote:nth-of-type(4):before {
+.side .md>blockquote:nth-of-type(2):before {
     content: 'IMPORTANT';
     position: absolute;
     top: 5px;
@@ -107,7 +108,7 @@ body>.content {
 }
 
 /* inner content shadow */
-.side .md>blockquote:nth-of-type(4):after {
+.side .md>blockquote:nth-of-type(2):after {
     content: '';
     display: block;
     position: absolute;

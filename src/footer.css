@@ -3,20 +3,30 @@
 * FOOTER
 *********************************************************************************/
 .footer, .footer .col { border: 0; border-radius: 0 }
-.footer-parent { padding-top: 100px }
+.footer-parent {
+    padding-top: 120px;
+    margin-bottom: -13px;
+}
 
 .footer {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
-    max-width: none
+    max-width: none;
+    padding-top: 60px;
+    padding-bottom: 15px;
 }
 
 .footer .col:not(:last-child) { margin-right: 80px }
 .footer .col { flex: initial }
-.footer .col .title { font-size: 16px; margin-bottom: 12px; text-transform: capitalize }
+.footer .col .title { font-size: 16px; margin-bottom: 12px; text-transform: capitalize; color: #555; }
 
-.footer .col li:not(.title) a { font-size: 13px; line-height: 18px }
-.bottommenu, .bottommenu a { font-size: 11px }
+.footer .col li:not(.title) a { font-size: 13px; line-height: 18px; color: #555; }
+.bottommenu, .bottommenu a { font-size: 11px; color: #777 }
 .bottommenu a.updated { color: #208623 }
+
+.footer-parent > *, body > .debuginfo {
+    background: white;
+    margin: 0;
+}

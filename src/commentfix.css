@@ -5,13 +5,17 @@
 * COMMENT FIX
 *********************************************************************************/
 
+.comment .sitetable {
+    margin-top: 0;
+}
+
 .comments-page .comment,
 .res.comments-page .comment {
-    margin: 11px 0 24px!important;
+    margin: 8px 0 2px!important;
     padding-top: 2px!important
 }
 .comments-page .comment .comment {
-    margin: 11px 0 0 30px!important
+    margin: 2px 0 0 30px!important
 }
 
 /* disable some stupid RES stuff */
@@ -39,6 +43,16 @@ html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[ro
     display: inline-block;
     margin-top: -10px
 }
+
+/* collapsed comments
+--------------------------------------------------------------------------------*/
+.comment.collapsed > .entry {
+    padding-bottom: 15px;
+}
+.comment.collapsed {
+    padding-bottom: 0;
+}
+
 
 /* deleted comments
 --------------------------------------------------------------------------------*/
@@ -112,7 +126,7 @@ html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[ro
 --------------------------------------------------------------------------------*/
 .new-comment .usertext-body {
     border: 0;
-    background: #1f2428
+    background-color: #e5efff
 }
 
 /* permalinked comment
@@ -127,5 +141,8 @@ html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[ro
     width: 100%;
     box-sizing: border-box;
     border-top: 2px solid #f6e69f;
-    padding: 10px
+    padding: 10px;
+    background: #fff;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3
 }

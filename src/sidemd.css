@@ -5,17 +5,20 @@
 .side .md h5+ul {
     margin: 0 -7px;
     padding: 10px 25px;
-    list-style-type: none
+    list-style-type: none;
+    background: rgba(0,0,0,0.02)
 }
 .side .md>h5 {
     font-weight: 400;
     font-size: 13px;
     padding-bottom: 5px;
-    position: relative
+    position: relative;
+    border-top: 1px solid rgba(0,0,0,0.05);
 }
 .side .md h5+ul {
     padding-top: 0;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 .side .md h5+ul p {
     margin: 0;
@@ -80,14 +83,14 @@ html[lang$=nm] .side .md > h4 + ul li {
 .side .md > h3,
 .side .md h3+ul,
 .side .md h3+ul+ol {
-    border-left: 1px solid rgba(255, 255, 255, .2);
+    border-left: 1px solid #e3e3e3;
     margin: 0 0 0 20px;
     padding-left: 20px;
     list-style-type: none
 }
 .side .md > h3 {
     border-left: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid #e3e3e3;
     width: 50%;
     font-size: 13px;
     padding-bottom: 5px
@@ -96,7 +99,8 @@ html[lang$=nm] .side .md > h4 + ul li {
     display: inline-block;
     padding: 6px 8px;
     margin-top: 10px;
-    border-radius: 3px
+    border-radius: 3px;
+    color: #777;
 }
 .side .md h3+ul+ol {
     margin-bottom: 20px;
@@ -114,15 +118,22 @@ html[lang$=nm] .side .md > h4 + ul li {
     position: absolute;
     text-align: center;
     box-sizing: content-box;
-    border: 3px solid #282b30;
+    border: 2.5px solid #e3e3e3;
     border-radius: 50%;
-    -webkit-transform: scale(.86);
-    transform: scale(.86)
+    background: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    left: -33px;
+    top: 5px
 }
 .side .md h3+ul+ol:after {
     content: '';
     display: block;
     position: absolute;
+    background: #e3e3e3;
     bottom: 0;
     left: 0;
     width: 100px;
@@ -173,7 +184,8 @@ html[lang$=nm] .side .md table th {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-content: stretch
+    align-content: stretch;
+    background: rgba(0,0,0,0.03);
 }
 
 .side .md h6+blockquote p:last-of-type {
@@ -186,10 +198,14 @@ html[lang$=nm] .side .md table th {
     display: inline-block;
     margin-right: 3px;
     margin-top: 4px;
-    color: #b7b7b7;
     padding: 0 5px;
     flex-grow: 1;
-    text-align: center
+    text-align: center;
+    background: rgba(0,0,0,0.04);
+    color: rgba(0,0,0,0.8);
+}
+.side .md h6+blockquote p a:hover {
+    background: rgba(0,0,0,0.08);
 }
 
 /* related subs button */
@@ -197,5 +213,60 @@ html[lang$=nm] .side .md table th {
     margin: 0;
     padding: 7px 5px;
     font-size: 13px;
-    text-align: center
+    text-align: center;
+    background: rgba(0,0,0,0.04);
+    color: rgba(0,0,0,0.8);
+}
+
+/* event
+--------------------------------------------------------------------------------*/
+a[href='#sidemod-pogogym'],
+a[href='#sidemod-pogogym'] ~ strong {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+}
+
+a[href='#sidemod-pogogym'] ~ strong {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 20px !important;
+}
+
+a[href='#sidemod-pogogym'] {
+    pointer-events: none;
+    color: #333;
+}
+
+a[href='#sidemod-pogogym'] ~ strong a {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 5px 8px;
+    color: #fff!important;
+    border-radius: 3px;
+}
+
+a[href='#sidemod-pogogym'] ~ strong a[title="mystic"] {
+    background: #0076ec;
+}
+
+a[href='#sidemod-pogogym'] ~ strong a[title="instinct"] {
+    background: #fad207;
+}
+
+a[href='#sidemod-pogogym'] ~ strong a[title="valor"] {
+    background: #f71106;
+}
+
+.side a[href$="#pokemongocontest"] {
+    display: block;
+    text-align: center;
+    background: rgba(0,0,0,0.06);
+    width: 150px;
+    padding: 6px 8px;
+    margin: -15px auto 15px
+}
+
+html[lang$=nm] a[href="#sidemod-pogogym"] ~ strong {
+    border-bottom-color: rgba(255,255,255,0.25);
 }

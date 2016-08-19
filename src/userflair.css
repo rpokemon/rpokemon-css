@@ -277,17 +277,17 @@
 
 /* New mods icon
 --------------------------------------------------------------------------------*/
+.author[href$="/ngbeslhang"]~.flair:after,
+.author[href$="/ShinyLinoone"]~.flair:after,
+.author[href$="/DavidLuizshair"]~.flair:after,
 .author[href$="/tennisace0227"]~.flair:after,
+.author[href$="/Mlahk7"]~.flair:after,
+.author[href$="/jaksida"]~.flair:after,
 .author[href$="/veshneresis"]~.flair:after,
 .author[href$="/Zloggt"]~.flair:after,
-.author[href$="/mlahk7"]~.flair:after,
-.author[href$="/mockturne"]~.flair:after,
-.author[href$="/davidluiszhair"]~.flair:after,
 .author[href$="/Thief-Noctis"]~.flair:after,
-.author[href$="/jaksida"]~.flair:after,
-.author[href$="/trozz1548"]~.flair:after,
-.author[href$="/ngbeslhang"]~.flair:after,
-.author[href$="/shinylinoone"]~.flair:after {
+.author[href$="/Mockturne"]~.flair:after,
+.author[href$="/TangleNathair"]~.flair:after {
     background-position: -83px -128px
 }
 

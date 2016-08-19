@@ -8,8 +8,28 @@
 }
 body {
     font-family: Verdana, Geneva, sans-serif;
-    overflow-x: hidden !important
+    overflow-x: hidden !important;
+    background-color: transparent !important;
 }
+
+/* body bg */
+/*
+background-attachment: fixed causes the background to be repainted on every scroll
+here's a GPU friendly version:
+*/
+body:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(%%bg%%),radial-gradient(ellipse at center,rgba(251,253,254,1) 0,rgba(251,253,254,1) 49%,rgba(224,242,255,1) 100%);
+    will-change: transform;
+    z-index: -1;
+}
+
 body>.content {
     margin-right: 330px;
     margin-left: 25px

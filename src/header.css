@@ -5,12 +5,19 @@
 #sr-header-area {
     height: 18px;
     position: relative;
-    z-index: 20
+    z-index: 20;
+    background: #fff;
+    border-bottom: 1px solid #e3e3e3
 }
 #sr-header-area .width-clip .dropdown.srdrop .selected.title {
     font-size: 9px;
     font-weight: 700;
     padding-right: 3px
+}
+
+#sr-header-area a {
+    background: 0;
+    color: #333
 }
 
 .dropdown.srdrop .selected { background: 0 }
@@ -156,6 +163,10 @@
     background-color: transparent!important;
     border: 0
 }
+#header-bottom-right a,
+.res #userbarToggle {
+    color: #333;
+}
 #header-bottom-right .separator {
     font-size: 0;
     padding-left: 5px
@@ -231,6 +242,11 @@
     height: 28px!important;
     width: 28px!important;
     background-image: url(%%pokesheet%%)!important
+}
+
+.message-count {
+    background: #ff7500;
+    color: #fff!important
 }
 
 /* opacity hover/no hover
@@ -375,6 +391,10 @@ body #header .tabmenu li:first-of-type a {
 body #header .tabmenu li:last-of-type a {
     border-radius: 0 15px 15px 0;
     margin-right: 3px
+}
+
+body #header .tabmenu li:first-of-type:last-of-type a {
+    border-radius: 15px;
 }
 
 /* tabmenu tooltips

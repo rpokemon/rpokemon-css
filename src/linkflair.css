@@ -6,17 +6,16 @@
     position: absolute!important;
     text-align: center;
     line-height: 20px;
-    background: #ccc;
+    background: transparent;
     min-width: 50px!important;
     padding: 0 10px;
     margin: 0;
     width: auto;
     border: 0;
-    border-radius: 3px 3px 0 0;
     z-index: 10;
     color: #fff!important;
     font-weight: 700;
-    font-size: 0.7em;
+    font-size: 10px;
     
     -webkit-transform: rotate(-90deg) translate(-100%,-100%);
     transform: rotate(-90deg) translate(-100%,-100%);
@@ -25,11 +24,11 @@
     top: 0;
     left: 0;
     margin-top: -1px;
-    margin-left: 2px;
+    margin-left: 0;
 }
 
 .listing-page .thing.link .linkflairlabel {
-    width: 91px;
+    width: 89px;
     padding: 0;
 }
 
@@ -40,109 +39,73 @@
 }
 
 /* increase label size for longer linkflairs */
-.linkflair[class*=spoiler] .title .linkflairlabel,
-.linkflair[class*=rotation] .title .linkflairlabel {
-    font-size: 0.6em;
+.linkflair.linkflair-spoiler .title .linkflairlabel,
+.linkflair.linkflair-rotation .title .linkflairlabel {
+    font-size: 9px;
     overflow: visible;
 }
 
-.link.linkflair[class*=spoiler],
-.link.linkflair[class*=rotation] {
+.link.linkflair.linkflair-spoiler,
+.link.linkflair.linkflair-rotation {
     padding-bottom: 10px;
 }
 
 /* linkflair - fill*/
-.link.linkflair:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 21px;
-    top: -1px;
-    right: 100%;
-    margin-right: -2px;
-    bottom: -1px;
-    border-radius: 3px 0 0 3px;
-    z-index: 5;
-    background: #ccc
-}
-.comments-page .link.linkflair:before {
-    width: 6px
+.link.linkflair {
+    border-left: 20px solid #777 !important;
+    margin-left: -20px;
 }
 
-/* linkflair backgrounds */
-.flairselector .linkflair-image .linkflairlabel,
-.link.linkflair-image:before,
-.linkflair-image .linkflairlabel {
-    background: #a7565c
+/* flair selector */
+.thing.link.linkflair-image {
+    border-left-color: #a7565c !important
 }
-.flairselector .linkflair-media .linkflairlabel,
-.link.linkflair-media:before,
-.linkflair-media .linkflairlabel {
-    background: #856fa6
+.thing.link.linkflair-media {
+    border-left-color: #856fa6 !important
 }
-.flairselector .linkflair-discussion .linkflairlabel,
-.link.linkflair-discussion:before,
-.linkflair-discussion .linkflairlabel {
-    background: #76c374
+.thing.link.linkflair-discussion {
+    border-left-color: #76c374 !important
 }
-.flairselector .linkflair-info .linkflairlabel,
-.link.linkflair-info:before,
-.linkflair-info .linkflairlabel {
-    background: #e6d76d
+.thing.link.linkflair-info {
+    border-left-color: #e6d76d !important
 }
-.flairselector .linkflair-art .linkflairlabel,
-.link.linkflair-art:before,
-.linkflair-art .linkflairlabel {
-    background: #e868c1
+.thing.link.linkflair-art {
+    border-left-color: #e868c1 !important
 }
-.flairselector .linkflair-noob .linkflairlabel,
-.link.linkflair-noob:before,
-.linkflair-noob .linkflairlabel {
-    background: #3498db
+.thing.link.linkflair-noob {
+    border-left-color: #3498db !important
 }
-.flairselector .linkflair-rule .linkflairlabel,
-.link.linkflair-rule:before,
-.linkflair-rule .linkflairlabel {
-    background: #e74c3c
+.thing.link.linkflair-rule {
+    border-left-color: #e74c3c !important
 }
-.flairselector .linkflair-rotation .linkflairlabel,
-.link.linkflair-rotation:before,
-.linkflair-rotation .linkflairlabel {
-    background: #76c374;
+.thing.link.linkflair-rotation {
+    border-left-color: #76c374 !important
 }
-
-.flairselector [class*=spoiler] .linkflairlabel,
-.link[class*=spoiler]:before,
-[class*=spoiler] .linkflairlabel {
-    background: #e4796b;
+.thing.link.linkflair-spoiler {
+    border-left-color: #e4796b !important
 }
 
 /* spoiler linkflairlabel and title overlay
 --------------------------------------------------------------------------------*/
 
-.linkflair-spoiler a.title {
-    display: inline-block;
-    min-width: 215px
-}
 .link.linkflair-spoiler a.title:before {
-    content: 'Spoiler - hover to view title';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    content: "Spoiler - hover to view title";
+    display: inline-block;
+    border: 2px dashed #eaeaea;
+    background: #fff;
     color: #606060!important;
-    padding: 3px;
-    text-transform: initial;
-    font-size: 15px;
-    opacity: 1;
-    transition: opacity .2s;
-    transition-delay: .2s;
-    line-height: 17px
+    padding: 3px 5px;
+    font-size: 17px;
+    line-height: 17px;
+    margin-bottom: -1px;
 }
+
+.link.linkflair-spoiler a.title:not(:hover) {
+    font-size: 0;
+}
+
 .link.linkflair-spoiler a.title:hover:before {
-    opacity: 0
+    display: none;
 }
 
 /* filters

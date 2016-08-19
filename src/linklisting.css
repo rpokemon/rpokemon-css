@@ -41,3 +41,7 @@
     margin-left: 5px
 }
 
+.listing-page .content>.menuarea .spacer {
+    background: #fff;
+    border: 1px solid #e3e3e3
+}

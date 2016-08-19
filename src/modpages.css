@@ -140,6 +140,7 @@ html[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment .p
 }
 .flairselector .linkflair {
     position: relative;
+    background: #aaa;
     min-height: 22px;
     margin: 2px
 }

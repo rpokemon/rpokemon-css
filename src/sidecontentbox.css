@@ -33,7 +33,8 @@
     min-height: 26px;
     padding-top: 3px;
     margin-bottom: 6px;
-    border-radius: 16px 3px 3px 16px
+    border-radius: 16px 3px 3px 16px;
+    background: rgba(0, 0, 0, .05)
 }
 .sidecontentbox .helplink~.content li:before {
     content: '';
@@ -80,20 +81,17 @@
 
 /* sidebar misc
 --------------------------------------------------------------------------------*/
-.reddit-link {
-    position: relative
-}
 .gadget .reddit-entry {
-    overflow: visible;
-    min-height: 80px;
-    margin-top: 0!important;
-    padding-top: 5px
+    margin-top: 5px!important;
+    padding-top: 5px;
 }
 .gadget .reddit-entry .linkflairlabel {
+    display: inline-block;
     position: static!important;
-    border-radius: 0;
-    padding: 1px 2px;
-    min-width: initial !important
+    padding: 0 8px;
+    max-width: initial !important;
+    color: #333 !important;
+    background: #f0f0f0;
 }
 .gadget .reddit-link-end {
     padding-top: 5px
