@@ -209,7 +209,8 @@ html[lang$=nm] .usertext button.cancel {
     background: 0;
     box-shadow: none;
     margin-top: 6px;
-    font-size: 11px
+    font-size: 11px;
+    color: #369;
 }
 body.mod-toolbox .tb-action-button.tb-top-macro-select {
     margin-top: 5px;
