@@ -183,8 +183,7 @@
 .author[href$="/Kingfin128"]~.flair:after,
 .author[href$="/CrimsonMudkip"]~.flair:after,
 .author[href$="/cabforpitt"]~.flair:after,
-.author[href$="/keskisormi"]~.flair:after,
-.author[href$="/bigslothonmyface"]~.flair:after {
+.author[href$="/keskisormi"]~.flair:after{
     background-position: -222px -14px
 }
 
@@ -295,4 +294,10 @@
 --------------------------------------------------------------------------------*/
 .author[href$="/technophonix1"]~.flair:after {
     background-position: -119px -128px
+}
+
+/* bigslothonmyface marble
+--------------------------------------------------------------------------------*/
+.author[href$="/bigslothonmyface"]~.flair:after {
+    background-position: -154px -128px;
 }
