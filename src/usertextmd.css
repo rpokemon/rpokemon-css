@@ -43,18 +43,23 @@
 }
 
 /*spoiler in-text stuff*/
-a[href$="#spoiler"] {
+a[href$="#spoiler"], a[href$="#s"], a[href="/s"], a[href="/spoiler"] {
     color: #515151!important;
     background-color: #515151;
     transition: ease-in-out .15s;
     transition: color .2s ease
 }
-a[href$="#spoiler"]:hover {
+a[href$="#spoiler"]:hover, a[href$="#s"]:hover, a[href="/s"]:hover, a[href="/spoiler"]:hover {
     transition: ease-in-out .5s;
     color: #fff!important
 }
-a[href$="#spoiler"]:before {
+a[href$="#spoiler"]:before, a[href$="#s"]:before, a[href="/s"]:before, a[href="/spoiler"]:before {
     content: "SPOILER: ";
     text-shadow: none;
     color: #fff
+}
+
+a[href="/s"]:active,
+a[href="/spoiler"]:active {
+  pointer-events: none;
 }
