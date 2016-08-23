@@ -119,7 +119,7 @@ html[lang$=nm].res .RES-keyNav-activeElement {
 
 html[lang$=nm] .link {
     border: 1px solid transparent;
-    box-shadow: none
+    box-shadow: 0 0 4px #282b30;
 }
 html[lang$=nm] .link .entry {
     border-color: transparent!important
@@ -314,9 +314,9 @@ html[lang$=nm] .sidecontentbox .helplink~.content li.more a,
 html[lang$=nm] .sidecontentbox a.helplink {
     box-shadow: 0 0 1px rgba(0,0,0,0.8);
     text-shadow: none;
-    background: rgba(255,255,255,.06);
     border-color: rgba(255,255,255,.15);
     border-radius: 2px;
+    color: #222 !important;
 }
 
 html[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) {

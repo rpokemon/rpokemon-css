@@ -67,8 +67,7 @@ button, input[type=submit] {
     display: inline-block;
     margin: 3px;
     padding: 0 8px 1px;
-    background-color: #48f;
-    border: 1px solid #2a66d6;
+    border: 1px solid #deb50f;
     border-radius: 2px;
     color: #fff;
     font-weight: 700;
@@ -76,11 +75,14 @@ button, input[type=submit] {
     text-transform: capitalize;
     line-height: 26px;
     outline: 0!important;
-    box-shadow: inset 0 1px 0 #669bff
+    
+    background-color: #f1c40f;
+    box-shadow: inset 0 1px 0 #e4d599;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
 
 button:hover, input[type=submit]:hover {
-    background-color: #5d99ff
+    background-color: #efc93e
 }
 
 button:active, input[type=submit]:active {
