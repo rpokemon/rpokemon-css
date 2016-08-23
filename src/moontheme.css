@@ -172,18 +172,6 @@ html[lang$=nm] .tagline time:not(.edited-timestamp) {
     color: #aaa
 }
 
-
-/* thing title
---------------------------------------------------------------------------------*/
-html[lang$=nm] .link a.title {
-    color: rgba(255, 255, 255, .8)
-}
-html[lang$=nm] .link a.title:visited,
-html[lang$=nm] .thing .title:visited,
-html[lang$=nm] .thing.visited .title {
-    color: #b0a2e6
-}
-
 /* author panel - set to dark version
 --------------------------------------------------------------------------------*/
 html[lang$=nm] .flairrow .author,

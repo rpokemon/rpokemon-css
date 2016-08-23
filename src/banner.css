@@ -1,77 +1,39 @@
 /********************************************************************************
 * BANNER
 *********************************************************************************/
-#header {
-    background: url(%%daymodeheader%%) left center/cover no-repeat
-}
-html[lang$=nm] #header {
-    background: url(%%header%%) 50% 19px/cover no-repeat
+#header, html[lang$=nm] #header {
+    background: url(%%instinct-banner%%) -128px 19px/ auto calc(100% - 19px)!important;
 }
 
-html[lang$=nm] #header {
-    background: 0 !important
+.side .md hr:first-of-type {
+    display: none;
 }
 
-html[lang$=nm] [name=uh] ~ a:after,
-.logout:after {
-    content: '';
-    right: 0;
-    bottom: 100%;
-    height: 147px;
-    width: 100vw;
+.pagename:before {
+    content: "";
     display: block;
-    position: absolute
+    width: 220px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 240px;
+    box-shadow: 0 0 25px 15px rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.1);
 }
 
-html[lang$=nm] [name=uh] ~ a:after {
-    pointer-events: none;
-    background: no-repeat center center / cover
+.pagename a {
+    background: url(%%pokemon-logo--white-outline-small%%) center / contain!important;
 }
 
-[name=uh][value^="0"]~a:after,
-[name=uh][value^="1"]~a:after,
-[name=uh][value^="2"]~a:after,
-[name=uh][value^="3"]~a:after,
-[name=uh][value^="4"]~a:after,
-[name=uh][value^="5"]~a:after,
-[name=uh][value^="6"]~a:after,
-[name=uh][value^="7"]~a:after,
-[name=uh][value^="8"]~a:after {
-    background-image: url(%%nm-banner1%%) !important
+html[lang$=nm] body:before {
+    background: transparent url(%%yellow-bg%%) no-repeat center / 40%;
+    opacity: 0.2;
 }
 
-[name=uh][value^="9"]~a:after,
-[name=uh][value^=a]~a:after,
-[name=uh][value^=b]~a:after,
-[name=uh][value^=c]~a:after,
-[name=uh][value^=d]~a:after,
-[name=uh][value^=e]~a:after,
-[name=uh][value^=f]~a:after,
-[name=uh][value^=g]~a:after,
-[name=uh][value^=h]~a:after {
-    background-image: url(%%nm-banner2%%) !important
-}
-
-[name=uh][value^=i]~a:after,
-[name=uh][value^=j]~a:after,
-[name=uh][value^=k]~a:after,
-[name=uh][value^=l]~a:after,
-[name=uh][value^=m]~a:after,
-[name=uh][value^=n]~a:after,
-[name=uh][value^=o]~a:after,
-[name=uh][value^=p]~a:after,
-[name=uh][value^=q]~a:after {
-    background-image: url(%%nm-banner3%%) !important
-}
-
-[name=uh][value^=r]~a:after,
-[name=uh][value^=s]~a:after,
-[name=uh][value^=t]~a:after,
-[name=uh][value^=u]~a:after,
-[name=uh][value^=v]~a:after,
-[name=uh][value^=w]~a:after,
-[name=uh][value^=x]~a:after,
-[name=uh][value^=y]~a:after,
-[name=uh][value^=z]~a:after {
-    background-image: url(%%nm-banner4%%) !important
+html[lang$=nm], html[lang$=nm] body {
+    background: #36393e;
+    color: #bdc3c7;
 }

@@ -25,9 +25,11 @@ body:before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(%%bg%%),radial-gradient(ellipse at center,rgba(251,253,254,1) 0,rgba(251,253,254,1) 49%,rgba(224,242,255,1) 100%);
     will-change: transform;
     z-index: -1;
+    
+    background: #fffae7 url(%%yellow-bg%%) no-repeat center / 40%;
+    opacity: 0.45;
 }
 
 body > .debuginfo:before {

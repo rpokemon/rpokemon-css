@@ -45,3 +45,19 @@
     background: #fff;
     border: 1px solid #e3e3e3
 }
+
+
+#siteTable:before {
+    content: 'THERE IS NO SHELTER FROM THE STORM';
+    display: block;
+    background: #FFDD00;
+    border-bottom: 1px solid #e9ca01;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #333;
+}

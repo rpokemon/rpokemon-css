@@ -93,10 +93,12 @@
     border-radius: 2px;
     text-align: center;
     text-shadow: 0 1px 0 #5787e1;
-    background: #59f;
-    border: 1px solid #59f;
     box-shadow: 0 1px 2px #CECECE;
     color: white !important;
+    
+    background: #f1c40f;
+    border-color: 1px solid #f1c40f;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
 
 /* common checkboxes */
