@@ -37,3 +37,78 @@ html[lang$=nm], html[lang$=nm] body {
     background: #36393e;
     color: #bdc3c7;
 }
+
+/* ---------- */
+
+.side .md>h4+ul li {
+    opacity: 0.3;
+}
+
+.side .md>h4+ul li:nth-child(2) {
+    opacity: 1;
+    color: #a97100;
+    background: url(%%trophy%%) no-repeat 215px center / 8%;
+}
+
+.side .md h4+ul li:nth-child(2):after,
+.side .md h4+ul li:nth-child(2) strong:before,
+.side .md h4+ul li:nth-child(2) strong:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(%%bling%%) no-repeat center / contain;
+    will-change: transform;
+}
+
+
+.side .md h4+ul li:nth-child(2):after {
+    top: -30px;
+    left: -30px;
+    transform: scale(1.0) rotate(-2deg);
+}
+
+.side .md h4+ul:hover li:nth-child(2):after {
+    animation: bling 2s ease infinite;
+}
+.side .md h4+ul li:nth-child(2) strong:before {
+    bottom: -30px;
+    left: 30px;
+    transform: scale(1.0) rotate(-2deg);
+}
+.side .md h4+ul:hover li:nth-child(2) strong:before {
+    animation: blingblingbling 3s ease infinite;
+    animation-delay: 500ms;
+}
+.side .md h4+ul li:nth-child(2) strong:after {
+    bottom: -15px;
+    right: -30px;
+    transform: scale(1.0) rotate(7deg);
+}
+.side .md h4+ul:hover li:nth-child(2) strong:after {
+    animation: blingbling 2s ease infinite;
+    animation-delay: 1000ms;
+}
+
+@keyframes bling {
+    0% { transform: scale(1.0) rotate(-2deg); opacity: 1; }
+    25% { transform: scale(0.9) rotate(0deg); opacity: 0.6; }
+    50% { transform: scale(1.0) rotate(2deg); opacity: 1; }
+    75% { transform: scale(0.9) rotate(0deg); opacity: 0.6; }
+    100% { transform: scale(1.0) rotate(-2deg); opacity: 1; }
+}
+@keyframes blingbling {
+    0% { transform: scale(1.0) rotate(-2deg); opacity: 1; }
+    25% { transform: scale(0.9) rotate(0deg); opacity: 0.6; }
+    50% { transform: scale(1.0) rotate(2deg); opacity: 1; }
+    75% { transform: scale(0.9) rotate(0deg); opacity: 0.6; }
+    100% { transform: scale(1.0) rotate(-2deg); opacity: 1; }
+}
+@keyframes blingblingbling {
+    0% { transform: scale(1.0) rotate(7deg); opacity: 1; }
+    25% { transform: scale(0.9) rotate(5deg); opacity: 0.6; }
+    50% { transform: scale(1.0) rotate(7deg); opacity: 1; }
+    75% { transform: scale(0.9) rotate(5deg); opacity: 0.6; }
+    100% { transform: scale(1.0) rotate(7deg); opacity: 1; }
+}
