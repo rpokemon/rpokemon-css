@@ -205,18 +205,23 @@
     background-position: -119px -54px
 }
 
-/* Luxuryballs
+/* Healballs
 --------------------------------------------------------------------------------*/
 .author[href$="/HexKor"]~.flair:after,
 .author[href$="/KKBlitz11"]~.flair:after,
 .author[href$="/lyouke"]~.flair:after,
-.author[href$="/SeraphixRaleigh"]~.flair:after,
 .author[href$="/xzmeister"]~.flair:after,
 .author[href$="/Striaton"]~.flair:after,
 .author[href$="/SynergizerSyd"]~.flair:after,
 .author[href$="/TheRoto"]~.flair:after,
 .author[href$="/ElStrawFedora"]~.flair:after {
-    background-position: -152px -54px
+    background-position: -152px -54px;
+}
+
+/* Luxuryballs
+--------------------------------------------------------------------------------*/
+.author[href$="/SeraphixRaleigh"]~.flair:after {
+    background-position: -117px -54px;
 }
 
 /* Quickballs
@@ -299,4 +304,10 @@
 --------------------------------------------------------------------------------*/
 .author[href$="/bigslothonmyface"]~.flair:after {
     background-position: -154px -128px;
+}
+
+/* pogo contest 100 MVP
+--------------------------------------------------------------------------------*/
+.author[href$="/tuskx"]~.flair:after {
+    background: url(%%MVPflair%%) no-repeat center / 90%;
 }
