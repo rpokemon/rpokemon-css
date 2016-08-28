@@ -145,7 +145,6 @@
 .author[href$="/chibikurai"]~.flair:after,
 .author[href$="/likeitsmaddie"]~.flair:after,
 .author[href$="/ParisaXOXO"]~.flair:after,
-.author[href$="/Will-TVR"]~.flair:after,
 .author[href$="/wtfReddit"]~.flair:after,
 .author[href$="/Fuwante0"]~.flair:after,
 .author[href$="/Seagrove"]~.flair:after,
@@ -168,6 +167,7 @@
 --------------------------------------------------------------------------------*/
 .author[href$="/Captainium"]~.flair:after,
 .author[href$="/TownIdiot25"]~.flair:after,
+.author[href$="/Will-TVR"]~.flair:after,
 .author[href$="/Dragon_Claw"]~.flair:after {
     background-position: -119px -14px
 }
