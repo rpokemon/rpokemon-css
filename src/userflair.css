@@ -207,20 +207,21 @@
 
 /* Healballs
 --------------------------------------------------------------------------------*/
+/*
+    background-position: -152px -54px;
+*/
+
+/* Luxuryballs
+--------------------------------------------------------------------------------*/
+.author[href$="/SeraphixRaleigh"]~.flair:after,
 .author[href$="/HexKor"]~.flair:after,
 .author[href$="/KKBlitz11"]~.flair:after,
 .author[href$="/lyouke"]~.flair:after,
 .author[href$="/xzmeister"]~.flair:after,
-.author[href$="/Striaton"]~.flair:after,
 .author[href$="/SynergizerSyd"]~.flair:after,
 .author[href$="/TheRoto"]~.flair:after,
-.author[href$="/ElStrawFedora"]~.flair:after {
-    background-position: -152px -54px;
-}
-
-/* Luxuryballs
---------------------------------------------------------------------------------*/
-.author[href$="/SeraphixRaleigh"]~.flair:after {
+.author[href$="/ElStrawFedora"]~.flair:after,
+.author[href$="/Invis-"]~.flair:after {
     background-position: -117px -54px;
 }
 
@@ -282,11 +283,9 @@
 /* New mods icon
 --------------------------------------------------------------------------------*/
 .author[href$="/ngbeslhang"]~.flair:after,
-.author[href$="/ShinyLinoone"]~.flair:after,
 .author[href$="/DavidLuizshair"]~.flair:after,
 .author[href$="/Mlahk7"]~.flair:after,
 .author[href$="/jaksida"]~.flair:after,
-.author[href$="/veshneresis"]~.flair:after,
 .author[href$="/Zloggt"]~.flair:after,
 .author[href$="/Thief-Noctis"]~.flair:after,
 .author[href$="/Mockturne"]~.flair:after,
