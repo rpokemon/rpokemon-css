@@ -9,7 +9,7 @@
 .side {
     margin-top: 107px;
     position: relative;
-    padding-top: 735px;
+    padding-top: 985px;
     border-radius: 5px;
     border: 1px solid #e3e3e3
 }
@@ -20,6 +20,13 @@
 .ad300x250 {
     height: 250px;
     margin-top: 15px;
+}
+
+#ad_main_top {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    transform: scale(0.98);
 }
 
 .side .md {
@@ -176,7 +183,7 @@
 
 /* flair toggle */
 .titlebox form.toggle.flairtoggle {
-    top: 185px;
+    top: 445px;
     display: -webkit-flex;
     display: flex;
     align-items: center;
@@ -193,7 +200,7 @@
 .titlebox .tagline {
     position: absolute;
     left: -10px;
-    top: 210px
+    top: 470px
 }
 
 /* edit flair link */
@@ -201,7 +208,7 @@
     line-height: 26px;
     display: block;
     position: absolute;
-    top: 260px;
+    top: 520px;
     left: 30px;
     right: 30px;
     font-size: 12px
@@ -252,7 +259,7 @@
 --------------------------------------------------------------------------------*/
 .side .md>h2 {
     position: absolute;
-    top: 450px;
+    top: 700px;
     margin: 0
 }
 
@@ -261,7 +268,7 @@
     padding: 0;
     list-style-type: none;
     position: absolute;
-    top: 475px;
+    top: 725px;
     left: 0;
     right: 0
 }
@@ -310,7 +317,7 @@
 --------------------------------------------------------------------------------*/
 .side .md>p:first-of-type {
     position: absolute;
-    top: 305px;
+    top: 558px;
     margin: 0 16px;
     padding: 8px;
     line-height: 16px;
@@ -324,7 +331,7 @@
 --------------------------------------------------------------------------------*/
 .side .md > h1 {
     position: absolute;
-    top: 385px;
+    top: 635px;
     left: 20px;
     right: 20px;
     height: 36px;
