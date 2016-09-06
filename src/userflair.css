@@ -313,7 +313,7 @@
 .author[href$="/dslashc"]~.flair:after,
 .author[href$="/akbarizcool"]~.flair:after,
 .author[href$="/TheOfficialFJR"]~.flair:after,
-.author[href$="/stan64"]~.flair:after,
+.author[href$="/Stan64"]~.flair:after,
 .author[href$="/Negalodon"]~.flair:after {
     background: url(%%MVPflair%%) no-repeat center / 90%;
 }
