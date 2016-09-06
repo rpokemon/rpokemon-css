@@ -288,7 +288,6 @@
 .author[href$="/jaksida"]~.flair:after,
 .author[href$="/Zloggt"]~.flair:after,
 .author[href$="/Thief-Noctis"]~.flair:after,
-.author[href$="/Mockturne"]~.flair:after,
 .author[href$="/TangleNathair"]~.flair:after {
     background-position: -83px -128px
 }
