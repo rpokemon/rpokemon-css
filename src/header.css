@@ -459,7 +459,7 @@ body #header .tabmenu li:first-of-type:last-of-type a {
 .res-filter-visited-links label:after { content: 'filter visited links' !important }
 .selected .res-filter-visited-links label:after { content: 'unfilter visited links' !important }
 
-.res-tabmenu-button label {
+.listing-page .res-tabmenu-button label {
     position: absolute;
     top: 0;
     right: 0;
