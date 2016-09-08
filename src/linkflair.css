@@ -100,7 +100,7 @@
     margin-bottom: -1px;
 }
 
-.link.linkflair-spoiler a.title:not(:hover) {
+html:not(:lang(ns)) .link.linkflair-spoiler a.title:not(:hover) {
     font-size: 0;
 }
 
