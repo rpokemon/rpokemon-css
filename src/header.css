@@ -343,6 +343,9 @@ a.pref-lang:hover {
 .listing-page #header .tabmenu li a.res-show-images {
     background: -302px 0
 }
+.listing-page #header .tabmenu li a.res-filter-visited-links {
+    background: -375px 0;
+}
 .listing-page #header .tabmenu li a[href^="j"] {
     background: -340px 0
 }
