@@ -76,7 +76,8 @@
 .link a.title {
     position: relative; /* relative for spoiler overlay */
     font-size: 19px;
-    color: rgba(0, 0, 0, .8)
+    color: rgba(0, 0, 0, .8);
+    display: inline-block;
 }
 
 .link a.title:visited,
