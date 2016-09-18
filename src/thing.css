@@ -261,16 +261,16 @@
 --------------------------------------------------------------------------------*/
 
 .arrow.up {
-    background: 0 -2px
+    background-position: 0 -2px !important
 }
 .arrow.down {
-    background: 0 -208px
+    background-position: 0 -208px !important
 }
 .arrow.upmod {
-    background: 0 -146px
+    background-position: 0 -146px !important
 }
 .arrow.downmod {
-    background: 0 -66px
+    background-position: 0 -66px !important
 }
 
 .arrow {
