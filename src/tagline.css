@@ -55,6 +55,9 @@
 .tagline .userattrs {
     display: none
 }
+.comment .md .RESUserTagImage:after {
+    display: inline-block;
+}
 
 /* Tagline - author
 --------------------------------------------------------------------------------*/
