@@ -142,6 +142,16 @@
     background: url(%%balls%%) -49px -128px!important
 }
 
+.thing .author[href$="/Hero_Of_Legend"],
+.side .tagline .author[href$="/Hero_Of_Legend"],
+.author[href$="/Hero_Of_Legend"]~.flair:before {
+    background-position: 0 -72px!important;
+    color: #fff !important;
+}
+.author[href$="/Hero_Of_Legend"]~.flair {
+    background: url(%%Shinyzard%%) no-repeat 0 !important;
+}
+
 /* Greatballs
 --------------------------------------------------------------------------------*/
 .author[href$="/Raiyou"]~.flair:after,
@@ -192,7 +202,8 @@
 
 /* Premeirballs
 --------------------------------------------------------------------------------*/
-.author[href$="/neelim98"]~.flair:after {
+.author[href$="/neelim98"]~.flair:after,
+.author[href$="/Hero_Of_Legend"]~.flair:after {
     background-position: -260px -14px
 }
 
