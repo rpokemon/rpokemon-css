@@ -128,9 +128,6 @@
     background-image: url(%%Flair%%);
     background-color: transparent
 }
-.flair.flair-placeholder {
-    background-image: none;
-}
 
 /********************************************************************************
 * CUSTOM USER FLAIRS

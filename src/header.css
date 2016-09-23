@@ -340,10 +340,10 @@ a.pref-lang:hover {
 .listing-page #header .tabmenu li:nth-child(8) a {
     background: -190px 0
 }
-.listing-page #header .tabmenu li a.res-show-images {
+.listing-page #header .tabmenu li.res-show-images a {
     background: -302px 0
 }
-.listing-page #header .tabmenu li a.res-filter-visited-links {
+.listing-page #header .tabmenu li.res-filter-visited-links a {
     background: -375px 0;
 }
 .listing-page #header .tabmenu li a[href^="j"] {
@@ -404,8 +404,7 @@ body #header .tabmenu li:first-of-type:last-of-type a {
 --------------------------------------------------------------------------------*/
 
 /* element */
-.listing-page #header .tabmenu li:not(.res-tabmenu-button) a:after,
-.res-tabmenu-button label:after {
+.listing-page #header .tabmenu li a:after {
     display: block;
     position: absolute;
     margin-bottom: 8px;
@@ -424,8 +423,7 @@ body #header .tabmenu li:first-of-type:last-of-type a {
     opacity: 0;
     color: #fff
 }
-.listing-page #header .tabmenu li a:hover:after,
-.res-tabmenu-button label:hover:after {
+.listing-page #header .tabmenu li a:hover:after {
     bottom: 100%;
     opacity: 1
 }
@@ -456,19 +454,11 @@ body #header .tabmenu li:first-of-type:last-of-type a {
     content: 'promoted'
 }
 
-.res-show-images label:after { content: 'view images' attr(aftercontent) !important }
-.selected .res-show-images label:after { content: 'hide images' attr(aftercontent) !important }
+.res-show-images a:after { content: 'view images' attr(aftercontent) !important }
+.selected .res-show-images a:after { content: 'hide images' attr(aftercontent) !important }
 
-.res-filter-visited-links label:after { content: 'filter visited links' !important }
-.selected .res-filter-visited-links label:after { content: 'unfilter visited links' !important }
-
-.listing-page .res-tabmenu-button label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+.res-filter-visited-links a:after { content: 'filter visited links' !important }
+.selected .res-filter-visited-links a:after { content: 'unfilter visited links' !important }
 
 .listing-page #header .tabmenu li a[href^="j"]:after {
     content: 'queue'
