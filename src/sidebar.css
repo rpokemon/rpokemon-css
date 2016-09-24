@@ -204,7 +204,7 @@
 }
 
 /* edit flair link */
-.side .md a[href*=flairbot] {
+.side .md a[href*="#flair"] {
     line-height: 26px;
     display: block;
     position: absolute;

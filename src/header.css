@@ -454,11 +454,11 @@ body #header .tabmenu li:first-of-type:last-of-type a {
     content: 'promoted'
 }
 
-.res-show-images a:after { content: 'view images' attr(aftercontent) !important }
-.selected .res-show-images a:after { content: 'hide images' attr(aftercontent) !important }
+.listing-page .res-show-images a:after { content: 'view images' attr(aftercontent) !important }
+.listing-page .selected .res-show-images a:after { content: 'hide images' attr(aftercontent) !important }
 
-.res-filter-visited-links a:after { content: 'filter visited links' !important }
-.selected .res-filter-visited-links a:after { content: 'unfilter visited links' !important }
+.listing-page .res-filter-visited-links a:after { content: 'filter visited links' !important }
+.listing-page .selected .res-filter-visited-links a:after { content: 'unfilter visited links' !important }
 
 .listing-page #header .tabmenu li a[href^="j"]:after {
     content: 'queue'
