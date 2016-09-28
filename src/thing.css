@@ -128,7 +128,8 @@
     background-image: url(%%whitesheet%%) !important;
     border: 1px solid #aaa;
     border-radius: 50%;
-    position: relative
+    position: relative;
+    background-size: initial !important;
 }
 
 .linkflair-rotation .thumbnail,
