@@ -97,30 +97,37 @@
     padding: 3px 5px;
     font-size: 17px;
     line-height: 17px;
-    margin-bottom: -1px;
-}
-
-.link.linkflair-spoiler a.title:not(:hover) {
-    font-size: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 200ms;
+    transition-delay: 50ms;
 }
 
 .link.linkflair-spoiler a.title:hover:before {
-    display: none;
+    opacity: 0;
+}
+
+.link.linkflair-spoiler a.title {
+    min-width: 190px;
 }
 
 /* filters
 --------------------------------------------------------------------------------*/
 
-html:lang(ao) .link:not(.linkflair-art),
-html:lang(di) .link:not(.linkflair-discussion),
-html:lang(fo) .link:not(.linkflair-info),
-html:lang(im) .link:not(.linkflair-image),
-html:lang(me) .link:not(.linkflair-media),
-html:lang(na) .link.linkflair-art,
-html:lang(nd) .link.linkflair-discussion,
-html:lang(ne) .link.linkflair-media,
-html:lang(nf) .link.linkflair-info,
-html:lang(ni) .link.linkflair-image,
+html:lang(ao) .listing-page .link:not(.linkflair-art),
+html:lang(di) .listing-page .link:not(.linkflair-discussion),
+html:lang(fo) .listing-page .link:not(.linkflair-info),
+html:lang(im) .listing-page .link:not(.linkflair-image),
+html:lang(me) .listing-page .link:not(.linkflair-media),
+html:lang(na) .listing-page .link.linkflair-art,
+html:lang(nd) .listing-page .link.linkflair-discussion,
+html:lang(ne) .listing-page .link.linkflair-media,
+html:lang(nf) .listing-page .link.linkflair-info,
+html:lang(ni) .listing-page .link.linkflair-image,
 html:lang(ns) .link.linkflair-spoiler a.title:before {
     display: none!important
 }

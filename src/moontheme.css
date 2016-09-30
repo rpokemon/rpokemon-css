@@ -83,6 +83,10 @@ html[lang$=nm] .side .md>blockquote:nth-of-type(2):after {
     box-shadow: inset 0 0 3px rgba(0, 0, 0, .6), inset 0 0 3px rgba(0, 0, 0, .35)
 }
 
+html[lang$=nm] .side .md>blockquote:first-of-type>p>a strong {
+    color: white;
+}
+
 /********************************************************************************
 * RESET
 *********************************************************************************/

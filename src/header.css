@@ -340,8 +340,11 @@ a.pref-lang:hover {
 .listing-page #header .tabmenu li:nth-child(8) a {
     background: -190px 0
 }
-.listing-page #header .tabmenu li:nth-child(9) a {
+.listing-page #header .tabmenu li.res-show-images a {
     background: -302px 0
+}
+.listing-page #header .tabmenu li.res-filter-visited-links a {
+    background: -375px 0;
 }
 .listing-page #header .tabmenu li a[href^="j"] {
     background: -340px 0
@@ -450,9 +453,13 @@ body #header .tabmenu li:first-of-type:last-of-type a {
 .listing-page #header .tabmenu li:nth-child(8) a:after {
     content: 'promoted'
 }
-.res.listing-page #header .tabmenu li:nth-child(9) a:after {
-    content: 'view images'
-}
+
+.listing-page .res-show-images a:after { content: 'view images' attr(aftercontent) !important }
+.listing-page .selected .res-show-images a:after { content: 'hide images' attr(aftercontent) !important }
+
+.listing-page .res-filter-visited-links a:after { content: 'filter visited links' !important }
+.listing-page .selected .res-filter-visited-links a:after { content: 'unfilter visited links' !important }
+
 .listing-page #header .tabmenu li a[href^="j"]:after {
     content: 'queue'
 }

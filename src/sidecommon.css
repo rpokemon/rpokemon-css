@@ -86,7 +86,7 @@
 --------------------------------------------------------------------------------*/
 
 /* common button */
-.side .md a[href*=flairbot],
+.side .md a[href*="#flair"],
 .side .md>h2+ul li a,
 .sidecontentbox .helplink~.content li.more a,
 .sidecontentbox a.helplink {

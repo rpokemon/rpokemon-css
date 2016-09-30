@@ -78,6 +78,7 @@
     position: relative; /* relative for spoiler overlay */
     font-size: 19px;
     color: #a97100;
+    display: inline-block;
 }
 
 .link a.title:visited,
@@ -128,7 +129,8 @@
     background-image: url(%%whitesheet%%) !important;
     border: 1px solid #aaa;
     border-radius: 50%;
-    position: relative
+    position: relative;
+    background-size: initial !important;
 }
 
 .linkflair-rotation .thumbnail,
@@ -261,18 +263,18 @@
 --------------------------------------------------------------------------------*/
 
 .arrow.up {
-    background: 0 -2px
+    background-position: 0 -2px !important
 }
 .arrow.down {
-    background: 0 -208px;
     margin-top: 2px;
+    background-position: 0 -208px !important
 }
 .arrow.upmod {
-    background: 0 -146px
+    background-position: 0 -146px !important
 }
 .arrow.downmod {
-    background: 0 -66px;
     margin-top: 2px;
+    background-position: 0 -66px !important
 }
 
 .arrow {
