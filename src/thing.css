@@ -20,7 +20,7 @@
     margin-top: 0;
     border: 1px solid #cecdcd;
     
-    box-shadow: 0px 0px 4px #d7c164;
+    box-shadow: 0 0 4px hsla(211,100%,85%,1);
     background: rgba(255,255,255,0.95);
 }
 .link.last-clicked {
@@ -77,14 +77,8 @@
 .link a.title {
     position: relative; /* relative for spoiler overlay */
     font-size: 19px;
-    color: #a97100;
+    color: #007aff;
     display: inline-block;
-}
-
-.link a.title:visited,
-.thing .title:visited,
-.thing.visited .title {
-    color: #D44E00
 }
 
 /* domain */
@@ -280,15 +274,21 @@
 .arrow {
     width: 33px;
     height: 33px;
-    background-image: url(%%downupinstinct%%)!important;
+    background-image: url(%%votesarticuno%%)!important;
     -webkit-transform: scale(.8);
     transform: scale(.8);
     margin: -2px auto
 }
 
 .unvoted div.score.unvoted { color: inherit; }
-.likes div.score.likes {color: #fad207;text-shadow: 0 1px 1px #483c03;}
-.dislikes div.score.dislikes { color: #0076ec; }
+.likes div.score.likes {
+    color: #007aff;
+    text-shadow: 0 1px 2px hsla(211,100%,35%,1);
+}
+.dislikes div.score.dislikes {
+    color: #ee7171;
+    text-shadow: 0 1px 1px #811414;
+}
 
 
 .arrow.upmod:before, .arrow.upmod:after {
@@ -305,7 +305,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid #fad207;
+    border: 2px solid #007aff;
     left: -5px;
     top: -8px;
     visibility: hidden;
@@ -315,7 +315,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid #fad207;
+    border: 2px solid #007aff;
     left: -10px;
     top: -13px;
     visibility: hidden;

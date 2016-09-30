@@ -2,7 +2,7 @@
 * BANNER
 *********************************************************************************/
 #header, html[lang$=nm] #header {
-    background: url(%%instinct-banner%%) -128px 19px/ auto calc(100% - 19px)!important;
+    background: url(%%mystic-banner%%) -128px 19px/ auto calc(100% - 19px)!important;
 }
 
 .side .md hr:first-of-type {
@@ -29,7 +29,7 @@
 }
 
 html[lang$=nm] body:before {
-    background: transparent url(%%yellow-bg%%) no-repeat center / 40%;
+    background: transparent url(%%blue-bg%%) no-repeat center / 40%;
     opacity: 0.2;
 }
 
@@ -40,19 +40,34 @@ html[lang$=nm], html[lang$=nm] body {
 
 /* ---------- */
 
+#header-img {
+    display: none !important;
+}
+
+#header-img-a {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    left: 3px;
+    z-index: 99;
+    width: 90px;
+    height: 90px;
+    background: url(%%mystic-snoo%%) no-repeat center / contain;
+}
+
 .side .md>h4+ul li {
     opacity: 0.3;
 }
 
-.side .md>h4+ul li:nth-child(2) {
+.side .md>h4+ul li:nth-child(1) {
     opacity: 1;
-    color: #a97100;
+    color: #0076ec;
     background: url(%%trophy%%) no-repeat 215px center / 8%;
 }
 
-.side .md h4+ul li:nth-child(2):after,
-.side .md h4+ul li:nth-child(2) strong:before,
-.side .md h4+ul li:nth-child(2) strong:after {
+.side .md h4+ul li:nth-child(1):after,
+.side .md h4+ul li:nth-child(1) strong:before,
+.side .md h4+ul li:nth-child(1) strong:after {
     content: '';
     display: block;
     position: absolute;
@@ -63,30 +78,30 @@ html[lang$=nm], html[lang$=nm] body {
 }
 
 
-.side .md h4+ul li:nth-child(2):after {
+.side .md h4+ul li:nth-child(1):after {
     top: -30px;
     left: -30px;
     transform: scale(1.0) rotate(-2deg);
 }
 
-.side .md h4+ul:hover li:nth-child(2):after {
+.side .md h4+ul:hover li:nth-child(1):after {
     animation: bling 2s ease infinite;
 }
-.side .md h4+ul li:nth-child(2) strong:before {
+.side .md h4+ul li:nth-child(1) strong:before {
     bottom: -30px;
     left: 30px;
     transform: scale(1.0) rotate(-2deg);
 }
-.side .md h4+ul:hover li:nth-child(2) strong:before {
+.side .md h4+ul:hover li:nth-child(1) strong:before {
     animation: blingblingbling 3s ease infinite;
     animation-delay: 500ms;
 }
-.side .md h4+ul li:nth-child(2) strong:after {
+.side .md h4+ul li:nth-child(1) strong:after {
     bottom: -15px;
     right: -30px;
     transform: scale(1.0) rotate(7deg);
 }
-.side .md h4+ul:hover li:nth-child(2) strong:after {
+.side .md h4+ul:hover li:nth-child(1) strong:after {
     animation: blingbling 2s ease infinite;
     animation-delay: 1000ms;
 }
@@ -111,4 +126,12 @@ html[lang$=nm], html[lang$=nm] body {
     50% { transform: scale(1.0) rotate(7deg); opacity: 1; }
     75% { transform: scale(0.9) rotate(5deg); opacity: 0.6; }
     100% { transform: scale(1.0) rotate(7deg); opacity: 1; }
+}
+
+.side .md>h4+ul + p, .side .md>h4+ul + p + blockquote {
+    text-align: center;
+}
+
+html[lang$=nm] .side .md>h4+ul li:nth-child(1) {
+    background: rgba(0,0,0,.4) url(%%trophy%%) no-repeat 215px center / 8%;
 }

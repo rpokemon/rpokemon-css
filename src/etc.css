@@ -28,7 +28,7 @@ body:before {
     will-change: transform;
     z-index: -1;
     
-    background: #fffae7 url(%%yellow-bg%%) no-repeat center / 40%;
+    background: hsla(211,100%,90%,1) url(%%blue-bg%%) no-repeat center / 40%;
     opacity: 0.45;
 }
 
@@ -67,7 +67,7 @@ button, input[type=submit] {
     display: inline-block;
     margin: 3px;
     padding: 0 8px 1px;
-    border: 1px solid #deb50f;
+    border: 1px solid #006fe6;
     border-radius: 2px;
     color: #fff;
     font-weight: 700;
@@ -76,13 +76,13 @@ button, input[type=submit] {
     line-height: 26px;
     outline: 0!important;
     
-    background-color: #f1c40f;
-    box-shadow: inset 0 1px 0 #e4d599;
+    background-color: #007aff;
+    box-shadow: inset 0 1px 0 #66b0ff;
     text-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
 
 button:hover, input[type=submit]:hover {
-    background-color: #efc93e
+    background-color: hsla(211,100%,55%,1)
 }
 
 button:active, input[type=submit]:active {

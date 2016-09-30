@@ -19,7 +19,7 @@
     left: 67px;
     
     background: url(%%downupinstinct%%) no-repeat !important;
-    background-position: 7px -122px!important;
+    background-position: 7px -50px!important;
     background-size: 70% !important;
 }
 
@@ -354,6 +354,8 @@
 .author[href$="/TheOfficialFJR"]~.flair:after,
 .author[href$="/Stan64"]~.flair:after,
 .author[href$="/LInkash"]~.flair:after,
+.author[href$="/TheLynnMan"]~.flair:after,
+.author[href$="/Darkagma"]~.flair:after,
 .author[href$="/Negalodon"]~.flair:after {
     background: url(%%MVPflair%%) no-repeat center / 90%;
 }
