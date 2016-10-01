@@ -4,28 +4,7 @@
 *********************************************************************************/
 .mod-toolbox .menuarea.modtools {
     margin: 0 0 0 10px!important;
-    min-width: 1020px!important;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap
 }
-.mod-toolbox .menuarea.modtools>span:not(:last-child) {
-    padding: 0 4px
-}
-.mod-toolbox .menuarea.modtools>.lightdrop {
-    flex-grow: 1;
-    text-align: right
-}
-
-.mod-toolbox .menuarea.modtools a.tb-general-button {
-    background: rgba(0, 0, 0, .07);
-    color: #333;
-    border: 1px solid #ccc
-}
-.menuarea.modtools a.pretty-button {
-    margin-left: 1px
-}
-
 .thing.comment>input[type=checkbox] {
     position: absolute;
     z-index: 5;
@@ -35,44 +14,21 @@
 
 /* modmail page
 --------------------------------------------------------------------------------*/
-.moderator.messages-page a.author {
-    background: 0!important;
-    height: auto!important;
-    width: auto!important;
-    color: #282!important
-}
-.moderator.messages-page .tagline {
-    justify-content: flex-start;
+.messages-page .tagline, .messages-page .tagline *, .messages-page .tagline *:before, .messages-page .tagline *:after {
     position: static;
-    align-items: center
-}
-.moderator.messages-page .tagline *,
-.parent *,
-.thing .parent .author {
-    position: static!important;
-    padding: 0!important;
-    width: auto!important;
-    background: 0 0!important;
-    height: auto;
-    margin-top: 0!important;
-    margin: 0 2px
+    background: transparent;
+    margin: 0;
+    height: auto !important;
+    padding: 0 1px !important;
+    display: inline-block !important;
+    width: auto;
 }
 
-.moderator.messages-page .flair { display: none }
-.moderator.messages-page .RESUserTagImage:after { margin: 0 }
-.sitetable { margin-top: 10px }
-.subreddit-rules-page:before { top: 52px }
-.subreddit-rules-page { padding-top: 51px }
-
-.comment .moderator,
-.moderator.messages-page .link .moderator,
-.moderator.messages-page.res .thing .tagline .author.moderator {
-    color: #282!important
+body.messages-page .sitetable .thing .tagline .author.moderator {
+    color: #228822 !important;
 }
-.comment .admin,
-.moderator.messages-page .link .moderator,
-.moderator.messages-page.res .thing .tagline .author.admin {
-    color: #f01!important
+body.messages-page .sitetable .thing .tagline .author.admin {
+    color: #ff0011 !important;
 }
 
 /* queue pages
@@ -96,11 +52,6 @@ body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
     border: 1px solid #f3f3f3;
     border-top: 0;
     padding: 5px 0 5px 20px
-}
-.flairgrant .RESUserTag,
-.flairrow .RESUserTag,
-.flairselector a.title {
-    display: none
 }
 body:not(.comments-page):not(.comment-permalink-page) .thing.comment>input[type=checkbox] {
     position: static;
@@ -149,52 +100,24 @@ html[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment .p
     padding: 5px
 }
 
-
 /* flair page
 --------------------------------------------------------------------------------*/
-.flaircell {
-    margin-right: 0;
-    margin-left: 4ex
+.flairgrant .flairrow {
+    position: relative
 }
-.flaircell .linkflairlabel {
-    position: static!important;
-    visibility: visible!important
-}
-.flairgrant .tagline,
-.flairrow .tagline {
-    visibility: visible;
-    padding-left: 20px
-}
-.flairgrant .tagline .flair,
-.flairrow .author,
-.flairrow .tagline .flair {
-    left: -23px;
-    top: 0
-}
-.flairgrant .usertable,
-.flairlist.usertable,
-.flairrow,
-.flairtemplate.flairrow>form {
-    padding-left: 250px
-}
-.flairrow,
-.flairtemplate.flairrow>form {
-    margin-left: -250px;
-    position: relative;
-    margin-bottom: 1px
-}
-.flair,
-.flair:after,
-.flair:before {
-    position: absolute
-}
-.flairtemplate.flairrow>form {
-    min-height: 36px
-}
-.flairgrant .tagline,
-.flairrow .tagline {
+.flaircell.tagline {
     position: absolute;
+    display: block !important;
+}
+
+.flaircell .RESUserTag, .flaircell .flairselectbtn, .flairgrant .header {
+    display: none !important;
+}
+
+.flaircell.tagline ~ form {
+    margin-left: 300px;
+}
+.flaircell.tagline .flair {
+    top: 0;
     left: 0;
-    height: 40px;
-    width: 150px
 }

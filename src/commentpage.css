@@ -151,44 +151,6 @@ select#comment-visits {
     border: 1px solid #c8ccd0!important
 }
 
-/* usertext edit - buttons
---------------------------------------------------------------------------------*/
-.usertext button.cancel,
-.usertext button[type=submit] {
-    display: inline-block;
-    border: 1px solid;
-    border-radius: 3px;
-    color: #fff!important;
-    line-height: 29px;
-    padding: 0 10px;
-    min-width: 77px;
-    margin: 0 5px 1px 0;
-    outline: 0;
-    font-size: 13px;
-    position: relative
-}
-.usertext button.cancel:active,
-.usertext button[type=submit]:active {
-    top: 1px
-}
-.usertext button[type=submit] {
-    background-color: #48f;
-    border-color: #2a66d6;
-    box-shadow: inset 0 1px 0 #669bff
-}
-
-.usertext button.cancel {
-    background-color: rgba(0,0,0,0.3);
-    border-color: rgba(0,0,0,0.15);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
-}
-
-html[lang$=nm] .usertext button.cancel {
-    background-color: rgba(255, 255, 255, .14);
-    border-color: rgba(255, 255, 255, .07);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15)
-}
-
 /* usertext edit - bottom area
 --------------------------------------------------------------------------------*/
 .usertext .bottom-area {

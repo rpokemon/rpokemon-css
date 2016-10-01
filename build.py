@@ -32,10 +32,7 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 'modpages.css',       # any moderator pages that required additional CSS and also flair selector stuff
                 
                 'userflair.css',      # user flairs
-                
-                'suntheme.css',       # day mode
                 'moontheme.css',      # night mode
-                
                 'banner.css',         # banner
               ]      
                 

@@ -48,15 +48,12 @@
     width: 12px;
     height: 13px;
     background: url(%%pokesheet%%) -195px -159px;
-    display: block;
+    display: inline-block;
     opacity: .5
 }
 .side .tagline .flairselectbtn,
 .tagline .userattrs {
     display: none
-}
-.comment .md .RESUserTagImage:after {
-    display: inline-block;
 }
 
 /* Tagline - author

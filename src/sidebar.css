@@ -225,9 +225,6 @@
     right: 0
 }
 
-.res-sr-style-toggle input {
-    display: none
-}
 .res-sr-style-toggle label {
     display: -webkit-flex;
     display: flex;
@@ -244,7 +241,8 @@
     margin-right: 5px
 }
 .flairtoggle input[type=checkbox],
-.side .md>h2+ul+hr {
+.side .md>h2+ul+hr,
+.res-sr-style-toggle input {
     display: none
 }
 .flairtoggle input[type=checkbox]:not(:checked)~label:before {
@@ -266,7 +264,7 @@
 /* list */
 .side .md>h2+ul {
     padding: 0;
-    list-style-type: none;
+    list-style: none;
     position: absolute;
     top: 725px;
     left: 0;
@@ -274,42 +272,38 @@
 }
 .side .md>h2+ul li a {
     line-height: 30px;
-    display: inline-block;
-    left: 30px;
-    position: relative;
-    margin: 2px auto;
+    display: block;
+    margin: 7px auto;
     width: 244px
 }
 
 /* icons */
+.side .md a[href$="/submit"]:before {
+    background: -960px 0
+}
+.side .md a[href$="selftext=true"]:before {
+    background: -440px -416px
+}
+.side .md a[href$="#q"]:before {
+    background: -800px -32px
+}
+.side .md a[href*="pokemontrades"]:before {
+    background: -840px -576px
+}
+.side .md a[href*="pokememes"]:before {
+    background: -480px -64px
+}
+.side .md a[href*="shinypokemon"]:before {
+    background: -720px -768px
+}
+
 .side .md>h2+ul li a:before {
     content: "";
-    background: url(%%Flair%%);
+    background-image: url(%%Flair%%) !important;
     display: block;
     position: absolute;
     width: 40px;
     height: 32px;
-    margin-bottom: 10px
-}
-
-
-.side .md a[href$="/submit"]:before {
-    background-position: -960px 0
-}
-.side .md a[href$="/submit?selftext=true"]:before {
-    background-position: -440px -416px
-}
-.side .md a[href*="/4lpffw"]:before {
-    background-position: -800px -32px
-}
-.side .md a[href*="/r/pokemontrades/submit"]:before {
-    background-position: -840px -576px
-}
-.side .md a[href*="/r/pokememes/submit"]:before {
-    background-position: -480px -64px
-}
-.side .md a[href*="/r/shinypokemon/submit"]:before {
-    background-position: -720px -768px
 }
 
 
@@ -334,7 +328,6 @@
     top: 635px;
     left: 20px;
     right: 20px;
-    height: 36px;
     border-radius: 18px;
     box-sizing: border-box;
     
@@ -393,10 +386,8 @@ html[lang$=nm] .side .md > h1 a:first-child {
 
 /* Morelinks
 --------------------------------------------------------------------------------*/
-.nub,
-.sidebox.create .spacer,
-.sidebox.submit-link .morelink,
-.sidebox.submit-text .morelink {
+.sidebox.create,
+.sidebox.submit {
     display: none
 }
 .sidebox.create .morelink {
