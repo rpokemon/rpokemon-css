@@ -7,6 +7,7 @@ html[lang$=nm] body > .debuginfo {
     background: #36393e;
     color: #bdc3c7
 }
+
 html[lang$=nm] .md a {
     color: #48f
 }
@@ -16,22 +17,18 @@ html[lang$=nm] .link .md a:visited {
     color: #8271ff
 }
 
-
 html[lang$=nm] .thing.link,
 html[lang$=nm] .entry,
 html[lang$=nm] .subreddit-report-form,
 html[lang$=nm] .post-sharing,
 html[lang$=nm] .comment .score,
-
 html[lang$=nm] #previoussearch,
 html[lang$=nm] .combined-search-page #previoussearch .res-search-pane,
-
 html[lang$=nm] .side,
-
 html[lang$=nm] .titlebox .leavecontributor-button,
 html[lang$=nm] .titlebox .leavemoderator,
-html[lang$=nm] .titlebox form.toggle
-{
+html[lang$=nm] .titlebox form.toggle,
+html[lang$=nm] .submit-page .roundfield {
     background: #282b30 !important;
     color: #aaa;
     border-color: #282b30;
@@ -52,7 +49,6 @@ html[lang$=nm] .comment.RES-keyNav-activeThing .entry {
 
 html[lang$=nm] .comment-permalink-page .commentarea>.infobar,
 html[lang$=nm] .commentarea .child>.usertext,
-html[lang$=nm] .commentarea>.menuarea,
 html[lang$=nm] .commentarea>.panestack-title,
 html[lang$=nm] .commentarea>.usertext,
 html[lang$=nm] .gold-accent.comment-visits-box {
@@ -88,13 +84,22 @@ html[lang$=nm] .RESUserTagImage:after {
 html[lang$=nm] .drop-choices,
 html[lang$=nm] .side #searchexpando,
 html[lang$=nm] body.mod-toolbox .tb-general-button, 
-html[lang$=nm] body.mod-toolbox .tb-bracket-button {
+html[lang$=nm] body.mod-toolbox .tb-bracket-button,
+html[lang$=nm] .listing-page .content>.menuarea .spacer,
+html[lang$=nm] .reddit-infobar {
     background: #282b30;
     border: 1px solid rgba(255, 255, 255, .1);
     color: #c7c7c7
 }
 html[lang$=nm] .drop-chToices a.choice:hover {
     background: rgba(255, 255, 255, .06)
+}
+html[lang$=nm] .new-comment .usertext-body,
+html[lang$=nm] .usertext.border .usertext-body {
+    background-color: transparent
+}
+html[lang$=nm] .thing.comment.new-comment:not(.RES-keyNav-activeThing) .entry {
+    border-color: #e5efff !important;
 }
 
 /* spoiler overlay
@@ -300,9 +305,6 @@ html[lang$=nm] .md pre {
 html[lang$=nm] .side .md table td,
 html[lang$=nm] .side .md table td a {
     color: #a5a5a5
-}
-html[lang$=nm] .reddit-infobar .md * {
-    color: #202020
 }
 
 html[lang$=nm] .comment .score.dislikes,

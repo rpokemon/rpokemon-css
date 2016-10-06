@@ -367,7 +367,8 @@ a.pref-lang:hover {
     -webkit-transition: opacity .1s ease;
     transition: opacity .1s ease
 }
-.listing-page #header .tabmenu li a:hover {
+.listing-page #header .tabmenu li a:hover,
+.listing-page #header .tabmenu li.selected a {
     opacity: 1
 }
 
