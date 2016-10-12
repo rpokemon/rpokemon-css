@@ -41,9 +41,6 @@
 .thing.spam>.entry {
     background: #f4d2d3!important
 }
-.thing.spam>.entry * {
-    color: #111
-}
 .thing.spam>.entry .buttons li[title*=removed] * {
     color: #e74c3c
 }

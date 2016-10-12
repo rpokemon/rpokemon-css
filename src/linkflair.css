@@ -131,3 +131,31 @@ html:lang(ni) .listing-page .link.linkflair-image,
 html:lang(ns) .link.linkflair-spoiler a.title:before {
     display: none!important
 }
+
+/* rule removal linkflair on comments page
+--------------------------------------------------------------------------------*/
+
+.comments-page .thing.link.linkflair-rule .linkflairlabel {
+    -webkit-transform: rotate(0)!important;
+    transform: rotate(0)!important;
+    background: #e74c3c!important;
+    top: auto;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    bottom: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 14px;
+}
+.comments-page .thing.link.linkflair-rule .linkflairlabel:before {
+    content: 'REMOVED: ';
+    color: rgba(255,255,255,0.7);
+}
+
+.comments-page .thing.link.linkflair-rule {
+    border-left: 0 !important;
+    margin-left: 0;
+    margin-top: 40px;
+}

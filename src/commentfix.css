@@ -10,7 +10,8 @@
 }
 
 .comments-page .comment,
-.res.comments-page .comment {
+.res.comments-page .comment,
+.res.res-commentBoxes .comment {
     margin: 8px 0 2px!important;
     padding-top: 2px!important
 }
@@ -19,10 +20,9 @@
 }
 
 /* disable some stupid RES stuff */
-.res-commentBoxes .comment {
+.res.res-commentBoxes .comment {
     border: none!important;
     margin-left: 0!important;
-    padding: 0!important
 }
 html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[role=main] .commentarea .sitetable.nestedlisting .comment {
     background: transparent !important;
