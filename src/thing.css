@@ -144,6 +144,10 @@
     display: none
 }
 
+html:lang(ns) .linkflair-spoiler .thumbnail img {
+    display: block;
+}
+
 /* entry
 --------------------------------------------------------------------------------*/
 .entry {
