@@ -140,21 +140,33 @@
 * CUSTOM USER FLAIRS
 *********************************************************************************/
 .author[href$="/TheGhost983"]~.flair {
-    background-image: url(%%adminflairs%%)!important;
+    background-image: url(%%modflairs%%)!important;
     background-position: 0 -13px
 }
 .author[href$="/David920"]~.flair {
-    background-image: url(%%adminflairs%%)!important;
+    background-image: url(%%modflairs%%)!important;
     background-position: -36px -14px
 }
 .author[href$="/technophonix1"]~.flair {
-    background-image: url(%%adminflairs%%)!important;
+    background-image: url(%%modflairs%%)!important;
     background-position: -69px -16px
 }
-.author[href$="/RepeatBall"]~.flair {
-    background-image: url(%%adminflairs%%)!important;
-    background-position: 0 -2px
+.author[href$="/Thief-Noctis"]~.flair {
+    background-image: url(%%modflairs%%)!important;
+    background-position: -107px -16px
 }
+.author[href$="/Mockturne"]~.flair {
+    background-image: url(%%modflairs%%)!important;
+    background-position: -149px -16px;
+}
+.author[href$="/kwwxis"]~.flair {
+    background-image: url(%%modflairs%%)!important;
+    background-position: -232px -16px;
+}
+
+/********************************************************************************
+* CUSTOM USER BALL FLAIRS
+*********************************************************************************/
 
 /* special user bubles
 --------------------------------------------------------------------------------*/
@@ -228,10 +240,11 @@
     background-position: -222px -14px
 }
 
-/* Premeirballs
+/* Premierballs
 --------------------------------------------------------------------------------*/
 .author[href$="/neelim98"]~.flair:after,
-.author[href$="/Hero_Of_Legend"]~.flair:after {
+.author[href$="/Hero_Of_Legend"]~.flair:after,
+.author[href$="/Mockturne"]~.flair:after {
     background-position: -260px -14px
 }
 
@@ -289,7 +302,7 @@
     background-position: -222px -54px
 }
 
-/* Someball...??
+/* Cherish ball
 --------------------------------------------------------------------------------*/
 .author[href$="/operrett"]~.flair:after,
 .author[href$="/InfamousPeace"]~.flair:after,
@@ -322,14 +335,28 @@
     background-position: -45px -90px
 }
 
+/* Moon ball
+--------------------------------------------------------------------------------*/
+.author[href$="/Thief-Noctis"]~.flair:after {
+    background-position: -81px -90px;
+}
+
+/* Love ball
+--------------------------------------------------------------------------------*/
+.author[href$="/Zloggt"]~.flair:after {
+    background-position: -117px -90px;
+}
+
+/********************************************************************************
+* CUSTOM NON-BALL BALL-FLAIRS
+*********************************************************************************/
+
 /* New mods icon
 --------------------------------------------------------------------------------*/
 .author[href$="/ngbeslhang"]~.flair:after,
 .author[href$="/DavidLuizshair"]~.flair:after,
 .author[href$="/Mlahk7"]~.flair:after,
 .author[href$="/jaksida"]~.flair:after,
-.author[href$="/Zloggt"]~.flair:after,
-.author[href$="/Thief-Noctis"]~.flair:after,
 .author[href$="/TangleNathair"]~.flair:after {
     background-position: -83px -128px
 }
@@ -346,10 +373,19 @@
     background-position: -154px -128px;
 }
 
-/* pogo contest 100 MVP
+/* boo
 --------------------------------------------------------------------------------*/
+.author[href$="/kwwxis"]~.flair:after {
+    background-image: url(%%modflairs%%)!important;
+    background-position: -194px -21px;
+}
+
+/********************************************************************************
+* POGO CONTEST 100 MVP
+*********************************************************************************/
+
 .author[href$="/tuskx"]~.flair:after,
-.author[href$="/Mockturne"]~.flair:after,
+/*.author[href$="/Mockturne"]~.flair:after,*/
 .author[href$="/liteayan"]~.flair:after,
 .author[href$="/FakeKitten"]~.flair:after,
 .author[href$="/dslashc"]~.flair:after,
