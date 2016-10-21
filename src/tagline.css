@@ -78,8 +78,14 @@
 .res .thing .tagline .author.moderator:hover,
 .res .thing .tagline .author.submitter,
 .res .thing .tagline .author.submitter:hover,
+.res .thing .tagline .author.friend,
+.res .thing .tagline .author.friend:hover,
+.res .thing .tagline .author.admin,
+.res .thing .tagline .author.admin:hover,
 .thing .tagline .author.moderator,
-.thing .tagline .author.submitter {
+.thing .tagline .author.submitter,
+.thing .tagline .author.friend,
+.thing .tagline .author.admin {
     background-color: transparent !important
 }
 
@@ -133,6 +139,26 @@
 }
 .author.admin:after {
     content: ' [A]'
+}
+.author.friend:after {
+    content: ' [F]'
+}
+
+.author.friend.submitter:after {
+    content: ' [F,S]'
+}
+.author.friend.moderator:after {
+    content: ' [F,M]'
+}
+
+.author.submitter.moderator:after {
+    content: ' [S,M]'
+}
+.author.friend.submitter.moderator:after {
+    content: ' [F,S,M]'
+}
+.author.friend.submitter.admin:after {
+    content: ' [F,S,A]'
 }
 
 /* Tagline misc
