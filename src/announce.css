@@ -55,10 +55,14 @@ body>.content {
     left: -5px
 }
 
+.side .md>blockquote:first-of-type>p:nth-of-type(3) {
+    width: 240px;
+}
+
 /* top announcement flair positioning
 --------------------------------------------------------------------------------*/
 .side .md>blockquote:first-of-type>p:nth-of-type(1)>a:before {
-    background-position: -280px -448px /* TODO: Change this sprite weekly (PoTW) */
+    background-position: -880px -384px /* TODO: Change this sprite weekly (PoTW) */
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(2)>a:before {
     background-position: -800px -32px
