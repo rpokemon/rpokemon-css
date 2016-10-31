@@ -1,42 +1,42 @@
 .icon-menu a { background: transparent }
 
-html[lang$=nm] body,
-html[lang$=nm] body:before,
-html[lang$=nm] .footer-parent > *,
-html[lang$=nm] body > .debuginfo {
+html body,
+html body:before,
+html .footer-parent > *,
+html body > .debuginfo {
     background: #36393e;
     color: #bdc3c7
 }
 
-html[lang$=nm] .md a {
+html .md a {
     color: #48f
 }
-html[lang$=nm] .comment .md a:visited,
-html[lang$=nm] .comment .md p>a:visited,
-html[lang$=nm] .link .md a:visited {
+html .comment .md a:visited,
+html .comment .md p>a:visited,
+html .link .md a:visited {
     color: #8271ff
 }
 
-html[lang$=nm] .thing.link,
-html[lang$=nm] .entry,
-html[lang$=nm] .subreddit-report-form,
-html[lang$=nm] .post-sharing,
-html[lang$=nm] .comment .score,
-html[lang$=nm] #previoussearch,
-html[lang$=nm] .combined-search-page #previoussearch .res-search-pane,
-html[lang$=nm] .side,
-html[lang$=nm] .titlebox .leavecontributor-button,
-html[lang$=nm] .titlebox .leavemoderator,
-html[lang$=nm] .titlebox form.toggle,
-html[lang$=nm] .submit-page .roundfield {
+html .thing.link,
+html .entry,
+html .subreddit-report-form,
+html .post-sharing,
+html .comment .score,
+html #previoussearch,
+html .combined-search-page #previoussearch .res-search-pane,
+html .side,
+html .titlebox .leavecontributor-button,
+html .titlebox .leavemoderator,
+html .titlebox form.toggle,
+html .submit-page .roundfield {
     background: #282b30 !important;
     color: #aaa;
-    border-color: #282b30;
+    border-color: #282b30 !important;
     box-shadow: none;
 }
 
-html[lang$=nm] .link.RES-keyNav-activeThing,
-html[lang$=nm] .comment.RES-keyNav-activeThing .entry {
+html .link.RES-keyNav-activeThing,
+html .comment.RES-keyNav-activeThing .entry {
     border-color: #575a63 !important;
 }
 
@@ -47,64 +47,64 @@ html[lang$=nm] .comment.RES-keyNav-activeThing .entry {
 /* comment page
 --------------------------------------------------------------------------------*/
 
-html[lang$=nm] .comment-permalink-page .commentarea>.infobar,
-html[lang$=nm] .commentarea .child>.usertext,
-html[lang$=nm] .commentarea>.panestack-title,
-html[lang$=nm] .commentarea>.usertext,
-html[lang$=nm] .gold-accent.comment-visits-box {
+html .comment-permalink-page .commentarea>.infobar,
+html .commentarea .child>.usertext,
+html .commentarea>.panestack-title,
+html .commentarea>.usertext,
+html .gold-accent.comment-visits-box {
     background: #282b30;
 }
-html[lang$=nm] .commentarea > * {
-    border: 0;
+html .commentarea > * {
+    border: 0 !important;
 }
 
-html[lang$=nm] .commentarea>.menuarea {
+html .commentarea>.menuarea {
     background: #2a2d33
 }
-html[lang$=nm] .gold-accent.comment-visits-box .title {
+html .gold-accent.comment-visits-box .title {
     color: rgba(255, 255, 255, .3)
 }
 
-html[lang$=nm] #newlink-with-image-upload .image-upload-drop-target,
-html[lang$=nm] .combined-search-page #search input[type=text],
-html[lang$=nm] .commentarea>.usertext textarea,
-html[lang$=nm] .comments-page .usertext textarea,
-html[lang$=nm] .submit-page .roundfield input[type=text],
-html[lang$=nm] .submit-page .roundfield input[type=url],
-html[lang$=nm] .submit-page .roundfield textarea,
-html[lang$=nm] .markdownEditor .edit-btn:not(.btn-macro) {
+html #newlink-with-image-upload .image-upload-drop-target,
+html .combined-search-page #search input[type=text],
+html .commentarea>.usertext textarea,
+html .comments-page .usertext textarea,
+html .submit-page .roundfield input[type=text],
+html .submit-page .roundfield input[type=url],
+html .submit-page .roundfield textarea,
+html .markdownEditor .edit-btn:not(.btn-macro) {
     background-color: rgba(255, 255, 255, .05);
     color: #aaa!important;
     border: 1px solid rgba(255, 255, 255, .15)!important
 }
 
-html[lang$=nm] .RESUserTagImage:after {
+html .RESUserTagImage:after {
     background-image: none!important
 }
-html[lang$=nm] .drop-choices,
-html[lang$=nm] .side #searchexpando,
-html[lang$=nm] body.mod-toolbox .tb-general-button, 
-html[lang$=nm] body.mod-toolbox .tb-bracket-button,
-html[lang$=nm] .listing-page .content>.menuarea .spacer,
-html[lang$=nm] .reddit-infobar {
+html .drop-choices,
+html .side #searchexpando,
+html body.mod-toolbox .tb-general-button, 
+html body.mod-toolbox .tb-bracket-button,
+html .listing-page .content>.menuarea .spacer,
+html .reddit-infobar {
     background: #282b30;
     border: 1px solid rgba(255, 255, 255, .1);
     color: #c7c7c7
 }
-html[lang$=nm] .drop-chToices a.choice:hover {
+html .drop-chToices a.choice:hover {
     background: rgba(255, 255, 255, .06)
 }
-html[lang$=nm] .new-comment .usertext-body,
-html[lang$=nm] .usertext.border .usertext-body {
+html .new-comment .usertext-body,
+html .usertext.border .usertext-body {
     background-color: transparent
 }
-html[lang$=nm] .thing.comment.new-comment:not(.RES-keyNav-activeThing) .entry {
+html .thing.comment.new-comment:not(.RES-keyNav-activeThing) .entry {
     border-color: #e5efff !important;
 }
 
 /* spoiler overlay
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .link.linkflair-spoiler a.title:before {
+html .link.linkflair-spoiler a.title:before {
     border: 2px dashed #36393e;
     background: #282b30
 }
@@ -112,19 +112,19 @@ html[lang$=nm] .link.linkflair-spoiler a.title:before {
 
 /* thing title
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .link a.title {
+html .link a.title {
     color: rgba(255, 255, 255, .8)
 }
-html[lang$=nm] .link a.title:visited,
-html[lang$=nm] .thing .title:visited,
-html[lang$=nm] .thing.visited .title {
+html .link a.title:visited,
+html .thing .title:visited,
+html .thing.visited .title {
     color: #b0a2e6
 }
 
 /* stuff
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .post-sharing,
-html[lang$=nm] .subreddit-report-form {
+html .post-sharing,
+html .subreddit-report-form {
     border-color: rgba(255, 255, 255, .2)!important;
     background: rgba(255, 255, 255, .02)!important
 }
@@ -133,62 +133,62 @@ html[lang$=nm] .subreddit-report-form {
 /********************************************************************************
 * HEADER
 *********************************************************************************/
-html[lang$=nm] #sr-header-area {
+html #sr-header-area {
     background: #282b30!important;
     border-bottom: 1px solid #282b30
 }
-html[lang$=nm] .message-count {
+html .message-count {
     background-color: #aaa333
 }
-html[lang$=nm] #sr-header-area .width-clip .dropdown.srdrop .selected.title,
-html[lang$=nm] #sr-header-area a,
-html[lang$=nm] #header-bottom-right a,
-html[lang$=nm] .res #userbarToggle {
+html #sr-header-area .width-clip .dropdown.srdrop .selected.title,
+html #sr-header-area a,
+html #header-bottom-right a,
+html .res #userbarToggle {
     color: #aaa
 }
 
 /* header bars */
-html[lang$=nm] #header:before {
+html #header:before {
     background: #282b30;
     border-bottom: 0
 }
-html[lang$=nm] .side:before {
+html .side:before {
     background: #2f3238
 }
 
-html[lang$=nm] #header .tabmenu {
+html #header .tabmenu {
     background: #282b30;
     border-color: #212428
 }
-html[lang$=nm] .side .md>blockquote:first-of-type>p>a {
+html .side .md>blockquote:first-of-type>p>a {
     color: #c9c9c9;
 }
 /********************************************************************************
 * ANNOUNCEMENT BAR
 *********************************************************************************/
-html[lang$=nm] .side .md>blockquote:nth-of-type(2) {
+html .side .md>blockquote:nth-of-type(2) {
     background: rgba(255, 255, 255, .5);
     color: rgba(0, 0, 0, .6)
 }
-html[lang$=nm] .side .md>blockquote:nth-of-type(2) p {
+html .side .md>blockquote:nth-of-type(2) p {
     color: rgba(0, 0, 0, .8)
 }
-html[lang$=nm] .side .md>blockquote:nth-of-type(2):after {
+html .side .md>blockquote:nth-of-type(2):after {
     background: rgba(255, 255, 255, .45);
     box-shadow: inset 0 0 3px rgba(0, 0, 0, .6), inset 0 0 3px rgba(0, 0, 0, .35)
 }
 
-html[lang$=nm] .side .md>blockquote:first-of-type>p>a strong {
+html .side .md>blockquote:first-of-type>p>a strong {
     color: white;
 }
 
 /* sidebar common button
 --------------------------------------------------------------------------------*/
 
-html[lang$=nm] .side .md a[href$="#flair"],
-html[lang$=nm] .side .md>h2+ul li a,
-html[lang$=nm] .sidecontentbox .helplink~.content li.more a,
-html[lang$=nm] .sidecontentbox a.helplink {
+html .side .md a[href$="#flair"],
+html .side .md>h2+ul li a,
+html .sidecontentbox .helplink~.content li.more a,
+html .sidecontentbox a.helplink {
     box-shadow: 0 0 1px rgba(0,0,0,0.8);
     text-shadow: none;
     background: rgba(255,255,255,.06);
@@ -196,40 +196,40 @@ html[lang$=nm] .sidecontentbox a.helplink {
     border-radius: 2px;
 }
 
-html[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) {
+html .sidecontentbox .helplink~.content li:not(.more) {
     background: rgba(255,255,255,0.04);
 }
 
 /* toggles and subscription stuff
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .titlebox .subscribers {
+html .titlebox .subscribers {
     color: #aaa
 }
-html[lang$=nm] .titlebox .users-online,
-html[lang$=nm] .toggle.fancy-toggle-button .option.active,
-html[lang$=nm].res .res-fancy-toggle-button {
+html .titlebox .users-online,
+html .toggle.fancy-toggle-button .option.active,
+html.res .res-fancy-toggle-button {
     background: rgba(0, 0, 0, .4);
     color: #aaa
 }
-html[lang$=nm] .titlebox form.toggle.flairtoggle,
-html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle {
+html .titlebox form.toggle.flairtoggle,
+html .titlebox form.toggle.res-sr-style-toggle {
     color: #aaa
 }
 
 /* sidebar rules
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .side .md > h3 {
+html .side .md > h3 {
     border-bottom-color: #e3e3e3
 }
-html[lang$=nm] .side .md h3+ul+ol:after {
+html .side .md h3+ul+ol:after {
     background: #e3e3e3
 }
-html[lang$=nm] .side .md > h3,
-html[lang$=nm] .side .md h3+ul,
-html[lang$=nm] .side .md h3+ul+ol {
+html .side .md > h3,
+html .side .md h3+ul,
+html .side .md h3+ul+ol {
     border-left-color: #e3e3e3
 }
-html[lang$=nm] .side .md h3+ul+ol>li:before {
+html .side .md h3+ul+ol>li:before {
     background: #282b30;
     border-color: #e3e3e3;
     font-weight: 700;
@@ -240,28 +240,28 @@ html[lang$=nm] .side .md h3+ul+ol>li:before {
     left: -36px;
     top: 3px
 }
-html[lang$=nm] .side .md h3+ul a {
+html .side .md h3+ul a {
     color: #ccc;
 }
 
 
 /* sun/moon switch day mode
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .side .md > h1 {
+html .side .md > h1 {
     background: rgba(255, 255, 255, .08);
     border: 1px solid rgba(255, 255, 255, .15)
 }
-html[lang$=nm] .side .md > h1 a {
+html .side .md > h1 a {
     color: #fff
 }
-html[lang$=nm] .side .md > h1 a:last-child {
+html .side .md > h1 a:last-child {
     border-left: 1px solid rgba(255, 255, 255, .15)
 }
 /* author panel - set to dark version
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .flairrow .author,
-html[lang$=nm] .side .tagline .author,
-html[lang$=nm] .thing .author {
+html .flairrow .author,
+html .side .tagline .author,
+html .thing .author {
     background-position: 0 0;
     color: #48f
 }
@@ -269,59 +269,59 @@ html[lang$=nm] .thing .author {
 
 
 
-html[lang$=nm] #search input[type=text] {
+html #search input[type=text] {
     background: rgba(255,255,255,.05);
     color: #aaa!important;
 }
 
-html[lang$=nm] .footer .col li.title,
-html[lang$=nm] .footer .col li:not(.title) a {
+html .footer .col li.title,
+html .footer .col li:not(.title) a {
     color: #888
 }
-html[lang$=nm] .bottommenu,
-html[lang$=nm] .bottommenu a {
+html .bottommenu,
+html .bottommenu a {
     color: #777
 }
 
-html[lang$=nm] .md,
-html[lang$=nm] .side .md,
-html[lang$=nm] .submit-page .roundfield>.title,
-html[lang$=nm] .side .md>h2,
-html[lang$=nm] .side .md>h4:first-of-type,
-html[lang$=nm] .side .md>h4>a,
-html[lang$=nm] .side .md>h6,
-html[lang$=nm] .side .md>p:first-of-type,
-html[lang$=nm] .side .md h6+blockquote p a,
-html[lang$=nm] .side #searchexpando {
+html .md,
+html .side .md,
+html .submit-page .roundfield>.title,
+html .side .md>h2,
+html .side .md>h4:first-of-type,
+html .side .md>h4>a,
+html .side .md>h6,
+html .side .md>p:first-of-type,
+html .side .md h6+blockquote p a,
+html .side #searchexpando {
     color: #c7c7c7;
 }
-html[lang$=nm] .thing .md hr {
+html .thing .md hr {
     background: rgba(255,255,255,0.1)
 }
-html[lang$=nm] .md code,
-html[lang$=nm] .md pre {
+html .md code,
+html .md pre {
     background: rgba(0, 0, 0, .08)
 }
-html[lang$=nm] .side .md table td,
-html[lang$=nm] .side .md table td a {
+html .side .md table td,
+html .side .md table td a {
     color: #a5a5a5
 }
 
-html[lang$=nm] .comment .score.dislikes,
-html[lang$=nm] .comment .score.likes,
-html[lang$=nm] .comment .score.unvoted,
-html[lang$=nm] .flair:before,
-html[lang$=nm] .link .score.unvoted,
-html[lang$=nm] .tagline time:not(.edited-timestamp) {
+html .comment .score.dislikes,
+html .comment .score.likes,
+html .comment .score.unvoted,
+html .flair:before,
+html .link .score.unvoted,
+html .tagline time:not(.edited-timestamp) {
     color: #aaa
 }
 
 
-html[lang$=nm] .linkflair-spoiler .thumbnail,
-html[lang$=nm] .thumbnail,
-html[lang$=nm] .thumbnail.default,
-html[lang$=nm] .thumbnail.nsfw,
-html[lang$=nm] .thumbnail.self {
+html .linkflair-spoiler .thumbnail,
+html .thumbnail,
+html .thumbnail.default,
+html .thumbnail.nsfw,
+html .thumbnail.self {
     background-image: url(%%pokesheet%%) !important;
     border: 1px solid #111
 }

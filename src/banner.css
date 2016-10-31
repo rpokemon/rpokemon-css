@@ -1,77 +1,57 @@
 /********************************************************************************
 * BANNER
 *********************************************************************************/
-#header {
-    background: url(%%daymodeheader%%) left center/cover no-repeat
-}
-html[lang$=nm] #header {
-    background: url(%%header%%) 50% 19px/cover no-repeat
+
+#header, html[lang$=nm] #header {
+    background: url(%%halloweenheader%%) center 18px /auto 89% repeat
 }
 
-html[lang$=nm] #header {
-    background: 0 !important
+html #header-img {
+    display: none !important;
 }
 
-html[lang$=nm] [name=uh] ~ a:after,
-.logout:after {
-    content: '';
-    right: 0;
-    bottom: 100%;
-    height: 147px;
-    width: 100vw;
+html #header-img-a {
+    position: absolute;
     display: block;
-    position: absolute
+    bottom: 0px;
+    left: 10px;
+    z-index: 99;
+    width: 90px;
+    height: 90px;
+    background: url(%%halloweensnoo%%) no-repeat center / contain;
 }
 
-html[lang$=nm] [name=uh] ~ a:after {
-    pointer-events: none;
-    background: no-repeat center center / cover
+html .flairrow .author, html .side .tagline .author, html .thing .author {
+    background-position: 0 -252px;
+    color: white;
 }
 
-[name=uh][value^="0"]~a:after,
-[name=uh][value^="1"]~a:after,
-[name=uh][value^="2"]~a:after,
-[name=uh][value^="3"]~a:after,
-[name=uh][value^="4"]~a:after,
-[name=uh][value^="5"]~a:after,
-[name=uh][value^="6"]~a:after,
-[name=uh][value^="7"]~a:after,
-[name=uh][value^="8"]~a:after {
-    background-image: url(%%nm-banner1%%) !important
+html .flair:before {
+    color: #fff;
 }
 
-[name=uh][value^="9"]~a:after,
-[name=uh][value^=a]~a:after,
-[name=uh][value^=b]~a:after,
-[name=uh][value^=c]~a:after,
-[name=uh][value^=d]~a:after,
-[name=uh][value^=e]~a:after,
-[name=uh][value^=f]~a:after,
-[name=uh][value^=g]~a:after,
-[name=uh][value^=h]~a:after {
-    background-image: url(%%nm-banner2%%) !important
+html .arrow {
+    height: 36px;
 }
 
-[name=uh][value^=i]~a:after,
-[name=uh][value^=j]~a:after,
-[name=uh][value^=k]~a:after,
-[name=uh][value^=l]~a:after,
-[name=uh][value^=m]~a:after,
-[name=uh][value^=n]~a:after,
-[name=uh][value^=o]~a:after,
-[name=uh][value^=p]~a:after,
-[name=uh][value^=q]~a:after {
-    background-image: url(%%nm-banner3%%) !important
+html .arrow.down {
+    background-position: 1px -206px!important;
 }
 
-[name=uh][value^=r]~a:after,
-[name=uh][value^=s]~a:after,
-[name=uh][value^=t]~a:after,
-[name=uh][value^=u]~a:after,
-[name=uh][value^=v]~a:after,
-[name=uh][value^=w]~a:after,
-[name=uh][value^=x]~a:after,
-[name=uh][value^=y]~a:after,
-[name=uh][value^=z]~a:after {
-    background-image: url(%%nm-banner4%%) !important
+html .arrow.downmod {
+    background-position: 0 -64px!important;
+}
+
+.comment .author.submitter, .res .thing .tagline .author.submitter, .res .thing .tagline .author.submitter:hover {
+    color: white !important
+}
+
+.pagename a {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.link, .link.promoted.promotedlink {
+    box-shadow: none !important;
 }

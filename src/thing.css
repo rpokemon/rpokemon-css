@@ -278,10 +278,88 @@ html:lang(ns) .linkflair-spoiler .thumbnail img {
 .arrow {
     width: 33px;
     height: 33px;
-    background-image: url(%%downupsumo%%)!important;
+    background-image: url(%%firefightvote%%)!important;
     -webkit-transform: scale(.8);
     transform: scale(.8);
     margin: -2px auto
+}
+
+
+
+
+.arrow.upmod:before, .arrow.upmod:after,
+.arrow.downmod:before, .arrow.downmod:after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.midcol, .link {
+    overflow: visible !important;
+}
+
+.arrow.up:after, .arrow.upmod:after,
+.arrow.down:after, .arrow.downmod:after {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e74c3c;
+    left: -5px;
+    top: -4px;
+    visibility: hidden;
+}
+
+.arrow.up:before, .arrow.upmod:before,
+.arrow.down:before, .arrow.downmod:before {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #e74c3c;
+    left: -10px;
+    top: -9px;
+    visibility: hidden;
+}
+
+.arrow.down:after, .arrow.downmod:after,
+.arrow.down:before, .arrow.downmod:before {
+    border-color: #795548;
+}
+
+.arrow.upmod:before, .arrow.upmod:after {
+    transform-origin: center;
+    transform: scale(0.7);
+}
+
+
+.arrow.upmod, .arrow.downmod {
+    transform-origin: center;
+    animation: upmod3 150ms linear;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+}
+
+.arrow.upmod:focus:before, .arrow.downmod:focus:before {
+    animation: upmod1 400ms ease-out;
+    animation-fill-mode: forwards;
+}
+
+.arrow.upmod:focus:after, .arrow.downmod:focus:after {
+    animation: upmod2 400ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 150ms;
+}
+
+@keyframes upmod1 {
+    0% { visibility: visible; transform: scale(0.7); opacity: 1; }
+    100% { transform: scale(1); opacity: 0; }
+}
+@keyframes upmod2 {
+    0% { visibility: visible; transform: scale(0.7); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+@keyframes upmod3 {
+    0% { transform: scale(.8); }
+    100% { transform: scale(.9); }
 }
 
 /* Expando buttons

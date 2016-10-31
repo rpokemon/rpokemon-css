@@ -34,6 +34,7 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 'userflair.css',      # user flairs
                 'moontheme.css',      # night mode
                 'banner.css',         # banner
+                'halloween.css',      # halloween tweaks
               ]      
                 
 # input/output variables
