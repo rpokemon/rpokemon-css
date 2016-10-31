@@ -29,3 +29,72 @@
     margin-left: 5px;
     margin-bottom: -4px;
 }
+
+
+#siteTable_t3_5a9s81 .comment .author {
+    font-size: 0;
+}
+
+#siteTable_t3_5a9s81 .comment .author:before, #siteTable_t3_5a9s81 .comment .flair:before {
+    content: 'Cat.';
+    font-size: 11px;
+}
+#siteTable_t3_5a9s81 .comment .flair:after {
+    display: none;
+}
+.side .md hr:nth-of-type(2) {
+    content: '';
+    display: block;
+    position: fixed;
+    z-index: 9999999;
+    width: 500px;
+    height: 1000px;
+    background: url(%%exeggutor%%) no-repeat center / contain;
+    top: 100%;
+    right: 0;
+    margin-top: -130px;
+    transition: transform 4s ease;
+}
+
+.side .md hr:nth-of-type(2):hover {
+    transform: translateY(-700px);
+}
+.morechildren > .entry > .tagline:before {
+    display: none;
+}
+.tagline:before, .comment .tagline:before {
+    transition: transform 2000ms ease;
+}
+.tagline:hover:before, .comment:hover > .entry > .tagline:before {
+    transform: rotateZ(3600deg);
+}
+body:after {
+    content: '';
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    width: 100vw;
+    height: 500px;
+    background: url(%%exeggutor%%) repeat center / contain;
+    z-index: 99999;
+    margin-top: -200px;
+    animation: annoyingexeggutor 10000ms ease infinite;
+    transform: translateZ(0);
+}
+@keyframes annoyingexeggutor {
+    0% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vw);
+    }
+}
+* {
+    cursor: url(%%tallarecaceae%%), auto;
+}
+a, button, input[type=submit] {
+    cursor: pointer;
+}
