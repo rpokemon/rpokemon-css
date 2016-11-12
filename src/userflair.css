@@ -1,12 +1,3 @@
-/*
-
-TODO:
-    modflairs image renamed to specialflairs
-    MVP badge moved from standalone to balls.png
-    friend user nameplate
-
-*/
-
 /********************************************************************************
 * USER FLAIR
 *********************************************************************************/
@@ -31,6 +22,10 @@ TODO:
     /* comment flair position */
     top: -28px;
     left: 67px;
+}
+
+.flair.flair-placeholder {
+    background-image: none !important;
 }
 
 /* link flair position*/
@@ -67,8 +62,10 @@ TODO:
 }
 
 /* sidecontentbox flair fix */
-.sidecontentbox .author,
-.sidecontentbox .author, .sidecontentbox .author:before, .sidecontentbox .author:after { margin-left: 38px; font-size: 11px; }
+.sidecontentbox .author, .sidecontentbox .author,
+.sidecontentbox .author:before, .sidecontentbox .author:after {
+    margin-left: 38px; font-size: 11px;
+}
 .sidecontentbox .flair { left: 0; top: -2px; margin-left: -5px; }
 .sidecontentbox .flair:after { left: 235px; }
 .sidecontentbox .flair:before { bottom: 3px; }
@@ -83,28 +80,28 @@ TODO:
 * CUSTOM USER FLAIRS
 *********************************************************************************/
 .author[href$="/TheGhost983"]~.flair {
-    background-image: url(%%modflairs%%)!important;
+    background-image: url(%%specialflairs%%)!important;
     background-position: 0 -13px
 }
 .author[href$="/David920"]~.flair {
-    background-image: url(%%modflairs%%)!important;
+    background-image: url(%%specialflairs%%)!important;
     background-position: -36px -14px
 }
 .author[href$="/technophonix1"]~.flair {
-    background-image: url(%%modflairs%%)!important;
+    background-image: url(%%specialflairs%%)!important;
     background-position: -69px -16px
 }
 .author[href$="/Thief-Noctis"]~.flair {
-    background-image: url(%%modflairs%%)!important;
+    background-image: url(%%specialflairs%%)!important;
     background-position: -107px -16px
 }
 .author[href$="/Mockturne"]~.flair {
-    background-image: url(%%modflairs%%)!important;
+    background-image: url(%%specialflairs%%)!important;
     background-position: -149px -16px;
 }
-.author[href$="/kwwxis"]~.flair {
-    background-image: url(%%modflairs%%)!important;
-    background-position: -232px -16px;
+.author[href$="/Hero_Of_Legend"]~.flair {
+    background-image: url(%%specialflairs%%)!important;
+    background-position: 0 -54px;
 }
 
 /********************************************************************************
@@ -130,9 +127,6 @@ TODO:
 .author[href$="/Hero_Of_Legend"]~.flair:before {
     background-position: 0 -72px!important;
     color: #fff !important;
-}
-.author[href$="/Hero_Of_Legend"]~.flair {
-    background: url(%%Shinyzard%%) no-repeat 0 !important;
 }
 
 /* Greatballs
@@ -316,15 +310,8 @@ TODO:
     background-position: -154px -128px;
 }
 
-/* boo
---------------------------------------------------------------------------------*/
-.author[href$="/kwwxis"]~.flair:after {
-    background-image: url(%%modflairs%%)!important;
-    background-position: -194px -21px;
-}
-
 /********************************************************************************
-* POGO CONTEST 100 MVP
+* CONTEST FLAIRS
 *********************************************************************************/
 
 .author[href$="/tuskx"]~.flair:after,
@@ -337,5 +324,29 @@ TODO:
 .author[href$="/Stan64"]~.flair:after,
 .author[href$="/LInkash"]~.flair:after,
 .author[href$="/Negalodon"]~.flair:after {
-    background: url(%%MVPflair%%) no-repeat center / 90%;
+    background-position: -263px -118px;
+    width: 32px;
+    height: 35px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transform-origin: top 5px;
+    transform-origin: top 5px;
+}
+
+/* tall alolan exeggutor ballflair - shitpost winners */
+.author[href$="/PassingThroughRider"]~.flair:after,
+.author[href$="/SomebodyUnown"]~.flair:after,
+.author[href$="/Cls31"]~.flair:after,
+.author[href$="/akbarizcool"]~.flair:after {
+    background-position: -13px -169px;
+    height: 95px;
+    margin-top: -68px;
+}
+
+/* pumpkin ball flair */
+.author[href$="/Ultra_Lobster"]~.flair:after,
+.author[href$="/Hax_r_us_kappa"]~.flair:after,
+.author[href$="/kfeebalione"]~.flair:after,
+.author[href$="/Kidneyjoe"]~.flair:after {
+    background-position: -186px -127px;
 }

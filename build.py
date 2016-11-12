@@ -31,6 +31,7 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 'footer.css',         # subreddit footer
                 'modpages.css',       # any moderator pages that required additional CSS and also flair selector stuff
                 
+                'flair.css',          # user flairs
                 'userflair.css',      # user flairs
                 'moontheme.css',      # night mode
                 'banner.css',         # banner
