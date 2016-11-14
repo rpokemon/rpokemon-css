@@ -114,19 +114,35 @@
     background-position: 0 -36px!important
 }
 .thing .author[href$="/A_Wild_Abra"],
+.res .thing .tagline .author.submitter[href$="/A_Wild_Abra"],
 .side .tagline .author[href$="/A_Wild_Abra"] {
     background-position: 0 -144px!important;
     color: #fff!important
 }
 .author[href$="/A_Wild_Abra"]~.flair:after {
-    background: url(%%balls%%) -49px -128px!important
+    background: url(%%balls%%) -49px -128px
 }
 
 .thing .author[href$="/Hero_Of_Legend"],
+.res .thing .tagline .author.submitter[href$="/Hero_Of_Legend"],
 .side .tagline .author[href$="/Hero_Of_Legend"],
 .author[href$="/Hero_Of_Legend"]~.flair:before {
-    background-position: 0 -72px!important;
+    background-position: 0 -72px;
     color: #fff !important;
+}
+
+.thing .author[href$="/aDr1v3"],
+.res .thing .tagline .author.submitter[href$="/aDr1v3"],
+.side .tagline .author[href$="/aDr1v3"],
+.author[href$="/aDr1v3"]~.flair:before {
+    background-position: 0 -108px;
+    color: #fff !important;
+}
+
+.thing .author[href$="/technophonix1"],
+.side .tagline .author[href$="/technophonix1"],
+.author[href$="/technophonix1"]~.flair:before {
+    background-position: 0 -180px;
 }
 
 /* Greatballs
