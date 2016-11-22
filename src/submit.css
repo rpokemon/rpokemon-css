@@ -129,3 +129,10 @@
     line-height: 28px;
     padding: 0 20px
 }
+
+.submit_text {
+    max-height: none;
+}
+.submit_text ol, .submit_text ul {
+    margin-left: 0;
+}

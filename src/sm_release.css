@@ -1,0 +1,164 @@
+.link.linkflair-sm-megathread .md {
+    padding-top: 150px;
+}
+.linkflair-sm-megathread .md:before {
+    content: '';
+    display: block;
+    width: 404px;
+    height: 166px;
+    background: url(%%pokesm-r%%) no-repeat center top / 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+html[lang$=nm] .linkflair-sm-megathread .md:before {
+    background-image: url(%%pokesm-r-nm%%) !important;
+}
+
+.link.linkflair.linkflair-sm-megathread {
+    border-left-color: #3467af !important;
+}
+
+.comments-page .linkflair-sm-megathread .thumbnail {
+    display: none;
+}
+.comments-page .linkflair-sm-megathread .author {
+    left: 65px;
+}
+.comments-page .linkflair-sm-megathread .flair {
+    left: 63px;
+}
+.comments-page .linkflair-sm-megathread .RESUserTag {
+    left: 348px;
+}
+
+.linkflair-sm-megathread .md hr, html[lang$=nm] .linkflair-sm-megathread .md hr {
+    background: url(%%pokesm-r%%) no-repeat bottom center / 100%;
+    width: 404px;
+    height: 54px;
+    margin: 35px auto 25px auto;
+}
+html[lang$=nm] .linkflair-sm-megathread .md hr {
+    background-image: url(%%pokesm-r-nm%%) !important;
+}
+
+.linkflair-sm-megathread .md h2:first-of-type {
+    width: 404px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.linkflair-sm-megathread .md hr:nth-of-type(2) + p,
+.linkflair-sm-megathread .md hr:nth-of-type(2) + p + p {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.linkflair-sm-megathread .md h3:last-of-type {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.linkflair-sm-megathread .md h3:nth-of-type(1),
+.linkflair-sm-megathread .md h3:nth-of-type(1) + p,
+.linkflair-sm-megathread .md h3:nth-of-type(2),
+.linkflair-sm-megathread .md h3:nth-of-type(2) + p,
+.linkflair-sm-megathread .md h3:nth-of-type(2) + p + p,
+.linkflair-sm-megathread .md h3:nth-of-type(2) + p + p + p {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.05);
+    padding: 0 10px;
+}
+.linkflair-sm-megathread .md h3:nth-of-type(1),
+.linkflair-sm-megathread .md h3:nth-of-type(2),
+.linkflair-sm-megathread .md h3:nth-of-type(2) + p + p + p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px 3px 0 0;
+}
+.linkflair-sm-megathread .md h3:nth-of-type(1) + p,
+.linkflair-sm-megathread .md h3:nth-of-type(2) + p + p,
+.linkflair-sm-megathread .md h3:nth-of-type(2) + p + p + p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0 0 3px 3px;
+}
+
+.linkflair-sm-megathread .md h3:nth-of-type(1),
+.linkflair-sm-megathread .md h3:nth-of-type(1) + p {
+    background: hsla(0,64%,96%,1);
+}
+.linkflair-sm-megathread .md h3:nth-of-type(2) + p + p + p {
+    margin-top: 5px;
+}
+.linkflair-sm-megathread .md h3:nth-of-type(1) + p {
+    margin-bottom: 10px;
+}
+
+html[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(1),
+html[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(1) + p {
+    background: hsl(356, 23%, 25%);
+}
+
+html[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2),
+html[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2) + p,
+html[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2) + p + p,
+html[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2) + p + p + p {
+    background: rgba(255,255,255,0.06);
+}
+
+/*---------------------------------------------------------------------*/
+/*
+#header {
+    background: url(%%alola-region%%) no-repeat center center / 130%;
+    transition: background-position 3s;
+}
+
+#header:hover {
+    background-position: top left;
+    animation: alola-wander 100s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes alola-wander {
+    0% {
+        background-position: top left;
+    }
+    10% {
+        background-position: left -100px bottom;
+    }
+    20% {
+        background-position: right -100px top;
+    }
+    30% {
+        background-position: right top -100px;
+    }
+    40% {
+        background-position: right -100px bottom;
+    }
+    50% {
+        background-position: left -180px top;
+    }
+    60% {
+        background-position: left bottom -150px;
+    }
+    70% {
+        background-position: left -100px bottom;
+    }
+    80% {
+        background-position: left -300px top;
+    }
+    90% {
+        background-position: right bottom;
+    }
+    100% {
+        background-position: top left;
+    }
+}*/
