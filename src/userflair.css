@@ -103,6 +103,10 @@
     background-image: url(%%specialflairs%%)!important;
     background-position: 0 -54px;
 }
+.author[href$="/scottmonster"]~.flair, .flair-tournament {
+    background-image: url(%%specialflairs%%)!important;
+    background-position: -37px -54px;
+}
 
 /********************************************************************************
 * CUSTOM USER BALL FLAIRS
