@@ -187,7 +187,6 @@ html[lang$=nm] .side .md>blockquote:first-of-type>p>a strong {
 
 html[lang$=nm] .side .md a[href$="#flair"],
 html[lang$=nm] .side .md>h2+ul li a,
-html[lang$=nm] .sidecontentbox .helplink~.content li.more a,
 html[lang$=nm] .sidecontentbox a.helplink {
     box-shadow: 0 0 1px rgba(0,0,0,0.8);
     text-shadow: none;
@@ -198,6 +197,9 @@ html[lang$=nm] .sidecontentbox a.helplink {
 
 html[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) {
     background: rgba(255,255,255,0.04);
+}
+html[lang$=nm] .sidecontentbox .helplink~.content li:before {
+    opacity: 0.5;
 }
 
 /* toggles and subscription stuff
@@ -218,13 +220,10 @@ html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle {
 
 /* sidebar rules
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .side .md > h3 {
-    border-bottom-color: #e3e3e3
-}
+
 html[lang$=nm] .side .md h3+ul+ol:after {
     background: #e3e3e3
 }
-html[lang$=nm] .side .md > h3,
 html[lang$=nm] .side .md h3+ul,
 html[lang$=nm] .side .md h3+ul+ol {
     border-left-color: #e3e3e3
@@ -241,7 +240,8 @@ html[lang$=nm] .side .md h3+ul+ol>li:before {
     top: 3px
 }
 html[lang$=nm] .side .md h3+ul a {
-    color: #ccc;
+    color: #dfdfdf;
+    background: hsla(216,100%,56%,1);
 }
 
 
@@ -283,18 +283,68 @@ html[lang$=nm] .bottommenu a {
     color: #777
 }
 
+html[lang$=nm] .side .md>h2:after,
+html[lang$=nm] .side .md>h4>a:after,
+html[lang$=nm] .side .md>h6:after,
+html[lang$=nm] .side .md>h3:after,
+html[lang$=nm] .side .md>h5:after {
+    background-image: url(%%sidepattern2w%%);
+    opacity: 0.08;
+}
+html[lang$=nm] .titlebox form.toggle.flairtoggle:after,
+html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle:after {
+    background: url(%%sidepattern1w%%);
+    opacity: 0.08;
+}
+
 html[lang$=nm] .md,
 html[lang$=nm] .side .md,
 html[lang$=nm] .submit-page .roundfield>.title,
 html[lang$=nm] .side .md>h2,
+html[lang$=nm] .side .md>h3,
 html[lang$=nm] .side .md>h4:first-of-type,
 html[lang$=nm] .side .md>h4>a,
+html[lang$=nm] .side .md>h5,
 html[lang$=nm] .side .md>h6,
 html[lang$=nm] .side .md>p:first-of-type,
 html[lang$=nm] .side .md h6+blockquote p a,
 html[lang$=nm] .side #searchexpando {
     color: #c7c7c7;
 }
+
+html[lang$=nm] .side .md>h5+ul {
+    background: rgba(255,255,255,0.03);
+}
+
+
+
+
+
+html[lang$=nm] .sidecontentbox .content {
+    background: rgba(255,255,255,0.02);
+}
+html[lang$=nm] .side .sidecontentbox .title {
+    background: hsl(218, 7%, 20%);
+    border-color: hsl(218, 7%, 23%)
+}
+html[lang$=nm] .gadget .reddit-entry {
+    background: transparent !important;
+}
+html[lang$=nm] .gadget .reddit-link {
+    border-color: rgba(255,255,255,0.05);
+}
+html[lang$=nm] .gadget .score {
+    color: #777;
+}
+html[lang$=nm] .gadget .reddit-entry .linkflairlabel {
+    background: #23252a;
+    color: #888 !important;
+}
+
+
+
+
+
 html[lang$=nm] .thing .md hr {
     background: rgba(255,255,255,0.1)
 }

@@ -172,7 +172,7 @@ select#comment-visits {
     box-shadow: none;
     margin-top: 6px;
     font-size: 11px;
-    color: #369;
+    color: #369 !important;
 }
 body.mod-toolbox .tb-action-button.tb-top-macro-select {
     margin-top: 5px;

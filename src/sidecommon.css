@@ -5,7 +5,9 @@
 
 .side .md>h2,
 .side .md>h4>a,
-.side .md>h6 {
+.side .md>h6,
+.side .md>h3,
+.side .md>h5 {
     display: block;
     position: relative;
     padding-left: 61px;
@@ -18,11 +20,14 @@
     text-decoration: none;
     font-size: 18px;
     background: 0 0;
-    color: #333
+    color: #333;
+    font-weight: normal;
 }
 
 /* positions */
-.side .md>h2:before {
+.side .md>h2:before,
+.side .md>h3:before,
+.side .md>h5:before {
     background: 1600px -1340px
 }
 .side .md>h4>a:before {
@@ -37,6 +42,8 @@
 
 /* element */
 .side .md>h2:before,
+.side .md>h3:before,
+.side .md>h5:before,
 .side .md>h4>a:before,
 .side .md>h6:before {
     content: "";
@@ -60,6 +67,8 @@
 .side .md>h2:after,
 .side .md>h4>a:after,
 .side .md>h6:after,
+.side .md>h3:after,
+.side .md>h5:after,
 .titlebox form.toggle.flairtoggle:after,
 .titlebox form.toggle.res-sr-style-toggle:after {
     content: '';
@@ -86,7 +95,6 @@
 /* common button */
 .side .md a[href*="#flair"],
 .side .md>h2+ul li a,
-.sidecontentbox .helplink~.content li.more a,
 .sidecontentbox a.helplink {
     border-radius: 2px;
     text-align: center;
@@ -99,7 +107,8 @@
 
 /* common checkboxes */
 .titlebox form.toggle.flairtoggle,
-.titlebox form.toggle.res-sr-style-toggle {
+.titlebox form.toggle.res-sr-style-toggle,
+.titlebox form.toggle.sr_style_toggle {
     position: absolute;
     padding: 0 0 0 30px;
     height: 18px

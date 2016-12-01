@@ -1,35 +1,19 @@
 
 /* PSA box
 --------------------------------------------------------------------------------*/
-.side .md>h5,
-.side .md h5+ul {
-    margin: 0 -7px;
-    padding: 10px 25px;
+
+.side .md > h5 + ul {
+    padding: 0;
     list-style-type: none;
-    background: rgba(0,0,0,0.02)
-}
-.side .md>h5 {
-    font-weight: 400;
-    font-size: 13px;
-    padding-bottom: 5px;
-    position: relative;
-    border-top: 1px solid rgba(0,0,0,0.05);
-}
-.side .md h5+ul {
-    padding-top: 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-.side .md h5+ul p {
-    margin: 0;
-    padding: 2.5px 0;
-    font-size: 11px !important
+    margin: 5px;
+    background: #fafafa;
+    padding: 8px 10px;
+    font-size: 10px;
 }
 
 /* submission rules
 --------------------------------------------------------------------------------*/
 
-.side .md > h3,
 .side .md h3+ul,
 .side .md h3+ul+ol {
     border-left: 1px solid #e3e3e3;
@@ -38,18 +22,16 @@
     list-style-type: none
 }
 .side .md > h3 {
-    border-left: 0;
-    border-bottom: 1px solid #e3e3e3;
-    width: 50%;
-    font-size: 13px;
-    padding-bottom: 5px
+    margin-bottom: -2px !important;
 }
+
 .side .md h3+ul a {
     display: inline-block;
     padding: 6px 8px;
     margin-top: 10px;
     border-radius: 3px;
-    color: #777;
+    color: #555;
+    background: hsla(216,100%,90%,1);
 }
 .side .md h3+ul+ol {
     margin-bottom: 20px;

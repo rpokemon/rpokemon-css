@@ -5,7 +5,6 @@
     margin: 7px;
     padding: 5px;
     background-color: transparent;
-    border-top: 1px solid rgba(255, 255, 255, .1)
 }
 
 /* title */
@@ -19,9 +18,36 @@
     line-height: 14px
 }
 
-/* list */
+.side .sidecontentbox .title {
+    background: #fafafa;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    margin: 0 -12px;
+    padding: 0 !important;
+    line-height:28px;
+    position: relative;
+}
+
+/* content */
 .sidecontentbox .content {
-    border: 0
+    border: 0;
+    background: rgba(0,0,0,0.03);
+    margin-top: 10px;
+}
+
+/* expand/collapse button */
+.sidecontentbox .collapse-button {
+    border-radius: 50%;
+    border: 0;
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin: auto;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
 }
 
 /* sidecontentbox moderators
@@ -40,11 +66,21 @@
     content: '';
     display: block;
     position: absolute;
-    background: url(%%pokesheet%%) -55px -177px;
-    width: 32px;
-    height: 32px;
+    background: url(%%pokesheet%%) -54px -176px;
+    width: 34px;
+    height: 34px;
     top: 0;
-    left: 0
+    left: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.2;
+    margin: -1px;
+}
+
+.sidecontentbox .helplink ~ .content li:not(.more) {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.09);
+    margin-bottom: 3px;
 }
 
 /* author link */
@@ -55,17 +91,17 @@
 
 /* about mod team */
 .sidecontentbox .helplink~.content li.more {
-    border-radius: 3px;
-    background: 0 0
+    background: 0;
+    min-height: initial;
+    margin: 5px 0 0;
 }
 .sidecontentbox .helplink~.content li.more:before {
     display: none
 }
 .sidecontentbox .helplink~.content li.more a {
-    height: 26px;
-    line-height: 26px;
+    line-height: 16px;
     display: block;
-    margin: 5px 0 0 5px
+    text-align: center;
 }
 
 /* message the moderators link */
@@ -81,6 +117,10 @@
 
 /* sidebar misc
 --------------------------------------------------------------------------------*/
+.gadget .reddit-link {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding-bottom: 5px;
+}
 .gadget .reddit-entry {
     margin-top: 5px!important;
     padding-top: 5px;
@@ -91,7 +131,7 @@
     padding: 0 8px;
     max-width: initial !important;
     color: #333 !important;
-    background: #f0f0f0;
+    background: #e5e5e5;
 }
 .gadget .reddit-link-end {
     padding-top: 5px

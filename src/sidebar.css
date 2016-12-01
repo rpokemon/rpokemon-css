@@ -9,7 +9,7 @@
 .side {
     margin-top: 107px;
     position: relative;
-    padding-top: 985px;
+    padding-top: 980px;
     border-radius: 5px;
     border: 1px solid #e3e3e3
 }
@@ -71,7 +71,7 @@
 /* Titlebox stuff
 --------------------------------------------------------------------------------*/
 .titlebox {
-    margin-top: 12px;
+    margin-top: 0;
     font-size: 1.2em;
 }
 
@@ -94,7 +94,9 @@
 .moderator.toggle .main:before,
 .titlebox .bottom,
 .titlebox .leavemoderator:before,
-.titlebox form.leavecontributor-button:before {
+.titlebox form.leavecontributor-button:before,
+.titlebox form.toggle.leavecontributor-button,
+.titlebox .leavemoderator {
     display: none
 }
 
@@ -178,6 +180,17 @@
     right: 25px
 }
 
+/* gold toggle sr style checkbox
+--------------------------------------------------------------------------------*/
+.titlebox form.toggle.sr_style_toggle {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
 /* edit flair area
 --------------------------------------------------------------------------------*/
 
@@ -225,7 +238,8 @@
     right: 0
 }
 
-.res-sr-style-toggle label {
+.res-sr-style-toggle label,
+.sr_style_toggle label {
     display: -webkit-flex;
     display: flex;
     align-items: center
@@ -233,7 +247,8 @@
 
 /* checkboxes */
 .flairtoggle input[type=checkbox]~label:before,
-.res-sr-style-toggle label:before {
+.res-sr-style-toggle label:before,
+.sr_style_toggle label:before {
     content: '';
     display: inline-block;
     width: 17px;
@@ -242,14 +257,17 @@
 }
 .flairtoggle input[type=checkbox],
 .side .md>h2+ul+hr,
-.res-sr-style-toggle input {
+.res-sr-style-toggle input,
+.sr_style_toggle input {
     display: none
 }
-.flairtoggle input[type=checkbox]:not(:checked)~label:before {
+.flairtoggle input[type=checkbox]:not(:checked)~label:before,
+.sr_style_toggle input[type=checkbox]:not(:checked)~label:before {
     background: url(%%pokesheet%%) -178px -195px
 }
 .flairtoggle input[type=checkbox]:checked~label:before,
-.res-sr-style-toggle label:before {
+.res-sr-style-toggle label:before,
+.sr_style_toggle input[type=checkbox]:checked~label:before {
     background: url(%%pokesheet%%) -194px -195px
 }
 
@@ -305,7 +323,6 @@
     width: 40px;
     height: 32px;
 }
-
 
 /* subreddit description
 --------------------------------------------------------------------------------*/
