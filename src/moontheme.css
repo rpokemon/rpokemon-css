@@ -1,9 +1,7 @@
 .icon-menu a { background: transparent }
 
 html[lang$=nm] body,
-html[lang$=nm] body:before,
-html[lang$=nm] .footer-parent > *,
-html[lang$=nm] body > .debuginfo {
+html[lang$=nm] body:before {
     background: #36393e;
     color: #bdc3c7
 }
@@ -272,15 +270,6 @@ html[lang$=nm] .thing .author {
 html[lang$=nm] #search input[type=text] {
     background: rgba(255,255,255,.05);
     color: #aaa!important;
-}
-
-html[lang$=nm] .footer .col li.title,
-html[lang$=nm] .footer .col li:not(.title) a {
-    color: #888
-}
-html[lang$=nm] .bottommenu,
-html[lang$=nm] .bottommenu a {
-    color: #777
 }
 
 html[lang$=nm] .side .md>h2:after,
