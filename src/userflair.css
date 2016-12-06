@@ -370,3 +370,22 @@
 .author[href$="/Kidneyjoe"]~.flair:after {
     background-position: -186px -127px;
 }
+
+/* Gen 7 Lottery Prediction Pool */
+.author[href$="/ElectricEntity"]~.flair:after,
+.author[href$="/bladderrunner"]~.flair:after,
+.author[href$="/mayberryS9"]~.flair:after,
+.author[href$="/TheKOg77"]~.flair:after,
+.author[href$="/ChinroTensei"]~.flair:after,
+.author[href$="/error521"]~.flair:after,
+.author[href$="/daius"]~.flair:after,
+.author[href$="/TheCruncher"]~.flair:after,
+.author[href$="/messejesseb"]~.flair:after,
+.author[href$="/FoolTarot"]~.flair:after,
+.author[href$="/SkittlesDB"]~.flair:after,
+.author[href$="/iadrummer"]~.flair:after,
+.author[href$="/baraboosh"]~.flair:after,
+.author[href$="/Ryantcairns"]~.flair:after,
+.author[href$="/Sushikitteh"]~.flair:after {
+    background-position: -8px -129px;
+}
