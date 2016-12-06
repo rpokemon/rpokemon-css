@@ -2,7 +2,7 @@
 /********************************************************************************
 * FOOTER
 *********************************************************************************/
-.footer, .footer .col { border: 0; border-radius: 0 }
+/*.footer, .footer .col { border: 0; border-radius: 0 }
 .footer-parent {
     padding-top: 120px;
     margin-bottom: -13px;
@@ -29,4 +29,64 @@
 .footer-parent > *, body > .debuginfo {
     background: white;
     margin: 0;
+}*/
+
+.footer-parent {
+    position: relative;
+    height: 450px;
+    margin-bottom: -10px;
+}
+.footer-parent:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(%%footer%%) no-repeat center top / cover;
+    border-top: 5px solid #59f;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.12);
+    z-index: 0;
+}
+
+.footer-parent > * {
+    z-index: 5;
+    position: relative;
+    background: transparent;
+}
+
+.footer {
+    padding: 15px 20px;
+    max-width: 620px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.16);
+    background: rgba(255,255,255,.95);
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+body >.debuginfo {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    margin-top: -50px;
+    height: 10px;
+}
+
+.footer .col {
+    border: 0;
+}
+
+.footer .col .title {
+    color: rgba(0,0,0,0.45);
+}
+
+.footer .col a {
+    color: #59f;
+}
+
+.footer-parent .bottommenu {
+    color: rgba(255,255,255,0.8);
 }
