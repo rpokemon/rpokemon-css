@@ -107,6 +107,10 @@
     background-image: url(%%specialflairs%%)!important;
     background-position: -37px -54px;
 }
+.author[href$="/DavidLuizshair"]~.flair, .flair-tournament {
+    background-image: url(%%specialflairs%%)!important;
+    background-position: -76px -52px;
+}
 
 /********************************************************************************
 * CUSTOM USER BALL FLAIRS
@@ -386,6 +390,7 @@
 .author[href$="/iadrummer"]~.flair:after,
 .author[href$="/baraboosh"]~.flair:after,
 .author[href$="/Ryantcairns"]~.flair:after,
+.author[href$="/Yugeulb"]~.flair:after,
 .author[href$="/Sushikitteh"]~.flair:after {
     background-position: -8px -129px;
 }
