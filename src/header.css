@@ -140,7 +140,7 @@
     display: inline-block;
     background: url(%%pokesheet%%) -55px -371px;
     width: 25px;
-    height: 30px;
+    height: 27px;
     font-size: 0!important;
     margin: 0
 }
@@ -153,15 +153,37 @@
     font-size: 0;
     display: inline-block;
     width: 25px;
-    height: 30px;
-    margin-top: 8px
+    height: 27px;
+}
+
+#header-bottom-right .flat-list, #header-bottom-right .logout {
+    display: inline-block;
+    height: 27px;
+}
+#header-bottom-right .flat-list li {
+    display: inline-block;
+    height: 27px;
+    width: 27px;
+    position: relative;
+}
+#header-bottom-right .flat-list li a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 /* userbar
 --------------------------------------------------------------------------------*/
+#header-bottom-right .beta-hint a {
+    margin-top: 6px;
+}
 .res #userbarToggle {
     background-color: transparent!important;
-    border: 0
+    border: 0;
+    height: 27px;
+    line-height: 27px;
 }
 #header-bottom-right a,
 .res #userbarToggle {
@@ -209,37 +231,24 @@
 
 /* userbar icons
 --------------------------------------------------------------------------------*/
-#mail {
-    display: inline-block;
-    overflow: visible
-}
-#mail.nohavemail {
-    background: -54px -310px
-}
-#mail.havemail {
-    background: -121px -374px
-}
-#modmail {
-    top: -2px;
-    margin-bottom: -6px
-}
-#modmail.nohavemail {
-    background: -152px -374px
-}
-#modmail.havemail {
-    background: -54px -404px
-}
-.gearIcon {
-    background: -116px -339px!important;
-    top: 5px
-}
-.gearIcon:after {
-    display: none
-}
+#mail { display: inline-block; overflow: visible }
+#mail.nohavemail { background: -54px -310px }
+#mail.havemail { background: -121px -374px }
+
+#modmail.nohavemail { background: -86px -404px }
+#modmail.havemail { background: -54px -404px }
+
+#new_modmail.nohavemail { background: -12px -341px; }
+#new_modmail.havemail { background: -12px -371px; }
+
+#header-bottom-right .gearIcon {background: -116px -339px!important;top: 5px}
+#header-bottom-right .gearIcon:after {display: none}
+
 #mail,
 #modmail,
-.gearIcon {
-    height: 28px!important;
+#new_modmail,
+#header-bottom-right .gearIcon {
+    height: 27px!important;
     width: 28px!important;
     background-image: url(%%pokesheet%%)!important
 }
@@ -249,10 +258,21 @@
     color: #fff!important
 }
 
+#header-bottom-right .imageInfoSettingsButton {
+    background: transparent;
+    border: 0;
+    display: inline-block;
+    padding: 0;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+}
+
 /* opacity hover/no hover
 --------------------------------------------------------------------------------*/
 #mail,
 #modmail,
+#new_modmail,
 .gearIcon,
 .loggedin .logout a:before,
 a.pref-lang {
@@ -261,8 +281,9 @@ a.pref-lang {
 
 #mail:hover,
 #modmail:hover,
+#new_modmail:hover,
 .gearIcon:hover,
-.loggedin .logout a:before:hover,
+.loggedin .logout a:hover:before,
 a.pref-lang:hover {
     opacity: 1
 }
@@ -349,6 +370,9 @@ a.pref-lang:hover {
 .listing-page #header .tabmenu li a[href^="j"] {
     background: -340px 0
 }
+.listing-page #header .tabmenu li.res-toggle-filterline-visibility a {
+    background: -410px 0;
+}
 
 /* element */
 .listing-page #header .tabmenu li {
@@ -360,6 +384,7 @@ a.pref-lang:hover {
     content: "";
     display: inline-block;
     background-image: url(%%tabmenu%%)!important;
+    background-position: -340px 0;
     width: 34px;
     height: 32px;
     opacity: .6;
@@ -460,6 +485,8 @@ body #header .tabmenu li:first-of-type:last-of-type a {
 
 .listing-page .res-filter-visited-links a:after { content: 'filter visited links' !important }
 .listing-page .selected .res-filter-visited-links a:after { content: 'unfilter visited links' !important }
+
+.listing-page .res-toggle-filterline-visibility a:after { content: 'toggle filterline' }
 
 .listing-page #header .tabmenu li a[href^="j"]:after {
     content: 'queue'

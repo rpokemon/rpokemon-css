@@ -46,7 +46,6 @@ body>.content {
 }
 .side .md>blockquote:first-of-type>p>a:before {
     content: "";
-    background: url(%%Flair%%);
     display: block;
     position: absolute;
     width: 40px;
@@ -58,29 +57,14 @@ body>.content {
 /* top announcement flair positioning
 --------------------------------------------------------------------------------*/
 .side .md>blockquote:first-of-type>p:nth-of-type(1)>a:before {
-    background-position: -560px -192px /* TODO: Change this sprite weekly (PoTW) */
+    background: url(%%alolaflair%%) -840px 0px /* TODO: Change this sprite weekly (PoTW) */
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(2)>a:before {
-    background-position: -800px -32px
+    background: url(%%kantoflair%%) -800px -32px
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(3)>a:before {
     background: url(%%pokesheet%%) -6px -304px
 }
-
-
-.side .md>blockquote:first-of-type>p:nth-of-type(3)>a:before {
-    background: url(%%Flair%%) -160px -128px;
-}
-.side .md>blockquote:first-of-type>p:nth-of-type(3)>a em {
-    font-size: 11px;
-}
-.side .md>blockquote:first-of-type>p:nth-of-type(3)>a strong {
-    padding-top: 2px;
-}
-.side .md>blockquote:first-of-type>p:nth-of-type(3) {
-    width: 230px;
-}
-
 
 /********************************************************************************
 * ANNOUNCEMENT BAR

@@ -131,7 +131,11 @@
 
 .linkflair-rotation .thumbnail,
 .linkflair-rotation .thumbnail.self {
-    background: url(%%extrasheet%%) !important
+    background: url(%%whitesheet%%) 0 -140px !important;
+}
+html[lang$=nm] .linkflair-rotation .thumbnail,
+html[lang$=nm] .linkflair-rotation .thumbnail.self {
+    background: url(%%whitesheet%%) -70px -140px !important;
 }
 
 .thumbnail img {

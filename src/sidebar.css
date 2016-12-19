@@ -24,7 +24,7 @@
 
 #ad_main_top {
     position: absolute;
-    top: 170px;
+    top: 180px;
     left: 0;
     transform: scale(0.98);
 }
@@ -180,6 +180,10 @@
     right: 25px
 }
 
+.res .titlebox .multi-count {
+    display: none;
+}
+
 /* gold toggle sr style checkbox
 --------------------------------------------------------------------------------*/
 .titlebox form.toggle.sr_style_toggle {
@@ -297,27 +301,26 @@
 
 /* icons */
 .side .md a[href$="/submit"]:before {
-    background: -960px 0
+    background: url(%%kantoflair%%) -960px 0
 }
 .side .md a[href$="selftext=true"]:before {
-    background: -440px -416px
+    background: url(%%sinnohflair%%) -840px -32px
 }
 .side .md a[href$="#q"]:before {
-    background: -800px -32px
+    background: url(%%johtoflair%%) -640px -32px
 }
 .side .md a[href*="pokemontrades"]:before {
-    background: -840px -576px
+    background: url(%%sinnohflair%%) -80px -32px
 }
 .side .md a[href*="pokememes"]:before {
-    background: -480px -64px
+    background: url(%%formsflair%%) -640px -128px
 }
 .side .md a[href*="shinypokemon"]:before {
-    background: -720px -768px
+    background: url(%%formsflair%%) -40px 0
 }
 
 .side .md>h2+ul li a:before {
     content: "";
-    background-image: url(%%Flair%%) !important;
     display: block;
     position: absolute;
     width: 40px;

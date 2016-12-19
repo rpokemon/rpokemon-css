@@ -163,10 +163,12 @@
     color: #fff !important;
 }
 
+.thing .tagline .author.moderator[href$="/technophonix1"],
 .thing .author[href$="/technophonix1"],
 .side .tagline .author[href$="/technophonix1"],
 .author[href$="/technophonix1"]~.flair:before {
-    background-position: 0 -180px;
+    background-position: 0 -180px !important;
+    color: #333 !important;
 }
 
 /* Greatballs
