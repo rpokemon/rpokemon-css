@@ -127,11 +127,13 @@
     background-image: url(%%specialflairs%%)!important;
     background-position: -217px -50px;
 }
-
-/* golden magnemite */
 .author[href$="/WDey"]~.flair {
     background-image: url(%%specialflairs%%)!important;
     background-position: -257px -54px;
+}
+.author[href$="/Scathee"]~.flair {
+    background-image: url(%%specialflairs%%)!important;
+    background-position: 3px -91px;
 }
 
 /********************************************************************************
@@ -404,7 +406,6 @@
 /* tall alolan exeggutor ballflair - shitpost winners */
 .author[href$="/PassingThroughRider"]~.flair:after,
 .author[href$="/SomebodyUnown"]~.flair:after,
-.author[href$="/Cls31"]~.flair:after,
 .author[href$="/akbarizcool"]~.flair:after {
     background-position: -13px -169px;
     height: 95px;
@@ -450,7 +451,8 @@
     transform: scale(0.9);
 }
 
-.author[href$="/Crusader1998123"]~.flair:after {
+.author[href$="/Crusader1998123"]~.flair:after,
+.author[href$="/Cls31"]~.flair:after {
     background-position: -48px -171px;
     transform: scale(0.9);
 }
