@@ -135,7 +135,7 @@ html:lang(ns) .link.linkflair-spoiler a.title:before {
 /* rule removal linkflair on comments page
 --------------------------------------------------------------------------------*/
 
-.comments-page .thing.link.linkflair-rule .linkflairlabel {
+.comments-page .thing.link.linkflair-rule .title .linkflairlabel {
     -webkit-transform: rotate(0)!important;
     transform: rotate(0)!important;
     background: #e74c3c!important;
@@ -149,7 +149,7 @@ html:lang(ns) .link.linkflair-spoiler a.title:before {
     padding: 5px;
     font-size: 14px;
 }
-.comments-page .thing.link.linkflair-rule .linkflairlabel:before {
+.comments-page .thing.link.linkflair-rule .title .linkflairlabel:before {
     content: 'REMOVED: ';
     color: rgba(255,255,255,0.7);
 }
