@@ -1,3 +1,4 @@
+#! python3
 import os.path
 import shutil
 import glob

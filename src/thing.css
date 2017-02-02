@@ -105,7 +105,7 @@
 .thumbnail.nsfw {
     background: -70px 0
 }
-.linkflair-spoiler .thumbnail {
+.linkflair-spoiler .thumbnail, .thumbnail.spoiler {
     background: -70px -70px
 }
 .stickied .thumbnail.self {

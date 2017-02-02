@@ -135,6 +135,14 @@
     background-image: url(%%specialflairs%%)!important;
     background-position: 3px -91px;
 }
+.author[href$="/Haruka-sama"]~.flair {
+    background-image: url(%%specialflairs%%)!important;
+    background-position: -38px -89px;
+}
+.author[href$="/Theprinceofarendelle"]~.flair {
+    background-image: url(%%specialflairs%%)!important;
+    background-position: -76px -90px;
+}
 
 /********************************************************************************
 * CUSTOM USER BALL FLAIRS
@@ -451,8 +459,17 @@
     transform: scale(0.9);
 }
 
+/* Pokedex */
 .author[href$="/Crusader1998123"]~.flair:after,
-.author[href$="/Cls31"]~.flair:after {
+.author[href$="/KingPikablu"]~.flair:after,
+.author[href$="/Cls31"]~.flair:after,
+.flair.flair-dex-complete:after {
     background-position: -48px -171px;
+    transform: scale(0.9);
+}
+
+/* pokebank guess winners */
+.flair.flair-bankflair:after {
+    background: url(%%balls%%) no-repeat -13px -266px !important;
     transform: scale(0.9);
 }

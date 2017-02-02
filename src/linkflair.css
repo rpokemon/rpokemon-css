@@ -85,6 +85,13 @@
     border-left-color: #e4796b !important
 }
 
+.spoiler-stamp.stamp {
+    background: #e4796b;
+    border-color: #e4796b;
+    color: white;
+    margin-top: -1px;
+}
+
 /* spoiler linkflairlabel and title overlay
 --------------------------------------------------------------------------------*/
 

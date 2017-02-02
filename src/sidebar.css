@@ -373,35 +373,24 @@
     content: '';
     display: block;
     position: absolute;
-    background: url(%%pokesheet%%) -125px -405px;
     width: 27px;
     height: 27px;
+    top: 3px;
     left: 10px;
-    top: 3px
+    background: url(%%symsm%%) no-repeat 0 1px / auto 27px;
 }
 .side .md > h1 a:last-child:before {
-    left: 3px;
-    background-position: -157px -405px
+    left: 8px;
+    background-position: -27px 1px;
 }
 
-
-html[lang$=nm] .side .md > h1 a:last-child:before {
-    background-position: -157px -437px
-}
+/* nightmode */
 html[lang$=nm] .side .md > h1 a:last-child {
-    color: #2da8e8
+    color: #57aad4
 }
-
-html:not([lang$=nm]) .side .md > h1 a:first-child:before {
-    background-position: -125px -437px
-}
+/* sun mode */
 html:not([lang$=nm]) .side .md > h1 a:first-child {
-    color: #e3b34d
-}
-
-html:not([lang$=nm]) .side .md > h1 a:last-child,
-html[lang$=nm] .side .md > h1 a:first-child {
-    font-weight: 400
+    color: #ea8f24
 }
 
 /* Morelinks
