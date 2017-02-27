@@ -167,15 +167,15 @@
 .res .thing .tagline .author.submitter[href$="/Hero_Of_Legend"],
 .side .tagline .author[href$="/Hero_Of_Legend"],
 .author[href$="/Hero_Of_Legend"]~.flair:before {
-    background-position: 0 -72px;
+    background-position: 0 -72px !important;
     color: #fff !important;
 }
 
-.thing .author[href$="/aDr1v3"],
-.res .thing .tagline .author.submitter[href$="/aDr1v3"],
-.side .tagline .author[href$="/aDr1v3"],
-.author[href$="/aDr1v3"]~.flair:before {
-    background-position: 0 -108px;
+.thing .author[href$="/Twitch-Plays-Pokemon"],
+.res .thing .tagline .author.submitter[href$="/Twitch-Plays-Pokemon"],
+.side .tagline .author[href$="/Twitch-Plays-Pokemon"],
+.author[href$="/Twitch-Plays-Pokemon"]~.flair:before {
+    background-position: 0 -108px !important;
     color: #fff !important;
 }
 
@@ -271,6 +271,7 @@
 .author[href$="/SynergizerSyd"]~.flair:after,
 .author[href$="/TheRoto"]~.flair:after,
 .author[href$="/ElStrawFedora"]~.flair:after,
+.author[href$="/keskisormi"]~.flair:after,
 .author[href$="/Invis-"]~.flair:after {
     background-position: -117px -54px;
 }
@@ -472,4 +473,16 @@
 .flair.flair-bankflair:after {
     background: url(%%balls%%) no-repeat -13px -266px !important;
     transform: scale(0.9);
+}
+
+.flair.flair-tapubulu-medal:after {
+    background: url(%%balls%%) no-repeat -211px -206px !important;
+    width: 42px;
+    height: 42px;
+    margin-top: -8px;
+    margin-left: -10px;
+}
+
+.flair.flair-pikacup:after {
+    background: url(%%balls%%) no-repeat -225px -127px !important;
 }
