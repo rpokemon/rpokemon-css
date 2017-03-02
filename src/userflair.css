@@ -561,6 +561,17 @@
     margin-left: -10px;
 }
 
+/* background: url(%%balls%%) no-repeat -258px -206px !important;*/
+
+.flair.flair-tapufini-medal:after {
+    background: url(%%balls%%) no-repeat -258px -248px !important;
+    width: 42px;
+    height: 42px;
+    margin-top: -8px;
+    margin-left: -10px;
+}
+
+
 .flair.flair-pikacup:after {
     background: url(%%balls%%) no-repeat -225px -127px !important;
 }
