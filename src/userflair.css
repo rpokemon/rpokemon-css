@@ -219,6 +219,10 @@
     background-image:url(%%specialflairs%%) !important;
     background-position:-118px -92px
 }
+.author[href$="/Cephei_Delta"]~.flair{
+    background-image:url(%%specialflairs%%) !important;
+    background-position:-162px -90px
+}
 
 /********************************************************************************
 * CUSTOM USER BALL FLAIRS
