@@ -71,6 +71,10 @@
     height: 1px
 }
 
+.side .md h3+ul+ol ul {
+    padding-left: 25px;
+}
+
 /* sidebar calendar
 --------------------------------------------------------------------------------*/
 .side .md table td,
