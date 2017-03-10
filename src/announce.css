@@ -57,7 +57,7 @@ body>.content {
 /* top announcement flair positioning
 --------------------------------------------------------------------------------*/
 .side .md>blockquote:first-of-type>p:nth-of-type(1)>a:before {
-    background: url(%%kantoflair%%) -80px 0 /* TODO: Change this sprite weekly (PoTW) */
+    background: url(%%unovaflair%%) -400px -32px /* TODO: Change this sprite weekly (PoTW) */
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(2)>a:before {
     background: url(%%kantoflair%%) -800px -32px
