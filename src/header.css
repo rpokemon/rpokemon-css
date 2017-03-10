@@ -339,56 +339,55 @@ a.pref-lang:hover {
 /* positions */
 .listing-page #header .tabmenu li:nth-child(1) a {
     /* Hot */
-    background: -6px 0
+    background: -5px 0
 }
 .listing-page #header .tabmenu li:nth-child(2) a {
     /* New */
-    background: -43px 0
+    background: -42px 0
 }
 .listing-page #header .tabmenu li:nth-child(3) a {
     /* Rising */
-    background: -80px 0
+    background: -79px 0
 }
 .listing-page #header .tabmenu li:nth-child(4) a {
     /* Controversial */
-    background: -117px 0
+    background: -116px 0
 }
 .listing-page #header .tabmenu li:nth-child(5) a {
     /* Top */
-    background: -154px 0
+    background: -153px 0
 }
 .listing-page #header .tabmenu li:nth-child(6) a {
     /* Gilded */
-    background: -191px 0
+    background: -190px 0
 }
 .listing-page #header .tabmenu li:nth-child(7) a {
     /* Wiki */
-    background: -228px 0
+    background: -227px 0
 }
 .listing-page #header .tabmenu li:nth-child(8) a {
     /* Promoted */
-    background: -265px 0
+    background: -264px 0
 }
 .listing-page #header .tabmenu li.res-toggle-filterline-visibility a {
     /* Toggle Tilterline */
-    background: -302px 0;
+    background: -301px 0;
 }
 .listing-page #header .tabmenu li.res-show-images a {
     /* Show Images */
-    background: -339px 0
+    background: -338px 0
 }
 .listing-page #header .tabmenu li.tb-metrics a {
     /* Metrics */
-    background: -376px 0;
+    background: -375px 0;
 }
-
-.listing-page #header .tabmenu li.tb-metrics a {
+.listing-page #header .tabmenu li.tb-queuetools-tab a {
     /* Queue */
-    background: -413px 0;
+    background: -412px 0;
 }
 .listing-page #header .tabmenu li.res-filter-visited-links a {
     /* Visited */
-    background: -486px 0;
+    background: -485px 0;
 }
 
 
@@ -402,7 +401,7 @@ a.pref-lang:hover {
     content: "";
     display: inline-block;
     background-image: url(%%tabmenu%%)!important;
-    background-position: -340px 0;
+    background-position: -448px 0;
     width: 34px;
     height: 32px;
     opacity: .6;
