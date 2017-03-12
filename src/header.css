@@ -176,6 +176,9 @@
 
 /* userbar
 --------------------------------------------------------------------------------*/
+#header-bottom-right .beta-hint {
+    top: 0;
+}
 #header-bottom-right .beta-hint a {
     margin-top: 6px;
 }
@@ -407,7 +410,8 @@ a.pref-lang:hover {
     opacity: .6;
     font-size: 0;
     -webkit-transition: opacity .1s ease;
-    transition: opacity .1s ease
+    transition: opacity .1s ease;
+    position: absolute;
 }
 .listing-page #header .tabmenu li a:hover,
 .listing-page #header .tabmenu li.selected a {
