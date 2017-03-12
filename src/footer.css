@@ -76,6 +76,7 @@ body >.debuginfo {
 }
 
 .footer .col {
+    max-width: 150px;
     border: 0;
 }
 
