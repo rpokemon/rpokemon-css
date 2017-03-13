@@ -233,25 +233,28 @@
 .author[href$="/AutoModerator"] {
     background-position: 0 -36px!important
 }
+
 .thing .author[href$="/A_Wild_Abra"],
 .res .thing .tagline .author.submitter[href$="/A_Wild_Abra"],
 .side .tagline .author[href$="/A_Wild_Abra"] {
     background-position: 0 -144px!important;
     color: #fff!important
 }
-.author[href$="/A_Wild_Abra"]~.flair:after {
-    background: url(%%balls%%) -49px -128px
-}
 
 /* OLD MODERATORS RED BUBBLE */
+/* Hero_Of_Legend */
 .thing .author[href$="/Hero_Of_Legend"],
 .res .thing .tagline .author.submitter[href$="/Hero_Of_Legend"],
 .side .tagline .author[href$="/Hero_Of_Legend"],
 .author[href$="/Hero_Of_Legend"]~.flair:before,
+
+/* SHINX_FUCKER */
 .thing .author[href$="/SHINX_FUCKER"],
 .res .thing .tagline .author.submitter[href$="/SHINX_FUCKER"],
 .side .tagline .author[href$="/SHINX_FUCKER"],
 .author[href$="/SHINX_FUCKER"]~.flair:before,
+
+/* Thundergrunge */
 .thing .author[href$="/Thundergrunge"],
 .res .thing .tagline .author.submitter[href$="/Thundergrunge"],
 .side .tagline .author[href$="/Thundergrunge"],
@@ -473,6 +476,11 @@
 .author[href$="/Lady_Baruren"]~.flair:after,
 .author[href$="/TexasAndroid"]~.flair:after {
     background-position: -83px -171px;
+}
+
+/* AWild_Abra spoon */
+.author[href$="/A_Wild_Abra"]~.flair:after {
+    background: url(%%balls%%) -49px -128px
 }
 
 /* technophonix1 stone
