@@ -1,0 +1,136 @@
+.link .flair {
+    top: -1px;
+}
+
+/********************************************************************************
+* Skull Grunt Flairs
+*********************************************************************************/
+.author~.flair {
+    background-image: url(%%skullflair%%)!important;
+}
+
+.author[href$="a"]~.flair,
+.author[href$="e"]~.flair,
+.author[href$="i"]~.flair,
+.author[href$="m"]~.flair,
+.author[href$="q"]~.flair,
+.author[href$="u"]~.flair,
+.author[href$="y"]~.flair,
+.author[href$="3"]~.flair,
+.author[href$="7"]~.flair,
+.author[href$="A"]~.flair,
+.author[href$="B"]~.flair,
+.author[href$="C"]~.flair,
+.author[href$="D"]~.flair,
+.author[href$="E"]~.flair,
+.author[href$="F"]~.flair,
+.author[href$="G"]~.flair
+{
+    background-position: -0px -0px!important;
+}
+
+.author[href$="b"]~.flair,
+.author[href$="f"]~.flair,
+.author[href$="j"]~.flair,
+.author[href$="n"]~.flair,
+.author[href$="r"]~.flair,
+.author[href$="v"]~.flair,
+.author[href$="z"]~.flair,
+.author[href$="2"]~.flair,
+.author[href$="6"]~.flair,
+.author[href$="H"]~.flair,
+.author[href$="I"]~.flair,
+.author[href$="J"]~.flair,
+.author[href$="K"]~.flair,
+.author[href$="L"]~.flair,
+.author[href$="M"]~.flair,
+.author[href$="N"]~.flair
+{
+    background-position: -50px -0px!important;
+}
+
+.author[href$="c"]~.flair,
+.author[href$="g"]~.flair,
+.author[href$="k"]~.flair,
+.author[href$="o"]~.flair,
+.author[href$="s"]~.flair,
+.author[href$="w"]~.flair,
+.author[href$="1"]~.flair,
+.author[href$="5"]~.flair,
+.author[href$="9"]~.flair,
+.author[href$="O"]~.flair,
+.author[href$="P"]~.flair,
+.author[href$="Q"]~.flair,
+.author[href$="R"]~.flair,
+.author[href$="S"]~.flair,
+.author[href$="T"]~.flair,
+.author[href$="U"]~.flair
+{
+    background-position: -100px 0px!important;
+}
+
+.author[href$="d"]~.flair,
+.author[href$="h"]~.flair,
+.author[href$="l"]~.flair,
+.author[href$="p"]~.flair,
+.author[href$="t"]~.flair,
+.author[href$="x"]~.flair,
+.author[href$="0"]~.flair,
+.author[href$="4"]~.flair,
+.author[href$="8"]~.flair,
+.author[href$="V"]~.flair,
+.author[href$="W"]~.flair,
+.author[href$="X"]~.flair,
+.author[href$="Y"]~.flair,
+.author[href$="Z"]~.flair,
+.author[href$="-"]~.flair,
+.author[href$="_"]~.flair
+{
+    background-position: -155px -0px!important;
+}
+
+
+
+/********************************************************************************
+* CUSTOM SKULL FLAIRS
+*********************************************************************************/
+.author[href$="/BIG_BAD_GUZMA"]~.flair {
+    background-position: -255px -0px!important;
+}
+
+.author[href$="/BIG_BAD_GUZMA"]~.flair:after {
+    background-image: url(%%pokesheet%%)!important;
+    background-position: -8px -370px
+}
+
+.author[href$="/Big_Sis_Plumeria"]~.flair {
+    background-position: -200px -0px!important;
+}
+.author[href$="/PlumsSalazzle"]~.flair {
+    background-position: -895px -0px!important;
+}
+
+.author[href$="/xX_gladion_Xx"]~.flair {
+    background-position: -305px -0px!important;
+}
+
+.author[href$="/TSkull_Choreographer"]~.flair {
+    background-position: -750px -0px!important;
+}
+
+.author[href$="/bigbadskullgrunt001"]~.flair {
+    background-position: -1055px -0px!important;
+}
+
+.author[href$="/TeamSkull4Ever"]~.flair {
+    background-position: -965px -3px!important;
+}
+
+.author[href$="/Officer_Nanu"]~.flair {
+    background-position: -700px -0px!important;
+}
+
+.author[href$="/Officer_Nanu"]~.flair:after {
+    background-position: -79px -14px!important;
+}
+

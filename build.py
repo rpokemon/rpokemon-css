@@ -36,7 +36,8 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 'userflair.css',      # user flairs
                 'moontheme.css',      # night mode
                 'banner.css',         # banner
-                'sm_release.css',     # fancy CSS for Pokemon Sun & Moon Release Megathread 
+                'sm_release.css',     # fancy CSS for Pokemon Sun & Moon Release Megathread
+                'afd.css',            # april fools day 2017 source file
               ]      
                 
 # input/output variables
@@ -48,7 +49,7 @@ unmin_file  = 'unmin.css'
 def top(build_ver):
     return ('/*\n' +
             '  CSS theme for /r/Pokemon; build #' + str(build_ver) + '\n' +
-            '  Authors: Hero_of_Legend, technophonix1, Atooz, & kwwxis' + '\n' +
+            '  Authors: Hero_of_Legend, technophonix1, Atooz, kwwxis & Haruka-sama' + '\n' +
             ' */')
 
 def run():
