@@ -48,7 +48,7 @@ unmin_file  = 'unmin.css'
 
 def top(build_ver):
     return ('/*\n' +
-            '  CSS theme for /r/Pokemon; build #' + str(build_ver) + '\n' +
+            '  AFD CSS theme for /r/Pokemon; build #' + str(build_ver) + '\n' +
             '  Authors: Hero_of_Legend, technophonix1, Atooz, kwwxis & Haruka-sama' + '\n' +
             ' */')
 
