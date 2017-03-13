@@ -1,11 +1,65 @@
-.link .flair {
-    top: -1px;
+
+/* Vertically align trainer flairs */
+.flair {
+    width: 50px!important;
+    height: 50px!important;
+    top: -42px!important;
+    left: 63px!important;
+}
+
+.link .flair{
+    top: -18px!important;
+    left: 140px!important;
+}
+
+.titlebox .flair {
+    bottom: -16px!important;
+    top: auto!important;
+    left: -7px!important;
+}
+
+.sidecontentbox .flair {
+    left: 2px!important;
+    top: auto!important;
+    bottom: 0px!important;
+    margin-left: -5px!important;
+    transform: scale(0.7)!important;
+    transform-origin: left bottom!important;
+}
+.sidecontentbox .flair:before {
+    transform: scale(1.4)!important;
+    transform-origin: left bottom!important;
+    left: 60px!important;
+    bottom: 4px!important;
+}
+.sidecontentbox .flair:after {
+    transform: scale(1.4)!important;
+    transform-origin: left bottom!important;
+    left: 333px!important;
+}
+
+.flair.flair-tf:before {
+    left: 51px!important;
+    bottom: 4px!important;
+}
+
+.flair:after {
+    top: auto!important;
+    bottom: 2px!important;
+    left: 249px!important;
+}
+
+
+/* Change Subscriber name */
+.titlebox .number:after {
+    content: " Team Skull Grunts"!important;
 }
 
 /********************************************************************************
 * Skull Grunt Flairs
 *********************************************************************************/
 .author~.flair {
+    background: url(%%skullflair%%)!important;
     background-image: url(%%skullflair%%)!important;
 }
 
@@ -89,8 +143,6 @@
     background-position: -155px -0px!important;
 }
 
-
-
 /********************************************************************************
 * CUSTOM SKULL FLAIRS
 *********************************************************************************/
@@ -98,16 +150,11 @@
     background-position: -255px -0px!important;
 }
 
-.author[href$="/BIG_BAD_GUZMA"]~.flair:after {
-    background-image: url(%%pokesheet%%)!important;
-    background-position: -8px -370px
-}
-
 .author[href$="/Big_Sis_Plumeria"]~.flair {
-    background-position: -200px -0px!important;
+    background-position: -203px -0px!important;
 }
 .author[href$="/PlumsSalazzle"]~.flair {
-    background-position: -895px -0px!important;
+    background-position: -901px -0px!important;
 }
 
 .author[href$="/xX_gladion_Xx"]~.flair {
@@ -130,7 +177,92 @@
     background-position: -700px -0px!important;
 }
 
+/* Reddit Mod Police Flair */
+.author[href$="/bigslothonmyface"]~.flair,
+.author[href$="/Dragon_Claw"]~.flair,
+.author[href$="/Ferretsroq"]~.flair,
+.author[href$="/technophonix1"]~.flair,
+.author[href$="/Will-TVR"]~.flair,
+.author[href$="/kwwxis"]~.flair,
+.author[href$="/ngbeslhang"]~.flair,
+.author[href$="/DavidLuizshair"]~.flair,
+.author[href$="/Mlahk7"]~.flair,
+.author[href$="/jaksida"]~.flair,
+.author[href$="/Thief-Noctis"]~.flair,
+.author[href$="/Mockturne"]~.flair,
+.author[href$="/RustRider"]~.flair,
+.author[href$="/tizorres"]~.flair,
+.author[href$="/PlayOnSunday"]~.flair,
+.author[href$="/TARS-CASE"]~.flair,
+.author[href$="/Scathee"]~.flair,
+.author[href$="/ad3z10"]~.flair,
+.author[href$="/Hyouten"]~.flair,
+.author[href$="/Koni_Fox"]~.flair,
+.author[href$="/AinhartLoz"]~.flair,
+.author[href$="/Haruka-sama"]~.flair,
+.author[href$="/IAmzSamz"]~.flair,
+.author[href$="/CrimsonMudkip"]~.flair,
+.author[href$="/TexasAndroid"]~.flair,
+.author[href$="/Lady_Baruren"]~.flair,
+.author[href$="/A_Wild_Abra"]~.flair
+{
+    background: url(%%skullflair%%)!important;
+    background-image: url(%%skullflair%%)!important;
+    background-position: -401px 0px!important;
+}
+
+/********************************************************************************
+* CUSTOM SKULL BALL FLAIRS
+*********************************************************************************/
+
+/* Give subscribers a dusk ball */
+.flair:after {
+    background-position: -223px -53px!important;
+}
+
+.author[href$="/BIG_BAD_GUZMA"]~.flair:after {
+    background-image: url(%%pokesheet%%)!important;
+    background-position: -8px -370px!important;
+}
+
 .author[href$="/Officer_Nanu"]~.flair:after {
     background-position: -79px -14px!important;
 }
 
+.author[href$="/xX_gladion_Xx"]~.flair:after {
+    background-position: -114px -90px!important;
+}
+
+
+
+/* Give Mods a Great Ball */
+.author[href$="/bigslothonmyface"]~.flair:after,
+.author[href$="/Dragon_Claw"]~.flair:after,
+.author[href$="/Ferretsroq"]~.flair:after,
+.author[href$="/technophonix1"]~.flair:after,
+.author[href$="/Will-TVR"]~.flair:after,
+.author[href$="/kwwxis"]~.flair:after,
+.author[href$="/ngbeslhang"]~.flair:after,
+.author[href$="/DavidLuizshair"]~.flair:after,
+.author[href$="/Mlahk7"]~.flair:after,
+.author[href$="/jaksida"]~.flair:after,
+.author[href$="/Thief-Noctis"]~.flair:after,
+.author[href$="/Mockturne"]~.flair:after,
+.author[href$="/RustRider"]~.flair:after,
+.author[href$="/tizorres"]~.flair:after,
+.author[href$="/PlayOnSunday"]~.flair:after,
+.author[href$="/TARS-CASE"]~.flair:after,
+.author[href$="/Scathee"]~.flair:after,
+.author[href$="/ad3z10"]~.flair:after,
+.author[href$="/Hyouten"]~.flair:after,
+.author[href$="/Koni_Fox"]~.flair:after,
+.author[href$="/AinhartLoz"]~.flair:after,
+.author[href$="/Haruka-sama"]~.flair:after,
+.author[href$="/IAmzSamz"]~.flair:after,
+.author[href$="/CrimsonMudkip"]~.flair:after,
+.author[href$="/TexasAndroid"]~.flair:after,
+.author[href$="/Lady_Baruren"]~.flair:after,
+.author[href$="/A_Wild_Abra"]~.flair:after
+{
+    background-position: -43px -14px!important;
+}
