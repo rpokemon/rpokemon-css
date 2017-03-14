@@ -34,9 +34,11 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 
                 'flair.css',          # user flairs
                 'userflair.css',      # user flairs
-                'moontheme.css',      # night mode
+                #'moontheme.css',      # night mode
                 'banner.css',         # banner
                 'sm_release.css',     # fancy CSS for Pokemon Sun & Moon Release Megathread
+                'afd_suntheme.css', # Swap sun and moon themes
+                'afd_moontheme.css', # Swap sun and moon themes
                 'afd.css',            # april fools day 2017 source file
               ]      
                 

@@ -1,3 +1,8 @@
+/* Resize for Beast Ball */
+.titlebox .users-online .number:before {
+    background-position: 0px -237px!important;
+    background-size: 200px!important;
+}
 
 /* Vertically align trainer flairs */
 .flair {
