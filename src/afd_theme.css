@@ -1,0 +1,366 @@
+.icon-menu a { background: transparent }
+
+body,
+body:before {
+    background: #36393e;
+    color: #bdc3c7
+}
+
+.md a {
+    color: #48f
+}
+.comment .md a:visited,
+.comment .md p>a:visited,
+.link .md a:visited {
+    color: #8271ff
+}
+
+.thing.link,
+.entry,
+.subreddit-report-form,
+.post-sharing,
+.comment .score,
+#previoussearch,
+.combined-search-page #previoussearch .res-search-pane,
+.side,
+.titlebox .leavecontributor-button,
+.titlebox .leavemoderator,
+.titlebox form.toggle,
+.submit-page .roundfield {
+    background: #282b30 !important;
+    color: #aaa;
+    border-color: #282b30;
+    box-shadow: none;
+}
+
+.link.RES-keyNav-activeThing,
+.comment.RES-keyNav-activeThing .entry {
+    border-color: #575a63 !important;
+}
+
+.link .midcol {
+    border-right: 0;
+}
+
+/* comment page
+--------------------------------------------------------------------------------*/
+
+.comment-permalink-page .commentarea>.infobar,
+.commentarea .child>.usertext,
+.commentarea>.panestack-title,
+.commentarea>.usertext,
+.gold-accent.comment-visits-box {
+    background: #282b30;
+}
+.commentarea > * {
+    border: 0;
+}
+
+.commentarea>.menuarea {
+    background: #2a2d33
+}
+.gold-accent.comment-visits-box .title {
+    color: rgba(255, 255, 255, .3)
+}
+
+#newlink-with-image-upload .image-upload-drop-target,
+.combined-search-page #search input[type=text],
+.commentarea>.usertext textarea,
+.comments-page .usertext textarea,
+.submit-page .roundfield input[type=text],
+.submit-page .roundfield input[type=url],
+.submit-page .roundfield textarea,
+.markdownEditor .edit-btn:not(.btn-macro) {
+    background-color: rgba(255, 255, 255, .05);
+    color: #aaa!important;
+    border: 1px solid rgba(255, 255, 255, .15)!important
+}
+
+.RESUserTagImage:after {
+    background-image: none!important
+}
+.drop-choices,
+.side #searchexpando,
+body.mod-toolbox .tb-general-button, 
+body.mod-toolbox .tb-bracket-button,
+.listing-page .content>.menuarea .spacer,
+.reddit-infobar {
+    background: #282b30;
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: #c7c7c7
+}
+.drop-chToices a.choice:hover {
+    background: rgba(255, 255, 255, .06)
+}
+.new-comment .usertext-body,
+.usertext.border .usertext-body {
+    background-color: transparent
+}
+.thing.comment.new-comment:not(.RES-keyNav-activeThing) .entry {
+    border-color: #e5efff !important;
+}
+
+/* spoiler overlay
+--------------------------------------------------------------------------------*/
+.link.linkflair-spoiler a.title:before {
+    border: 2px dashed #36393e;
+    background: #282b30
+}
+
+
+/* thing title
+--------------------------------------------------------------------------------*/
+.link a.title {
+    color: rgba(255, 255, 255, .8)
+}
+.link a.title:visited,
+.thing .title:visited,
+.thing.visited .title {
+    color: #b0a2e6
+}
+
+/* stuff
+--------------------------------------------------------------------------------*/
+.post-sharing,
+.subreddit-report-form {
+    border-color: rgba(255, 255, 255, .2)!important;
+    background: rgba(255, 255, 255, .02)!important
+}
+
+
+/********************************************************************************
+* HEADER
+*********************************************************************************/
+#sr-header-area {
+    background: #282b30!important;
+    border-bottom: 1px solid #282b30
+}
+.message-count {
+    background-color: #aaa333
+}
+#sr-header-area .width-clip .dropdown.srdrop .selected.title,
+#sr-header-area a,
+#header-bottom-right a,
+.res #userbarToggle {
+    color: #aaa
+}
+
+/* header bars */
+#header:before {
+    background: #282b30;
+    border-bottom: 0
+}
+.side:before {
+    background: #2f3238
+}
+
+#header .tabmenu {
+    background: #282b30;
+    border-color: #212428
+}
+.side .md>blockquote:first-of-type>p>a {
+    color: #c9c9c9;
+}
+/********************************************************************************
+* ANNOUNCEMENT BAR
+*********************************************************************************/
+.side .md>blockquote:nth-of-type(2) {
+    background: rgba(255, 255, 255, .5);
+    color: rgba(0, 0, 0, .6)
+}
+.side .md>blockquote:nth-of-type(2) p {
+    color: rgba(0, 0, 0, .8)
+}
+.side .md>blockquote:nth-of-type(2):after {
+    background: rgba(255, 255, 255, .45);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .6), inset 0 0 3px rgba(0, 0, 0, .35)
+}
+
+.side .md>blockquote:first-of-type>p>a strong {
+    color: white;
+}
+
+/* sidebar common button
+--------------------------------------------------------------------------------*/
+
+.side .md a[href$="#flair"],
+.side .md>h2+ul li a,
+.sidecontentbox a.helplink {
+    box-shadow: 0 0 1px rgba(0,0,0,0.8);
+    text-shadow: none;
+    background: rgba(255,255,255,.06);
+    border-color: rgba(255,255,255,.15);
+    border-radius: 2px;
+}
+
+.sidecontentbox .helplink~.content li:not(.more) {
+    background: rgba(255,255,255,0.04);
+}
+.sidecontentbox .helplink~.content li:before {
+    opacity: 0.5;
+}
+
+/* toggles and subscription stuff
+--------------------------------------------------------------------------------*/
+.titlebox .subscribers {
+    color: #aaa
+}
+.titlebox .users-online,
+.toggle.fancy-toggle-button .option.active,
+html[lang$=nm].res .res-fancy-toggle-button {
+    background: rgba(0, 0, 0, .4);
+    color: #aaa
+}
+.titlebox form.toggle.flairtoggle,
+.titlebox form.toggle.res-sr-style-toggle {
+    color: #aaa
+}
+
+/* sidebar rules
+--------------------------------------------------------------------------------*/
+
+.side .md h3+ul+ol:after {
+    background: #e3e3e3
+}
+.side .md h3+ul,
+.side .md h3+ul+ol {
+    border-left-color: #e3e3e3
+}
+.side .md h3+ul+ol>li:before {
+    background: #282b30;
+    border-color: #e3e3e3;
+    font-weight: 700;
+    font-size: 13px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    left: -36px;
+    top: 3px
+}
+.side .md h3+ul a {
+    color: #dfdfdf;
+    background: hsla(216,100%,56%,1);
+}
+
+
+/* sun/moon switch day mode
+--------------------------------------------------------------------------------*/
+.side .md > h1 {
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .15)
+}
+.side .md > h1 a {
+    color: rgba(255,255,255,0.65)
+}
+.side .md > h1 a:last-child {
+    border-left: 1px solid rgba(255, 255, 255, .15)
+}
+/* author panel - set to dark version
+--------------------------------------------------------------------------------*/
+.flairrow .author,
+.side .tagline .author,
+.thing .author {
+    background-position: 0 0;
+    color: #48f
+}
+
+
+
+
+#search input[type=text] {
+    background: rgba(255,255,255,.05);
+    color: #aaa!important;
+}
+
+.side .md>h2:after,
+.side .md>h4>a:after,
+.side .md>h6:after,
+.side .md>h3:after,
+.side .md>h5:after {
+    background-image: url(%%sidepattern2w%%);
+    opacity: 0.08;
+}
+.titlebox form.toggle.flairtoggle:after,
+.titlebox form.toggle.res-sr-style-toggle:after {
+    background: url(%%sidepattern1w%%);
+    opacity: 0.08;
+}
+
+.md,
+.side .md,
+.submit-page .roundfield>.title,
+.side .md>h2,
+.side .md>h3,
+.side .md>h4:first-of-type,
+.side .md>h4>a,
+.side .md>h5,
+.side .md>h6,
+.side .md>p:first-of-type,
+.side .md h6+blockquote p a,
+.side #searchexpando {
+    color: #c7c7c7;
+}
+
+.side .md>h5+ul {
+    background: rgba(255,255,255,0.03);
+}
+
+
+
+
+
+.sidecontentbox .content {
+    background: rgba(255,255,255,0.02);
+}
+.side .sidecontentbox .title {
+    background: hsl(218, 7%, 20%);
+    border-color: hsl(218, 7%, 23%)
+}
+.gadget .reddit-entry {
+    background: transparent !important;
+}
+.gadget .reddit-link {
+    border-color: rgba(255,255,255,0.05);
+}
+.gadget .score {
+    color: #777;
+}
+.gadget .reddit-entry .linkflairlabel {
+    background: #23252a;
+    color: #888 !important;
+}
+
+
+
+
+
+.thing .md hr {
+    background: rgba(255,255,255,0.1)
+}
+.md code,
+.md pre {
+    background: rgba(0, 0, 0, .08)
+}
+.side .md table td,
+.side .md table td a {
+    color: #a5a5a5
+}
+
+.comment .score.dislikes,
+.comment .score.likes,
+.comment .score.unvoted,
+.flair:before,
+.link .score.unvoted,
+.tagline time:not(.edited-timestamp) {
+    color: #aaa
+}
+
+
+.linkflair-spoiler .thumbnail,
+.thumbnail,
+.thumbnail.default,
+.thumbnail.nsfw,
+.thumbnail.self {
+    background-image: url(%%pokesheet%%) !important;
+    border: 1px solid #111
+}
