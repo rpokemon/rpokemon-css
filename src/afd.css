@@ -93,30 +93,6 @@
 .author[href$="E"]~.flair,
 .author[href$="F"]~.flair,
 .author[href$="G"]~.flair
-{
-    background-position: -0px -0px!important;
-}
-
-.author[href$="b"]~.flair,
-.author[href$="f"]~.flair,
-.author[href$="j"]~.flair,
-.author[href$="n"]~.flair,
-.author[href$="r"]~.flair,
-.author[href$="v"]~.flair,
-.author[href$="z"]~.flair,
-.author[href$="2"]~.flair,
-.author[href$="6"]~.flair,
-.author[href$="H"]~.flair,
-.author[href$="I"]~.flair,
-.author[href$="J"]~.flair,
-.author[href$="K"]~.flair,
-.author[href$="L"]~.flair,
-.author[href$="M"]~.flair,
-.author[href$="N"]~.flair
-{
-    background-position: -50px -0px!important;
-}
-
 .author[href$="c"]~.flair,
 .author[href$="g"]~.flair,
 .author[href$="k"]~.flair,
@@ -137,6 +113,22 @@
     background-position: -100px 0px!important;
 }
 
+.author[href$="b"]~.flair,
+.author[href$="f"]~.flair,
+.author[href$="j"]~.flair,
+.author[href$="n"]~.flair,
+.author[href$="r"]~.flair,
+.author[href$="v"]~.flair,
+.author[href$="z"]~.flair,
+.author[href$="2"]~.flair,
+.author[href$="6"]~.flair,
+.author[href$="H"]~.flair,
+.author[href$="I"]~.flair,
+.author[href$="J"]~.flair,
+.author[href$="K"]~.flair,
+.author[href$="L"]~.flair,
+.author[href$="M"]~.flair,
+.author[href$="N"]~.flair
 .author[href$="d"]~.flair,
 .author[href$="h"]~.flair,
 .author[href$="l"]~.flair,
@@ -229,9 +221,9 @@
 * CUSTOM SKULL BALL FLAIRS
 *********************************************************************************/
 
-/* Give subscribers a dusk ball */
+/* Give subscribers a Nest ball */
 .flair:after {
-    background-position: -223px -53px!important;
+    background-position: -152px -12px!important;
 }
 
 .author[href$="/BIG_BAD_GUZMA"]~.flair:after {
@@ -239,12 +231,14 @@
     background-position: -8px -370px!important;
 }
 
-.author[href$="/Officer_Nanu"]~.flair:after {
+.author[href$="/Officer_Nanu"]~.flair:after,
+.author[href$="/Big_Sis_Plumeria"]~.flair:after
+{
     background-position: -79px -14px!important;
 }
 
 .author[href$="/xX_gladion_Xx"]~.flair:after {
-    background-position: -114px -90px!important;
+    background-position: -116px -90px!important;
 }
 
 
@@ -279,4 +273,32 @@
 .author[href$="/A_Wild_Abra"]~.flair:after
 {
     background-position: -43px -14px!important;
+}
+
+
+/* PO TOWN RAIN */
+a[name="content"] {
+	background: none;
+	background-image: url(%%rain-3%%), url(%%rain-2%%), url(%%rain-1%%);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:100;
+	animation: rain 10s linear infinite;
+    font-size: 0px;
+    opacity: 0.6;
+    pointer-events: none
+}
+
+html[lang$=nr] a[name="content"] {
+    display: none!important;
+}
+
+
+@keyframes rain {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 400px 3500px, 450px 3000px, 350px 3300px;}
+  100% {background-position: 1000px 7500px, 800px 4600px, 600px 6600px;}
 }
