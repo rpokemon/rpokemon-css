@@ -300,5 +300,5 @@ html[lang$=nr] a[name="content"] {
 @keyframes rain {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   50% {background-position: 400px 3500px, 450px 3000px, 350px 3300px;}
-  100% {background-position: 1000px 7500px, 800px 4600px, 600px 6600px;}
+  100% {background-position: 1000px 7500px, 800px 6400px, 600px 6600px;}
 }
