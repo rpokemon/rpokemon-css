@@ -223,7 +223,7 @@
 
 /* Give subscribers a Nest ball */
 .flair:after {
-    background-position: -152px -12px!important;
+    background-position: -12px -52px!important;
 }
 
 .author[href$="/BIG_BAD_GUZMA"]~.flair:after {
