@@ -402,7 +402,8 @@
 .author[href$="/SalomonG18"]~.flair:after,
 .author[href$="/Katsuro_Naginata"]~.flair:after,
 .author[href$="/LucarioPrime"]~.flair:after,
-.author[href$="/mannerson"]~.flair:after {
+.author[href$="/mannerson"]~.flair:after,
+.author[href$="/xBR0SKIx"]~.flair:after {
     background-position: -260px -54px
 }
 
@@ -600,6 +601,12 @@
     height: 42px;
     margin-top: -8px;
     margin-left: -10px;
+}
+
+/* Golden Pokedex */
+.author[href$="/Crusader1998123"]~.flair:after {
+    background-position: -120px -207px;
+    transform: scale(0.9);
 }
 
 /* background: url(%%balls%%) no-repeat -258px -206px !important;*/
