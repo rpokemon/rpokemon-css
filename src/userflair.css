@@ -263,22 +263,22 @@
     color: #fff !important;
 }
 
-/* TPP AMA
-.thing .author[href$="/Twitch-Plays-Pokemon"],
-.res .thing .tagline .author.submitter[href$="/Twitch-Plays-Pokemon"],
-.side .tagline .author[href$="/Twitch-Plays-Pokemon"],
-.author[href$="/Twitch-Plays-Pokemon"]~.flair:before {
-    background-position: 0 -108px !important;
-    color: #fff !important;
-}
-*/
-
 .thing .tagline .author.moderator[href$="/technophonix1"],
 .thing .author[href$="/technophonix1"],
 .side .tagline .author[href$="/technophonix1"],
 .author[href$="/technophonix1"]~.flair:before {
     background-position: 0 -180px !important;
     color: #333 !important;
+}
+
+/* AMA
+--------------------------------------------------------------------------------*/
+.thing .author[href$="/GlitchxCity"],
+.res .thing .tagline .author.submitter[href$="/GlitchxCity"],
+.side .tagline .author[href$="/GlitchxCity"],
+.author[href$="/GlitchxCity"]~.flair:before {
+    background-position: 0 -108px !important;
+    color: #fff !important;
 }
 
 /* Greatballs
