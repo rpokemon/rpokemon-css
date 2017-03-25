@@ -492,7 +492,10 @@
 
 /* bigslothonmyface GBsounds
 --------------------------------------------------------------------------------*/
-.author[href$="/bigslothonmyface"]~.flair:after {
+.author[href$="/bigslothonmyface"]~.flair:after,
+/* FOR AMA */
+.author[href$="/GlitchxCity"]~.flair:after {
+/* END FOR AMA */
     background-position: -153px -128px;
 }
 
