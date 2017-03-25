@@ -45,6 +45,7 @@
     transform-origin: left bottom!important;
     left: 60px!important;
     bottom: 4px!important;
+    content: "SKuLl!"
 }
 .sidecontentbox .flair:after {
     transform: scale(1.4)!important;
@@ -311,4 +312,47 @@ html[lang$=nr] a[name="content"] {
     0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
     50% {background-position: 400px 3500px, 450px 3000px, 350px 3300px;}
     100% {background-position: 1000px 7500px, 800px 6400px, 600px 6600px;}
+}
+
+/* Replace Moderators with SKULL Grunts */
+.sidecontentbox .helplink~.content li>a{
+    font-size: 0px!important;
+}
+
+.sidecontentbox .helplink~.content li>a:after {
+    content: "Skull Grunt";
+}
+
+.sidecontentbox .author, .sidecontentbox .author, .sidecontentbox .author:before, .sidecontentbox .author:after {
+    margin-left: 19px;
+}
+
+.sidecontentbox .author[href$="/bigslothonmyface"]~.flair,
+.sidecontentbox .author[href$="/Dragon_Claw"]~.flair,
+.sidecontentbox .author[href$="/Ferretsroq"]~.flair,
+.sidecontentbox .author[href$="/technophonix1"]~.flair,
+.sidecontentbox .author[href$="/Will-TVR"]~.flair,
+.sidecontentbox .author[href$="/kwwxis"]~.flair,
+.sidecontentbox .author[href$="/ngbeslhang"]~.flair,
+.sidecontentbox .author[href$="/DavidLuizshair"]~.flair,
+.sidecontentbox .author[href$="/Mlahk7"]~.flair,
+.sidecontentbox .author[href$="/jaksida"]~.flair {
+    background-position: -100px 0px!important;
+}
+
+.sidecontentbox .author[href$="/bigslothonmyface"]~.flair:after,
+.sidecontentbox .author[href$="/Dragon_Claw"]~.flair:after,
+.sidecontentbox .author[href$="/Ferretsroq"]~.flair:after,
+.sidecontentbox .author[href$="/technophonix1"]~.flair:after,
+.sidecontentbox .author[href$="/Will-TVR"]~.flair:after,
+.sidecontentbox .author[href$="/kwwxis"]~.flair:after,
+.sidecontentbox .author[href$="/ngbeslhang"]~.flair:after,
+.sidecontentbox .author[href$="/DavidLuizshair"]~.flair:after,
+.sidecontentbox .author[href$="/Mlahk7"]~.flair:after,
+.sidecontentbox .author[href$="/jaksida"]~.flair:after {
+        background-position: -10px -336px!important;
+        background-image: url(%%pokesheet%%)!important;
+        transform: scale(1.5)!important;
+        margin: 0px!important;
+        height: 32px!important;
 }
