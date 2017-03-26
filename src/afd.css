@@ -224,22 +224,22 @@
 
 /* Give subscribers a Nest ball */
 .flair:after {
-    background-position: -12px -52px!important;
+    background-position: -240px 0!important;
 }
 
 .author[href$="/BIG_BAD_GUZMA"]~.flair:after {
     background-image: url(%%pokesheet%%)!important;
-    background-position: -8px -370px!important;
+    background-position: -12px -368px!important;
 }
 
 .author[href$="/Officer_Nanu"]~.flair:after,
 .author[href$="/Big_Sis_Plumeria"]~.flair:after
 {
-    background-position: -79px -14px!important;
+    background-position: -60px 0!important;
 }
 
 .author[href$="/xX_gladion_Xx"]~.flair:after {
-    background-position: -116px -90px!important;
+    background-position: -570px 0!important;
 }
 
 
@@ -273,11 +273,14 @@
 .author[href$="/Lady_Baruren"]~.flair:after,
 .author[href$="/A_Wild_Abra"]~.flair:after
 {
-    background-position: -43px -14px!important;
+
+    background-position: -30px 0important;
 }
 
+/********************************************************************************
+* PO TOWN RAIN
+*********************************************************************************/
 
-/* PO TOWN RAIN */
 a[name="content"] {
 	background: none;
     background-color: rgba(255,255,255,0);
@@ -314,7 +317,10 @@ html[lang$=nr] a[name="content"] {
     100% {background-position: 1000px 7500px, 800px 6400px, 600px 6600px;}
 }
 
-/* Make header Scalable */
+/********************************************************************************
+* SCALABLE HEADER
+*********************************************************************************/
+
 #header {
     height: 9.375vw;
 }
@@ -327,7 +333,11 @@ html[lang$=nr] a[name="content"] {
     left: 22vw;
 }
 
-/* Replace Moderators with SKULL Grunts */
+
+/********************************************************************************
+* REPLACE MODERATORS
+*********************************************************************************/
+
 .sidecontentbox .helplink~.content li>a{
     font-size: 0px!important;
 }
@@ -363,7 +373,7 @@ html[lang$=nr] a[name="content"] {
 .sidecontentbox .author[href$="/DavidLuizshair"]~.flair:after,
 .sidecontentbox .author[href$="/Mlahk7"]~.flair:after,
 .sidecontentbox .author[href$="/jaksida"]~.flair:after {
-        background-position: -10px -336px!important;
+        background-position: -13px -337px!important;
         background-image: url(%%pokesheet%%)!important;
         transform: scale(1.5)!important;
         margin: 0px!important;
