@@ -738,3 +738,9 @@
 .author[href$="/RustRider"]~.flair:after {
     background-position: -210px -60px;
 }
+
+/* Mockturne Present 
+--------------------------------------------------------------------------------*/
+.author[href$="/Mockturne"]~.flair:after {
+    background-position: -240px -60px;
+}
