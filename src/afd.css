@@ -314,6 +314,19 @@ html[lang$=nr] a[name="content"] {
     100% {background-position: 1000px 7500px, 800px 6400px, 600px 6600px;}
 }
 
+/* Make header Scalable */
+#header {
+    height: 9.375vw;
+}
+
+.pagename a {
+    width: 11.45vw;
+    height: 4.16vw;
+
+    top: 2.6vw;
+    left: 22vw;
+}
+
 /* Replace Moderators with SKULL Grunts */
 .sidecontentbox .helplink~.content li>a{
     font-size: 0px!important;
