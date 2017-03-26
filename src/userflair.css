@@ -646,40 +646,36 @@
     margin-top: -68px;
 }
 
-/* Tapu bulu - Challenge Medal */
-.flair.flair-tapubulu-medal:after {
-    background: url(%%ballflair%%) no-repeat -1106px -86px !important;
+/* TAPU CHALLENGE MEDALS */
+.flair.flair-tapubulu-medal:after,
+.flair.flair-tapufini-medal:after,
+.flair.flair-tapulele-medal:after,
+.flair.flair-tapukoko-medal:after {
+    background: url(%%ballflair%%) no-repeat;
     width: 42px;
     height: 42px;
     margin-top: -8px;
     margin-left: -10px;
 }
 
-/* Tapu lele - Challenge Medal */
-.flair.flair-tapulele-medal:after {
-    background: url(%%ballflair%%) no-repeat -1148px -86px !important;
-    width: 42px;
-    height: 42px;
-    margin-top: -8px;
-    margin-left: -10px;
+/* Tapu bulu - Challenge Medal */
+.flair.flair-tapubulu-medal:after {
+    background-position: -1106px -86px !important;
 }
 
 /* Tapu fini - Challenge Medal */
 .flair.flair-tapufini-medal:after {
-    background: url(%%ballflair%%) no-repeat -1190px -86px !important;
-    width: 42px;
-    height: 42px;
-    margin-top: -8px;
-    margin-left: -10px;
+    background-position: -1152px -86px !important;
+}
+
+/* Tapu lele - Challenge Medal */
+.flair.flair-tapulele-medal:after {
+    background-position: -1198px -86px !important;
 }
 
 /* Tapu koko - Challenge Medal */
 .flair.flair-tapukoko-medal:after {
-    background: url(%%ballflair%%) no-repeat -1232px -86px !important;
-    width: 42px;
-    height: 42px;
-    margin-top: -8px;
-    margin-left: -10px;
+    background-position: -1244px -86px !important;
 }
 
 
