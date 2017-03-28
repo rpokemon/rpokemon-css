@@ -557,7 +557,7 @@
 
 /* Golden Pokedex */
 .author[href$="/Crusader1998123"]~.flair:after {
-    background-position: -120px -207px;
+    background-position: -990px 0;
     transform: scale(0.9);
 }
 
