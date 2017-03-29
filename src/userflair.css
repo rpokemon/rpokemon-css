@@ -472,7 +472,7 @@
 * CUSTOM NON-BALL BALL-FLAIRS
 *********************************************************************************/
 
-/* New mods icon JHOTO
+/* New mods icon JOHTO
 --------------------------------------------------------------------------------*/
 .author[href$="/ngbeslhang"]~.flair:after,
 .author[href$="/DavidLuizshair"]~.flair:after,
@@ -541,19 +541,22 @@
 }
 
 /* Rotom Dex */
-/*.author[href$="/username"]~.flair:after {
+/*.author[href$="/username"]~.flair:after,*/
+.flair.flair-aloladex-complete {
     background-position: -900px 0
-}*/
+}
 
 /* Oval Charm */
-/*.author[href$="/username"]~.flair:after {
+/*.author[href$="/username"]~.flair:after,*/
+.flair.flair-ovalcharm:after {
     background-position: -930px 0
-}*/
+}
 
 /* Shiny Charm */
-/*.author[href$="/username"]~.flair:after {
+/*.author[href$="/username"]~.flair:after,*/
+.flair.flair-shinycharm:after {
     background-position: -960px 0
-}*/
+}
 
 /* Golden Pokedex */
 .author[href$="/Crusader1998123"]~.flair:after {
