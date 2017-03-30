@@ -439,3 +439,24 @@ a[href="https://rpokemon.github.io/#flair"] {
 
     pointer-events: none
 }
+
+/********************************************************************************
+* HIKER MEME
+*********************************************************************************/
+
+input[name=uh] ~ a:after {
+    content: "";
+    position: absolute!important;
+    top: -9.3vw!important;
+    right: 0!important;
+    z-index: -10!important;
+    background-position: 0 0!important;
+    width: 100vw!important;
+    height: 9.375vw!important;
+}
+
+
+input[name="uh"][value*="ka"] ~ a:after {
+    background: url(%%hiker-banner%%) left center/cover no-repeat!important;
+}
+

@@ -8,13 +8,13 @@ C = 10000
 samples = [
     {
         '*': ['k'],
-        '$': 'j'
+        '*': 'j'
     },
     {
         '$': 'j4'
     },
     {
-        '*': 'k'
+        '*': '5'
     }
     
 ]
@@ -70,3 +70,5 @@ print('\nCompleted in ' + str(end_time - start_time) + ' seconds\n')
 
 for key,val in bucket.items():
     print('  ' + key + ': ' + str(val / C * 100.0) + '% ('+str(val)+')')
+
+
