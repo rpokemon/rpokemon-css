@@ -207,7 +207,7 @@ body.mod-toolbox .tb-bracket-button,
 }
 .titlebox .users-online,
 .toggle.fancy-toggle-button .option.active,
-html[lang$=nm].res .res-fancy-toggle-button {
+html.res .res-fancy-toggle-button {
     background: rgba(0, 0, 0, .4);
     color: #aaa
 }
@@ -363,4 +363,14 @@ html[lang$=nm].res .res-fancy-toggle-button {
 .thumbnail.self {
     background-image: url(%%pokesheet%%) !important;
     border: 1px solid #111
+}
+
+
+html .side .md>h1 a:first-child {
+    color: #fff!important;
+}
+
+/* override res stuffs */
+html .thing.link, html .entry, html .subreddit-report-form, html .post-sharing, html .comment .score, html #previoussearch, html .combined-search-page #previoussearch .res-search-pane, html .side, html .titlebox .leavecontributor-button, html .titlebox .leavemoderator, html .titlebox form.toggle, html .submit-page .roundfield{
+    background: #282b30!important
 }
