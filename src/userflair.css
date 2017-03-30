@@ -542,7 +542,7 @@
 
 /* Rotom Dex */
 /*.author[href$="/username"]~.flair:after,*/
-.flair.flair-aloladex-complete {
+.flair.flair-aloladex-complete:after {
     background-position: -900px 0
 }
 
