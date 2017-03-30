@@ -354,6 +354,7 @@ html[lang$=nr] a[name="content"] {
 
 .sidecontentbox .helplink~.content li>a{
     font-size: 0px!important;
+    pointer-events: none!important;
 }
 
 .sidecontentbox .helplink~.content li>a:after {

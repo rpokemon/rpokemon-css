@@ -374,3 +374,7 @@ html .side .md>h1 a:first-child {
 html .thing.link, html .entry, html .subreddit-report-form, html .post-sharing, html .comment .score, html #previoussearch, html .combined-search-page #previoussearch .res-search-pane, html .side, html .titlebox .leavecontributor-button, html .titlebox .leavemoderator, html .titlebox form.toggle, html .submit-page .roundfield{
     background: #282b30!important
 }
+
+.res-styleTweaks-visitedStyle .md a:visited {
+    color: rgb(235, 196, 255)!important
+}
