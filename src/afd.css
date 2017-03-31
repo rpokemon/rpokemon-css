@@ -192,7 +192,14 @@
     background-position: -600px -0px!important;
 }
 
+.author[href$="/TeamSkullGrammerBot"]~.flair {
+    width: 70px!important;
+    background-position: -1230px -0px!important;
+}
 
+.author[href$="/HomelessSkullGrunt"]~.flair {
+    background-position: -0px -65px!important;
+}
 
 /* Reddit Mod Police Flair */
 .author[href$="/bigslothonmyface"]~.flair,
@@ -257,6 +264,9 @@
     background-position: -60px -60px!important;
 }
 
+.author[href$="/TeamSkullGrammerBot"]~.flair:after {
+    background-position:-330px 0!important;
+}
 
 /* Give Mods a Great Ball */
 .author[href$="/bigslothonmyface"]~.flair:after,
@@ -395,10 +405,12 @@ html[lang$=nr] a[name="content"] {
         height: 32px!important;
 }
 
+body > div.side > div:nth-child(6) > div > div > h1,
 body > div.side > div:nth-child(7) > div > div > h1 {
     font-size: 0px;
 }
 
+body > div.side > div:nth-child(6) > div > div > h1:after,
 body > div.side > div:nth-child(7) > div > div > h1:after {
     font-size: 12px;
     content: "Grunts of the week!";
@@ -408,6 +420,11 @@ body > div.side > div:nth-child(7) > div > div > h1:after {
 /* hide moderator about section */
 body > div.side > div:nth-child(7) > div > ul > li.more {
     display: none;
+}
+
+body > div.side > div:nth-child(6) > div > ul > li > span.RESUserTag,
+body > div.side > div:nth-child(7) > div > ul > li > span.RESUserTag {
+    display: none!important;
 }
 
 /********************************************************************************
