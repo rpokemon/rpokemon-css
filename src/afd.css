@@ -427,6 +427,10 @@ body > div.side > div:nth-child(7) > div > ul > li > span.RESUserTag {
     display: none!important;
 }
 
+.footer-parent:before {
+    background-position-y: center!important;
+}
+
 /********************************************************************************
 * SKULL LOGO
 *********************************************************************************/
