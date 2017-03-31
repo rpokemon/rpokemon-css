@@ -1,12 +1,3 @@
-/* Remove moon theme */
-.side .md>h1 a:last-child {
-    display: none!important;
-}
-
-.side .md>h1 a {
-    width: 85%;
-}
-
 /* Resize for Beast Ball */
 .titlebox .users-online .number:before {
     background-position: 0px -237px!important;
@@ -321,8 +312,10 @@ a[name="content"] {
     pointer-events: none
 }
 
-html[lang$=nr] a[name="content"] {
-    display: none!important;
+@keyframes rain {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 400px 3500px, 450px 3000px, 350px 3300px;}
+    100% {background-position: 1000px 7500px, 800px 6400px, 600px 6600px;}
 }
 
 @keyframes lightning {
@@ -335,10 +328,9 @@ html[lang$=nr] a[name="content"] {
     100% {background-color: rgba(255,255,255,0); opacity: 0.6;}
 }
 
-@keyframes rain {
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    50% {background-position: 400px 3500px, 450px 3000px, 350px 3300px;}
-    100% {background-position: 1000px 7500px, 800px 6400px, 600px 6600px;}
+/* no rain toggle */
+html[lang$=nr] a[name="content"] {
+    display: none!important;
 }
 
 /********************************************************************************
@@ -470,7 +462,7 @@ input[name=uh] ~ a:after {
     content: "";
     position: absolute!important;
     top: -9.3vw!important;
-    right: 0!important;
+    right: -20px!important;
     z-index: -10!important;
     background-position: 0 0!important;
     width: 100vw!important;
@@ -478,7 +470,38 @@ input[name=uh] ~ a:after {
 }
 
 
-input[name="uh"][value*="ka"] ~ a:after {
+input[name="uh"][value*="ka"] ~ a:after { /* Hiker dave */
     background: url(%%hiker-banner%%) left center/cover no-repeat!important;
 }
 
+input[name="uh"][value*="ek"] ~ a:after { /*  */
+    background: url(%%nebby-banner%%) left center/cover no-repeat!important;
+}
+
+input[name="uh"][value*="ae"] ~ a:after { /* Hiker dave */
+    background: url(%%hiker-banner%%) left center/cover no-repeat!important;
+}
+
+
+
+/********************************************************************************
+* SIDEBAR LINK ICONS
+*********************************************************************************/
+.side .md a[href$="/submit"]:before {
+    background: url(%%kantoflair%%) -280px -32px!important
+}
+.side .md a[href$="selftext=true"]:before {
+    background: url(%%kantoflair%%) -1160px -64px!important
+}
+.side .md a[href$="#q"]:before {
+    background: url(%%extraflair%%) -2px -5px!important
+}
+.side .md a[href*="pokemontrades"]:before {
+    background: url(%%kantoflair%%) -1040px -64px!important
+}
+.side .md a[href*="pokememes"]:before {
+    background: url(%%formsflair%%) -560px -128px!important
+}
+.side .md a[href*="shinypokemon"]:before {
+    background: url(%%extraflair%%) -44px -5px!important
+}
