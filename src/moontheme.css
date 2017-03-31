@@ -35,7 +35,13 @@ html[lang$=nm] .submit-page .roundfield {
 
 html[lang$=nm] .link.RES-keyNav-activeThing,
 html[lang$=nm] .comment.RES-keyNav-activeThing .entry {
-    border-color: #575a63 !important;
+    border-top-color: #575a63 !important;
+    border-right-color: #575a63 !important;
+    border-bottom-color: #575a63 !important;
+}
+
+html[lang$=nm] .comment.RES-keyNav-activeThing .entry {
+    border-left-color: #575a63 !important;
 }
 
 .link .midcol {
