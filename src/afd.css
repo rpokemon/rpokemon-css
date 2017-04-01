@@ -102,7 +102,10 @@
 .author[href$="T"]~.flair,
 .author[href$="U"]~.flair
 {
+    background: url(%%skullflair%%)!important;
     background-position: -100px 0px!important;
+    width: 50px!important;
+    height: 50px!important;
 }
 
 .author[href$="b"]~.flair,
@@ -138,7 +141,10 @@
 .author[href$="-"]~.flair,
 .author[href$="_"]~.flair
 {
+    background: url(%%skullflair%%)!important;
     background-position: -155px -0px!important;
+    width: 50px!important;
+    height: 50px!important;
 }
 
 /********************************************************************************
@@ -223,7 +229,7 @@
 {
     background: url(%%skullflair%%)!important;
     background-image: url(%%skullflair%%)!important;
-    background-position: -401px 0px!important;
+    background-position: -750px 0px!important;
 }
 
 /********************************************************************************
@@ -259,7 +265,7 @@
     background-position:-330px 0!important;
 }
 
-/* Give Mods a Great Ball */
+/* Give Mods a Castelia Cone */ /* BECAUSE THEY SUCK LIKE THE UNOVA MODS WILL WHAT YO SHOTS FIRED */
 .author[href$="/bigslothonmyface"]~.flair:after,
 .author[href$="/Dragon_Claw"]~.flair:after,
 .author[href$="/Ferretsroq"]~.flair:after,
@@ -288,8 +294,9 @@
 .author[href$="/Lady_Baruren"]~.flair:after,
 .author[href$="/A_Wild_Abra"]~.flair:after
 {
-
-    background-position: -30px 0important;
+    background-position: -720px 0!important;
+    width: 32px!important;
+    height: 32px!important;
 }
 
 /********************************************************************************
@@ -354,6 +361,8 @@ html[lang$=nr] a[name="content"] {
 * REPLACE MODERATORS
 *********************************************************************************/
 
+/*
+
 .sidecontentbox .helplink~.content li>a{
     font-size: 0px!important;
     pointer-events: none!important;
@@ -395,29 +404,36 @@ html[lang$=nr] a[name="content"] {
         transform: scale(1.5)!important;
         margin: 0px!important;
         height: 32px!important;
+        width: 32px!important;
 }
 
 body > div.side > div:nth-child(6) > div > div > h1,
-body > div.side > div:nth-child(7) > div > div > h1 {
+body > div.side > div:nth-child(7) > div > div > h1,
+body > div.side > div:nth-child(9) > div > div > h1 {
     font-size: 0px;
 }
 
 body > div.side > div:nth-child(6) > div > div > h1:after,
-body > div.side > div:nth-child(7) > div > div > h1:after {
+body > div.side > div:nth-child(7) > div > div > h1:after,
+body > div.side > div:nth-child(9) > div > div > h1:after
+ {
     font-size: 12px;
     content: "Grunts of the week!";
 }
 
 
-/* hide moderator about section */
+/* hide moderator about section *\/
 body > div.side > div:nth-child(7) > div > ul > li.more {
     display: none;
 }
 
 body > div.side > div:nth-child(6) > div > ul > li > span.RESUserTag,
-body > div.side > div:nth-child(7) > div > ul > li > span.RESUserTag {
+body > div.side > div:nth-child(7) > div > ul > li > span.RESUserTag,
+ {
     display: none!important;
 }
+
+*/
 
 .footer-parent:before {
     background-position-y: center!important;
@@ -474,14 +490,15 @@ input[name="uh"][value*="ka"] ~ a:after { /* Hiker dave */
     background: url(%%hiker-banner%%) left center/cover no-repeat!important;
 }
 
-input[name="uh"][value*="ek"] ~ a:after { /*  */
+input[name="uh"][value*="ek"] ~ a:after { /* Nebby */
     background: url(%%nebby-banner%%) left center/cover no-repeat!important;
 }
 
-input[name="uh"][value*="ae"] ~ a:after { /* Hiker dave */
+/*
+input[name="uh"][value*="ae"] ~ a:after { /* Hiker dave * /
     background: url(%%hiker-banner%%) left center/cover no-repeat!important;
 }
-
+*/
 
 
 /********************************************************************************

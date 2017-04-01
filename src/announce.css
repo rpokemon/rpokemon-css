@@ -57,14 +57,14 @@ body>.content {
 /* top announcement flair positioning
 --------------------------------------------------------------------------------*/
 .side .md>blockquote:first-of-type>p:nth-of-type(1)>a:before {
-    background: url(%%alolaflair%%) -720px -32px /* TODO: Change this sprite weekly (PoTW) */
+    background: url(%%alolaflair%%) -520px -32px /* TODO: Change this sprite weekly (PoTW) */
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(2)>a:before {
-    background: url(%%kantoflair%%) -800px -32px
+    background: url(%%alolaflair%%) -1000px 0
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(3)>a:before {
     /* background: url(%%pokesheet%%) -6px -304px */
-    background: url(%%johtoflair%%) -280px -64px
+    background: url(%%formsflair%%) -40px -128px
 }
 
 /********************************************************************************

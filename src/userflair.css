@@ -224,7 +224,10 @@
 
 .thing .author[href$="/A_Wild_Abra"],
 .res .thing .tagline .author.submitter[href$="/A_Wild_Abra"],
-.side .tagline .author[href$="/A_Wild_Abra"] {
+.side .tagline .author[href$="/A_Wild_Abra"],
+.thing .author[href$="/Team_Skulls_New_Abra"],
+.res .thing .tagline .author.submitter[href$="/Team_Skulls_New_Abra"],
+.side .tagline .author[href$="/Team_Skulls_New_Abra"] {
     background-position: 0 -144px!important;
     color: #fff!important
 }
@@ -260,11 +263,11 @@
 }
 
 /* AMA
---------------------------------------------------------------------------------*/
-.thing .author[href$="/GlitchxCity"],
-.res .thing .tagline .author.submitter[href$="/GlitchxCity"],
-.side .tagline .author[href$="/GlitchxCity"],
-.author[href$="/GlitchxCity"]~.flair:before {
+--------------------------------------------------------------------------------
+.thing .author[href$="/Big_Sis_Plumeria"],
+.res .thing .tagline .author.submitter[href$="/Big_Sis_Plumeria"],
+.side .tagline .author[href$="/Big_Sis_Plumeria"],
+.author[href$="/Big_Sis_Plumeria"]~.flair:before {
     background-position: 0 -108px !important;
     color: #fff !important;
 }
@@ -636,12 +639,12 @@
     transform-origin: top 5px;
 }
 
-/* Golden Team Skull Badge */
+/* Golden Team Skull Badge - AFD 17 - shitpost winners*/
 /*.author[href$="/username"]~.flair:after {
     background-position: -90px -30px
 }*/
 
-/* tall alolan exeggutor ballflair - shitpost winners */
+/* tall alolan exeggutor ballflair - Haloween 2016 - shitpost winners */
 .author[href$="/PassingThroughRider"]~.flair:after,
 .author[href$="/SomebodyUnown"]~.flair:after,
 .author[href$="/akbarizcool"]~.flair:after {
