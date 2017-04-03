@@ -640,8 +640,7 @@
 .author[href$="/somebodyandnobody"]~.flair:after,
 .author[href$="/InternetDude9001"]~.flair:after,
 .author[href$="/Vulpixel16"]~.flair:after,
-.author[href$="/BugCatcherJay"]~.flair:after,
-.author[href$="/username"]~.flair:after {
+.author[href$="/BugcatcherJay"]~.flair:after {
     background-position: -90px -30px
 }
 
