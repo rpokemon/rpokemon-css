@@ -273,12 +273,32 @@
     background-position: 0 -36px!important
 }
 
+/* ABRA YELLOW */
 .thing .author[href$="/A_Wild_Abra"],
 .res .thing .tagline .author.submitter[href$="/A_Wild_Abra"],
 .side .tagline .author[href$="/A_Wild_Abra"] {
     background-position: 0 -144px!important;
     color: #fff!important
 }
+
+/* Tech Green */
+.thing .tagline .author.moderator[href$="/technophonix1"],
+.thing .author[href$="/technophonix1"],
+.side .tagline .author[href$="/technophonix1"],
+.author[href$="/technophonix1"]~.flair:before {
+    background-position: 0 -180px !important;
+    color: #333 !important;
+}
+
+/* Haruka Purple */
+.thing .tagline .author.moderator[href$="/Haruka-sama"],
+.thing .author[href$="/Haruka-sama"],
+.side .tagline .author[href$="/Haruka-sama"],
+.author[href$="/Haruka-sama"]~.flair:before {
+    background-position: 0 -288px !important;
+    color: #fff !important;
+}
+
 
 /* OLD MODERATORS RED BUBBLE */
 /* Hero_Of_Legend */
@@ -302,13 +322,7 @@
     color: #fff !important;
 }
 
-.thing .tagline .author.moderator[href$="/technophonix1"],
-.thing .author[href$="/technophonix1"],
-.side .tagline .author[href$="/technophonix1"],
-.author[href$="/technophonix1"]~.flair:before {
-    background-position: 0 -180px !important;
-    color: #333 !important;
-}
+
 
 /* AMA
 --------------------------------------------------------------------------------*/
@@ -797,4 +811,16 @@
 --------------------------------------------------------------------------------*/
 .author[href$="/Mockturne"]~.flair:after {
     background-position: -240px -60px;
+}
+
+/* CrimsonMudkip Mega Stone
+--------------------------------------------------------------------------------*/
+.author[href$="/CrimsonMudkip"]~.flair:after {
+    background-position: -270px -60px;
+}
+
+/* TexasAndroid TeachyTV
+--------------------------------------------------------------------------------*/
+.author[href$="/TexasAndroid"]~.flair:after {
+    background-position: -300px -60px;
 }
