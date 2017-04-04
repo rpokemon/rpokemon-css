@@ -142,7 +142,7 @@
 }
 
 .titlebox .number:after {
-    content: " Pokémon Trainers"
+    content: " Pokï¿½mon Trainers"
 }
 .titlebox .users-online .number:after {
     content: " Online Now"
@@ -183,6 +183,32 @@
 
 .res .titlebox .multi-count {
     display: none;
+}
+
+.fancy-toggle-button .add:after {
+    content: "Subscribe?";
+    position: fixed;
+    top:36px;
+    border: 1px solid #59f;
+    left: 0px;
+    display: block;
+    width: 176px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 1px 0 #5787e1;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    background-color: #59f;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, .45);
+    z-index: 100;
+    border-radius: 0px 6px 6px 0px;
+    transition: 300ms ease-in-out;
+}
+
+.fancy-toggle-button:hover .add:after {
+    width: 192px;
+    background-color: #6af;
 }
 
 /* gold toggle sr style checkbox
