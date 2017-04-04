@@ -148,8 +148,10 @@
     background-position: -36px -14px
 }
 .author[href$="/technophonix1"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -69px -16px
+    /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
+    background-position: -69px -16px*/ 
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: 0 0
 }
 .author[href$="/Thief-Noctis"]~.flair {
     background-image: url(%%specialflairs%%)!important;
@@ -168,8 +170,10 @@
     background-position: -37px -54px;
 }
 .author[href$="/DavidLuizshair"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -76px -52px;
+    /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
+    background-position: -76px -52px;*/
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -600px 0
 }
 .author[href$="/Otterz82"]~.flair {
     background-image: url(%%specialflairs%%)!important;
@@ -196,8 +200,10 @@
     background-position: 3px -91px;
 }
 .author[href$="/Haruka-sama"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -38px -89px;
+    /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
+    background-position: -38px -89px;*/
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -150px 0 
 }
 .author[href$="/Theprinceofarendelle"]~.flair {
     background-image: url(%%specialflairs%%)!important;
@@ -210,6 +216,51 @@
 .author[href$="/Cephei_Delta"]~.flair{
     background-image:url(%%specialflairs%%) !important;
     background-position:-162px -90px
+}
+
+.author[href$="/ad3z10"]~.flair{
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -50px 0
+}
+
+.author[href$="/TARS-CASE"]~.flair{
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -100px 0 
+}
+
+.author[href$="/Will-TVR"]~.flair{
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -200px 0 
+}
+
+.author[href$="/RustRider"]~.flair{
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -250px 0 
+}
+
+.author[href$="/CrimsonMudkip"]~.flair{
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -350px 0 
+}
+
+.author[href$="/Koni_Fox"]~.flair{
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -400px 0 
+}
+
+.author[href$="/Hyouten"]~.flair{
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -450px 0 
+}
+
+.author[href$="/IAmzSamz"]~.flair{
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -500px 0 
+}
+
+.author[href$="/TexasAndroid"]~.flair{
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -550px 0 
 }
 
 /********************************************************************************

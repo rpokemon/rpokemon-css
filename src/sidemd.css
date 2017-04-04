@@ -42,7 +42,7 @@ html[lang$=nm] .side .md h4:first-of-type+ul li {
     position: absolute;
     height: 42px;
     width: 42px;
-    background: url(%%balls%%) no-repeat;
+    background: url(%%ballflair%%) no-repeat;
     left: 0px;
     top: -5px
 }

@@ -439,7 +439,7 @@ html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[ro
     width: 30px;
     height: 30px;
     display: inline-block;
-    background: url(%%balls%%) -9px -14px;
+    background: url(%%ballflair%%) 0 0;
     visibility: visible;
     top: 4px;
     left: 245px
@@ -2984,9 +2984,6 @@ html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[ro
 .author[href$="/A_Wild_Abra"] {
     background-position: 0 -144px!important;
     color: #fff!important
-}
-.author[href$="/A_Wild_Abra"]~.flair:after {
-    background: url(%%balls%%) -49px -128px!important
 }
 
 /* Greatballs
