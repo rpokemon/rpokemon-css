@@ -64,7 +64,7 @@ body>.content {
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(3)>a:before {
     /* background: url(%%pokesheet%%) -6px -304px */
-    background: url(%%johtoflair%%) -280px -64px
+    background: url(%%kantoflair%%) -40px -64px
 }
 
 /********************************************************************************
