@@ -704,7 +704,8 @@
 .author[href$="/somebodyandnobody"]~.flair:after,
 .author[href$="/InternetDude9001"]~.flair:after,
 .author[href$="/Vulpixel16"]~.flair:after,
-.author[href$="/BugcatcherJay"]~.flair:after {
+.author[href$="/BugcatcherJay"]~.flair:after, 
+.author[href$="/Sorrica"]~.flair:after {
     background-position: -90px -30px
 }
 
