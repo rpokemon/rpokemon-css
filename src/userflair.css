@@ -290,9 +290,8 @@
     color: #333 !important;
 }
 
-/* Haruka Purple */
+/* Haruka Purple - Distinguish Only */
 .thing .tagline .author.moderator[href$="/Haruka-sama"],
-.thing .author[href$="/Haruka-sama"],
 .side .tagline .author[href$="/Haruka-sama"],
 .author[href$="/Haruka-sama"]~.flair:before {
     background-position: 0 -288px !important;

@@ -185,7 +185,8 @@
     display: none;
 }
 
-.fancy-toggle-button .add:after {
+
+.fancy-toggle-button.subscribe-button .add.active:after {
     content: "Subscribe?";
     position: fixed;
     top:36px;
