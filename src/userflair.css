@@ -277,7 +277,7 @@
 .thing .author[href$="/A_Wild_Abra"],
 .res .thing .tagline .author.submitter[href$="/A_Wild_Abra"],
 .side .tagline .author[href$="/A_Wild_Abra"] {
-    background-position: 0 -144px!important;
+    background-position: 0 -180px!important;
     color: #fff!important
 }
 
@@ -286,15 +286,64 @@
 .thing .author[href$="/technophonix1"],
 .side .tagline .author[href$="/technophonix1"],
 .author[href$="/technophonix1"]~.flair:before {
-    background-position: 0 -180px !important;
+    background-position: 0 -216px !important;
     color: #333 !important;
 }
 
 /* Haruka Purple - Distinguish Only */
 .thing .tagline .author.moderator[href$="/Haruka-sama"],
+.author.moderator[href$="/Haruka-sama"]~.flair:before,
 .side .tagline .author[href$="/Haruka-sama"],
-.author[href$="/Haruka-sama"]~.flair:before {
+.side .tagline .author[href$="/Haruka-sama"]~.flair:before {
+    background-position: 0 -252px !important;
+    color: #fff !important;
+}
+
+/* Samz Purple/Turqoise - Distinguish Only */
+.thing .tagline .author.moderator[href$="/IAmzSamz"],
+.author.moderator[href$="/IAmzSamz"]~.flair:before,
+.side .tagline .author[href$="/IAmzSamz"],
+.side .tagline .author[href$="/IAmzSamz"]~.flair:before  {
     background-position: 0 -288px !important;
+    color: #fff !important;
+}
+
+/* NGB Gold - Distinguish Only */
+.thing .tagline .author.moderator[href$="/ngbeslhang"],
+.author.moderator[href$="/ngbeslhang"]~.flair:before,
+.side .tagline .author[href$="/ngbeslhang"],
+.side .tagline .author[href$="/ngbeslhang"]~.flair:before  {
+    background-position: 0 -324px !important;
+    color: #333 !important;
+}
+
+/* Baru Orange - Distinguish Only */
+.thing .tagline .author.moderator[href$="/Lady_Baruren"],
+.author.moderator[href$="/Lady_Baruren"]~.flair:before,
+.side .tagline .author[href$="/Lady_Baruren"],
+.side .tagline .author[href$="/Lady_Baruren"]~.flair:before  {
+    background-position: 0 -360px !important;
+    color: #fff !important;
+}
+
+/* DLH Black/Yellow - Distinguish Only */
+.thing .tagline .author.moderator[href$="/DavidLuizshair"],
+.side .tagline .author[href$="/DavidLuizshair"] {
+    background-position: 0 -396px !important;
+    color: #fff !important;
+}
+
+.side .tagline .author[href$="/DavidLuizshair"]~.flair:before,
+.author.moderator[href$="/DavidLuizshair"]~.flair:before {
+    color: #333 !important;
+}
+
+/* Mudkip Blue/Orange - Distinguish Only */
+.thing .tagline .author.moderator[href$="/CrimsonMudkip"],
+.author.moderator[href$="/CrimsonMudkip"]~.flair:before,
+.side .tagline .author[href$="/CrimsonMudkip"],
+.side .tagline .author[href$="/CrimsonMudkip"]~.flair:before  {
+    background-position: 0 -432px !important;
     color: #fff !important;
 }
 
@@ -317,7 +366,7 @@
 .res .thing .tagline .author.submitter[href$="/Thundergrunge"],
 .side .tagline .author[href$="/Thundergrunge"],
 .author[href$="/Thundergrunge"]~.flair:before {
-    background-position: 0 -72px !important;
+    background-position: 0 -108px !important;
     color: #fff !important;
 }
 
@@ -329,10 +378,28 @@
 .res .thing .tagline .author.submitter[href$="/GlitchxCity"],
 .side .tagline .author[href$="/GlitchxCity"],
 .author[href$="/GlitchxCity"]~.flair:before {
-    background-position: 0 -108px !important;
+    background-position: 0 -144px !important;
     color: #fff !important;
 }
 
+/* WEEKY ANIME THREAD
+--------------------------------------------------------------------------------*/
+
+/* UNCOMMENT THIS IF WE EVER USE IT
+
+.thing[data-url*="weekly_anime_thread"] .author,
+#gtm-jail[name*="weekly_anime_thread"]~.content .commentarea .sitetable .thing .author.submitter {
+    background-position: 0 -324px !important;
+    color: #fff !important; 
+}
+
+.thing[data-url*="weekly_anime_thread"] .author~.flair,
+#gtm-jail[name*="weekly_anime_thread"]~.content .commentarea .sitetable .thing .author.submitter~.flair {
+    color: #fff !important;
+}
+
+*/
+ 
 /* NEW BALL BACKGROUND FLAIRS
 --------------------------------------------------------------------------------*/
 
@@ -823,4 +890,16 @@
 --------------------------------------------------------------------------------*/
 .author[href$="/TexasAndroid"]~.flair:after {
     background-position: -300px -60px;
+}
+
+/* IAmzSamz Deoxys Stone
+--------------------------------------------------------------------------------*/
+.author[href$="/IAmzSamz"]~.flair:after {
+    background-position: -330px -60px;
+}
+
+/* DavidLuizshairAltarianite
+--------------------------------------------------------------------------------*/
+.author[href$="/DavidLuizshair"]~.flair:after {
+    background-position: -360px -60px;
 }

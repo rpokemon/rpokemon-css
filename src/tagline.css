@@ -116,7 +116,7 @@
 /* moderator bubble */
 .comment .author.moderator,
 .link .author.moderator {
-    background-position: 0 -216px!important
+    background-position: 0 -72px!important
 }
 
 /* moderator bubble - ensure username is white */
