@@ -364,6 +364,15 @@
     color: #333 !important;
 }
 
+/* Mockturne Vermillion - Distinguish Only */
+.thing .tagline .author.moderator[href$="/Mockturne"],
+.author.moderator[href$="/Mockturne"]~.flair:before,
+.side .tagline .author[href$="/Mockturne"],
+.side .tagline .author[href$="/Mockturne"]~.flair:before  {
+    background-position: 0 -540px !important;
+    color: #fff !important;
+}
+
 /* OLD MODERATORS RED BUBBLE 
 --------------------------------------------------------------------------------*/
 /* Hero_Of_Legend */
