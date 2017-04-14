@@ -269,8 +269,10 @@
 
 /* special user bubles
 --------------------------------------------------------------------------------*/
-.author[href$="/AutoModerator"] {
-    background-position: 0 -36px!important
+.author[href$="/AutoModerator"],
+.author[href$="/AutoModerator"]~.flair:before {
+    background-position: 0 -72px!important;
+    color: #fff!important
 }
 
 /* ABRA YELLOW */
@@ -279,6 +281,11 @@
 .side .tagline .author[href$="/A_Wild_Abra"] {
     background-position: 0 -180px!important;
     color: #fff!important
+}
+
+.side .tagline .author[href$="/A_Wild_Abra"]~.flair:before,
+.author[href$="/A_Wild_Abra"]~.flair:before {
+    color: #333 !important;
 }
 
 /* Tech Green */
@@ -299,9 +306,9 @@
     color: #fff !important;
 }
 
-/* Samz Purple/Turqoise - Distinguish Only */
-.thing .tagline .author.moderator[href$="/IAmzSamz"],
-.author.moderator[href$="/IAmzSamz"]~.flair:before,
+/* Samz Purple/Turqoise - Perma */
+.thing .tagline .author[href$="/IAmzSamz"],
+.author[href$="/IAmzSamz"]~.flair:before,
 .side .tagline .author[href$="/IAmzSamz"],
 .side .tagline .author[href$="/IAmzSamz"]~.flair:before  {
     background-position: 0 -288px !important;
@@ -332,7 +339,6 @@
     background-position: 0 -396px !important;
     color: #fff !important;
 }
-
 .side .tagline .author[href$="/DavidLuizshair"]~.flair:before,
 .author.moderator[href$="/DavidLuizshair"]~.flair:before {
     color: #333 !important;
@@ -347,8 +353,19 @@
     color: #fff !important;
 }
 
+/* TexasAndroid Black/White - Distinguish Only */
+.thing .tagline .author.moderator[href$="/TexasAndroid"],
+.side .tagline .author[href$="/TexasAndroid"] {
+    background-position: 0 -468px !important;
+    color: #fff !important;
+}
+.side .tagline .author[href$="/TexasAndroid"]~.flair:before,
+.author.moderator[href$="/TexasAndroid"]~.flair:before {
+    color: #333 !important;
+}
 
-/* OLD MODERATORS RED BUBBLE */
+/* OLD MODERATORS RED BUBBLE 
+--------------------------------------------------------------------------------*/
 /* Hero_Of_Legend */
 .thing .author[href$="/Hero_Of_Legend"],
 .res .thing .tagline .author.submitter[href$="/Hero_Of_Legend"],
