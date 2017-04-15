@@ -269,11 +269,6 @@
 
 /* special user bubles
 --------------------------------------------------------------------------------*/
-.author[href$="/AutoModerator"],
-.author[href$="/AutoModerator"]~.flair:before {
-    background-position: 0 -72px!important;
-    color: #fff!important
-}
 
 /* ABRA YELLOW */
 .thing .author[href$="/A_Wild_Abra"],
