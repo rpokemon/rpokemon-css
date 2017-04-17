@@ -368,6 +368,16 @@
     color: #fff !important;
 }
 
+/* NINTENDO OF AMERICA OFFICIAL - user Flair */
+.thing .author[href$="/Nintendo_America"],
+.author[href$="/CrimsonMudkip"]~.flair:before,
+.side .tagline .author[href$="/Nintendo_America"]
+.side .tagline .author[href$="/Nintendo_America"]~.flair:before  {
+    background-position: 0 -576px!important;
+    color: #fff!important
+}
+
+
 /* OLD MODERATORS RED BUBBLE 
 --------------------------------------------------------------------------------*/
 /* Hero_Of_Legend */
@@ -838,7 +848,12 @@
     background-position: -1244px -86px !important;
 }
 
-
+/********************************************************************************
+* EXTERNAL COMMUNITY FLAIRS
+*********************************************************************************/
+.flair.flair-verified-account:after {
+    background-position: -1230px 0px !important;
+}
 
 /********************************************************************************
 * ADMIN EXCLUSIVE FLAIRS
