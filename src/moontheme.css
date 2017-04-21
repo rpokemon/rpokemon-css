@@ -355,7 +355,7 @@ html[lang$=nm] .side .md table td a {
 html[lang$=nm] .comment .score.dislikes,
 html[lang$=nm] .comment .score.likes,
 html[lang$=nm] .comment .score.unvoted,
-html[lang$=nm] .flair:before,
+html[lang$=nm] .flair,
 html[lang$=nm] .link .score.unvoted,
 html[lang$=nm] .tagline time:not(.edited-timestamp) {
     color: #aaa

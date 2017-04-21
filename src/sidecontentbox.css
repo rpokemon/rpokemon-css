@@ -86,6 +86,7 @@
 /* author link */
 .sidecontentbox .helplink~.content li>a {
     top: -3px;
+    left: 36px;
     position: relative
 }
 

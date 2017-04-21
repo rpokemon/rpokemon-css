@@ -120,7 +120,7 @@
 }
 
 /* moderator bubble - ensure username is white */
-.author.moderator~.flair:before,
+.author.moderator~.flair,
 .comment .moderator,
 .link .moderator,
 .thing .tagline .author.moderator,

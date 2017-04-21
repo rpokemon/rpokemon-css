@@ -1,67 +1,47 @@
 /********************************************************************************
 * USER FLAIR
 *********************************************************************************/
-.flair,
-.flair:after,
+
 .flair:before {
-    position: absolute
+    content: "";
+    width: 40px;
+    height: 32px;
+    margin-top: 4px;
+    display: inline-block;
 }
 
 .flair {
-    background-color: transparent;
-    visibility: visible;
-    width: 40px;
-    height: 32px;
-    padding: 0;
-    margin: 0;
+    background: transparent;
     border: 0;
-    border-radius: 0;
-    z-index: 2;
-    text-indent: -9999px;
-    
-    /* comment flair position */
-    top: -28px;
-    left: 67px;
+
+    position: absolute;
+    top: -8px;
+    left: 144px;
+
+    pointer-events: none;
 }
 
-.flair.flair-placeholder {
-    background-image: none !important;
+.thing.comment .flair {
+    top: -32px;
+    left: 68px;
 }
 
-/* link flair position*/
+.side .flair {
+    top: -6px;
+    left: 0;
+}
+
 .link .flair {
-    top: -4px;
-    left: 145px
+    margin-top: -2px;
 }
 
-/* flair text */
-.flair:before {
-    content: attr(title);
-    font-size: 9px;
-    text-indent: 0;
-    display: block;
-    width: 220px;
-    left: 44px;
-    bottom: 1px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 206px
+.sidecontentbox .flair {
+    top: -8px;
+    left: -6px;
 }
 
-/* sidecontentbox flair fix */
-.sidecontentbox .author, .sidecontentbox .author,
-.sidecontentbox .author:before, .sidecontentbox .author:after {
-    margin-left: 38px; font-size: 11px;
-}
-.sidecontentbox .flair { left: 0; top: -2px; margin-left: -5px; }
-.sidecontentbox .flair:after { left: 235px; }
-.sidecontentbox .flair:before { bottom: 3px; }
-
-/* side tagline flair fix */
-.titlebox .flair {
-    top: 0;
-    left: -2px
+.sidecontentbox .userTagLink {
+    visibility: hidden;
 }
 
 /********************************************************************************
@@ -69,99 +49,75 @@
 *********************************************************************************/
 
 .flair.flair-tf {
-    width: 50px;
-    height: 50px;
-    top: -42px;
-    left: 63px;
-}
-
-.flair.flair-tf.flair-tf2 {
-    width: 75px;
-    left: 49px
-}
-
-.link .flair.flair-tf {
-    top: -18px;
+    top: -25px;
     left: 140px;
 }
 
-.link .flair.flair-tf.flair-tf2 {
-    left: 126px;
+.thing.comment .flair.flair-tf {
+    top: -50px;
+    left: 62px;
 }
 
-.titlebox .flair.flair-tf {
-    bottom: -16px;
-    top: auto;
-    left: -7px;
-}
-
-.titlebox .flair.flair-tf.flair-tf2 {
-    left: -21px;
-}
-
-.sidecontentbox .flair.flair-tf {
-    left: 2px;
-    top: auto;
-    bottom: 0px;
-    margin-left: -5px;
-    transform: scale(0.7);
-    transform-origin: left bottom;
-}
-.sidecontentbox .flair.flair-tf:before {
-    transform: scale(1.4);
-    transform-origin: left bottom;
-    left: 60px;
-    bottom: 4px;
-}
-.sidecontentbox .flair.flair-tf:after {
-    transform: scale(1.4);
-    transform-origin: left bottom;
-    left: 333px;
+.side .flair.flair-tf {
+    top: -22px;
+    left: -10px;
 }
 
 .flair.flair-tf:before {
-    left: 51px;
-    bottom: 4px;
-}
-.flair.flair-tf.flair-tf2:before {
-    left: 65px;
+    width: 50px;
+    height: 50px;
+
+    position: relative;
+    top: 8px;
+    transform: scale(.8);
 }
 
 .flair.flair-tf:after {
-    top: auto;
-    bottom: 2px;
-    left: 249px;
+    top: 24px;
 }
+
+.sidecontentbox .flair.flair-tf {
+    left: -16px;
+} 
+
+.flair.flair-tf.flair-tf2:before {
+    width: 75px;
+}
+
+.flair.flair-tf.flair-tf2 {
+    left: 110px;
+}
+
 .flair.flair-tf.flair-tf2:after {
-    left: 263px;
+    left: 280px;
 }
 
 /********************************************************************************
 * CUSTOM USER FLAIRS
 *********************************************************************************/
-.author[href$="/TheGhost983"]~.flair {
+.author[href$="/TheGhost983"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: 0 -13px
 }
-.author[href$="/David920"]~.flair {
+.author[href$="/David920"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: -36px -14px
 }
-.author[href$="/technophonix1"]~.flair {
+.author[href$="/technophonix1"]~.flair:before {
     /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
     background-position: -69px -16px*/ 
     background-image: url(%%modtrainerflair%%)!important;
     background-position: 0 0
 }
-.author[href$="/Thief-Noctis"]~.flair {
+.author[href$="/Thief-Noctis"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: -107px -16px
 }
-.author[href$="/Mockturne"]~.flair {
+.author[href$="/Mockturne"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: -149px -16px;
 }
-.author[href$="/Hero_Of_Legend"]~.flair {
+.author[href$="/Hero_Of_Legend"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: 0 -54px;
 }
@@ -169,17 +125,17 @@
     background-image: url(%%specialflairs%%)!important;
     background-position: -37px -54px;
 }
-.author[href$="/DavidLuizshair"]~.flair {
+.author[href$="/DavidLuizshair"]~.flair:before {
     /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
     background-position: -76px -52px;*/
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -600px 0
 }
-.author[href$="/Otterz82"]~.flair {
+.author[href$="/Otterz82"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: -121px -52px;
 }
-.author[href$="/Kokudko"]~.flair {
+.author[href$="/Kokudko"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: -168px -50px;
     height: 40px;
@@ -187,78 +143,78 @@
 .author[href$="/Kokudko"]~.flair:before {
     bottom: 9px;
 }
-.author[href$="/Ap_Sona_Bot"]~.flair {
+.author[href$="/Ap_Sona_Bot"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: -217px -50px;
 }
-.author[href$="/WDey"]~.flair {
+.author[href$="/WDey"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: -257px -54px;
 }
-.author[href$="/Scathee"]~.flair {
+.author[href$="/Scathee"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: 3px -91px;
 }
-.author[href$="/Haruka-sama"]~.flair {
+.author[href$="/Haruka-sama"]~.flair:before {
     /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
     background-position: -38px -89px;*/
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -150px 0 
 }
-.author[href$="/Theprinceofarendelle"]~.flair {
+.author[href$="/Theprinceofarendelle"]~.flair:before {
     background-image: url(%%specialflairs%%)!important;
     background-position: -76px -90px;
 }
-.author[href$="/The_Little_Thingy"]~.flair{
+.author[href$="/The_Little_Thingy"]~.flair:before {
     background-image:url(%%specialflairs%%) !important;
     background-position:-118px -92px
 }
-.author[href$="/Cephei_Delta"]~.flair{
+.author[href$="/Cephei_Delta"]~.flair:before {
     background-image:url(%%specialflairs%%) !important;
     background-position:-162px -90px
 }
 
-.author[href$="/ad3z10"]~.flair{
+.author[href$="/ad3z10"]~.flair:before {
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -50px 0
 }
 
-.author[href$="/TARS-CASE"]~.flair{
+.author[href$="/TARS-CASE"]~.flair:before {
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -100px 0 
 }
 
-.author[href$="/Will-TVR"]~.flair{
+.author[href$="/Will-TVR"]~.flair:before {
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -200px 0 
 }
 
-.author[href$="/RustRider"]~.flair{
+.author[href$="/RustRider"]~.flair:before {
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -250px 0 
 }
 
-.author[href$="/CrimsonMudkip"]~.flair{
+.author[href$="/CrimsonMudkip"]~.flair:before {
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -350px 0 
 }
 
-.author[href$="/Koni_Fox"]~.flair{
+.author[href$="/Koni_Fox"]~.flair:before {
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -400px 0 
 }
 
-.author[href$="/Hyouten"]~.flair{
+.author[href$="/Hyouten"]~.flair:before {
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -450px 0 
 }
 
-.author[href$="/IAmzSamz"]~.flair{
+.author[href$="/IAmzSamz"]~.flair:before {
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -500px 0 
 }
 
-.author[href$="/TexasAndroid"]~.flair{
+.author[href$="/TexasAndroid"]~.flair:before {
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -550px 0 
 }
@@ -278,8 +234,8 @@
     color: #fff!important
 }
 
-.side .tagline .author[href$="/A_Wild_Abra"]~.flair:before,
-.author[href$="/A_Wild_Abra"]~.flair:before {
+.side .tagline .author[href$="/A_Wild_Abra"]~.flair,
+.author[href$="/A_Wild_Abra"]~.flair {
     color: #333 !important;
 }
 
@@ -287,43 +243,43 @@
 .thing .tagline .author.moderator[href$="/technophonix1"],
 .thing .author[href$="/technophonix1"],
 .side .tagline .author[href$="/technophonix1"],
-.author[href$="/technophonix1"]~.flair:before {
+.author[href$="/technophonix1"]~.flair {
     background-position: 0 -216px !important;
     color: #333 !important;
 }
 
 /* Haruka Purple - Distinguish Only */
 .thing .tagline .author.moderator[href$="/Haruka-sama"],
-.author.moderator[href$="/Haruka-sama"]~.flair:before,
+.author.moderator[href$="/Haruka-sama"]~.flair,
 .side .tagline .author[href$="/Haruka-sama"],
-.side .tagline .author[href$="/Haruka-sama"]~.flair:before {
+.side .tagline .author[href$="/Haruka-sama"]~.flair {
     background-position: 0 -252px !important;
     color: #fff !important;
 }
 
 /* Samz Purple/Turqoise - Perma */
 .thing .tagline .author[href$="/IAmzSamz"],
-.author[href$="/IAmzSamz"]~.flair:before,
+.author[href$="/IAmzSamz"]~.flair,
 .side .tagline .author[href$="/IAmzSamz"],
-.side .tagline .author[href$="/IAmzSamz"]~.flair:before  {
+.side .tagline .author[href$="/IAmzSamz"]~.flair  {
     background-position: 0 -288px !important;
     color: #fff !important;
 }
 
 /* NGB Gold - Distinguish Only */
 .thing .tagline .author.moderator[href$="/ngbeslhang"],
-.author.moderator[href$="/ngbeslhang"]~.flair:before,
+.author.moderator[href$="/ngbeslhang"]~.flair,
 .side .tagline .author[href$="/ngbeslhang"],
-.side .tagline .author[href$="/ngbeslhang"]~.flair:before  {
+.side .tagline .author[href$="/ngbeslhang"]~.flair  {
     background-position: 0 -324px !important;
     color: #333 !important;
 }
 
 /* Baru Orange - Distinguish Only */
 .thing .tagline .author.moderator[href$="/Lady_Baruren"],
-.author.moderator[href$="/Lady_Baruren"]~.flair:before,
+.author.moderator[href$="/Lady_Baruren"]~.flair,
 .side .tagline .author[href$="/Lady_Baruren"],
-.side .tagline .author[href$="/Lady_Baruren"]~.flair:before  {
+.side .tagline .author[href$="/Lady_Baruren"]~.flair  {
     background-position: 0 -360px !important;
     color: #fff !important;
 }
@@ -334,16 +290,16 @@
     background-position: 0 -396px !important;
     color: #fff !important;
 }
-.side .tagline .author[href$="/DavidLuizshair"]~.flair:before,
-.author.moderator[href$="/DavidLuizshair"]~.flair:before {
+.side .tagline .author[href$="/DavidLuizshair"]~.flair,
+.author.moderator[href$="/DavidLuizshair"]~.flair {
     color: #333 !important;
 }
 
 /* Mudkip Blue/Orange - Distinguish Only */
 .thing .tagline .author.moderator[href$="/CrimsonMudkip"],
-.author.moderator[href$="/CrimsonMudkip"]~.flair:before,
+.author.moderator[href$="/CrimsonMudkip"]~.flair,
 .side .tagline .author[href$="/CrimsonMudkip"],
-.side .tagline .author[href$="/CrimsonMudkip"]~.flair:before  {
+.side .tagline .author[href$="/CrimsonMudkip"]~.flair  {
     background-position: 0 -432px !important;
     color: #fff !important;
 }
@@ -354,25 +310,25 @@
     background-position: 0 -468px !important;
     color: #fff !important;
 }
-.side .tagline .author[href$="/TexasAndroid"]~.flair:before,
-.author.moderator[href$="/TexasAndroid"]~.flair:before {
+.side .tagline .author[href$="/TexasAndroid"]~.flair,
+.author.moderator[href$="/TexasAndroid"]~.flair {
     color: #333 !important;
 }
 
 /* Mockturne Vermillion - Distinguish Only */
 .thing .tagline .author.moderator[href$="/Mockturne"],
-.author.moderator[href$="/Mockturne"]~.flair:before,
+.author.moderator[href$="/Mockturne"]~.flair,
 .side .tagline .author[href$="/Mockturne"],
-.side .tagline .author[href$="/Mockturne"]~.flair:before  {
+.side .tagline .author[href$="/Mockturne"]~.flair  {
     background-position: 0 -540px !important;
     color: #fff !important;
 }
 
 /* NINTENDO OF AMERICA OFFICIAL - user Flair */
 .thing .author[href$="/Nintendo_America"],
-.author[href$="/CrimsonMudkip"]~.flair:before,
+.author[href$="/CrimsonMudkip"]~.flair,
 .side .tagline .author[href$="/Nintendo_America"]
-.side .tagline .author[href$="/Nintendo_America"]~.flair:before  {
+.side .tagline .author[href$="/Nintendo_America"]~.flair  {
     background-position: 0 -576px!important;
     color: #fff!important
 }
@@ -438,12 +394,13 @@
 --------------------------------------------------------------------------------*/
 .flair:after {
     content: "";
+    position: absolute;
     width: 30px;
     height: 30px;
     display: inline-block;
     background: url(%%ballflair%%) 0 0;
     visibility: visible;
-    top: 4px;
+    top: 6px;
     left: 245px
 }
 
