@@ -809,12 +809,12 @@
 
 /* Golden Teeth */
 .flair.flair-goldenteeth:after {
-    background: -120px -30px;
+    background-position: -120px -30px;
 }
 
 /* Coin Case */
 .flair.flair-coincase:after {
-    background: -150px -30px;
+    background-position: -150px -30px;
 }
 
 /* tall alolan exeggutor ballflair - shitpost winners */
