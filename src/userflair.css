@@ -807,6 +807,16 @@
     background-position: -90px -30px
 }
 
+/* Golden Teeth */
+.flair.flair-goldenteeth:after {
+    background: -120px -30px;
+}
+
+/* Coin Case */
+.flair.flair-coincase:after {
+    background: -150px -30px;
+}
+
 /* tall alolan exeggutor ballflair - shitpost winners */
 .author[href$="/PassingThroughRider"]~.flair:after,
 .author[href$="/SomebodyUnown"]~.flair:after,
