@@ -105,6 +105,21 @@ html[lang$=nm] .usertext.border .usertext-body {
 html[lang$=nm] .thing.comment.new-comment:not(.RES-keyNav-activeThing) .entry {
     border-color: #e5efff !important;
 }
+html[lang$=nm] span#REScommentSubToggle {
+    background: rgba(0,0,0,0.25);
+}
+
+/* permalink menuarea
+--------------------------------------------------------------------------------*/
+
+html[lang$=nm] .comment-permalink-page .commentarea>.infobar {
+    border: 1px solid #212428;
+    border-top: 2px solid hsla(49, 83%, 79%, 0.6);
+}
+html[lang$=nm] .comment-permalink-page .commentarea>.menuarea {
+    border: 1px solid #212428;
+    border-bottom: 0;
+}
 
 /* spoiler overlay
 --------------------------------------------------------------------------------*/
@@ -186,6 +201,12 @@ html[lang$=nm] .side .md>blockquote:first-of-type>p>a strong {
     color: white;
 }
 
+/* sidebar subreddit description
+--------------------------------------------------------------------------------*/
+html[lang$=nm] .side .md>p:first-of-type {
+    background: rgba(255,255,255,0.04);
+}
+
 /* sidebar common button
 --------------------------------------------------------------------------------*/
 
@@ -226,40 +247,55 @@ html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle {
 --------------------------------------------------------------------------------*/
 
 html[lang$=nm] .side .md h3+ul+ol:after {
-    background: #e3e3e3
+    background: #4a4a4a
 }
 html[lang$=nm] .side .md h3+ul,
 html[lang$=nm] .side .md h3+ul+ol {
-    border-left-color: #e3e3e3
+    border-left-color: #4a4a4a
 }
 html[lang$=nm] .side .md h3+ul+ol>li:before {
     background: #282b30;
-    border-color: #e3e3e3;
+    border-color: #4a4a4a;
     font-weight: 700;
     font-size: 13px;
     width: 24px;
     height: 24px;
-    line-height: 24px;
+    line-height: 23px;
     left: -36px;
-    top: 3px
+    top: 3px;
+    color: #aaa;
 }
 html[lang$=nm] .side .md h3+ul a {
     color: #dfdfdf;
     background: hsla(216,100%,56%,1);
 }
 
+/* linkinfo
+--------------------------------------------------------------------------------*/
+html[lang$=nm] .linkinfo {
+    background: rgba(255,255,255,.03);
+    border: 0;
+}
+
+html[lang$=nm] .linkinfo .shortlink input {
+    background: #3f4246;
+    color: #888;
+}
 
 /* sun/moon switch day mode
 --------------------------------------------------------------------------------*/
 html[lang$=nm] .side .md > h1 {
-    background: rgba(255, 255, 255, .08);
-    border: 1px solid rgba(255, 255, 255, .15)
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.08);
 }
 html[lang$=nm] .side .md > h1 a {
     color: rgba(255,255,255,0.65)
 }
+html[lang$=nm] .side .md > h1 a:hover {
+    background: rgba(255,255,255,0.02);
+}
 html[lang$=nm] .side .md > h1 a:last-child {
-    border-left: 1px solid rgba(255, 255, 255, .15)
+    border-left-color: rgba(255,255,255,0.08)
 }
 /* author panel - set to dark version
 --------------------------------------------------------------------------------*/
@@ -287,7 +323,8 @@ html[lang$=nm] .side .md>h5:after {
     opacity: 0.08;
 }
 html[lang$=nm] .titlebox form.toggle.flairtoggle:after,
-html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle:after {
+html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle:after,
+html[lang$=nm] .titlebox form.toggle.sr_style_toggle:after {
     background: url(%%sidepattern1w%%);
     opacity: 0.08;
 }
@@ -369,4 +406,10 @@ html[lang$=nm] .thumbnail.nsfw,
 html[lang$=nm] .thumbnail.self {
     background-image: url(%%pokesheet%%) !important;
     border: 1px solid #111
+}
+
+/* RES - never ending reddit */
+html[lang$=nm].res #progressIndicator {
+    background: #282b30;
+    border: 1px solid #1e2024;
 }

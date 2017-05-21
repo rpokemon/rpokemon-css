@@ -90,7 +90,7 @@
 }
 
 .titlebox .flair.flair-tf {
-    bottom: -16px;
+    bottom: 0;
     top: auto;
     left: -7px;
 }
