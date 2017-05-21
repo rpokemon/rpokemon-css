@@ -9,7 +9,7 @@
 .side {
     margin-top: 107px;
     position: relative;
-    padding-top: 980px;
+    padding-top: 310px;
     border-radius: 5px;
     border: 1px solid #e3e3e3
 }
@@ -81,6 +81,9 @@
     top: 0;
     right: 0
 }
+body:not(.res) .titlebox > h1 {
+    top: 17px;
+}
 .titlebox>h1 a {
     display: block;
     position: relative;
@@ -142,7 +145,7 @@
 }
 
 .titlebox .number:after {
-    content: " Pok�mon Trainers"
+    content: " Pokémon Trainers"
 }
 .titlebox .users-online .number:after {
     content: " Online Now"
@@ -220,7 +223,7 @@
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    position: relative;
+    margin: 10px 0;
 }
 
 /* edit flair area
@@ -228,12 +231,12 @@
 
 /* flair toggle */
 .titlebox form.toggle.flairtoggle {
-    top: 445px;
     display: -webkit-flex;
     display: flex;
     align-items: center;
     width: 100%;
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin: 10px 0;
 }
 .flairtoggle label {
     display: -webkit-flex;
@@ -243,19 +246,17 @@
 
 /* flair preview tagline */
 .titlebox .tagline {
-    position: absolute;
-    left: -10px;
-    top: 470px
+    position: relative;
+    height: 36px;
+    margin-left:12px;
 }
 
 /* edit flair link */
 .side .md a[href*="#flair"] {
     line-height: 26px;
     display: block;
-    position: absolute;
-    top: 520px;
-    left: 30px;
-    right: 30px;
+    position: relative;
+    margin: 0 25px;
     font-size: 12px
 }
 
@@ -265,6 +266,7 @@
 /* stylesheet toggle */
 .titlebox form.toggle.res-sr-style-toggle {
     text-transform: capitalize;
+    position: absolute;
     top: 70px;
     left: 0;
     right: 0
@@ -305,20 +307,15 @@
 
 /* Submit links
 --------------------------------------------------------------------------------*/
-.side .md>h2 {
-    position: absolute;
-    top: 700px;
-    margin: 0
+.side .md > h2 {
+    margin: 0;
+    margin: 10px -7px;
 }
 
 /* list */
 .side .md>h2+ul {
     padding: 0;
     list-style: none;
-    position: absolute;
-    top: 725px;
-    left: 0;
-    right: 0
 }
 .side .md>h2+ul li a {
     line-height: 30px;
@@ -357,9 +354,9 @@
 
 /* subreddit description
 --------------------------------------------------------------------------------*/
-.side .md>p:first-of-type {
+.side .md > p:first-of-type {
     position: absolute;
-    top: 558px;
+    top: 180px;
     margin: 0 16px;
     padding: 8px;
     line-height: 16px;
@@ -367,24 +364,29 @@
     
     background: rgba(0, 0, 0, .025);
     color: #222;
+    
+    height: 80px;
+    box-sizing: border-box;
 }
 
 /* Night/day mode switch (nm switch/dm switch/sn switch/sun switch/moon switch)
 --------------------------------------------------------------------------------*/
 .side .md > h1 {
     position: absolute;
-    top: 635px;
-    left: 20px;
-    right: 20px;
-    border-radius: 18px;
-    box-sizing: border-box;
+    top: 260px;
+    left: 8px;
+    right: 0;
+    margin: 0 16px;
+    font-size: 0;
     
+    box-sizing: border-box;
     background: 0;
-    border: 1px solid #dedede
+    background: rgba(0,0,0,.025);
+    border-top: 1px solid rgba(0,0,0,0.05);
 }
 .side .md > h1 a {
     display: inline-block;
-    width: 48%;
+    width: 50%;
     box-sizing: border-box;
     line-height: 36px;
     font-size: 14px;
@@ -393,8 +395,11 @@
     position: relative;
     color: #555
 }
+.side .md > h1 a:hover {
+    background: rgba(0,0,0,0.02);
+}
 .side .md > h1 a:last-child {
-    border-left: 1px solid #dedede
+    border-left: 1px solid rgba(0,0,0,0.05);
 }
 
 .side .md > h1 a:before {
@@ -438,30 +443,41 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
     margin-right: 16px;
     margin-left: 23px;
     padding: 8px;
-    background: rgba(255, 255, 255, .03);
-    border: 1px solid #e3e3e3;
+    background: rgba(0,0,0,.025);
+    border: 1px solid rgba(0,0,0,0.03);
     text-align: center
 }
 .linkinfo .date {
     text-transform: uppercase;
     font-size: 9px;
-    color: #ccc;
+    color: #aaa;
     margin-bottom: 10px
 }
-.linkinfo .score .word,
 .linkinfo .shortlink {
     font-size: 0
 }
 .linkinfo .shortlink input {
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
-    border: 0;
-    margin-top: 10px
+    border: 1px solid rgba(0,0,0,0.05);
+    color: #999;
+    margin-top: 10px;
 }
 .linkinfo .score {
     margin-bottom: 5px;
-    display: block;
-    width: 100%
+    display: -webki-flex;
+    display: flex;
+    width: 100%;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.linkinfo .score .word {
+    margin-left: 4px;
+    margin-right: 5px;
 }
 
 /* submission filters

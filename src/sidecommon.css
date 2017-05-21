@@ -74,7 +74,8 @@
 .side .md>h3:after,
 .side .md>h5:after,
 .titlebox form.toggle.flairtoggle:after,
-.titlebox form.toggle.res-sr-style-toggle:after {
+.titlebox form.toggle.res-sr-style-toggle:after,
+.titlebox form.toggle.sr_style_toggle:after {
     content: '';
     background: url(%%sidepattern2%%) -5px 1px no-repeat;
     position: absolute;
@@ -113,11 +114,12 @@
 .titlebox form.toggle.flairtoggle,
 .titlebox form.toggle.res-sr-style-toggle,
 .titlebox form.toggle.sr_style_toggle {
-    position: absolute;
+    position: relative;
     padding: 0 0 0 30px;
     height: 18px
 }
 .titlebox form.toggle.flairtoggle:after,
-.titlebox form.toggle.res-sr-style-toggle:after {
+.titlebox form.toggle.res-sr-style-toggle:after,
+.titlebox form.toggle.sr_style_toggle:after {
     background: url(%%sidepattern1%%)
 }

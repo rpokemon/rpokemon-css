@@ -54,8 +54,7 @@ html[lang$=nm] .side .md h4:first-of-type+ul li {
     background-position: -1152px -86px
 }
 .side .md h4:first-of-type+ul li:nth-child(3):before {
-    background-position: -258px -206px; /*-1198px -86px*/
-    background: url(%%kahuna%%) no-repeat -6px -51px;
+    background-position: -1200px -86px;
 }
 .side .md h4:first-of-type+ul li:nth-child(4):before {
     background-position: -259.5px -163px; /*-1244px -86px*/
@@ -70,7 +69,6 @@ html[lang$=nm] .side .md h4:first-of-type+ul li {
 }
 .side .md h4:first-of-type+ul li:nth-child(3) {
     box-shadow: 0 0.5px 0 2px #be4c53;
-    box-shadow: 0 0.5px 0 2px #888;
 }
 .side .md h4:first-of-type+ul li:nth-child(4) {
     box-shadow: 0 0.5px 0 2px #b07b36;

@@ -67,9 +67,16 @@
     width: 50px;
     height: 50px;
 
+<<<<<<< HEAD
     position: relative;
     top: 8px;
     transform: scale(.8);
+=======
+.titlebox .flair.flair-tf {
+    bottom: 0;
+    top: auto;
+    left: -7px;
+>>>>>>> refs/remotes/origin/master
 }
 
 .flair.flair-tf:after {
@@ -764,6 +771,16 @@
     background-position: -90px -30px
 }
 
+/* Golden Teeth */
+.flair.flair-goldenteeth:after {
+    background-position: -120px -30px;
+}
+
+/* Coin Case */
+.flair.flair-coincase:after {
+    background-position: -150px -30px;
+}
+
 /* tall alolan exeggutor ballflair - shitpost winners */
 .author[href$="/PassingThroughRider"]~.flair:after,
 .author[href$="/SomebodyUnown"]~.flair:after,
@@ -797,7 +814,7 @@
 
 /* Tapu lele - Challenge Medal */
 .flair.flair-tapulele-medal:after {
-    background-position: -1198px -86px !important;
+    background-position: -1200px -86px !important;
 }
 
 /* Tapu koko - Challenge Medal */
