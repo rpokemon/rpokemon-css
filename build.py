@@ -36,7 +36,8 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 'userflair.css',      # user flairs
                 'moontheme.css',      # night mode
                 'banner.css',         # banner
-                #'sm_release.css',     # fancy CSS for Pokemon Sun & Moon Release Megathread 
+                #'sm_release.css',    # fancy CSS for Pokemon Sun & Moon Release Megathread 
+                'magikarp.css',       # Magikarp Week Banner CSS
               ]      
                 
 # input/output variables

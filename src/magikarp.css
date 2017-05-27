@@ -1,0 +1,26 @@
+#header {
+    overflow:visible!important;
+    animation: scrl 20s infinite;
+    animation-play-state: paused;
+    background-image: url(%%fishheader%%)!important;
+    background-repeat: repeat!important;
+    animation-timing-function: linear;
+}
+
+html[lang$="nm"] #header {
+    background-image: url(%%fishheadernm%%)!important;
+}
+
+#header:hover {
+    animation-play-state: running
+}
+
+@keyframes scrl {
+   from {
+       background-position: 0 0
+   }
+
+   to {
+      background-position: -1906px 0
+   }
+}
