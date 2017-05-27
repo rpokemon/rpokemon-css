@@ -781,6 +781,16 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
     background-position: -150px -30px;
 }
 
+/* Red Scale */
+.flair.flair-redscale:after {
+    background-position: -180px -30px;
+}
+
+/* Shiny Magikarp */
+.flair.flair-shinykarp:after {
+    background-position: -210px -30px;
+}
+
 /* tall alolan exeggutor ballflair - shitpost winners */
 .author[href$="/PassingThroughRider"]~.flair:after,
 .author[href$="/SomebodyUnown"]~.flair:after,
