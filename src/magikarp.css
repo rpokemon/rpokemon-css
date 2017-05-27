@@ -2,13 +2,14 @@
     overflow:visible!important;
     animation: scrl 20s infinite;
     animation-play-state: paused;
-    background-image: url(%%fishheader%%)!important;
-    background-repeat: repeat!important;
+    background-image: url(%%banner-fish%%), url(%%fishbg-day%%);
+    background-repeat: repeat, repeat!important;
+    background-size: auto 180px, 238px auto!important;
     animation-timing-function: linear;
 }
 
 html[lang$="nm"] #header {
-    background-image: url(%%fishheadernm%%)!important;
+    background-image: url(%%banner-fish%%), url(%%fishbg-night%%) !important;
 }
 
 #header:hover {
@@ -17,10 +18,10 @@ html[lang$="nm"] #header {
 
 @keyframes scrl {
    from {
-       background-position: 0 0
+       background-position: 0 0, 0 0;
    }
 
    to {
-      background-position: -1906px 0
+      background-position: -1906px 0, 0 0;
    }
 }
