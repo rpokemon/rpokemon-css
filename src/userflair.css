@@ -48,7 +48,7 @@
 }
 .sidecontentbox .flair { left: 0; top: -2px; margin-left: -5px; }
 .sidecontentbox .flair:after { left: 235px; }
-.sidecontentbox .flair:before { bottom: 3px; }
+.sidecontentbox .flair:before { bottom: 2px; left: 43px; }
 
 /* side tagline flair fix */
 .titlebox .flair {
@@ -79,13 +79,19 @@
     top: auto;
     bottom: 0px;
     margin-left: -5px;
+    transform: scale(0.8);
+    transform-origin: left bottom;
 }
 .sidecontentbox .flair.flair-tf:before {
     left: 60px;
     bottom: 4px;
+    transform: scale(1.2);
+    transform-origin: 38px 12px;
 }
 .sidecontentbox .flair.flair-tf:after {
     left: 333px;
+    transform: scale(1.2);
+    transform-origin: 200px 34px;
 }
 
 /********************************************************************************
@@ -102,8 +108,8 @@
 .author[href$="/technophonix1"]~.flair {
     /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
     background-position: -69px -16px*/ 
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: 0 0
+    /* background-image: url(%%modtrainerflair%%)!important;
+    background-position: 0 0 */
 }
 .author[href$="/Thief-Noctis"]~.flair {
     background-image: url(%%specialflairs%%)!important;
@@ -124,8 +130,8 @@
 .author[href$="/DavidLuizshair"]~.flair {
     /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
     background-position: -76px -52px;*/
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -600px 0
+    /* background-image: url(%%modtrainerflair%%)!important;
+    background-position: -600px 0 */
 }
 .author[href$="/Otterz82"]~.flair {
     background-image: url(%%specialflairs%%)!important;
