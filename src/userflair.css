@@ -18,21 +18,14 @@
     border-radius: 0;
     z-index: 2;
     text-indent: -9999px;
-    
-    /* comment flair position */
-    top: -28px;
-    left: 67px;
 }
 
 .flair.flair-placeholder {
     background-image: none !important;
 }
 
-/* link flair position*/
-.link .flair {
-    top: -4px;
-    left: 145px
-}
+.comment .flair { top: -28px }
+.link .flair    { top: -4px }
 
 /* flair text */
 .flair:before {
@@ -41,7 +34,6 @@
     text-indent: 0;
     display: block;
     width: 220px;
-    left: 44px;
     bottom: 1px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -69,71 +61,31 @@
 *********************************************************************************/
 
 .flair.flair-tf {
-    width: 50px;
-    height: 50px;
-    top: -42px;
-    left: 63px;
-}
-
-.flair.flair-tf.flair-tf2 {
-    width: 75px;
-    left: 49px
-}
-
-.link .flair.flair-tf {
-    top: -18px;
-    left: 140px;
-}
-
-.link .flair.flair-tf.flair-tf2 {
-    left: 126px;
-}
-
-.titlebox .flair.flair-tf {
     bottom: 0;
     top: auto;
-    left: -7px;
 }
 
-.titlebox .flair.flair-tf.flair-tf2 {
-    left: -21px;
+.comment .flair.flair-tf {
+    bottom: 100%;
+    margin-bottom: -8px;
 }
 
+.flair.flair-tf:before { bottom: 4px; }
+.flair.flair-tf:after { top: auto; bottom: 2px; }
+
+/* mod box */
 .sidecontentbox .flair.flair-tf {
     left: 2px;
     top: auto;
     bottom: 0px;
     margin-left: -5px;
-    transform: scale(0.7);
-    transform-origin: left bottom;
 }
 .sidecontentbox .flair.flair-tf:before {
-    transform: scale(1.4);
-    transform-origin: left bottom;
     left: 60px;
     bottom: 4px;
 }
 .sidecontentbox .flair.flair-tf:after {
-    transform: scale(1.4);
-    transform-origin: left bottom;
     left: 333px;
-}
-
-.flair.flair-tf:before {
-    left: 51px;
-    bottom: 4px;
-}
-.flair.flair-tf.flair-tf2:before {
-    left: 65px;
-}
-
-.flair.flair-tf:after {
-    top: auto;
-    bottom: 2px;
-    left: 249px;
-}
-.flair.flair-tf.flair-tf2:after {
-    left: 263px;
 }
 
 /********************************************************************************
@@ -202,8 +154,8 @@
 .author[href$="/Haruka-sama"]~.flair {
     /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
     background-position: -38px -89px;*/
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -150px 0 
+    /* background-image: url(%%modtrainerflair%%)!important;
+    background-position: -150px 0 */
 }
 .author[href$="/Theprinceofarendelle"]~.flair {
     background-image: url(%%specialflairs%%)!important;
@@ -218,6 +170,8 @@
     background-position:-162px -90px
 }
 
+/*
+NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author[href$="/ad3z10"]~.flair{
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -50px 0
@@ -261,7 +215,7 @@
 .author[href$="/TexasAndroid"]~.flair{
     background-image: url(%%modtrainerflair%%)!important;
     background-position: -550px 0 
-}
+}*/
 
 /********************************************************************************
 * CUSTOM USER BALL FLAIRS
@@ -444,7 +398,6 @@
     background: url(%%ballflair%%) 0 0;
     visibility: visible;
     top: 4px;
-    left: 245px
 }
 
 
