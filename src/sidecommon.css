@@ -62,8 +62,9 @@
 .side #search,
 .side #searchexpando,
 .titlebox>h1 {
-    left: 0;
-    position: absolute
+    position: absolute;
+    width: 302px;
+    right: 5px;
 }
 
 /* common header bg */

@@ -8,27 +8,10 @@
 --------------------------------------------------------------------------------*/
 .side {
     margin-top: 107px;
-    position: relative;
     padding-top: 310px;
     border-radius: 5px;
     border: 1px solid #e3e3e3
 }
-.side .sponsorshipbox {
-    position: relative;
-    top: 15px
-}
-.ad300x250 {
-    height: 250px;
-    margin-top: 15px;
-}
-
-#ad_main_top {
-    position: absolute;
-    top: 180px;
-    left: 0;
-    transform: scale(0.98);
-}
-
 .side .md {
     margin: 7px
 }
@@ -44,9 +27,9 @@
 /* Search
 --------------------------------------------------------------------------------*/
 .side #search {
-    bottom: 100%;
-    right: 0;
-    margin-bottom: 41px
+    top: 200px;
+    right: 5px;
+    z-index: 500;
 }
 #search input[type=text] {
     border: 0;
@@ -78,11 +61,10 @@
 
 /* side top-logo */
 .titlebox>h1 {
-    top: 0;
-    right: 0
+    top: 274px;
 }
 body:not(.res) .titlebox > h1 {
-    top: 17px;
+    top: 291px;
 }
 .titlebox>h1 a {
     display: block;
@@ -122,14 +104,15 @@ body:not(.res) .titlebox > h1 {
 .titlebox .users-online {
     position: absolute;
     color: #333;
-    top: 100px;
-    left: 30px;
-    right: 30px;
+    top: 374px;
+    width: 242px;
+    box-sizing: border-box;
+    right: 35px;
     padding-left: 65px;
-    line-height: 20px
+    line-height: 20px;
 }
 .titlebox .users-online {
-    top: 120px;
+    top: 394px;
     background: #f0f0f0;
 }
 
@@ -139,7 +122,7 @@ body:not(.res) .titlebox > h1 {
     display: block;
     background: url(%%pokesheet%%) 0 -250px;
     width: 52px;
-    height: 50px;
+    height: 52px;
     bottom: -8px;
     left: 0
 }
@@ -172,16 +155,16 @@ body:not(.res) .titlebox > h1 {
 .res-fancy-toggle-button.RESshortcut,
 .titlebox .fancy-toggle-button {
     position: absolute;
-    top: 150px
+    top: 424px;
 }
 .titlebox .fancy-toggle-button {
-    left: 30px
+    right: 191px;
 }
 .res-fancy-toggle-button.RESshortcut {
-    left: 116px
+    right: 116px;
 }
 .res-fancy-toggle-button.RESDashboardToggle {
-    right: 25px
+    right: 30px;
 }
 
 .res .titlebox .multi-count {
@@ -267,9 +250,10 @@ body:not(.res) .titlebox > h1 {
 .titlebox form.toggle.res-sr-style-toggle {
     text-transform: capitalize;
     position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0
+    top: 344px;
+    right: 6px;
+    width: 299px;
+    box-sizing: border-box;
 }
 
 .res-sr-style-toggle label,
@@ -356,8 +340,10 @@ body:not(.res) .titlebox > h1 {
 --------------------------------------------------------------------------------*/
 .side .md > p:first-of-type {
     position: absolute;
-    top: 180px;
-    margin: 0 16px;
+    top: 454px;
+    margin: 0;
+    width: 266px;
+    right: 22px;
     padding: 8px;
     line-height: 16px;
     font-size: 12px;
@@ -373,10 +359,10 @@ body:not(.res) .titlebox > h1 {
 --------------------------------------------------------------------------------*/
 .side .md > h1 {
     position: absolute;
-    top: 260px;
-    left: 8px;
-    right: 0;
-    margin: 0 16px;
+    top: 534px;
+    width: 266px;
+    right: 22px;
+    margin: 0;
     font-size: 0;
     
     box-sizing: border-box;
