@@ -213,7 +213,8 @@ html:lang(ns) .linkflair-spoiler .thumbnail img {
 /* Score
 --------------------------------------------------------------------------------*/
 
-.thing .score {
+.thing .score,
+.comment .tagline .score-hidden {
     display: none;
     position: relative;
     float: left;
@@ -239,7 +240,8 @@ html:lang(ns) .linkflair-spoiler .thumbnail img {
 }
 
 /* comment score */
-.comment .score {
+.comment .score,
+.comment .tagline .score-hidden {
     font-size: 10px;
     letter-spacing: .2px;
     top: -25px;
@@ -256,13 +258,33 @@ html:lang(ns) .linkflair-spoiler .thumbnail img {
 /* show score */
 .comment .dislikes .score.dislikes,
 .comment .likes .score.likes,
-.comment .unvoted .score.unvoted {
+.comment .unvoted .score.unvoted,
+.comment .tagline .score-hidden {
     display: table-caption!important
 }
 .dislikes .score.dislikes,
 .likes .score.likes,
 .unvoted .score.unvoted {
     display: block
+}
+
+/* score hidden */
+.comment .tagline .score-hidden {
+    letter-spacing: 0;
+    word-spacing: inherit;
+    font-weight: 500;
+}
+
+.comment .tagline .score-hidden:before {
+    content: 'score hidden';
+    display: block;
+    font-size: 6.5px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    line-height: 18px;
+    padding-top: 1px;
+    opacity: 0.6;
 }
 
 /* Vote arrows
