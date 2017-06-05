@@ -72,6 +72,9 @@
 .thing.link.linkflair-art {
     border-left-color: #e868c1 !important
 }
+.thing.link.linkflair-craft {
+    border-left-color: #e87b0c !important
+}
 .thing.link.linkflair-noob {
     border-left-color: #3498db !important
 }
@@ -130,11 +133,13 @@ html:lang(di) .listing-page .link:not(.linkflair-discussion),
 html:lang(fo) .listing-page .link:not(.linkflair-info),
 html:lang(im) .listing-page .link:not(.linkflair-image),
 html:lang(me) .listing-page .link:not(.linkflair-media),
+html:lang(cf) .listing-page .link:not(.linkflair-craft),
 html:lang(na) .listing-page .link.linkflair-art,
 html:lang(nd) .listing-page .link.linkflair-discussion,
 html:lang(ne) .listing-page .link.linkflair-media,
 html:lang(nf) .listing-page .link.linkflair-info,
 html:lang(ni) .listing-page .link.linkflair-image,
+html:lang(nc) .listing-page .link.linkflair-craft,
 html:lang(ns) .link.linkflair-spoiler a.title:before {
     display: none!important
 }
