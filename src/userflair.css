@@ -56,8 +56,9 @@
     left: -2px
 }
 
-/* hide flair in search page*/
-.search-result-group .flair {
+/* hide flair in search page and wiki page */
+.search-result-group .flair,
+.wiki-page .wiki-page-content .flair {
     display: none !important;
 }
 
