@@ -542,11 +542,7 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
     border-color: #e87b0c;
     color: #e87b0c
 }
-.side .md h4+blockquote h6:nth-of-type(1) a {
-    border-color: #919290;
-    color: #919290
-}
-.side .md h4+blockquote h6:nth-of-type(2) a {
+.side .md h4+blockquote h6 a {
     border-color: #59f;
     color: #59f
 }

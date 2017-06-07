@@ -121,14 +121,6 @@ html[lang$=nm] .comment-permalink-page .commentarea>.menuarea {
     border-bottom: 0;
 }
 
-/* spoiler overlay
---------------------------------------------------------------------------------*/
-html[lang$=nm] .link.linkflair-spoiler a.title:before {
-    border: 2px dashed #36393e;
-    background: #282b30
-}
-
-
 /* thing title
 --------------------------------------------------------------------------------*/
 html[lang$=nm] .link a.title {
@@ -398,8 +390,6 @@ html[lang$=nm] .tagline time:not(.edited-timestamp) {
     color: #aaa
 }
 
-
-html[lang$=nm] .linkflair-spoiler .thumbnail,
 html[lang$=nm] .thumbnail,
 html[lang$=nm] .thumbnail.default,
 html[lang$=nm] .thumbnail.nsfw,
@@ -447,7 +437,4 @@ html[lang$=nm] .thing.linkflair-rule .linkflairlabel {
 }
 html[lang$=nm] .thing.linkflair-rotation .linkflairlabel {
     color: #76c374 !important
-}
-html[lang$=nm] .thing.linkflair-spoiler .linkflairlabel {
-    color: #e4796b !important
 }
