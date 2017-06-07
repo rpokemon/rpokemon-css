@@ -85,13 +85,24 @@ html[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment .p
     border-radius: 3px;
     margin: auto
 }
+
+.flairselector,
 .flairselector ul {
-    width: 50%!important;
-    max-width: none
+    min-width: 178px;
+    max-width: none;
 }
+.flairselector ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.flairselector ul li {
+    width: 50%;
+    padding: 0 !important;
+}
+
 .flairselector .linkflair {
     position: relative;
-    background: #aaa;
     min-height: 22px;
     margin: 2px
 }
@@ -102,6 +113,10 @@ html[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment .p
 
 .flairselector .linkflair .title {
     display: none;
+}
+html .thing.link .flairselector .linkflair .linkflairlabel,
+html[lang$=nm] .thing.link .flairselector .linkflair .linkflairlabel {
+    color: white!important;
 }
 
 /* flair page

@@ -56,7 +56,12 @@
     margin-left: -20px;
 }
 
-/* flair selector */
+/* flair colors
+--------------------------------------------------------------------------------*/
+/*
+NOTICE: If adding new flair or changing color,
+remember to update moontheme.css as well!!! */
+
 .thing.link.linkflair-image {
     border-left-color: #a7565c !important
 }
@@ -88,6 +93,41 @@
     border-left-color: #e4796b !important
 }
 
+
+.flairselector .linkflair-image {
+    background: #a7565c
+}
+.flairselector .linkflair-media {
+    background: #856fa6
+}
+.flairselector .linkflair-discussion {
+    background: #76c374
+}
+.flairselector .linkflair-info {
+    background: #e6d76d
+}
+.flairselector .linkflair-art {
+    background: #e868c1
+}
+.flairselector .linkflair-craft {
+    background: #e87b0c
+}
+.flairselector .linkflair-noob {
+    background: #3498db
+}
+.flairselector .linkflair-rule {
+    background: #e74c3c
+}
+.flairselector .linkflair-rotation {
+    background: #76c374
+}
+.flairselector .linkflair-spoiler {
+    background: #e4796b
+}
+
+/* spoiler linkflairlabel and title overlay
+--------------------------------------------------------------------------------*/
+
 .spoiler-stamp.stamp {
     background: #e4796b;
     border-color: #e4796b;
@@ -95,8 +135,6 @@
     margin-top: -1px;
 }
 
-/* spoiler linkflairlabel and title overlay
---------------------------------------------------------------------------------*/
 
 .link.linkflair-spoiler a.title:before {
     content: "Spoiler - hover to view title";
