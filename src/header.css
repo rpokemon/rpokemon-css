@@ -63,11 +63,11 @@
     font-size: 0
 }
 .pagename a {
-    top: 45px;
-    width: 220px;
-    height: 80px;
+    top: 25px;
+    width: 300px;
+    height: 120px;
     display: block;
-    left: 240px;
+    left: 130px;
     z-index: 99;
     background: url(%%logo%%) no-repeat
 }

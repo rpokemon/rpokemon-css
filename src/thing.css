@@ -306,7 +306,7 @@ html:lang(ns) .linkflair-spoiler .thumbnail img {
 .arrow {
     width: 33px;
     height: 33px;
-    background-image: url(%%downupsumo%%)!important;
+    background-image: url(%%downupusuumo%%)!important;
     -webkit-transform: scale(.8);
     transform: scale(.8);
     margin: -2px auto

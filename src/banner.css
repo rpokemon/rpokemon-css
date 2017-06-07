@@ -8,10 +8,17 @@ html[lang$=nm] #header {
     background: url(%%nightmodeheader%%) left center/cover no-repeat
 }
 
-.pagename a, .pagename a:hover {
+.pagename a {
     background: url(%%dm-logo%%) center center/contain no-repeat;
 }
-html[lang$=nm] .pagename a,
-html[lang$=nm] .pagename a:hover {
+.pagename a:hover {
+    background: url(%%dm-logo-hover%%) center center/contain no-repeat;
+}
+
+html[lang$=nm] .pagename a{
     background: url(%%nm-logo%%) center center/contain no-repeat;
+}
+
+html[lang$=nm] .pagename a:hover {
+    background: url(%%nm-logo-hover%%) center center/contain no-repeat;
 }
