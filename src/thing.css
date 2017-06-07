@@ -71,7 +71,6 @@
 
 /* title - actual link*/
 .link a.title {
-    position: relative; /* relative for spoiler overlay */
     font-size: 19px;
     color: rgba(0, 0, 0, .8);
     display: inline-block;
@@ -99,13 +98,14 @@
 --------------------------------------------------------------------------------*/
 
 
-.thumbnail.default, .thumbnail.self {
+.thumbnail.default,
+.thumbnail.self {
     background-position: 0px 0px
 }
 .thumbnail.nsfw {
     background: -70px 0
 }
-.linkflair-spoiler .thumbnail, .thumbnail.spoiler {
+.thumbnail.spoiler {
     background: -70px -70px
 }
 .stickied .thumbnail.self {
@@ -115,7 +115,6 @@
     background: -140px -70px
 }
 
-.linkflair-spoiler .thumbnail,
 .thumbnail,
 .thumbnail.default,
 .thumbnail.nsfw,
@@ -145,13 +144,8 @@ html[lang$=nm] .linkflair-rotation .thumbnail.self {
     transform: translateX(-50%);
 }
 
-.rank,
-.linkflair-spoiler .thumbnail img {
+.rank {
     display: none
-}
-
-html:lang(ns) .linkflair-spoiler .thumbnail img {
-    display: block;
 }
 
 /* entry

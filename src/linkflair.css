@@ -39,13 +39,11 @@
 }
 
 /* increase label size for longer linkflairs */
-.linkflair.linkflair-spoiler .title .linkflairlabel,
 .linkflair.linkflair-rotation .title .linkflairlabel {
     font-size: 9px;
     overflow: visible;
 }
 
-.link.linkflair.linkflair-spoiler,
 .link.linkflair.linkflair-rotation {
     padding-bottom: 10px;
 }
@@ -89,9 +87,6 @@ remember to update moontheme.css as well!!! */
 .thing.link.linkflair-rotation {
     border-left-color: #76c374 !important
 }
-.thing.link.linkflair-spoiler {
-    border-left-color: #e4796b !important
-}
 
 
 .flairselector .linkflair-image {
@@ -121,47 +116,6 @@ remember to update moontheme.css as well!!! */
 .flairselector .linkflair-rotation {
     background: #76c374
 }
-.flairselector .linkflair-spoiler {
-    background: #e4796b
-}
-
-/* spoiler linkflairlabel and title overlay
---------------------------------------------------------------------------------*/
-
-.spoiler-stamp.stamp {
-    background: #e4796b;
-    border-color: #e4796b;
-    color: white;
-    margin-top: -1px;
-}
-
-
-.link.linkflair-spoiler a.title:before {
-    content: "Spoiler - hover to view title";
-    display: inline-block;
-    border: 2px dashed #eaeaea;
-    background: #fff;
-    color: #606060!important;
-    padding: 3px 5px;
-    font-size: 17px;
-    line-height: 17px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
-    transition: opacity 200ms;
-    transition-delay: 50ms;
-}
-
-.link.linkflair-spoiler a.title:hover:before {
-    opacity: 0;
-}
-
-.link.linkflair-spoiler a.title {
-    min-width: 190px;
-}
 
 /* filters
 --------------------------------------------------------------------------------*/
@@ -177,8 +131,7 @@ html:lang(nd) .listing-page .link.linkflair-discussion,
 html:lang(ne) .listing-page .link.linkflair-media,
 html:lang(nf) .listing-page .link.linkflair-info,
 html:lang(ni) .listing-page .link.linkflair-image,
-html:lang(nc) .listing-page .link.linkflair-craft,
-html:lang(ns) .link.linkflair-spoiler a.title:before {
+html:lang(nc) .listing-page .link.linkflair-craft {
     display: none!important
 }
 
