@@ -396,7 +396,7 @@ body:not(.res) .titlebox > h1 {
     height: 27px;
     top: 3px;
     left: 10px;
-    background: url(%%symsm%%) no-repeat 0 1px / auto 27px;
+    background: url(%%symusum%%) no-repeat 0 1px / auto 27px;
 }
 .side .md > h1 a:last-child:before {
     left: 8px;

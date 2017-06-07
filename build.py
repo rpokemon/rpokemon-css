@@ -42,7 +42,7 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 
                #'sm_release.css',     # fancy CSS for Pokemon Sun & Moon Release Megathread 
                #'magikarp.css',       # Magikarp Week Banner CSS
-                'direct_banner.css',  # Direct Banner (temp add-on)
+               #'direct_banner.css',  # Direct Banner (temp add-on)
               ]      
                 
 # input/output variables
