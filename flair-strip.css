@@ -43,6 +43,7 @@ body>.content {
     width: 280px;
     height: 36px;
     background: url(%%FlairBG%%);
+    background-size: 280px auto;
     position: absolute;
     padding: 3px 0 0 45px!important;
     font-weight: 700;
