@@ -240,7 +240,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .thing .author[href$="/A_Wild_Abra"],
 .res .thing .tagline .author.submitter[href$="/A_Wild_Abra"],
 .side .tagline .author[href$="/A_Wild_Abra"] {
-    background-position: 0 -180px!important;
+    background-position: 0 -210px!important;
     color: #fff!important
 }
 
@@ -254,7 +254,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .thing .author[href$="/technophonix1"],
 .side .tagline .author[href$="/technophonix1"],
 .author[href$="/technophonix1"]~.flair:before {
-    background-position: 0 -216px !important;
+    background-position: 0 -252px !important;
     color: #333 !important;
 }
 
@@ -263,7 +263,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author.moderator[href$="/Haruka-sama"]~.flair:before,
 .side .tagline .author[href$="/Haruka-sama"],
 .side .tagline .author[href$="/Haruka-sama"]~.flair:before {
-    background-position: 0 -252px !important;
+    background-position: 0 -294px !important;
     color: #fff !important;
 }
 
@@ -272,7 +272,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author[href$="/IAmzSamz"]~.flair:before,
 .side .tagline .author[href$="/IAmzSamz"],
 .side .tagline .author[href$="/IAmzSamz"]~.flair:before  {
-    background-position: 0 -288px !important;
+    background-position: 0 -336px !important;
     color: #fff !important;
 }
 
@@ -281,7 +281,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author.moderator[href$="/ngbeslhang"]~.flair:before,
 .side .tagline .author[href$="/ngbeslhang"],
 .side .tagline .author[href$="/ngbeslhang"]~.flair:before  {
-    background-position: 0 -324px !important;
+    background-position: 0 -378px !important;
     color: #333 !important;
 }
 
@@ -290,14 +290,14 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author.moderator[href$="/Lady_Baruren"]~.flair:before,
 .side .tagline .author[href$="/Lady_Baruren"],
 .side .tagline .author[href$="/Lady_Baruren"]~.flair:before  {
-    background-position: 0 -360px !important;
+    background-position: 0 -420px !important;
     color: #fff !important;
 }
 
 /* DLH Black/Yellow - Distinguish Only */
 .thing .tagline .author.moderator[href$="/DavidLuizshair"],
 .side .tagline .author[href$="/DavidLuizshair"] {
-    background-position: 0 -396px !important;
+    background-position: 0 -462px !important;
     color: #fff !important;
 }
 .side .tagline .author[href$="/DavidLuizshair"]~.flair:before,
@@ -310,14 +310,14 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author.moderator[href$="/CrimsonMudkip"]~.flair:before,
 .side .tagline .author[href$="/CrimsonMudkip"],
 .side .tagline .author[href$="/CrimsonMudkip"]~.flair:before  {
-    background-position: 0 -432px !important;
+    background-position: 0 -504px !important;
     color: #fff !important;
 }
 
 /* TexasAndroid Black/White - Distinguish Only */
 .thing .tagline .author.moderator[href$="/TexasAndroid"],
 .side .tagline .author[href$="/TexasAndroid"] {
-    background-position: 0 -468px !important;
+    background-position: 0 -546px !important;
     color: #fff !important;
 }
 .side .tagline .author[href$="/TexasAndroid"]~.flair:before,
@@ -330,7 +330,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author.moderator[href$="/Mockturne"]~.flair:before,
 .side .tagline .author[href$="/Mockturne"],
 .side .tagline .author[href$="/Mockturne"]~.flair:before  {
-    background-position: 0 -540px !important;
+    background-position: 0 -630px !important;
     color: #fff !important;
 }
 
@@ -339,7 +339,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author[href$="/CrimsonMudkip"]~.flair:before,
 .side .tagline .author[href$="/Nintendo_America"]
 .side .tagline .author[href$="/Nintendo_America"]~.flair:before  {
-    background-position: 0 -576px!important;
+    background-position: 0 -672px!important;
     color: #fff!important
 }
 

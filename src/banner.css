@@ -2,23 +2,25 @@
 * BANNER
 *********************************************************************************/
 #header {
-    background: url(%%daymodeheader%%) left center/cover no-repeat
+    background: url(%%daymodeheader%%) center center/cover no-repeat
 }
 html[lang$=nm] #header {
-    background: url(%%nightmodeheader%%) left center/cover no-repeat
+    background: url(%%nightmodeheader%%) center center/cover no-repeat
 }
 
 .pagename a {
-    background: url(%%dm-logo%%) center center/contain no-repeat;
+    top: 25px;
+    width: 300px;
+    height: 120px;
+    display: block;
+    left: 215px;
+    z-index: 99;
+    background: url(%%header-logo%%) 0 0/auto auto no-repeat;
 }
 .pagename a:hover {
-    background: url(%%dm-logo-hover%%) center center/contain no-repeat;
+    background-position-y: -120px;
 }
 
 html[lang$=nm] .pagename a{
-    background: url(%%nm-logo%%) center center/contain no-repeat;
-}
-
-html[lang$=nm] .pagename a:hover {
-    background: url(%%nm-logo-hover%%) center center/contain no-repeat;
+    background-position-x: -300px;
 }
