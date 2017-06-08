@@ -1,3 +1,11 @@
+/* Misc
+--------------------------------------------------------------------------------*/
+
+/* hide RES user tag and vote weight in side md */
+.side .md .RESUserTag,
+.side .md .voteWeight {
+    display: none !important;
+}
 
 /* PSA box
 --------------------------------------------------------------------------------*/

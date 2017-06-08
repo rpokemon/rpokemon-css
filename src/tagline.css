@@ -73,7 +73,7 @@
     background: url(%%FlairBG%%) 0 -42px;
     background-size: 280px;
     position: absolute;
-    padding: 6px 0 3px 45px!important;
+    padding: 3px 0 3px 45px!important;
     font-weight: 700;
     white-space: nowrap;
     box-sizing: border-box;
