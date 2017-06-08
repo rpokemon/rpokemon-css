@@ -375,9 +375,9 @@ body:not(.res) .titlebox > h1 {
     width: 50%;
     box-sizing: border-box;
     line-height: 36px;
-    font-size: 14px;
+    font-size: 11px;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 5px;
     position: relative;
     color: #555
 }
@@ -396,11 +396,11 @@ body:not(.res) .titlebox > h1 {
     height: 27px;
     top: 3px;
     left: 10px;
-    background: url(%%symusum%%) no-repeat 0 1px / auto 27px;
+    background: url(%%symusum%%) no-repeat 0 0px / auto 100%;
 }
 .side .md > h1 a:last-child:before {
     left: 8px;
-    background-position: -27px 1px;
+    background-position-x: 100%;
 }
 
 /* nightmode */
