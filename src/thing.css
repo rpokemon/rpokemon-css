@@ -285,23 +285,23 @@ html[lang$=nm] .linkflair-rotation .thumbnail.self {
 --------------------------------------------------------------------------------*/
 
 .arrow.up {
-    background-position: 0 -2px !important
+    background-position: 0 33.3% !important
 }
 .arrow.down {
-    background-position: 0 -208px !important
+    background-position: 0 100% !important
 }
 .arrow.upmod {
-    background-position: 0 -146px !important
+    background-position: 0 0 !important
 }
 .arrow.downmod {
-    background-position: 0 -66px !important
+    background-position: 0 66.6% !important
 }
 
 .arrow {
     width: 33px;
     height: 33px;
     background-image: url(%%downupusuumo%%)!important;
-    background-size: 33px;
+    background-size: 100%;
     -webkit-transform: scale(.8);
     transform: scale(.8);
     margin: -2px auto
