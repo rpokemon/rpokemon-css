@@ -301,6 +301,7 @@ html[lang$=nm] .linkflair-rotation .thumbnail.self {
     width: 33px;
     height: 33px;
     background-image: url(%%downupusuumo%%)!important;
+    background-size: 33px;
     -webkit-transform: scale(.8);
     transform: scale(.8);
     margin: -2px auto
