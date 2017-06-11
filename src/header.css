@@ -128,7 +128,8 @@
     width: 25px;
     height: 27px;
     font-size: 0!important;
-    margin: 0
+    margin: 0;
+    image-rendering: pixelated;
 }
 
 .loggedin .logout a:before {
@@ -239,7 +240,8 @@
 #header-bottom-right .gearIcon {
     height: 27px!important;
     width: 28px!important;
-    background-image: url(%%pokesheet%%)!important
+    background-image: url(%%pokesheet%%)!important;
+    image-rendering: pixelated;
 }
 
 .message-count {
@@ -454,7 +456,8 @@ body #header .tabmenu li:first-of-type:last-of-type a {
     transition: bottom 150ms ease, opacity 150ms ease-in;
     bottom: 60%;
     opacity: 0;
-    color: #fff
+    color: #fff;
+    image-rendering: pixelated;
 }
 .listing-page #header .tabmenu li a:hover:after {
     bottom: 100%;

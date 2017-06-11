@@ -271,7 +271,8 @@ body:not(.res) .titlebox > h1 {
     display: inline-block;
     width: 17px;
     height: 16px;
-    margin-right: 5px
+    margin-right: 5px;
+    image-rendering: pixelated;
 }
 .flairtoggle input[type=checkbox],
 .side .md>h2+ul+hr,
@@ -305,7 +306,8 @@ body:not(.res) .titlebox > h1 {
     line-height: 30px;
     display: block;
     margin: 7px auto;
-    width: 244px
+    width: 244px;
+    image-rendering: pixelated;
 }
 
 /* icons */

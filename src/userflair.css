@@ -18,8 +18,7 @@
     border-radius: 0;
     z-index: 2;
     text-indent: -9999px;
-    /* -- Suggested change
-    image-rendering: pixelated;*/
+    image-rendering: pixelated;
 }
 
 .flair.flair-placeholder {
