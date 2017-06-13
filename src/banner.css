@@ -9,18 +9,18 @@ html[lang$=nm] #header {
 }
 
 .pagename a {
-    top: 25px;
-    width: 300px;
-    height: 120px;
+    top: 19px;
+    width: 294px;
+    height: 147px;
     display: block;
     left: 215px;
     z-index: 99;
-    background: url(%%header-logo%%) 0 0/auto auto no-repeat;
+    background: url(%%header-logo%%) 0 0/200% 200% no-repeat;
 }
 .pagename a:hover {
-    background-position-y: -120px;
+    background-position-y: 100%;
 }
 
 html[lang$=nm] .pagename a{
-    background-position-x: -300px;
+    background-position-x: 100%;
 }
