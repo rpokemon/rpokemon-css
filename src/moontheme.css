@@ -310,7 +310,8 @@ html[lang$=nm] .side .md>h2:after,
 html[lang$=nm] .side .md>h4>a:after,
 html[lang$=nm] .side .md>h6:after,
 html[lang$=nm] .side .md>h3:after,
-html[lang$=nm] .side .md>h5:after {
+html[lang$=nm] .side .md>h5:after,
+html[lang$=nm] .side .md>h4:first-of-type:after {
     background-image: url(%%sidepattern2w%%);
     opacity: 0.08;
 }
@@ -433,7 +434,7 @@ html[lang$=nm] .thing.linkflair-noob .linkflairlabel {
     color: #3498db !important
 }
 html[lang$=nm] .thing.linkflair-rule .linkflairlabel {
-    color: #e74c3c !important
+    color: #fff !important
 }
 html[lang$=nm] .thing.linkflair-rotation .linkflairlabel {
     color: #76c374 !important
