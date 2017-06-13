@@ -1,27 +1,18 @@
 /* DIRECT BANNER
 ----------------*/
-#header {
-    background: white url(%%direct-banner%%) -360px 30px / auto 126.5px no-repeat;
-}
-
-html[lang$=nm] #header {
-    background: #000 url(%%direct-banner-nm%%) -360px 30px / auto 126.5px no-repeat;
-}
-
 .pagename a {
-    top: 30px;
-    height: 125px;
-    background: 0 !important;
+    width: 588px;
+    background-image: url(%%header-logo-e3%%);
 }
 
 .side .md a[href="https://www.twitch.tv/nintendo"] {
     display: block;
     position: absolute;
-    top: 109px;
+    top: 20px;
     z-index: 500;
-    left: 487px;
-    height: 30px;
-    width: 169px;
+    left: 495px;
+    height: 140px;
+    width: 320px;
     font-size: 0;
     padding: 5px;
     margin: -6px;
@@ -54,4 +45,12 @@ html[lang$=nm] .side .md>blockquote:nth-of-type(2) {
 }
 html[lang$=nm] .side .md>blockquote:nth-of-type(2) a {
     color: hsla(218, 100%, 50%, 1);
+}
+
+#header {
+    background: #fafafa !important;
+}
+
+html[lang$=nm] #header {
+    background: #000 !important;
 }
