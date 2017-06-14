@@ -837,6 +837,10 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 /********************************************************************************
 * EXTERNAL COMMUNITY FLAIRS
 *********************************************************************************/
+.flair.flair-discordmod:after {
+    background-position: -1260px 0px !important;
+}
+
 .flair.flair-verified-account:after {
     background-position: -1230px 0px !important;
 }
