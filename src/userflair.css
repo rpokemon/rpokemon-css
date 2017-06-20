@@ -364,7 +364,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .res .thing .tagline .author.submitter[href$="/Thundergrunge"],
 .side .tagline .author[href$="/Thundergrunge"],
 .author[href$="/Thundergrunge"]~.flair:before {
-    background-position: 0 -108px !important;
+    background-position: 0 -126px !important;
     color: #fff !important;
 }
 
@@ -376,7 +376,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .res .thing .tagline .author.submitter[href$="/GlitchxCity"],
 .side .tagline .author[href$="/GlitchxCity"],
 .author[href$="/GlitchxCity"]~.flair:before {
-    background-position: 0 -144px !important;
+    background-position: 0 -168px !important;
     color: #fff !important;
 }
 
