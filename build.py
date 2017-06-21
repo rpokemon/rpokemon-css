@@ -15,7 +15,7 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 'linklisting.css',    # styles for the link listing page
                 'thing.css',          # styles for thing elements (links and comments alike)
                 'tagline.css',        # thing tagline
-                'linkflair.css',      # link flair and filters
+                'linkflair.css',      # link flair, link flair filters, and link flair selector
                 
                 'commentfix.css',     # styles for specifically comments
                 'commentpage.css',    # styles for the comment page menus, usertext editor, etc.
@@ -30,12 +30,13 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 
                 'search.css',         # search page (does not include search input in sidebar, which is in sidebar.css)
                 'footer.css',         # subreddit footer
-                'modpages.css',       # any moderator pages that required additional CSS and also flair selector stuff
+                'modpages.css',       # any moderator pages that required additional CSS
                 
                 'flair.css',          # user flairs
                 'userflair.css',      # user flairs
                 'moontheme.css',      # night mode
                 'banner.css',         # banner
+                'misc.css'            # miscellaneous
                 
                # add-ons
                # -------

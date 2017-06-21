@@ -162,3 +162,54 @@ html:lang(nc) .listing-page .link.linkflair-craft {
     margin-left: 0;
     margin-top: 40px;
 }
+
+
+/* flair selector
+--------------------------------------------------------------------------------*/
+.flairselector {
+    box-shadow: 1px 1px 10px #000;
+    border: 1px solid #353535!important
+}
+.flairselector .linkflairlabel {
+    position: absolute!important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 3px;
+    margin: auto
+}
+
+.flairselector,
+.flairselector ul {
+    min-width: 178px;
+    max-width: none;
+}
+.flairselector ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.flairselector ul li {
+    width: 50%;
+    padding: 0 !important;
+}
+
+.flairselector .linkflair {
+    position: relative;
+    min-height: 22px;
+    margin: 2px
+}
+.flairselector input[type=text] {
+    border: 1px solid #cecdcd;
+    padding: 5px
+}
+
+.flairselector .linkflair .title {
+    display: none;
+}
+html .thing.link .flairselector .linkflair .linkflairlabel,
+html[lang$=nm] .thing.link .flairselector .linkflair .linkflairlabel {
+    color: white!important;
+}
