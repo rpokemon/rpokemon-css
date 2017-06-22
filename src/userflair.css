@@ -104,6 +104,10 @@
 /********************************************************************************
 * CUSTOM USER FLAIRS
 *********************************************************************************/
+.author[href$="/lamomok"]~.flair {
+    background-image: url(%%specialflairs%%)!important;
+    background-position: 0 -13px
+/*}
 .author[href$="/TheGhost983"]~.flair {
     background-image: url(%%specialflairs%%)!important;
     background-position: 0 -13px
@@ -134,12 +138,12 @@
     background-image: url(%%specialflairs%%)!important;
     background-position: -37px -54px;
 }
-.author[href$="/DavidLuizshair"]~.flair {
-    /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
+ /*.author[href$="/DavidLuizshair"]~.flair {  -- OLD FLAIR TYPE
+    background-image: url(%%specialflairs%%)!important;
     background-position: -76px -52px;*/
     /* background-image: url(%%modtrainerflair%%)!important;
-    background-position: -600px 0 */
-}
+    background-position: -600px 0
+}*/
 .author[href$="/Otterz82"]~.flair {
     background-image: url(%%specialflairs%%)!important;
     background-position: -121px -52px;
