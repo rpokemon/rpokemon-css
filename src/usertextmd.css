@@ -59,13 +59,6 @@ a[href$="#spoiler"]:before, a[href$="#s"]:before, a[href="/s"]:before, a[href="/
     color: #fff
 }
 
-a[href$="#spoiler"][title]:before,
-a[href$="#s"][title]:before,
-a[href="/s"][title]:before,
-a[href="/spoiler"][title]:before {
-    content: attr(title) " ";
-}
-
 a[href="/s"]:active,
 a[href="/spoiler"]:active {
   pointer-events: none;
