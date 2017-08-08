@@ -367,10 +367,10 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 
 /* AMA
 --------------------------------------------------------------------------------*/
-.thing .author[href$="/GlitchxCity"],
-.res .thing .tagline .author.submitter[href$="/GlitchxCity"],
-.side .tagline .author[href$="/GlitchxCity"],
-.author[href$="/GlitchxCity"]~.flair:before {
+.thing .author[href$="/GIKyleHilliard"],
+.res .thing .tagline .author.submitter[href$="/GIKyleHilliard"],
+.side .tagline .author[href$="/GIKyleHilliard"],
+.author[href$="/GIKyleHilliard"]~.flair:before {
     background-position: 0 -168px !important;
     color: #fff !important;
 }
