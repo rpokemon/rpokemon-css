@@ -4,7 +4,6 @@
 --------------------------------------------------------------------------------*/
 
 .side .md>h2,
-.side .md>h4:first-of-type,
 .side .md>h4>a,
 .side .md>h6,
 .side .md>h3,
@@ -28,7 +27,6 @@
 
 /* positions */
 .side .md>h2:before,
-.side .md>h4:first-of-type:before,
 .side .md>h3:before,
 .side .md>h5:before {
     background: 1600px -1340px
@@ -45,7 +43,6 @@
 
 /* element */
 .side .md>h2:before,
-.side .md>h4:first-of-type:before,
 .side .md>h3:before,
 .side .md>h5:before,
 .side .md>h4>a:before,
@@ -70,7 +67,6 @@
 
 /* common header bg */
 .side .md>h2:after,
-.side .md>h4:first-of-type:after,
 .side .md>h4>a:after,
 .side .md>h6:after,
 .side .md>h3:after,
