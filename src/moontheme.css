@@ -174,6 +174,30 @@ html[lang$=nm] #header .tabmenu {
 html[lang$=nm] .side .md>blockquote:first-of-type>p>a {
     color: #c9c9c9;
 }
+
+/*header bottom right*/
+html[lang$=nm] #header-bottom-right .user > a,
+html[lang$=nm] #header-bottom-right .user > .userkarma {
+    color: rgba(255,255,255,0.5)
+}
+html[lang$=nm] #header-bottom-right .user>.userkarma a {
+    color: rgba(255,255,255,0.4);
+}
+html[lang$=nm] #header-bottom-right .user>.userkarma a:hover {
+    color: rgba(255,255,255,0.6);
+}
+
+html[lang$=nm] .beta-hint a:before {
+    color: rgba(255,255,255,0.4);
+    font-weight: normal;
+}
+html[lang$=nm] #header-bottom-right .user + .separator {
+    color: rgba(255,255,255,0.25);
+}
+html[lang$=nm] .res #RESAccountSwitcherIcon:before {
+    border-top-color: #666;
+}
+
 /********************************************************************************
 * ANNOUNCEMENT BAR
 *********************************************************************************/

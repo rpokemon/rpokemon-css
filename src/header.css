@@ -124,7 +124,7 @@
 .loggedin .logout a:before {
     content: '';
     display: inline-block;
-    background: url(%%pokesheet%%) -55px -371px;
+    background: url(%%pokesheet%%) -32px -303px;
     width: 25px;
     height: 27px;
     font-size: 0!important;
@@ -133,7 +133,7 @@
 }
 
 .loggedin .logout a:before {
-    background-position: -90px -372px
+    background-position: -62px -302px
 }
 
 .loggedin .logout a {
@@ -161,14 +161,37 @@
     left: 0;
 }
 
+/* beta hint
+--------------------------------------------------------------------------------*/
+.beta-hint {
+    top: 0;
+    position: absolute;
+    right: 100%;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.beta-hint a {
+    top: 1px;
+    right: 0;
+    margin: 0;
+    background: 0;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+    text-indent: 0;
+    text-align: center;
+    font-size: 0 !important;
+}
+.beta-hint a:before {
+    content: 'β';
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.35);
+}
+
 /* userbar
 --------------------------------------------------------------------------------*/
-#header-bottom-right .beta-hint {
-    top: 0;
-}
-#header-bottom-right .beta-hint a {
-    margin-top: 6px;
-}
 .res #userbarToggle {
     background-color: transparent!important;
     border: 0;
@@ -193,9 +216,23 @@
     font-size: 12px
 }
 
+#header-bottom-right .user > a,
+#header-bottom-right .user > .userkarma {
+    color: rgba(0,0,0,0.7);
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI",Arial,Helvetica,sans-serif;
+}
+
 /* user karma */
 #header-bottom-right .user>.userkarma {
-    padding: 0 5px
+    padding: 0 5px;
+}
+#header-bottom-right .user>.userkarma a {
+    color: rgba(0,0,0,0.5);
+    line-height: 27px;
+    display: inline-block;
+}
+#header-bottom-right .user>.userkarma a:hover {
+    color: rgba(0,0,0,0.7);
 }
 
 /* res account switcher stuff */
@@ -211,30 +248,35 @@
     display: block;
     width: 0;
     height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 5px solid #666;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 5px solid #bbb;
     position: relative;
-    top: 5px;
+    top: 6px;
     left: 1px
 }
 
 /* userbar icons
 --------------------------------------------------------------------------------*/
-#mail { display: inline-block; overflow: visible }
-#mail.nohavemail { background: -54px -310px }
-#mail.havemail { background: -121px -374px }
 
-#modmail.nohavemail { background: -86px -404px }
-#modmail.havemail { background: -54px -404px }
+#mail.nohavemail,
+#message.nohavemail { background: -1px -332px }
+#mail.havemail,
+#message.havemail { background: -31px -332px }
 
-#new_modmail.nohavemail { background: -12px -341px; }
-#new_modmail.havemail { background: -12px -371px; }
+#inbox.nohavemail { background: -60px -331px }
+#inbox.havemail { background: -90px -331px }
 
-#header-bottom-right .gearIcon {background: -116px -339px!important;top: 5px}
-#header-bottom-right .gearIcon:after {display: none}
+#modmail { transform: scale(0.95) }
+#modmail.nohavemail { background: -1px -362px }
+#modmail.havemail { background: -31px -362px }
+
+#new_modmail.nohavemail { background: -61px -363px; }
+#new_modmail.havemail { background: -91px -363px; }
 
 #mail,
+#message,
+#inbox,
 #modmail,
 #new_modmail,
 #header-bottom-right .gearIcon {
@@ -242,11 +284,11 @@
     width: 28px!important;
     background-image: url(%%pokesheet%%)!important;
     image-rendering: pixelated;
-}
-
-.message-count {
-    background: #ff7500;
-    color: #fff!important
+    font-size: 0 !important;
+    box-sizing: border-box;
+    display: inline-block;
+    top: 0;
+    margin: 0;
 }
 
 #header-bottom-right .imageInfoSettingsButton {
@@ -259,9 +301,72 @@
     text-align: center;
 }
 
+#header-bottom-right .gearIcon {background-position: -90px -302px;top: 5px;transform: scale(0.9)}
+#header-bottom-right .gearIcon:after {display: none}
+
+#header-bottom-right .flat-list + .separator,
+#message + .message-count + .separator {
+    display: none;
+}
+
+#header-bottom-right .user + .separator {
+    font-size: 13px;
+    padding-left: 0;
+    margin-left: 2px;
+    color: rgba(0,0,0,0.3);
+}
+
+/* message count
+--------------------------------------------------------------------------------*/
+.message-count {
+    background: #e58077;
+    color: #fff!important;
+    height: 18px;
+    line-height: 18px;
+    min-width: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.message-count.havemail {
+    position: relative;
+    margin-left: 8px;
+    left: 0;
+    animation: messagecountbounce 2s infinite;
+}
+
+.message-count:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-right: 5px solid #e58077;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+@keyframes messagecountbounce {
+    0%,20%,50%,80%,100% {
+        transform: translate3d(0,0,0)
+    }
+    40% {
+        transform: translate3d(5px,0,0)
+    }
+    60% {
+        transform: translate3d(2px,0,0)
+    }
+}
+
+
 /* opacity hover/no hover
 --------------------------------------------------------------------------------*/
 #mail,
+#message,
+#inbox,
 #modmail,
 #new_modmail,
 .gearIcon,
@@ -269,8 +374,9 @@
 a.pref-lang {
     opacity: .75
 }
-
 #mail:hover,
+#message:hover,
+#inbox:hover,
 #modmail:hover,
 #new_modmail:hover,
 .gearIcon:hover,
