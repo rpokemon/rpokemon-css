@@ -28,17 +28,13 @@
 /* positions */
 .side .md>h2:before,
 .side .md>h3:before,
-.side .md>h5:before {
-    background: 1600px -1340px
+.side .md>h5:before,
+.side .md>h6:nth-of-type(1):before,
+.side .md>h6:nth-of-type(2):before {
+    background: 3px -303px
 }
 .side .md>h4>a:before {
-    background: -54px -340px
-}
-.side .md>h6:nth-of-type(1):before {
-    background: -180px -373px
-}
-.side .md>h6:nth-of-type(2):before {
-    background: -87px -403px
+    background: -120px -304px
 }
 
 /* element */

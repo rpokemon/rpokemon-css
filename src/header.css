@@ -44,7 +44,7 @@
     bottom: 10px;
     left: 10px;
     z-index: 99;
-    width: 60px;
+    width: auto;
     height: 60px
 }
 
