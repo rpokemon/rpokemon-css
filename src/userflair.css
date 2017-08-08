@@ -281,15 +281,6 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
     color: #fff !important;
 }
 
-/* NGB Gold - Distinguish Only */
-.thing .tagline .author.moderator[href$="/ngbeslhang"],
-.author.moderator[href$="/ngbeslhang"]~.flair:before,
-.side .tagline .author[href$="/ngbeslhang"],
-.side .tagline .author[href$="/ngbeslhang"]~.flair:before  {
-    background-position: 0 -378px !important;
-    color: #333 !important;
-}
-
 /* Baru Orange - Distinguish Only */
 .thing .tagline .author.moderator[href$="/Lady_Baruren"],
 .author.moderator[href$="/Lady_Baruren"]~.flair:before,
