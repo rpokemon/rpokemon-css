@@ -188,6 +188,22 @@
 }
 
 /*
+ AUG 17 - TOURNEY WINNWERS
+*/
+.author[href$="/A_Wild_Noob_Appeared"]~.flair {
+    background-image: url(%%specialflairs%%)!important;
+    background-position: -213px -89px;
+}
+.author[href$="/Paladinknight"]~.flair{
+    background-image:url(%%specialflairs%%) !important;
+    background-position:-255px -90px
+}
+.author[href$="/TheSpoonMaster"]~.flair{
+    background-image:url(%%specialflairs%%) !important;
+    background-position:-3px -126px
+}
+
+/*
 NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author[href$="/ad3z10"]~.flair{
     background-image: url(%%modtrainerflair%%)!important;
