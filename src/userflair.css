@@ -267,6 +267,11 @@ TEMPLATE:
 
 --------------------------------------------------------------------------------*/
 
+.thing .author[href$="/GIHanson"],
+.author[href$="/GIHanson"]~.flair:before,
+.side .tagline .author[href$="/GIHanson"],
+.side .tagline .author[href$="/GIHanson"]~.flair:before,
+
 .thing .author[href$="/ALLISTER_POKKEN"],
 .author[href$="/ALLISTER_POKKEN"]~.flair:before,
 .side .tagline .author[href$="/ALLISTER_POKKEN"],
