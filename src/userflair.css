@@ -254,6 +254,52 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 * CUSTOM USER BALL FLAIRS
 *********************************************************************************/
 
+/* AMA host user bubbles
+
+TEMPLATE:
+.thing .tagline .author.moderator[href$="/username"],
+.author.moderator[href$="/username"]~.flair:before,
+.side .tagline .author[href$="/username"],
+.side .tagline .author[href$="/username"]~.flair:before {
+    background-position: 0 -168px !important;
+    color: #fff !important;
+}
+
+--------------------------------------------------------------------------------*/
+
+.thing .author[href$="/ALLISTER_Pokken"],
+.author[href$="/ALLISTER_Pokken"]~.flair:before,
+.side .tagline .author[href$="/ALLISTER_Pokken"],
+.side .tagline .author[href$="/ALLISTER_Pokken"]~.flair:before,
+
+.thing .author[href$="/McDareth"],
+.author[href$="/McDareth"]~.flair:before,
+.side .tagline .author[href$="/McDareth"],
+.side .tagline .author[href$="/McDareth"]~.flair:before,
+
+.thing .author[href$="/SSB_Scatz"],
+.author[href$="/SSB_Scatz"]~.flair:before,
+.side .tagline .author[href$="/SSB_Scatz"],
+.side .tagline .author[href$="/SSB_Scatz"]~.flair:before,
+
+.thing .author[href$="/6tennis"],
+.author[href$="/6tennis"]~.flair:before,
+.side .tagline .author[href$="/6tennis"],
+.side .tagline .author[href$="/6tennis"]~.flair:before,
+
+.thing .author[href$="/Ouroboro_san"],
+.author[href$="/Ouroboro_san"]~.flair:before,
+.side .tagline .author[href$="/Ouroboro_san"],
+.side .tagline .author[href$="/Ouroboro_san"]~.flair:before,
+
+.thing .author[href$="/Comboman77"],
+.author[href$="/Comboman77"]~.flair:before,
+.side .tagline .author[href$="/Comboman77"],
+.side .tagline .author[href$="/Comboman77"]~.flair:before {
+    background-position: 0 -168px !important;
+    color: #fff !important;
+}
+
 /* special user bubles
 --------------------------------------------------------------------------------*/
 
