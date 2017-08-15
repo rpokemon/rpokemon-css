@@ -267,10 +267,10 @@ TEMPLATE:
 
 --------------------------------------------------------------------------------*/
 
-.thing .author[href$="/ALLISTER_Pokken"],
-.author[href$="/ALLISTER_Pokken"]~.flair:before,
-.side .tagline .author[href$="/ALLISTER_Pokken"],
-.side .tagline .author[href$="/ALLISTER_Pokken"]~.flair:before,
+.thing .author[href$="/ALLISTER_POKKEN"],
+.author[href$="/ALLISTER_POKKEN"]~.flair:before,
+.side .tagline .author[href$="/ALLISTER_POKKEN"],
+.side .tagline .author[href$="/ALLISTER_POKKEN"]~.flair:before,
 
 .thing .author[href$="/McDareth"],
 .author[href$="/McDareth"]~.flair:before,
