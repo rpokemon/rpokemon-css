@@ -61,13 +61,13 @@ body>.content {
 /* top announcement flair positioning
 --------------------------------------------------------------------------------*/
 .side .md>blockquote:first-of-type>p:nth-of-type(1)>a:before {
-    background: url(%%johtoflair%%) -560px -64px; /* TODO: Change this sprite weekly (PoTW) */
+    background: url(%%sinnohflair%%) -840px -64px; /* TODO: Change this sprite weekly (PoTW) */
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(2)>a:before {
     background: url(%%kantoflair%%) -800px -32px;
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(3)>a:before {
-    background: url(%%kantoflair%%) -1200px 0; /* TODO: Change this sprite weekly (Weekly Challenge) */
+    background: url(%%alolaflair%%) -400px -64px; /* TODO: Change this sprite weekly (Weekly Challenge) */
 }
 
 /********************************************************************************
