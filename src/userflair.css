@@ -694,9 +694,9 @@ TEMPLATE:
 
 /* New mods icon 3.0 SINNOH
 --------------------------------------------------------------------------------*/
-/*.author[href$="/username"]~.flair:after {
+.flair.flair-sinnohmod:after {
     background-position: -690px 0
-}*/
+}
 
 /* New mods icon 4.0 UNOVA
 --------------------------------------------------------------------------------*/
