@@ -44,7 +44,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: url(%%footer%%) no-repeat center top / cover;
+    background: url(%%footer-usum%%) no-repeat center top / cover;
     border-top: 5px solid #59f;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.12);
     z-index: 0;
@@ -60,19 +60,24 @@
     padding: 15px 20px;
     max-width: 620px;
     box-shadow: 0 1px 5px rgba(0,0,0,.16);
-    background: rgba(255,255,255,.95);
+    background: rgba(255,255,255,.9);
     margin: 0 auto;
     margin-top: 160px;
     margin-bottom: 10px;
     border-radius: 3px;
 }
 
-body >.debuginfo {
+body > .debuginfo {
     position: absolute;
     width: 100%;
     background: transparent;
     margin-top: -50px;
     height: 10px;
+}
+body > .debuginfo,
+body > .debuginfo:before {
+    color: #fff;
+    text-shadow: 0 0 3px #000;
 }
 
 .footer .col {
@@ -90,4 +95,7 @@ body >.debuginfo {
 
 .footer-parent .bottommenu {
     color: rgba(255,255,255,0.8);
+}
+.footer-parent .bottommenu a {
+    color: #fff;
 }
