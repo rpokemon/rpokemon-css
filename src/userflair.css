@@ -850,9 +850,19 @@ TEMPLATE:
     background-position: -180px -30px;
 }
 
-/* Shiny Magikarp */
-.flair.flair-shinykarp:after {
+/* necroparticipant */
+.flair.flair-necroparticipant:after {
     background-position: -210px -30px;
+}
+
+/* necroparticipant */
+.flair.flair-necroparticipant:after {
+    background-position: -240px -30px;
+}
+
+/* necrowinner */
+.flair.flair-necrowinner:after {
+    background-position: -270px -30px;
 }
 
 /* tall alolan exeggutor ballflair - shitpost winners */
