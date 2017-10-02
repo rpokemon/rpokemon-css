@@ -16,6 +16,7 @@ order       = [ 'etc.css',            # body, buttons, and wiki
                 'thing.css',          # styles for thing elements (links and comments alike)
                 'tagline.css',        # thing tagline
                 'linkflair.css',      # link flair, link flair filters, and link flair selector
+                'link-pinnable.css',  # pinnable link for video posts
                 
                 'commentfix.css',     # styles for specifically comments
                 'commentpage.css',    # styles for the comment page menus, usertext editor, etc.
