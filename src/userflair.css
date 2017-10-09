@@ -545,9 +545,9 @@ TEMPLATE:
 
 /* Net balls
 --------------------------------------------------------------------------------*/
-/*.author[href$="/username"]~.flair:after {
+.author[href$="/WestsideWalrus"]~.flair:after, {
     background-position: -270px 0
-}*/
+}
 
 /* Dive balls
 --------------------------------------------------------------------------------*/
