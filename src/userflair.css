@@ -573,7 +573,8 @@ TEMPLATE:
 .author[href$="/ElStrawFedora"]~.flair:after,
 .author[href$="/keskisormi"]~.flair:after,
 .author[href$="/Deku-Miguel"]~.flair:after,
-.author[href$="/Invis-"]~.flair:after {
+.author[href$="/Invis-"]~.flair:after,
+.author[href$="/resaja"]~.flair:after {
     background-position: -330px 0;
 }
 
