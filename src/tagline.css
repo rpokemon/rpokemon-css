@@ -70,7 +70,7 @@
 .thing .author, .flairrow .author, .side .tagline .author {
     width: 280px;
     height: 36px;
-    background: url(%%FlairBG%%) 0 -42px;
+    background: url(%%FlairBG%%) 0 -36px;
     background-size: 280px;
     position: absolute;
     padding: 3px 0 3px 45px!important;
@@ -125,7 +125,7 @@
 /* moderator bubble */
 .comment .author.moderator,
 .link .author.moderator {
-    background-position: 0 -84px!important
+    background-position: 0 -72px!important
 }
 
 /* moderator bubble - ensure username is white */

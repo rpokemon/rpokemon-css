@@ -172,8 +172,9 @@
     /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
     background-position: -38px -89px;*/
     /* background-image: url(%%modtrainerflair%%)!important;
-    background-position: -150px 0 */
+    background-position: -150px 0  */
 }
+
 .author[href$="/Theprinceofarendelle"]~.flair {
     background-image: url(%%specialflairs%%)!important;
     background-position: -76px -90px;
@@ -202,6 +203,19 @@
     background-image:url(%%specialflairs%%) !important;
     background-position:-3px -126px
 }
+
+/* Fable */
+.author[href$="/Draycen"]~.flair{
+    background-image:url(%%specialflairs%%) !important;
+    background-position:-38px -126px
+}
+
+/*.author[href$="/rileydelete"]~.flair {
+    background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
+    background-position: -38px -89px;
+    background-image: url(%%modtrainerflair%%)!important;
+    background-position: -150px 0 
+}*/
 
 /*
 NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
@@ -312,7 +326,7 @@ TEMPLATE:
 .thing .author[href$="/A_Wild_Abra"],
 .res .thing .tagline .author.submitter[href$="/A_Wild_Abra"],
 .side .tagline .author[href$="/A_Wild_Abra"] {
-    background-position: 0 -210px!important;
+    background-position: 0 -180px!important;
     color: #fff!important
 }
 
@@ -326,7 +340,7 @@ TEMPLATE:
 .thing .author[href$="/technophonix1"],
 .side .tagline .author[href$="/technophonix1"],
 .author[href$="/technophonix1"]~.flair:before {
-    background-position: 0 -252px !important;
+    background-position: 0 -216px !important;
     color: #333 !important;
 }
 
@@ -335,16 +349,16 @@ TEMPLATE:
 .author.moderator[href$="/Haruka-sama"]~.flair:before,
 .side .tagline .author[href$="/Haruka-sama"],
 .side .tagline .author[href$="/Haruka-sama"]~.flair:before {
-    background-position: 0 -294px !important;
+    background-position: 0 -252px !important;
     color: #fff !important;
 }
 
-/* Samz Purple/Turqoise - Perma */
-.thing .tagline .author[href$="/IAmzSamz"],
-.author[href$="/IAmzSamz"]~.flair:before,
+/* Samz Purple/Turqoise - Distinguish Only */
+.thing .tagline .author.moderator[href$="/IAmzSamz"],
+.author.moderator[href$="/IAmzSamz"]~.flair:before,
 .side .tagline .author[href$="/IAmzSamz"],
 .side .tagline .author[href$="/IAmzSamz"]~.flair:before  {
-    background-position: 0 -336px !important;
+    background-position: 0 -388px !important;
     color: #fff !important;
 }
 
@@ -353,14 +367,14 @@ TEMPLATE:
 .author.moderator[href$="/Lady_Baruren"]~.flair:before,
 .side .tagline .author[href$="/Lady_Baruren"],
 .side .tagline .author[href$="/Lady_Baruren"]~.flair:before  {
-    background-position: 0 -420px !important;
+    background-position: 0 -324px !important;
     color: #fff !important;
 }
 
 /* DLH Black/Yellow - Distinguish Only */
 .thing .tagline .author.moderator[href$="/DavidLuizshair"],
 .side .tagline .author[href$="/DavidLuizshair"] {
-    background-position: 0 -462px !important;
+    background-position: 0 -360px !important;
     color: #fff !important;
 }
 .side .tagline .author[href$="/DavidLuizshair"]~.flair:before,
@@ -373,14 +387,14 @@ TEMPLATE:
 .author.moderator[href$="/CrimsonMudkip"]~.flair:before,
 .side .tagline .author[href$="/CrimsonMudkip"],
 .side .tagline .author[href$="/CrimsonMudkip"]~.flair:before  {
-    background-position: 0 -504px !important;
+    background-position: 0 -396px !important;
     color: #fff !important;
 }
 
 /* TexasAndroid Black/White - Distinguish Only */
 .thing .tagline .author.moderator[href$="/TexasAndroid"],
 .side .tagline .author[href$="/TexasAndroid"] {
-    background-position: 0 -546px !important;
+    background-position: 0 -432px !important;
     color: #fff !important;
 }
 .side .tagline .author[href$="/TexasAndroid"]~.flair:before,
@@ -393,19 +407,62 @@ TEMPLATE:
 .author.moderator[href$="/Mockturne"]~.flair:before,
 .side .tagline .author[href$="/Mockturne"],
 .side .tagline .author[href$="/Mockturne"]~.flair:before  {
-    background-position: 0 -630px !important;
+    background-position: 0 -468px !important;
     color: #fff !important;
 }
+
+/* Draycen - Distinguish Only */
+.thing .tagline .author.moderator[href$="/Draycen"],
+.author.moderator[href$="/Draycen"]~.flair:before,
+.side .tagline .author[href$="/Draycen"],
+.side .tagline .author[href$="/Draycen"]~.flair:before  {
+    background-position: 0 -504px !important;
+    color: #fff !important;
+}
+
+/* SnowPhoenix9999 - Distinguish Only */
+.thing .tagline .author.moderator[href$="/SnowPhoenix9999"],
+.side .tagline .author[href$="/SnowPhoenix9999"],
+/* im lazy sue me - haruka 
+ -- UrsineKing - Distinguish Only
+*/
+.thing .tagline .author.moderator[href$="/UrsineKing"],
+.side .tagline .author[href$="/UrsineKing"],
+{
+    background-position: 0 -540px !important;
+    color: #fff !important;
+}
+.side .tagline .author[href$="/SnowPhoenix9999"]~.flair:before,
+.author.moderator[href$="/SnowPhoenix9999"]~.flair:before,
+/* im lazy sue me - haruka 
+ -- UrsineKing - Distinguish Only
+*/
+.side .tagline .author[href$="/UrsineKing"]~.flair:before,
+.author.moderator[href$="/UrsineKing"]~.flair:before
+{
+    color: #333 !important;
+}
+
+/* leaffyleif - Distinguish Only */
+.thing .tagline .author.moderator[href$="/leaffyleif"],
+.author.moderator[href$="/leaffyleif"]~.flair:before,
+.side .tagline .author[href$="/leaffyleif"],
+.side .tagline .author[href$="/leaffyleif"]~.flair:before  {
+    background-position: 0 -576px !important;
+    color: #fff !important;
+}
+
+
+/* OFFICIAL ACCOUNT BUBBLES */
 
 /* NINTENDO OF AMERICA OFFICIAL - user Flair */
 .thing .author[href$="/Nintendo_America"],
 .author[href$="/CrimsonMudkip"]~.flair:before,
 .side .tagline .author[href$="/Nintendo_America"]
 .side .tagline .author[href$="/Nintendo_America"]~.flair:before  {
-    background-position: 0 -672px!important;
+    background-position: 0 108px!important;
     color: #fff!important
 }
-
 
 /* OLD MODERATORS RED BUBBLE 
 --------------------------------------------------------------------------------*/
@@ -426,7 +483,7 @@ TEMPLATE:
 .res .thing .tagline .author.submitter[href$="/Thundergrunge"],
 .side .tagline .author[href$="/Thundergrunge"],
 .author[href$="/Thundergrunge"]~.flair:before {
-    background-position: 0 -126px !important;
+    background-position: 0 -108px !important;
     color: #fff !important;
 }
 
@@ -438,7 +495,7 @@ TEMPLATE:
 .res .thing .tagline .author.submitter[href$="/GIKyleHilliard"],
 .side .tagline .author[href$="/GIKyleHilliard"],
 .author[href$="/GIKyleHilliard"]~.flair:before {
-    background-position: 0 -168px !important;
+    background-position: 0 -144px !important;
     color: #fff !important;
 }
 
@@ -533,7 +590,8 @@ TEMPLATE:
 --------------------------------------------------------------------------------*/
 .author[href$="/neelim98"]~.flair:after,
 .author[href$="/Hero_Of_Legend"]~.flair:after,
-.author[href$="/Mockturne"]~.flair:after {
+.author[href$="/Mockturne"]~.flair:after,
+.author[href$="/rileydelete"]~.flair:after {
     background-position: -210px 0
 }
 
@@ -997,8 +1055,20 @@ TEMPLATE:
     background-position: -330px -60px;
 }
 
-/* DavidLuizshairAltarianite
+/* DavidLuizshair Altarianite
 --------------------------------------------------------------------------------*/
 .author[href$="/DavidLuizshair"]~.flair:after {
     background-position: -360px -60px;
+}
+
+/* Draycen Meteorite
+--------------------------------------------------------------------------------*/
+.author[href$="/Draycen"]~.flair:after {
+    background-position: -390px -60px;
+}
+
+/* Ursineking Ice Stone
+--------------------------------------------------------------------------------*/
+.author[href$="/Ursineking"]~.flair:after {
+    background-position: -420px -60px;
 }
