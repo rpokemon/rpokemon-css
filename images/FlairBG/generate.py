@@ -71,9 +71,9 @@ flairs = [
         "text": "Moderator" 
     },
     {   # Mudkip
-        "top_section": (211, 79, 21),
-        "bottom_section": (255, 113, 30),
-        "top_squares": (35, 31, 32),
+        "top_section": (255, 126, 26),
+        "bottom_section": (255, 179, 42),
+        "shape_border": (0, 215, 255),
         "text": "Moderator" 
     },
     {   # TexasAndroid

@@ -358,7 +358,7 @@ TEMPLATE:
 .author.moderator[href$="/IAmzSamz"]~.flair:before,
 .side .tagline .author[href$="/IAmzSamz"],
 .side .tagline .author[href$="/IAmzSamz"]~.flair:before  {
-    background-position: 0 -388px !important;
+    background-position: 0 -288px !important;
     color: #fff !important;
 }
 
