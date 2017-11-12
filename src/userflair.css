@@ -427,7 +427,7 @@ TEMPLATE:
  -- UrsineKing - Distinguish Only
 */
 .thing .tagline .author.moderator[href$="/UrsineKing"],
-.side .tagline .author[href$="/UrsineKing"],
+.side .tagline .author[href$="/UrsineKing"]
 {
     background-position: 0 -540px !important;
     color: #fff !important;
@@ -491,13 +491,26 @@ TEMPLATE:
 
 /* AMA
 --------------------------------------------------------------------------------*/
-.thing .author[href$="/GIKyleHilliard"],
-.res .thing .tagline .author.submitter[href$="/GIKyleHilliard"],
-.side .tagline .author[href$="/GIKyleHilliard"],
-.author[href$="/GIKyleHilliard"]~.flair:before {
+.thing .author[href$="/aDr1v3"],
+.res .thing .tagline .author.submitter[href$="/aDr1v3"],
+.side .tagline .author[href$="/aDr1v3"],
+.author[href$="/aDr1v3"]~.flair:before,
+
+thing .author[href$="/DeathlytK"],
+.res .thing .tagline .author.submitter[href$="/DeathlytK"],
+.side .tagline .author[href$="/DeathlytK"],
+.author[href$="/DeathlytK"]~.flair:before,
+
+.thing .author[href$="/Crimsoncbad"],
+.res .thing .tagline .author.submitter[href$="/Crimsoncbad"],
+.side .tagline .author[href$="/Crimsoncbad"],
+.author[href$="/Crimsoncbad"]~.flair:before
+
+{
     background-position: 0 -144px !important;
     color: #fff !important;
 }
+
 
 /* WEEKY ANIME THREAD
 --------------------------------------------------------------------------------*/
