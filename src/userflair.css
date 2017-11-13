@@ -628,7 +628,8 @@ TEMPLATE:
 .author[href$="/yineedname"]~.flair:after,
 .author[href$="/Grandfather_Clock"]~.flair:after,
 .author[href$="/Not_A_Yam"]~.flair:after,
-.author[href$="/estrellitadelmar"]~.flair:after {
+.author[href$="/estrellitadelmar"]~.flair:after,
+.author[href$="/HintoTokala"]~.flair:after {
     background-position: -300px 0
 }
 
