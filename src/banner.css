@@ -1,13 +1,14 @@
 /********************************************************************************
 * BANNER
 *********************************************************************************/
+
+/*
 #header {
     background: url(%%daymodeheader%%) center center/cover no-repeat
 }
 html[lang$=nm] #header {
     background: url(%%nightmodeheader%%) center center/cover no-repeat
 }
-
 .pagename a {
     top: 19px;
     width: 294px;
@@ -23,4 +24,28 @@ html[lang$=nm] #header {
 
 html[lang$=nm] .pagename a{
     background-position-x: 100%;
+}*/
+
+/*--------------------------------------------------------------------------------*/
+
+#header {
+    background: url(%%daymodeheader%%) left center/cover no-repeat
+}
+html[lang$=nm] #header {
+    background: url(%%nightmodeheader%%) left center/cover no-repeat
+}
+.pagename a {
+    top: 45px;
+    width: 220px;
+    height: 80px;
+    display: block;
+    left: 240px;
+    z-index: 99;
+}
+.pagename a, .pagename a:hover {
+    background: url(%%dm-logo%%) center center/contain no-repeat;
+}
+html[lang$=nm] .pagename a,
+html[lang$=nm] .pagename a:hover {
+    background: url(%%nm-logo%%) center center/contain no-repeat;
 }
