@@ -709,7 +709,8 @@ TEMPLATE:
 .author[href$="/Starrodkirby86"]~.flair:after,
 .author[href$="/KaSlaps"]~.flair:after,
 .author[href$="/chronafox"]~.flair:after,
-.author[href$="/castoweary"]~.flair:after {
+.author[href$="/castoweary"]~.flair:after,
+.author[href$="/lycilla"]~.flair:after {
     background-position: -510px 0
 }
 
