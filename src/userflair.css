@@ -1003,22 +1003,19 @@ TEMPLATE:
 
 /* bigslothonmyface GBsounds
 --------------------------------------------------------------------------------*/
-.author[href$="/bigslothonmyface"]~.flair:after,
-/* FOR AMA */
-.author[href$="/GlitchxCity"]~.flair:after {
-/* END FOR AMA */
+.author[href$="/bigslothonmyface"]~.flair:after {
     background-position: -30px -60px;
 }
 
-/* AWild_Abra spoon
+/* A_Wild_Abra spoon
 --------------------------------------------------------------------------------*/
 .author[href$="/A_Wild_Abra"]~.flair:after {
     background: url(%%ballflair%%) -60px -60px;
 }
 
-/* Hyouten Leftovers 1
+/* SnowPhoenix9999 NeverMeltIce
 --------------------------------------------------------------------------------*/
-.author[href$="/Hyouten"]~.flair:after {
+.author[href$="/SnowPhoenix9999"]~.flair:after {
     background-position: -90px -60px
 }
 
@@ -1084,6 +1081,6 @@ TEMPLATE:
 
 /* Ursineking Ice Stone
 --------------------------------------------------------------------------------*/
-.author[href$="/Ursineking"]~.flair:after {
+.author[href$="/UrsineKing"]~.flair:after {
     background-position: -420px -60px;
 }
