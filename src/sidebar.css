@@ -317,7 +317,7 @@ body:not(.res) .titlebox > h1 {
 .side .md a[href$="selftext=true"]:before {
     background: url(%%sinnohflair%%) -840px -32px
 }
-.side .md a[href$="#q"]:before {
+.side .md a[href$="/questions/"]:before {
     background: url(%%johtoflair%%) -640px -32px
 }
 .side .md a[href*="pokemontrades"]:before {
