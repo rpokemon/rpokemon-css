@@ -194,11 +194,12 @@ body:not(.res) .titlebox > h1 {
     border-radius: 0px 6px 6px 0px;
     transition: 300ms ease-in-out;
 }
-}*/
+*/
 
 .fancy-toggle-button:hover .add:after {
     width: 176px;
     background-color: #6af;
+}
 
 
 /* gold toggle sr style checkbox
