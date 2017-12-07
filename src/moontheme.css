@@ -54,10 +54,12 @@ html[lang$=nm] .comment-permalink-page .commentarea>.infobar,
 html[lang$=nm] .commentarea .child>.usertext,
 html[lang$=nm] .commentarea>.panestack-title,
 html[lang$=nm] .commentarea>.usertext,
+html[lang$=nm] .infobar.commentsignupbar,
 html[lang$=nm] .gold-accent.comment-visits-box {
     background: #282b30;
 }
-html[lang$=nm] .commentarea > * {
+html[lang$=nm] .commentarea > *,
+html[lang$=nm] .infobar.commentsignupbar {
     border: 0;
 }
 
