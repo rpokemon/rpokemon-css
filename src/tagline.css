@@ -67,7 +67,10 @@
 /* Tagline - author
 --------------------------------------------------------------------------------*/
 
-.thing .top-matter .author, .flairrow .author, .side .tagline .author {
+.top-matter .author,
+.comment .author,
+.flairrow .author,
+.side .tagline .author {
     width: 280px;
     height: 36px;
     background: url(%%FlairBG%%) 0 -36px;
