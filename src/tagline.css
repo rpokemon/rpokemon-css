@@ -3,7 +3,8 @@
 /* Tagline container element
 --------------------------------------------------------------------------------*/
 .comment .tagline,
-.top-matter .tagline {
+.top-matter .tagline,
+.side .tagline {
     display: -webkit-flex!important;
     display: flex!important;
     -webkit-justify-content: flex-end;
@@ -55,7 +56,7 @@
     margin: 3px 5px;
     width: 12px;
     height: 13px;
-    background: url(%%pokesheet%%) -195px -159px;
+    background: url(%%pokesheet%%) -195px -19px;
     display: inline-block;
     opacity: .5
 }

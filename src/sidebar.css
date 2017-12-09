@@ -120,7 +120,7 @@ body:not(.res) .titlebox > h1 {
     content: '';
     position: absolute;
     display: block;
-    background: url(%%pokesheet%%) 0 -250px;
+    background: url(%%pokesheet%%) 0 -110px;
     width: 52px;
     height: 52px;
     bottom: -8px;
@@ -286,12 +286,12 @@ body:not(.res) .titlebox > h1 {
 }
 .flairtoggle input[type=checkbox]:not(:checked)~label:before,
 .sr_style_toggle input[type=checkbox]:not(:checked)~label:before {
-    background: url(%%pokesheet%%) -178px -195px
+    background: url(%%pokesheet%%) -178px -55px
 }
 .flairtoggle input[type=checkbox]:checked~label:before,
 .res-sr-style-toggle label:before,
 .sr_style_toggle input[type=checkbox]:checked~label:before {
-    background: url(%%pokesheet%%) -194px -195px
+    background: url(%%pokesheet%%) -194px -55px
 }
 
 /* Submit links

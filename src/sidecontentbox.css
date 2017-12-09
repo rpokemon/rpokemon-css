@@ -66,7 +66,7 @@
     content: '';
     display: block;
     position: absolute;
-    background: url(%%pokesheet%%) -54px -176px;
+    background: url(%%pokesheet%%) -54px -36px;
     width: 34px;
     height: 34px;
     top: 0;

@@ -124,7 +124,7 @@
 .loggedin .logout a:before {
     content: '';
     display: inline-block;
-    background: url(%%pokesheet%%) -32px -303px;
+    background: url(%%pokesheet%%) -32px -163px;
     width: 25px;
     height: 27px;
     font-size: 0!important;
@@ -133,7 +133,7 @@
 }
 
 .loggedin .logout a:before {
-    background-position: -62px -302px
+    background-position: -62px -162px
 }
 
 .loggedin .logout a {
@@ -260,19 +260,19 @@
 --------------------------------------------------------------------------------*/
 
 #mail.nohavemail,
-#message.nohavemail { background: -1px -332px }
+#message.nohavemail { background: -1px -192px }
 #mail.havemail,
-#message.havemail { background: -31px -332px }
+#message.havemail { background: -31px -192px }
 
-#inbox.nohavemail { background: -60px -331px }
-#inbox.havemail { background: -90px -331px }
+#inbox.nohavemail { background: -60px -191px }
+#inbox.havemail { background: -90px -191px }
 
 #modmail { transform: scale(0.95) }
-#modmail.nohavemail { background: -1px -362px }
-#modmail.havemail { background: -31px -362px }
+#modmail.nohavemail { background: -1px -222px }
+#modmail.havemail { background: -31px -222px }
 
-#new_modmail.nohavemail { background: -61px -363px; }
-#new_modmail.havemail { background: -91px -363px; }
+#new_modmail.nohavemail { background: -61px -223px; }
+#new_modmail.havemail { background: -91px -223px; }
 
 #mail,
 #message,
@@ -301,7 +301,7 @@
     text-align: center;
 }
 
-#header-bottom-right .gearIcon {background-position: -90px -302px;top: 5px;transform: scale(0.9)}
+#header-bottom-right .gearIcon {background-position: -90px -162px;top: 5px;transform: scale(0.9)}
 #header-bottom-right .gearIcon:after {display: none}
 
 #header-bottom-right .flat-list + .separator,

@@ -100,7 +100,7 @@
 
 .thumbnail.default,
 .thumbnail.self {
-    background-position: 0px 0px
+    background-position: 0 0
 }
 .thumbnail.nsfw {
     background: -70px 0
@@ -121,7 +121,7 @@
 .thumbnail.self {
     width: 70px;
     height: 70px!important;
-    background-image: url(%%whitesheet%%) !important;
+    background-image: url(%%thumbnails%%) !important;
     border: 1px solid #aaa;
     border-radius: 50%;
     position: relative;
@@ -130,11 +130,7 @@
 
 .linkflair-rotation .thumbnail,
 .linkflair-rotation .thumbnail.self {
-    background: url(%%whitesheet%%) 0 -140px !important;
-}
-html[lang$=nm] .linkflair-rotation .thumbnail,
-html[lang$=nm] .linkflair-rotation .thumbnail.self {
-    background: url(%%whitesheet%%) -70px -140px !important;
+    background-position: 0 -140px !important;
 }
 
 .thumbnail img {
@@ -315,7 +311,7 @@ html[lang$=nm] .linkflair-rotation .thumbnail.self {
 .expando-button.video-muted,
 .parent .expando-button {
     position: relative;
-    background: url(%%pokesheet%%) -36px -175px!important;
+    background: url(%%pokesheet%%) -36px -35px!important;
     width: 18px!important;
     height: 17px!important;
     max-width: 18px!important;
@@ -329,5 +325,5 @@ html[lang$=nm] .linkflair-rotation .thumbnail.self {
     opacity: .8
 }
 .expando-button.expanded {
-    background-position: -37px -197px!important
+    background-position: -37px -57px!important
 }

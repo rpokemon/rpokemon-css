@@ -22,7 +22,7 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    background: url(%%pokesheet%%) -55px -177px;
+    background: url(%%pokesheet%%) -55px -37px;
     top: 0;
     left: 0;
     transform: scale(0.8);
