@@ -97,28 +97,70 @@
 /* Thumbnails
 --------------------------------------------------------------------------------*/
 
-
 .thumbnail.default,
 .thumbnail.self {
-    background-position: 0 0
+    background: 0 0
 }
-.thumbnail.nsfw {
-    background: -70px 0
+.linkflair-image .thumbnail.default,
+.linkflair-image .thumbnail.self,
+.thing.linkflair-image .midcol+.entry a.title:before {
+    background: 0 -210px;
 }
-.thumbnail.spoiler {
+.linkflair-art .thumbnail.default,
+.linkflair-art .thumbnail.self,
+.thing.linkflair-art .midcol+.entry a.title:before {
+    background: -70px -210px;
+}
+.linkflair-media .thumbnail.default,
+.linkflair-media .thumbnail.self,
+.thing.linkflair-media .midcol+.entry a.title:before {
+    background: -140px -210px;
+}
+.linkflair-discussion .thumbnail.default,
+.linkflair-discussion .thumbnail.self,
+.thing.linkflair-discussion .midcol+.entry a.title:before {
+    background: 0 -280px;
+}
+.linkflair-craft .thumbnail.default,
+.linkflair-craft .thumbnail.self,
+.thing.linkflair-craft .midcol+.entry a.title:before {
+    background: -70px -280px;
+}
+.linkflair-info .thumbnail.default,
+.linkflair-info .thumbnail.self,
+.thing.linkflair-info .midcol+.entry a.title:before {
+    background: -140px -280px;
+}
+
+.thumbnail.spoiler,
+.thing.spoiler .midcol+.entry a.title:before {
     background: -70px -70px
 }
-.stickied .thumbnail.self {
+.thumbnail.nsfw,
+.thing.over18 .midcol+.entry a.title:before {
+    background: -70px 0
+}
+.stickied .thumbnail.self,
+.thing.stickied .midcol+.entry a.title:before {
     background: -140px 0
 }
-.linkflair-noob .thumbnail.default, .linkflair-noob .thumbnail.self {
+
+.linkflair-noob .thumbnail.default,
+.linkflair-noob .thumbnail.self,
+.thing.linkflair-noob .midcol+.entry a.title:before {
     background: -140px -70px
+}
+.linkflair-rotation .thumbnail.default,
+.linkflair-rotation .thumbnail.self,
+.thing.linkflair-rotation .midcol+.entry a.title:before {
+    background: 0 -140px;
 }
 
 .thumbnail,
 .thumbnail.default,
 .thumbnail.nsfw,
-.thumbnail.self {
+.thumbnail.self,
+.thing.link .midcol+.entry a.title:before {
     width: 70px;
     height: 70px!important;
     background-image: url(%%thumbnails%%) !important;
@@ -128,9 +170,15 @@
     background-size: initial !important;
 }
 
-.linkflair-rotation .thumbnail,
-.linkflair-rotation .thumbnail.self {
-    background-position: 0 -140px !important;
+.thing.link .midcol+.entry {
+    margin-left: 77px!important;
+}
+
+.thing.link .midcol+.entry a.title:before {
+    content: " ";
+    top: 8px;
+    left: 57px;
+    position: absolute;
 }
 
 .thumbnail img {

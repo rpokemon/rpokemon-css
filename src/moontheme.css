@@ -422,7 +422,8 @@ html[lang$=nm] .thumbnail.default,
 html[lang$=nm] .thumbnail.nsfw,
 html[lang$=nm] .thumbnail.self,
 html[lang$=nm] .linkflair-rotation .thumbnail,
-html[lang$=nm] .linkflair-rotation .thumbnail.self  {
+html[lang$=nm] .linkflair-rotation .thumbnail.self,
+html[lang$=nm] .thing .midcol+.entry a.title:before  {
     background-image: url(%%thumbnails-nm%%) !important;
     border: 1px solid #111
 }
