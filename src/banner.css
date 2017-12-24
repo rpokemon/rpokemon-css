@@ -39,7 +39,7 @@ html[lang$=nm] #header {
     width: 220px;
     height: 80px;
     display: block;
-    left: 780px;
+    left: 240px;
     z-index: 99;
 }
 .pagename a, .pagename a:hover {
