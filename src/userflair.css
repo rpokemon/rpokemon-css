@@ -604,7 +604,8 @@ TEMPLATE:
 .author[href$="/neelim98"]~.flair:after,
 .author[href$="/Hero_Of_Legend"]~.flair:after,
 .author[href$="/Mockturne"]~.flair:after,
-.author[href$="/rileydelete"]~.flair:after {
+.author[href$="/rileydelete"]~.flair:after
+.author[href$="/Helaenaa"]~.flair:after {
     background-position: -210px 0
 }
 
