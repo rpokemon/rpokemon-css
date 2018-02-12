@@ -1004,9 +1004,9 @@ TEMPLATE:
 }
 
 /* bigslothonmyface GBsounds
---------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------
 .author[href$="/bigslothonmyface"]~.flair:after {
-    background-position: -30px -60px;
+    background-position: -30px -60px;*/
 }
 
 /* A_Wild_Abra spoon
