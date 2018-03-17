@@ -281,7 +281,7 @@ TEMPLATE:
 
 --------------------------------------------------------------------------------*/
 
-.thing .author[href$="/GIHanson"],
+/*.thing .author[href$="/GIHanson"],
 .author[href$="/GIHanson"]~.flair:before,
 .side .tagline .author[href$="/GIHanson"],
 .side .tagline .author[href$="/GIHanson"]~.flair:before,
@@ -315,9 +315,9 @@ TEMPLATE:
 .author[href$="/Comboman77"]~.flair:before,
 .side .tagline .author[href$="/Comboman77"],
 .side .tagline .author[href$="/Comboman77"]~.flair:before {
-    background-position: 0 -168px !important;
+    background-position: 0 -144px !important;
     color: #fff !important;
-}
+}*/
 
 /* special user bubles
 --------------------------------------------------------------------------------*/
