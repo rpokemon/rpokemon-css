@@ -636,7 +636,7 @@ TEMPLATE:
 
 /* Luxury balls
 --------------------------------------------------------------------------------*/
-.author[href$="/SeraphixRaleigh"]~.flair:after,
+/*.author[href$="/SeraphixRaleigh"]~.flair:after,*/ /* Currently has Manaphy Egg flair */
 .author[href$="/HexKor"]~.flair:after,
 .author[href$="/KKBlitz11"]~.flair:after,
 .author[href$="/lyouke"]~.flair:after,
@@ -948,6 +948,18 @@ TEMPLATE:
     background-position: -1290px -30px;
     height: 95px;
     margin-top: -68px;
+}
+
+/* Egg - Easter 2018 Contest Participants */
+.author[href$="/TheKornManCan"]~.flair:after {
+    background-position: -300px -30px;
+}
+
+/* Manaphy Egg - Easter 2018 Contest Winners */
+.author[href$="/NesMeister123"]~.flair:after,
+.author[href$="/SeraphixRaleigh"]~.flair:after,
+.author[href$="/Olivchen"]~.flair:after {
+    background-position: -330px -30px;
 }
 
 /* TAPU CHALLENGE MEDALS */
