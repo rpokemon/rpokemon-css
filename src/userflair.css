@@ -937,6 +937,7 @@ TEMPLATE:
 }
 
 /* necrowinner */
+.author[href$="/NesMeister123"]~.flair:after,
 .flair.flair-necrowinner:after {
     background-position: -270px -30px;
 }
@@ -956,7 +957,7 @@ TEMPLATE:
 }
 
 /* Manaphy Egg - Easter 2018 Contest Winners */
-.author[href$="/NesMeister123"]~.flair:after,
+/* .author[href$="/NesMeister123"]~.flair:after, */
 .author[href$="/SeraphixRaleigh"]~.flair:after,
 .author[href$="/Olivchen"]~.flair:after {
     background-position: -330px -30px;
