@@ -700,7 +700,7 @@ TEMPLATE:
 .author[href$="/scottmonster"]~.flair:after,
 .author[href$="/karinasuperkul"]~.flair:after,
 .author[href$="/quantumcamel"]~.flair:after,
-.author[href$="/saltimmortalsea"]~.flair:after,
+/* .author[href$="/saltimmortalsea"]~.flair:after, changed to egg at their request*/
 .author[href$="/AssiveAggressive"]~.flair:after {
     background-position: -480px 0
 }
@@ -952,7 +952,8 @@ TEMPLATE:
 }
 
 /* Egg - Easter 2018 Contest Participants */
-.author[href$="/TheKornManCan"]~.flair:after {
+.author[href$="/TheKornManCan"]~.flair:after,
+.author[href$="/saltimmortalsea"]~.flair:after {
     background-position: -300px -30px;
 }
 
