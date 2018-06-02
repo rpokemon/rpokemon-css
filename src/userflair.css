@@ -275,16 +275,16 @@ TEMPLATE:
 .author.moderator[href$="/username"]~.flair:before,
 .side .tagline .author[href$="/username"],
 .side .tagline .author[href$="/username"]~.flair:before {
-    background-position: 0 -168px !important;
+    background-position: 0 -144px !important;
     color: #fff !important;
 }
 
 --------------------------------------------------------------------------------*/
 
-.thing .author[href$="/Koolboyman"],
-.author[href$="/Koolboyman"]~.flair:before,
-.side .tagline .author[href$="/Koolboyman"],
-.side .tagline .author[href$="/Koolboyman"]~.flair:before {
+.thing .author[href$="/clawsandtalons"],
+.author[href$="/clawsandtalons"]~.flair:before,
+.side .tagline .author[href$="/clawsandtalons"],
+.side .tagline .author[href$="/clawsandtalons"]~.flair:before {
     background-position: 0 -144px !important;
     color: #fff !important;
 }
