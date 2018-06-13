@@ -271,23 +271,15 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 /* AMA host user bubbles
 
 TEMPLATE:
-.thing .tagline .author.moderator[href$="/username"],
-.author.moderator[href$="/username"]~.flair:before,
+.thing .author[href$="/username"],
+.res .thing .tagline .author.submitter[href$="/username"],
 .side .tagline .author[href$="/username"],
-.side .tagline .author[href$="/username"]~.flair:before {
+.author[href$="/username"]~.flair:before {
     background-position: 0 -144px !important;
     color: #fff !important;
 }
 
 --------------------------------------------------------------------------------*/
-
-.thing .author[href$="/clawsandtalons"],
-.author[href$="/clawsandtalons"]~.flair:before,
-.side .tagline .author[href$="/clawsandtalons"],
-.side .tagline .author[href$="/clawsandtalons"]~.flair:before {
-    background-position: 0 -144px !important;
-    color: #fff !important;
-}
 
 /* special user bubles
 --------------------------------------------------------------------------------*/
@@ -456,31 +448,6 @@ TEMPLATE:
     background-position: 0 -108px !important;
     color: #fff !important;
 }
-
-
-
-/* AMA
---------------------------------------------------------------------------------*/
-.thing .author[href$="/aDr1v3"],
-.res .thing .tagline .author.submitter[href$="/aDr1v3"],
-.side .tagline .author[href$="/aDr1v3"],
-.author[href$="/aDr1v3"]~.flair:before,
-
-.thing .author[href$="/DeathlytK"],
-.res .thing .tagline .author.submitter[href$="/DeathlytK"],
-.side .tagline .author[href$="/DeathlytK"],
-.author[href$="/DeathlytK"]~.flair:before,
-
-.thing .author[href$="/CrimsonCBAD"],
-.res .thing .tagline .author.submitter[href$="/CrimsonCBAD"],
-.side .tagline .author[href$="/CrimsonCBAD"],
-.author[href$="/CrimsonCBAD"]~.flair:before
-
-{
-    background-position: 0 -144px !important;
-    color: #fff !important;
-}
-
 
 /* WEEKY ANIME THREAD
 --------------------------------------------------------------------------------*/
