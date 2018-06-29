@@ -43,7 +43,6 @@
 #header-img {
     bottom: 10px;
     left: 10px;
-    z-index: 99;
     width: auto;
     height: 60px
 }
@@ -550,7 +549,7 @@ body #header .tabmenu li:first-of-type:last-of-type a {
     position: absolute;
     margin-bottom: 8px;
     font-size: 12px;
-    background: rgba(200, 200, 200, .4);
+    background: rgba(32, 32, 32, .4);
     height: 20px;
     line-height: 20px;
     padding: 0 10px;
