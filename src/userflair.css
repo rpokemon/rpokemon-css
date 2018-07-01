@@ -901,6 +901,30 @@ TEMPLATE:
     background-position: -330px -30px;
 }
 
+/* Gold Zubat - 1mil donors */
+/*.author[href$="/username"]~.flair:after,*/
+.flair.flair-goldbat:after {
+    background-position: -360px -30px;
+}
+
+/* Bike - 1mil donors */
+/*.author[href$="/username"]~.flair:after,*/
+.flair.flair-bike:after {
+    background-position: -390px -30px;
+}
+
+/* Amulet Coin - 1mil donors */
+/*.author[href$="/username"]~.flair:after,*/
+.flair.flair-amuletcoin:after {
+    background-position: -420px -30px;
+}
+
+/* Gracidea - 1mil donors */
+/*.author[href$="/username"]~.flair:after,*/
+.flair.flair-gracidea:after {
+    background-position: -450px -30px;
+}
+
 /* TAPU CHALLENGE MEDALS */
 .flair.flair-tapubulu-medal:after,
 .flair.flair-tapufini-medal:after,
