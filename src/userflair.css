@@ -889,8 +889,8 @@ TEMPLATE:
 }
 
 /* Egg - Easter 2018 Contest Participants */
-.author[href$="/TheKornManCan"]~.flair:after,
-.author[href$="/saltimmortalsea"]~.flair:after {
+.author[href$="/TheKornManCan"]~.flair:after {
+/*.author[href$="/saltimmortalsea"]~.flair:after */
     background-position: -300px -30px;
 }
 
