@@ -925,6 +925,11 @@ TEMPLATE:
     background-position: -450px -30px;
 }
 
+/* Gold Gengar - 1mil $500 donor */
+.author[href$="/colon3l86"]~.flair:after {
+    background-position: -480px -30px;
+}
+
 /* TAPU CHALLENGE MEDALS */
 .flair.flair-tapubulu-medal:after,
 .flair.flair-tapufini-medal:after,
