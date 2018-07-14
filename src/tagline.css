@@ -33,6 +33,18 @@
     padding: 0 4px
 }
 
+.crosspost-preview-tagline time {
+    padding: 0;
+}
+
+.crosspost-preview-tagline .edited-timestamp:hover:after {
+    display: inline;
+}
+
+.crosspost-preview-tagline .edited-timestamp:after {
+    display: none;
+}
+
 /* Tagline - stickied comment
 --------------------------------------------------------------------------------*/
 .tagline .stickied-tagline {

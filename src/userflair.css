@@ -57,10 +57,11 @@
     left: -2px
 }
 
-/* hide flair in search page and wiki page */
+/* hide flair in search page, wiki page revision listing, and crossposts */
 .search-result-group .flair,
-.wiki-page .wiki-page-content .flair {
-    display: none !important;
+.wiki-page .wiki-page-content .flair,
+.crosspost-preview-tagline .flair {
+    display: none;
 }
 
 /********************************************************************************
