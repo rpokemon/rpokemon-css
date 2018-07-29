@@ -94,7 +94,8 @@
 /* common button */
 .side .md a[href*="#flair"],
 .side .md>h2+ul li a,
-.sidecontentbox a.helplink {
+.sidecontentbox a.helplink,
+.side .md h6+blockquote h4 a {
     border-radius: 2px;
     text-align: center;
     text-shadow: 0 1px 0 #5787e1;

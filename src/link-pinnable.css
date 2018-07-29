@@ -9,7 +9,8 @@
 }
 .pinnable-content.pinned .top-matter {
     position: static;
-    padding-left: 180px;
+    padding-left: 250px;
+    padding-top: 5px;
 }
 .pinnable-content.pinned .dismiss-pinnable {
     top: 13px !important;
@@ -17,9 +18,9 @@
     position: absolute;
 }
 .pinnable-content.pinned .reddit-video-player-root {
-    width: 175px;
-    height: 99px;
-    top: 2px;
+    height: 135px !important;
+    width: 240px !important;
+    top: 4px;
 }
 
 /* link
@@ -28,11 +29,15 @@
     margin: 0;
     border-top: 0;
     border-bottom: 0;
+    min-height: 135px;
 }
 .pinned .link .midcol {
     position: absolute;
     top: 0;
-    left: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 78px;
+    left: 5px;
 }
 .pinned .link .thumbnail {
     display: none;
@@ -41,8 +46,8 @@
     right: 45px;
 }
 .pinned .link .tagline {
-    left: 100px;
-    top: 8px;
+    left: 170px;
+    top: 10px;
     right: 70px;
 }
 

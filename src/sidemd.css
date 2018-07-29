@@ -105,15 +105,20 @@
     border-bottom: 1px solid rgba(0,0,0,.02)
 }
 
-html[lang$=nm] .side .md table tr:nth-child(odd) {
-    background: rgba(255, 255, 255, .01)
+html[lang$=nm] .side .md table thead tr th {
+    border: 1px solid #353535;
+    border-bottom: 1px solid #555;
+    border-top: 0;
 }
-html[lang$=nm] .side .md table td+td,
-html[lang$=nm] .side .md table th+th {
-    border-left: 1px solid rgba(255, 255, 255, .03)
+html[lang$=nm] .side .md table tbody tr td {
+    border: 1px solid #444;
 }
-html[lang$=nm] .side .md table th {
-    border-bottom: 1px solid rgba(255, 255, 255, .03)
+html[lang$=nm] .side .md table tr:nth-of-type(odd) td {
+    background: rgba(0,0,0,0.2);
+}
+html[lang$=nm] .side .md table td,
+html[lang$=nm] .side .md table td a {
+    color: #bababa
 }
 
 /* sidebar community links
@@ -148,8 +153,9 @@ html[lang$=nm] .side .md table th {
     padding: 0 5px;
     flex-grow: 1;
     text-align: center;
-    background: rgba(0,0,0,0.04);
+    background: rgba(0,0,0,0.03);
     color: rgba(0,0,0,0.8);
+    border: 1px solid #e5e5e5;
 }
 .side .md h6+blockquote p a:hover {
     background: rgba(0,0,0,0.08);
@@ -161,6 +167,11 @@ html[lang$=nm] .side .md table th {
     padding: 7px 5px;
     font-size: 13px;
     text-align: center;
-    background: rgba(0,0,0,0.04);
-    color: rgba(0,0,0,0.8);
+    border-top: 1px solid #dadada;
+    background: rgba(0,0,0,0.03);
+}
+.side .md h6+blockquote h4 a {
+    padding: 5px;
+    display: block;
+    box-shadow: none;
 }

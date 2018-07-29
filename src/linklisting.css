@@ -28,6 +28,9 @@
     transform: scale(0.8);
     opacity: 0.5;
 }
+html[lang$=nm] .listing-page .content>.menuarea .spacer:before {
+    opacity: 1;
+}
 
 /* ads */
 .organic-listing {
@@ -46,4 +49,51 @@
 .listing-page .content>.menuarea .spacer {
     background: #fff;
     border: 1px solid #e3e3e3
+}
+
+/* drop-choices */
+.drop-choices.lightdrop, html[lang$=nm] .drop-choices {
+    border: 1px solid #bbb;
+    box-shadow: 0 2px 1.5px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    margin-left: -5px;
+    border-top: 1.5px solid #2a66d6;
+    margin-top: 10px;
+}
+.drop-choices.lightdrop:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #2a66d6;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+.drop-choices.lightdrop a.choice {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.drop-choices.lightdrop a.choice:hover {
+    background: #2a66d6;
+    color: #fff;
+}
+.drop-choices .RES-dropdown-button {
+    float: none;
+    margin-left: 15px;
+}
+.drop-choices.lightdrop a.choice:hover .RES-dropdown-button {
+    color: #fff;
+}
+
+html[lang$=nm] .drop-choices {
+    border: 1px solid #111;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    border-top: 1.5px solid #2a66d6 !important;
+}
+html[lang$=nm] .drop-choices.lightdrop a.choice {
+    color: #bababa;
 }

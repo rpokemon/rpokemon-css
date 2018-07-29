@@ -563,3 +563,8 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
 
 html[lang$="nm"] .side .md h4+blockquote * a:first-child { display: none; }
 html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
+
+html[lang$="nm"] .side .md h4+blockquote>* {
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 3px 4px #000;
+}

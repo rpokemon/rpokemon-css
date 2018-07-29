@@ -318,22 +318,16 @@
 /* message count
 --------------------------------------------------------------------------------*/
 .message-count {
-    background: #e58077;
+    background: #FF7500;
     color: #fff!important;
     height: 18px;
     line-height: 18px;
     min-width: 20px;
     text-align: center;
     position: relative;
-}
-
-.message-count.havemail, .havemail + .message-count {
-    position: relative;
     margin-left: 8px;
-    left: 0;
-    animation: messagecountbounce 2s infinite;
+    margin-right: 5px;
 }
-
 .message-count:before {
     content: '';
     position: absolute;
@@ -343,21 +337,9 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    border-right: 5px solid #e58077;
+    border-right: 5px solid #FF7500;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-}
-
-@keyframes messagecountbounce {
-    0%,20%,50%,80%,100% {
-        transform: translate3d(0,0,0)
-    }
-    40% {
-        transform: translate3d(5px,0,0)
-    }
-    60% {
-        transform: translate3d(2px,0,0)
-    }
 }
 
 

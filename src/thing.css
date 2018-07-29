@@ -375,3 +375,12 @@
 .expando-button.expanded {
     background-position: -37px -57px!important
 }
+
+/* Reddit Video
+--------------------------------------------------------------------------------*/
+.reddit-video-controller-root button {
+    box-shadow: none;
+}
+.reddit-video-controller-root button:hover {
+    background: inherit;
+}

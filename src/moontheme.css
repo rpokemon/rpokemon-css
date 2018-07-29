@@ -6,8 +6,8 @@ html[lang$=nm] body:before {
     color: #bdc3c7
 }
 
-html[lang$=nm] .md a {
-    color: #48f
+html[lang$=nm] .md a, html[lang$=nm] .icon-menu a, html[lang$=nm] .sidecontentbox a {
+    color: hsla(216,100%,75%,1)
 }
 html[lang$=nm] .comment .md a:visited,
 html[lang$=nm] .comment .md p>a:visited,
@@ -230,7 +230,8 @@ html[lang$=nm] .side .md>p:first-of-type {
 
 html[lang$=nm] .side .md a[href$="#flair"],
 html[lang$=nm] .side .md>h2+ul li a,
-html[lang$=nm] .sidecontentbox a.helplink {
+html[lang$=nm] .sidecontentbox a.helplink,
+html[lang$=nm] .side .md h6+blockquote h4 a {
     box-shadow: 0 0 1px rgba(0,0,0,0.8);
     text-shadow: none;
     background: rgba(255,255,255,.06);
@@ -273,15 +274,20 @@ html[lang$=nm] .side .md h3+ul+ol {
 }
 html[lang$=nm] .side .md h3+ul+ol>li:before {
     background: #282b30;
-    border-color: #4a4a4a;
+    border-color: #666;
+    border-width: 2px;
     font-weight: 700;
     font-size: 13px;
     width: 24px;
     height: 24px;
     line-height: 23px;
-    left: -36px;
-    top: 3px;
+    left: -35px;
+    top: 4px;
     color: #aaa;
+}
+html[lang$=nm] .side .md h3+ul+ol>li>a {
+    color: hsla(216,100%,75%,1);
+    font-weight: bold;
 }
 html[lang$=nm] .side .md h3+ul a {
     color: #dfdfdf;
@@ -326,12 +332,16 @@ html[lang$=nm] .thing .author {
 
 
 
+/* sidebar search
+--------------------------------------------------------------------------------*/
 
 html[lang$=nm] #search input[type=text] {
     background: rgba(255,255,255,.05);
     color: #aaa!important;
 }
 
+/* sidebar md headers
+--------------------------------------------------------------------------------*/
 html[lang$=nm] .side .md>h2:after,
 html[lang$=nm] .side .md>h4>a:after,
 html[lang$=nm] .side .md>h6:after,
@@ -348,6 +358,8 @@ html[lang$=nm] .titlebox form.toggle.sr_style_toggle:after {
     opacity: 0.08;
 }
 
+/* sidebar md misc
+--------------------------------------------------------------------------------*/
 html[lang$=nm] .md,
 html[lang$=nm] .side .md,
 html[lang$=nm] .submit-page .roundfield>.title,
@@ -367,10 +379,22 @@ html[lang$=nm] .side .md>h5+ul {
     background: rgba(255,255,255,0.03);
 }
 
+/* community links */
+html[lang$=nm] .side .md h6+blockquote p a {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid #565656;
+    color: #c7c7c7;
+}
+
+html[lang$=nm] .side .md h6+blockquote p,
+html[lang$=nm] .side .md h6+blockquote h4 {
+    background: rgba(0,0,0,0.15);
+    border-top-color: rgba(255,255,255,0.2);
+}
 
 
-
-
+/* sidebar sidecontentbox
+--------------------------------------------------------------------------------*/
 html[lang$=nm] .sidecontentbox .content {
     background: rgba(255,255,255,0.02);
 }
@@ -402,10 +426,6 @@ html[lang$=nm] .thing .md hr {
 html[lang$=nm] .md code,
 html[lang$=nm] .md pre {
     background: rgba(0, 0, 0, .08)
-}
-html[lang$=nm] .side .md table td,
-html[lang$=nm] .side .md table td a {
-    color: #a5a5a5
 }
 
 html[lang$=nm] .comment .score.dislikes,
