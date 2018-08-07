@@ -6,6 +6,7 @@
     position: absolute!important;
     text-align: center;
     line-height: 20px;
+    min-height: 20px;
     background: transparent;
     min-width: 50px!important;
     padding: 0 10px;
