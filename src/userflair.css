@@ -738,7 +738,6 @@ TEMPLATE:
 .author[href$="/Crusader1998123"]~.flair:after,
 .author[href$="/Xiiao"]~.flair:after,
 .author[href$="/KingPikablu"]~.flair:after,
-.author[href$="/Cls31"]~.flair:after,
 .flair.flair-dex-complete:after {
     background-position: -840px 0;
     transform: scale(0.9);
@@ -883,6 +882,7 @@ TEMPLATE:
 /* tall alolan exeggutor ballflair - shitpost winners */
 .author[href$="/PassingThroughRider"]~.flair:after,
 .author[href$="/SomebodyUnown"]~.flair:after,
+.author[href$="/Cls31"]~.flair:after,
 .author[href$="/akbarizcool"]~.flair:after {
     background-position: -1290px -30px;
     height: 95px;
