@@ -714,9 +714,19 @@ TEMPLATE:
 
 /* New mods icon 4.0 UNOVA
 --------------------------------------------------------------------------------*/
-/*.author[href$="/username"]~.flair:after {
+.author[href$="/StormSwampert"]~.flair:after,
+.author[href$="/pikaachew"]~.flair:after,
+.author[href$="/italianspy"]~.flair:after,
+.author[href$="/ShinySigma"]~.flair:after,
+.author[href$="/bountyforcash"]~.flair:after,
+.author[href$="/GeekScientist"]~.flair:after,
+.author[href$="/IwataFan"]~.flair:after,
+.author[href$="/ACMM123"]~.flair:after,
+.author[href$="/AndyJekal"]~.flair:after,
+.author[href$="/Resonance22"]~.flair:after,
+.author[href$="/TheDominantSoul"]~.flair:after {
     background-position: -720px 0
-}*/
+}
 
 /* New mods icon 5.0 KALOS
 --------------------------------------------------------------------------------*/
