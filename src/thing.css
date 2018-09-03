@@ -344,7 +344,7 @@
 .arrow {
     width: 33px;
     height: 33px;
-    background-image: url(%%downupusuumo%%)!important;
+    background-image: url(%%downup%%)!important;
     background-size: 100%;
     -webkit-transform: scale(.8);
     transform: scale(.8);

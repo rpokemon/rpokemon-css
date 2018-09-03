@@ -29,23 +29,24 @@ html[lang$=nm] .pagename a{
 /*--------------------------------------------------------------------------------*/
 
 #header {
-    background: url(%%daymodeheader%%) left center/cover no-repeat
+    background: url(%%daymodeheader%%) repeat-x 0 0/auto 100%;
 }
 html[lang$=nm] #header {
-    background: url(%%nightmodeheader%%) left center/cover no-repeat
+    background-image: url(%%nightmodeheader%%);
 }
 .pagename a {
     top: 45px;
     width: 220px;
-    height: 80px;
+    height: 110px;
     display: block;
     left: 240px;
     z-index: 99;
+
+    background: url(%%logo%%) 0 0/200% auto;
 }
-.pagename a, .pagename a:hover {
-    background: url(%%dm-logo%%) center center/contain no-repeat;
+.pagename a:hover {
+    background-position-y: 100%;
 }
-html[lang$=nm] .pagename a,
-html[lang$=nm] .pagename a:hover {
-    background: url(%%nm-logo%%) center center/contain no-repeat;
+html[lang$=nm] .pagename a {
+    background-position-x: 100%;
 }
