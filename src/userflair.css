@@ -941,6 +941,12 @@ TEMPLATE:
     background-position: -480px -30px;
 }
 
+/* 10th anniversary logo*/
+/*.author[href$="/username"]~.flair:after,*/
+.flair.flair-10logo:after {
+    background-position: -510px -30px;
+}
+
 /* TAPU CHALLENGE MEDALS */
 .flair.flair-tapubulu-medal:after,
 .flair.flair-tapufini-medal:after,
