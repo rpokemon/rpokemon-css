@@ -29,24 +29,54 @@ html[lang$=nm] .pagename a{
 /*--------------------------------------------------------------------------------*/
 
 #header {
-    background: url(%%daymodeheader%%) repeat-x 0 0/auto 100%;
+    background: url(%%header-bg%%) repeat-x 0 top/auto 200%;
 }
-html[lang$=nm] #header {
-    background-image: url(%%nightmodeheader%%);
+
+
+#header::after {
+    content: "";
+
+    width: 100%;
+    height: 30px;
+    background: url(%%footer-bg%%) repeat-x 0 top/auto 200%;
+
+    position: absolute;
+    z-index: 7;
+    top: calc(100% - 30px);
+    left: 0;
 }
+
+.pagename::after {
+    content: "";
+    width: 300px;
+    height: 150px;
+    background: url(%%banner-bg%%) 0 top/auto 200%;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 17px;
+}
+
 .pagename a {
-    top: 45px;
+    top: 25px;
     width: 220px;
     height: 110px;
     display: block;
     left: 240px;
-    z-index: 99;
+    z-index: 9;
 
     background: url(%%logo%%) 0 0/200% auto;
 }
 .pagename a:hover {
     background-position-y: 100%;
 }
+
+
+/* Night mode */
 html[lang$=nm] .pagename a {
     background-position-x: 100%;
+}
+html[lang$=nm] #header,
+html[lang$=nm] #header::after,
+html[lang$=nm] .pagename::after {
+    background-position-y: 100%;
 }

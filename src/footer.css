@@ -42,12 +42,16 @@
     content: '';
     display: block;
     position: absolute;
-    top: 60px;
+    height: 124px;
     right: 0;
     left: 0;
     bottom: 0;
-    background: url(%%footer-bg%%) repeat-x center bottom;
+    background: url(%%footer-bg%%) repeat-x center top/auto 200%;
     z-index: 0;
+}
+
+html[lang$=nm] .footer-parent:before {
+    background-position-y: bottom;
 }
 
 .footer-parent > * {
