@@ -721,7 +721,7 @@ TEMPLATE:
 .author[href$="/bountyforcash"]~.flair:after,
 .author[href$="/GeekScientist"]~.flair:after,
 .author[href$="/IwataFan"]~.flair:after,
-.author[href$="/ACMM123"]~.flair:after,
+/*.author[href$="/ACMM123"]~.flair:after,*/
 .author[href$="/AndyJekal"]~.flair:after,
 .author[href$="/Resonance22"]~.flair:after,
 .author[href$="/TheDominantSoul"]~.flair:after {
@@ -944,7 +944,9 @@ TEMPLATE:
 /* 10th anniversary logo*/
 /*.author[href$="/username"]~.flair:after,*/
 .flair.flair-10logo:after {
-    background-position: -510px -30px;
+    background-position: -523px -34px;
+    background-size: 660px 64px;
+    image-rendering: auto;
 }
 
 /* TAPU CHALLENGE MEDALS */
@@ -1013,10 +1015,10 @@ TEMPLATE:
 }
 
 /* SnowPhoenix9999 NeverMeltIce
---------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------
 .author[href$="/SnowPhoenix9999"]~.flair:after {
     background-position: -90px -60px
-}
+}*/
 
 /* Jaksida Farfetch'd
 --------------------------------------------------------------------------------*/
