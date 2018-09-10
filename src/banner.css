@@ -41,7 +41,7 @@ html[lang$=nm] .pagename a{
     background: url(%%footer-bg%%) repeat-x 0 top/auto 200%;
 
     position: absolute;
-    z-index: 7;
+    z-index: 9;
     top: calc(100% - 30px);
     left: 0;
 }
@@ -53,7 +53,7 @@ html[lang$=nm] .pagename a{
     background: url(%%banner-bg%%) 0 top/auto 200%;
     position: absolute;
     left: calc(50% - 150px);
-    top: 17px;
+    top: 16px;
 }
 
 .pagename a {

@@ -49,7 +49,6 @@
 
 #header-bottom-left {
     position: absolute;
-    z-index: 10;
     top: 0;
     right: 0;
     bottom: 0;
@@ -375,7 +374,8 @@ a.pref-lang:hover {
     height: 34px;
     border-radius: 18px;
     padding: 2px 0 0;
-    text-transform: capitalize
+    text-transform: capitalize;
+    z-index: 10;
 }
 
 #header .tabmenu li {
