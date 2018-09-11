@@ -944,7 +944,7 @@ TEMPLATE:
 /* 10th anniversary logo*/
 /*.author[href$="/username"]~.flair:after,*/
 .flair.flair-10logo:after {
-    background-position: -523px -34px;
+    background-position: -523px -34px !important;
     background-size: 660px 64px;
     image-rendering: auto;
 }
