@@ -18,7 +18,9 @@ body>.content {
     justify-content: flex-start;
     -webkit-align-items: center;
     align-items: center;
-    padding-left: 20px;
+    padding: 0 0 8px 20px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    background: #FAFAFA;
 }
 
 .side .md>blockquote:first-of-type:after {
@@ -31,7 +33,7 @@ body>.content {
     top: -37px;
     left: 0;
 
-    background: #fff;
+    background: #FAFAFA;
 }
 
 html[lang$=nm] .side .md>blockquote:first-of-type:after {
