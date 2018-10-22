@@ -19,8 +19,12 @@ body>.content {
     -webkit-align-items: center;
     align-items: center;
     padding: 0 0 8px 20px;
-    border-bottom: 1px solid rgb(227, 227, 227);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.22);
     background: #FAFAFA;
+}
+
+.side .md>blockquote:first-of-type {
+    background: #2f3238;
 }
 
 .side .md>blockquote:first-of-type:after {
