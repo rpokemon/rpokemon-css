@@ -23,7 +23,7 @@ body>.content {
     background: #FAFAFA;
 }
 
-.side .md>blockquote:first-of-type {
+html[lang$=nm] .side .md>blockquote:first-of-type {
     background: #2f3238;
 }
 
