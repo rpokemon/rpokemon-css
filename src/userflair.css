@@ -415,6 +415,15 @@ TEMPLATE:
     color: #fff !important;
 }
 
+/* leaffyleif - Distinguish Only */
+.thing .tagline .author.moderator[href$="/shinysigma"],
+.author.moderator[href$="/shinysigma"]~.flair:before,
+.side .tagline .author[href$="/shinysigma"],
+.side .tagline .author[href$="/shinysigma"]~.flair:before  {
+    background-position: 0 -602px !important;
+    color: #fff !important;
+}
+
 
 /* OFFICIAL ACCOUNT BUBBLES */
 

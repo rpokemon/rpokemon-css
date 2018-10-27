@@ -113,6 +113,13 @@ flairs = [
         "text": "Moderator"
     },
 
+    {
+        # ShinySigma
+        "top_section": (151,77,194),
+        "bottom_section": (255,113,117),
+        "top_squares": (196,117,255)
+    },
+
     # - OTHER FLAIRS
     {   # Nintendo
         "top_section": (196, 50, 50),
