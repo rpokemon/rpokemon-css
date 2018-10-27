@@ -35,19 +35,23 @@
     position: relative;
     height: 450px;
     margin-bottom: -10px;
+    padding-bottom: 60px;
+    margin-top: 20px;
 }
 .footer-parent:before {
     content: '';
     display: block;
     position: absolute;
-    top: 60px;
+    height: 124px;
     right: 0;
     left: 0;
     bottom: 0;
-    background: url(%%footer-usum%%) no-repeat center top / cover;
-    border-top: 5px solid #59f;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.12);
+    background: url(%%footer-bg%%) repeat-x center top/auto 200%;
     z-index: 0;
+}
+
+html[lang$=nm] .footer-parent:before {
+    background-position-y: bottom;
 }
 
 .footer-parent > * {
@@ -59,12 +63,13 @@
 .footer {
     padding: 15px 20px;
     max-width: 620px;
-    box-shadow: 0 1px 5px rgba(0,0,0,.16);
-    background: rgba(255,255,255,.9);
+    box-shadow: 0 50px 50px -40px rgba(0,0,0,0.25), 0 0 60px 0 rgba(0,0,0,0.1);
+    background-color: #fff;
     margin: 0 auto;
-    margin-top: 160px;
+    margin-top: 80px;
     margin-bottom: 10px;
     border-radius: 3px;
+    border: #43F7BB solid 3px;
 }
 
 body > .debuginfo {
@@ -94,8 +99,8 @@ body > .debuginfo:before {
 }
 
 .footer-parent .bottommenu {
-    color: rgba(255,255,255,0.8);
+    color: rgba(0,0,0,0.8);
 }
 .footer-parent .bottommenu a {
-    color: #fff;
+    color: #000;
 }

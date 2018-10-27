@@ -1,8 +1,7 @@
 .icon-menu a { background: transparent }
 
-html[lang$=nm] body,
-html[lang$=nm] body:before {
-    background: #36393e;
+html[lang$=nm] body {
+    background: #36393e url(%%bgdark%%)!important;
     color: #bdc3c7
 }
 

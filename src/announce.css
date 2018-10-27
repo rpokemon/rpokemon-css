@@ -18,8 +18,32 @@ body>.content {
     justify-content: flex-start;
     -webkit-align-items: center;
     align-items: center;
-    padding-left: 20px;
+    padding: 0 0 8px 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.22);
+    background: #FAFAFA;
 }
+
+html[lang$=nm] .side .md>blockquote:first-of-type {
+    background: #2f3238;
+}
+
+.side .md>blockquote:first-of-type:after {
+    content: "";
+    width: 100%;
+    height: 27px;
+    
+    position: absolute;
+    z-index: 1;
+    top: -37px;
+    left: 0;
+
+    background: #FAFAFA;
+}
+
+html[lang$=nm] .side .md>blockquote:first-of-type:after {
+    background: #333;
+}
+
 .side .md>blockquote:first-of-type>p {
     display: block;
     width: 210px;
