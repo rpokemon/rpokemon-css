@@ -415,12 +415,52 @@ TEMPLATE:
     color: #fff !important;
 }
 
-/* leaffyleif - Distinguish Only */
+/* shinysigma - Distinguish Only */
 .thing .tagline .author.moderator[href$="/shinysigma"],
 .author.moderator[href$="/shinysigma"]~.flair:before,
 .side .tagline .author[href$="/shinysigma"],
 .side .tagline .author[href$="/shinysigma"]~.flair:before  {
-    background-position: 0 -602px !important;
+    background-position: 0 -612px !important;
+    color: #fff !important;
+}
+
+/* Pikaachew - Distinguish Only */
+.thing .tagline .author.moderator[href$="/Pikaachew"],
+.side .tagline .author[href$="/Pikaachew"] {
+    background-position: 0 -648px !important;
+    color: #fff !important;
+}
+.side .tagline .author[href$="/Pikaachew"]~.flair:before,
+.author.moderator[href$="/Pikaachew"]~.flair:before {
+    color: #333 !important;
+}
+
+/* TheDominantSoul - Distinguish Only */
+.thing .tagline .author.moderator[href$="/TheDominantSoul"],
+.side .tagline .author[href$="/TheDominantSoul"] {
+    background-position: 0 -684px !important;
+    color: #fff !important;
+}
+.side .tagline .author[href$="/TheDominantSoul"]~.flair:before,
+.author.moderator[href$="/TheDominantSoul"]~.flair:before {
+    color: #333 !important;
+}
+
+/* AndyJekal - Distinguish Only */
+.thing .tagline .author.moderator[href$="/AndyJekal"],
+.author.moderator[href$="/AndyJekal"]~.flair:before,
+.side .tagline .author[href$="/AndyJekal"],
+.side .tagline .author[href$="/AndyJekal"]~.flair:before  {
+    background-position: 0 -720px !important;
+    color: #fff !important;
+}
+
+/* StormSwampert - Distinguish Only */
+.thing .tagline .author.moderator[href$="/StormSwampert"],
+.author.moderator[href$="/StormSwampert"]~.flair:before,
+.side .tagline .author[href$="/StormSwampert"],
+.side .tagline .author[href$="/StormSwampert"]~.flair:before  {
+    background-position: 0 -756px !important;
     color: #fff !important;
 }
 

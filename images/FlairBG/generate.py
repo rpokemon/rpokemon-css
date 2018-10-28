@@ -34,7 +34,7 @@ flairs = [
     {   # Abra
         "top_section": (229, 166, 46),
         "bottom_section": (245, 255, 66),
-        "text": "Moderator" 
+        "text": "Former Mod" 
     },
     {   # Tech
         "top_section": (204, 231, 56),
@@ -98,18 +98,18 @@ flairs = [
     },
 
     {
-        # SnowPhoenix
+        # SnowPhoenix / UrsineKing
         "top_section": (34, 170, 255),
         "bottom_section": (136, 221, 255),
         "text": "Moderator"
     },
 
     {
-        # leaffyleif
-        "top_section": (128, 0, 128),
-        "bottom_section": (157, 190, 0),
-        "poke_ball": (168, 0, 168),
-        "top_squares": (168, 0, 168),
+        # AnAbsurdlyAngryGoose
+        "top_section": (255, 127, 0),
+        "bottom_section": (192, 192, 192),
+        "poke_ball": (178, 89, 0),
+        "top_squares": (178, 89, 0),
         "text": "Moderator"
     },
 
@@ -117,7 +117,41 @@ flairs = [
         # ShinySigma
         "top_section": (151,77,194),
         "bottom_section": (255,113,117),
-        "top_squares": (196,117,255)
+        "top_squares": (196,117,255),
+        "text": "Moderator"
+    },
+
+    {
+        # Pikaachew
+        "top_section": (34, 170, 255),
+        "bottom_section": (136, 221, 255),
+        "poke_ball": (255,255,255),
+        "top_squares": (255, 255, 255),
+        "text": "Moderator"
+    },
+
+    {
+        # Dom
+        "top_section": (237, 32, 42),
+        "bottom_section": (92, 96, 102),
+        "poke_ball": (72, 76, 82),
+        "text": "Moderator"
+    },
+
+    {   # andyjekal
+        "top_section": (196, 50, 50),
+        "bottom_section": (242, 61, 61),
+        "text": "Moderator"
+    },
+
+    {
+        # StormSwampert
+        "top_section": (0, 152, 205),
+        "bottom_section": (0, 174, 235),
+        "poke_ball": (242, 150, 3),
+        "top_squares": (242, 150, 3),
+        "shape_border": (70, 44, 44),
+        "text": "Moderator"
     },
 
     # - OTHER FLAIRS
