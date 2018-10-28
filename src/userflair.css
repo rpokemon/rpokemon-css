@@ -415,11 +415,11 @@ TEMPLATE:
     color: #fff !important;
 }
 
-/* shinysigma - Distinguish Only */
-.thing .tagline .author.moderator[href$="/shinysigma"],
-.author.moderator[href$="/shinysigma"]~.flair:before,
-.side .tagline .author[href$="/shinysigma"],
-.side .tagline .author[href$="/shinysigma"]~.flair:before  {
+/* ShinySigma - Distinguish Only */
+.thing .tagline .author.moderator[href$="/ShinySigma"],
+.author.moderator[href$="/ShinySigma"]~.flair:before,
+.side .tagline .author[href$="/ShinySigma"],
+.side .tagline .author[href$="/ShinySigma"]~.flair:before  {
     background-position: 0 -612px !important;
     color: #fff !important;
 }
