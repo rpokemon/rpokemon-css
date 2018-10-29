@@ -154,6 +154,14 @@ flairs = [
         "text": "Moderator"
     },
 
+    {
+        # GeekScientist
+        "top_section": (34, 177, 76),
+        "bottom_section": (181, 230, 29),
+        "shape_border": (33, 139, 67),
+        "text": "Moderator"
+    },
+
     # - OTHER FLAIRS
     {   # Nintendo
         "top_section": (196, 50, 50),

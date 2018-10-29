@@ -406,11 +406,11 @@ TEMPLATE:
     color: #333 !important;
 }
 
-/* leaffyleif - Distinguish Only */
-.thing .tagline .author.moderator[href$="/leaffyleif"],
-.author.moderator[href$="/leaffyleif"]~.flair:before,
-.side .tagline .author[href$="/leaffyleif"],
-.side .tagline .author[href$="/leaffyleif"]~.flair:before  {
+/* AnAbsurdlyAngryGoose - Distinguish Only */
+.thing .tagline .author.moderator[href$="/AnAbsurdlyAngryGoose"],
+.author.moderator[href$="/AnAbsurdlyAngryGoose"]~.flair:before,
+.side .tagline .author[href$="/AnAbsurdlyAngryGoose"],
+.side .tagline .author[href$="/AnAbsurdlyAngryGoose"]~.flair:before  {
     background-position: 0 -576px !important;
     color: #fff !important;
 }
@@ -464,6 +464,14 @@ TEMPLATE:
     color: #fff !important;
 }
 
+/* GeekScientist - Distinguish Only */
+.thing .tagline .author.moderator[href$="/GeekScientist"],
+.author.moderator[href$="/GeekScientist"]~.flair:before,
+.side .tagline .author[href$="/GeekScientist"],
+.side .tagline .author[href$="/GeekScientist"]~.flair:before  {
+    background-position: 0 -792px !important;
+    color: #fff !important;
+}
 
 /* OFFICIAL ACCOUNT BUBBLES */
 
