@@ -38,6 +38,8 @@ order = ['etc.css',            # body, buttons, and wiki
 
          'flair.css',          # user flairs
          'userflair.css',      # user flairs
+         'ballflair.css',       # user flairs
+         'flairbg.css',        # user flairs
          'moontheme.css',      # night mode
          'banner.css',         # banner
          'misc.css'            # miscellaneous
