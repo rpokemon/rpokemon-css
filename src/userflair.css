@@ -747,6 +747,12 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
     image-rendering: auto;
 }
 
+/* Fog Badge - 2018 halloween contest */
+/*.author[href$="/username"]~.flair:after,*/
+.flair.flair-fogbadge:after {
+    background-position: -450px -60px;
+}
+
 /* TAPU CHALLENGE MEDALS */
 .flair.flair-tapubulu-medal:after,
 .flair.flair-tapufini-medal:after,
