@@ -548,9 +548,13 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
     border-color: #e87b0c;
     color: #e87b0c
 }
-.side .md h4+blockquote h6 a {
+.side .md h4+blockquote h5:nth-of-type(5) a, .side .md h4+blockquote h5:nth-of-type(6) a {
     border-color: #59f;
     color: #59f
+}
+.side .md h4+blockquote h6 a {
+    border-color: #777;
+    color: #777;
 }
 .side .md h4+blockquote * a:hover {
     font-weight: 700

@@ -79,7 +79,7 @@ remember to update moontheme.css as well!!! */
 .thing.link.linkflair-craft {
     border-left-color: #e87b0c !important
 }
-.thing.link.linkflair-noob {
+.thing.link.linkflair-meme {
     border-left-color: #3498db !important
 }
 .thing.link.linkflair-rule {
@@ -108,7 +108,7 @@ remember to update moontheme.css as well!!! */
 .flairselector .linkflair-craft {
     background: #e87b0c
 }
-.flairselector .linkflair-noob {
+.flairselector .linkflair-meme {
     background: #3498db
 }
 .flairselector .linkflair-rule {
@@ -126,10 +126,12 @@ html:lang(di) .listing-page .link:not(.linkflair-discussion),
 html:lang(fo) .listing-page .link:not(.linkflair-info),
 html:lang(im) .listing-page .link:not(.linkflair-image),
 html:lang(me) .listing-page .link:not(.linkflair-media),
+html:lang(mm) .listing-page .link:not(.linkflair-meme),
 html:lang(cf) .listing-page .link:not(.linkflair-craft),
 html:lang(na) .listing-page .link.linkflair-art,
 html:lang(nd) .listing-page .link.linkflair-discussion,
 html:lang(ne) .listing-page .link.linkflair-media,
+html:lang(no) .listing-page .link.linkflair-meme,
 html:lang(nf) .listing-page .link.linkflair-info,
 html:lang(ni) .listing-page .link.linkflair-image,
 html:lang(nc) .listing-page .link.linkflair-craft {
