@@ -80,6 +80,9 @@ remember to update moontheme.css as well!!! */
     border-left-color: #e87b0c !important
 }
 .thing.link.linkflair-meme {
+    border-left-color: #4b6aa0 !important
+}
+.thing.link.linkflair-noob {
     border-left-color: #3498db !important
 }
 .thing.link.linkflair-rule {
@@ -109,6 +112,9 @@ remember to update moontheme.css as well!!! */
     background: #e87b0c
 }
 .flairselector .linkflair-meme {
+    background: #4b6aa0
+}
+.flairselector .linkflair-noob {
     background: #3498db
 }
 .flairselector .linkflair-rule {
@@ -170,6 +176,7 @@ html:lang(nc) .listing-page .link.linkflair-craft {
 /* flair selector
 --------------------------------------------------------------------------------*/
 .flairselector {
+    width: 190px!important;
     box-shadow: 1px 1px 10px #000;
     border: 1px solid #353535!important
 }
@@ -205,8 +212,17 @@ html:lang(nc) .listing-page .link.linkflair-craft {
     margin: 2px
 }
 .flairselector input[type=text] {
+    width: 125px;
     border: 1px solid #cecdcd;
     padding: 5px
+}
+
+.flairoptionpane .flairsample-left {
+    width: 89px!important;
+}
+.flairoptionpane ul {
+    width: 178px;
+    float: none!important;
 }
 
 .flairselector .linkflair .title {

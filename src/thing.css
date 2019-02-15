@@ -126,6 +126,11 @@
 .thing.linkflair-craft .midcol+.entry a.title:before {
     background: -70px -280px;
 }
+.linkflair-meme .thumbnail.default,
+.linkflair-meme .thumbnail.self,
+.thing.linkflair-meme .midcol+.entry a.title:before {
+    background: -70px -140px;
+}
 .linkflair-info .thumbnail.default,
 .linkflair-info .thumbnail.self,
 .thing.linkflair-info .midcol+.entry a.title:before {
@@ -145,10 +150,10 @@
     background: -140px 0
 }
 
-.linkflair-meme .thumbnail.default,
-.linkflair-meme .thumbnail.self,
-.thing.linkflair-meme .midcol+.entry a.title:before {
-    background: -140px -70px
+.linkflair-noob .thumbnail.default,
+.linkflair-noob .thumbnail.self,
+.thing.linkflair-noob .midcol+.entry a.title:before {
+    background: -140px -70px;
 }
 .linkflair-rotation .thumbnail.default,
 .linkflair-rotation .thumbnail.self,

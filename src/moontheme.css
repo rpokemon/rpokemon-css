@@ -479,6 +479,9 @@ html[lang$=nm] .thing.linkflair-craft .linkflairlabel {
     color: #e87b0c !important
 }
 html[lang$=nm] .thing.linkflair-meme .linkflairlabel {
+    color: #4b6aa0 !important
+}
+html[lang$=nm] .thing.linkflair-noob .linkflairlabel {
     color: #3498db !important
 }
 html[lang$=nm] .thing.linkflair-rule .linkflairlabel {
