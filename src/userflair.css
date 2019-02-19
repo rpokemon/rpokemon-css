@@ -284,224 +284,138 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 
 /* Great balls
 --------------------------------------------------------------------------------*/
-.author[href$="/Raiyou"]~.flair:after,
-.author[href$="/chibikurai"]~.flair:after,
-.author[href$="/likeitsmaddie"]~.flair:after,
-.author[href$="/ParisaXOXO"]~.flair:after,
-.author[href$="/wtfReddit"]~.flair:after,
-.author[href$="/Fuwante0"]~.flair:after,
-.author[href$="/Seagrove"]~.flair:after,
-.author[href$="/WolfeyVG"]~.flair:after,
-.author[href$="/13Yoshi37"]~.flair:after {
+.flair.flair-greatball:after {
     background-position: -30px 0
 }
 
 /* Ultra balls
 --------------------------------------------------------------------------------*/
-.author[href$="/thesuzerain"]~.flair:after,
-.author[href$="/Bobdor"]~.flair:after,
-.author[href$="/electricpenguin7"]~.flair:after,
-.author[href$="/Kyle1337"]~.flair:after,
-.author[href$="/Larkman22"]~.flair:after {
+.flair.flair-ultraball:after {
     background-position: -60px 0
 }
 
 /* Master balls
 --------------------------------------------------------------------------------*/
-.author[href$="/Captainium"]~.flair:after,
-.author[href$="/TownIdiot25"]~.flair:after,
-.author[href$="/Will-TVR"]~.flair:after,
-.author[href$="/Dragon_Claw"]~.flair:after {
+.flair.flair-masterball:after {
     background-position: -90px 0
 }
+
 /* Safari balls
 --------------------------------------------------------------------------------*/
-/*{
+.flair.flair-safariball:after {
     background-position: -120px 0
-}*/
+}
 
 /* Repeat balls
 --------------------------------------------------------------------------------*/
-.author[href$="/RepeatBall"]~.flair:after {
+.flair.flair-repeatball:after {
     background-position: -150px 0
 }
 
 /* Timer balls
 --------------------------------------------------------------------------------*/
-.author[href$="/Kingfin128"]~.flair:after,
-.author[href$="/CrimsonMudkip"]~.flair:after,
-.author[href$="/cabforpitt"]~.flair:after,
-.author[href$="/keskisormi"]~.flair:after{
+.flair.flair-timerball:after {
     background-position: -180px 0
 }
 
 /* Premier balls
 --------------------------------------------------------------------------------*/
-.author[href$="/neelim98"]~.flair:after,
-.author[href$="/Hero_Of_Legend"]~.flair:after,
-.author[href$="/Mockturne"]~.flair:after,
-.author[href$="/rileydelete"]~.flair:after
-.author[href$="/Helaenaa"]~.flair:after {
+.flair.flair-premierball:after {
     background-position: -210px 0
 }
 
 /* Nest balls
 --------------------------------------------------------------------------------*/
-/*.author[href$="/username"]~.flair:after {
+.flair.flair-nestball:after {
     background-position: -240px 0
-}*/
+}
 
 /* Net balls
 --------------------------------------------------------------------------------*/
-.author[href$="/WestsideWalrus"]~.flair:after {
+.flair.flair-netball:after {
     background-position: -270px 0
 }
 
 /* Dive balls
 --------------------------------------------------------------------------------*/
-.author[href$="/jensenj2"]~.flair:after,
-.author[href$="/Gnifle"]~.flair:after,
-.author[href$="/pieraite_cannerball"]~.flair:after,
-.author[href$="/yineedname"]~.flair:after,
-.author[href$="/Grandfather_Clock"]~.flair:after,
-.author[href$="/Not_A_Yam"]~.flair:after,
-.author[href$="/estrellitadelmar"]~.flair:after,
-.author[href$="/HintoTokala"]~.flair:after {
+.flair.flair-diveball:after {
     background-position: -300px 0
 }
 
 /* Luxury balls
 --------------------------------------------------------------------------------*/
-/*.author[href$="/SeraphixRaleigh"]~.flair:after,*/ /* Currently has Manaphy Egg flair */
-.author[href$="/HexKor"]~.flair:after,
-.author[href$="/KKBlitz11"]~.flair:after,
-.author[href$="/lyouke"]~.flair:after,
-.author[href$="/xzmeister"]~.flair:after,
-.author[href$="/SynergizerSyd"]~.flair:after,
-.author[href$="/TheRoto"]~.flair:after,
-.author[href$="/ElStrawFedora"]~.flair:after,
-.author[href$="/keskisormi"]~.flair:after,
-.author[href$="/Deku-Miguel"]~.flair:after,
-.author[href$="/Invis-"]~.flair:after,
-.author[href$="/resaja"]~.flair:after {
+.flair.flair-luxuryball:after {
     background-position: -330px 0;
 }
 
 /* Heal balls
 --------------------------------------------------------------------------------*/
-/*.author[href$="/username"]~.flair:after {
+.flair.flair-healball:after {
     background-position: -360px 0;
-}*/
+}
 
 
 /* Quick balls
 --------------------------------------------------------------------------------*/
-.author[href$="/Ferretsroq"]~.flair:after,
-.author[href$="/MintyFreshNipples"]~.flair:after,
-.author[href$="/Pokefanatic230"]~.flair:after,
-/*.author[href$="/Crusader1998123"]~.flair:after,*/
-.author[href$="/TheShavvy"]~.flair:after,
-.author[href$="/SHINX_FUCKER"]~.flair:after,
-.author[href$="/James_Versus"]~.flair:after,
-.author[href$="/kwwxis"]~.flair:after {
+.flair.flair-quickball:after {
     background-position: -390px 0
 }
 
 /* Cherish balls
 --------------------------------------------------------------------------------*/
-.author[href$="/operrett"]~.flair:after,
-.author[href$="/InfamousPeace"]~.flair:after,
-.author[href$="/TheGhost983"]~.flair:after,
-.author[href$="/h_n_g_m_n"]~.flair:after,
-.author[href$="/SalomonG18"]~.flair:after,
-.author[href$="/Katsuro_Naginata"]~.flair:after,
-.author[href$="/LucarioPrime"]~.flair:after,
-.author[href$="/mannerson"]~.flair:after,
-.author[href$="/xBR0SKIx"]~.flair:after,
-.author[href$="/Pooleroops1"]~.flair:after {
+.flair.flair-cherishball:after {
     background-position: -420px 0
 }
 
 /* Dusk balls
 --------------------------------------------------------------------------------*/
-.author[href$="/dr_crispin"]~.flair:after,
-.author[href$="/myheadisahammer"]~.flair:after,
-.author[href$="/duskull11"]~.flair:after,
-.author[href$="/LogieBlackBear"]~.flair:after {
+.flair.flair-duskball:after {
     background-position: -450px 0
 }
 
 /* Park balls
 --------------------------------------------------------------------------------*/
-.author[href$="/KrishaCZ"]~.flair:after,
-.author[href$="/scottmonster"]~.flair:after,
-.author[href$="/karinasuperkul"]~.flair:after,
-.author[href$="/quantumcamel"]~.flair:after,
-/* .author[href$="/saltimmortalsea"]~.flair:after, changed to egg at their request*/
-.author[href$="/AssiveAggressive"]~.flair:after {
+.flair.flair-parkball:after {
     background-position: -480px 0
 }
 
 /* Dreamball
 --------------------------------------------------------------------------------*/
-.author[href$="/foggiewindow"]~.flair:after,
-.author[href$="/Starrodkirby86"]~.flair:after,
-.author[href$="/KaSlaps"]~.flair:after,
-.author[href$="/chronafox"]~.flair:after,
-.author[href$="/castoweary"]~.flair:after,
-.author[href$="/lycilla"]~.flair:after {
+.flair.flair-dreamball:after {
     background-position: -510px 0
 }
 
 /* Moon ball
 --------------------------------------------------------------------------------*/
-.author[href$="/Thief-Noctis"]~.flair:after {
+.flair.flair-moonball:after {
     background-position: -540px 0
 }
 
 /* Love ball
 --------------------------------------------------------------------------------*/
-/*.author[href$="/username"]~.flair:after {
+.flair.flair-loveball:after {
     background-position: -570px 0
-}*/
+}
 
 /* Beast ball
 --------------------------------------------------------------------------------*/
-/*.author[href$="/username"]~.flair:after {
+.flair.flair-beastball:after {
     background-position: -600px 0
-}*/
+}
 
 /********************************************************************************
 * CUSTOM NON-BALL BALL-FLAIRS
 *********************************************************************************/
 
-/* New mods icon JOHTO
+/* New mods icon 1.0 JOHTO
 --------------------------------------------------------------------------------*/
-.author[href$="/ngbeslhang"]~.flair:after,
-.author[href$="/DavidLuizshair"]~.flair:after,
-.author[href$="/Mlahk7"]~.flair:after,
-.author[href$="/jaksida"]~.flair:after,
-.author[href$="/TangleNathair"]~.flair:after {
+.flair.flair-johtomod:after {
     background-position: -630px 0
 }
 
 /* New mods icon 2.0 HOENN
 --------------------------------------------------------------------------------*/
-.author[href$="/tizorres"]~.flair:after,
-.author[href$="/RustRider"]~.flair:after,
-.author[href$="/xRaw-HD"]~.flair:after,
-.author[href$="/CrimsonMudkip"]~.flair:after,
-.author[href$="/TARS-CASE"]~.flair:after,
-.author[href$="/Scathee"]~.flair:after,
-.author[href$="/ad3z10"]~.flair:after,
-.author[href$="/Hyouten"]~.flair:after,
-.author[href$="/Haruka-sama"]~.flair:after,
-.author[href$="/AinhartLoz"]~.flair:after,
-.author[href$="/Koni_Fox"]~.flair:after,
-.author[href$="/IAmzSamz"]~.flair:after,
-.author[href$="/PlayOnSunday"]~.flair:after,
-.author[href$="/Lady_Baruren"]~.flair:after,
-.author[href$="/TexasAndroid"]~.flair:after {
+.flair.flair-hoennmod:after {
     background-position: -660px 0
 }
 
@@ -513,31 +427,21 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 
 /* New mods icon 4.0 UNOVA
 --------------------------------------------------------------------------------*/
-.author[href$="/StormSwampert"]~.flair:after,
-.author[href$="/pikaachew"]~.flair:after,
-.author[href$="/italianspy"]~.flair:after,
-.author[href$="/ShinySigma"]~.flair:after,
-.author[href$="/bountyforcash"]~.flair:after,
-.author[href$="/GeekScientist"]~.flair:after,
-.author[href$="/IwataFan"]~.flair:after,
-/*.author[href$="/ACMM123"]~.flair:after,*/
-.author[href$="/AndyJekal"]~.flair:after,
-.author[href$="/Resonance22"]~.flair:after,
-.author[href$="/TheDominantSoul"]~.flair:after {
+.flair.flair-unovamod:after {
     background-position: -720px 0
 }
 
 /* New mods icon 5.0 KALOS
 --------------------------------------------------------------------------------*/
-/*.author[href$="/username"]~.flair:after {
+.flair.flair-kalosmod:after {
     background-position: -750px 0
-}*/
+}
 
 /* New mods icon 6.0 ALOLA
 --------------------------------------------------------------------------------*/
-/*.author[href$="/username"]~.flair:after {
+.flair.flair-alolamod:after {
     background-position: -780px 0
-}*/
+}
 
 /********************************************************************************
 * SPECIAL ACHIVEMENT FLAIRS
