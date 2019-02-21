@@ -85,7 +85,7 @@ html[lang$=nm] .side .md>blockquote:first-of-type:after {
 /* top announcement flair positioning
 --------------------------------------------------------------------------------*/
 .side .md>blockquote:first-of-type>p:nth-of-type(1)>a:before {
-    background: url(%%hoennflair%%) 0 -96px; /* TODO: Change this sprite weekly (Rebuild Tues/PotW) */
+    background: url(%%sinnohflair%%) -360px -32px; /* TODO: Change this sprite weekly (Rebuild Tues/PotW) */
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(2)>a:before {
     background: url(%%kantoflair%%) -800px -32px;
