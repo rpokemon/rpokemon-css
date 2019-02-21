@@ -448,34 +448,28 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 *********************************************************************************/
 
 /* Pokedex */
-.author[href$="/Crusader1998123"]~.flair:after,
-.author[href$="/Xiiao"]~.flair:after,
-.author[href$="/KingPikablu"]~.flair:after,
 .flair.flair-dex-complete:after {
     background-position: -840px 0;
     transform: scale(0.9);
 }
 
 /* Rotom Dex */
-/*.author[href$="/username"]~.flair:after,*/
 .flair.flair-aloladex-complete:after {
     background-position: -900px 0
 }
 
 /* Oval Charm */
-/*.author[href$="/username"]~.flair:after,*/
 .flair.flair-ovalcharm:after {
     background-position: -930px 0
 }
 
 /* Shiny Charm */
-/*.author[href$="/username"]~.flair:after,*/
 .flair.flair-shinycharm:after {
     background-position: -960px 0
 }
 
 /* Golden Pokedex */
-.author[href$="/Crusader1998123"]~.flair:after {
+.flair.flair-goldendex:after {
     background-position: -990px 0;
     width: 34px;
     transform: scale(0.9);
@@ -485,33 +479,13 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 * CONTEST FLAIRS
 *********************************************************************************/
 
-/* Strange Souvenier - Gen 7 Lottery Prediction Pool */
-.author[href$="/ElectricEntity"]~.flair:after,
-.author[href$="/bladderrunner"]~.flair:after,
-.author[href$="/mayberryS9"]~.flair:after,
-.author[href$="/TheKOg77"]~.flair:after,
-.author[href$="/ChinroTensei"]~.flair:after,
-.author[href$="/error521"]~.flair:after,
-.author[href$="/daius"]~.flair:after,
-.author[href$="/TheCruncher"]~.flair:after,
-.author[href$="/messejesseb"]~.flair:after,
-.author[href$="/FoolTarot"]~.flair:after,
-.author[href$="/SkittlesDB"]~.flair:after,
-.author[href$="/iadrummer"]~.flair:after,
-.author[href$="/baraboosh"]~.flair:after,
-.author[href$="/Ryantcairns"]~.flair:after,
-.author[href$="/Yugeulb"]~.flair:after,
-.author[href$="/Sushikitteh"]~.flair:after {
+/* Strange Souvenir - Gen 7 Lottery Prediction Pool */
+.flair.flair-souvenir:after {
     background-position: -1140px 0;
 }
 
 /* Alola Trial Medal - best of 2016 */
-.author[href$="/Flying__Penguin"]~.flair:after,
-.author[href$="/Unluckyturtle"]~.flair:after,
-.author[href$="/MistaWhiska"]~.flair:after,
-.author[href$="/InnocuousSpaniard"]~.flair:after,
-.author[href$="/Anarkey94"]~.flair:after,
-.author[href$="/Bobdor"]~.flair:after {
+.flair.flair-alolatrial:after {
     background-position: -1170px 0;
     transform: scale(0.9);
 }
@@ -521,11 +495,8 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
     background: url(%%ballflair%%) no-repeat -1200px 0 !important;
 }
 
-/* golden Pumpkaoo - best pumpkin 2016 */
-.author[href$="/Ultra_Lobster"]~.flair:after,
-.author[href$="/Hax_r_us_kappa"]~.flair:after,
-.author[href$="/kfeebalione"]~.flair:after,
-.author[href$="/Kidneyjoe"]~.flair:after {
+/* Golden Pumpkaboo - 2016 Pumpkin Carving Contest - Winner and three runners-up */
+.flair.flair-goldpumpkaboo:after {
     background-position: 0 -30px;
 }
 
@@ -535,16 +506,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 }
 
 /* POGO Gym - MVP 100 Gyms */
-.author[href$="/tuskx"]~.flair:after,
-/*.author[href$="/Mockturne"]~.flair:after,*/
-.author[href$="/liteayan"]~.flair:after,
-.author[href$="/FakeKitten"]~.flair:after,
-.author[href$="/dslashc"]~.flair:after,
-.author[href$="/akbarizcool"]~.flair:after,
-.author[href$="/TheOfficialFJR"]~.flair:after,
-.author[href$="/Stan64"]~.flair:after,
-.author[href$="/LInkash"]~.flair:after,
-.author[href$="/Negalodon"]~.flair:after {
+.flair.flair-gomvp:after  {
     background-position: -60px -30px;
     width: 32px;
     height: 35px;
@@ -553,11 +515,7 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 }
 
 /* Golden Team Skull Badge - shitpost winners */
-.author[href$="/somebodyandnobody"]~.flair:after,
-.author[href$="/InternetDude9001"]~.flair:after,
-.author[href$="/Vulpixel16"]~.flair:after,
-.author[href$="/BugcatcherJay"]~.flair:after, 
-.author[href$="/Sorrica"]~.flair:after {
+.flair.flair-skullbadge-gold:after {
     background-position: -90px -30px
 }
 
@@ -587,65 +545,53 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 }
 
 /* necrowinner */
-.author[href$="/NesMeister123"]~.flair:after,
 .flair.flair-necrowinner:after {
     background-position: -270px -30px;
 }
 
 /* tall alolan exeggutor ballflair - shitpost winners */
-.author[href$="/PassingThroughRider"]~.flair:after,
-.author[href$="/SomebodyUnown"]~.flair:after,
-.author[href$="/Cls31"]~.flair:after,
-.author[href$="/akbarizcool"]~.flair:after {
+.flair.flair-longneck:after {
     background-position: -1290px -30px;
     height: 95px;
     margin-top: -68px;
 }
 
 /* Egg - Easter 2018 Contest Participants */
-.author[href$="/TheKornManCan"]~.flair:after {
-/*.author[href$="/saltimmortalsea"]~.flair:after */
+.flair.flair-egg:after {
     background-position: -300px -30px;
 }
 
 /* Manaphy Egg - Easter 2018 Contest Winners */
-/* .author[href$="/NesMeister123"]~.flair:after, */
-.author[href$="/SeraphixRaleigh"]~.flair:after,
-.author[href$="/Olivchen"]~.flair:after {
+.flair.flair-manaphyegg:after {
     background-position: -330px -30px;
 }
 
 /* Gold Zubat - 1mil donors */
-/*.author[href$="/username"]~.flair:after,*/
 .flair.flair-goldbat:after {
     background-position: -360px -30px;
 }
 
 /* Bike - 1mil donors */
-/*.author[href$="/username"]~.flair:after,*/
 .flair.flair-bike:after {
     background-position: -390px -30px;
 }
 
 /* Amulet Coin - 1mil donors */
-/*.author[href$="/username"]~.flair:after,*/
 .flair.flair-amuletcoin:after {
     background-position: -420px -30px;
 }
 
 /* Gracidea - 1mil donors */
-/*.author[href$="/username"]~.flair:after,*/
 .flair.flair-gracidea:after {
     background-position: -450px -30px;
 }
 
 /* Gold Gengar - 1mil $500 donor */
-.author[href$="/colon3l86"]~.flair:after {
+.flair.flair-goldgar:after {
     background-position: -480px -30px;
 }
 
 /* 10th anniversary logo*/
-/*.author[href$="/username"]~.flair:after,*/
 .flair.flair-10logo:after {
     background-position: -523px -34px !important;
     background-size: 660px 64px;
@@ -653,7 +599,6 @@ NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 }
 
 /* Fog Badge - 2018 halloween contest */
-/*.author[href$="/username"]~.flair:after,*/
 .flair.flair-fogbadge:after {
     background-position: -450px -60px;
 }
