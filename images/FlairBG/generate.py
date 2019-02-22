@@ -135,6 +135,7 @@ flairs = [
         "top_section": (237, 32, 42),
         "bottom_section": (92, 96, 102),
         "poke_ball": (72, 76, 82),
+        "top_squares": (255, 255, 255),
         "text": "Moderator"
     },
 
