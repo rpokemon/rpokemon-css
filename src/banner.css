@@ -29,10 +29,15 @@ html[lang$=nm] .pagename a{
 /*--------------------------------------------------------------------------------*/
 
 #header {
+    /* uncomment if header repeats horizontally 
     background: url(%%header-bg%%) repeat-x 0 top/auto 200%;
+    */
+    background: url(%%banner-event%%) top center/cover no-repeat;
 }
 
 
+/* LGPE GRASS */
+/*
 #header::after {
     content: "";
 
@@ -45,7 +50,10 @@ html[lang$=nm] .pagename a{
     top: calc(100% - 30px);
     left: 0;
 }
+*/
 
+/* LPGE TRAINER AND POKEMON TAIL */
+/*
 .pagename::after {
     content: "";
     width: 300px;
@@ -55,7 +63,9 @@ html[lang$=nm] .pagename a{
     left: calc(50% - 150px);
     top: 16px;
 }
+*/
 
+/* SUBREDDIT LOGO */
 .pagename a {
     top: 25px;
     width: 220px;
@@ -64,19 +74,20 @@ html[lang$=nm] .pagename a{
     left: 240px;
     z-index: 9;
 
-    background: url(%%logo%%) 0 0/200% auto;
+    background: url(%%logo-event%%) 0 0/100% auto;
 }
+/* SUBREDDIT LOGO ON HOVER */
+/*
 .pagename a:hover {
-    background-position-y: 100%;
+    background-position-x: 100%;
 }
+*/
 
 
 /* Night mode */
-html[lang$=nm] .pagename a {
-    background-position-x: 100%;
-}
+html[lang$=nm] .pagename a/*,
 html[lang$=nm] #header,
 html[lang$=nm] #header::after,
-html[lang$=nm] .pagename::after {
+html[lang$=nm] .pagename::after*/  {
     background-position-y: 100%;
 }
