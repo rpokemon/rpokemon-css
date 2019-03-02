@@ -382,10 +382,10 @@ body:not(.res) .titlebox > h1 {
     box-sizing: border-box;
     line-height: 36px;
     font-size: 11px;
-    text-align: right;
     padding-right: 5px;
     position: relative;
-    color: #555
+    color: #555;
+    padding-left: 50px;
 }
 .side .md > h1 a:hover {
     background: rgba(0,0,0,0.02);
@@ -401,11 +401,11 @@ body:not(.res) .titlebox > h1 {
     width: 27px;
     height: 27px;
     top: 3px;
-    left: 10px;
+    left: 15px;
     background: url(%%downup%%) no-repeat 0 0px / 100% auto;
 }
 .side .md > h1 a:last-child:before {
-    left: 8px;
+    left: 13px;
     background-position-y: 66.6%;
 }
 

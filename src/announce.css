@@ -19,8 +19,6 @@ body>.content {
     -webkit-align-items: center;
     align-items: center;
     padding: 0 0 8px 20px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.22);
-    background: #FAFAFA;
 }
 
 html[lang$=nm] .side .md>blockquote:first-of-type {

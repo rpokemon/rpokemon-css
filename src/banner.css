@@ -2,12 +2,11 @@
 * BANNER
 *********************************************************************************/
 
-/*
 #header {
-    background: url(%%daymodeheader%%) center center/cover no-repeat
+    background: url(%%daymodeheader%%) center 0px/cover no-repeat;
 }
 html[lang$=nm] #header {
-    background: url(%%nightmodeheader%%) center center/cover no-repeat
+    background: url(%%nightmodeheader%%) center center/cover no-repeat;
 }
 .pagename a {
     top: 19px;
@@ -16,18 +15,27 @@ html[lang$=nm] #header {
     display: block;
     left: 215px;
     z-index: 99;
-    background: url(%%header-logo%%) 0 0/200% 200% no-repeat;
+    background: url(%%header-logo%%) no-repeat center center / contain;
 }
 .pagename a:hover {
     background-position-y: 100%;
 }
+.pagename::after {
+    content: "";
+    width: 300px;
+    height: 150px;
+    background: url(%%banner-pokemon%%) no-repeat center center / contain;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 16px;
+}
 
 html[lang$=nm] .pagename a{
     background-position-x: 100%;
-}*/
+}
 
 /*--------------------------------------------------------------------------------*/
-
+/*
 #header {
     background: url(%%header-bg%%) repeat-x 0 top/auto 200%;
 }
@@ -70,8 +78,6 @@ html[lang$=nm] .pagename a{
     background-position-y: 100%;
 }
 
-
-/* Night mode */
 html[lang$=nm] .pagename a {
     background-position-x: 100%;
 }
@@ -79,4 +85,4 @@ html[lang$=nm] #header,
 html[lang$=nm] #header::after,
 html[lang$=nm] .pagename::after {
     background-position-y: 100%;
-}
+}*/
