@@ -10,7 +10,7 @@
     margin-top: 107px;
     padding-top: 310px;
     border-radius: 5px;
-    border: 1px solid #e3e3e3
+    border: 1px solid #cdcdd6;
 }
 .side .md {
     margin: 7px
@@ -60,13 +60,10 @@
 }
 
 /* side top-logo */
-.titlebox>h1 {
-    top: 274px;
-}
-body:not(.res) .titlebox > h1 {
+.titlebox > h1 {
     top: 291px;
 }
-.titlebox>h1 a {
+.titlebox > h1 a {
     display: block;
     position: relative;
     font-size: 0;
@@ -113,7 +110,7 @@ body:not(.res) .titlebox > h1 {
 }
 .titlebox .users-online {
     top: 394px;
-    background: #f0f0f0;
+    background: hsl(210,20%,93%);
 }
 
 .titlebox .users-online .number:before {
@@ -148,7 +145,7 @@ body:not(.res) .titlebox > h1 {
     height: 20px;
     display: inline-block;
     text-transform: capitalize;
-    background: #f0f0f0;
+    background: hsl(210,20%,93%);
     color: #333
 }
 .res-fancy-toggle-button.RESDashboardToggle,
@@ -201,35 +198,8 @@ body:not(.res) .titlebox > h1 {
     background-color: #6af;
 }
 
-
-/* gold toggle sr style checkbox
---------------------------------------------------------------------------------*/
-.titlebox form.toggle.sr_style_toggle {
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 10px 0;
-}
-
 /* edit flair area
 --------------------------------------------------------------------------------*/
-
-/* flair toggle */
-.titlebox form.toggle.flairtoggle {
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 10px 0;
-}
-.flairtoggle label {
-    display: -webkit-flex;
-    display: flex;
-    align-items: center
-}
 
 /* flair preview tagline */
 .titlebox .tagline {
@@ -240,78 +210,182 @@ body:not(.res) .titlebox > h1 {
 
 /* edit flair link */
 .side .md a[href*="#flair"] {
-    line-height: 26px;
+    line-height: 30px;
     display: block;
     position: relative;
-    margin: 0 25px;
-    font-size: 12px
+    width: 200px;
+    text-align: center;
+    border-radius: 3px;
+    left: 44px;
+    color: #fff;
+    background: #5787e1;
+    font-size: 13px;
+}
+.side .md a[href*="#flair"]:hover {
+    background: #2068ee;
+}
+.side .md a[href*="#flair"]:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    border-bottom: 1.5px solid hsla(219, 70%, 75%, 1);
+    border-left: 1.5px solid hsla(219, 70%, 75%, 1);
+    border-radius: 0 0 0 4px;
+    right: 100%;
+    bottom: 50%;
 }
 
-/* checkboxes
+/* checkboxes + flairtoggle extra
 --------------------------------------------------------------------------------*/
 
-/* stylesheet toggle */
-.titlebox form.toggle.res-sr-style-toggle {
-    text-transform: capitalize;
-    position: absolute;
-    top: 344px;
-    right: 6px;
-    width: 299px;
-    box-sizing: border-box;
+.titlebox form.toggle.flairtoggle,
+.titlebox form.toggle.res-sr-style-toggle,
+.titlebox form.toggle.sr_style_toggle {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 0 0 22px;
+    height: 18px;
+    margin: 10px 0;
 }
 
 .res-sr-style-toggle label,
-.sr_style_toggle label {
+.sr_style_toggle label,
+.flairtoggle label {
     display: -webkit-flex;
     display: flex;
-    align-items: center
+    align-items: center;
+    position: relative;
+}
+
+.sr_style_toggle .throbber {
+    position: static;
+    margin: 0 0 0 10px;
+}
+
+/* RES stylesheet toggle */
+.titlebox form.toggle.res-sr-style-toggle {
+    text-transform: capitalize;
+    position: absolute;
+    top: 588px;
+    right: 7px;
+    width: 299px;
+    box-sizing: border-box;
+    margin-top: 0 !important;
+}
+.comments-page .titlebox form.toggle.res-sr-style-toggle {
+    top: 680px;
 }
 
 /* checkboxes */
-.flairtoggle input[type=checkbox]~label:before,
-.res-sr-style-toggle label:before,
-.sr_style_toggle label:before {
-    content: '';
-    display: inline-block;
-    width: 17px;
-    height: 16px;
-    margin-right: 5px;
-    image-rendering: pixelated;
-}
 .flairtoggle input[type=checkbox],
 .side .md>h2+ul+hr,
 .res-sr-style-toggle input,
 .sr_style_toggle input {
     display: none
 }
-.flairtoggle input[type=checkbox]:not(:checked)~label:before,
-.sr_style_toggle input[type=checkbox]:not(:checked)~label:before {
-    background: url(%%pokesheet%%) -178px -55px
-}
-.flairtoggle input[type=checkbox]:checked~label:before,
+.flairtoggle input[type=checkbox]~label:before,
 .res-sr-style-toggle label:before,
-.sr_style_toggle input[type=checkbox]:checked~label:before {
-    background: url(%%pokesheet%%) -194px -55px
+.sr_style_toggle label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+.flairtoggle input[type=checkbox]:checked~label:after,
+.res-sr-style-toggle label:after,
+.sr_style_toggle input[type=checkbox]:checked~label:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 4px;
+    border-left: 3px solid #574aeb;
+    border-bottom: 2.5px solid #574aeb;
+    position: absolute;
+    left: 7px;
+    bottom: 4px;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+}
+
+/* positioning stuff */
+.titlebox form.toggle.res-sr-style-toggle ~ form.toggle.sr_style_toggle,
+.titlebox form.toggle.res-sr-style-toggle ~ form.toggle.flairtoggle {
+    margin-top: 32px;
+}
+.titlebox form.toggle.res-sr-style-toggle ~ form.toggle.sr_style_toggle ~ form.toggle.flairtoggle {
+    margin-top: 10px;
 }
 
 /* Submit links
 --------------------------------------------------------------------------------*/
-.side .md > h2 {
-    margin: 0;
-    margin: 10px -7px;
+
+.side .md > h2, .side .md > h4 {
+    margin: 0 -7px;
+    background: hsla(210, 20%, 93%, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: hsla(245, 25%, 40%, 1);
+    font-size: 19px;
 }
 
-/* list */
-.side .md>h2+ul {
-    padding: 0;
+.side .md > h2 + ul {
     list-style: none;
+    background: hsla(210, 20%, 93%, 0.8);
+    margin: 0 -7px;
+    padding: 10px 0 30px;
 }
-.side .md>h2+ul li a {
-    line-height: 30px;
+
+.side .md > h2 + ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.side .md > h2 + ul li p {
+    margin: 0;
+}
+
+.side .md > h2 + ul li a {
+    line-height: 34px;
     display: block;
-    margin: 7px auto;
-    width: 244px;
+    margin: 0 auto;
+    width: 250px;
     image-rendering: pixelated;
+    text-align: left;
+    padding-left: 45px;
+    position: relative;
+    border-radius: 18px;
+    transition: all 100ms ease;
+    font-size: 13px;
+    box-shadow: none;
+    border: 0;
+    background: #5275dc;
+}
+.side .md > h2 + ul li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url(%%pokesheet%%) 0 -250px;
+    top: 3px;
+    left: 4px;
+    transform: scale(0.28);
+    transform-origin: top left;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.side .md > h2 + ul li a:hover {
+    width: 260px;
+    background: #2068ee;
 }
 
 /* icons */
@@ -340,6 +414,9 @@ body:not(.res) .titlebox > h1 {
     position: absolute;
     width: 40px;
     height: 32px;
+    left: -2px;
+    top: 1px;
+    z-index: 2;
 }
 
 /* subreddit description
@@ -350,15 +427,19 @@ body:not(.res) .titlebox > h1 {
     margin: 0;
     width: 266px;
     right: 22px;
-    padding: 8px;
-    line-height: 16px;
-    font-size: 12px;
-    
-    background: rgba(0, 0, 0, .025);
+    padding: 8px 10px;
+    line-height: 19px;
+    font-size: 12.5px;
+    background: hsl(210,20%,96%);
     color: #222;
-    
     height: 80px;
     box-sizing: border-box;
+    border-radius: 3px 3px 0 0;
+}
+
+.side .md > p:first-of-type a {
+    color: inherit;
+    font-weight: bold;
 }
 
 /* Night/day mode switch (nm switch/dm switch/sn switch/sun switch/moon switch)
@@ -372,9 +453,8 @@ body:not(.res) .titlebox > h1 {
     font-size: 0;
     
     box-sizing: border-box;
-    background: 0;
-    background: rgba(0,0,0,.025);
-    border-top: 1px solid rgba(0,0,0,0.05);
+    background: hsl(210,20%,96%);
+    border-top: 1px solid hsl(210,20%,88%);
 }
 .side .md > h1 a {
     display: inline-block;
@@ -388,10 +468,10 @@ body:not(.res) .titlebox > h1 {
     padding-left: 50px;
 }
 .side .md > h1 a:hover {
-    background: rgba(0,0,0,0.02);
+    background: hsl(210,20%,90%);
 }
 .side .md > h1 a:last-child {
-    border-left: 1px solid rgba(0,0,0,0.05);
+    border-left: 1px solid hsl(210,20%,88%);
 }
 
 .side .md > h1 a:before {
@@ -432,12 +512,16 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
 /* link info box
 --------------------------------------------------------------------------------*/
 .linkinfo {
-    margin-right: 16px;
-    margin-left: 23px;
+    margin-right: 15px;
+    margin-left: 18px;
+    margin-top: -10px;
     padding: 8px;
-    background: rgba(0,0,0,.025);
-    border: 1px solid rgba(0,0,0,0.03);
-    text-align: center
+    background: hsl(210,20%,96%);
+    border: 0;
+    text-align: center;
+}
+.res .linkinfo {
+    margin-bottom: 30px;
 }
 .linkinfo .date {
     text-transform: uppercase;
@@ -474,25 +558,29 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
 
 /* submission filters
 --------------------------------------------------------------------------------*/
-.side .md>blockquote {
+.side .md > blockquote {
     border-left: 0;
     padding: 0 5px
+}
+
+/*title*/
+.side .md > h4 > a {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 220px;
+}
+
+/* blockquote (filters container) */
+.side .md > h4 + blockquote {
+    background: hsla(210, 20%, 93%, 0.8);
+    margin: 0 -7px;
+    padding: 10px 10px 20px;
 }
 .side .md h4+blockquote:after {
     content: '';
     display: table;
     clear: left
-}
-
-/* header title */
-.side .md>h4>a:before {
-    transition: left .5s ease-out
-}
-.side .md>h4>a:hover {
-    color: #0079d3
-}
-.side .md>h4>a:hover:before {
-    left: 220px
 }
 
 /* filter links */
@@ -514,61 +602,40 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
 
 .side .md h4+blockquote > * a {
     display: block;
-    border: 1px solid;
-    border-radius: 3px;
     line-height: 30px;
     height: 30px;
     font-size: 12px;
-    text-align: center
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2px;
+    text-decoration: none !important;
+    opacity: 0.9;
 }
 .side .md h4+blockquote > *:nth-child(odd) a { border-radius: 3px 0 0 3px }
 .side .md h4+blockquote > *:nth-child(even) a { border-radius: 0 3px 3px 0 }
 
-.side .md h4+blockquote h1 a {
-    border-color: #a7565c;
-    color: #a7565c
-}
-.side .md h4+blockquote h2 a {
-    border-color: #856fa6;
-    color: #856fa6
-}
-.side .md h4+blockquote h3 a {
-    border-color: #76c374;
-    color: #76c374
-}
-.side .md h4+blockquote h4 a {
-    border-color: #e6d76d;
-    color: #e6d76d
-}
-.side .md h4+blockquote h5:nth-of-type(1) a, .side .md h4+blockquote h5:nth-of-type(2) a {
-    border-color: #e868c1;
-    color: #e868c1
-}
-.side .md h4+blockquote h5:nth-of-type(3) a, .side .md h4+blockquote h5:nth-of-type(4) a {
-    border-color: #e87b0c;
-    color: #e87b0c
-}
-.side .md h4+blockquote h5:nth-of-type(5) a, .side .md h4+blockquote h5:nth-of-type(6) a {
-    border-color: #59f;
-    color: #59f
-}
-.side .md h4+blockquote h6 a {
-    border-color: #777;
-    color: #777;
-}
-.side .md h4+blockquote * a:hover {
-    font-weight: 700
+.side .md h4+blockquote h1 a {background: #a7565c}
+.side .md h4+blockquote h2 a {background: #856fa6}
+.side .md h4+blockquote h3 a {background: #76c374}
+.side .md h4+blockquote h4 a {background: #dfcb37}
+.side .md h4+blockquote h5:nth-of-type(1) a, .side .md h4+blockquote h5:nth-of-type(2) a {background: #e868c1}
+.side .md h4+blockquote h5:nth-of-type(3) a, .side .md h4+blockquote h5:nth-of-type(4) a {background: #e87b0c}
+.side .md h4+blockquote h5:nth-of-type(5) a, .side .md h4+blockquote h5:nth-of-type(6) a {background: #59f}
+.side .md h4+blockquote h6 a {background: #777;}
+
+
+.side .md h4+blockquote>* a:hover {
+    opacity: 1;
 }
 
 
-.side .md h4+blockquote * a:last-child {
-    display: none;
-}
-
+.side .md h4+blockquote * a:last-child { display: none; }
 html[lang$="nm"] .side .md h4+blockquote * a:first-child { display: none; }
 html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 
-html[lang$="nm"] .side .md h4+blockquote>* {
+html[lang$="nm"] .side .md h4+blockquote > * {
     background: rgba(0,0,0,0.2);
     box-shadow: 0 3px 4px #000;
 }

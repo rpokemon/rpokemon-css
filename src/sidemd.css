@@ -10,13 +10,53 @@
 /* PSA box
 --------------------------------------------------------------------------------*/
 
-.side .md > h5 + ul {
+/* title */
+.side .md > h5 {
+    background: hsla(210,20%,93%,0.8);
+    margin: 0 -7px;
     padding: 0;
+}
+
+.side .md > h5 strong {
+    margin: 0 20px;
+    border-bottom: 1px solid hsl(210,20%,80%);
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 5px;
+    color: hsl(245,25%,40%);
+    letter-spacing: 1px;
+}
+
+/* box */
+.side .md > h5 + ul {
     list-style-type: none;
-    margin: 5px;
-    background: #fafafa;
-    padding: 8px 10px;
-    font-size: 10px;
+    padding: 10px 20px 15px 15px;
+    font-size: 12px;
+    margin: 0 -7px;
+    background: hsla(210,20%,93%,0.8);
+}
+
+/* box items */
+.side .md > h5 + ul li {
+    position: relative;
+    padding: 2px 0 0 30px;
+    min-height: 25px;
+}
+
+/* box item pokeball */
+.side .md > h5 + ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(%%pokesheet%%) -54px -36px;
+    width: 34px;
+    height: 34px;
+    top: 4px;
+    left: 0;
+    transform: scale(0.65);
+    transform-origin: top left;
+    opacity: 0.8;
 }
 
 /* submission rules
@@ -38,9 +78,15 @@
     padding: 6px 8px;
     margin-top: 10px;
     border-radius: 3px;
-    color: #555;
-    background: hsla(216,100%,90%,1);
+    color: #000;
+    background: #d6d3f8;
+    transition: all 50ms ease;
 }
+.side .md h3+ul a:hover {
+    background: #65609F;
+    color: #fff;
+}
+
 .side .md h3+ul+ol {
     margin-bottom: 20px;
     counter-reset: siderules;
@@ -89,32 +135,49 @@
 
 /* sidebar calendar
 --------------------------------------------------------------------------------*/
-.side .md table td,
-.side .md table th {
-    border: 0
+.side .md > table {
+    box-shadow: 0 0 0 0.5px hsla(240,20%,40%,0.1), 0 2px 5px 0 hsla(240,20%,40%,0.1), 0 1px 2px 0 hsla(240,20%,40%,0.12);
+    border-radius: 3px;
 }
 
-.side .md table tr:nth-child(odd) {
-    background: rgba(0,0,0,.03)
-}
-.side .md table td+td,
-.side .md table th+th {
-    border-left: 1px solid rgba(0,0,0,.02)
-}
-.side .md table th {
-    border-bottom: 1px solid rgba(0,0,0,.02)
+.side .md > table th {
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    background: #65609f;
+    color: #fff;
 }
 
-html[lang$=nm] .side .md table thead tr th {
-    border: 1px solid #353535;
-    border-bottom: 1px solid #555;
-    border-top: 0;
+.side .md > table td {
+    border: 0;
+    overflow-wrap: break-all;
 }
-html[lang$=nm] .side .md table tbody tr td {
-    border: 1px solid #444;
+
+.side .md > table tr:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-html[lang$=nm] .side .md table tr:nth-of-type(odd) td {
-    background: rgba(0,0,0,0.2);
+
+.side .md > table th:first-child {
+    border-radius: 3px 0 0 0;
+}
+.side .md > table th:last-child {
+    border-radius: 0 3px 0 0;
+}
+.side .md > table tbody tr:last-child td:first-child {
+    border-radius: 0 0 3px 0;
+}
+.side .md > table tbody tr:last-child td:last-child {
+    border-radius: 0 0 3px 0;
+}
+
+.side .md > table th:first-of-type,
+.side .md > table td:first-of-type {
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+html[lang$=nm] .side .md > table tr:not(:last-child) {
+    border-bottom-color: #444;
 }
 html[lang$=nm] .side .md table td,
 html[lang$=nm] .side .md table td a {
@@ -124,8 +187,7 @@ html[lang$=nm] .side .md table td a {
 /* sidebar community links
 --------------------------------------------------------------------------------*/
 .side .md h6+blockquote {
-    padding: 0;
-    margin: 0 5px 20px
+    padding: 0 10px;
 }
 
 /* main links */
@@ -137,7 +199,6 @@ html[lang$=nm] .side .md table td a {
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: stretch;
-    background: rgba(0,0,0,0.03);
 }
 
 .side .md h6+blockquote p:last-of-type {
@@ -145,33 +206,23 @@ html[lang$=nm] .side .md table td a {
 }
 
 .side .md h6+blockquote p a {
-    font-size: 13px;
-    line-height: 22px;
-    display: inline-block;
-    margin-right: 3px;
-    margin-top: 4px;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 4px 2px 0 2px;
     padding: 0 5px;
     flex-grow: 1;
     text-align: center;
-    background: rgba(0,0,0,0.03);
-    color: rgba(0,0,0,0.8);
-    border: 1px solid #e5e5e5;
+    color: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    font-weight: bold;
+    background: hsla(210,20%,93%);
+    transition: all 50ms ease;
 }
 .side .md h6+blockquote p a:hover {
-    background: rgba(0,0,0,0.08);
+    background: #65609f;
+    color: #fff;
 }
 
-/* related subs button */
 .side .md h6+blockquote h4 {
     margin: 0;
-    padding: 7px 5px;
-    font-size: 13px;
-    text-align: center;
-    border-top: 1px solid #dadada;
-    background: rgba(0,0,0,0.03);
-}
-.side .md h6+blockquote h4 a {
-    padding: 5px;
-    display: block;
-    box-shadow: none;
 }

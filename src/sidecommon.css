@@ -1,56 +1,57 @@
+.side table {
+    font-size: .95em
+}
 
+/* fancy divider
+--------------------------------------------------------------------------------*/
+
+.side .md > h1 ~ blockquote + hr,
+.side .md > ol + hr {
+    background-image: linear-gradient(-90deg, #ff0082 0%, #ff0082 50%, #0080ff 50%, #0080ff 100%);
+    margin: 20px -7px 0;
+}
+
+.side .md > ol + hr + h4 + blockquote + hr {
+    margin-top: 0;
+}
 
 /* sidebar common header
 --------------------------------------------------------------------------------*/
-
-.side .md>h2,
 .side .md>h4>a,
 .side .md>h6,
 .side .md>h3,
-.side .md>h5 {
+.side .sidecontentbox .title {
     display: block;
     position: relative;
-    padding-left: 61px;
+    padding-left: 50px;
     height: 30px;
     line-height: 30px;
     top: 0;
-    left: 0;
-    right: 0;
+    left: -1px;
+    box-sizing: border-box;
+    width: 250px;
     margin: 10px -7px;
     text-decoration: none;
+    background: #65609F;
+    color: #fff;
     font-size: 18px;
-    background: 0 0;
-    color: #333;
-    font-weight: normal;
-    image-rendering: pixelated;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-/* positions */
-.side .md>h2:before,
 .side .md>h3:before,
-.side .md>h5:before,
-.side .md>h6:nth-of-type(1):before,
-.side .md>h6:nth-of-type(2):before {
-    background: 3px -163px
-}
-.side .md>h4>a:before {
-    background: -120px -164px
-}
-
-/* element */
-.side .md>h2:before,
-.side .md>h3:before,
-.side .md>h5:before,
-.side .md>h4>a:before,
-.side .md>h6:before {
+.side .md>h6:before,
+.sidecontentbox .title:before {
     content: "";
     display: block;
     position: absolute;
-    width: 30px;
-    height: 30px;
-    background-image: url(%%pokesheet%%);
-    top: 2px;
-    left: 21px
+    width: 100px;
+    height: 100px;
+    background: url(%%pokesheet%%) 0 -250px;
+    top: 5px;
+    left: 18px;
+    transform: scale(0.2);
+    transform-origin: top left;
 }
 
 .side #search,
@@ -61,60 +62,69 @@
     right: 5px;
 }
 
-/* common header bg */
-.side .md>h2:after,
+/* common header triangle left */
+.side .md>h4>a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border-top: 30px solid #65609F;
+    border-left: 15px solid transparent;
+}
+
+/* common header triangle right */
 .side .md>h4>a:after,
 .side .md>h6:after,
 .side .md>h3:after,
-.side .md>h5:after,
-.titlebox form.toggle.flairtoggle:after,
-.titlebox form.toggle.res-sr-style-toggle:after,
-.titlebox form.toggle.sr_style_toggle:after {
+.side .sidecontentbox .title:after {
     content: '';
-    background: url(%%sidepattern2%%) -5px 1px no-repeat;
+    display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
     top: 0;
-    opacity: .08;
-    z-index: 0;
-    pointer-events: none
+    left: 100%;
+    height: 0;
+    width: 0;
+    border-top: 30px solid #65609F;
+    border-right: 15px solid transparent;
 }
 
-.titlebox form.toggle.flairtoggle *,
-.titlebox form.toggle.res-sr-style-toggle * {
-    position: relative;
-    z-index: 5
+/* sidecontentbox fix */
+.sidecontentbox .title {
+    margin: 10px 0 0 !important;
+    font-size: 15px !important;
+}
+.sidecontentbox .title h1 {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+.sidecontentbox .title .collapse-button {
+    left: 100%;
+    right: initial;
+    margin-left: 20px;
+    position: absolute;
+    top: 9px;
 }
 
-/* common sidebar button and common checkboxes
+/* common sidebar button
 --------------------------------------------------------------------------------*/
-
-/* common button */
-.side .md a[href*="#flair"],
 .side .md>h2+ul li a,
 .sidecontentbox a.helplink,
 .side .md h6+blockquote h4 a {
-    border-radius: 2px;
+    display: block;
+    border-radius: 5px;
+    box-sizing: border-box;
     text-align: center;
-    text-shadow: 0 1px 0 #5787e1;
     background: #59f;
     border: 1px solid #59f;
     box-shadow: 0 1px 2px #CECECE;
-    color: white !important;
-}
-
-/* common checkboxes */
-.titlebox form.toggle.flairtoggle,
-.titlebox form.toggle.res-sr-style-toggle,
-.titlebox form.toggle.sr_style_toggle {
-    position: relative;
-    padding: 0 0 0 30px;
-    height: 18px
-}
-.titlebox form.toggle.flairtoggle:after,
-.titlebox form.toggle.res-sr-style-toggle:after,
-.titlebox form.toggle.sr_style_toggle:after {
-    background: url(%%sidepattern1%%)
+    color: white!important;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 28px;
+    border-radius: 14px;
 }

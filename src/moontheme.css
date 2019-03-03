@@ -288,10 +288,6 @@ html[lang$=nm] .side .md h3+ul+ol>li>a {
     color: hsla(216,100%,75%,1);
     font-weight: bold;
 }
-html[lang$=nm] .side .md h3+ul a {
-    color: #dfdfdf;
-    background: hsla(216,100%,56%,1);
-}
 
 /* linkinfo
 --------------------------------------------------------------------------------*/
@@ -339,24 +335,6 @@ html[lang$=nm] #search input[type=text] {
     color: #aaa!important;
 }
 
-/* sidebar md headers
---------------------------------------------------------------------------------*/
-html[lang$=nm] .side .md>h2:after,
-html[lang$=nm] .side .md>h4>a:after,
-html[lang$=nm] .side .md>h6:after,
-html[lang$=nm] .side .md>h3:after,
-html[lang$=nm] .side .md>h5:after,
-html[lang$=nm] .side .md>h4:first-of-type:after {
-    background-image: url(%%sidepattern2w%%);
-    opacity: 0.08;
-}
-html[lang$=nm] .titlebox form.toggle.flairtoggle:after,
-html[lang$=nm] .titlebox form.toggle.res-sr-style-toggle:after,
-html[lang$=nm] .titlebox form.toggle.sr_style_toggle:after {
-    background: url(%%sidepattern1w%%);
-    opacity: 0.08;
-}
-
 /* sidebar md misc
 --------------------------------------------------------------------------------*/
 html[lang$=nm] .md,
@@ -392,28 +370,6 @@ html[lang$=nm] .side .md h6+blockquote h4 {
 }
 
 
-/* sidebar sidecontentbox
---------------------------------------------------------------------------------*/
-html[lang$=nm] .sidecontentbox .content {
-    background: rgba(255,255,255,0.02);
-}
-html[lang$=nm] .side .sidecontentbox .title {
-    background: hsl(218, 7%, 20%);
-    border-color: hsl(218, 7%, 23%)
-}
-html[lang$=nm] .gadget .reddit-entry {
-    background: transparent !important;
-}
-html[lang$=nm] .gadget .reddit-link {
-    border-color: rgba(255,255,255,0.05);
-}
-html[lang$=nm] .gadget .score {
-    color: #777;
-}
-html[lang$=nm] .gadget .reddit-entry .linkflairlabel {
-    background: #23252a;
-    color: #888 !important;
-}
 
 
 

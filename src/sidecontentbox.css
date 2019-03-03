@@ -2,67 +2,44 @@
 /* sidecontentbox
 --------------------------------------------------------------------------------*/
 .sidecontentbox {
-    margin: 7px;
-    padding: 5px;
+    margin: 0;
     background-color: transparent;
-}
-
-/* title */
-.side .sidecontentbox .title,
-.side .sidecontentbox .title h1 {
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: 0!important;
-    margin: 5px;
-    text-align: center;
-    line-height: 14px
-}
-
-.side .sidecontentbox .title {
-    background: #fafafa;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    margin: 0 -12px;
-    padding: 0 !important;
-    line-height:28px;
-    position: relative;
 }
 
 /* content */
 .sidecontentbox .content {
     border: 0;
-    background: rgba(0,0,0,0.03);
-    margin-top: 10px;
 }
 
-/* expand/collapse button */
-.sidecontentbox .collapse-button {
-    border-radius: 50%;
-    border: 0;
-    font-size: 14px;
-    width: 14px;
-    height: 14px;
-    line-height: 14px;
-    margin: auto;
-    position: absolute;
-    right: 15px;
-    top: 0;
-    bottom: 0;
+/* moderation tools
+--------------------------------------------------------------------------------*/
+#moderation_tools.sidecontentbox .content {
+    border: 1px solid hsl(210,20%,86%);
+    margin:  10px;
+    border-radius: 10px;
 }
 
 /* sidecontentbox moderators
 --------------------------------------------------------------------------------*/
-
-/* item */
-.sidecontentbox .helplink~.content li {
-    position: relative;
-    min-height: 29px;
-    padding-top: 3px;
-    margin-bottom: 6px;
-    border-radius: 16px 3px 3px 16px;
-    background: rgba(0, 0, 0, .05)
+.sidecontentbox .helplink ~ .content {
+    background: hsl(210,20%,96%);
+    margin: 10px;
+    border-radius: 10px;
 }
-.sidecontentbox .helplink~.content li:before {
+    
+/* item */
+.sidecontentbox .helplink ~ .content li:not(.more) {
+    position: relative;
+    background: white;
+    border: 1px solid hsl(210,20%,86%);
+    margin-bottom: 3px;
+    min-height: 29px;
+    border-radius: 16px 3px 3px 16px;
+    padding-top: 3px;
+}
+
+/* item pokeball */
+.sidecontentbox .helplink~.content li:not(.more):before {
     content: '';
     display: block;
     position: absolute;
@@ -77,76 +54,85 @@
     margin: -1px;
 }
 
-.sidecontentbox .helplink ~ .content li:not(.more) {
-    background: white;
-    border: 1px solid rgba(0,0,0,0.09);
-    margin-bottom: 3px;
-}
-
 /* author link */
-.sidecontentbox .helplink~.content li>a {
+.sidecontentbox .helplink~.content li:not(.more) > a {
     top: -3px;
     position: relative
-}
-
-/* about mod team */
-.sidecontentbox .helplink~.content li.more {
-    background: 0;
-    min-height: initial;
-    margin: 5px 0 0;
-}
-.sidecontentbox .helplink~.content li.more:before {
-    display: none
-}
-.sidecontentbox .helplink~.content li.more a {
-    line-height: 16px;
-    display: block;
-    text-align: center;
 }
 
 /* message the moderators link */
 .sidecontentbox a.helplink {
     display: block;
     float: none;
-    line-height: 28px;
-    font-size: 13px;
-    padding: 0 10px;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    margin: 10px 15px 20px;
 }
 
-/* sidebar misc
+/* recently viewed links
 --------------------------------------------------------------------------------*/
 .gadget .reddit-link {
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    padding-bottom: 5px;
+    border-radius: 10px;
+    padding: 8px 0 5px;
+    margin: 5px 5px 5px;
+    border: 1px solid hsl(210,20%,90%);
+    background: hsl(210,10%,98%);
 }
 .gadget .reddit-entry {
-    margin-top: 5px!important;
-    padding-top: 5px;
+    margin-top: 0 !important;
 }
 .gadget .reddit-entry .linkflairlabel {
     display: inline-block;
     position: static!important;
+    max-width: initial!important;
+    background: #999;
+    color: white !important;
+    line-height: 20px !important;
     padding: 0 8px;
-    max-width: initial !important;
-    color: #333 !important;
-    background: #e5e5e5;
+    border-radius: 6px;
+    min-height: initial;
+    min-width: initial !important;
+    margin: 0 6px 0 0;
+    font-size: 11px;
+    float: left;
+}
+.gadget .reddit-link-title {
+    line-height: 20px;
+    font-weight: bold;
 }
 .gadget .reddit-link-end {
     padding-top: 5px
 }
-.sidebox .spacer {
-    background: 0 0;
-    margin: 10px
-}
 
-table {
-    font-size: .95em
+/* account activity box
+--------------------------------------------------------------------------------*/
+.account-activity-box {
+    border-top: 1px solid #cdcdd6;
 }
 
 .account-activity-box a {
     display: inline-block;
     line-height: 28px;
-    margin-top: -10px
+    font-size: 12px;
+}
+
+/* nightmode
+--------------------------------------------------------------------------------*/
+html[lang$=nm] .sidecontentbox .content {
+    background: rgba(255,255,255,0.02);
+}
+html[lang$=nm] .side .sidecontentbox .title {
+    background: hsl(218, 7%, 20%);
+    border-color: hsl(218, 7%, 23%)
+}
+html[lang$=nm] .gadget .reddit-entry {
+    background: transparent !important;
+}
+html[lang$=nm] .gadget .reddit-link {
+    border-color: rgba(255,255,255,0.05);
+}
+html[lang$=nm] .gadget .score {
+    color: #777;
+}
+html[lang$=nm] .gadget .reddit-entry .linkflairlabel {
+    background: #23252a;
+    color: #888 !important;
 }
