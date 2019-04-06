@@ -22,7 +22,7 @@
     border-bottom: 1px solid hsl(210,20%,80%);
     display: block;
     font-size: 19px;
-    font-weight: bold;
+    font-weight: 700;
     padding: 5px;
     color: hsl(245,25%,40%);
     letter-spacing: 1px;
@@ -141,7 +141,7 @@
 }
 
 .side .md > table th {
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     border: 0;
     background: #65609f;
@@ -176,11 +176,11 @@
     box-sizing: border-box;
 }
 
-html[lang$=nm] .side .md > table tr:not(:last-child) {
+[lang$=nm] .side .md > table tr:not(:last-child) {
     border-bottom-color: #444;
 }
-html[lang$=nm] .side .md table td,
-html[lang$=nm] .side .md table td a {
+[lang$=nm] .side .md table td,
+[lang$=nm] .side .md table td a {
     color: #bababa
 }
 
@@ -214,7 +214,7 @@ html[lang$=nm] .side .md table td a {
     text-align: center;
     color: rgba(0, 0, 0, 0.85);
     border-radius: 12px;
-    font-weight: bold;
+    font-weight: 700;
     background: hsla(210,20%,93%);
     transition: all 50ms ease;
 }

@@ -60,11 +60,11 @@ body:not(.comments-page):not(.comment-permalink-page) .thing.comment>input[type=
 body:not(.comments-page):not(.comment-permalink-page) .comment .midcol {
     top: 5px
 }
-html[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment {
+[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment {
     background: rgba(42, 45, 50, .4);
     border-color: rgba(0, 0, 0, .15)
 }
-html[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
+[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
     background: rgba(0, 0, 0, .1);
     border: 0
 }

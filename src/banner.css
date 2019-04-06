@@ -5,7 +5,7 @@
 #header {
     background: url(%%daymodeheader%%) center 0px/cover no-repeat;
 }
-html[lang$=nm] #header {
+[lang$=nm] #header {
     background: url(%%nightmodeheader%%) center center/cover no-repeat;
 }
 .pagename a {
@@ -14,7 +14,6 @@ html[lang$=nm] #header {
     height: 147px;
     display: block;
     left: 215px;
-    z-index: 99;
     background: url(%%header-logo%%) no-repeat center center / contain;
 }
 .pagename a:hover {
@@ -28,10 +27,6 @@ html[lang$=nm] #header {
     position: absolute;
     left: calc(50% - 150px);
     top: 16px;
-}
-
-html[lang$=nm] .pagename a{
-    background-position-x: 100%;
 }
 
 /*--------------------------------------------------------------------------------*/
@@ -78,11 +73,11 @@ html[lang$=nm] .pagename a{
     background-position-y: 100%;
 }
 
-html[lang$=nm] .pagename a {
+[lang$=nm] .pagename a {
     background-position-x: 100%;
 }
-html[lang$=nm] #header,
-html[lang$=nm] #header::after,
-html[lang$=nm] .pagename::after {
+[lang$=nm] #header,
+[lang$=nm] #header::after,
+[lang$=nm] .pagename::after {
     background-position-y: 100%;
 }*/

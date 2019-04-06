@@ -229,6 +229,6 @@ html:lang(nc) .listing-page .link.linkflair-craft {
     display: none;
 }
 html .thing.link .flairselector .linkflair .linkflairlabel,
-html[lang$=nm] .thing.link .flairselector .linkflair .linkflairlabel {
+[lang$=nm] .thing.link .flairselector .linkflair .linkflairlabel {
     color: white!important;
 }

@@ -21,14 +21,14 @@
 .side .md a[href="https://www.twitch.tv/nintendo"]:hover {
     border-color: #eee;
 }
-html[lang$=nm] .side .md a[href="https://www.twitch.tv/nintendo"]:hover {
+[lang$=nm] .side .md a[href="https://www.twitch.tv/nintendo"]:hover {
     border-color: #333;
 }
 
 .listing-page #header .tabmenu li a:after {
     background: rgba(200,200,200,.9);
 }
-html[lang$=nm] .listing-page #header .tabmenu li a:after {
+[lang$=nm] .listing-page #header .tabmenu li a:after {
     background: rgba(200,200,200,.4);
 }
 
@@ -36,14 +36,14 @@ html[lang$=nm] .listing-page #header .tabmenu li a:after {
 .side .md>blockquote:nth-of-type(2) {
     box-shadow: 0 -1px 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.2);
 }
-html[lang$=nm] .side .md>blockquote:nth-of-type(2) {
+[lang$=nm] .side .md>blockquote:nth-of-type(2) {
     box-shadow: 0 -1px 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.2);
     background: rgba(255,255,255,.65);
     color: rgba(0,0,0,.6);
     color: hsla(218, 100%, 30%, 1);
     border-color: hsla(218, 100%, 50%, 1);
 }
-html[lang$=nm] .side .md>blockquote:nth-of-type(2) a {
+[lang$=nm] .side .md>blockquote:nth-of-type(2) a {
     color: hsla(218, 100%, 50%, 1);
 }
 
@@ -51,6 +51,6 @@ html[lang$=nm] .side .md>blockquote:nth-of-type(2) a {
     background: #fafafa !important;
 }
 
-html[lang$=nm] #header {
+[lang$=nm] #header {
     background: #000 !important;
 }

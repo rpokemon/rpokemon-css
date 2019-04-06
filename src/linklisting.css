@@ -28,7 +28,7 @@
     transform: scale(0.8);
     opacity: 0.5;
 }
-html[lang$=nm] .listing-page .content>.menuarea .spacer:before {
+[lang$=nm] .listing-page .content>.menuarea .spacer:before {
     opacity: 1;
 }
 
@@ -52,7 +52,7 @@ html[lang$=nm] .listing-page .content>.menuarea .spacer:before {
 }
 
 /* drop-choices */
-.drop-choices.lightdrop, html[lang$=nm] .drop-choices {
+.drop-choices.lightdrop, [lang$=nm] .drop-choices {
     border: 1px solid #bbb;
     box-shadow: 0 2px 1.5px rgba(0,0,0,0.1);
     border-radius: 3px;
@@ -89,11 +89,11 @@ html[lang$=nm] .listing-page .content>.menuarea .spacer:before {
     color: #fff;
 }
 
-html[lang$=nm] .drop-choices {
+[lang$=nm] .drop-choices {
     border: 1px solid #111;
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
     border-top: 1.5px solid #2a66d6 !important;
 }
-html[lang$=nm] .drop-choices.lightdrop a.choice {
+[lang$=nm] .drop-choices.lightdrop a.choice {
     color: #bababa;
 }

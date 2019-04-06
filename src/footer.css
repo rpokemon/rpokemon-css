@@ -50,7 +50,7 @@
     z-index: 0;
 }
 
-html[lang$=nm] .footer-parent:before {
+[lang$=nm] .footer-parent:before {
     background-position-y: bottom;
 }
 

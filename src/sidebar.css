@@ -331,7 +331,7 @@
     background: hsla(210, 20%, 93%, 0.8);
     padding: 10px 0;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     color: hsla(245, 25%, 40%, 1);
     font-size: 19px;
@@ -439,7 +439,7 @@
 
 .side .md > p:first-of-type a {
     color: inherit;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /* Night/day mode switch (nm switch/dm switch/sn switch/sun switch/moon switch)
@@ -490,7 +490,7 @@
 }
 
 /* nightmode */
-html[lang$=nm] .side .md > h1 a:last-child {
+[lang$=nm] .side .md > h1 a:last-child {
     color: #57aad4
 }
 /* sun mode */
@@ -503,10 +503,6 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
 .sidebox.create,
 .sidebox.submit {
     display: none
-}
-.sidebox.create .morelink {
-    background: 0 0;
-    border: 0
 }
 
 /* link info box
@@ -607,7 +603,7 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
     font-size: 12px;
     text-align: center;
     color: #fff;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 2px;
     text-decoration: none !important;

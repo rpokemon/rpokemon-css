@@ -21,7 +21,7 @@ body>.content {
     padding: 0 0 8px 20px;
 }
 
-html[lang$=nm] .side .md>blockquote:first-of-type {
+[lang$=nm] .side .md>blockquote:first-of-type {
     background: #2f3238;
 }
 
@@ -38,7 +38,7 @@ html[lang$=nm] .side .md>blockquote:first-of-type {
     background: #FAFAFA;
 }
 
-html[lang$=nm] .side .md>blockquote:first-of-type:after {
+[lang$=nm] .side .md>blockquote:first-of-type:after {
     background: #333;
 }
 

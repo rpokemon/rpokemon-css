@@ -96,7 +96,7 @@
 }
 .gadget .reddit-link-title {
     line-height: 20px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .gadget .reddit-link-end {
     padding-top: 5px
@@ -116,23 +116,23 @@
 
 /* nightmode
 --------------------------------------------------------------------------------*/
-html[lang$=nm] .sidecontentbox .content {
+[lang$=nm] .sidecontentbox .content {
     background: rgba(255,255,255,0.02);
 }
-html[lang$=nm] .side .sidecontentbox .title {
+[lang$=nm] .side .sidecontentbox .title {
     background: hsl(218, 7%, 20%);
     border-color: hsl(218, 7%, 23%)
 }
-html[lang$=nm] .gadget .reddit-entry {
+[lang$=nm] .gadget .reddit-entry {
     background: transparent !important;
 }
-html[lang$=nm] .gadget .reddit-link {
+[lang$=nm] .gadget .reddit-link {
     border-color: rgba(255,255,255,0.05);
 }
-html[lang$=nm] .gadget .score {
+[lang$=nm] .gadget .score {
     color: #777;
 }
-html[lang$=nm] .gadget .reddit-entry .linkflairlabel {
+[lang$=nm] .gadget .reddit-entry .linkflairlabel {
     background: #23252a;
     color: #888 !important;
 }

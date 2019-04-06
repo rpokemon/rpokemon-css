@@ -3,11 +3,10 @@
 * SR HEADER AREA
 *********************************************************************************/
 #sr-header-area {
-    height: 18px;
     position: relative;
     z-index: 20;
     background: #fff;
-    border-bottom: 1px solid #e3e3e3
+    border-bottom: 0
 }
 #sr-header-area .width-clip .dropdown.srdrop .selected.title {
     font-size: 9px;
@@ -15,17 +14,16 @@
     padding-right: 3px
 }
 
-#sr-header-area a {
+#sr-header-area a, .dropdown.srdrop .selected {
     background: 0;
     color: #333
 }
 
-.dropdown.srdrop .selected { background: 0 }
 .dropdown.srdrop .selected:after { display: none }
 
 .res [id^=RESShortcut] {
     background-color: transparent!important;
-    color: #979797!important
+    color: #999!important
 }
 
 
@@ -64,18 +62,13 @@
 --------------------------------------------------------------------------------*/
 
 .side:before {
+    content: '';
     display: block;
-    right: 0;
     position: absolute;
-    content: ''
-}
-
-.side:before {
     margin-top: 28px;
     height: 46px;
     background: #fafafa;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-    
     top: 166px;
     margin-bottom: 35px;
     width: 100vw;
@@ -151,31 +144,19 @@
 
 /* beta hint
 --------------------------------------------------------------------------------*/
-.beta-hint {
-    top: 0;
-    position: absolute;
-    right: 100%;
-    display: block;
-    width: 24px;
-    height: 24px;
-}
 .beta-hint a {
-    top: 1px;
-    right: 0;
-    margin: 0;
     background: 0;
     height: 24px;
     line-height: 24px;
-    width: 24px;
     text-indent: 0;
     text-align: center;
-    font-size: 0 !important;
+    font-size: 0!important;
 }
 .beta-hint a:before {
     content: 'β';
     font-size: 12px;
-    font-weight: bold;
-    color: rgba(0,0,0,0.35);
+    font-weight: 700;
+    color: #999;
 }
 
 /* userbar
@@ -202,12 +183,6 @@
 }
 #header-bottom-right .user>* {
     font-size: 12px
-}
-
-#header-bottom-right .user > a,
-#header-bottom-right .user > .userkarma {
-    color: rgba(0,0,0,0.7);
-    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI",Arial,Helvetica,sans-serif;
 }
 
 /* user karma */
@@ -292,11 +267,6 @@
 #header-bottom-right .gearIcon {background-position: -90px -162px;top: 0;transform: scale(0.9);transform-origin: center}
 #header-bottom-right .gearIcon:after {display: none}
 
-#header-bottom-right .flat-list + .separator,
-#message + .message-count + .separator {
-    display: none;
-}
-
 #header-bottom-right .user + .separator {
     font-size: 13px;
     padding-left: 0;
@@ -314,45 +284,22 @@
     min-width: 20px;
     text-align: center;
     position: relative;
-    margin-left: 8px;
+    margin-left: 5px;
     margin-right: 5px;
 }
-.message-count:before {
-    content: '';
-    position: absolute;
-    right: 100%;
-    width: 0;
-    height: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    border-right: 5px solid #FF7500;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
+#mail + .message-count {
+    background: #e3817a
 }
-
 
 /* opacity hover/no hover
 --------------------------------------------------------------------------------*/
-#mail,
-#message,
-#inbox,
-#modmail,
-#new_modmail,
-.gearIcon,
-.loggedin .logout a:before,
-a.pref-lang {
-    opacity: .75
+#header-bottom-right > *:not(.user),
+#header-bottom-right .flat-list li > * {
+    opacity: .75;
 }
-#mail:hover,
-#message:hover,
-#inbox:hover,
-#modmail:hover,
-#new_modmail:hover,
-.gearIcon:hover,
-.loggedin .logout a:hover:before,
-a.pref-lang:hover {
-    opacity: 1
+#header-bottom-right > *:not(.user):hover,
+#header-bottom-right .flat-list li > *:hover {
+    opacity: 1;
 }
 
 /********************************************************************************
@@ -437,23 +384,23 @@ a.pref-lang:hover {
     /* Promoted */
     background: -264px 0
 }
-.listing-page #header .tabmenu li.res-toggle-filterline-visibility a {
+.listing-page #header .tabmenu .res-toggle-filterline-visibility a {
     /* Toggle Tilterline */
     background: -301px 0;
 }
-.listing-page #header .tabmenu li.res-show-images a {
+.listing-page #header .tabmenu .res-show-images a {
     /* Show Images */
     background: -338px 0
 }
-.listing-page #header .tabmenu li.tb-metrics a {
+.listing-page #header .tabmenu .tb-metrics a {
     /* Metrics */
     background: -375px 0;
 }
-.listing-page #header .tabmenu li.tb-queuetools-tab a {
+.listing-page #header .tabmenu .tb-queuetools-tab a {
     /* Queue */
     background: -412px 0;
 }
-.listing-page #header .tabmenu li.res-filter-visited-links a {
+.listing-page #header .tabmenu .res-filter-visited-links a {
     /* Visited */
     background: -485px 0;
 }
@@ -482,15 +429,6 @@ a.pref-lang:hover {
 .listing-page #header .tabmenu li a:hover,
 .listing-page #header .tabmenu li.selected a {
     opacity: 1
-}
-
-#header .tabmenu li, #header .tabmenu li a, #header .tabmenu li a:hover {
-    transform: translate3d(0px,0px,0px);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: rotate(0) translateZ(0);
-    -moz-transform: rotate(0) translateZ(0);
-    transform: rotate(0) translateZ(0);
 }
 
 /* non-listing-page tabmenu items
