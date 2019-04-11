@@ -89,7 +89,8 @@ body>.content {
     background: url(%%kantoflair%%) -800px -32px;
 }
 .side .md>blockquote:first-of-type>p:nth-of-type(3)>a:before {
-    background: url(%%sinnohflair%%) -840px -32px /* TODO: Change this sprite weekly (Weekly Challenge) */
+    background: url(%%ballflair%%) -1260px 1px;
+    image-rendering: auto;
 }
 
 /********************************************************************************

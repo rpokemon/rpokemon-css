@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open('downupletsgo.png')
+img = Image.open('downup.png')
 
 for i, f in enumerate(['up_a', 'up', 'down_a', 'down']):
     y = img.size[0] * i
