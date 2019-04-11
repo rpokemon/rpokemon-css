@@ -33,6 +33,15 @@
     padding-top: 8px;
 }
 
+[lang$=nm] .entry, [lang$=nm] .thing.link {
+    background: hsl(218,9%,15%)!important;
+}
+
+[lang$=nm] .thing.link, [lang$=nm] .comment .entry {
+    border: 1px solid hsla(218,9%,5%,1);
+    box-shadow: 0 1px 3px rgba(173,178,255,.15);
+}
+
 /* spam
 --------------------------------------------------------------------------------*/
 .thing.spam {
@@ -49,7 +58,9 @@
 --------------------------------------------------------------------------------*/
 .child,
 .res .RES-keyNav-activeElement .md-container,
-.res .link .RES-keyNav-activeElement {
+.res .link .RES-keyNav-activeElement,
+html body .entry.res-selected,
+html body .entry.res-selected .md-container {
     background: 0 !important;
     border-color: transparent!important
 }
@@ -57,6 +68,18 @@
 .link.RES-keyNav-activeThing {
     background: #F0F3FC
 }
+
+[lang$=nm] .thing.link.RES-keyNav-activeThing,
+[lang$=nm] .comment.RES-keyNav-activeThing > .entry {
+    background: hsla(218, 9%, 11%, 1) !important;
+}
+[lang$=nm] .comment.RES-keyNav-activeThing > .entry {
+    border-color: hsla(218,9%,9%,1);
+}
+[lang$=nm] .thing.comment.new-comment:not(.RES-keyNav-activeThing) .entry {
+    border-color: #2d466f !important;
+}
+
 
 /* Link Title
 --------------------------------------------------------------------------------*/
@@ -81,6 +104,11 @@
 .thing.visited .title {
     color: #7730b7;
 }
+[lang$=nm] .comment .md a:visited,
+[lang$=nm] .comment .md p>a:visited,
+[lang$=nm] .link .md a:visited {
+    color: #8271ff
+}
 
 /* domain */
 .domain {
@@ -92,6 +120,19 @@
 }
 .domain a {
     opacity: .4
+}
+
+[lang$=nm] .link a.title {
+    color: rgba(255, 255, 255, .8)
+}
+[lang$=nm] .link a.title:visited,
+[lang$=nm] .thing .title:visited,
+[lang$=nm] .thing.visited .title {
+    color: #b0a2e6
+}
+
+[lang$=nm] .thing.stickied.link a.title {
+    color: hsla(160, 92%, 45%, 1);
 }
 
 /* Thumbnails
@@ -197,6 +238,17 @@
     display: none
 }
 
+[lang$=nm] .thumbnail,
+[lang$=nm] .thumbnail.default,
+[lang$=nm] .thumbnail.nsfw,
+[lang$=nm] .thumbnail.self,
+[lang$=nm] .linkflair-rotation .thumbnail,
+[lang$=nm] .linkflair-rotation .thumbnail.self,
+[lang$=nm] .thing .midcol+.entry a.title:before  {
+    background-image: url(%%thumbnails-nm%%) !important;
+    border: 1px solid #111
+}
+
 /* entry
 --------------------------------------------------------------------------------*/
 .entry {
@@ -253,6 +305,12 @@
     z-index: 5
 }
 
+[lang$=nm] .link .midcol {
+    border-right-color: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.5);
+}
+
 /* Score
 --------------------------------------------------------------------------------*/
 
@@ -296,6 +354,12 @@
     overflow: hidden;
     border: 1px solid #cecdcd;
     background: #fff
+}
+
+[lang$=nm] .comment .score,
+[lang$=nm] .comment .tagline .score-hidden {
+    background: #282b30 !important;
+    border-color: #17191c;
 }
 
 /* show score */
@@ -388,4 +452,19 @@
 }
 .reddit-video-controller-root button:hover {
     background: inherit;
+}
+
+/* Nightmode misc
+--------------------------------------------------------------------------------*/
+[lang$=nm] .post-sharing,
+[lang$=nm] .subreddit-report-form {
+    border-color: rgba(255, 255, 255, .2)!important;
+    background: rgba(255, 255, 255, .02)!important
+}
+[lang$=nm] .thing .md hr {
+    background: rgba(255,255,255,0.1)
+}
+[lang$=nm] .md code,
+[lang$=nm] .md pre {
+    background: rgba(0, 0, 0, .08)
 }

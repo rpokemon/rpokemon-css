@@ -7,7 +7,7 @@
 /* Element
 --------------------------------------------------------------------------------*/
 .side {
-    margin-top: 107px;
+    margin-top: 97px;
     padding-top: 310px;
     border-radius: 5px;
     border: 1px solid #cdcdd6;
@@ -27,7 +27,7 @@
 /* Search
 --------------------------------------------------------------------------------*/
 .side #search {
-    top: 200px;
+    top: 202px;
     right: 5px;
     z-index: 500;
 }
@@ -50,6 +50,10 @@
 .side #searchexpando {
     right: 0;
     z-index: 999
+}
+[lang$=nm] #search input[type=text] {
+    background: rgba(255,255,255,.05);
+    color: #aaa!important;
 }
 
 /* Titlebox stuff
@@ -129,6 +133,10 @@
 }
 .titlebox .users-online .number:after {
     content: " Online Now"
+}
+
+[lang$=nm] .titlebox .subscribers {
+    color: #aaa
 }
 
 /* subscription buttons
@@ -237,6 +245,14 @@
     bottom: 50%;
 }
 
+[lang$=nm] .side .md a[href*="#flair"]:before {
+    border-color: #555;
+}
+
+body:not(.loggedin) .side a[href*="#flair"] {
+    display: none !important;
+}
+
 /* checkboxes + flairtoggle extra
 --------------------------------------------------------------------------------*/
 
@@ -270,14 +286,14 @@
 .titlebox form.toggle.res-sr-style-toggle {
     text-transform: capitalize;
     position: absolute;
-    top: 588px;
+    top: 580px;
     right: 7px;
     width: 299px;
     box-sizing: border-box;
     margin-top: 0 !important;
 }
 .comments-page .titlebox form.toggle.res-sr-style-toggle {
-    top: 680px;
+    top: 679px;
 }
 
 /* checkboxes */
@@ -321,6 +337,19 @@
 }
 .titlebox form.toggle.res-sr-style-toggle ~ form.toggle.sr_style_toggle ~ form.toggle.flairtoggle {
     margin-top: 10px;
+}
+
+/* Users online, toggles nightmode
+--------------------------------------------------------------------------------*/
+[lang$=nm] .titlebox .users-online,
+[lang$=nm] .toggle.fancy-toggle-button .option.active,
+[lang$=nm].res .res-fancy-toggle-button {
+    background: rgba(0, 0, 0, .4);
+    color: #aaa
+}
+[lang$=nm] .titlebox form.toggle.flairtoggle,
+[lang$=nm] .titlebox form.toggle.res-sr-style-toggle {
+    color: #aaa
 }
 
 /* Submit links
@@ -442,6 +471,29 @@
     font-weight: 700;
 }
 
+[lang$=nm] .side .md>p:first-of-type {
+    background: rgba(255,255,255,0.04);
+}
+
+/* login box
+--------------------------------------------------------------------------------*/
+.login-form-side {
+    margin: 10px 20px;
+    padding: 5px;
+    background: hsl(210,20%,96%);
+    border: 0;
+}
+
+.login-form-side input[type=text], .login-form-side input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1px 0;
+}
+
+[lang$=nm] .login-form-side {
+    background: rgba(255,255,255,0.04);
+}
+
 /* Night/day mode switch (nm switch/dm switch/sn switch/sun switch/moon switch)
 --------------------------------------------------------------------------------*/
 .side .md > h1 {
@@ -497,6 +549,19 @@
 html:not([lang$=nm]) .side .md > h1 a:first-child {
     color: #ea8f24
 }
+[lang$=nm] .side .md > h1 {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.08);
+}
+[lang$=nm] .side .md > h1 a {
+    color: rgba(255,255,255,0.65)
+}
+[lang$=nm] .side .md > h1 a:hover {
+    background: rgba(255,255,255,0.02);
+}
+[lang$=nm] .side .md > h1 a:last-child {
+    border-left-color: rgba(255,255,255,0.08)
+}
 
 /* Morelinks
 --------------------------------------------------------------------------------*/
@@ -510,7 +575,6 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
 .linkinfo {
     margin-right: 15px;
     margin-left: 18px;
-    margin-top: -10px;
     padding: 8px;
     background: hsl(210,20%,96%);
     border: 0;
@@ -550,6 +614,15 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
 .linkinfo .score .word {
     margin-left: 4px;
     margin-right: 5px;
+}
+[lang$=nm] .linkinfo {
+    background: rgba(255,255,255,.03);
+    border: 0;
+}
+
+[lang$=nm] .linkinfo .shortlink input {
+    background: #3f4246;
+    color: #888;
 }
 
 /* submission filters
@@ -630,8 +703,3 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
 .side .md h4+blockquote * a:last-child { display: none; }
 html[lang$="nm"] .side .md h4+blockquote * a:first-child { display: none; }
 html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
-
-html[lang$="nm"] .side .md h4+blockquote > * {
-    background: rgba(0,0,0,0.2);
-    box-shadow: 0 3px 4px #000;
-}

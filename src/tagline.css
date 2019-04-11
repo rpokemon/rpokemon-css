@@ -14,7 +14,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    right: 0
+    right: 0;
+    padding-top: 1px;
 }
 .tagline>* {
     font-size: x-small
@@ -29,8 +30,13 @@
 --------------------------------------------------------------------------------*/
 .tagline time {
     line-height: 20px;
-    font-size: 11px;
-    padding: 0 4px
+    font-size: 10.5px;
+    padding: 0 4px;
+    margin-top: 1px;
+}
+
+.tagline time ~ .edited-timestamp {
+    padding-left: 0;
 }
 
 .crosspost-preview-tagline time {
@@ -43,13 +49,6 @@
 
 .crosspost-preview-tagline .edited-timestamp:after {
     display: none;
-}
-
-/* Tagline - stickied comment
---------------------------------------------------------------------------------*/
-.tagline .stickied-tagline {
-    line-height: 20px;
-    font-size: 11px;
 }
 
 /* Tagline - RES user tag
@@ -75,6 +74,10 @@
 .side .tagline .flairselectbtn,
 .tagline .userattrs {
     display: none
+}
+
+[lang$=nm] .RESUserTagImage:after {
+    background-image: none!important
 }
 
 /* Tagline - author
@@ -221,7 +224,7 @@
     height: 13px;
     line-height: 13px;
     padding: 2px 5px;
-    margin: 3px 4px;
+    margin: 2px 3px;
     left: 440px;
     border-radius: 3px;
     opacity: .8;
@@ -229,6 +232,11 @@
     font-size: 8px;
     letter-spacing: 0.3px;
     font-weight: 700;
+}
+
+[lang$=nm] .link .tagline .stickied-tagline {
+    background: rgba(255,255,255,0.15);
+    color: hsla(160, 92%, 60%, 1);
 }
 
 /* toolbox buttons
@@ -251,4 +259,21 @@
     border-color: #e4796b;
     color: white;
     margin-top: -1px;
+}
+
+/* nightmode misc
+--------------------------------------------------------------------------------*/
+[lang$=nm] .comment .score.dislikes,
+[lang$=nm] .comment .score.likes,
+[lang$=nm] .comment .score.unvoted,
+[lang$=nm] .flair:before,
+[lang$=nm] .link .score.unvoted,
+[lang$=nm] .tagline time:not(.edited-timestamp) {
+    color: #aaa
+}
+[lang$=nm] .flairrow .author,
+[lang$=nm] .side .tagline .author,
+[lang$=nm] .thing .author {
+    background-position: 0 0;
+    color: #48f
 }

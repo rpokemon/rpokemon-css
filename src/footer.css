@@ -99,8 +99,24 @@ body > .debuginfo:before {
 }
 
 .footer-parent .bottommenu {
-    color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0,0.5);
 }
 .footer-parent .bottommenu a {
-    color: #000;
+    color: #333;
+}
+
+[lang$=nm] .footer {
+    background: #333;
+}
+
+[lang$=nm] .footer .col .title {
+    color: #43f7bb;
+}
+[lang$=nm] .footer .col a,
+[lang$=nm] .footer-parent .bottommenu a {
+    color: #43f7bb;
+    opacity: 0.5;
+}
+[lang$=nm] .footer-parent .bottommenu {
+    color: #999;
 }

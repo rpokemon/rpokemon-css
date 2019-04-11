@@ -28,6 +28,11 @@
     letter-spacing: 1px;
 }
 
+[lang$=nm] .side .md > h5 strong {
+    color: hsla(245, 25%, 71%, 1);
+    border-bottom-color: hsla(210,20%,80%,0.25);
+}
+
 /* box */
 .side .md > h5 + ul {
     list-style-type: none;
@@ -57,6 +62,15 @@
     transform: scale(0.65);
     transform-origin: top left;
     opacity: 0.8;
+}
+
+[lang$=nm] .side .md > h5 + ul li:before {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -250px;
+    transform: scale(0.17);
+    transform-origin: 3px 3px;
+    opacity: 0.7;
 }
 
 /* submission rules
@@ -97,6 +111,11 @@
     min-height: 30px;
     padding-top: 10px
 }
+.side .md h3+ul+ol>li>a {
+    font-size: 14px;
+    font-size: 13.5px;
+    font-weight: bold;
+}
 .side .md h3+ul+ol>li:before {
     counter-increment: siderules;
     content: counter(siderules);
@@ -128,9 +147,38 @@
 .side .md h3+ul+ol ul {
     padding-left: 25px;
 }
+.side .md h3+ul+ol ul li {
+    line-height: 15px;
+    margin-top: 7px;
+}
 
 .side .md h3+ul+ol>li:last-of-type {
     padding-bottom: 10px;
+}
+
+[lang$=nm] .side .md h3+ul+ol:after {
+    background: #4a4a4a
+}
+[lang$=nm] .side .md h3+ul,
+[lang$=nm] .side .md h3+ul+ol {
+    border-left-color: #4a4a4a
+}
+[lang$=nm] .side .md h3+ul+ol>li:before {
+    background: #282b30;
+    border-color: #666;
+    border-width: 2px;
+    font-weight: 700;
+    font-size: 13px;
+    width: 24px;
+    height: 24px;
+    line-height: 23px;
+    left: -35px;
+    top: 4px;
+    color: #aaa;
+}
+[lang$=nm] .side .md h3+ul+ol>li>a {
+    color: #80b3ff;
+    font-weight: 700;
 }
 
 /* sidebar calendar
@@ -218,11 +266,43 @@
     background: hsla(210,20%,93%);
     transition: all 50ms ease;
 }
-.side .md h6+blockquote p a:hover {
+.side .md h6+blockquote p a:hover,
+[lang$=nm] .side .md h6+blockquote p a:hover {
     background: #65609f;
     color: #fff;
 }
 
 .side .md h6+blockquote h4 {
     margin: 0;
+}
+
+/* community links */
+[lang$=nm] .side .md h6+blockquote p a {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid #65609f;
+    color: #c7c7c7;
+}
+
+/* Nightmode misc
+--------------------------------------------------------------------------------*/
+[lang$=nm] .side .md,
+[lang$=nm] .side .md>h2,
+[lang$=nm] .side .md>h5,
+[lang$=nm] .side .md>p:first-of-type,
+[lang$=nm] .side #searchexpando {
+    color: #c7c7c7;
+}
+
+[lang$=nm] .side .md>h2,
+[lang$=nm] .side .md>h4,
+[lang$=nm] .side .md>h2+ul,
+[lang$=nm] .side .md>h5,
+[lang$=nm] .side .md>h5+ul,
+[lang$=nm] .side .md>h4+blockquote,
+[lang$=nm] .side .md>table {
+    background: rgba(255,255,255,0.03);
+}
+
+[lang$=nm] .side .md>table td, [lang$=nm] .side .md>table td a {
+    color: #ddd;
 }

@@ -15,6 +15,10 @@
     margin-top: 0;
 }
 
+body:not(.loggedin) .side .md>h1~blockquote+hr {
+    margin-top: 0;
+}
+
 /* sidebar common header
 --------------------------------------------------------------------------------*/
 .side .md>h4>a,
@@ -127,4 +131,13 @@
     text-transform: uppercase;
     line-height: 28px;
     border-radius: 14px;
+}
+
+[lang$=nm] .side .md a[href$="#flair"],
+[lang$=nm] .side .md>h2+ul li a,
+[lang$=nm] .sidecontentbox a.helplink,
+[lang$=nm] .side .md h6+blockquote h4 a {
+    box-shadow: 0 0 1px rgba(0,0,0,0.8);
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,.06);
 }

@@ -67,6 +67,11 @@
     margin: 10px 15px 20px;
 }
 
+/* strong selector to override specific-user styles */
+html body .sidecontentbox .helplink~.content li .flair:before {
+    color: #999 !important;
+}
+
 /* recently viewed links
 --------------------------------------------------------------------------------*/
 .gadget .reddit-link {
@@ -118,21 +123,41 @@
 --------------------------------------------------------------------------------*/
 [lang$=nm] .sidecontentbox .content {
     background: rgba(255,255,255,0.02);
-}
-[lang$=nm] .side .sidecontentbox .title {
-    background: hsl(218, 7%, 20%);
-    border-color: hsl(218, 7%, 23%)
+    border-color: #555 !important;
 }
 [lang$=nm] .gadget .reddit-entry {
     background: transparent !important;
 }
 [lang$=nm] .gadget .reddit-link {
-    border-color: rgba(255,255,255,0.05);
+    border-color: #17191c;
+    background: #26282c;
 }
 [lang$=nm] .gadget .score {
     color: #777;
 }
 [lang$=nm] .gadget .reddit-entry .linkflairlabel {
-    background: #23252a;
-    color: #888 !important;
+    background: #131416;
+    color: #999!important;
+}
+[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) {
+    border-color: hsla(216, 10%, 27%, 1);
+    background: hsla(220, 7%, 15%, 1);
+}
+[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) a {
+    color: #ccc;
+}
+[lang$=nm] .sidecontentbox .helplink~.content li:before {
+    opacity: 0.5;
+}
+[lang$=nm] .account-activity-box {
+    border-color: #1a1a1a;
+}
+
+[lang$=nm] .sidecontentbox .helplink~.content li:not(.more):before {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -250px;
+    transform: scale(0.23);
+    transform-origin: 6px 6px;
+    opacity: 0.18;
 }

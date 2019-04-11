@@ -1,25 +1,17 @@
-.icon-menu a { background: transparent }
-
+/********************************************************************************
+* MISC/GENERAL NIGHTMODE STYLES
+*********************************************************************************/
 [lang$=nm] body {
     background: #36393e url(%%bgdark%%)!important;
     color: #bdc3c7
 }
 
 [lang$=nm] .md a, [lang$=nm] .icon-menu a, [lang$=nm] .sidecontentbox a {
-    color: hsla(216,100%,75%,1)
-}
-[lang$=nm] .comment .md a:visited,
-[lang$=nm] .comment .md p>a:visited,
-[lang$=nm] .link .md a:visited {
-    color: #8271ff
+    color: hsl(216,100%,75%)
 }
 
-[lang$=nm] .thing.link,
-[lang$=nm] .entry,
 [lang$=nm] .subreddit-report-form,
 [lang$=nm] .post-sharing,
-[lang$=nm] .comment .score,
-[lang$=nm] .comment .tagline .score-hidden,
 [lang$=nm] .flairselector h2,
 [lang$=nm] #previoussearch,
 [lang$=nm] .combined-search-page #previoussearch .res-search-pane,
@@ -32,41 +24,6 @@
     color: #aaa;
     border-color: #282b30;
     box-shadow: none;
-}
-
-[lang$=nm] .link.RES-keyNav-activeThing,
-[lang$=nm] .comment.RES-keyNav-activeThing > .entry {
-    background: hsla(218, 9%, 13%, 1) !important;
-}
-[lang$=nm] .comment.RES-keyNav-activeThing > .entry {
-    border-color: hsla(218,9%,11%,1);
-}
-
-.link .midcol {
-    border-right: 0;
-}
-
-/* comment page
---------------------------------------------------------------------------------*/
-
-[lang$=nm] .comment-permalink-page .commentarea>.infobar,
-[lang$=nm] .commentarea .child>.usertext,
-[lang$=nm] .commentarea>.panestack-title,
-[lang$=nm] .commentarea>.usertext,
-[lang$=nm] .infobar.commentsignupbar,
-[lang$=nm] .gold-accent.comment-visits-box {
-    background: #282b30;
-}
-[lang$=nm] .commentarea > *,
-[lang$=nm] .infobar.commentsignupbar {
-    border: 0;
-}
-
-[lang$=nm] .commentarea>.menuarea {
-    background: #2a2d33
-}
-[lang$=nm] .gold-accent.comment-visits-box .title {
-    color: rgba(255, 255, 255, .3)
 }
 
 [lang$=nm] #newlink-with-image-upload .image-upload-drop-target,
@@ -83,366 +40,22 @@
     border: 1px solid rgba(255, 255, 255, .15)!important
 }
 
-[lang$=nm] .RESUserTagImage:after {
-    background-image: none!important
-}
-[lang$=nm] .drop-choices,
 [lang$=nm] .side #searchexpando,
 [lang$=nm] body.mod-toolbox .tb-general-button, 
 [lang$=nm] body.mod-toolbox .tb-bracket-button,
-[lang$=nm] .listing-page .content>.menuarea .spacer,
 [lang$=nm] .reddit-infobar {
     background: #282b30;
     border: 1px solid rgba(255, 255, 255, .1);
     color: #c7c7c7
 }
-[lang$=nm] .drop-chToices a.choice:hover {
+
+[lang$=nm] .drop-choices a.choice:hover {
     background: rgba(255, 255, 255, .06)
 }
-[lang$=nm] .new-comment .usertext-body,
-[lang$=nm] .usertext.border .usertext-body {
-    background-color: transparent
-}
-[lang$=nm] .thing.comment.new-comment:not(.RES-keyNav-activeThing) .entry {
-    border-color: #2d466f !important;
-}
-[lang$=nm] span#REScommentSubToggle {
-    background: rgba(0,0,0,0.25);
-}
-
-/* permalink menuarea
---------------------------------------------------------------------------------*/
-
-[lang$=nm] .comment-permalink-page .commentarea>.infobar {
-    border: 1px solid #212428;
-    border-top: 2px solid hsla(49, 83%, 79%, 0.6);
-}
-[lang$=nm] .comment-permalink-page .commentarea>.menuarea {
-    border: 1px solid #212428;
-    border-bottom: 0;
-}
-
-/* thing title
---------------------------------------------------------------------------------*/
-[lang$=nm] .link a.title {
-    color: rgba(255, 255, 255, .8)
-}
-[lang$=nm] .link a.title:visited,
-[lang$=nm] .thing .title:visited,
-[lang$=nm] .thing.visited .title {
-    color: #b0a2e6
-}
-
-/* stuff
---------------------------------------------------------------------------------*/
-[lang$=nm] .post-sharing,
-[lang$=nm] .subreddit-report-form {
-    border-color: rgba(255, 255, 255, .2)!important;
-    background: rgba(255, 255, 255, .02)!important
-}
-
-
-/********************************************************************************
-* HEADER
-*********************************************************************************/
-[lang$=nm] #sr-header-area {
-    background: #282b30!important;
-    border-bottom: 1px solid #282b30
-}
-[lang$=nm] .message-count {
-    background-color: #aaa333
-}
-[lang$=nm] #sr-header-area .width-clip .dropdown.srdrop .selected.title,
-[lang$=nm] #sr-header-area a,
-[lang$=nm] #header-bottom-right a,
-[lang$=nm] .res #userbarToggle {
-    color: #aaa
-}
-
-/* header bars */
-[lang$=nm] #header:before {
-    background: #282b30;
-    border-bottom: 0
-}
-[lang$=nm] .side:before {
-    background: #2f3238
-}
-
-[lang$=nm] #header .tabmenu {
-    background: #282b30;
-    border-color: #212428
-}
-[lang$=nm] .side .md>blockquote:first-of-type>p>a {
-    color: #c9c9c9;
-}
-
-/*header bottom right*/
-[lang$=nm] #header-bottom-right .user > a,
-[lang$=nm] #header-bottom-right .user > .userkarma {
-    color: rgba(255,255,255,0.5)
-}
-[lang$=nm] #header-bottom-right .user>.userkarma a {
-    color: rgba(255,255,255,0.4);
-}
-[lang$=nm] #header-bottom-right .user>.userkarma a:hover {
-    color: rgba(255,255,255,0.6);
-}
-
-[lang$=nm] .beta-hint a:before {
-    color: rgba(255,255,255,0.4);
-    font-weight: normal;
-}
-[lang$=nm] #header-bottom-right .user + .separator {
-    color: rgba(255,255,255,0.25);
-}
-[lang$=nm] .res #RESAccountSwitcherIcon:before {
-    border-top-color: #666;
-}
-
-/********************************************************************************
-* ANNOUNCEMENT BAR
-*********************************************************************************/
-[lang$=nm] .side .md>blockquote:nth-of-type(2) {
-    background: rgba(255, 255, 255, .5);
-    color: rgba(0, 0, 0, .6)
-}
-[lang$=nm] .side .md>blockquote:nth-of-type(2) p {
-    color: rgba(0, 0, 0, .8)
-}
-[lang$=nm] .side .md>blockquote:nth-of-type(2):after {
-    background: rgba(255, 255, 255, .45);
-    box-shadow: inset 0 0 3px rgba(0, 0, 0, .6), inset 0 0 3px rgba(0, 0, 0, .35)
-}
-
-[lang$=nm] .side .md>blockquote:first-of-type>p>a strong {
-    color: white;
-}
-
-/* sidebar subreddit description
---------------------------------------------------------------------------------*/
-[lang$=nm] .side .md>p:first-of-type {
-    background: rgba(255,255,255,0.04);
-}
-
-/* sidebar common button
---------------------------------------------------------------------------------*/
-
-[lang$=nm] .side .md a[href$="#flair"],
-[lang$=nm] .side .md>h2+ul li a,
-[lang$=nm] .sidecontentbox a.helplink,
-[lang$=nm] .side .md h6+blockquote h4 a {
-    box-shadow: 0 0 1px rgba(0,0,0,0.8);
-    text-shadow: none;
-    background: rgba(255,255,255,.06);
-    border-color: rgba(255,255,255,.15);
-    border-radius: 2px;
-}
-
-[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) {
-    background: rgba(255,255,255,0.04);
-}
-[lang$=nm] .sidecontentbox .helplink~.content li:before {
-    opacity: 0.5;
-}
-
-/* toggles and subscription stuff
---------------------------------------------------------------------------------*/
-[lang$=nm] .titlebox .subscribers {
-    color: #aaa
-}
-[lang$=nm] .titlebox .users-online,
-[lang$=nm] .toggle.fancy-toggle-button .option.active,
-[lang$=nm].res .res-fancy-toggle-button {
-    background: rgba(0, 0, 0, .4);
-    color: #aaa
-}
-[lang$=nm] .titlebox form.toggle.flairtoggle,
-[lang$=nm] .titlebox form.toggle.res-sr-style-toggle {
-    color: #aaa
-}
-
-/* sidebar rules
---------------------------------------------------------------------------------*/
-
-[lang$=nm] .side .md h3+ul+ol:after {
-    background: #4a4a4a
-}
-[lang$=nm] .side .md h3+ul,
-[lang$=nm] .side .md h3+ul+ol {
-    border-left-color: #4a4a4a
-}
-[lang$=nm] .side .md h3+ul+ol>li:before {
-    background: #282b30;
-    border-color: #666;
-    border-width: 2px;
-    font-weight: 700;
-    font-size: 13px;
-    width: 24px;
-    height: 24px;
-    line-height: 23px;
-    left: -35px;
-    top: 4px;
-    color: #aaa;
-}
-[lang$=nm] .side .md h3+ul+ol>li>a {
-    color: hsla(216,100%,75%,1);
-    font-weight: 700;
-}
-
-/* linkinfo
---------------------------------------------------------------------------------*/
-[lang$=nm] .linkinfo {
-    background: rgba(255,255,255,.03);
-    border: 0;
-}
-
-[lang$=nm] .linkinfo .shortlink input {
-    background: #3f4246;
-    color: #888;
-}
-
-/* sun/moon switch day mode
---------------------------------------------------------------------------------*/
-[lang$=nm] .side .md > h1 {
-    background: rgba(255,255,255,0.04);
-    border-color: rgba(255,255,255,0.08);
-}
-[lang$=nm] .side .md > h1 a {
-    color: rgba(255,255,255,0.65)
-}
-[lang$=nm] .side .md > h1 a:hover {
-    background: rgba(255,255,255,0.02);
-}
-[lang$=nm] .side .md > h1 a:last-child {
-    border-left-color: rgba(255,255,255,0.08)
-}
-/* author panel - set to dark version
---------------------------------------------------------------------------------*/
-[lang$=nm] .flairrow .author,
-[lang$=nm] .side .tagline .author,
-[lang$=nm] .thing .author {
-    background-position: 0 0;
-    color: #48f
-}
-
-
-
-/* sidebar search
---------------------------------------------------------------------------------*/
-
-[lang$=nm] #search input[type=text] {
-    background: rgba(255,255,255,.05);
-    color: #aaa!important;
-}
-
-/* sidebar md misc
---------------------------------------------------------------------------------*/
 [lang$=nm] .md,
-[lang$=nm] .side .md,
-[lang$=nm] .submit-page .roundfield>.title,
-[lang$=nm] .side .md>h2,
-[lang$=nm] .side .md>h3,
-[lang$=nm] .side .md>h4:first-of-type,
-[lang$=nm] .side .md>h4>a,
-[lang$=nm] .side .md>h5,
-[lang$=nm] .side .md>h6,
-[lang$=nm] .side .md>p:first-of-type,
-[lang$=nm] .side .md h6+blockquote p a,
-[lang$=nm] .side #searchexpando {
+[lang$=nm] .submit-page .roundfield>.title {
     color: #c7c7c7;
 }
-
-[lang$=nm] .side .md>h5+ul {
-    background: rgba(255,255,255,0.03);
-}
-
-/* community links */
-[lang$=nm] .side .md h6+blockquote p a {
-    background: rgba(0,0,0,0.2);
-    border: 1px solid #565656;
-    color: #c7c7c7;
-}
-
-[lang$=nm] .side .md h6+blockquote p,
-[lang$=nm] .side .md h6+blockquote h4 {
-    background: rgba(0,0,0,0.15);
-    border-top-color: rgba(255,255,255,0.2);
-}
-
-
-
-
-
-
-
-[lang$=nm] .thing .md hr {
-    background: rgba(255,255,255,0.1)
-}
-[lang$=nm] .md code,
-[lang$=nm] .md pre {
-    background: rgba(0, 0, 0, .08)
-}
-
-[lang$=nm] .comment .score.dislikes,
-[lang$=nm] .comment .score.likes,
-[lang$=nm] .comment .score.unvoted,
-[lang$=nm] .flair:before,
-[lang$=nm] .link .score.unvoted,
-[lang$=nm] .tagline time:not(.edited-timestamp) {
-    color: #aaa
-}
-
-[lang$=nm] .thumbnail,
-[lang$=nm] .thumbnail.default,
-[lang$=nm] .thumbnail.nsfw,
-[lang$=nm] .thumbnail.self,
-[lang$=nm] .linkflair-rotation .thumbnail,
-[lang$=nm] .linkflair-rotation .thumbnail.self,
-[lang$=nm] .thing .midcol+.entry a.title:before  {
-    background-image: url(%%thumbnails-nm%%) !important;
-    border: 1px solid #111
-}
-
-/* RES - never ending reddit */
-[lang$=nm].res #progressIndicator {
-    background: #282b30;
-    border: 1px solid #1e2024;
-}
-
-/********************************************************************************
-* LINK FLAIR
-*********************************************************************************/
-[lang$=nm] .thing.link {
-    border-left-color: hsla(218, 9%, 13%, 1) !important;
-}
-
-[lang$=nm] .thing.linkflair-image .linkflairlabel {
-    color: #a7565c !important
-}
-[lang$=nm] .thing.linkflair-media .linkflairlabel {
-    color: #856fa6 !important
-}
-[lang$=nm] .thing.linkflair-discussion .linkflairlabel {
-    color: #76c374 !important
-}
-[lang$=nm] .thing.linkflair-info .linkflairlabel {
-    color: #e6d76d !important
-}
-[lang$=nm] .thing.linkflair-art .linkflairlabel {
-    color: #e868c1 !important
-}
-[lang$=nm] .thing.linkflair-craft .linkflairlabel {
-    color: #e87b0c !important
-}
-[lang$=nm] .thing.linkflair-meme .linkflairlabel {
-    color: #4b6aa0 !important
-}
-[lang$=nm] .thing.linkflair-noob .linkflairlabel {
-    color: #3498db !important
-}
-[lang$=nm] .thing.linkflair-rule .linkflairlabel {
-    color: #fff !important
-}
-[lang$=nm] .thing.linkflair-rotation .linkflairlabel {
-    color: #76c374 !important
+[lang$=nm] .res .voteWeight {
+    background: transparent !important;
 }

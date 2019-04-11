@@ -26,6 +26,9 @@
     color: #999!important
 }
 
+#sr-header-area .sr-list {
+    margin-right: 50px;
+}
 
 /********************************************************************************
 * HEADER (DOESN'T INCLUDE USER AREA & TABMENU)
@@ -519,4 +522,73 @@ body #header .tabmenu li:first-of-type:last-of-type a {
 }
 .listing-page #header .tabmenu li.tb-metrics a[href^="j"]:after {
     content: 'metrics'
+}
+
+/********************************************************************************
+* HEADER NIGHTMODE
+*********************************************************************************/
+[lang$=nm] #sr-header-area {
+    background: #282b30!important;
+    border-bottom: 1px solid #282b30
+}
+[lang$=nm] .message-count {
+    background-color: #aaa333
+}
+[lang$=nm] #sr-header-area .width-clip .dropdown.srdrop .selected.title,
+[lang$=nm] #sr-header-area a,
+[lang$=nm] #header-bottom-right a,
+[lang$=nm] .res #userbarToggle {
+    color: #aaa
+}
+
+/* header bars */
+[lang$=nm] #header:before {
+    background: #282b30;
+    border-bottom: 0
+}
+[lang$=nm] .side:before {
+    background: #2f3238
+}
+
+[lang$=nm] #header .tabmenu {
+    background: #282b30;
+    border-color: #212428
+}
+[lang$=nm] .side .md>blockquote:first-of-type>p>a {
+    color: #c9c9c9;
+}
+
+/*header bottom right*/
+[lang$=nm] #header-bottom-right .user > a,
+[lang$=nm] #header-bottom-right .user > .userkarma {
+    color: rgba(255,255,255,0.5)
+}
+[lang$=nm] #header-bottom-right .user>.userkarma a {
+    color: rgba(255,255,255,0.4);
+}
+[lang$=nm] #header-bottom-right .user>.userkarma a:hover {
+    color: rgba(255,255,255,0.6);
+}
+
+[lang$=nm] .beta-hint a:before {
+    color: rgba(255,255,255,0.4);
+    font-weight: normal;
+}
+[lang$=nm] #header-bottom-right .user + .separator {
+    color: rgba(255,255,255,0.25);
+}
+[lang$=nm] .res #RESAccountSwitcherIcon:before {
+    border-top-color: #666;
+}
+
+/********************************************************************************
+* LOGGED OUT USERS
+*********************************************************************************/
+body:not(.loggedin) #header-bottom-right .user {
+    font-size: 12px;
+    display: block;
+}
+body:not(.loggedin) #header-bottom-right a {
+    color: #2068ee;
+    font-weight: bold;
 }

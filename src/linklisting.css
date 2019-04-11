@@ -1,38 +1,9 @@
-
-
 /********************************************************************************
 * LISTING PAGE MISC
 *********************************************************************************/
-.listing-page .content>.menuarea {
-    border: 0;
-    margin-bottom: 10px;
-    padding-left: 3px;
-    overflow: visible;
-}
-.listing-page .content>.menuarea .spacer {
-    padding: 0 10px 0 40px;
-    line-height: 32px;
-    border-radius: 16px;
-    display: inline-block;
-    position: relative;
-}
 
-.listing-page .content>.menuarea .spacer:before {
-    content: '';
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    background: url(%%pokesheet%%) -55px -37px;
-    top: 0;
-    left: 0;
-    transform: scale(0.8);
-    opacity: 0.5;
-}
-[lang$=nm] .listing-page .content>.menuarea .spacer:before {
-    opacity: 1;
-}
-
-/* ads */
+/* ads
+--------------------------------------------------------------------------------*/
 .organic-listing {
     background: 0 0!important;
     border: 0;
@@ -51,49 +22,197 @@
     border: 1px solid #e3e3e3
 }
 
-/* drop-choices */
-.drop-choices.lightdrop, [lang$=nm] .drop-choices {
-    border: 1px solid #bbb;
-    box-shadow: 0 2px 1.5px rgba(0,0,0,0.1);
-    border-radius: 3px;
-    margin-left: -5px;
-    border-top: 1.5px solid #2a66d6;
-    margin-top: 10px;
+/* drop chocies
+--------------------------------------------------------------------------------*/
+.dropdown.lightdrop .selected {
+    text-decoration: none;
+    cursor: pointer;
+    color: #2a66d6;
+    background-size: 14px;
+    padding-right: 15px;
 }
-.drop-choices.lightdrop:before {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 10px;
-    width: 0;
-    height: 0;
-    border-bottom: 7px solid #2a66d6;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
+.dropdown.lightdrop .selected:hover {
+    color: #48f
 }
-.drop-choices.lightdrop a.choice {
+
+.drop-choices {
+    border-radius: 5px;
+    border-color: #c9c9c9;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+[lang$=nm] .drop-choices {
+    border: 1px solid #111;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    border-color: #17191c !important;
+    background: #282b30;
+}
+
+.drop-choices a.choice {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #2068ee;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
 }
-.drop-choices.lightdrop a.choice:hover {
-    background: #2a66d6;
+.drop-choices > :last-child a.choice {
+    border-bottom: 0;
+}
+[lang$=nm] .drop-choices a.choice {
+    color: #ccc !important;
+    border-color: #17191c !important;
+}
+.drop-choices a.choice:hover {
     color: #fff;
+    background: #2068ee;
 }
 .drop-choices .RES-dropdown-button {
     float: none;
     margin-left: 15px;
 }
 .drop-choices.lightdrop a.choice:hover .RES-dropdown-button {
-    color: #fff;
+    color: inherit;
+}
+.drop-choices > :last-child as.choice {
+    border-bottom: 0;
 }
 
-[lang$=nm] .drop-choices {
-    border: 1px solid #111;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
-    border-top: 1.5px solid #2a66d6 !important;
+[lang$=nm] .dropdown.lightdrop .selected {
+    color: #a5c5ff;
 }
-[lang$=nm] .drop-choices.lightdrop a.choice {
-    color: #bababa;
+[lang$=nm] .dropdown.lightdrop .selected:hover {
+    color: #c1d7ff;
+}
+
+/* RES - never ending reddit
+--------------------------------------------------------------------------------*/
+[lang$=nm].res #progressIndicator, [lang$=nm] .nextprev {
+    background: #282b30;
+    border: 1px solid #1e2024;
+}
+[lang$=nm].res #progressIndicator h2, [lang$=nm].res #progressIndicator a {
+    color: #6697f1;
+}
+
+
+/* infobars
+--------------------------------------------------------------------------------*/
+.infobar.listingsignupbar {
+    border: 1px solid #cecdcd;
+    box-shadow: 0 1px 3px rgba(173,178,255,.8);
+    margin: 0 0 15px !important;
+}
+[lang$=nm] .infobar.listingsignupbar {
+    border: 1px solid hsla(218,9%,5%,1);
+    box-shadow: 0 1px 3px rgba(173,178,255,.15);
+}
+
+/* listing page control
+--------------------------------------------------------------------------------*/
+.listing-page .content>.menuarea {
+    border: 0;
+    margin-bottom: 10px;
+    overflow: visible;
+}
+
+.nav-buttons:not([hidden]) {
+    display: flex;
+    justify-content: center;
+}
+
+.nextprev {
+    font-size: 0;
+    padding: 7px 16px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+}
+
+.nextprev > * {
+    display: inline-block;
+}
+
+.listing-page .content>.menuarea .spacer,
+.nextprev .prev-button a,
+.nextprev .next-button a {
+    display: inline-block;
+    padding: 0 10px 0 40px;
+    line-height: 32px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    min-width: 170px;
+    color: #fff;
+    background: #2068ee;
+    border: 1px solid #125fed;
+    cursor: pointer;
+}
+
+.nextprev .prev-button a,
+.nextprev .next-button a {
+    min-width: initial;
+    padding: 0 25px 0 44px;
+    font-size: 14.5px;
+    text-transform: uppercase;
+}
+
+.nextprev .prev-button {
+    margin-right: 10px;
+}
+
+.listing-page .content>.menuarea .spacer:hover,
+.nextprev .prev-button a:hover,
+.nextprev .next-button a:hover {
+    background: #125fed;
+}
+
+.listing-page .content>.menuarea .spacer:before,
+.nextprev .prev-button a:before,
+.nextprev .next-button a:before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url(%%pokesheet%%)  0 -250px;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-position: 0 -250px;
+    transform: scale(.21);
+    transform-origin: 7px 7px;
+    opacity: .7;
+    opacity: 1;
+}
+
+.listing-page .content>.menuarea .spacer .selected {
+    color: #fff !important;
+    background-image: none;
+}
+
+.listing-page .content>.menuarea .spacer .dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 105px;
+    cursor: pointer;
+}
+.listing-page .content>.menuarea .spacer .selected:after {
+    display: none;
+}
+
+.listing-page .content>.menuarea .drop-choices {
+    top: 100% !important;
+    left: 30px !important;
+    right: 30px !important;
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
 }
