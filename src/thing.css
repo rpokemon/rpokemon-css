@@ -59,7 +59,7 @@
 .child,
 .res .RES-keyNav-activeElement .md-container,
 .res .link .RES-keyNav-activeElement,
-html body .entry.res-selected,
+html body .link.entry.res-selected,
 html body .entry.res-selected .md-container {
     background: 0 !important;
     border-color: transparent!important

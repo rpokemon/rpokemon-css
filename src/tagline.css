@@ -217,8 +217,8 @@
     display: none!important
 }
 
-/* link stickied tagline */
-.link .tagline .stickied-tagline {
+/* stickied tagline */
+.thing .tagline .stickied-tagline {
     background: #282;
     color: #fff;
     height: 13px;
@@ -234,9 +234,13 @@
     font-weight: 700;
 }
 
-[lang$=nm] .link .tagline .stickied-tagline {
+[lang$=nm] .thing .tagline .stickied-tagline {
     background: rgba(255,255,255,0.15);
     color: hsla(160, 92%, 60%, 1);
+}
+
+.comment .stickied-tagline:before {
+    display: none !important;
 }
 
 /* toolbox buttons

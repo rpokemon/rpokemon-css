@@ -136,21 +136,3 @@ html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[ro
 [lang$=nm] .usertext.border .usertext-body {
     background-color: transparent
 }
-
-/* permalinked comment
---------------------------------------------------------------------------------*/
-
-.comment-permalink-page .commentarea>.sitetable>.thing>.entry {
-    border-top: 1px solid #f6e69f
-}
-.comment-permalink-page .commentarea>.infobar {
-    margin: 0;
-    border: 0;
-    width: 100%;
-    box-sizing: border-box;
-    border-top: 2px solid #f6e69f;
-    padding: 10px;
-    background: #fff;
-    border-left: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3
-}

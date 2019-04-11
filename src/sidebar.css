@@ -694,6 +694,9 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
 .side .md h4+blockquote h5:nth-of-type(5) a, .side .md h4+blockquote h5:nth-of-type(6) a {background: #59f}
 .side .md h4+blockquote h6 a {background: #777;}
 
+.side .md h4+blockquote>h6 a {
+    border-radius: 3px !important;
+}
 
 .side .md h4+blockquote>* a:hover {
     opacity: 1;
