@@ -267,7 +267,11 @@
     text-align: center;
 }
 
-#header-bottom-right .gearIcon {background-position: -90px -162px;top: 0;transform: scale(0.9);transform-origin: center}
+#header-bottom-right .gearIcon {
+    background-position: -90px -162px;
+    transform: scale(0.9);
+    transform-origin: center;
+}
 #header-bottom-right .gearIcon:after {display: none}
 
 #header-bottom-right .user + .separator {
@@ -299,6 +303,7 @@
 #header-bottom-right > *:not(.user),
 #header-bottom-right .flat-list li > * {
     opacity: .75;
+    max-height: 28px;
 }
 #header-bottom-right > *:not(.user):hover,
 #header-bottom-right .flat-list li > *:hover {

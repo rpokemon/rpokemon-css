@@ -122,7 +122,7 @@ body:not(.loggedin) .side .md>h1~blockquote+hr {
     border-radius: 5px;
     box-sizing: border-box;
     text-align: center;
-    background: #59f;
+    background: hsl(219, 86%, 55%);
     border: 1px solid #59f;
     box-shadow: 0 1px 2px #CECECE;
     color: white!important;
@@ -131,6 +131,13 @@ body:not(.loggedin) .side .md>h1~blockquote+hr {
     text-transform: uppercase;
     line-height: 28px;
     border-radius: 14px;
+    transition: all 100ms ease;
+}
+
+html[lang] .side .md>h2+ul li a:hover,
+html[lang] .sidecontentbox a.helplink:hover,
+html[lang] .side .md h6+blockquote h4 a:hover {
+    background: #2068ee;
 }
 
 [lang$=nm] .side .md a[href$="#flair"],

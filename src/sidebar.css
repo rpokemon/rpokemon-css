@@ -1,5 +1,3 @@
-
-
 /********************************************************************************
 * SIDEBAR
 *********************************************************************************/
@@ -22,6 +20,10 @@
 }
 .side .spacer {
     margin: 0
+}
+
+.side .premium-banner-outer {
+    margin: 10px 0;
 }
 
 /* Search
@@ -84,7 +86,7 @@
 .titlebox form.leavecontributor-button:before,
 .titlebox form.toggle.leavecontributor-button,
 .titlebox .leavemoderator {
-    display: none
+    display: none !important;
 }
 
 /* toggles */
@@ -101,8 +103,8 @@
 
 /* Subscribers/Users online
 --------------------------------------------------------------------------------*/
-.titlebox .subscribers,
-.titlebox .users-online {
+.side .subscribers,
+.side .users-online {
     position: absolute;
     color: #333;
     top: 374px;
@@ -112,12 +114,12 @@
     padding-left: 65px;
     line-height: 20px;
 }
-.titlebox .users-online {
+.side .users-online {
     top: 394px;
     background: hsl(210,20%,93%);
 }
 
-.titlebox .users-online .number:before {
+.side .users-online .number:before {
     content: '';
     position: absolute;
     display: block;
@@ -128,14 +130,14 @@
     left: 0
 }
 
-.titlebox .number:after {
+.side .subscribers .number:after {
     content: " Pokémon Trainers"
 }
-.titlebox .users-online .number:after {
+.side .users-online .number:after {
     content: " Online Now"
 }
 
-[lang$=nm] .titlebox .subscribers {
+[lang$=nm] .side .subscribers {
     color: #aaa
 }
 
@@ -175,32 +177,6 @@
 .res .titlebox .multi-count {
     display: none;
 }
-
-
-/* SUBSCRIBE BUTTON DEPRECATED
-
-.fancy-toggle-button.subscribe-button .add.active:after {
-    content: "Subscribe?";
-    position: fixed;
-    top:36px;
-    border: 1px solid #59f;
-    left: 0px;
-    display: block;
-    width: 150px;
-    text-align: center;
-    color: #FFF;
-    text-shadow: 0 1px 0 #5787e1;
-    height: 30px;
-    line-height: 30px;
-    font-size: 14px;
-    background-color: #59f;
-    box-shadow: 0px 4px 2px rgba(0, 0, 0, .45);
-    z-index: 100;
-    border-radius: 0px 6px 6px 0px;
-    transition: 300ms ease-in-out;
-}
-*/
-
 .fancy-toggle-button:hover .add:after {
     width: 176px;
     background-color: #6af;
@@ -282,20 +258,6 @@ body:not(.loggedin) .side a[href*="#flair"] {
     margin: 0 0 0 10px;
 }
 
-/* RES stylesheet toggle */
-.titlebox form.toggle.res-sr-style-toggle {
-    text-transform: capitalize;
-    position: absolute;
-    top: 580px;
-    right: 7px;
-    width: 299px;
-    box-sizing: border-box;
-    margin-top: 0 !important;
-}
-.comments-page .titlebox form.toggle.res-sr-style-toggle {
-    top: 679px;
-}
-
 /* checkboxes */
 .flairtoggle input[type=checkbox],
 .side .md>h2+ul+hr,
@@ -328,28 +290,6 @@ body:not(.loggedin) .side a[href*="#flair"] {
     bottom: 4px;
     transform: rotate(-45deg);
     transform-origin: bottom left;
-}
-
-/* positioning stuff */
-.titlebox form.toggle.res-sr-style-toggle ~ form.toggle.sr_style_toggle,
-.titlebox form.toggle.res-sr-style-toggle ~ form.toggle.flairtoggle {
-    margin-top: 32px;
-}
-.titlebox form.toggle.res-sr-style-toggle ~ form.toggle.sr_style_toggle ~ form.toggle.flairtoggle {
-    margin-top: 10px;
-}
-
-/* Users online, toggles nightmode
---------------------------------------------------------------------------------*/
-[lang$=nm] .titlebox .users-online,
-[lang$=nm] .toggle.fancy-toggle-button .option.active,
-[lang$=nm].res .res-fancy-toggle-button {
-    background: rgba(0, 0, 0, .4);
-    color: #aaa
-}
-[lang$=nm] .titlebox form.toggle.flairtoggle,
-[lang$=nm] .titlebox form.toggle.res-sr-style-toggle {
-    color: #aaa
 }
 
 /* Submit links
@@ -625,84 +565,17 @@ html:not([lang$=nm]) .side .md > h1 a:first-child {
     color: #888;
 }
 
-/* submission filters
---------------------------------------------------------------------------------*/
-.side .md > blockquote {
-    border-left: 0;
-    padding: 0 5px
-}
+/********************************************************************************
+* NIGHTMODE MISC
+*********************************************************************************/
 
-/*title*/
-.side .md > h4 > a {
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    width: 220px;
+[lang$=nm] .titlebox .users-online,
+[lang$=nm] .toggle.fancy-toggle-button .option.active,
+[lang$=nm].res .res-fancy-toggle-button {
+    background: rgba(0, 0, 0, .4);
+    color: #aaa
 }
-
-/* blockquote (filters container) */
-.side .md > h4 + blockquote {
-    background: hsla(210, 20%, 93%, 0.8);
-    margin: 0 -7px;
-    padding: 10px 10px 20px;
+[lang$=nm] .titlebox form.toggle.flairtoggle,
+[lang$=nm] .titlebox form.toggle.res-sr-style-toggle {
+    color: #aaa
 }
-.side .md h4+blockquote:after {
-    content: '';
-    display: table;
-    clear: left
-}
-
-/* filter links */
-.side .md h4+blockquote > * {
-    width: 50%;
-    height: 30px;
-    display: block;
-    float: left;
-    margin: 0 0 10px;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: normal;
-    font-family: Verdana,Geneva,sans-serif;
-}
-.side .md h4+blockquote > h6 {
-    width: 100%
-}
-
-.side .md h4+blockquote > * a {
-    display: block;
-    line-height: 30px;
-    height: 30px;
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 2px;
-    text-decoration: none !important;
-    opacity: 0.9;
-}
-.side .md h4+blockquote > *:nth-child(odd) a { border-radius: 3px 0 0 3px }
-.side .md h4+blockquote > *:nth-child(even) a { border-radius: 0 3px 3px 0 }
-
-.side .md h4+blockquote h1 a {background: #a7565c}
-.side .md h4+blockquote h2 a {background: #856fa6}
-.side .md h4+blockquote h3 a {background: #76c374}
-.side .md h4+blockquote h4 a {background: #dfcb37}
-.side .md h4+blockquote h5:nth-of-type(1) a, .side .md h4+blockquote h5:nth-of-type(2) a {background: #e868c1}
-.side .md h4+blockquote h5:nth-of-type(3) a, .side .md h4+blockquote h5:nth-of-type(4) a {background: #e87b0c}
-.side .md h4+blockquote h5:nth-of-type(5) a, .side .md h4+blockquote h5:nth-of-type(6) a {background: #59f}
-.side .md h4+blockquote h6 a {background: #777;}
-
-.side .md h4+blockquote>h6 a {
-    border-radius: 3px !important;
-}
-
-.side .md h4+blockquote>* a:hover {
-    opacity: 1;
-}
-
-
-.side .md h4+blockquote * a:last-child { display: none; }
-html[lang$="nm"] .side .md h4+blockquote * a:first-child { display: none; }
-html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
