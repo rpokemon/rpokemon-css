@@ -64,7 +64,7 @@ function packOutput(files) {
     return styles;
 }
 
-function minify(styles, build_ver) {
+function minify(styles, build_ver, reject) {
     var out = {
         stats: { originalSize: 0, minifiedSize: 0 },
         styles: '',
@@ -75,9 +75,9 @@ function minify(styles, build_ver) {
     }).minify(styles)
 
     if (res.errors.length)
-        reject(output.errors);
+        reject(res.errors);
     else if (res.warnings.length)
-        reject(output.warnings);
+        reject(res.warnings);
 
     out.styles = '/*!\n' +
         ' * CSS theme for /r/Pokemon; build #' + (build_ver) + '\n' +
@@ -106,7 +106,7 @@ function get_build_ver() {
         };
 
         let uminified = packOutput(CSS_FILE_ORDER.map(f => names.src_dir+f));
-        let res = minify(uminified, build_ver);
+        let res = minify(uminified, build_ver, reject);
 
         console.log('Original size: ' + res.stats.originalSize + ' bytes');
         console.log('Minified size: ' + res.stats.minifiedSize + ' bytes');
