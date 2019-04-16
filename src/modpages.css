@@ -3,7 +3,7 @@
 * FIX STUFF - MOD TOOLS / MOD PAGES & THINGS
 *********************************************************************************/
 .mod-toolbox .menuarea.modtools {
-    margin: 0 0 0 10px!important;
+    margin: 0 0 10px 0!important;
 }
 .thing.comment>input[type=checkbox] {
     position: absolute;
@@ -12,30 +12,8 @@
     margin-top: -3px!important
 }
 
-/* modmail page
---------------------------------------------------------------------------------*/
-.messages-page .tagline, .messages-page .tagline *, .messages-page .tagline *:before, .messages-page .tagline *:after {
-    position: static;
-    background: transparent;
-    margin: 0;
-    height: auto !important;
-    padding: 0 1px !important;
-    display: inline-block !important;
-    width: auto;
-}
-
-body.messages-page .sitetable .thing .tagline .author.moderator {
-    color: #228822 !important;
-}
-body.messages-page .sitetable .thing .tagline .author.admin {
-    color: #ff0011 !important;
-}
-
 /* queue pages
 --------------------------------------------------------------------------------*/
-body:not(.listing-page):not(.comments-page):not(.comment-permalink-page) .thing {
-    margin-bottom: 10px
-}
 body:not(.comments-page):not(.comment-permalink-page) .comment {
     border: 1px solid #cecdcd;
     background: #f7f7f7;
@@ -44,21 +22,11 @@ body:not(.comments-page):not(.comment-permalink-page) .comment {
     box-shadow: 0 2px 3px rgba(0, 0, 0, .03)
 }
 body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    background: #fff;
-    border: 1px solid #f3f3f3;
-    border-top: 0;
-    padding: 5px 0 5px 20px
+    padding: 2px 0 7px 20px
 }
 body:not(.comments-page):not(.comment-permalink-page) .thing.comment>input[type=checkbox] {
     position: static;
     margin: 5px -20px 0 5px!important
-}
-body:not(.comments-page):not(.comment-permalink-page) .comment .midcol {
-    top: 5px
 }
 [lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment {
     background: rgba(42, 45, 50, .4);
@@ -71,12 +39,10 @@ body:not(.comments-page):not(.comment-permalink-page) .comment .midcol {
 
 /* flair page
 --------------------------------------------------------------------------------*/
-.flairgrant .flairrow {
-    position: relative
-}
 .flaircell.tagline {
-    position: absolute;
-    display: block !important;
+    font-size: 0;
+    float: left;
+    position: relative;
 }
 
 .flaircell .RESUserTag, .flaircell .flairselectbtn, .flairgrant .header {
@@ -85,6 +51,7 @@ body:not(.comments-page):not(.comment-permalink-page) .comment .midcol {
 
 .flaircell.tagline ~ form {
     margin-left: 300px;
+    overflow: hidden;
 }
 .flaircell.tagline .flair {
     top: 0;

@@ -29,7 +29,7 @@
 }
 
 [lang$=nm] .side .md > h5 strong {
-    color: hsla(245, 25%, 71%, 1);
+    color: hsl(245, 25%, 71%);
     border-bottom-color: hsla(210,20%,80%,0.25);
 }
 
@@ -98,6 +98,11 @@
 }
 .side .md h3+ul a:hover {
     background: #65609F;
+    color: #fff;
+}
+
+[lang$=nm] .side .md h3+ul a {
+    background: #4f47ac;
     color: #fff;
 }
 
@@ -220,7 +225,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-weight: normal;
-    font-family: Verdana,Geneva,sans-serif;
 }
 .side .md h4+blockquote > h6 {
     width: 100%
@@ -310,9 +314,10 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 [lang$=nm] .side .md > table tr:not(:last-child) {
     border-bottom-color: #444;
 }
-[lang$=nm] .side .md table td,
-[lang$=nm] .side .md table td a {
-    color: #bababa
+
+[lang$=nm] .side .md > table td,
+[lang$=nm] .side .md > table td a {
+    color: rgba(240,252,255,.7);
 }
 
 /* sidebar community links
@@ -373,7 +378,7 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 [lang$=nm] .side .md>h5,
 [lang$=nm] .side .md>p:first-of-type,
 [lang$=nm] .side #searchexpando {
-    color: #c7c7c7;
+    color: rgba(240,252,255,.6);
 }
 
 [lang$=nm] .side .md>h2,
@@ -384,8 +389,4 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 [lang$=nm] .side .md>h4+blockquote,
 [lang$=nm] .side .md>table {
     background: rgba(255,255,255,0.03);
-}
-
-[lang$=nm] .side .md>table td, [lang$=nm] .side .md>table td a {
-    color: #ddd;
 }

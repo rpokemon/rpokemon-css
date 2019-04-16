@@ -93,7 +93,7 @@
 
 .linkflair-sm-megathread .md h3:nth-of-type(1),
 .linkflair-sm-megathread .md h3:nth-of-type(1) + p {
-    background: hsla(0,64%,96%,1);
+    background: hsl(0, 64%, 96%);
 }
 .linkflair-sm-megathread .md h3:nth-of-type(2) + p + p + p {
     margin-top: 5px;

@@ -117,7 +117,8 @@ body:not(.loggedin) .side .md>h1~blockquote+hr {
 --------------------------------------------------------------------------------*/
 .side .md>h2+ul li a,
 .sidecontentbox a.helplink,
-.side .md h6+blockquote h4 a {
+.side .md h6+blockquote h4 a,
+.submit-page button[name=submit] {
     display: block;
     border-radius: 5px;
     box-sizing: border-box;
@@ -132,18 +133,21 @@ body:not(.loggedin) .side .md>h1~blockquote+hr {
     line-height: 28px;
     border-radius: 14px;
     transition: all 100ms ease;
+    width: 100%;
 }
 
 html[lang] .side .md>h2+ul li a:hover,
 html[lang] .sidecontentbox a.helplink:hover,
-html[lang] .side .md h6+blockquote h4 a:hover {
+html[lang] .side .md h6+blockquote h4 a:hover,
+html[lang] .submit-page button[name=submit]:hover {
     background: #2068ee;
 }
 
 [lang$=nm] .side .md a[href$="#flair"],
 [lang$=nm] .side .md>h2+ul li a,
 [lang$=nm] .sidecontentbox a.helplink,
-[lang$=nm] .side .md h6+blockquote h4 a {
+[lang$=nm] .side .md h6+blockquote h4 a,
+[lang$=nm] .submit-page button[name=submit] {
     box-shadow: 0 0 1px rgba(0,0,0,0.8);
     background: rgba(255,255,255,0.1);
     border-color: rgba(255,255,255,.06);

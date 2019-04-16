@@ -1,7 +1,7 @@
 
 /* link flairs / linkflairs / flair filters
 --------------------------------------------------------------------------------*/
-.thing .linkflairlabel {
+.link .linkflairlabel {
     display: block;
     position: absolute!important;
     text-align: center;
@@ -16,107 +16,115 @@
     font-weight: 700;
     font-size: 10px;
     border: 0;
-    background: 0 !important;
-    
     -webkit-transform: rotate(-90deg) translate(-100%,-100%);
     transform: rotate(-90deg) translate(-100%,-100%);
-    -webkit-transform-origin: left top;
-    transform-origin: left top;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
     top: 0;
     left: 0;
-    margin: -1px 0 0;
+    margin: -1px 0px -1px 1px;
+    border-radius: 3px 3px 0 0;
 }
 
-.listing-page .thing.link .linkflairlabel {
-    width: 89px;
+/* specific width for listing page */
+.listing-page .link .linkflairlabel {
+    min-width: 85px !important;
     padding: 0;
 }
 
-/* reset rotation for flair selector */
-html .flairselector .linkflairlabel, .thing.reddit-link .linkflairlabel {
+/* reset rotation */
+html .flairselector .linkflairlabel, .reddit-link .linkflairlabel,
+.comments-page .link.linkflair-rule .linkflairlabel {
     -webkit-transform: rotate(0);
     transform: rotate(0)
 }
 
-/* increase label size for longer linkflairs */
-.linkflair.linkflair-rotation .title .linkflairlabel {
-    font-size: 9px;
-    overflow: visible;
-}
-
-.link.linkflair.linkflair-rotation {
-    padding-bottom: 10px;
-}
-
-/* linkflair - fill*/
-.link.linkflair {
-    border-left: 20px solid #777 !important;
-    margin-left: -20px;
+/* linkflair - fill */
+.link.linkflair:before {
+    content: "";
+    display: block;
+    width: 20px;
+    background: #777;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    margin: -1px -1px -1px 0;
+    position: absolute;
+    border-radius: 3px 0 0 3px;
 }
 
 /* flair colors
 --------------------------------------------------------------------------------*/
-.thing.link.linkflair-image {
-    border-left-color: #a7565c !important
+.link.linkflair-image:before,
+.linkflair-image .title > .linkflairlabel,
+.linkflair-image > .linkflairlabel {
+    background: #a7565c ;
+    color: #a7565c;
 }
-.thing.link.linkflair-media {
-    border-left-color: #856fa6 !important
+.link.linkflair-media:before,
+.linkflair-media .title > .linkflairlabel,
+.linkflair-media > .linkflairlabel {
+    background: #856fa6 ;
+    color: #856fa6;
 }
-.thing.link.linkflair-discussion {
-    border-left-color: #76c374 !important
+.link.linkflair-discussion:before,
+.linkflair-discussion .title > .linkflairlabel,
+.linkflair-discussion > .linkflairlabel {
+    background: #76c374;
+    color: #76c374;
 }
-.thing.link.linkflair-info {
-    border-left-color: #e6d76d !important
+.link.linkflair-info:before,
+.linkflair-info .title > .linkflairlabel,
+.linkflair-info > .linkflairlabel {
+    background: #e6d76d;
+    color: #e6d76d;
 }
-.thing.link.linkflair-art {
-    border-left-color: #e868c1 !important
+.link.linkflair-art:before,
+.linkflair-art .title > .linkflairlabel,
+.linkflair-art > .linkflairlabel {
+    background: #e868c1;
+    color: #e868c1;
 }
-.thing.link.linkflair-craft {
-    border-left-color: #e87b0c !important
+.link.linkflair-craft:before,
+.linkflair-craft .title > .linkflairlabel,
+.linkflair-craft > .linkflairlabel {
+    background: #e87b0c;
+    color: #e87b0c;
 }
-.thing.link.linkflair-meme {
-    border-left-color: #4b6aa0 !important
+.link.linkflair-meme:before,
+.linkflair-meme .title > .linkflairlabel,
+.linkflair-meme > .linkflairlabel {
+    background: #4b6aa0;
+    color: #4b6aa0;
 }
-.thing.link.linkflair-noob {
-    border-left-color: #3498db !important
+.link.linkflair-noob:before,
+.linkflair-noob .title > .linkflairlabel,
+.linkflair-noob > .linkflairlabel {
+    background: #3498db;
+    color: #3498db;
 }
-.thing.link.linkflair-rule {
-    border-left-color: #e74c3c !important
+.link.linkflair-rule:before,
+.linkflair-rule .title > .linkflairlabel,
+.linkflair-rule > .linkflairlabel {
+    background: #e74c3c;
+    color: #fff;
 }
-.thing.link.linkflair-rotation {
-    border-left-color: #76c374 !important
+.link.linkflair-rotation:before,
+.linkflair-rotation .title > .linkflairlabel,
+.linkflair-rotation > .linkflairlabel {
+    background: #76c374;
+    color: #76c374;
 }
 
+/* flair colors - specific mode
+--------------------------------------------------------------------------------*/
+[lang$=nm] .link.linkflair:before,
+[lang$=nm] .link.linkflair .linkflairlabel {
+    background: hsl(218, 9%, 13%) !important;
+}
 
-.flairselector .linkflair-image {
-    background: #a7565c
-}
-.flairselector .linkflair-media {
-    background: #856fa6
-}
-.flairselector .linkflair-discussion {
-    background: #76c374
-}
-.flairselector .linkflair-info {
-    background: #e6d76d
-}
-.flairselector .linkflair-art {
-    background: #e868c1
-}
-.flairselector .linkflair-craft {
-    background: #e87b0c
-}
-.flairselector .linkflair-meme {
-    background: #4b6aa0
-}
-.flairselector .linkflair-noob {
-    background: #3498db
-}
-.flairselector .linkflair-rule {
-    background: #e74c3c
-}
-.flairselector .linkflair-rotation {
-    background: #76c374
+html:not([lang$=nm]) .linkflair .linkflairlabel {
+    color: #fff !important;
 }
 
 /* filters
@@ -142,125 +150,62 @@ html:lang(nc) .listing-page .link.linkflair-craft {
 /* rule removal linkflair on comments page
 --------------------------------------------------------------------------------*/
 
-.comments-page .thing.link.linkflair-rule .title .linkflairlabel {
-    -webkit-transform: rotate(0)!important;
-    transform: rotate(0)!important;
+.comments-page .link.linkflair-rule .linkflairlabel {
     background: #e74c3c!important;
     top: auto;
     right: 0;
-    width: 100%;
     max-width: none;
     bottom: 100%;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    padding: 5px;
+    margin: 0 0 10px;
+    border-radius: 3px;
+    line-height: 30px;
     font-size: 14px;
 }
-.comments-page .thing.link.linkflair-rule .title .linkflairlabel:before {
+
+.comments-page .link.linkflair-rule {
+    margin-top: 45px;
+}
+
+.comments-page .linkflair-rule .linkflairlabel:before {
     content: 'REMOVED: ';
     color: rgba(255,255,255,0.7);
 }
 
-.comments-page .thing.link.linkflair-rule {
-    border-left: 0 !important;
-    margin-left: 0;
-    margin-top: 40px;
-}
-
-
 /* flair selector
 --------------------------------------------------------------------------------*/
-.flairselector {
-    width: 190px!important;
-    box-shadow: 1px 1px 10px #000;
-    border: 1px solid #353535!important
-}
-.flairselector .linkflairlabel {
-    position: absolute!important;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-radius: 3px;
-    margin: auto
-}
-
-.flairselector,
 .flairselector ul {
-    min-width: 178px;
-    max-width: none;
-}
-.flairselector ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    width: 50% !important;
 }
 .flairselector ul li {
-    width: 50%;
-    padding: 0 !important;
+    width: 100% !important;
+    padding: 3px !important;
+    box-sizing: border-box;
+    border-radius: 3px;
 }
-
-.flairselector .linkflair {
-    position: relative;
-    min-height: 22px;
-    margin: 2px
+.flairselector .linkflairlabel {
+    position: static !important;
+    width: 100%;
+    max-width: none;
+    border-radius: 3px;
+    margin: 0;
+    line-height: 25px;
+    padding: 0;
 }
-.flairselector input[type=text] {
-    width: 125px;
-    border: 1px solid #cecdcd;
-    padding: 5px
-}
-
-.flairoptionpane .flairsample-left {
-    width: 89px!important;
-}
-.flairoptionpane ul {
-    width: 178px;
-    float: none!important;
-}
-
 .flairselector .linkflair .title {
     display: none;
 }
-html .thing.link .flairselector .linkflair .linkflairlabel,
-[lang$=nm] .thing.link .flairselector .linkflair .linkflairlabel {
-    color: white!important;
+
+.flairselector h2 {
+    background: #2068ee;
+    color: #fff;
+    margin-top: -5px;
+    border-radius: 0 0 3px 3px;
 }
 
-/* nightmode
---------------------------------------------------------------------------------*/
-[lang$=nm] .thing.link {
-    border-left-color: hsla(218, 9%, 13%, 1) !important;
+.flairselector form {
+    border-top: 1px solid #ddd
 }
 
-[lang$=nm] .thing.linkflair-image .linkflairlabel {
-    color: #a7565c
-}
-[lang$=nm] .thing.linkflair-media .linkflairlabel {
-    color: #856fa6
-}
-[lang$=nm] .thing.linkflair-discussion .linkflairlabel {
-    color: #76c374
-}
-[lang$=nm] .thing.linkflair-info .linkflairlabel {
-    color: #e6d76d
-}
-[lang$=nm] .thing.linkflair-art .linkflairlabel {
-    color: #e868c1
-}
-[lang$=nm] .thing.linkflair-craft .linkflairlabel {
-    color: #e87b0c
-}
-[lang$=nm] .thing.linkflair-meme .linkflairlabel {
-    color: #4b6aa0
-}
-[lang$=nm] .thing.linkflair-noob .linkflairlabel {
-    color: #3498db
-}
-[lang$=nm] .thing.linkflair-rule .linkflairlabel {
-    color: #fff
-}
-[lang$=nm] .thing.linkflair-rotation .linkflairlabel {
-    color: #76c374
+[lang$=nm] .flairselector form {
+    border-top: 1px solid rgba(240,252,255,.3);
 }

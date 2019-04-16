@@ -76,6 +76,10 @@
     display: none
 }
 
+[lang$=nm] .res .userTagLink.hasTag {
+    border-color: #494e5a !important;
+    background: #40454f;
+}
 [lang$=nm] .RESUserTagImage:after {
     background-image: none!important
 }
@@ -217,9 +221,13 @@
     display: none!important
 }
 
+[lang$=nm] .res .voteWeight {
+    background: transparent !important;
+}
+
 /* stickied tagline */
 .thing .tagline .stickied-tagline {
-    background: #282;
+    background: #20a679;
     color: #fff;
     height: 13px;
     line-height: 13px;
@@ -236,7 +244,7 @@
 
 [lang$=nm] .thing .tagline .stickied-tagline {
     background: rgba(255,255,255,0.15);
-    color: hsla(160, 92%, 60%, 1);
+    color: hsl(160, 92%, 60%);
 }
 
 .comment .stickied-tagline:before {

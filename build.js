@@ -5,16 +5,14 @@ const CSS_FILE_ORDER = [
         'submit.css',         // submit form
 
         'linklisting.css',    // styles for the link listing page
-        // styles for thing elements (links and comments alike)
-        'thing.css',
+        'thing.css',          // styles for thing elements (links and comments alike)
         'tagline.css',        // thing tagline
         'linkflair.css',      // link flair, link flair filters, and link flair selector
         'link-pinnable.css',  // pinnable link for video posts
 
         'commentfix.css',     // styles for specifically comments
-        // styles for the comment page menus, usertext editor, etc.
-        'commentpage.css',
-        'usertextmd.css',     // styles for the markdown
+        'commentpage.css',    // styles for the comment page menus, usertext editor, etc.
+        'usertext.css',       // styles for usertext editor, area, and markdown
 
         'sidecommon.css',     // sidebar common header and checkboxes
         'sidebar.css',        // sidebar
@@ -23,8 +21,7 @@ const CSS_FILE_ORDER = [
 
         'announce.css',       // announcements modules and bar
 
-        // search page (does not include search input in sidebar, which is in sidebar.css)
-        'search.css',
+        'search.css',         // search page (does not include search input in sidebar)
         'footer.css',         // subreddit footer
         'modpages.css',       // any moderator pages that required additional CSS
 
@@ -59,11 +56,11 @@ const writeOutputFile = (filepath, contents, success, failure) => {
 
 function packOutput(files) {
     let styles = '';
-        
+
     files.forEach((f) => {
         styles += fs.readFileSync(f, "utf8");
     });
-    
+
     return styles;
 }
 
@@ -72,7 +69,7 @@ function minify(styles, build_ver) {
         stats: { originalSize: 0, minifiedSize: 0 },
         styles: '',
     };
-    
+
     let res = new CleanCSS({
         level: 2,
     }).minify(styles)

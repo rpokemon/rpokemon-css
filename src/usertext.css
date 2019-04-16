@@ -1,0 +1,309 @@
+/********************************************************************************
+* USERTEXT EDITOR
+*********************************************************************************/
+
+/* usertext edit and actual textarea
+--------------------------------------------------------------------------------*/
+
+.usertext .usertext-edit {
+    margin-top: 0;
+    width: 100% !important;
+    max-width: 520px;
+}
+
+.usertext-edit textarea {
+    min-width: 520px;
+    border: 1px solid #c8ccd0;
+    padding: 4px;
+}
+
+.commentarea .child > .usertext {
+    border-radius: 3px;
+    margin: 3px 0 10px 19px;
+}
+
+/* usertext help buttons (content policy, formatting help, big editor)
+--------------------------------------------------------------------------------*/
+.usertext .bottom-area {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.usertext .bottom-area > *:not(.error):not(.usertext-buttons) {
+    margin: 0;
+    line-height: 22px;
+    padding: 0 8px;
+    border: 0;
+    background: 0;
+}
+
+.usertext .bottom-area > *:not(.error),
+.usertext .bottom-area a {
+    color: rgba(0,0,0,0.6) !important;
+}
+
+.usertext .bottom-area > *:not(.error):not(.usertext-buttons):hover {
+    background: #f5f5f5;
+}
+
+
+[lang$=nm] .panestack-title>:not(.title),
+[lang$=nm] .commentarea .menuarea form.toggle a,
+[lang$=nm] .usertext .bottom-area > *:not(.error),
+[lang$=nm] .usertext .bottom-area a {
+    color: rgba(240, 252, 255, 0.35) !important;
+}
+
+[lang$=nm] .panestack-title>:not(.title):hover,
+[lang$=nm] .commentarea .menuarea form.toggle a:hover,
+[lang$=nm] .usertext .bottom-area > *:not(.error):not(.usertext-buttons):hover {
+    background: rgba(255,255,255,0.05) !important;
+}
+
+/* usertext edit - buttons
+--------------------------------------------------------------------------------*/
+
+.usertext .usertext-buttons {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* both buttons */
+.usertext button.cancel,
+.usertext button[type=submit],
+.flairselector button[type=submit] {
+    display: inline-block;
+    margin: 0 5px 1px 0;
+    padding: 0 10px;
+    background-color: #48f;
+    border: 1px solid #2a66d6;
+    border-radius: 3px;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: capitalize;
+    line-height: 29px;
+    outline: 0!important;
+    box-shadow: inset 0 1px 0 #669bff;
+    min-width: 77px;
+    position: relative;
+}
+
+.usertext button.cancel:active,
+.usertext button[type=submit]:active {
+    top: 1px
+}
+
+/* submit button */
+.usertext input[type=submit]:hover {
+    background-color: #5d99ff
+}
+.usertext input[type=submit]:active {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .2)
+}
+
+/* cancel button */
+.usertext button.cancel {
+    background-color: rgba(0,0,0,0.3);
+    border-color: rgba(0,0,0,0.15);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+}
+[lang$=nm] .usertext button.cancel {
+    background-color: rgba(255, 255, 255, .14);
+    border-color: rgba(255, 255, 255, .07);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15)
+}
+
+/* flairselector button */
+.flairselector button[type=submit] {
+    line-height: 22px;
+    margin: 0 5px;
+}
+
+/* Mod Macros Select
+--------------------------------------------------------------------------------*/
+.mod-toolbox select.tb-top-macro-select.tb-action-button,
+.mod-toolbox .content select.tb-action-button {
+    padding: 0 12px 0 12px !important;
+    background-color: #fff !important;
+    border: 1px solid #d4d4d4 !important;
+    border-radius: 2px !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05) !important;
+    color: #737373 !important;
+    text-transform: capitalize !important;
+    font-weight: bold !important;
+    line-height: 30px;
+    height: 31px !important;
+    font-size: 12px !important;
+    cursor: default;
+    transition: all 0.15s ease !important;
+    max-height: none !important;
+}
+
+.mod-toolbox select.tb-top-macro-select.tb-action-button:hover,
+.mod-toolbox .content select.tb-action-button:hover {
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.27) !important;
+    color: #4D5763 !important;
+    cursor: pointer !important;
+}
+
+[lang$=nm] .mod-toolbox select.tb-top-macro-select.tb-action-button,
+[lang$=nm] .mod-toolbox .content select.tb-action-button {
+    background-color: #373b43 !important;
+    border-color: #494e5a !important;
+    color: inherit !important;
+}
+
+/* RES EDITOR
+--------------------------------------------------------------------------------*/
+
+/* wrapper */
+.res .markdownEditor-wrapper {
+    padding-top: 24px; /* padding top for "speaking as" and "macros" which are both absolute */
+    position: relative;
+    width: auto;
+}
+
+/* edit button bar */
+.res .markdownEditor {
+    padding: 5px 5px 2px;
+    background: white;
+    border: 1px solid #c8ccd0;
+    border-bottom: 0;
+}
+
+/* edit button - no borders */
+.res .markdownEditor .edit-btn {
+    border: 0;
+}
+
+/* char count */
+.res .RESCharCounter {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* speaking as */
+.res .commentingAs {
+    position: absolute;
+    top: 0;
+    font-weight: normal;
+    font-size: 12px;
+    padding-left: 5px;
+    margin: 0;
+    line-height: 18px;
+}
+.res .commentingAsUser a {
+    color: #2a66d6
+}
+
+/* macro thing */
+.RESMacroWrappingSpan {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 !important;
+    line-height: 18px;
+}
+
+.res .RESMacroDropdownTitle {
+    position: relative;
+    background-size: 15px;
+    padding-right: 15px;
+}
+
+/* md edit area */
+.res .markdownEditor-wrapper + .md { margin-top: 0; padding: 0; }
+.res .markdownEditor-wrapper + .md textarea { padding-top: 3px; }
+
+/* live preview */
+.res .RESDialogSmall.livePreview { margin-top: 10px; }
+
+/* big editor stuff */
+.res #BigText { box-sizing: border-box; }
+.res #BigEditor .markdownEditor-wrapper { margin-top: 20px; }
+.res.RESScrollLock #NREFloat { right: 80px; top: 23px; }
+
+/* gold form */
+.res .gold-form .markdownEditor-wrapper{display:none}
+
+[lang$=nm] .res .markdownEditor {
+    background: #2e3138;
+    border-color: rgba(255,255,255,.15);
+}
+
+/********************************************************************************
+* USERTEXT MD
+*********************************************************************************/
+.link .usertext-body .md {
+    border: 0
+}
+.thing .md {
+    background: 0 0!important;
+    position: relative;
+}
+.md .expando-button {
+    position: relative;
+    margin-bottom: 3px
+}
+.comments-page .comment .md {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.35em;
+    padding-right: 10px;
+}
+.comment .md p,
+.link .md p {
+    margin: 0;
+    padding: 5px 0
+}
+.md blockquote,
+.md del {
+    margin-left: 0
+}
+.md blockquote {
+    border-left: 2px solid
+}
+.md code,
+.md pre {
+    border: 0;
+    background: rgba(0, 0, 0, .08)
+}
+.thing .md hr {
+    height: 1px;
+    margin-right: 10px
+}
+
+/*spoiler in-text stuff*/
+a[href$="#spoiler"], a[href$="#s"], a[href="/s"], a[href="/spoiler"] {
+    color: #515151!important;
+    background-color: #515151;
+    transition: ease-in-out .15s;
+    transition: color .2s ease
+}
+a[href$="#spoiler"]:hover, a[href$="#s"]:hover, a[href="/s"]:hover, a[href="/spoiler"]:hover {
+    transition: ease-in-out .5s;
+    color: #fff!important
+}
+
+a[href="/s"]:active,
+a[href="/spoiler"]:active {
+  pointer-events: none;
+}
+
+/* visited links nightmode */
+[lang$=nm] .comment .md a:visited,
+[lang$=nm] .comment .md p>a:visited,
+[lang$=nm] .link .md a:visited {
+    color: #8271ff
+}
+
+
+/* NIGHTMODE MD
+--------------------------------------------------------------------------------*/
+[lang$=nm] .md {
+    color: #c7c7c7;
+}

@@ -29,7 +29,7 @@
 /* Search
 --------------------------------------------------------------------------------*/
 .side #search {
-    top: 202px;
+    top: 200px;
     right: 5px;
     z-index: 500;
 }
@@ -51,11 +51,13 @@
 }
 .side #searchexpando {
     right: 0;
-    z-index: 999
+    z-index: 999;
+    box-sizing: border-box;
 }
 [lang$=nm] #search input[type=text] {
-    background: rgba(255,255,255,.05);
-    color: #aaa!important;
+    background: #393d43;
+    color: rgba(240,252,255,.9);
+    border-color: #2a2d32;
 }
 
 /* Titlebox stuff
@@ -214,8 +216,8 @@
     width: 20px;
     height: 25px;
     position: absolute;
-    border-bottom: 1.5px solid hsla(219, 70%, 75%, 1);
-    border-left: 1.5px solid hsla(219, 70%, 75%, 1);
+    border-bottom: 1.5px solid hsl(219, 70%, 75%);
+    border-left: 1.5px solid hsl(219, 70%, 75%);
     border-radius: 0 0 0 4px;
     right: 100%;
     bottom: 50%;
@@ -302,7 +304,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    color: hsla(245, 25%, 40%, 1);
+    color: hsl(245, 25%, 40%);
     font-size: 19px;
 }
 
@@ -358,13 +360,13 @@ body:not(.loggedin) .side a[href*="#flair"] {
 }
 
 /* icons */
-.side .md a[href$="/submit"]:before {
+.side .md a[href*="/submit"]:before {
     background: url(%%kantoflair%%) -960px 0
 }
-.side .md a[href$="selftext=true"]:before {
+.side .md a[href*="selftext=true"]:before {
     background: url(%%sinnohflair%%) -840px -32px
 }
-.side .md a[href$="/questions/"]:before {
+.side .md a[href*="/questions/"]:before {
     background: url(%%johtoflair%%) -640px -32px
 }
 .side .md a[href*="pokemontrades"]:before {
@@ -443,7 +445,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
     right: 22px;
     margin: 0;
     font-size: 0;
-    
+
     box-sizing: border-box;
     background: hsl(210,20%,96%);
     border-top: 1px solid hsl(210,20%,88%);

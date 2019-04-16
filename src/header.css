@@ -8,31 +8,20 @@
     background: #fff;
     border-bottom: 0
 }
-#sr-header-area .width-clip .dropdown.srdrop .selected.title {
-    font-size: 9px;
-    font-weight: 700;
-    padding-right: 3px
-}
-
-#sr-header-area a, .dropdown.srdrop .selected {
-    background: 0;
-    color: #333
-}
-
-.dropdown.srdrop .selected:after { display: none }
 
 .res [id^=RESShortcut] {
     background-color: transparent!important;
     color: #999!important
 }
 
-#sr-header-area .sr-list {
-    margin-right: 50px;
-}
-
 /********************************************************************************
 * HEADER (DOESN'T INCLUDE USER AREA & TABMENU)
 *********************************************************************************/
+#header-img,
+#sr-more-link,
+.pagename a {
+    position: absolute
+}
 
 /* Header
 --------------------------------------------------------------------------------*/
@@ -64,21 +53,29 @@
 /* header bars
 --------------------------------------------------------------------------------*/
 
-.side:before {
+.side:before, #header:before {
     content: '';
     display: block;
     position: absolute;
-    margin-top: 28px;
     height: 46px;
-    background: #fafafa;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
     top: 166px;
-    margin-bottom: 35px;
     width: 100vw;
     right: -6px;
+    box-sizing: border-box;
     border-top: 1px solid rgba(128, 128, 128, 0.22);
 }
 
+#header:before {
+    height: 27px;
+    z-index: 1;
+    background: #fff;
+}
+
+.side:before {
+    margin-top: 27px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+    background: #fafafa;
+}
 
 /********************************************************************************
 * USER AREA
@@ -89,23 +86,22 @@
 #header-bottom-right {
     display: -webkit-flex;
     display: flex;
-    align-items: center;
     position: absolute;
     top: 100%!important;
     bottom: auto!important;
-    right: 0;
-    padding: 0 15px 0 0;
+    right: 15px;
+    padding: 0;
     line-height: 27px;
     height: 27px;
-    background-color: transparent;
+    background: transparent;
     z-index: 2
 }
 #header-bottom-right a:hover {
     text-decoration: none
 }
 
-#header-bottom-right a.pref-lang,
-.loggedin .logout a:before {
+#header a.pref-lang,
+#header .logout a:before {
     content: '';
     display: inline-block;
     background: url(%%pokesheet%%) -32px -163px;
@@ -116,33 +112,16 @@
     image-rendering: pixelated;
 }
 
-.loggedin .logout a:before {
+#header .logout a:before {
     background-position: -62px -162px
 }
 
-.loggedin .logout a {
-    font-size: 0;
-    display: inline-block;
-    width: 25px;
-    height: 27px;
-}
-
-#header-bottom-right .flat-list, #header-bottom-right .logout {
+#header .flat-list, #header .logout, #header .logout a {
     display: inline-block;
     height: 27px;
-}
-#header-bottom-right .flat-list li {
-    display: inline-block;
-    height: 27px;
-    width: 27px;
+    min-width: 27px;
     position: relative;
-}
-#header-bottom-right .flat-list li a {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    font-size: 0;
 }
 
 /* beta hint
@@ -165,44 +144,42 @@
 /* userbar
 --------------------------------------------------------------------------------*/
 .res #userbarToggle {
-    background-color: transparent!important;
+    background: transparent!important;
     border: 0;
-    height: 27px;
-    line-height: 27px;
+    line-height: 25px;
 }
 #header-bottom-right a,
 .res #userbarToggle {
     color: #333;
 }
 #header-bottom-right .separator {
-    font-size: 0;
-    padding-left: 5px
+    display: none;
 }
-#header-bottom-right .user {
+#header .user {
     display: -webkit-flex;
     display: flex;
     align-items: center;
     font-size: 0
 }
-#header-bottom-right .user>* {
+#header .user>* {
     font-size: 12px
 }
 
 /* user karma */
-#header-bottom-right .user>.userkarma {
+#header .user>.userkarma {
     padding: 0 5px;
 }
-#header-bottom-right .user>.userkarma a {
+#header .user>.userkarma a {
     color: rgba(0,0,0,0.5);
     line-height: 27px;
     display: inline-block;
 }
-#header-bottom-right .user>.userkarma a:hover {
+#header .user>.userkarma a:hover {
     color: rgba(0,0,0,0.7);
 }
 
 /* res account switcher stuff */
-.res #header-bottom-right .user>a {
+.res #header .user>a {
     padding-right: 17px
 }
 .res #RESAccountSwitcherIcon {
@@ -230,8 +207,8 @@
 #mail.havemail,
 #message.havemail { background: -31px -192px }
 
-#inbox.nohavemail { background: -60px -191px }
-#inbox.havemail { background: -90px -191px }
+#chat:not(.active) { background: -60px -191px }
+#chat.active { background: -90px -191px }
 
 #modmail { transform: scale(0.95) }
 #modmail.nohavemail { background: -1px -222px }
@@ -242,10 +219,10 @@
 
 #mail,
 #message,
-#inbox,
+#chat,
 #modmail,
 #new_modmail,
-#header-bottom-right .gearIcon {
+#header .gearIcon {
     height: 27px!important;
     width: 28px!important;
     background-image: url(%%pokesheet%%)!important;
@@ -257,7 +234,7 @@
     margin: 0;
 }
 
-#header-bottom-right .imageInfoSettingsButton {
+#header .imageInfoSettingsButton {
     background: transparent;
     border: 0;
     display: inline-block;
@@ -267,18 +244,15 @@
     text-align: center;
 }
 
-#header-bottom-right .gearIcon {
+#header .gearIcon {
     background-position: -90px -162px;
     transform: scale(0.9);
     transform-origin: center;
 }
-#header-bottom-right .gearIcon:after {display: none}
+#header .gearIcon:after {display: none}
 
-#header-bottom-right .user + .separator {
-    font-size: 13px;
-    padding-left: 0;
-    margin-left: 2px;
-    color: rgba(0,0,0,0.3);
+.user + .separator {
+    display: inline;
 }
 
 /* message count
@@ -291,19 +265,19 @@
     min-width: 20px;
     text-align: center;
     position: relative;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 5px;
 }
 #mail + .message-count {
     background: #e3817a
 }
 
-/* opacity hover/no hover
+/* all items (except .user)
 --------------------------------------------------------------------------------*/
 #header-bottom-right > *:not(.user),
 #header-bottom-right .flat-list li > * {
     opacity: .75;
     max-height: 28px;
+    margin-left: 3px;
 }
 #header-bottom-right > *:not(.user):hover,
 #header-bottom-right .flat-list li > *:hover {
@@ -338,7 +312,7 @@
     margin: 0
 }
 
-.tabmenu li a {
+#header .tabmenu li a {
     display: inline-block;
     position: relative;
     height: 30px;
@@ -348,73 +322,74 @@
     background-color: transparent!important;
     border: 0!important;
     font-size: small;
-    margin-right: 4px
+    margin-right: 4px;
 }
 
-.tabmenu li a:hover,
-.tabmenu li.selected a {
-    color: #48f
+#header .tabmenu a:hover,
+#header .tabmenu li.selected a {
+    color: #48f !important;
+    opacity: 1 !important;
 }
 
 /* listing-page tabmenu items
 --------------------------------------------------------------------------------*/
 
 /* positions */
-.listing-page #header .tabmenu li:nth-child(1) a {
+#header .tabmenu li:nth-child(1) a {
     /* Hot */
     background: -5px 0
 }
-.listing-page #header .tabmenu li:nth-child(2) a {
+#header .tabmenu li:nth-child(2) a {
     /* New */
     background: -42px 0
 }
-.listing-page #header .tabmenu li:nth-child(3) a {
+#header .tabmenu li:nth-child(3) a {
     /* Rising */
     background: -79px 0
 }
-.listing-page #header .tabmenu li:nth-child(4) a {
+#header .tabmenu li:nth-child(4) a {
     /* Controversial */
     background: -116px 0
 }
-.listing-page #header .tabmenu li:nth-child(5) a {
+#header .tabmenu li:nth-child(5) a {
     /* Top */
     background: -153px 0
 }
-.listing-page #header .tabmenu li:nth-child(6) a {
+#header .tabmenu li:nth-child(6) a {
     /* Gilded */
     background: -190px 0
 }
-.listing-page #header .tabmenu li:nth-child(7) a {
+#header .tabmenu li:nth-child(7) a {
     /* Wiki */
     background: -227px 0
 }
-.listing-page #header .tabmenu li:nth-child(8) a {
+#header .tabmenu li:nth-child(8) a {
     /* Promoted */
     background: -264px 0
 }
-.listing-page #header .tabmenu .res-toggle-filterline-visibility a {
+#header .tabmenu .res-toggle-filterline-visibility a {
     /* Toggle Tilterline */
     background: -301px 0;
 }
-.listing-page #header .tabmenu .res-show-images a {
+#header .tabmenu .res-show-images a {
     /* Show Images */
     background: -338px 0
 }
-.listing-page #header .tabmenu .tb-metrics a {
+#header .tabmenu .tb-metrics a {
     /* Metrics */
     background: -375px 0;
 }
-.listing-page #header .tabmenu .tb-queuetools-tab a {
+#header .tabmenu .tb-queuetools-tab a {
     /* Queue */
     background: -412px 0;
 }
-.listing-page #header .tabmenu .res-filter-visited-links a {
+#header .tabmenu .res-filter-visited-links a {
     /* Visited */
     background: -485px 0;
 }
 
-
-/* element */
+/* listing-page tabmenu items
+--------------------------------------------------------------------------------*/
 .listing-page #header .tabmenu li {
     width: 38px;
     height: 32px;
@@ -424,7 +399,6 @@
     content: "";
     display: inline-block;
     background-image: url(%%tabmenu%%)!important;
-    background-position: -448px 0;
     width: 34px;
     height: 32px;
     opacity: .6;
@@ -434,28 +408,26 @@
     position: absolute;
     image-rendering: pixelated;
 }
-.listing-page #header .tabmenu li a:hover,
-.listing-page #header .tabmenu li.selected a {
-    opacity: 1
-}
 
 /* non-listing-page tabmenu items
 --------------------------------------------------------------------------------*/
-body:not(.listing-page) .tabmenu li a {
+body:not(.listing-page) #header .tabmenu li a {
     background: rgba(0, 0, 0, .05)!important;
     margin: 1px 0 0 3px;
     padding: 0 5px;
-    font-size: 12px
+    font-size: 12px;
+    color: #6c9bec;
 }
-body #header .tabmenu li:first-of-type a {
-    border-radius: 15px 0 0 15px
+body #header .tabmenu li:first-child a {
+    border-radius: 15px 0 0 15px;
+    margin-left: 3px;
 }
-body #header .tabmenu li:last-of-type a {
+body #header .tabmenu li:last-child a {
     border-radius: 0 15px 15px 0;
-    margin-right: 3px
+    margin-right: 3px;
 }
 
-body #header .tabmenu li:first-of-type:last-of-type a {
+body #header .tabmenu li:only-child a {
     border-radius: 15px;
 }
 
@@ -463,13 +435,12 @@ body #header .tabmenu li:first-of-type:last-of-type a {
 --------------------------------------------------------------------------------*/
 
 /* element */
-.listing-page #header .tabmenu li a:after {
+#header .tabmenu a:after {
     display: block;
     position: absolute;
     margin-bottom: 8px;
     font-size: 12px;
-    background: rgba(32, 32, 32, .4);
-    height: 20px;
+    background: #2068ee;
     line-height: 20px;
     padding: 0 10px;
     left: 50%;
@@ -481,51 +452,51 @@ body #header .tabmenu li:first-of-type:last-of-type a {
     bottom: 60%;
     opacity: 0;
     color: #fff;
-    image-rendering: pixelated;
+    border: 1px solid #fff;
 }
-.listing-page #header .tabmenu li a:hover:after {
+#header .tabmenu a:hover:after {
     bottom: 100%;
     opacity: 1
 }
 
-/* tooltip text (this pains me to look at ;_;) */
-.listing-page #header .tabmenu li:nth-child(1) a:after {
+/* tooltip text */
+#header .tabmenu li:nth-child(1) a:after {
     content: 'hot'
 }
-.listing-page #header .tabmenu li:nth-child(2) a:after {
+#header .tabmenu li:nth-child(2) a:after {
     content: 'new'
 }
-.listing-page #header .tabmenu li:nth-child(3) a:after {
+#header .tabmenu li:nth-child(3) a:after {
     content: 'rising'
 }
-.listing-page #header .tabmenu li:nth-child(4) a:after {
+#header .tabmenu li:nth-child(4) a:after {
     content: 'controversial'
 }
-.listing-page #header .tabmenu li:nth-child(5) a:after {
+#header .tabmenu li:nth-child(5) a:after {
     content: 'top'
 }
-.listing-page #header .tabmenu li:nth-child(6) a:after {
+#header .tabmenu li:nth-child(6) a:after {
     content: 'gilded'
 }
-.listing-page #header .tabmenu li:nth-child(7) a:after {
+#header .tabmenu li:nth-child(7) a:after {
     content: 'wiki'
 }
-.listing-page #header .tabmenu li:nth-child(8) a:after {
+#header .tabmenu li:nth-child(8) a:after {
     content: 'promoted'
 }
 
-.listing-page .res-show-images a:after { content: 'view images' attr(aftercontent) !important }
-.listing-page .selected .res-show-images a:after { content: 'hide images' attr(aftercontent) !important }
+.res-show-images a:after { content: 'view images' attr(aftercontent) !important }
+.selected .res-show-images a:after { content: 'hide images' attr(aftercontent) !important }
 
-.listing-page .res-filter-visited-links a:after { content: 'filter visited links' !important }
-.listing-page .selected .res-filter-visited-links a:after { content: 'unfilter visited links' !important }
+.res-filter-visited-links a:after { content: 'filter visited links' !important }
+.selected .res-filter-visited-links a:after { content: 'unfilter visited links' !important }
 
-.listing-page .res-toggle-filterline-visibility a:after { content: 'toggle filterline' }
+.res-toggle-filterline-visibility a:after { content: 'toggle filterline' }
 
-.listing-page #header .tabmenu li a[href^="j"]:after {
+#header .tb-queuetools-tab :after {
     content: 'queue'
 }
-.listing-page #header .tabmenu li.tb-metrics a[href^="j"]:after {
+#header .tb-metrics a:after {
     content: 'metrics'
 }
 
@@ -549,29 +520,34 @@ body #header .tabmenu li:first-of-type:last-of-type a {
 /* header bars */
 [lang$=nm] #header:before {
     background: #282b30;
-    border-bottom: 0
+    border-color: #212428;
 }
 [lang$=nm] .side:before {
-    background: #2f3238
+    background: #2f3238;
+    border-color: #212428;
+    box-shadow: 0 1px 3px #1e2124;
 }
 
 [lang$=nm] #header .tabmenu {
     background: #282b30;
     border-color: #212428
 }
+body[lang$=nm]:not(.listing-page) #header .tabmenu li a {
+    background: #2e3238 !important;
+}
 [lang$=nm] .side .md>blockquote:first-of-type>p>a {
     color: #c9c9c9;
 }
 
 /*header bottom right*/
-[lang$=nm] #header-bottom-right .user > a,
-[lang$=nm] #header-bottom-right .user > .userkarma {
+[lang$=nm] #header .user > a,
+[lang$=nm] #header .user > .userkarma {
     color: rgba(255,255,255,0.5)
 }
-[lang$=nm] #header-bottom-right .user>.userkarma a {
+[lang$=nm] #header .user>.userkarma a {
     color: rgba(255,255,255,0.4);
 }
-[lang$=nm] #header-bottom-right .user>.userkarma a:hover {
+[lang$=nm] #header .user>.userkarma a:hover {
     color: rgba(255,255,255,0.6);
 }
 
@@ -579,7 +555,7 @@ body #header .tabmenu li:first-of-type:last-of-type a {
     color: rgba(255,255,255,0.4);
     font-weight: normal;
 }
-[lang$=nm] #header-bottom-right .user + .separator {
+[lang$=nm] #header .user + .separator {
     color: rgba(255,255,255,0.25);
 }
 [lang$=nm] .res #RESAccountSwitcherIcon:before {
@@ -589,7 +565,7 @@ body #header .tabmenu li:first-of-type:last-of-type a {
 /********************************************************************************
 * LOGGED OUT USERS
 *********************************************************************************/
-body:not(.loggedin) #header-bottom-right .user {
+body:not(.loggedin) #header .user {
     font-size: 12px;
     display: block;
 }

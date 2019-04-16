@@ -6,12 +6,6 @@
     overflow: visible!important
 }
 
-.link a.title,
-.linkflairlabel,
-.tagline time {
-    font-family: Segoe, "Segoe UI", Verdana, Arial, sans-serif
-}
-
 /* Link element
 --------------------------------------------------------------------------------*/
 .link, .link.promoted.promotedlink {
@@ -38,17 +32,20 @@
 }
 
 [lang$=nm] .thing.link, [lang$=nm] .comment .entry {
-    border: 1px solid hsla(218,9%,5%,1);
+    border: 1px solid hsl(218, 9%, 5%);
     box-shadow: 0 1px 3px rgba(173,178,255,.15);
 }
 
 /* spam
 --------------------------------------------------------------------------------*/
 .thing.spam {
-    background: 0 0
+    background: 0!important;
+}
+.thing.link.spam {
+    background: #fa8072!important;
 }
 .thing.spam>.entry {
-    background: #f4d2d3!important
+    background: #fa8072!important;
 }
 .thing.spam>.entry .buttons li[title*=removed] * {
     color: #e74c3c
@@ -71,10 +68,10 @@ html body .entry.res-selected .md-container {
 
 [lang$=nm] .thing.link.RES-keyNav-activeThing,
 [lang$=nm] .comment.RES-keyNav-activeThing > .entry {
-    background: hsla(218, 9%, 11%, 1) !important;
+    background: hsl(218, 9%, 11%) !important;
 }
 [lang$=nm] .comment.RES-keyNav-activeThing > .entry {
-    border-color: hsla(218,9%,9%,1);
+    border-color: hsl(218, 9%, 9%);
 }
 [lang$=nm] .thing.comment.new-comment:not(.RES-keyNav-activeThing) .entry {
     border-color: #2d466f !important;
@@ -96,18 +93,6 @@ html body .entry.res-selected .md-container {
 .link a.title {
     font-size: 19px;
     color: rgba(0, 0, 0, .8);
-    display: inline-block;
-}
-
-.link a.title:visited,
-.thing .title:visited,
-.thing.visited .title {
-    color: #7730b7;
-}
-[lang$=nm] .comment .md a:visited,
-[lang$=nm] .comment .md p>a:visited,
-[lang$=nm] .link .md a:visited {
-    color: #8271ff
 }
 
 /* domain */
@@ -122,17 +107,32 @@ html body .entry.res-selected .md-container {
     opacity: .4
 }
 
+/* link color nightmode */
 [lang$=nm] .link a.title {
     color: rgba(255, 255, 255, .8)
 }
+
+/* visited color */
+.link a.title:visited,
+.thing .title:visited,
+.thing.visited .title {
+    color: #7730b7;
+}
+
+/* visited link color nightmode */
 [lang$=nm] .link a.title:visited,
 [lang$=nm] .thing .title:visited,
 [lang$=nm] .thing.visited .title {
     color: #b0a2e6
 }
 
+/* stickied color */
+.thing.stickied.link a.title {
+    color: hsl(160, 67%, 39%);
+}
+/* stickied color nightmod e*/
 [lang$=nm] .thing.stickied.link a.title {
-    color: hsla(160, 92%, 45%, 1);
+    color: hsl(160, 92%, 45%);
 }
 
 /* Thumbnails
@@ -272,6 +272,10 @@ html body .entry.res-selected .md-container {
 .link .flat-list {
     margin-top: 2px;
     margin-left: 10px
+}
+
+[lang$=nm] .entry .buttons li a {
+    color: rgba(240,252,255,.4);
 }
 
 /* midcol element
@@ -422,11 +426,7 @@ html body .entry.res-selected .md-container {
 
 /* Expando buttons
 --------------------------------------------------------------------------------*/
-.expando-button,
-.expando-button.image,
-.expando-button.video,
-.expando-button.video-muted,
-.parent .expando-button {
+.expando-button {
     position: relative;
     background: url(%%pokesheet%%) -36px -35px!important;
     width: 18px!important;
@@ -443,6 +443,17 @@ html body .entry.res-selected .md-container {
 }
 .expando-button.expanded {
     background-position: -37px -57px!important
+}
+
+.res .expando-button:after {
+    display: none;
+}
+
+[lang$=nm] .expando-button {
+    background-position: -175px -57px!important;
+}
+[lang$=nm] .expando-button.expanded {
+    background-position: -193px -57px!important;
 }
 
 /* Reddit Video

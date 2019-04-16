@@ -26,7 +26,7 @@
     margin: 10px;
     border-radius: 10px;
 }
-    
+
 /* item */
 .sidecontentbox .helplink ~ .content li:not(.more) {
     position: relative;
@@ -65,6 +65,7 @@
     display: block;
     float: none;
     margin: 10px 15px 20px;
+    width: auto;
 }
 
 /* strong selector to override specific-user styles */
@@ -97,7 +98,6 @@ html body .sidecontentbox .helplink~.content li .flair:before {
     min-width: initial !important;
     margin: 0 6px 0 0;
     font-size: 11px;
-    float: left;
 }
 .gadget .reddit-link-title {
     line-height: 20px;
@@ -105,6 +105,9 @@ html body .sidecontentbox .helplink~.content li .flair:before {
 }
 .gadget .reddit-link-end {
     padding-top: 5px
+}
+.gadget .score {
+    margin: 0 4px 0 0;
 }
 
 /* account activity box
@@ -133,18 +136,18 @@ html body .sidecontentbox .helplink~.content li .flair:before {
     background: #26282c;
 }
 [lang$=nm] .gadget .score {
-    color: #777;
+    color: rgba(240,252,255,.6);
 }
 [lang$=nm] .gadget .reddit-entry .linkflairlabel {
     background: #131416 !important;
     color: #999!important;
 }
 [lang$=nm] .sidecontentbox .helplink~.content li:not(.more) {
-    border-color: hsla(216, 10%, 27%, 1);
-    background: hsla(220, 7%, 15%, 1);
+    border-color: hsl(216, 10%, 27%);
+    background: hsl(220, 7%, 15%);
 }
 [lang$=nm] .sidecontentbox .helplink~.content li:not(.more) a {
-    color: #ccc;
+    color: rgba(240,252,255,.7);
 }
 [lang$=nm] .sidecontentbox .helplink~.content li:before {
     opacity: 0.5;

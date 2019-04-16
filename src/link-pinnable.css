@@ -1,43 +1,22 @@
-
 /********************************************************************************
 * PINNABLE-CONTENT - Used in video posts
 *********************************************************************************/
-
-.pinnable-content.pinned {
-    height: auto !important;
-    box-shadow: none !important;
-}
 .pinnable-content.pinned .top-matter {
     position: static;
     padding-left: 250px;
     padding-top: 5px;
 }
-.pinnable-content.pinned .dismiss-pinnable {
-    top: 13px !important;
-    right: 50px;
-    position: absolute;
-}
-.pinnable-content.pinned .reddit-video-player-root {
-    height: 135px !important;
-    width: 240px !important;
-    top: 4px;
-}
 
-/* link
---------------------------------------------------------------------------------*/
 .pinned .link {
-    margin: 0;
+    margin: 0 !important;
     border-top: 0;
     border-bottom: 0;
-    min-height: 135px;
+    min-height: 100%;
 }
 .pinned .link .midcol {
     position: absolute;
     top: 0;
-    bottom: 0;
-    margin: auto 0;
-    height: 78px;
-    left: 5px;
+    left: 0;
 }
 .pinned .link .thumbnail {
     display: none;
@@ -47,26 +26,13 @@
 }
 .pinned .link .tagline {
     left: 170px;
-    top: 10px;
+    top: 15px;
     right: 70px;
 }
 
-/* spammed link
---------------------------------------------------------------------------------*/
-.pinned .spam.link {
-    background-color: #f4d2d3;
-    margin: 0 !important;
-    top: 20px !important;
-}
-.pinned .spam .reddit-video-player-root {
-    top: 23px;
-}
-.pinned .spam ~ .dismiss-pinnable {
-    top: 33px !important;
-}
 .pinned .link.linkflair-rule .linkflairlabel {
+    display: inline !important;
+    position: relative !important;
+    font-size: 12px !important;
     margin: 0 !important;
-    border-radius: 0;
-    height: 20px;
-    line-height: 8px;
 }

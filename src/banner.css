@@ -19,7 +19,7 @@
 .pagename a:hover {
     background-position-y: 100%;
 }
-.pagename::after {
+.pagename:after {
     content: "";
     width: 300px;
     height: 150px;
@@ -28,56 +28,3 @@
     left: calc(50% - 150px);
     top: 16px;
 }
-
-/*--------------------------------------------------------------------------------*/
-/*
-#header {
-    background: url(%%header-bg%%) repeat-x 0 top/auto 200%;
-}
-
-
-#header::after {
-    content: "";
-
-    width: 100%;
-    height: 30px;
-    background: url(%%footer-bg%%) repeat-x 0 top/auto 200%;
-
-    position: absolute;
-    z-index: 9;
-    top: calc(100% - 30px);
-    left: 0;
-}
-
-.pagename::after {
-    content: "";
-    width: 300px;
-    height: 150px;
-    background: url(%%banner-bg%%) 0 top/auto 200%;
-    position: absolute;
-    left: calc(50% - 150px);
-    top: 16px;
-}
-
-.pagename a {
-    top: 25px;
-    width: 220px;
-    height: 110px;
-    display: block;
-    left: 240px;
-    z-index: 9;
-
-    background: url(%%logo%%) 0 0/200% auto;
-}
-.pagename a:hover {
-    background-position-y: 100%;
-}
-
-[lang$=nm] .pagename a {
-    background-position-x: 100%;
-}
-[lang$=nm] #header,
-[lang$=nm] #header::after,
-[lang$=nm] .pagename::after {
-    background-position-y: 100%;
-}*/

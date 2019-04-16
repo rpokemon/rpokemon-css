@@ -1,13 +1,8 @@
 /********************************************************************************
 * BODY
 *********************************************************************************/
-#header-img,
-#sr-more-link,
-.pagename a {
-    position: absolute
-}
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     overflow-x: hidden !important;
     background-color: transparent !important;
     background: url(%%bglight%%);
@@ -47,64 +42,6 @@ body>.content {
 }
 
 .icon-menu a { background: transparent }
-
-/********************************************************************************
-* DEFAULT BUTTONS
-*********************************************************************************/
-input[type=submit],
-.usertext button.cancel,
-.usertext button[type=submit] {
-    display: inline-block;
-    margin: 3px;
-    padding: 0 8px 1px;
-    background-color: #48f;
-    border: 1px solid #2a66d6;
-    border-radius: 2px;
-    color: #fff !important;
-    font-weight: 700;
-    font-size: small;
-    text-transform: capitalize;
-    line-height: 26px;
-    outline: 0!important;
-    box-shadow: inset 0 1px 0 #669bff
-}
-
-button:hover, input[type=submit]:hover {
-    background-color: #5d99ff
-}
-
-button:active, input[type=submit]:active {
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .2)
-}
-
-
-/* usertext edit - buttons
---------------------------------------------------------------------------------*/
-.usertext button.cancel,
-.usertext button[type=submit] {
-    padding: 0 10px;
-    border-radius: 3px;
-    line-height: 29px;
-    min-width: 77px;
-    margin: 0 5px 1px 0;
-    font-size: 13px;
-    position: relative;
-}
-.usertext button.cancel:active,
-.usertext button[type=submit]:active {
-    top: 1px
-}
-.usertext button.cancel {
-    background-color: rgba(0,0,0,0.3);
-    border-color: rgba(0,0,0,0.15);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
-}
-
-[lang$=nm] .usertext button.cancel {
-    background-color: rgba(255, 255, 255, .14);
-    border-color: rgba(255, 255, 255, .07);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.15)
-}
 
 /********************************************************************************
 * WIKI

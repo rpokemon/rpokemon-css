@@ -107,12 +107,16 @@ html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[ro
 .parent .flair {
     display: none
 }
+.parent a.title {
+    margin: 0 4px;
+}
 .parent a.author {
     display: inline-block;
     background: 0!important;
     position: static!important;
     width: auto!important;
-    padding: 0
+    padding: 0 4px !important;
+    height: auto;
 }
 .parent *,
 .parent .RESUserTagImage:after {

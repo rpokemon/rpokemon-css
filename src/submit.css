@@ -1,4 +1,3 @@
-
 /********************************************************************************
 * SUBMIT PAGE
 *********************************************************************************/
@@ -8,12 +7,12 @@
 .submit-page .content>h1 {
     text-align: center;
     margin: 30px 0 20px;
-    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif
-}
-.submit-page .content[role=main] {
-    max-width: 700px
+    text-transform: uppercase;
 }
 .submit-page .submit.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     max-width: 520px;
     width: 100%
@@ -25,10 +24,10 @@
 .submit-page .roundfield input[type=text],
 .submit-page .roundfield input[type=url],
 .submit-page .roundfield textarea,
-.submit-page.res .markdownEditor-wrapper {
+.submit-page.res .markdownEditor-wrapper,
+.submit-page .submit.content .spacer {
     width: 100%;
     border-color: #c3c3c3;
-    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif
 }
 
 /* Hide things we don't want
@@ -39,97 +38,36 @@
     display: none!important
 }
 
-/* Form container
+/* Submit Form and Tabs
 --------------------------------------------------------------------------------*/
 .submit-page .formtabs-content {
     border: 0;
-    position: relative;
-    margin-bottom: 20px;
-    padding-top: 0;
-    max-width: 520px
 }
 
-/* Tab menu
---------------------------------------------------------------------------------*/
-.submit-page ul.tabmenu.formtab li {
-    height: auto
-}
-.submit-page ul.tabmenu.formtab li a {
-    top: initial;
-    height: initial;
-    color: inherit;
-    background: 0 0;
-    border: 0;
-    padding: 5px 15px;
-    font-size: 18px;
-    margin-right: 10px;
-    text-align: center;
-    border-bottom: 2px solid transparent
-}
-.submit-page ul.tabmenu.formtab li.selected a,
-.submit-page ul.tabmenu.formtab li:hover a {
-    box-shadow: none;
-    border-bottom: 2px solid rgba(0, 0, 0, .5)
-}
-.submit-page ul.tabmenu.formtab li:hover {
-    background: 0 0
-}
-.submit-page ul.tabmenu.formtab {
-    background: 0 0;
-    text-align: center
+.submit .tabmenu.formtab .selected a {
+    background: #0e4cbe;
 }
 
-/* Round fields
---------------------------------------------------------------------------------*/
 .submit-page .roundfield {
     background: #fff;
     padding: 20px;
     box-sizing: border-box;
-    border-top: 1px solid rgba(0, 0, 0, .1);
-    border-radius: 0
-}
-
-.submit-page .roundfield:not(.info-notice) {
-    width: 100%;
     border: 1px solid #d6d6d6;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .1)
+    border-radius: 0;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    width: 100%;
 }
 
-.submit-page .roundfield>.title {
-    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif;
+.submit-page .roundfield>.title, .submit_text h1 {
     text-transform: uppercase;
-    color: rgba(0, 0, 0, .4)
-}
-
-.submit-page #new-link-image-input>div {
-    color: rgba(0, 0, 0, .65)
-}
-
-/* remove margin on spacer, put margin on roundfield instead */
-.submit-page #newlink-with-image-upload>.spacer {
-    margin: 0
-}
-.submit-page #newlink-with-image-upload .roundfield {
-    margin-bottom: 15px
+    color: #125fed;
+    font-weight: 700;
+    letter-spacing: .2px;
 }
 
 /* Submit
 --------------------------------------------------------------------------------*/
-.submit-page .content.submit .info-notice {
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-radius: 0;
-    width: 520px
-}
-.submit-page button[name=submit] {
-    display: inline-block;
-    background: #6c8;
-    border: 1px solid #5ac976;
-    box-shadow: none;
-    color: #fff;
-    line-height: 28px;
-    padding: 0 20px
-}
-
 .submit_text {
     max-height: none;
 }

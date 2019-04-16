@@ -40,11 +40,11 @@
     box-shadow: 0 -1px 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.2);
     background: rgba(255,255,255,.65);
     color: rgba(0,0,0,.6);
-    color: hsla(218, 100%, 30%, 1);
-    border-color: hsla(218, 100%, 50%, 1);
+    color: hsl(218, 100%, 30%);
+    border-color: hsl(218, 100%, 50%);
 }
 [lang$=nm] .side .md>blockquote:nth-of-type(2) a {
-    color: hsla(218, 100%, 50%, 1);
+    color: hsl(218, 100%, 50%);
 }
 
 #header {

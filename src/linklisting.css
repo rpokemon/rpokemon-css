@@ -63,7 +63,7 @@
     border-bottom: 0;
 }
 [lang$=nm] .drop-choices a.choice {
-    color: #ccc !important;
+    color: rgba(240,252,255,.9) !important;
     border-color: #17191c !important;
 }
 .drop-choices a.choice:hover {
@@ -90,7 +90,7 @@
 
 /* RES - never ending reddit
 --------------------------------------------------------------------------------*/
-[lang$=nm].res #progressIndicator, [lang$=nm] .nextprev {
+[lang$=nm].res #progressIndicator, [lang$=nm] .nextprev, [lang$=nm] .submit .tabmenu.formtab {
     background: #282b30;
     border: 1px solid #1e2024;
 }
@@ -107,7 +107,7 @@
     margin: 0 0 15px !important;
 }
 [lang$=nm] .infobar.listingsignupbar {
-    border: 1px solid hsla(218,9%,5%,1);
+    border: 1px solid hsl(218, 9%, 5%);
     box-shadow: 0 1px 3px rgba(173,178,255,.15);
 }
 
@@ -124,7 +124,7 @@
     justify-content: center;
 }
 
-.nextprev {
+.nextprev, .submit .tabmenu.formtab {
     font-size: 0;
     padding: 7px 16px;
     display: inline-block;
@@ -133,13 +133,14 @@
     border-radius: 24px;
 }
 
-.nextprev > * {
+.nextprev > *, .submit .tabmenu.formtab > * {
     display: inline-block;
 }
 
 .listing-page .content>.menuarea .spacer,
 .nextprev .prev-button a,
-.nextprev .next-button a {
+.nextprev .next-button a,
+.submit .tabmenu.formtab a {
     display: inline-block;
     padding: 0 10px 0 40px;
     line-height: 32px;
@@ -154,26 +155,30 @@
 }
 
 .nextprev .prev-button a,
-.nextprev .next-button a {
+.nextprev .next-button a,
+.submit .tabmenu.formtab a {
     min-width: initial;
     padding: 0 25px 0 44px;
     font-size: 14.5px;
     text-transform: uppercase;
 }
 
-.nextprev .prev-button {
+.nextprev .prev-button,
+.submit .tabmenu.formtab li:not(:last-child) a {
     margin-right: 10px;
 }
 
 .listing-page .content>.menuarea .spacer:hover,
 .nextprev .prev-button a:hover,
-.nextprev .next-button a:hover {
+.nextprev .next-button a:hover,
+.submit .tabmenu.formtab a:hover {
     background: #125fed;
 }
 
 .listing-page .content>.menuarea .spacer:before,
 .nextprev .prev-button a:before,
-.nextprev .next-button a:before {
+.nextprev .next-button a:before,
+.submit .tabmenu.formtab a:before {
     content: '';
     position: absolute;
     width: 32px;
