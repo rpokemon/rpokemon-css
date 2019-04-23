@@ -50,7 +50,7 @@
     z-index: 0;
 }
 
-[lang$=nm] .footer-parent:before {
+[lang$=nm] .footer-parent:before, .res-nightmode .footer-parent:before {
     background-position-y: bottom;
 }
 
@@ -105,18 +105,18 @@ body > .debuginfo:before {
     color: #333;
 }
 
-[lang$=nm] .footer {
+[lang$=nm] .footer, .res-nightmode .footer {
     background: #333;
 }
 
-[lang$=nm] .footer .col .title {
+[lang$=nm] .footer .col .title, .res-nightmode .footer .col .title {
     color: #43f7bb;
 }
-[lang$=nm] .footer .col a,
-[lang$=nm] .footer-parent .bottommenu a {
+[lang$=nm] .footer .col a, .res-nightmode .footer .col a,
+[lang$=nm] .footer-parent .bottommenu a, .res-nightmode .footer-parent .bottommenu a {
     color: #43f7bb;
     opacity: 0.5;
 }
-[lang$=nm] .footer-parent .bottommenu {
+[lang$=nm] .footer-parent .bottommenu, .res-nightmode .footer-parent .bottommenu {
     color: #999;
 }

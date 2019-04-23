@@ -124,39 +124,39 @@ html body .sidecontentbox .helplink~.content li .flair:before {
 
 /* nightmode
 --------------------------------------------------------------------------------*/
-[lang$=nm] .sidecontentbox .content {
+[lang$=nm] .sidecontentbox .content, .res-nightmode .sidecontentbox .content {
     background: rgba(255,255,255,0.02);
     border-color: #555 !important;
 }
-[lang$=nm] .gadget .reddit-entry {
+[lang$=nm] .gadget .reddit-entry, .res-nightmode .gadget .reddit-entry {
     background: transparent !important;
 }
-[lang$=nm] .gadget .reddit-link {
+[lang$=nm] .gadget .reddit-link, .res-nightmode .gadget .reddit-link {
     border-color: #17191c;
     background: #26282c;
 }
-[lang$=nm] .gadget .score {
+[lang$=nm] .gadget .score, .res-nightmode .gadget .score {
     color: rgba(240,252,255,.6);
 }
-[lang$=nm] .gadget .reddit-entry .linkflairlabel {
+[lang$=nm] .gadget .reddit-entry .linkflairlabel, .res-nightmode .gadget .reddit-entry .linkflairlabel {
     background: #131416 !important;
     color: #999!important;
 }
-[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) {
+[lang$=nm] .sidecontentbox .helplink~.content li:not(.more), .res-nightmode .sidecontentbox .helplink~.content li:not(.more) {
     border-color: hsl(216, 10%, 27%);
     background: hsl(220, 7%, 15%);
 }
-[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) a {
+[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) a, .res-nightmode .sidecontentbox .helplink~.content li:not(.more) a {
     color: rgba(240,252,255,.7);
 }
-[lang$=nm] .sidecontentbox .helplink~.content li:before {
+[lang$=nm] .sidecontentbox .helplink~.content li:before, .res-nightmode .sidecontentbox .helplink~.content li:before {
     opacity: 0.5;
 }
-[lang$=nm] .account-activity-box {
+[lang$=nm] .account-activity-box, .res-nightmode .account-activity-box {
     border-color: #1a1a1a;
 }
 
-[lang$=nm] .sidecontentbox .helplink~.content li:not(.more):before {
+[lang$=nm] .sidecontentbox .helplink~.content li:not(.more):before, .res-nightmode .sidecontentbox .helplink~.content li:not(.more):before {
     width: 100px;
     height: 100px;
     background-position: 0 -250px;

@@ -1,4 +1,6 @@
-
+/********************************************************************************
+* TAGLINE
+*********************************************************************************/
 
 /* Tagline container element
 --------------------------------------------------------------------------------*/
@@ -15,15 +17,20 @@
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 1px;
+    padding: 1px 5px 0 0;
 }
 .tagline>* {
     font-size: x-small
 }
 .comment .tagline {
     position: static;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
     height: 20px;
+}
+
+.side .tagline .flairselectbtn,
+.tagline .userattrs {
+    display: none
 }
 
 /* Tagline - time
@@ -31,24 +38,7 @@
 .tagline time {
     line-height: 20px;
     font-size: 10.5px;
-    padding: 0 4px;
-    margin-top: 1px;
-}
-
-.tagline time ~ .edited-timestamp {
-    padding-left: 0;
-}
-
-.crosspost-preview-tagline time {
-    padding: 0;
-}
-
-.crosspost-preview-tagline .edited-timestamp:hover:after {
-    display: inline;
-}
-
-.crosspost-preview-tagline .edited-timestamp:after {
-    display: none;
+    margin: 1px 0 0 4px;
 }
 
 /* Tagline - RES user tag
@@ -63,62 +53,35 @@
     left: 350px;
     top: -22px
 }
+
 .RESUserTagImage:after {
-    margin: 3px 5px;
-    width: 12px;
-    height: 13px;
-    background: url(%%pokesheet%%) -195px -19px;
-    display: inline-block;
     opacity: .5
 }
-.side .tagline .flairselectbtn,
-.tagline .userattrs {
-    display: none
+
+[lang$=nm] .RESUserTag {
+    color: #ddd;
 }
 
-[lang$=nm] .res .userTagLink.hasTag {
+[lang$=nm] .res .userTagLink.hasTag, .res-nightmode .res .userTagLink.hasTag {
     border-color: #494e5a !important;
     background: #40454f;
 }
-[lang$=nm] .RESUserTagImage:after {
-    background-image: none!important
-}
 
-/* Tagline - author
+/* Author nameplate box
 --------------------------------------------------------------------------------*/
-
 .top-matter .author,
 .comment .author,
 .flairrow .author,
 .side .tagline .author {
     width: 280px;
     height: 36px;
-    background: url(%%FlairBG%%) 0 -36px;
-    background-size: 280px;
     position: absolute;
     padding: 3px 0 3px 45px!important;
     font-weight: 700;
     white-space: nowrap;
     box-sizing: border-box;
     margin: 0;
-    color: #2980b9;
     font-size: 10px;
-}
-
-/* ensure transparent background (override RES user highlighter) */
-.res .thing .tagline .author.moderator,
-.res .thing .tagline .author.moderator:hover,
-.res .thing .tagline .author.submitter,
-.res .thing .tagline .author.submitter:hover,
-.res .thing .tagline .author.friend,
-.res .thing .tagline .author.friend:hover,
-.res .thing .tagline .author.admin,
-.res .thing .tagline .author.admin:hover,
-.thing .tagline .author.moderator,
-.thing .tagline .author.submitter,
-.thing .tagline .author.friend,
-.thing .tagline .author.admin {
-    background-color: transparent !important
 }
 
 /* link author */
@@ -138,31 +101,14 @@
     left: 0
 }
 
-/* submitter color */
-.comment .author.submitter,
-.res .thing .tagline .author.submitter,
-.res .thing .tagline .author.submitter:hover {
-    color: #dd4b39!important
+/* ensure transparent nameplate background color (override RES user highlighter)
+--------------------------------------------------------------------------------*/
+html.res.res-userHighlight body.res.res-userHighlight .author {
+    background-color: transparent !important
 }
 
-/* moderator bubble */
-.comment .author.moderator,
-.link .author.moderator {
-    background-position: 0 -72px!important
-}
-
-/* moderator bubble - ensure username is white */
-.author.moderator~.flair:before,
-.comment .moderator,
-.link .moderator,
-.thing .tagline .author.moderator,
-.tagline .author.submitter.moderator,
-.res .thing .tagline .author.moderator,
-.res .thing .tagline .author.submitter.moderator {
-    color: #fff!important
-}
-
-/* user attributes */
+/* user attributes
+--------------------------------------------------------------------------------*/
 .author.submitter:after {
     content: ' [S]'
 }
@@ -193,12 +139,10 @@
     content: ' [F,S,A]'
 }
 
-/* Tagline misc
+/* Comment show/hide
 --------------------------------------------------------------------------------*/
-
-/* comment show/hide */
 .comment .expand {
-    background-color: transparent;
+    background: transparent;
     color: #999;
     visibility: visible;
     position: absolute;
@@ -207,33 +151,35 @@
     left: 0;
     bottom: 0;
     padding: 2px;
-    transition: background-color 150ms, color 150ms;
-    font-size: 9px
+    transition: background 150ms, color 150ms;
+    font-size: 9px;
+    border-radius: 3px 0 0 3px;
 }
 .comment .expand:hover {
-    background-color: #669bff;
+    background: #669bff;
     color: #fff !important;
     text-decoration: none
 }
 
-/* RES voteweight */
+/* RES voteweight
+--------------------------------------------------------------------------------*/
 .tagline>a.voteWeight {
-    display: none!important
+    line-height: 15px;
+    height: 15px;
+    margin: 4px 3px 0 3px;
+    border-radius: 2px;
+    padding: 0 1px;
 }
 
-[lang$=nm] .res .voteWeight {
-    background: transparent !important;
-}
-
-/* stickied tagline */
-.thing .tagline .stickied-tagline {
+/* stickied tagline
+--------------------------------------------------------------------------------*/
+.thing .tagline .stickied-tagline, .comment .tagline:after {
     background: #20a679;
     color: #fff;
     height: 13px;
     line-height: 13px;
     padding: 2px 5px;
-    margin: 2px 3px;
-    left: 440px;
+    margin: 3px;
     border-radius: 3px;
     opacity: .8;
     text-transform: uppercase;
@@ -242,13 +188,20 @@
     font-weight: 700;
 }
 
-[lang$=nm] .thing .tagline .stickied-tagline {
+[lang$=nm] .thing .tagline .stickied-tagline, .res-nightmode .thing .tagline .stickied-tagline {
     background: rgba(255,255,255,0.15);
     color: hsl(160, 92%, 60%);
 }
 
-.comment .stickied-tagline:before {
-    display: none !important;
+.stickied-tagline:before {
+    display: none;
+}
+
+/* 'new comment' tagline
+--------------------------------------------------------------------------------*/
+.comment.new-comment .comment .tagline:after {
+    content: 'NEW COMMENT';
+    background: #2068ee;
 }
 
 /* toolbox buttons
@@ -265,7 +218,6 @@
 
 /* spoiler stamp
 --------------------------------------------------------------------------------*/
-
 .spoiler-stamp.stamp {
     background: #e4796b;
     border-color: #e4796b;
@@ -275,17 +227,11 @@
 
 /* nightmode misc
 --------------------------------------------------------------------------------*/
-[lang$=nm] .comment .score.dislikes,
-[lang$=nm] .comment .score.likes,
-[lang$=nm] .comment .score.unvoted,
-[lang$=nm] .flair:before,
-[lang$=nm] .link .score.unvoted,
-[lang$=nm] .tagline time:not(.edited-timestamp) {
+[lang$=nm] .comment .score.dislikes, .res-nightmode .comment .score.dislikes,
+[lang$=nm] .comment .score.likes, .res-nightmode .comment .score.likes,
+[lang$=nm] .comment .score.unvoted, .res-nightmode .comment .score.unvoted,
+[lang$=nm] .flair:before, .res-nightmode .flair:before,
+[lang$=nm] .link .score.unvoted, .res-nightmode .link .score.unvoted,
+[lang$=nm] .tagline time:not(.edited-timestamp), .res-nightmode .tagline time:not(.edited-timestamp) {
     color: #aaa
-}
-[lang$=nm] .flairrow .author,
-[lang$=nm] .side .tagline .author,
-[lang$=nm] .thing .author {
-    background-position: 0 0;
-    color: #48f
 }

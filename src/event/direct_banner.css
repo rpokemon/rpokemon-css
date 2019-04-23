@@ -21,14 +21,14 @@
 .side .md a[href="https://www.twitch.tv/nintendo"]:hover {
     border-color: #eee;
 }
-[lang$=nm] .side .md a[href="https://www.twitch.tv/nintendo"]:hover {
+[lang$=nm] .side .md a[href="https://www.twitch.tv/nintendo"]:hover, .res-nightmode .side .md a[href="https://www.twitch.tv/nintendo"]:hover {
     border-color: #333;
 }
 
 .listing-page #header .tabmenu li a:after {
     background: rgba(200,200,200,.9);
 }
-[lang$=nm] .listing-page #header .tabmenu li a:after {
+[lang$=nm] .listing-page #header .tabmenu li a:after, .res-nightmode .listing-page #header .tabmenu li a:after {
     background: rgba(200,200,200,.4);
 }
 
@@ -36,14 +36,14 @@
 .side .md>blockquote:nth-of-type(2) {
     box-shadow: 0 -1px 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.2);
 }
-[lang$=nm] .side .md>blockquote:nth-of-type(2) {
+[lang$=nm] .side .md>blockquote:nth-of-type(2), .res-nightmode .side .md>blockquote:nth-of-type(2) {
     box-shadow: 0 -1px 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.2);
     background: rgba(255,255,255,.65);
     color: rgba(0,0,0,.6);
     color: hsl(218, 100%, 30%);
     border-color: hsl(218, 100%, 50%);
 }
-[lang$=nm] .side .md>blockquote:nth-of-type(2) a {
+[lang$=nm] .side .md>blockquote:nth-of-type(2) a, .res-nightmode .side .md>blockquote:nth-of-type(2) a {
     color: hsl(218, 100%, 50%);
 }
 
@@ -51,6 +51,6 @@
     background: #fafafa !important;
 }
 
-[lang$=nm] #header {
+[lang$=nm] #header, .res-nightmode #header {
     background: #000 !important;
 }

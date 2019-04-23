@@ -1,0 +1,264 @@
+/********************************************************************************
+* STANDARD
+*********************************************************************************
+SUPER VERY IMPORTANT STUFF, PLEASE READ BEFORE CHANGING ANYTHING IN THIS FILE:
+
+The order of everything in this file is very important:
+
+  - It's important that the standard daymode/nightmode nameplates come first so
+    that they can be overridden by later stuff.
+  - The submitter color should come before the moderator nameplate so that the
+    moderator white color can override the submitter red color.
+  - The special nameplates then come after so that they can override the moderator
+    nameplate background position
+  - The "APPLY IMAGE" section should be the very last thing in this file so that
+    the background image can override.
+*********************************************************************************/
+
+/* standard daymode nameplate
+--------------------------------------------------------------------------------*/
+.author:not(.moderator) {
+    background: 0 -36px;
+    color: #2980b9;
+}
+
+/* standard nightmode nameplate
+--------------------------------------------------------------------------------*/
+[lang$=nm] .author:not(.moderator), .res-nightmode .author:not(.moderator) {
+    background-position: 0 0;
+    color: #48f;
+}
+
+/* submitter color
+--------------------------------------------------------------------------------*/
+.author.submitter, .author.submitter:hover,
+.res.res-userHighlight .author.submitter {
+    color: #dd4b39 !important;
+}
+
+/* moderator nameplate
+--------------------------------------------------------------------------------*/
+.author.author.moderator {
+    background: 0 -72px;
+    color: #fff !important;
+}
+.author.moderator~.flair:before,
+.res.res-userHighlight .author.moderator {
+    color: #fff !important;
+}
+
+/********************************************************************************
+* AMA HOST NAMEPLATE
+*********************************************************************************/
+
+/*
+.author[href$="/username"],
+.author[href$="/username"]~.flair:before {
+    background: 0 -144px;
+    color: #fff!important
+}
+*/
+
+/********************************************************************************
+* WEEKLY ANIME THREAD
+*********************************************************************************/
+
+/* UNCOMMENT THIS IF WE EVER USE IT
+
+.thing[data-url*="weekly_anime_thread"] .author,
+#gtm-jail[name*="weekly_anime_thread"]~.content .commentarea .sitetable .thing .author.submitter {
+    backgronud: 0 -324px;
+     color: #fff !important
+}
+
+.thing[data-url*="weekly_anime_thread"] .author~.flair,
+#gtm-jail[name*="weekly_anime_thread"]~.content .commentarea .sitetable .thing .author.submitter~.flair {
+    color: #fff !important
+}
+*/
+
+/********************************************************************************
+* SPECIAL USER NAMEPLATES
+*********************************************************************************/
+
+/* We don't need to put `color: #fff !important` for "Distinguish Only" nameplates
+ * because the `.author.moderator` is already targeted for setting to color to
+ * white in tagline.css
+ */
+
+/* ABRA YELLOW
+--------------------------------------------------------------------------------*/
+.author[href$="/A_Wild_Abra"], html body .author[href$="/A_Wild_Abra"]:not(.moderator) {
+    background: 0 -180px;
+    color: #fff!important
+}
+
+/* Tech Green
+--------------------------------------------------------------------------------*/
+.author[href$="/technophonix1"], html body .author[href$="/technophonix1"]:not(.moderator)
+.author[href$="/technophonix1"]~.flair:before {
+    background: 0 -216px;
+    color: #333 !important;
+}
+
+/* Haruka Purple - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/Haruka-sama"],
+.author.moderator[href$="/Haruka-sama"]~.flair:before {
+    background: 0 -252px;
+}
+
+/* Samz Purple/Turqoise - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/IAmzSamz"],
+.author.moderator[href$="/IAmzSamz"]~.flair:before  {
+    background: 0 -288px;
+}
+
+/* Baru Orange - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author[href$="/Lady_Baruren"],
+.author[href$="/Lady_Baruren"]~.flair:before  {
+    background: 0 -324px;
+}
+
+/* DLH Black/Yellow - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/DavidLuizshair"] {
+    background: 0 -360px;
+}
+
+/* Mudkip Blue/Orange - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/CrimsonMudkip"],
+.author.moderator[href$="/CrimsonMudkip"]~.flair:before  {
+    background: 0 -396px;
+}
+
+/* TexasAndroid Black/White - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/TexasAndroid"] {
+    background: 0 -432px;
+}
+
+/* Mockturne Vermillion - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/Mockturne"],
+.author.moderator[href$="/Mockturne"]~.flair:before  {
+    background: 0 -468px;
+}
+
+/* Draycen - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/Draycen"],
+.author.moderator[href$="/Draycen"]~.flair:before  {
+    background: 0 -504px;
+}
+
+/* SnowPhoenix9999 and UrsineKing - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/SnowPhoenix9999"],
+.author.moderator[href$="/UrsineKing"] {
+    background: 0 -540px;
+}
+
+/* AnAbsurdlyAngryGoose - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/AnAbsurdlyAngryGoose"],
+.author.moderator[href$="/AnAbsurdlyAngryGoose"]~.flair:before {
+    background: 0 -576px;
+}
+
+/* ShinySigma - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/ShinySigma"],
+.author.moderator[href$="/ShinySigma"]~.flair:before {
+    background: 0 -612px;
+}
+
+/* Pikaachew - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/Pikaachew"] {
+    background: 0 -648px;
+}
+
+/* TheDominantSoul - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/TheDominantSoul"] {
+    background: 0 -684px;
+}
+
+/* AndyJekal - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/AndyJekal"],
+.author.moderator[href$="/AndyJekal"]~.flair:before  {
+    background: 0 -720px;
+}
+
+/* StormSwampert - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/StormSwampert"],
+.author.moderator[href$="/StormSwampert"]~.flair:before  {
+    background: 0 -756px;
+}
+
+/* GeekScientist - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/GeekScientist"],
+.author.moderator[href$="/GeekScientist"]~.flair:before {
+    background: 0 -792px;
+}
+
+/********************************************************************************
+* FORCE DARK FLAIR TEXT
+*********************************************************************************/
+.author[href$="/A_Wild_Abra"]~.flair:before,
+.author.moderator[href$="/DavidLuizshair"]~.flair:before,
+.author.moderator[href$="/TexasAndroid"]~.flair:before ,
+.author.moderator[href$="/SnowPhoenix9999"]~.flair:before,
+.author.moderator[href$="/UrsineKing"]~.flair:before,
+.author.moderator[href$="/Pikaachew"]~.flair:before,
+.author.moderator[href$="/TheDominantSoul"]~.flair:before {
+    color: #333 !important;
+}
+
+/********************************************************************************
+* OFFICIAL NAMEPLATES
+*********************************************************************************/
+
+/* NINTENDO OF AMERICA OFFICIAL - user Flair
+--------------------------------------------------------------------------------*/
+.author[href$="/Nintendo_America"]
+.author[href$="/Nintendo_America"]~.flair:before  {
+    background: 0 108px;
+    color: #fff !important
+}
+
+/********************************************************************************
+* MODERATOR EMERITUS NAMEPLATE
+*********************************************************************************/
+/* Hero_Of_Legend */
+.author[href$="/Hero_Of_Legend"],
+.author[href$="/Hero_Of_Legend"]~.flair:before,
+
+/* SHINX_FUCKER */
+.author[href$="/SHINX_FUCKER"],
+.author[href$="/SHINX_FUCKER"]~.flair:before,
+
+/* Thundergrunge */
+.author[href$="/Thundergrunge"],
+.author[href$="/Thundergrunge"]~.flair:before {
+    background: 0 -108px;
+    color: #fff !important;
+}
+
+/********************************************************************************
+* APPLY IMAGE
+*********************************************************************************/
+.top-matter .author,
+.comment .author,
+.flairrow .author,
+.side .tagline .author {
+    background-image: url(%%FlairBG%%) !important;
+    background-size: 280px !important;
+}

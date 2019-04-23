@@ -12,6 +12,16 @@
     margin-top: -3px!important
 }
 
+body.mod-toolbox .tb-popup a.author {
+    box-sizing: border-box !important;
+}
+.tb-context-comment .comment {
+    margin: 5px 0 0 0;
+}
+.tb-context-comment .comment input ~.parent {
+    min-height: 10px;
+}
+
 /* queue pages
 --------------------------------------------------------------------------------*/
 body:not(.comments-page):not(.comment-permalink-page) .comment {
@@ -28,11 +38,11 @@ body:not(.comments-page):not(.comment-permalink-page) .thing.comment>input[type=
     position: static;
     margin: 5px -20px 0 5px!important
 }
-[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment {
+[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment, .res-nightmode body:not(.comments-page):not(.comment-permalink-page) .comment {
     background: rgba(42, 45, 50, .4);
     border-color: rgba(0, 0, 0, .15)
 }
-[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
+[lang$=nm] body:not(.comments-page):not(.comment-permalink-page) .comment .parent, .res-nightmode body:not(.comments-page):not(.comment-permalink-page) .comment .parent {
     background: rgba(0, 0, 0, .1);
     border: 0
 }

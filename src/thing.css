@@ -27,11 +27,11 @@
     padding-top: 8px;
 }
 
-[lang$=nm] .entry, [lang$=nm] .thing.link {
+[lang$=nm] .entry, .res-nightmode .entry, [lang$=nm] .thing.link, .res-nightmode .thing.link {
     background: hsl(218,9%,15%)!important;
 }
 
-[lang$=nm] .thing.link, [lang$=nm] .comment .entry {
+[lang$=nm] .thing.link, .res-nightmode .thing.link, [lang$=nm] .comment .entry, .res-nightmode .comment .entry {
     border: 1px solid hsl(218, 9%, 5%);
     box-shadow: 0 1px 3px rgba(173,178,255,.15);
 }
@@ -56,8 +56,10 @@
 .child,
 .res .RES-keyNav-activeElement .md-container,
 .res .link .RES-keyNav-activeElement,
-html body .link.entry.res-selected,
-html body .entry.res-selected .md-container {
+html body .link .entry.res-selected,
+html body .entry.res-selected .md-container,
+.res.res-nightmode .link .entry.res-selected,
+.res.res-nightmode .entry.res-selected .md-container {
     background: 0 !important;
     border-color: transparent!important
 }
@@ -66,17 +68,15 @@ html body .entry.res-selected .md-container {
     background: #F0F3FC
 }
 
-[lang$=nm] .thing.link.RES-keyNav-activeThing,
-[lang$=nm] .comment.RES-keyNav-activeThing > .entry {
+[lang$=nm] .thing.link.RES-keyNav-activeThing, .res-nightmode .thing.link.RES-keyNav-activeThing,
+[lang$=nm] .comment.RES-keyNav-activeThing > .entry, .res-nightmode .comment.RES-keyNav-activeThing > .entry,
+[lang$=nm] .comment .entry.res-selected, .res-nightmode .comment .entry.res-selected {
     background: hsl(218, 9%, 11%) !important;
 }
-[lang$=nm] .comment.RES-keyNav-activeThing > .entry {
+[lang$=nm] .comment.RES-keyNav-activeThing > .entry, .res-nightmode .comment.RES-keyNav-activeThing > .entry,
+[lang$=nm] .comment .entry.res-selected, .res-nightmode .comment .entry.res-selected {
     border-color: hsl(218, 9%, 9%);
 }
-[lang$=nm] .thing.comment.new-comment:not(.RES-keyNav-activeThing) .entry {
-    border-color: #2d466f !important;
-}
-
 
 /* Link Title
 --------------------------------------------------------------------------------*/
@@ -93,6 +93,8 @@ html body .entry.res-selected .md-container {
 .link a.title {
     font-size: 19px;
     color: rgba(0, 0, 0, .8);
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 /* domain */
@@ -108,7 +110,7 @@ html body .entry.res-selected .md-container {
 }
 
 /* link color nightmode */
-[lang$=nm] .link a.title {
+[lang$=nm] .link a.title, .res-nightmode .link a.title {
     color: rgba(255, 255, 255, .8)
 }
 
@@ -120,9 +122,9 @@ html body .entry.res-selected .md-container {
 }
 
 /* visited link color nightmode */
-[lang$=nm] .link a.title:visited,
-[lang$=nm] .thing .title:visited,
-[lang$=nm] .thing.visited .title {
+[lang$=nm] .link a.title:visited, .res-nightmode .link a.title:visited,
+[lang$=nm] .thing .title:visited, .res-nightmode .thing .title:visited,
+[lang$=nm] .thing.visited .title, .res-nightmode .thing.visited .title {
     color: #b0a2e6
 }
 
@@ -131,7 +133,7 @@ html body .entry.res-selected .md-container {
     color: hsl(160, 67%, 39%);
 }
 /* stickied color nightmod e*/
-[lang$=nm] .thing.stickied.link a.title {
+[lang$=nm] .thing.stickied.link a.title, .res-nightmode .thing.stickied.link a.title {
     color: hsl(160, 92%, 45%);
 }
 
@@ -238,13 +240,13 @@ html body .entry.res-selected .md-container {
     display: none
 }
 
-[lang$=nm] .thumbnail,
-[lang$=nm] .thumbnail.default,
-[lang$=nm] .thumbnail.nsfw,
-[lang$=nm] .thumbnail.self,
-[lang$=nm] .linkflair-rotation .thumbnail,
-[lang$=nm] .linkflair-rotation .thumbnail.self,
-[lang$=nm] .thing .midcol+.entry a.title:before  {
+[lang$=nm] .thumbnail, .res-nightmode .thumbnail,
+[lang$=nm] .thumbnail.default, .res-nightmode .thumbnail.default,
+[lang$=nm] .thumbnail.nsfw, .res-nightmode .thumbnail.nsfw,
+[lang$=nm] .thumbnail.self, .res-nightmode .thumbnail.self,
+[lang$=nm] .linkflair-rotation .thumbnail, .res-nightmode .linkflair-rotation .thumbnail,
+[lang$=nm] .linkflair-rotation .thumbnail.self, .res-nightmode .linkflair-rotation .thumbnail.self,
+[lang$=nm] .thing .midcol+.entry a.title:before , .res-nightmode .thing .midcol+.entry a.title:before  {
     background-image: url(%%thumbnails-nm%%) !important;
     border: 1px solid #111
 }
@@ -266,6 +268,8 @@ html body .entry.res-selected .md-container {
     padding-bottom: 5px;
     border: 1px solid #cecdcd;
     background: #fff;
+    min-height: 27px;
+    box-sizing: border-box;
 }
 /* entry buttons
 --------------------------------------------------------------------------------*/
@@ -274,7 +278,8 @@ html body .entry.res-selected .md-container {
     margin-left: 10px
 }
 
-[lang$=nm] .entry .buttons li a {
+[lang$=nm] .entry .buttons li a, .res-nightmode .entry .buttons li a,
+[lang$=nm] .morecomments a, .res-nightmode .morecomments a, .res-nightmode .entry .morecomments .gray {
     color: rgba(240,252,255,.4);
 }
 
@@ -291,6 +296,7 @@ html body .entry.res-selected .md-container {
     -webkit-flex-direction: column;
     flex-direction: column;
     z-index: 50;
+    padding-top: 3px;
 }
 .link .midcol {
     background: rgba(0, 0, 0, .02);
@@ -309,7 +315,7 @@ html body .entry.res-selected .md-container {
     z-index: 5
 }
 
-[lang$=nm] .link .midcol {
+[lang$=nm] .link .midcol, .res-nightmode .link .midcol {
     border-right-color: rgba(0,0,0,0.3);
     background: rgba(0,0,0,0.1);
     border-left: 1px solid rgba(0,0,0,0.5);
@@ -360,8 +366,8 @@ html body .entry.res-selected .md-container {
     background: #fff
 }
 
-[lang$=nm] .comment .score,
-[lang$=nm] .comment .tagline .score-hidden {
+[lang$=nm] .comment .score, .res-nightmode .comment .score,
+[lang$=nm] .comment .tagline .score-hidden, .res-nightmode .comment .tagline .score-hidden {
     background: #282b30 !important;
     border-color: #17191c;
 }
@@ -449,10 +455,10 @@ html body .entry.res-selected .md-container {
     display: none;
 }
 
-[lang$=nm] .expando-button {
+[lang$=nm] .expando-button, .res-nightmode .expando-button {
     background-position: -175px -57px!important;
 }
-[lang$=nm] .expando-button.expanded {
+[lang$=nm] .expando-button.expanded, .res-nightmode .expando-button.expanded {
     background-position: -193px -57px!important;
 }
 
@@ -465,17 +471,27 @@ html body .entry.res-selected .md-container {
     background: inherit;
 }
 
+/* General misc
+--------------------------------------------------------------------------------*/
+.post-sharing {
+    margin: 10px;
+}
+
+.post-sharing .c-close {
+    font-size: 0;
+}
+
 /* Nightmode misc
 --------------------------------------------------------------------------------*/
-[lang$=nm] .post-sharing,
-[lang$=nm] .subreddit-report-form {
+[lang$=nm] .post-sharing, .res-nightmode .post-sharing,
+[lang$=nm] .subreddit-report-form, .res-nightmode .subreddit-report-form {
     border-color: rgba(255, 255, 255, .2)!important;
     background: rgba(255, 255, 255, .02)!important
 }
-[lang$=nm] .thing .md hr {
+[lang$=nm] .thing .md hr, .res-nightmode .thing .md hr {
     background: rgba(255,255,255,0.1)
 }
-[lang$=nm] .md code,
-[lang$=nm] .md pre {
+[lang$=nm] .md code, .res-nightmode .md code,
+[lang$=nm] .md pre, .res-nightmode .md pre {
     background: rgba(0, 0, 0, .08)
 }

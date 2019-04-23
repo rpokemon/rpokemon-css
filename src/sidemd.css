@@ -28,7 +28,7 @@
     letter-spacing: 1px;
 }
 
-[lang$=nm] .side .md > h5 strong {
+[lang$=nm] .side .md > h5 strong, .res-nightmode .side .md > h5 strong {
     color: hsl(245, 25%, 71%);
     border-bottom-color: hsla(210,20%,80%,0.25);
 }
@@ -64,7 +64,7 @@
     opacity: 0.8;
 }
 
-[lang$=nm] .side .md > h5 + ul li:before {
+[lang$=nm] .side .md > h5 + ul li:before, .res-nightmode .side .md > h5 + ul li:before {
     width: 100px;
     height: 100px;
     background-position: 0 -250px;
@@ -101,7 +101,7 @@
     color: #fff;
 }
 
-[lang$=nm] .side .md h3+ul a {
+[lang$=nm] .side .md h3+ul a, .res-nightmode .side .md h3+ul a {
     background: #4f47ac;
     color: #fff;
 }
@@ -161,14 +161,14 @@
     padding-bottom: 10px;
 }
 
-[lang$=nm] .side .md h3+ul+ol:after {
+[lang$=nm] .side .md h3+ul+ol:after, .res-nightmode .side .md h3+ul+ol:after {
     background: #4a4a4a
 }
-[lang$=nm] .side .md h3+ul,
-[lang$=nm] .side .md h3+ul+ol {
+[lang$=nm] .side .md h3+ul, .res-nightmode .side .md h3+ul,
+[lang$=nm] .side .md h3+ul+ol, .res-nightmode .side .md h3+ul+ol {
     border-left-color: #4a4a4a
 }
-[lang$=nm] .side .md h3+ul+ol>li:before {
+[lang$=nm] .side .md h3+ul+ol>li:before, .res-nightmode .side .md h3+ul+ol>li:before {
     background: #282b30;
     border-color: #666;
     border-width: 2px;
@@ -181,7 +181,7 @@
     top: 4px;
     color: #aaa;
 }
-[lang$=nm] .side .md h3+ul+ol>li>a {
+[lang$=nm] .side .md h3+ul+ol>li>a, .res-nightmode .side .md h3+ul+ol>li>a {
     color: #80b3ff;
     font-weight: 700;
 }
@@ -311,12 +311,12 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
     box-sizing: border-box;
 }
 
-[lang$=nm] .side .md > table tr:not(:last-child) {
+[lang$=nm] .side .md > table tr:not(:last-child), .res-nightmode .side .md > table tr:not(:last-child) {
     border-bottom-color: #444;
 }
 
-[lang$=nm] .side .md > table td,
-[lang$=nm] .side .md > table td a {
+[lang$=nm] .side .md > table td, .res-nightmode .side .md > table td,
+[lang$=nm] .side .md > table td a, .res-nightmode .side .md > table td a {
     color: rgba(240,252,255,.7);
 }
 
@@ -355,7 +355,7 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
     transition: all 50ms ease;
 }
 .side .md h6+blockquote p a:hover,
-[lang$=nm] .side .md h6+blockquote p a:hover {
+[lang$=nm] .side .md h6+blockquote p a:hover, .res-nightmode .side .md h6+blockquote p a:hover {
     background: #65609f;
     color: #fff;
 }
@@ -365,7 +365,7 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 }
 
 /* community links */
-[lang$=nm] .side .md h6+blockquote p a {
+[lang$=nm] .side .md h6+blockquote p a, .res-nightmode .side .md h6+blockquote p a {
     background: rgba(0,0,0,0.3);
     border: 1px solid #65609f;
     color: #c7c7c7;
@@ -373,20 +373,20 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 
 /* Nightmode misc
 --------------------------------------------------------------------------------*/
-[lang$=nm] .side .md,
-[lang$=nm] .side .md>h2,
-[lang$=nm] .side .md>h5,
-[lang$=nm] .side .md>p:first-of-type,
-[lang$=nm] .side #searchexpando {
+[lang$=nm] .side .md, .res-nightmode .side .md,
+[lang$=nm] .side .md>h2, .res-nightmode .side .md>h2,
+[lang$=nm] .side .md>h5, .res-nightmode .side .md>h5,
+[lang$=nm] .side .md>p:first-of-type, .res-nightmode .side .md>p:first-of-type,
+[lang$=nm] .side #searchexpando, .res-nightmode .side #searchexpando {
     color: rgba(240,252,255,.6);
 }
 
-[lang$=nm] .side .md>h2,
-[lang$=nm] .side .md>h4,
-[lang$=nm] .side .md>h2+ul,
-[lang$=nm] .side .md>h5,
-[lang$=nm] .side .md>h5+ul,
-[lang$=nm] .side .md>h4+blockquote,
-[lang$=nm] .side .md>table {
+[lang$=nm] .side .md>h2, .res-nightmode .side .md>h2,
+[lang$=nm] .side .md>h4, .res-nightmode .side .md>h4,
+[lang$=nm] .side .md>h2+ul, .res-nightmode .side .md>h2+ul,
+[lang$=nm] .side .md>h5, .res-nightmode .side .md>h5,
+[lang$=nm] .side .md>h5+ul, .res-nightmode .side .md>h5+ul,
+[lang$=nm] .side .md>h4+blockquote, .res-nightmode .side .md>h4+blockquote,
+[lang$=nm] .side .md>table, .res-nightmode .side .md>table {
     background: rgba(255,255,255,0.03);
 }

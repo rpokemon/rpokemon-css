@@ -22,7 +22,7 @@
     transform-origin: 0 0;
     top: 0;
     left: 0;
-    margin: -1px 0px -1px 1px;
+    margin: -1px 0 -1px 1px;
     border-radius: 3px 3px 0 0;
 }
 
@@ -118,12 +118,12 @@ html .flairselector .linkflairlabel, .reddit-link .linkflairlabel,
 
 /* flair colors - specific mode
 --------------------------------------------------------------------------------*/
-[lang$=nm] .link.linkflair:before,
-[lang$=nm] .link.linkflair .linkflairlabel {
+[lang$=nm] .link.linkflair:before, .res-nightmode .link.linkflair:before,
+[lang$=nm] .link.linkflair .linkflairlabel, .res-nightmode .link.linkflair .linkflairlabel {
     background: hsl(218, 9%, 13%) !important;
 }
 
-html:not([lang$=nm]) .linkflair .linkflairlabel {
+html:not([lang$=nm]):not(.res-nightmode) .linkflair .linkflairlabel {
     color: #fff !important;
 }
 
@@ -206,6 +206,6 @@ html:lang(nc) .listing-page .link.linkflair-craft {
     border-top: 1px solid #ddd
 }
 
-[lang$=nm] .flairselector form {
+[lang$=nm] .flairselector form, .res-nightmode .flairselector form {
     border-top: 1px solid rgba(240,252,255,.3);
 }

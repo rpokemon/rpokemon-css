@@ -1,0 +1,473 @@
+/********************************************************************************
+* CUSTOM BALL FLAIRS
+*********************************************************************************/
+
+/* Poke balls - Subscription
+--------------------------------------------------------------------------------*/
+body .flair:after {
+    background-position: 0px 0px;
+}
+
+/* Great balls
+--------------------------------------------------------------------------------*/
+.flair.flair-greatball:after {
+    background: -30px 0
+}
+
+/* Ultra balls
+--------------------------------------------------------------------------------*/
+.flair.flair-ultraball:after {
+    background: -60px 0
+}
+
+/* Master balls
+--------------------------------------------------------------------------------*/
+.flair.flair-masterball:after {
+    background: -90px 0
+}
+
+/* Safari balls
+--------------------------------------------------------------------------------*/
+.flair.flair-safariball:after {
+    background: -120px 0
+}
+
+/* Repeat balls
+--------------------------------------------------------------------------------*/
+.flair.flair-repeatball:after {
+    background: -150px 0
+}
+
+/* Timer balls
+--------------------------------------------------------------------------------*/
+.flair.flair-timerball:after {
+    background: -180px 0
+}
+
+/* Premier balls
+--------------------------------------------------------------------------------*/
+.flair.flair-premierball:after {
+    background: -210px 0
+}
+
+/* Nest balls
+--------------------------------------------------------------------------------*/
+.flair.flair-nestball:after {
+    background: -240px 0
+}
+
+/* Net balls
+--------------------------------------------------------------------------------*/
+.flair.flair-netball:after {
+    background: -270px 0
+}
+
+/* Dive balls
+--------------------------------------------------------------------------------*/
+.flair.flair-diveball:after {
+    background: -300px 0
+}
+
+/* Luxury balls
+--------------------------------------------------------------------------------*/
+.flair.flair-luxuryball:after {
+    background: -330px 0;
+}
+
+/* Heal balls
+--------------------------------------------------------------------------------*/
+.flair.flair-healball:after {
+    background: -360px 0;
+}
+
+
+/* Quick balls
+--------------------------------------------------------------------------------*/
+.flair.flair-quickball:after {
+    background: -390px 0
+}
+
+/* Cherish balls
+--------------------------------------------------------------------------------*/
+.flair.flair-cherishball:after {
+    background: -420px 0
+}
+
+/* Dusk balls
+--------------------------------------------------------------------------------*/
+.flair.flair-duskball:after {
+    background: -450px 0
+}
+
+/* Park balls
+--------------------------------------------------------------------------------*/
+.flair.flair-parkball:after {
+    background: -480px 0
+}
+
+/* Dreamball
+--------------------------------------------------------------------------------*/
+.flair.flair-dreamball:after {
+    background: -510px 0
+}
+
+/* Moon ball
+--------------------------------------------------------------------------------*/
+.flair.flair-moonball:after {
+    background: -540px 0
+}
+
+/* Love ball
+--------------------------------------------------------------------------------*/
+.flair.flair-loveball:after {
+    background: -570px 0
+}
+
+/* Beast ball
+--------------------------------------------------------------------------------*/
+.flair.flair-beastball:after {
+    background: -600px 0
+}
+
+/********************************************************************************
+* CUSTOM NON-BALL BALL-FLAIRS
+*********************************************************************************/
+
+/* New mods icon 1.0 JOHTO
+--------------------------------------------------------------------------------*/
+.flair.flair-johtomod:after {
+    background: -630px 0
+}
+
+/* New mods icon 2.0 HOENN
+--------------------------------------------------------------------------------*/
+.flair.flair-hoennmod:after {
+    background: -660px 0
+}
+
+/* New mods icon 3.0 SINNOH
+--------------------------------------------------------------------------------*/
+.flair.flair-sinnohmod:after {
+    background: -690px 0
+}
+
+/* New mods icon 4.0 UNOVA
+--------------------------------------------------------------------------------*/
+.flair.flair-unovamod:after {
+    background: -720px 0
+}
+
+/* New mods icon 5.0 KALOS
+--------------------------------------------------------------------------------*/
+.flair.flair-kalosmod:after {
+    background: -750px 0
+}
+
+/* New mods icon 6.0 ALOLA
+--------------------------------------------------------------------------------*/
+.flair.flair-alolamod:after {
+    background: -780px 0
+}
+
+/********************************************************************************
+* SPECIAL ACHIVEMENT FLAIRS
+*********************************************************************************/
+
+/* Pokedex */
+.flair.flair-dex-complete:after {
+    background: -840px 0;
+    transform: scale(0.9);
+}
+
+/* Rotom Dex */
+.flair.flair-aloladex-complete:after {
+    background: -900px 0
+}
+
+/* Oval Charm */
+.flair.flair-ovalcharm:after {
+    background: -930px 0
+}
+
+/* Shiny Charm */
+.flair.flair-shinycharm:after {
+    background: -960px 0
+}
+
+/* Golden Pokedex */
+.flair.flair-goldendex:after {
+    background: -990px 0;
+    width: 34px;
+    transform: scale(0.9);
+}
+
+/********************************************************************************
+* CONTEST FLAIRS
+*********************************************************************************/
+
+/* Strange Souvenir - Gen 7 Lottery Prediction Pool */
+.flair.flair-souvenir:after {
+    background: -1140px 0;
+}
+
+/* Alola Trial Medal - best of 2016 */
+.flair.flair-alolatrial:after {
+    background: -1170px 0;
+    transform: scale(0.9);
+}
+
+/* Pikachu Cup - Cup project helpers */
+.flair.flair-pikacup:after {
+    background: -1200px 0;
+}
+
+/* Golden Pumpkaboo - 2016 Pumpkin Carving Contest - Winner and three runners-up */
+.flair.flair-goldpumpkaboo:after {
+    background: 0 -30px;
+}
+
+/* golden pokebank - pokebank guess winners */
+.flair.flair-bankflair:after {
+    background: -30px -30px;
+}
+
+/* POGO Gym - MVP 100 Gyms */
+.flair.flair-gomvp:after  {
+    background: -60px -30px;
+    transform-origin: top 5px;
+    width: 32px;
+    height: 35px;
+}
+
+/* Golden Team Skull Badge - shitpost winners */
+.flair.flair-skullbadge-gold:after {
+    background: -90px -30px
+}
+
+/* Golden Teeth */
+.flair.flair-goldenteeth:after {
+    background: -120px -30px;
+}
+
+/* Coin Case */
+.flair.flair-coincase:after {
+    background: -150px -30px;
+}
+
+/* Red Scale */
+.flair.flair-redscale:after {
+    background: -180px -30px;
+}
+
+/* Shiny Magikarp */
+.flair.flair-shinykarp:after {
+    background: -210px -30px;
+}
+
+/* necroparticipant */
+.flair.flair-necroparticipant:after {
+    background: -240px -30px;
+}
+
+/* necrowinner */
+.flair.flair-necrowinner:after {
+    background: -270px -30px;
+}
+
+/* tall alolan exeggutor ballflair - shitpost winners */
+.flair.flair-longneck:after {
+    background: -1290px -30px;
+    height: 95px;
+    margin-top: -68px;
+}
+
+/* Egg - Easter 2018 Contest Participants */
+.flair.flair-egg:after {
+    background: -300px -30px;
+}
+
+/* Manaphy Egg - Easter 2018 Contest Winners */
+.flair.flair-manaphyegg:after {
+    background: -330px -30px;
+}
+
+/* Gold Zubat - 1mil donors */
+.flair.flair-goldbat:after {
+    background: -360px -30px;
+}
+
+/* Bike - 1mil donors */
+.flair.flair-bike:after {
+    background: -390px -30px;
+}
+
+/* Amulet Coin - 1mil donors */
+.flair.flair-amuletcoin:after {
+    background: -420px -30px;
+}
+
+/* Gracidea - 1mil donors */
+.flair.flair-gracidea:after {
+    background: -450px -30px;
+}
+
+/* Gold Gengar - 1mil $500 donor */
+.flair.flair-goldgar:after {
+    background: -480px -30px;
+}
+
+/* 10th anniversary logo*/
+.flair.flair-10logo:after {
+    background: -523px -34px;
+    background-size: 660px 64px;
+    image-rendering: auto;
+}
+
+/* Fog Badge - 2018 halloween contest */
+.flair.flair-fogbadge:after {
+    background: -450px -60px;
+}
+
+/* TAPU CHALLENGE MEDALS */
+.flair.flair-tapubulu-medal:after,
+.flair.flair-tapufini-medal:after,
+.flair.flair-tapulele-medal:after,
+.flair.flair-tapukoko-medal:after {
+    width: 42px;
+    height: 42px;
+    margin-top: -8px;
+    margin-left: -10px;
+}
+
+/* Tapu bulu - Challenge Medal */
+.flair.flair-tapubulu-medal:after {
+    background: -1106px -86px;
+}
+
+/* Tapu fini - Challenge Medal */
+.flair.flair-tapufini-medal:after {
+    background: -1152px -86px;
+}
+
+/* Tapu lele - Challenge Medal */
+.flair.flair-tapulele-medal:after {
+    background: -1200px -86px;
+}
+
+/* Tapu koko - Challenge Medal */
+.flair.flair-tapukoko-medal:after {
+    background: -1244px -86px;
+}
+
+/********************************************************************************
+* EXTERNAL COMMUNITY FLAIRS
+*********************************************************************************/
+.flair.flair-discordmod:after {
+    background: -1260px 0;
+}
+
+.flair.flair-verified-account:after {
+    background: -1230px 0;
+}
+
+/********************************************************************************
+* ADMIN EXCLUSIVE FLAIRS
+*********************************************************************************/
+
+/* technophonix1 stone
+--------------------------------------------------------------------------------*/
+.author[href$="/technophonix1"]~.flair:after {
+    background: 0 -60px
+}
+
+/* bigslothonmyface GBsounds
+--------------------------------------------------------------------------------
+.author[href$="/bigslothonmyface"]~.flair:after {
+    background: -30px -60px;
+}*/
+
+/* A_Wild_Abra spoon
+--------------------------------------------------------------------------------*/
+.author[href$="/A_Wild_Abra"]~.flair:after {
+    background: -60px -60px;
+}
+
+/* SnowPhoenix9999 NeverMeltIce
+--------------------------------------------------------------------------------
+.author[href$="/SnowPhoenix9999"]~.flair:after {
+    background: -90px -60px
+}*/
+
+/* Jaksida Farfetch'd
+--------------------------------------------------------------------------------*/
+.author[href$="/jaksida"]~.flair:after {
+    background: -120px -60px
+}
+
+/* ad3z10 Heat Drive
+--------------------------------------------------------------------------------*/
+.author[href$="/ad3z10"]~.flair:after {
+    background: -150px -60px
+}
+
+/* TARS-CASE Leftovers 2
+--------------------------------------------------------------------------------*/
+.author[href$="/TARS-CASE"]~.flair:after {
+    background: -180px -60px
+}
+
+/* RustRider Snooball
+--------------------------------------------------------------------------------*/
+.author[href$="/RustRider"]~.flair:after {
+    background: -210px -60px;
+}
+
+/* Mockturne Present
+--------------------------------------------------------------------------------*/
+.author[href$="/Mockturne"]~.flair:after {
+    background: -240px -60px;
+}
+
+/* CrimsonMudkip Mega Stone
+--------------------------------------------------------------------------------*/
+.author[href$="/CrimsonMudkip"]~.flair:after {
+    background: -270px -60px;
+}
+
+/* TexasAndroid TeachyTV
+--------------------------------------------------------------------------------*/
+.author[href$="/TexasAndroid"]~.flair:after {
+    background: -300px -60px;
+}
+
+/* IAmzSamz Deoxys Stone
+--------------------------------------------------------------------------------*/
+.author[href$="/IAmzSamz"]~.flair:after {
+    background: -330px -60px;
+}
+
+/* DavidLuizshair Altarianite
+--------------------------------------------------------------------------------*/
+.author[href$="/DavidLuizshair"]~.flair:after {
+    background: -360px -60px;
+}
+
+/* Draycen Meteorite
+--------------------------------------------------------------------------------*/
+.author[href$="/Draycen"]~.flair:after {
+    background: -390px -60px;
+}
+
+/* Ursineking Ice Stone
+--------------------------------------------------------------------------------*/
+.author[href$="/UrsineKing"]~.flair:after {
+    background: -420px -60px;
+}
+
+/********************************************************************************
+* APPLY IMAGE
+*********************************************************************************/
+.flair:after {
+    background-image:  url(%%ballflair%%) !important;
+    background-repeat: no-repeat !important;
+}

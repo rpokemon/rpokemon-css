@@ -1,9 +1,7 @@
 /********************************************************************************
 * USER FLAIR
 *********************************************************************************/
-.flair,
-.flair:after,
-.flair:before {
+.flair, .flair:after, .flair:before {
     position: absolute
 }
 
@@ -17,22 +15,30 @@
     border: 0;
     border-radius: 0;
     z-index: 2;
-    text-indent: -9999px;
+    font-size: 0 !important;
     image-rendering: pixelated;
+}
+
+.res-nightmode .flair {
+    background-color: transparent;
 }
 
 .flair.flair-placeholder {
     background-image: none !important;
 }
 
+span.flairemoji {width: 30px;height: 28px;margin: 2px 5px;}
+
+/* positioning
+--------------------------------------------------------------------------------*/
 .comment .flair { top: -28px }
 .link .flair    { top: -4px }
 
-/* flair text */
+/* flair text
+--------------------------------------------------------------------------------*/
 .flair:before {
     content: attr(title);
     font-size: 9px;
-    text-indent: 0;
     display: block;
     width: 220px;
     bottom: 1px;
@@ -42,22 +48,36 @@
     max-width: 206px
 }
 
-/* sidecontentbox flair fix */
+
+/* ball flair
+--------------------------------------------------------------------------------*/
+.flair:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: 0;
+    visibility: visible;
+    top: 4px;
+}
+
+/* sidebar flair fix
+--------------------------------------------------------------------------------*/
 .sidecontentbox .author, .sidecontentbox .author,
 .sidecontentbox .author:before, .sidecontentbox .author:after {
     margin-left: 38px; font-size: 11px;
 }
-.sidecontentbox .flair { left: 0; top: -2px; margin-left: -5px; }
+.sidecontentbox .flair { left: -5px; top: -2px; }
 .sidecontentbox .flair:after { left: 235px; }
 .sidecontentbox .flair:before { bottom: 2px; left: 43px; }
 
-/* side tagline flair fix */
 .titlebox .flair {
     top: 0;
     left: -2px
 }
 
-/* hide flair in search page, wiki page revision listing, and crossposts */
+/* hide flair in search page, wiki page revision listing, and crossposts
+--------------------------------------------------------------------------------*/
 .search-result-group .flair,
 .wiki-page .wiki-page-content .flair,
 .crosspost-preview-tagline .flair {
@@ -67,7 +87,6 @@
 /********************************************************************************
 * TRAINER USER FLAIRS
 *********************************************************************************/
-
 .flair.flair-tf {
     bottom: 0;
     top: auto;
@@ -81,12 +100,10 @@
 .flair.flair-tf:before { bottom: 4px; }
 .flair.flair-tf:after { top: auto; bottom: 2px; }
 
-/* mod box */
+/* mod box fix
+--------------------------------------------------------------------------------*/
 .sidecontentbox .flair.flair-tf {
-    left: 2px;
-    top: auto;
-    bottom: 0px;
-    margin-left: -5px;
+    left: -3px;
     transform: scale(0.8);
     transform-origin: left bottom;
 }
@@ -103,639 +120,134 @@
 }
 
 /********************************************************************************
-* CUSTOM USER FLAIRS
+* USER SPECIAL FLAIRS
 *********************************************************************************/
 .author[href$="/lamomok"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: 0 -13px
-/*}
-.author[href$="/TheGhost983"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: 0 -13px
+    background: url(%%sp%%) 0 -13px !important;
+}
+
+/*.author[href$="/TheGhost983"]~.flair {
+    background: url(%%sp%%) 0 -13px !important;
 }
 .author[href$="/David920"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -36px -14px
-}
-.author[href$="/technophonix1"]~.flair {
-    /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
-    background-position: -69px -16px*/ 
-    /* background-image: url(%%modtrainerflair%%)!important;
-    background-position: 0 0 */
-}
+    background: url(%%sp%%) -36px -14px !important;
+}*/
+/*.author[href$="/technophonix1"]~.flair {
+    background: url(%%sp%%) -69px -16px !important; -- OLD FLAIR TYPE
+    background: url(%%mtf%%) 0px 0px !important;
+}*/
+
 .author[href$="/Thief-Noctis"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -107px -16px
+    background: url(%%sp%%) -107px -16px !important;
 }
 .author[href$="/Mockturne"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -149px -16px;
+    background: url(%%sp%%) -149px -16px !important;
 }
 .author[href$="/Hero_Of_Legend"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: 0 -54px;
+    background: url(%%sp%%) 0 -54px !important;
 }
 .author[href$="/scottmonster"]~.flair, .flair-tournament {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -37px -54px;
+    background: url(%%sp%%) -37px -54px !important;
 }
- /*.author[href$="/DavidLuizshair"]~.flair {  -- OLD FLAIR TYPE
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -76px -52px;*/
-    /* background-image: url(%%modtrainerflair%%)!important;
-    background-position: -600px 0
+ /*.author[href$="/DavidLuizshair"]~.flair {
+    background: url(%%sp%%) -76px -52px !important; -- OLD FLAIR TYPE
+    background: url(%%mtf%%) -600px 0 !important;
 }*/
 .author[href$="/Otterz82"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -121px -52px;
+    background: url(%%sp%%) -121px -52px !important;
 }
 .author[href$="/Kokudko"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -168px -50px;
+    background: url(%%sp%%) -168px -50px !important;
     height: 40px;
 }
 .author[href$="/Kokudko"]~.flair:before {
     bottom: 9px;
 }
 .author[href$="/Ap_Sona_Bot"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -217px -50px;
+    background: url(%%sp%%) -217px -50px !important;
 }
 .author[href$="/WDey"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -257px -54px;
+    background: url(%%sp%%) -257px -54px !important;
 }
 .author[href$="/Scathee"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: 3px -91px;
-}
-.author[href$="/Haruka-sama"]~.flair {
-    /*background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
-    background-position: -38px -89px;*/
-    /* background-image: url(%%modtrainerflair%%)!important;
-    background-position: -150px 0  */
+    background: url(%%sp%%) 3px -91px !important;
 }
 
+/*.author[href$="/Haruka-sama"]~.flair {
+    background: url(%%sp%%) -38px -89px !important; -- OLD FLAIR TYPE
+    background: url(%%mtf%%) -150px 0 !important;
+}*/
+
 .author[href$="/Theprinceofarendelle"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -76px -90px;
+    background: url(%%sp%%) -76px -90px !important;
 }
 .author[href$="/The_Little_Thingy"]~.flair{
-    background-image:url(%%specialflairs%%) !important;
-    background-position:-118px -92px
+    background:url(%%sp%%) -118px -92px !important;
 }
 .author[href$="/Cephei_Delta"]~.flair{
-    background-image:url(%%specialflairs%%) !important;
-    background-position:-162px -90px
+    background:url(%%sp%%) -162px -90px !important;
 }
 
 /*
  AUG 17 - TOURNEY WINNWERS
 */
 .author[href$="/A_Wild_Noob_Appeared"]~.flair {
-    background-image: url(%%specialflairs%%)!important;
-    background-position: -213px -89px;
+    background: url(%%sp%%) -213px -89px !important;
 }
 .author[href$="/Paladinknight"]~.flair{
-    background-image:url(%%specialflairs%%) !important;
-    background-position:-255px -90px
+    background:url(%%sp%%) -255px -90px !important;
 }
 .author[href$="/TheSpoonMaster"]~.flair{
-    background-image:url(%%specialflairs%%) !important;
-    background-position:-3px -126px
+    background:url(%%sp%%) -3px -126px !important;
 }
 
 /* Fable */
 .author[href$="/Draycen"]~.flair{
-    background-image:url(%%specialflairs%%) !important;
-    background-position:-38px -126px
+    background:url(%%sp%%) -38px -126px !important;
 }
 
 /*.author[href$="/rileydelete"]~.flair {
-    background-image: url(%%specialflairs%%)!important; -- OLD FLAIR TYPE
-    background-position: -38px -89px;
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -150px 0 
+    background: url(%%sp%%)  -38px -89px !important; -- OLD FLAIR TYPE
+    background: url(%%mtf%%) -150px 0!important
 }*/
 
+/********************************************************************************
+* MOD TRAINER FLAIRS
+*********************************************************************************/
 /*
 NOW USING FLAIR CLASSES FOR TRAINER FLAIRS INSTEAD OF HARD-CODING
 .author[href$="/ad3z10"]~.flair{
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -50px 0
+    background: url(%%mtf%%) -50px 0!important
 }
 
 .author[href$="/TARS-CASE"]~.flair{
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -100px 0 
+    background: url(%%mtf%%) -100px 0!important
 }
 
 .author[href$="/Will-TVR"]~.flair{
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -200px 0 
+    background: url(%%mtf%%) -200px 0!important
 }
 
 .author[href$="/RustRider"]~.flair{
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -250px 0 
+    background: url(%%mtf%%) -250px 0!important
 }
 
 .author[href$="/CrimsonMudkip"]~.flair{
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -350px 0 
+    background: url(%%mtf%%) -350px 0!important
 }
 
 .author[href$="/Koni_Fox"]~.flair{
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -400px 0 
+    background: url(%%mtf%%) -400px 0!important
 }
 
 .author[href$="/Hyouten"]~.flair{
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -450px 0 
+    background: url(%%mtf%%) -450px 0!important
 }
 
 .author[href$="/IAmzSamz"]~.flair{
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -500px 0 
+    background: url(%%mtf%%) -500px 0!important
 }
 
 .author[href$="/TexasAndroid"]~.flair{
-    background-image: url(%%modtrainerflair%%)!important;
-    background-position: -550px 0 
+    background: url(%%mtf%%) -550px 0!important
 }*/
-
-/********************************************************************************
-* CUSTOM USER BALL FLAIRS
-*********************************************************************************/
-
-/* Poke balls - Subscription
---------------------------------------------------------------------------------*/
-.flair:after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    background: url(%%ballflair%%) 0 0;
-    visibility: visible;
-    top: 4px;
-}
-
-
-/* Great balls
---------------------------------------------------------------------------------*/
-.flair.flair-greatball:after {
-    background-position: -30px 0
-}
-
-/* Ultra balls
---------------------------------------------------------------------------------*/
-.flair.flair-ultraball:after {
-    background-position: -60px 0
-}
-
-/* Master balls
---------------------------------------------------------------------------------*/
-.flair.flair-masterball:after {
-    background-position: -90px 0
-}
-
-/* Safari balls
---------------------------------------------------------------------------------*/
-.flair.flair-safariball:after {
-    background-position: -120px 0
-}
-
-/* Repeat balls
---------------------------------------------------------------------------------*/
-.flair.flair-repeatball:after {
-    background-position: -150px 0
-}
-
-/* Timer balls
---------------------------------------------------------------------------------*/
-.flair.flair-timerball:after {
-    background-position: -180px 0
-}
-
-/* Premier balls
---------------------------------------------------------------------------------*/
-.flair.flair-premierball:after {
-    background-position: -210px 0
-}
-
-/* Nest balls
---------------------------------------------------------------------------------*/
-.flair.flair-nestball:after {
-    background-position: -240px 0
-}
-
-/* Net balls
---------------------------------------------------------------------------------*/
-.flair.flair-netball:after {
-    background-position: -270px 0
-}
-
-/* Dive balls
---------------------------------------------------------------------------------*/
-.flair.flair-diveball:after {
-    background-position: -300px 0
-}
-
-/* Luxury balls
---------------------------------------------------------------------------------*/
-.flair.flair-luxuryball:after {
-    background-position: -330px 0;
-}
-
-/* Heal balls
---------------------------------------------------------------------------------*/
-.flair.flair-healball:after {
-    background-position: -360px 0;
-}
-
-
-/* Quick balls
---------------------------------------------------------------------------------*/
-.flair.flair-quickball:after {
-    background-position: -390px 0
-}
-
-/* Cherish balls
---------------------------------------------------------------------------------*/
-.flair.flair-cherishball:after {
-    background-position: -420px 0
-}
-
-/* Dusk balls
---------------------------------------------------------------------------------*/
-.flair.flair-duskball:after {
-    background-position: -450px 0
-}
-
-/* Park balls
---------------------------------------------------------------------------------*/
-.flair.flair-parkball:after {
-    background-position: -480px 0
-}
-
-/* Dreamball
---------------------------------------------------------------------------------*/
-.flair.flair-dreamball:after {
-    background-position: -510px 0
-}
-
-/* Moon ball
---------------------------------------------------------------------------------*/
-.flair.flair-moonball:after {
-    background-position: -540px 0
-}
-
-/* Love ball
---------------------------------------------------------------------------------*/
-.flair.flair-loveball:after {
-    background-position: -570px 0
-}
-
-/* Beast ball
---------------------------------------------------------------------------------*/
-.flair.flair-beastball:after {
-    background-position: -600px 0
-}
-
-/********************************************************************************
-* CUSTOM NON-BALL BALL-FLAIRS
-*********************************************************************************/
-
-/* New mods icon 1.0 JOHTO
---------------------------------------------------------------------------------*/
-.flair.flair-johtomod:after {
-    background-position: -630px 0
-}
-
-/* New mods icon 2.0 HOENN
---------------------------------------------------------------------------------*/
-.flair.flair-hoennmod:after {
-    background-position: -660px 0
-}
-
-/* New mods icon 3.0 SINNOH
---------------------------------------------------------------------------------*/
-.flair.flair-sinnohmod:after {
-    background-position: -690px 0
-}
-
-/* New mods icon 4.0 UNOVA
---------------------------------------------------------------------------------*/
-.flair.flair-unovamod:after {
-    background-position: -720px 0
-}
-
-/* New mods icon 5.0 KALOS
---------------------------------------------------------------------------------*/
-.flair.flair-kalosmod:after {
-    background-position: -750px 0
-}
-
-/* New mods icon 6.0 ALOLA
---------------------------------------------------------------------------------*/
-.flair.flair-alolamod:after {
-    background-position: -780px 0
-}
-
-/********************************************************************************
-* SPECIAL ACHIVEMENT FLAIRS
-*********************************************************************************/
-
-/* Pokedex */
-.flair.flair-dex-complete:after {
-    background-position: -840px 0;
-    transform: scale(0.9);
-}
-
-/* Rotom Dex */
-.flair.flair-aloladex-complete:after {
-    background-position: -900px 0
-}
-
-/* Oval Charm */
-.flair.flair-ovalcharm:after {
-    background-position: -930px 0
-}
-
-/* Shiny Charm */
-.flair.flair-shinycharm:after {
-    background-position: -960px 0
-}
-
-/* Golden Pokedex */
-.flair.flair-goldendex:after {
-    background-position: -990px 0;
-    width: 34px;
-    transform: scale(0.9);
-}
-
-/********************************************************************************
-* CONTEST FLAIRS
-*********************************************************************************/
-
-/* Strange Souvenir - Gen 7 Lottery Prediction Pool */
-.flair.flair-souvenir:after {
-    background-position: -1140px 0;
-}
-
-/* Alola Trial Medal - best of 2016 */
-.flair.flair-alolatrial:after {
-    background-position: -1170px 0;
-    transform: scale(0.9);
-}
-
-/* Pikachu Cup - Cup project helpers */
-.flair.flair-pikacup:after {
-    background: url(%%ballflair%%) no-repeat -1200px 0 !important;
-}
-
-/* Golden Pumpkaboo - 2016 Pumpkin Carving Contest - Winner and three runners-up */
-.flair.flair-goldpumpkaboo:after {
-    background-position: 0 -30px;
-}
-
-/* golden pokebank - pokebank guess winners */
-.flair.flair-bankflair:after {
-    background: url(%%ballflair%%) no-repeat -30px -30px !important;
-}
-
-/* POGO Gym - MVP 100 Gyms */
-.flair.flair-gomvp:after  {
-    background-position: -60px -30px;
-    width: 32px;
-    height: 35px;
-    -webkit-transform-origin: top 5px;
-    transform-origin: top 5px;
-}
-
-/* Golden Team Skull Badge - shitpost winners */
-.flair.flair-skullbadge-gold:after {
-    background-position: -90px -30px
-}
-
-/* Golden Teeth */
-.flair.flair-goldenteeth:after {
-    background-position: -120px -30px;
-}
-
-/* Coin Case */
-.flair.flair-coincase:after {
-    background-position: -150px -30px;
-}
-
-/* Red Scale */
-.flair.flair-redscale:after {
-    background-position: -180px -30px;
-}
-
-/* Shiny Magikarp */
-.flair.flair-shinykarp:after {
-    background-position: -210px -30px;
-}
-
-/* necroparticipant */
-.flair.flair-necroparticipant:after {
-    background-position: -240px -30px;
-}
-
-/* necrowinner */
-.flair.flair-necrowinner:after {
-    background-position: -270px -30px;
-}
-
-/* tall alolan exeggutor ballflair - shitpost winners */
-.flair.flair-longneck:after {
-    background-position: -1290px -30px;
-    height: 95px;
-    margin-top: -68px;
-}
-
-/* Egg - Easter 2018 Contest Participants */
-.flair.flair-egg:after {
-    background-position: -300px -30px;
-}
-
-/* Manaphy Egg - Easter 2018 Contest Winners */
-.flair.flair-manaphyegg:after {
-    background-position: -330px -30px;
-}
-
-/* Gold Zubat - 1mil donors */
-.flair.flair-goldbat:after {
-    background-position: -360px -30px;
-}
-
-/* Bike - 1mil donors */
-.flair.flair-bike:after {
-    background-position: -390px -30px;
-}
-
-/* Amulet Coin - 1mil donors */
-.flair.flair-amuletcoin:after {
-    background-position: -420px -30px;
-}
-
-/* Gracidea - 1mil donors */
-.flair.flair-gracidea:after {
-    background-position: -450px -30px;
-}
-
-/* Gold Gengar - 1mil $500 donor */
-.flair.flair-goldgar:after {
-    background-position: -480px -30px;
-}
-
-/* 10th anniversary logo*/
-.flair.flair-10logo:after {
-    background-position: -523px -34px !important;
-    background-size: 660px 64px;
-    image-rendering: auto;
-}
-
-/* Fog Badge - 2018 halloween contest */
-.flair.flair-fogbadge:after {
-    background-position: -450px -60px;
-}
-
-/* TAPU CHALLENGE MEDALS */
-.flair.flair-tapubulu-medal:after,
-.flair.flair-tapufini-medal:after,
-.flair.flair-tapulele-medal:after,
-.flair.flair-tapukoko-medal:after {
-    background: url(%%ballflair%%) no-repeat;
-    width: 42px;
-    height: 42px;
-    margin-top: -8px;
-    margin-left: -10px;
-}
-
-/* Tapu bulu - Challenge Medal */
-.flair.flair-tapubulu-medal:after {
-    background-position: -1106px -86px !important;
-}
-
-/* Tapu fini - Challenge Medal */
-.flair.flair-tapufini-medal:after {
-    background-position: -1152px -86px !important;
-}
-
-/* Tapu lele - Challenge Medal */
-.flair.flair-tapulele-medal:after {
-    background-position: -1200px -86px !important;
-}
-
-/* Tapu koko - Challenge Medal */
-.flair.flair-tapukoko-medal:after {
-    background-position: -1244px -86px !important;
-}
-
-/********************************************************************************
-* EXTERNAL COMMUNITY FLAIRS
-*********************************************************************************/
-.flair.flair-discordmod:after {
-    background-position: -1260px 0px !important;
-}
-
-.flair.flair-verified-account:after {
-    background-position: -1230px 0px !important;
-}
-
-/********************************************************************************
-* ADMIN EXCLUSIVE FLAIRS
-*********************************************************************************/
-
-/* technophonix1 stone
---------------------------------------------------------------------------------*/
-.author[href$="/technophonix1"]~.flair:after {
-    background-position: 0 -60px
-}
-
-/* bigslothonmyface GBsounds
---------------------------------------------------------------------------------
-.author[href$="/bigslothonmyface"]~.flair:after {
-    background-position: -30px -60px;
-}*/
-
-/* A_Wild_Abra spoon
---------------------------------------------------------------------------------*/
-.author[href$="/A_Wild_Abra"]~.flair:after {
-    background: url(%%ballflair%%) -60px -60px;
-}
-
-/* SnowPhoenix9999 NeverMeltIce
---------------------------------------------------------------------------------
-.author[href$="/SnowPhoenix9999"]~.flair:after {
-    background-position: -90px -60px
-}*/
-
-/* Jaksida Farfetch'd
---------------------------------------------------------------------------------*/
-.author[href$="/jaksida"]~.flair:after {
-    background-position: -120px -60px
-}
-
-/* ad3z10 Heat Drive
---------------------------------------------------------------------------------*/
-.author[href$="/ad3z10"]~.flair:after {
-    background-position: -150px -60px
-}
-
-/* TARS-CASE Leftovers 2
---------------------------------------------------------------------------------*/
-.author[href$="/TARS-CASE"]~.flair:after {
-    background-position: -180px -60px
-}
-
-/* RustRider Snooball 
---------------------------------------------------------------------------------*/
-.author[href$="/RustRider"]~.flair:after {
-    background-position: -210px -60px;
-}
-
-/* Mockturne Present 
---------------------------------------------------------------------------------*/
-.author[href$="/Mockturne"]~.flair:after {
-    background-position: -240px -60px;
-}
-
-/* CrimsonMudkip Mega Stone
---------------------------------------------------------------------------------*/
-.author[href$="/CrimsonMudkip"]~.flair:after {
-    background-position: -270px -60px;
-}
-
-/* TexasAndroid TeachyTV
---------------------------------------------------------------------------------*/
-.author[href$="/TexasAndroid"]~.flair:after {
-    background-position: -300px -60px;
-}
-
-/* IAmzSamz Deoxys Stone
---------------------------------------------------------------------------------*/
-.author[href$="/IAmzSamz"]~.flair:after {
-    background-position: -330px -60px;
-}
-
-/* DavidLuizshair Altarianite
---------------------------------------------------------------------------------*/
-.author[href$="/DavidLuizshair"]~.flair:after {
-    background-position: -360px -60px;
-}
-
-/* Draycen Meteorite
---------------------------------------------------------------------------------*/
-.author[href$="/Draycen"]~.flair:after {
-    background-position: -390px -60px;
-}
-
-/* Ursineking Ice Stone
---------------------------------------------------------------------------------*/
-.author[href$="/UrsineKing"]~.flair:after {
-    background-position: -420px -60px;
-}

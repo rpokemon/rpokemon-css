@@ -109,16 +109,16 @@ body>.content {
 }
 
 /* announcement bar nightmode */
-[lang$=nm] .side .md>blockquote:nth-of-type(2) {
+[lang$=nm] .side .md>blockquote:nth-of-type(2), .res-nightmode .side .md>blockquote:nth-of-type(2) {
     background: rgba(0,0,0,0.6);
 }
 
-[lang$=nm] .side .md>blockquote:nth-of-type(2) p,
-[lang$=nm] .side .md>blockquote:first-of-type>p>a strong {
+[lang$=nm] .side .md>blockquote:nth-of-type(2) p, .res-nightmode .side .md>blockquote:nth-of-type(2) p,
+[lang$=nm] .side .md>blockquote:first-of-type>p>a strong, .res-nightmode .side .md>blockquote:first-of-type>p>a strong {
     color: #fff;
-    text-shadow: 0 0px 4px #000, 0 1px 5px #000;
+    text-shadow: 0 0 4px #000, 0 1px 5px #000;
 }
-[lang$=nm] .side .md>blockquote:nth-of-type(2):before {
+[lang$=nm] .side .md>blockquote:nth-of-type(2):before, .res-nightmode .side .md>blockquote:nth-of-type(2):before {
     background: rgba(0,0,0,.35);
     box-shadow: inset 0 0 3px rgba(0, 0, 0, .6), inset 0 0 3px rgba(0, 0, 0, .35)
 }

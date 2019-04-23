@@ -1,0 +1,74 @@
+/********************************************************************************
+* MISC/GENERAL NIGHTMODE STYLES
+*********************************************************************************/
+
+/* page background
+--------------------------------------------------------------------------------*/
+[lang$=nm] body, .res-nightmode body {
+    background: #36393e url(%%bgdark%%)!important;
+    color: #bdc3c7
+}
+
+/* link color
+--------------------------------------------------------------------------------*/
+[lang$=nm] .md a, .res-nightmode .md a, [lang$=nm] .sidecontentbox a, .res-nightmode .sidecontentbox a {
+    color: hsl(216,100%,75%)
+}
+
+/* various boxes
+--------------------------------------------------------------------------------*/
+[lang$=nm] .subreddit-report-form, .res-nightmode .subreddit-report-form,
+[lang$=nm] .post-sharing, .res-nightmode .post-sharing,
+[lang$=nm] #previoussearch, .res-nightmode #previoussearch,
+[lang$=nm] .combined-search-page #previoussearch .res-search-pane, .res-nightmode .combined-search-page #previoussearch .res-search-pane,
+[lang$=nm] .side, .res-nightmode .side,
+[lang$=nm] .titlebox .leavecontributor-button, .res-nightmode .titlebox .leavecontributor-button,
+[lang$=nm] .titlebox .leavemoderator, .res-nightmode .titlebox .leavemoderator,
+[lang$=nm] .titlebox form.toggle, .res-nightmode .titlebox form.toggle,
+[lang$=nm] .submit-page .roundfield, .res-nightmode .submit-page .roundfield {
+    background: #282b30 !important;
+    color: #aaa;
+    border-color: #282b30;
+    box-shadow: none;
+}
+
+[lang$=nm] .side #searchexpando, .res-nightmode .side #searchexpando,
+[lang$=nm] body.mod-toolbox .tb-general-button, .res-nightmode body.mod-toolbox .tb-general-button,
+[lang$=nm] body.mod-toolbox .tb-bracket-button, .res-nightmode body.mod-toolbox .tb-bracket-button,
+[lang$=nm] .reddit-infobar, .res-nightmode .reddit-infobar,
+[lang$=nm] .crosspost-preview, .res-nightmode .crosspost-preview {
+    background: #282b30;
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: #c7c7c7
+}
+
+/* various user inputs
+--------------------------------------------------------------------------------*/
+[lang$=nm] #newlink-with-image-upload .image-upload-drop-target, .res-nightmode #newlink-with-image-upload .image-upload-drop-target,
+[lang$=nm] .combined-search-page #search input[type=text], .res-nightmode .combined-search-page #search input[type=text],
+[lang$=nm] .commentarea>.usertext textarea, .res-nightmode .commentarea>.usertext textarea,
+[lang$=nm] .comments-page .usertext textarea, .res-nightmode .comments-page .usertext textarea,
+[lang$=nm] .submit-page .roundfield input[type=text], .res-nightmode .submit-page .roundfield input[type=text],
+[lang$=nm] .submit-page .roundfield input[type=url], .res-nightmode .submit-page .roundfield input[type=url],
+[lang$=nm] .submit-page .roundfield textarea, .res-nightmode .submit-page .roundfield textarea,
+[lang$=nm] .flairselector input[type=text], .res-nightmode .flairselector input[type=text],
+[lang$=nm] .markdownEditor .edit-btn:not(.btn-macro), .res-nightmode .markdownEditor .edit-btn:not(.btn-macro),
+[lang$=nm] .submit #sr-autocomplete, .res-nightmode .submit #sr-autocomplete {
+    background-color: rgba(255, 255, 255, .05);
+    color: rgba(240,252,255,.9)!important;
+    border: 1px solid rgba(255, 255, 255, .15)!important
+}
+
+/* res override
+--------------------------------------------------------------------------------*/
+.res-nightmode body .content,
+.res-nightmode .side,
+.res-nightmode .icon-menu a,
+.res-nightmode .side .spacer .titlebox .redditname,
+.res-nightmode .side .titlebox,
+.res-nightmode .side .usertext-body .md h3 ~ ul,
+.res-nightmode .side .usertext-body .md ol,
+.res-nightmode .side .usertext-body .md ol ul,
+.res-nightmode #header-bottom-right  {
+    background: transparent;
+}

@@ -32,31 +32,32 @@ html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[ro
     color: red
 }
 
-.morechildren .entry {
+.morechildren .entry, .thing.morerecursion .entry {
     margin: 5px 0 5px!important;
+    padding: 4px 5px;
+}
+
+.thing.morechildren > .entry .tagline,
+.thing.morerecursion > .entry .tagline {
+    display: none !important;
 }
 
 .comment .child,
-.comment .showreplies {
+.comment .showreplies,
+.res.res-commentBoxes.res-continuity .comment div.child {
     margin: 0!important;
-    border-left: 0
-}
-.deepthread {
-    height: 31px;
-    line-height: 31px;
-    display: inline-block;
-    margin-top: -10px
+    border-left: 0!important;
 }
 
 /* collapsed comments
 --------------------------------------------------------------------------------*/
-.comment.collapsed > .entry {
-    padding-bottom: 15px;
-}
 .comment.collapsed {
     padding-bottom: 0;
 }
 
+.comment.collapsed .numchildren {
+    margin: 4px 3px 0 4px;
+}
 
 /* deleted comments
 --------------------------------------------------------------------------------*/
@@ -130,13 +131,10 @@ html.res.res-commentBoxes body.res.res-commentBoxes.comments-page div.content[ro
     margin-bottom: -3px
 }
 
-/* new comment
+/* cancel new comment syles
 --------------------------------------------------------------------------------*/
-.new-comment .usertext-body {
+.new-comment .usertext-body, html.res body .new-comment .usertext-body,
+.usertext.border .usertext-body, html.res body .usertext.border .usertext-body {
+    background-color: transparent;
     border: 0;
-    background-color: #e5efff
-}
-[lang$=nm] .new-comment .usertext-body,
-[lang$=nm] .usertext.border .usertext-body {
-    background-color: transparent
 }

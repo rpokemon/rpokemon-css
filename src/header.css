@@ -267,9 +267,6 @@
     position: relative;
     margin: 5px;
 }
-#mail + .message-count {
-    background: #e3817a
-}
 
 /* all items (except .user)
 --------------------------------------------------------------------------------*/
@@ -503,62 +500,59 @@ body #header .tabmenu li:only-child a {
 /********************************************************************************
 * HEADER NIGHTMODE
 *********************************************************************************/
-[lang$=nm] #sr-header-area {
+[lang$=nm] #sr-header-area, .res-nightmode #sr-header-area {
     background: #282b30!important;
     border-bottom: 1px solid #282b30
 }
-[lang$=nm] .message-count {
-    background-color: #aaa333
-}
-[lang$=nm] #sr-header-area .width-clip .dropdown.srdrop .selected.title,
-[lang$=nm] #sr-header-area a,
-[lang$=nm] #header-bottom-right a,
-[lang$=nm] .res #userbarToggle {
+[lang$=nm] #sr-header-area .width-clip .dropdown.srdrop .selected.title, .res-nightmode #sr-header-area .width-clip .dropdown.srdrop .selected.title,
+[lang$=nm] #sr-header-area a, .res-nightmode #sr-header-area a,
+[lang$=nm] #header-bottom-right a, .res-nightmode #header-bottom-right a,
+[lang$=nm] .res #userbarToggle, .res-nightmode .res #userbarToggle {
     color: #aaa
 }
 
 /* header bars */
-[lang$=nm] #header:before {
+[lang$=nm] #header:before, .res-nightmode #header:before {
     background: #282b30;
     border-color: #212428;
 }
-[lang$=nm] .side:before {
+[lang$=nm] .side:before, .res-nightmode .side:before {
     background: #2f3238;
     border-color: #212428;
     box-shadow: 0 1px 3px #1e2124;
 }
 
-[lang$=nm] #header .tabmenu {
+[lang$=nm] #header .tabmenu, .res-nightmode #header .tabmenu {
     background: #282b30;
     border-color: #212428
 }
-body[lang$=nm]:not(.listing-page) #header .tabmenu li a {
+html[lang$=nm] body:not(.listing-page) #header .tabmenu li a, html.res-nightmode body:not(.listing-page) #header .tabmenu li a {
     background: #2e3238 !important;
 }
-[lang$=nm] .side .md>blockquote:first-of-type>p>a {
+[lang$=nm] .side .md>blockquote:first-of-type>p>a, .res-nightmode .side .md>blockquote:first-of-type>p>a {
     color: #c9c9c9;
 }
 
 /*header bottom right*/
-[lang$=nm] #header .user > a,
-[lang$=nm] #header .user > .userkarma {
+[lang$=nm] #header .user > a, .res-nightmode #header .user > a,
+[lang$=nm] #header .user > .userkarma, .res-nightmode #header .user > .userkarma {
     color: rgba(255,255,255,0.5)
 }
-[lang$=nm] #header .user>.userkarma a {
+[lang$=nm] #header .user>.userkarma a, .res-nightmode #header .user>.userkarma a {
     color: rgba(255,255,255,0.4);
 }
-[lang$=nm] #header .user>.userkarma a:hover {
+[lang$=nm] #header .user>.userkarma a:hover, .res-nightmode #header .user>.userkarma a:hover {
     color: rgba(255,255,255,0.6);
 }
 
-[lang$=nm] .beta-hint a:before {
+[lang$=nm] .beta-hint a:before, .res-nightmode .beta-hint a:before {
     color: rgba(255,255,255,0.4);
     font-weight: normal;
 }
-[lang$=nm] #header .user + .separator {
+[lang$=nm] #header .user + .separator, .res-nightmode #header .user + .separator {
     color: rgba(255,255,255,0.25);
 }
-[lang$=nm] .res #RESAccountSwitcherIcon:before {
+[lang$=nm] .res #RESAccountSwitcherIcon:before, .res-nightmode .res #RESAccountSwitcherIcon:before {
     border-top-color: #666;
 }
 

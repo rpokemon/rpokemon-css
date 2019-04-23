@@ -1,121 +1,101 @@
 const CSS_FILE_ORDER = [
-// -------------- FILE NAME ------------ PURPOSE --------------
-        'etc.css',            // body, buttons, and wiki
-        'header.css',         // subreddit header
-        'submit.css',         // submit form
+/// FILE NAME ------------------// PURPOSE ---------------------------------------------------------
 
-        'linklisting.css',    // styles for the link listing page
-        'thing.css',          // styles for thing elements (links and comments alike)
-        'tagline.css',        // thing tagline
-        'linkflair.css',      // link flair, link flair filters, and link flair selector
-        'link-pinnable.css',  // pinnable link for video posts
+    // *********************************************************************************************
+    // header and footer
+    'etc.css',                  // miscellaneous (at start)
+    'header.css',               // subreddit header
+    'footer.css',               // subreddit footer
 
-        'commentfix.css',     // styles for specifically comments
-        'commentpage.css',    // styles for the comment page menus, usertext editor, etc.
-        'usertext.css',       // styles for usertext editor, area, and markdown
+    // *********************************************************************************************
+    // things, listings, and usertext
 
-        'sidecommon.css',     // sidebar common header and checkboxes
-        'sidebar.css',        // sidebar
-        'sidemd.css',         // sidebar md
-        'sidecontentbox.css',  // sidecontentbox
+    'linklisting.css',          // styles for the link listing page
+    'thing.css',                // styles for thing elements (links and comments alike)
+    'tagline.css',              // thing tagline
+    'linkflair.css',            // link flair, link flair filters, and link flair selector
+    'link-pinnable.css',        // pinnable link for video posts
+    'commentfix.css',           // styles for specifically comments
+    'commentpage.css',          // styles for the comment page menus, usertext editor, etc.
+    'usertext.css',             // styles for usertext editor, area, and markdown
 
-        'announce.css',       // announcements modules and bar
+    // *********************************************************************************************
+    // sidebar
 
-        'search.css',         // search page (does not include search input in sidebar)
-        'footer.css',         // subreddit footer
-        'modpages.css',       // any moderator pages that required additional CSS
+    'sidecommon.css',           // sidebar common header and checkboxes
+    'sidebar.css',              // sidebar
+    'sidemd.css',               // sidebar md
+    'sidecontentbox.css',       // sidecontentbox
 
-        'flair.css',          // user flairs
-        'userflair.css',      // user flairs
-        'flairbg.css',        // user flairs
-        'moontheme.css',      // night mode
-        'banner.css',         // banner
-        'misc.css'            // miscellaneous
+    // *********************************************************************************************
+    // Other pages
+    'submit.css',               // submit form
+    'search.css',               // search page (does not include search input in sidebar)
+    'modpages.css',             // any moderator pages that required additional CSS
 
-        // add-ons
-        // -------
-        // 'sm_release.css',     // fancy CSS for Pokemon Sun & Moon Release Megathread
-        // 'magikarp.css',       // Magikarp Week Banner CSS
-        // 'direct_banner.css',  // Direct Banner (temp add-on)
+    // *********************************************************************************************
+    // flairs
+
+    'flair.css',                // flair sheets
+    'userflair.css',            // user flairs
+    'ballflair.css',            // ball flairs
+    'nameplate.css',            // author nameplates
+
+    // *********************************************************************************************
+    // Other modules
+    'announce.css',             // announcements modules and bar (must come after header & sidebar)
+    'banner.css',               // banner (must come after header.css to override)
+    'nightmode-misc.css',       // night mode
+
+    // *********************************************************************************************
+    // add-ons for specific events
+
+    // 'sm_release.css',        // fancy CSS for Pokemon Sun & Moon Release Megathread
+    // 'magikarp.css',          // Magikarp Week Banner CSS
+    // 'direct_banner.css',     // Direct Banner (temp add-on)
 ];
 
-const fs = require('fs');
-const CleanCSS = require('clean-css');
 
-const writeOutputFile = (filepath, contents, success, failure) => {
-    fs.truncate(filepath, 0, () => {
-        fs.writeFile(filepath, contents, 'utf8', (err) => {
-            if (err) {
-                if (failure) failure("Failed to write output file (" + filepath + ") " + err);
-            } else {
-                if (success) success();
-            }
-        });
-    });
-};
-
-function packOutput(files) {
-    let styles = '';
-
-    files.forEach((f) => {
-        styles += fs.readFileSync(f, "utf8");
-    });
-
-    return styles;
-}
-
-function minify(styles, build_ver, reject) {
-    var out = {
-        stats: { originalSize: 0, minifiedSize: 0 },
-        styles: '',
-    };
-
-    let res = new CleanCSS({
-        level: 2,
-    }).minify(styles)
-
-    if (res.errors.length)
-        reject(res.errors);
-    else if (res.warnings.length)
-        reject(res.warnings);
-
-    out.styles = '/*!\n' +
-        ' * CSS theme for /r/Pokemon; build #' + (build_ver) + '\n' +
-        ' * Authors: Hero_of_Legend, technophonix1, Atooz, kwwxis, & Haruka-sama' + '\n' +
-        ' */\n' + res.styles;
-    out.stats.originalSize = res.stats.originalSize;
-    out.stats.minifiedSize = res.stats.minifiedSize;
-    return out;
-}
-
-function get_build_ver() {
-    return parseInt(fs.readFileSync("./build.dat", "utf8"));
-}
-
-(function() {
-    let build_ver = get_build_ver();
-    console.log('\nBUILD #' + build_ver)
+(function(readFile, writeFile) {
     console.log('Minifying...');
 
-    new Promise((resolve, reject) => {
-        let names = {
-            src_dir: 'src/',
-            dist_dir: './',
-            dist_file: 'dist.css',
-            umin_file: 'unmin.css',
-        };
+    const CleanCSS = require('clean-css');
+    const p = CSS_FILE_ORDER.map(f => readFile('src/'+f));
 
-        let uminified = packOutput(CSS_FILE_ORDER.map(f => names.src_dir+f));
-        let res = minify(uminified, build_ver, reject);
+    Promise.all(p).then(stylesheets => {
+        const unminified = stylesheets.join('');
+        const res = new CleanCSS({ level: 2 }).minify(unminified);
 
-        console.log('Original size: ' + res.stats.originalSize + ' bytes');
-        console.log('Minified size: ' + res.stats.minifiedSize + ' bytes');
+        if (res.errors.length) throw res.errors;
+        if (res.warnings.length) throw res.warnings;
 
-        writeOutputFile(names.dist_dir + names.umin_file, uminified, resolve, reject);
-        writeOutputFile(names.dist_dir + names.dist_file, res.styles, resolve, reject);
-        writeOutputFile("./build.dat", ""+(build_ver+1), resolve, reject);
-    }).then(
-        () => console.log('Done!'),
-        (reason) => console.log(reason)
-    );
-})();
+        Promise.all([
+            writeFile('./unmin.css', unminified),
+            writeFile('./dist.css', res.styles),
+        ]).then(
+            () => {
+                console.log(`Original size: ${res.stats.originalSize} bytes`);
+                console.log(`Minified size: ${res.stats.minifiedSize} bytes`);
+                console.log('Done!');
+            },
+            (reason) => console.log(reason)
+        );
+    }).catch(reason => console.log(reason));
+})(
+    function(filepath) {
+        return new Promise((resolve, reject) => {
+            require('fs').readFile(filepath, 'utf8', (err,data) => {
+                if (err) reject(`Failed to read source file (${filepath}) ${err}`);
+                else resolve(data.toString());
+            });
+        });
+    },
+    function(filepath, contents) {
+        return new Promise((resolve, reject) => {
+            require('fs').writeFile(filepath, contents, { encoding:'utf8', flag:'w' }, (err) => {
+                if (err) reject(`Failed to write output file (${filepath}) ${err}`);
+                else resolve();
+            });
+        });
+    },
+);

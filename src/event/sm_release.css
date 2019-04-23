@@ -14,7 +14,7 @@
     right: 0;
     top: 0;
 }
-[lang$=nm] .linkflair-sm-megathread .md:before {
+[lang$=nm] .linkflair-sm-megathread .md:before, .res-nightmode .linkflair-sm-megathread .md:before {
     background-image: url(%%pokesm-r-nm%%) !important;
 }
 
@@ -35,13 +35,13 @@
     left: 348px;
 }
 
-.linkflair-sm-megathread .md hr, [lang$=nm] .linkflair-sm-megathread .md hr {
+.linkflair-sm-megathread .md hr, [lang$=nm] .linkflair-sm-megathread .md hr, .res-nightmode .linkflair-sm-megathread .md hr {
     background: url(%%pokesm-r%%) no-repeat bottom center / 100%;
     width: 404px;
     height: 54px;
     margin: 35px auto 25px auto;
 }
-[lang$=nm] .linkflair-sm-megathread .md hr {
+[lang$=nm] .linkflair-sm-megathread .md hr, .res-nightmode .linkflair-sm-megathread .md hr {
     background-image: url(%%pokesm-r-nm%%) !important;
 }
 
@@ -102,15 +102,15 @@
     margin-bottom: 10px;
 }
 
-[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(1),
-[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(1) + p {
+[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(1), .res-nightmode .linkflair-sm-megathread .md h3:nth-of-type(1),
+[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(1) + p, .res-nightmode .linkflair-sm-megathread .md h3:nth-of-type(1) + p {
     background: hsl(356, 23%, 25%);
 }
 
-[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2),
-[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2) + p,
-[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2) + p + p,
-[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2) + p + p + p {
+[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2), .res-nightmode .linkflair-sm-megathread .md h3:nth-of-type(2),
+[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2) + p, .res-nightmode .linkflair-sm-megathread .md h3:nth-of-type(2) + p,
+[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2) + p + p, .res-nightmode .linkflair-sm-megathread .md h3:nth-of-type(2) + p + p,
+[lang$=nm] .linkflair-sm-megathread .md h3:nth-of-type(2) + p + p + p, .res-nightmode .linkflair-sm-megathread .md h3:nth-of-type(2) + p + p + p {
     background: rgba(255,255,255,0.06);
 }
 

@@ -3,9 +3,9 @@
 *********************************************************************************/
 
 #header {
-    background: url(%%daymodeheader%%) center 0px/cover no-repeat;
+    background: url(%%daymodeheader%%) center 0/cover no-repeat;
 }
-[lang$=nm] #header {
+[lang$=nm] #header, .res-nightmode #header {
     background: url(%%nightmodeheader%%) center center/cover no-repeat;
 }
 .pagename a {

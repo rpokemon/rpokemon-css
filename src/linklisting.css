@@ -40,7 +40,7 @@
     border-color: #c9c9c9;
     box-shadow: 0 3px 15px rgba(0,0,0,0.2);
 }
-[lang$=nm] .drop-choices {
+[lang$=nm] .drop-choices, .res-nightmode .drop-choices {
     border: 1px solid #111;
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
     border-color: #17191c !important;
@@ -62,7 +62,7 @@
 .drop-choices > :last-child a.choice {
     border-bottom: 0;
 }
-[lang$=nm] .drop-choices a.choice {
+[lang$=nm] .drop-choices a.choice, .res-nightmode .drop-choices a.choice {
     color: rgba(240,252,255,.9) !important;
     border-color: #17191c !important;
 }
@@ -73,6 +73,8 @@
 .drop-choices .RES-dropdown-button {
     float: none;
     margin-left: 15px;
+    font-size: 9px;
+    line-height: 16px;
 }
 .drop-choices.lightdrop a.choice:hover .RES-dropdown-button {
     color: inherit;
@@ -81,20 +83,25 @@
     border-bottom: 0;
 }
 
-[lang$=nm] .dropdown.lightdrop .selected {
+[lang$=nm] .dropdown.lightdrop .selected, .res-nightmode .dropdown.lightdrop .selected {
     color: #a5c5ff;
 }
-[lang$=nm] .dropdown.lightdrop .selected:hover {
+[lang$=nm] .dropdown.lightdrop .selected:hover, .res-nightmode .dropdown.lightdrop .selected:hover {
     color: #c1d7ff;
 }
 
 /* RES - never ending reddit
 --------------------------------------------------------------------------------*/
-[lang$=nm].res #progressIndicator, [lang$=nm] .nextprev, [lang$=nm] .submit .tabmenu.formtab {
+[lang$=nm].res #progressIndicator, .res-nightmode.res #progressIndicator,
+[lang$=nm] .nextprev, .res-nightmode .nextprev,
+[lang$=nm] .submit .tabmenu.formtab, .res-nightmode .submit .tabmenu.formtab,
+[lang$=nm] .NERPageMarker, .res-nightmode .NERPageMarker {
     background: #282b30;
     border: 1px solid #1e2024;
 }
-[lang$=nm].res #progressIndicator h2, [lang$=nm].res #progressIndicator a {
+[lang$=nm].res #progressIndicator h2, .res-nightmode.res #progressIndicator h2,
+[lang$=nm].res #progressIndicator a, .res-nightmode.res #progressIndicator a,
+[lang$=nm] .NERPageMarker > a, .res-nightmode .NERPageMarker > a {
     color: #6697f1;
 }
 
@@ -106,7 +113,7 @@
     box-shadow: 0 1px 3px rgba(173,178,255,.8);
     margin: 0 0 15px !important;
 }
-[lang$=nm] .infobar.listingsignupbar {
+[lang$=nm] .infobar.listingsignupbar, .res-nightmode .infobar.listingsignupbar {
     border: 1px solid hsl(218, 9%, 5%);
     box-shadow: 0 1px 3px rgba(173,178,255,.15);
 }
@@ -150,7 +157,7 @@
     min-width: 170px;
     color: #fff;
     background: #2068ee;
-    border: 1px solid #125fed;
+    border: 1px solid #125fed !important;
     cursor: pointer;
 }
 
@@ -208,6 +215,15 @@
     bottom: 0;
     padding-left: 105px;
     cursor: pointer;
+}
+.listing-page .content>.menuarea .spacer .dropdown:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-top: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 }
 .listing-page .content>.menuarea .spacer .selected:after {
     display: none;

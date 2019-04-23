@@ -129,53 +129,53 @@ select#comment-visits {
 /* commentarea box
 --------------------------------------------------------------------------------*/
 /* box */
-[lang$=nm] .comment > .child > .usertext,
-[lang$=nm] .commentarea > *:not(script):not(.sitetable) {
+[lang$=nm] .comment > .child > .usertext, .res-nightmode .comment > .child > .usertext,
+[lang$=nm] .commentarea > *:not(script):not(.sitetable), .res-nightmode .commentarea > *:not(script):not(.sitetable) {
     background: #282b30;
     border-left-color: #212428 !important;
     border-right-color: #212428 !important;
     color: rgba(240, 252, 255, 0.35);
 }
 
-[lang$=nm] .commentarea > :first-child,
-[lang$=nm] .commentarea > .infobar,
-[lang$=nm] .commentarea > .sitetable,
-[lang$=nm] .gold-accent.comment-visits-box,
-[lang$=nm] .comment > .child > .usertext {
+[lang$=nm] .commentarea > :first-child, .res-nightmode .commentarea > :first-child,
+[lang$=nm] .commentarea > .infobar, .res-nightmode .commentarea > .infobar,
+[lang$=nm] .commentarea > .sitetable, .res-nightmode .commentarea > .sitetable,
+[lang$=nm] .gold-accent.comment-visits-box, .res-nightmode .gold-accent.comment-visits-box,
+[lang$=nm] .comment > .child > .usertext, .res-nightmode .comment > .child > .usertext {
     border-top-color: #212428 !important;
 }
 
-[lang$=nm] .comment > .child > .usertext {
+[lang$=nm] .comment > .child > .usertext, .res-nightmode .comment > .child > .usertext {
     border-bottom-color: #212428 !important;
 }
 
-[lang$=nm] select#comment-visits {
+[lang$=nm] select#comment-visits, .res-nightmode select#comment-visits {
     background: #32363e;
     color: inherit;
 }
 
 /* menuarea
 --------------------------------------------------------------------------------*/
-[lang$=nm] .commentarea>.menuarea {
+[lang$=nm] .commentarea>.menuarea, .res-nightmode .commentarea>.menuarea {
     background: #2e3138 !important;
 }
 
-[lang$=nm] .comment-permalink-page .commentarea>.infobar a {
+[lang$=nm] .comment-permalink-page .commentarea>.infobar a, .res-nightmode .comment-permalink-page .commentarea>.infobar a {
     color: #80b3ff;
 }
 
-[lang$=nm] .panestack-title > *:not(.title):hover {
+[lang$=nm] .panestack-title > *:not(.title):hover, .res-nightmode .panestack-title > *:not(.title):hover {
     background: rgba(255,255,255,0.05);
 }
 
 /* comment signup bar
 --------------------------------------------------------------------------------*/
-[lang$=nm] .commentsignupbar__container {
+[lang$=nm] .commentsignupbar__container, .res-nightmode .commentsignupbar__container {
     background: transparent;
 }
-[lang$=nm] .commentsignupbar__textarea {
+[lang$=nm] .commentsignupbar__textarea, .res-nightmode .commentsignupbar__textarea {
     opacity: 0.1;
 }
-[lang$=nm] body .commentsignupbar__container * {
+[lang$=nm] body .commentsignupbar__container *, .res-nightmode body .commentsignupbar__container * {
     color: #fff !important;
 }

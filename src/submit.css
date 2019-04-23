@@ -14,8 +14,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    max-width: 520px;
-    width: 100%
+    width: 562px;
 }
 
 /* Input elements
@@ -42,6 +41,7 @@
 --------------------------------------------------------------------------------*/
 .submit-page .formtabs-content {
     border: 0;
+    width: 562px;
 }
 
 .submit .tabmenu.formtab .selected a {
