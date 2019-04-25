@@ -376,8 +376,7 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 [lang$=nm] .side .md, .res-nightmode .side .md,
 [lang$=nm] .side .md>h2, .res-nightmode .side .md>h2,
 [lang$=nm] .side .md>h5, .res-nightmode .side .md>h5,
-[lang$=nm] .side .md>p:first-of-type, .res-nightmode .side .md>p:first-of-type,
-[lang$=nm] .side #searchexpando, .res-nightmode .side #searchexpando {
+[lang$=nm] .side .md>p:first-of-type, .res-nightmode .side .md>p:first-of-type {
     color: rgba(240,252,255,.6);
 }
 

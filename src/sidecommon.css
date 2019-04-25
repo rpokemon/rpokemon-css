@@ -59,7 +59,6 @@ body:not(.loggedin) .side .md>h1~blockquote+hr {
 }
 
 .side #search,
-.side #searchexpando,
 .titlebox>h1 {
     position: absolute;
     width: 302px;
