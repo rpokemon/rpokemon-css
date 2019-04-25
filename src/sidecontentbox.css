@@ -70,7 +70,7 @@
 
 /* strong selector to override specific-user styles */
 html body .sidecontentbox .helplink~.content li .flair:before {
-    color: #999 !important;
+    color: #99a2a8 !important;
 }
 
 /* recently viewed links
@@ -89,7 +89,7 @@ html body .sidecontentbox .helplink~.content li .flair:before {
     display: inline-block;
     position: static!important;
     max-width: initial!important;
-    background: #999 !important;
+    background: #99a2a8 !important;
     color: white !important;
     line-height: 20px !important;
     padding: 0 8px;
@@ -140,7 +140,7 @@ html body .sidecontentbox .helplink~.content li .flair:before {
 }
 [lang$=nm] .gadget .reddit-entry .linkflairlabel, .res-nightmode .gadget .reddit-entry .linkflairlabel {
     background: #131416 !important;
-    color: #999!important;
+    color: #99a2a8!important;
 }
 [lang$=nm] .sidecontentbox .helplink~.content li:not(.more), .res-nightmode .sidecontentbox .helplink~.content li:not(.more) {
     border-color: hsl(216, 10%, 27%);

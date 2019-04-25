@@ -179,7 +179,7 @@
     line-height: 23px;
     left: -35px;
     top: 4px;
-    color: #aaa;
+    color: #aab1b6;
 }
 [lang$=nm] .side .md h3+ul+ol>li>a, .res-nightmode .side .md h3+ul+ol>li>a {
     color: #80b3ff;
@@ -271,7 +271,10 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 /* sidebar calendar
 --------------------------------------------------------------------------------*/
 .side .md > table {
-    box-shadow: 0 0 0 0.5px hsla(240,20%,40%,0.1), 0 2px 5px 0 hsla(240,20%,40%,0.1), 0 1px 2px 0 hsla(240,20%,40%,0.12);
+    box-shadow:
+        0 0 0 0.5px hsla(240,20%,40%,0.15),
+        0 2px 5px 0 hsla(240,20%,40%,0.15),
+        0 1px 2px 0 hsla(240,20%,40%,0.2);
     border-radius: 3px;
 }
 
@@ -309,6 +312,13 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 .side .md > table td:first-of-type {
     padding: 0 8px;
     box-sizing: border-box;
+}
+
+[lang$=nm] .side .md > table, .res-nightmode .side .md > table {
+    box-shadow:
+        0 0 0 0.5px hsla(240, 20%, 60%, 0.15),
+        0 2px 5px 0 hsla(240,20%,60%,.15),
+        0 1px 2px 0 hsla(240,20%,60%,.2);
 }
 
 [lang$=nm] .side .md > table tr:not(:last-child), .res-nightmode .side .md > table tr:not(:last-child) {

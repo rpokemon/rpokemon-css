@@ -192,7 +192,7 @@
 }
 
 [lang$=nm] .side .subscribers, .res-nightmode .side .subscribers {
-    color: #aaa
+    color: #aab1b6
 }
 
 /* subscription buttons
@@ -580,7 +580,7 @@ html:not([lang$=nm]):not(.res-nightmode) .side .md > h1 a:first-child {
 .linkinfo .date {
     text-transform: uppercase;
     font-size: 9px;
-    color: #aaa;
+    color: #aab1b6;
     margin-bottom: 10px
 }
 .linkinfo .shortlink {
@@ -590,7 +590,7 @@ html:not([lang$=nm]):not(.res-nightmode) .side .md > h1 a:first-child {
     font-size: 12px;
     text-align: center;
     border: 1px solid rgba(0,0,0,0.05);
-    color: #999;
+    color: #99a2a8;
     margin-top: 10px;
 }
 .linkinfo .score {
@@ -627,9 +627,9 @@ html:not([lang$=nm]):not(.res-nightmode) .side .md > h1 a:first-child {
 [lang$=nm] .toggle.fancy-toggle-button .option.active, .res-nightmode .toggle.fancy-toggle-button .option.active,
 [lang$=nm].res .titlebox > .subButtons .res-fancy-toggle-button, .res-nightmode.res .titlebox > .subButtons .res-fancy-toggle-button {
     background: rgba(0, 0, 0, .4);
-    color: #aaa
+    color: #aab1b6
 }
 [lang$=nm] .titlebox form.toggle.flairtoggle, .res-nightmode .titlebox form.toggle.flairtoggle,
 [lang$=nm] .titlebox form.toggle.res-sr-style-toggle, .res-nightmode .titlebox form.toggle.res-sr-style-toggle {
-    color: #aaa
+    color: #aab1b6
 }

@@ -11,7 +11,7 @@
 
 .res [id^=RESShortcut] {
     background-color: transparent!important;
-    color: #999!important
+    color: #99a2a8!important
 }
 
 /********************************************************************************
@@ -138,7 +138,7 @@
     content: 'β';
     font-size: 12px;
     font-weight: 700;
-    color: #999;
+    color: #99a2a8;
 }
 
 /* userbar
@@ -502,13 +502,14 @@ body #header .tabmenu li:only-child a {
 *********************************************************************************/
 [lang$=nm] #sr-header-area, .res-nightmode #sr-header-area {
     background: #282b30!important;
-    border-bottom: 1px solid #282b30
+    border-bottom: 1px solid #282b30;
+    color: #acb4b9;
 }
 [lang$=nm] #sr-header-area .width-clip .dropdown.srdrop .selected.title, .res-nightmode #sr-header-area .width-clip .dropdown.srdrop .selected.title,
 [lang$=nm] #sr-header-area a, .res-nightmode #sr-header-area a,
 [lang$=nm] #header-bottom-right a, .res-nightmode #header-bottom-right a,
 [lang$=nm] .res #userbarToggle, .res-nightmode .res #userbarToggle {
-    color: #aaa
+    color: #acb4b9
 }
 
 /* header bars */

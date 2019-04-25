@@ -27,7 +27,7 @@
 [lang$=nm] .titlebox form.toggle, .res-nightmode .titlebox form.toggle,
 [lang$=nm] .submit-page .roundfield, .res-nightmode .submit-page .roundfield {
     background: #282b30 !important;
-    color: #aaa;
+    color: #acb4b9;
     border-color: #282b30;
     box-shadow: none;
 }
