@@ -404,7 +404,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
     transform: scale(0.28);
     transform-origin: top left;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.25;
 }
 
 .side .md > h2 + ul li a:hover {
