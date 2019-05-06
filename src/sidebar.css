@@ -57,7 +57,7 @@
 
 /* Search expando
 --------------------------------------------------------------------------------*/
-#searchexpando {
+/*#searchexpando {
     border: 0;
     box-shadow: 0 0px 3px rgba(0,0,0,0.3), 0 2px 15px rgba(0,0,0,0.3);
     background: #fff;
@@ -111,7 +111,7 @@
     border-top-color: rgba(240,252,255,.6);
     color: rgba(240,252,255,.9);
 }
-
+*/
 /* Titlebox stuff
 --------------------------------------------------------------------------------*/
 .titlebox {
@@ -351,7 +351,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
 
 .side .md > h2, .side .md > h4 {
     margin: 0 -7px;
-    background: hsla(210, 20%, 93%, 0.8);
+    background: #eef1f4;
     padding: 10px 0;
     text-align: center;
     font-weight: 700;
@@ -362,7 +362,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
 
 .side .md > h2 + ul {
     list-style: none;
-    background: hsla(210, 20%, 93%, 0.8);
+    background: #eef1f4;
     margin: 0 -7px;
     padding: 10px 0 30px;
 }
@@ -466,7 +466,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
 }
 
 [lang$=nm] .side .md>p:first-of-type, .res-nightmode .side .md>p:first-of-type {
-    background: rgba(255,255,255,0.04);
+    background: #303338;
 }
 
 /* login box
@@ -567,8 +567,7 @@ html:not([lang$=nm]):not(.res-nightmode) .side .md > h1 a:first-child {
 /* link info box
 --------------------------------------------------------------------------------*/
 .linkinfo {
-    margin-right: 15px;
-    margin-left: 18px;
+    margin: 0 15px 0 18px;
     padding: 8px;
     background: hsl(210,20%,96%);
     border: 0;
@@ -593,30 +592,13 @@ html:not([lang$=nm]):not(.res-nightmode) .side .md > h1 a:first-child {
     color: #99a2a8;
     margin-top: 10px;
 }
-.linkinfo .score {
-    margin-bottom: 5px;
-    display: -webki-flex;
-    display: flex;
-    width: 100%;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: baseline;
-    align-items: baseline;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-.linkinfo .score .word {
-    margin-left: 4px;
-    margin-right: 5px;
-}
+
 [lang$=nm] .linkinfo, .res-nightmode .side .linkinfo {
     background: rgba(255,255,255,.03);
     border: 0;
 }
-
 [lang$=nm] .linkinfo .shortlink input, .res-nightmode .linkinfo .shortlink input {
     background: #3f4246;
-    color: #888;
 }
 
 /********************************************************************************

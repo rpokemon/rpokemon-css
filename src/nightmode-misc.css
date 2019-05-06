@@ -25,7 +25,8 @@
 [lang$=nm] .titlebox .leavecontributor-button, .res-nightmode .titlebox .leavecontributor-button,
 [lang$=nm] .titlebox .leavemoderator, .res-nightmode .titlebox .leavemoderator,
 [lang$=nm] .titlebox form.toggle, .res-nightmode .titlebox form.toggle,
-[lang$=nm] .submit-page .roundfield, .res-nightmode .submit-page .roundfield {
+[lang$=nm] .submit-page .roundfield, .res-nightmode .submit-page .roundfield,
+[lang$=nm] .RESDialogSmall, .res-nightmode .RESDialogSmall {
     background: #282b30 !important;
     color: #acb4b9;
     border-color: #282b30;
@@ -36,10 +37,18 @@
 [lang$=nm] body.mod-toolbox .tb-general-button, .res-nightmode body.mod-toolbox .tb-general-button,
 [lang$=nm] body.mod-toolbox .tb-bracket-button, .res-nightmode body.mod-toolbox .tb-bracket-button,
 [lang$=nm] .reddit-infobar, .res-nightmode .reddit-infobar,
-[lang$=nm] .crosspost-preview, .res-nightmode .crosspost-preview {
+[lang$=nm] .crosspost-preview, .res-nightmode .crosspost-preview,
+[lang$=nm] .RESDialogSmall .RESCloseButton, .res-nightmode .RESDialogSmall .RESCloseButton  {
     background: #282b30;
     border: 1px solid rgba(255, 255, 255, .1);
     color: #c7c7c7
+}
+
+
+[lang$=nm] .RESDialogSmall > h3, .res-nightmode .RESDialogSmall > h3 {
+    color: #acb4b9;
+    background: hsl(218, 9%, 15%) !important;
+    border-bottom: 1px solid #1e2024;
 }
 
 /* various user inputs
@@ -53,7 +62,8 @@
 [lang$=nm] .submit-page .roundfield textarea, .res-nightmode .submit-page .roundfield textarea,
 [lang$=nm] .flairselector input[type=text], .res-nightmode .flairselector input[type=text],
 [lang$=nm] .markdownEditor .edit-btn:not(.btn-macro), .res-nightmode .markdownEditor .edit-btn:not(.btn-macro),
-[lang$=nm] .submit #sr-autocomplete, .res-nightmode .submit #sr-autocomplete {
+[lang$=nm] .submit #sr-autocomplete, .res-nightmode .submit #sr-autocomplete,
+[lang$=nm] .res #BigText, .res.res-nightmode #BigText {
     background-color: rgba(255, 255, 255, .05);
     color: rgba(240,252,255,.9)!important;
     border: 1px solid rgba(255, 255, 255, .15)!important

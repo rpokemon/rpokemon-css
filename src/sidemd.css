@@ -12,7 +12,7 @@
 
 /* title */
 .side .md > h5 {
-    background: hsla(210,20%,93%,0.8);
+    background: #eef1f4;
     margin: 0 -7px;
     padding: 0;
 }
@@ -39,7 +39,7 @@
     padding: 10px 20px 15px 15px;
     font-size: 12px;
     margin: 0 -7px;
-    background: hsla(210,20%,93%,0.8);
+    background: #eef1f4;
 }
 
 /* box items */
@@ -397,5 +397,5 @@ html[lang$="nm"] .side .md h4+blockquote * a:last-child { display: block; }
 [lang$=nm] .side .md>h5+ul, .res-nightmode .side .md>h5+ul,
 [lang$=nm] .side .md>h4+blockquote, .res-nightmode .side .md>h4+blockquote,
 [lang$=nm] .side .md>table, .res-nightmode .side .md>table {
-    background: rgba(255,255,255,0.03);
+    background: #2f3236;
 }
