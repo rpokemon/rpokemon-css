@@ -457,28 +457,28 @@ body #header .tabmenu li:only-child a {
 }
 
 /* tooltip text */
-#header .tabmenu li:nth-child(1) a:after {
+.listing-page #header .tabmenu li:nth-child(1) a:after {
     content: 'hot'
 }
-#header .tabmenu li:nth-child(2) a:after {
+.listing-page #header .tabmenu li:nth-child(2) a:after {
     content: 'new'
 }
-#header .tabmenu li:nth-child(3) a:after {
+.listing-page #header .tabmenu li:nth-child(3) a:after {
     content: 'rising'
 }
-#header .tabmenu li:nth-child(4) a:after {
+.listing-page #header .tabmenu li:nth-child(4) a:after {
     content: 'controversial'
 }
-#header .tabmenu li:nth-child(5) a:after {
+.listing-page #header .tabmenu li:nth-child(5) a:after {
     content: 'top'
 }
-#header .tabmenu li:nth-child(6) a:after {
+.listing-page #header .tabmenu li:nth-child(6) a:after {
     content: 'gilded'
 }
-#header .tabmenu li:nth-child(7) a:after {
+.listing-page #header .tabmenu li:nth-child(7) a:after {
     content: 'wiki'
 }
-#header .tabmenu li:nth-child(8) a:after {
+.listing-page #header .tabmenu li:nth-child(8) a:after {
     content: 'promoted'
 }
 
