@@ -256,7 +256,7 @@ html body .entry.res-selected .md-container,
 .entry {
     border-radius: 4px;
     overflow: hidden;
-    margin: 25px 0 0!important
+    margin: 22px 0 0!important
 }
 .link .entry {
     border-color: transparent
@@ -308,7 +308,7 @@ html body .entry.res-selected .md-container,
     margin: 0
 }
 .comment .midcol {
-    margin: 0 10px;
+    margin: 0 7px;
     top: 25px;
     width: 36px!important;
     left: 15px;
@@ -355,7 +355,7 @@ html body .entry.res-selected .md-container,
 .comment .tagline .score-hidden {
     font-size: 10px;
     letter-spacing: .2px;
-    top: -25px;
+    top: -22px;
     left: 0;
     display: none;
     word-spacing: 100px;
@@ -363,7 +363,9 @@ html body .entry.res-selected .md-container,
     position: absolute!important;
     overflow: hidden;
     border: 1px solid #cecdcd;
-    background: #fff
+    background: #fff;
+    height: 18px;
+    line-height: 18px;
 }
 
 [lang$=nm] .comment .score, .res-nightmode .comment .score,

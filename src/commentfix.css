@@ -12,11 +12,11 @@
 .comments-page .comment,
 .res.comments-page .comment,
 .res.res-commentBoxes .comment {
-    margin: 8px 0 2px!important;
+    margin: 6px 0 2px!important;
     padding-top: 2px!important
 }
 .comments-page .comment .comment {
-    margin: 2px 0 0 30px!important
+    margin: 4px 0 0 30px!important
 }
 
 /* disable some stupid RES stuff */
