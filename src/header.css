@@ -116,7 +116,7 @@
     background-position: -62px -162px
 }
 
-#header .flat-list, #header .logout, #header .logout a {
+#header-bottom-right .flat-list, #header .logout, #header .logout a {
     display: inline-block;
     height: 27px;
     min-width: 27px;
