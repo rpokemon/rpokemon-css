@@ -28,7 +28,7 @@
 
 /* specific width for listing page */
 .listing-page .link .linkflairlabel {
-    min-width: 85px !important;
+    width: 85px !important;
     padding: 0;
 }
 
