@@ -36,6 +36,13 @@
     box-shadow: 0 1px 3px rgba(173,178,255,.15);
 }
 
+.side .link.promoted.promotedlink {
+    padding: 0;
+    box-shadow: none;
+    border: 0;
+    margin-top: 10px;
+}
+
 /* spam
 --------------------------------------------------------------------------------*/
 .thing.spam {
