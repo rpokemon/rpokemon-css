@@ -296,6 +296,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
     padding: 0 0 0 22px;
     height: 18px;
     margin: 10px 0;
+    background: 0;
 }
 
 .res-sr-style-toggle label,
