@@ -25,6 +25,6 @@
     height: 150px;
     background: url(%%banner-pokemon%%) no-repeat center center / contain;
     position: absolute;
-    left: calc(50% - 150px);
+    left: calc(100% - 530px);
     top: 16px;
 }
