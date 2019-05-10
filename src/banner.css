@@ -1,13 +1,13 @@
 /********************************************************************************
 * BANNER
 *********************************************************************************/
-
+/*
 #header {
     background: url(%%daymodeheader%%) center 0/cover no-repeat;
 }
 [lang$=nm] #header, .res-nightmode #header {
     background: url(%%nightmodeheader%%) center center/cover no-repeat;
-}
+}*/
 .pagename a {
     top: 19px;
     width: 294px;
@@ -27,4 +27,9 @@
     position: absolute;
     left: calc(100% - 530px);
     top: 16px;
+}
+
+/*detective pikachu banner*/
+#header {
+    background: url(%%header%%) center 0/cover no-repeat;
 }
