@@ -3,11 +3,13 @@
 *********************************************************************************/
 
 #header {
-    background: url(%%daymodeheader%%) center 0/cover no-repeat;
+    background: url(%%header%%) center/cover no-repeat;
 }
+
 [lang$=nm] #header, .res-nightmode #header {
-    background: url(%%nightmodeheader%%) center center/cover no-repeat;
+    background: url(%%header-night%%) center center/cover no-repeat;
 }
+
 .pagename a {
     top: 19px;
     width: 294px;
@@ -25,6 +27,6 @@
     height: 150px;
     background: url(%%banner-pokemon%%) no-repeat center center / contain;
     position: absolute;
-    left: calc(100% - 530px);
+    left: calc(50% - 150px);
     top: 16px;
 }
