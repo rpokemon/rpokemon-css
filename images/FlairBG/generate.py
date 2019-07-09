@@ -162,6 +162,77 @@ flairs = [
         "shape_border": (33, 139, 67),
         "text": "Moderator"
     },
+	
+    {
+	# BamSquid
+	"top_section": (0, 0, 0),
+	"bottom_section": (255, 153, 51),
+	"poke_ball": (160, 0, 230),
+	"top_squares": (255, 153, 51),
+	"shape_border": (160, 0, 230),
+	"text": "Moderator"
+    },
+	
+    {
+	# TheShavvy_
+	"top_section": (93, 72, 109),
+	"bottom_section": (187, 187, 202),
+	"poke_ball": (187, 187, 202),
+	"shape_border": (222, 217, 149),
+	"text": "Moderator"
+    },
+
+    {
+        # Lost
+        "top_section": (39, 36, 43),
+        "bottom_section": (43, 47, 51),
+        "poke_ball": (43, 47, 51),
+        "top_squares": (43, 47, 51),
+        "shape_border": (0, 0, 0),
+        "text": "Moderator"
+    },
+
+    {
+        # saltimmortalsea
+        "top_section": (255, 217, 151),
+        "bottom_section": (246, 224, 155),
+        "poke_ball": (219, 216, 208),
+        "top_squares": (219, 216, 208),
+        "shape_border": (219, 216, 208),
+        "text": "Moderator"
+    },
+
+    {
+        # mlahk7
+        "top_section": (130, 238, 255),
+        "bottom_section": (255, 255, 255),
+        "poke_ball": (255, 255, 255),
+        "text": "Moderator"
+    },
+
+    {
+        # Wind
+        "top_section": (151, 255, 130),
+        "bottom_section": (87, 89, 87),
+        "shape_border": (255, 255, 255),
+        "text": "Moderator"
+    },
+
+    {
+        # captain_moscow
+        "top_section": (236, 0, 240),
+        "bottom_section": (29, 239, 242),
+        "poke_ball": (29, 239, 242),
+        "text": "Moderator"
+    },
+
+    {
+        # fernnifer
+        "top_section": (169, 156, 255),
+        "bottom_section": (244, 233, 251),
+        "poke_ball": (255, 255, 255),
+        "text": "Moderator"
+    },
 
     # - OTHER FLAIRS
     {   # Nintendo

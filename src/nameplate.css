@@ -209,6 +209,62 @@ The order of everything in this file is very important:
     background: 0 -792px;
 }
 
+/* ninjatoasty - Distinguish Only
+---------------------------------------------------------------------------------*/
+.author.moderator[href$="/ninjatoasty"],
+.author.moderator[href$="/ninjatoasty"]~.flair:before {
+	background: 0 -828px;
+}
+
+/* TheShavvy_ - Distinguish Only
+---------------------------------------------------------------------------------*/
+.author.moderator[href$="/TheShavvy_"],
+.author.moderator[href$="/TheShavvy_"]~.flair:before {
+	background: 0 -864px;
+}
+
+/* Im_Lost_Send_Help - Distinguish Only
+---------------------------------------------------------------------------------*/
+.author.moderator[href$="/Im_Lost_Send_Help"],
+.author.moderator[href$="/Im_Lost_Send_Help"]~.flair:before {
+	background: 0 -900px;
+}
+
+/* saltimmortalsea - Distinguish Only
+---------------------------------------------------------------------------------*/
+.author.moderator[href$="/saltimmortalsea"],
+.author.moderator[href$="/saltimmortalsea"]~.flair:before {
+	background: 0 -936px;
+}
+
+/* Mlahk7 - Distinguish Only
+---------------------------------------------------------------------------------*/
+.author.moderator[href$="/Mlahk7"],
+.author.moderator[href$="/Mlahk7"]~.flair:before {
+	background: 0 -972px;
+}
+
+/* WindAeris - Distinguish Only
+---------------------------------------------------------------------------------*/
+.author.moderator[href$="/WindAeris"],
+.author.moderator[href$="/WindAeris"]~.flair:before {
+	background: 0 -1008px;
+}
+
+/* Captain_Moscow - Distinguish Only
+---------------------------------------------------------------------------------*/
+.author.moderator[href$="/Captain_Moscow"],
+.author.moderator[href$="/Captain_Moscow"]~.flair:before {
+	background: 0 -1044px;
+}
+
+/* fernnifer - Distinguish Only
+---------------------------------------------------------------------------------*/
+.author.moderator[href$="/fernnifer"],
+.author.moderator[href$="/fernnifer"]~.flair:before {
+	background: 0 -1080px;
+}
+
 /********************************************************************************
 * FORCE DARK FLAIR TEXT
 *********************************************************************************/
