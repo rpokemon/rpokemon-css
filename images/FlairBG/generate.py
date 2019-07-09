@@ -3,7 +3,7 @@ import numpy as np
 
 flairs = [
 
-    # - General Flairs
+    # - General Flairs 
 
     {   # Dark theme
         "top_section": (36, 39, 43),
