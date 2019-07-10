@@ -234,6 +234,15 @@ flairs = [
         "text": "Moderator"
     },
 
+    {
+        # sloth
+        "top_section": (197, 145, 61),
+        "bottom_section": (255, 255, 156),
+        "poke_ball": (249, 210, 135),
+        "top_squares": (249, 210, 135),
+        "shape_border": (0, 0, 0)
+    },
+    
     # - OTHER FLAIRS
     {   # Nintendo
         "top_section": (196, 50, 50),
