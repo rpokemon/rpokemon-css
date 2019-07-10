@@ -380,8 +380,8 @@ body .flair:after {
     background: 0 -60px
 }
 
-bigslothonmyface GBsounds
---------------------------------------------------------------------------------
+/* bigslothonmyface GBsounds
+--------------------------------------------------------------------------------*/
 .author[href$="/bigslothonmyface"]~.flair:after {
     background: -30px -60px;
 }
