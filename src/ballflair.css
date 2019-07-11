@@ -464,6 +464,60 @@ body .flair:after {
     background: -420px -60px;
 }
 
+/* Mlahk7 Ice Stone
+--------------------------------------------------------------------------------*/
+.author[href$="/Mlahk7"]~.flair:after {
+    background: -420px -60px;
+}
+
+/* TheShavvy_ Sail Fossil
+---------------------------------------------------------------------------------*/
+.author[href$="/TheShavvy_"]~.flair:after {
+	background: -480px -60px
+}
+
+/* ninjatoasty TM30
+--------------------------------------------------------------------------------*/
+.author[href$="/ninjatoasty"]~.flair:after {
+	background: -510px -60px
+}
+
+/* saltimmortalsea Roto Hatch
+--------------------------------------------------------------------------------*/
+.author[href$="/saltimmortalsea"]~.flair:after {
+	background: -540px -60px
+}
+
+/* WindAeris Rare Candy
+--------------------------------------------------------------------------------*/
+.author[href$="/WindAeris"]~.flair:after {
+	background: -570px -60px
+}
+
+/* Captain_Moscow Silph Co Logo
+--------------------------------------------------------------------------------*/
+.author[href$="/Captain_Moscow"]~.flair:after {
+	background: -600px -60px
+}
+
+/* fernnifer Nidorina
+--------------------------------------------------------------------------------*/
+.author[href$="/fernnifer"]~.flair:after {
+	background: -630px -60px
+}
+
+/* Jooyoung99 Key Stone
+--------------------------------------------------------------------------------*/
+.author[href$="/Jooyoung99"]~.flair:after {
+	background: -660px -60px
+}
+
+/* Im_Lost_Send_Help Thunder Stone
+--------------------------------------------------------------------------------*/
+.author[href$="/Im_Lost_Send_Help"]~.flair:after {
+	background: -690px -60px
+}
+
 /********************************************************************************
 * APPLY IMAGE
 *********************************************************************************/

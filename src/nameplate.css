@@ -265,11 +265,18 @@ The order of everything in this file is very important:
 	background: 0 -1080px;
 }
 
+/* Jooyoung99 - Distinguish Only
+--------------------------------------------------------------------------------*/
+.author.moderator[href$="/Jooyoung99"],
+.author.moderator[href$="/Jooyoung99"]~.flair:before {
+    background: 0 -792px;
+}
+
 /* Sloth
 --------------------------------------------------------------------------------*/
-.author[href$="/bigslothonmyface"], html body .author[href$="/bigslothonmyface"]:not(.moderator) {
+.author[href$="/bigslothonmyface"], html body div.content .author[href$="/bigslothonmyface"]:not(.moderator) {
     background: 0 -1116px;
-    color: #fff!important
+	color: #fff !important;
 }
 
 /********************************************************************************

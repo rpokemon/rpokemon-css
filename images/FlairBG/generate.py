@@ -194,7 +194,7 @@ flairs = [
 
     {
         # saltimmortalsea
-        "top_section": (255, 217, 151),
+        "top_section": (135, 11, 15),
         "bottom_section": (246, 224, 155),
         "poke_ball": (219, 216, 208),
         "top_squares": (219, 216, 208),
