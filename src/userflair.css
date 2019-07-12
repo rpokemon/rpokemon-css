@@ -139,7 +139,7 @@ span.flairemoji {width: 30px;height: 28px;margin: 2px 5px;}
 
 /* bigslothonmyface */
 .author[href$="/bigslothonmyface"]~.flair{
-    background:url(%%sp%%) -165px -126px !important;
+    background:url(%%sp%%) -165px -127px !important;
 }
 
 .author[href$="/Thief-Noctis"]~.flair {
