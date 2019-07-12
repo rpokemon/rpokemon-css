@@ -206,6 +206,16 @@ span.flairemoji {width: 30px;height: 28px;margin: 2px 5px;}
     background:url(%%sp%%) -38px -126px !important;
 }
 
+/* Lost */
+.author[href$="/Im_Lost_Send_Help"]~.flair{
+    background:url(%%sp%%) -78px -126px !important;
+}
+
+/* BamSquid */
+.author[href$="/ninjatoasty"]~.flair{
+    background:url(%%sp%%) -118px -126px !important;
+}
+
 /*.author[href$="/rileydelete"]~.flair {
     background: url(%%sp%%)  -38px -89px !important; -- OLD FLAIR TYPE
     background: url(%%mtf%%) -150px 0!important
