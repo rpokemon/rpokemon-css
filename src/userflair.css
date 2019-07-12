@@ -137,10 +137,10 @@ span.flairemoji {width: 30px;height: 28px;margin: 2px 5px;}
     background: url(%%mtf%%) 0px 0px !important;
 }*/
 
-/* bigslothonmyface */
+/* bigslothonmyface
 .author[href$="/bigslothonmyface"]~.flair{
     background:url(%%sp%%) -165px -127px !important;
-}
+}*/
 
 .author[href$="/Thief-Noctis"]~.flair {
     background: url(%%sp%%) -107px -16px !important;
