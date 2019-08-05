@@ -214,6 +214,7 @@
 }
 .titlebox > .subButtons .res-fancy-toggle-button.RESDashboardToggle,
 .titlebox > .subButtons .res-fancy-toggle-button.RESshortcut,
+.titlebox > .subButtons .res-fancy-toggle-button.RESshortcutside,
 .titlebox .fancy-toggle-button {
     position: absolute;
     top: 407px;
@@ -221,7 +222,8 @@
 .titlebox .fancy-toggle-button {
     right: 191px;
 }
-.titlebox > .subButtons .res-fancy-toggle-button.RESshortcut {
+.titlebox > .subButtons .res-fancy-toggle-button.RESshortcut
+.titlebox > .subButtons .res-fancy-toggle-button.RESshortcutside {
     right: 116px;
 }
 .titlebox > .subButtons .res-fancy-toggle-button.RESDashboardToggle {
