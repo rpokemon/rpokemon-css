@@ -222,7 +222,7 @@
 .titlebox .fancy-toggle-button {
     right: 191px;
 }
-.titlebox > .subButtons .res-fancy-toggle-button.RESshortcut
+.titlebox > .subButtons .res-fancy-toggle-button.RESshortcut,
 .titlebox > .subButtons .res-fancy-toggle-button.RESshortcutside {
     right: 116px;
 }
