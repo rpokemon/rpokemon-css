@@ -272,12 +272,12 @@ The order of everything in this file is very important:
     background: 0 -792px;
 }
 
-/* Sloth
+/* Sloth */
 --------------------------------------------------------------------------------
 .author[href$="/bigslothonmyface"], html body div.content .author[href$="/bigslothonmyface"]:not(.moderator) {
     background: 0 -1116px;
 	color: #fff !important;
-}*/
+}
 
 /********************************************************************************
 * FORCE DARK FLAIR TEXT
