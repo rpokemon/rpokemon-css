@@ -15,7 +15,7 @@
     margin: 6px 0 2px!important;
     padding-top: 2px!important
 }
-.comments-page .comment .comment {
+.comments-page .comment .comment, .comments-page .comment .morechildren {
     margin: 4px 0 0 30px!important
 }
 
