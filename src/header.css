@@ -116,8 +116,11 @@
     background-position: -62px -162px
 }
 
-#header-bottom-right .flat-list, #header .logout, #header .logout a {
-    display: inline-block;
+#header-bottom-right .flat-list,
+#header-bottom-right .flat-list li,
+#header .logout, #header .logout a {
+    display: flex;
+    align-items: center;
     height: 27px;
     min-width: 27px;
     position: relative;
@@ -248,6 +251,7 @@
     background-position: -90px -162px;
     transform: scale(0.9);
     transform-origin: center;
+    margin-left: 3px;
 }
 #header .gearIcon:after {display: none}
 
