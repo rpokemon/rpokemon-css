@@ -316,9 +316,38 @@ body .flair:after {
     background: -480px -30px;
 }
 
+/* Catching Charm - */
+.flair.flair-catchingcharm:after {
+    background: -510px -30px;
+}
+
+/* Star Sweet - */
+.flair.flair-starsweet:after {
+    background: -540px -30px;
+}
+
+/* Berry Sweet - */
+.flair.flair-berrysweet:after {
+    background: -570px -30px;
+}
+
 /* 10th anniversary logo*/
 .flair.flair-10logo:after {
     background: -523px -34px;
+    background-size: 660px 64px;
+    image-rendering: auto;
+}
+
+/* Curry Mark */
+.flair.flair-currymark:after {
+    background: -492px -34px;
+    background-size: 660px 64px;
+    image-rendering: auto;
+}
+
+/* Gigantamax Symbol */
+.flair.flair-gigantamax:after {
+    background: -459px -34px;
     background-size: 660px 64px;
     image-rendering: auto;
 }
@@ -358,6 +387,8 @@ body .flair:after {
 .flair.flair-tapukoko-medal:after {
     background: -1244px -86px;
 }
+
+
 
 /********************************************************************************
 * EXTERNAL COMMUNITY FLAIRS
