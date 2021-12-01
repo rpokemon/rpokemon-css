@@ -7,7 +7,7 @@
 
 .side .md > h1 ~ blockquote + hr,
 .side .md > ol + hr {
-    background-image: linear-gradient(-90deg, #ff0082 0%, #ff0082 50%, #0080ff 50%, #0080ff 100%);
+    background-image: linear-gradient(-90deg, #e79796 0%, #e79796 50%, #5f7dbd 50%, #5f7dbd 100%);
     margin: 20px -7px 0;
 }
 

@@ -19,7 +19,7 @@
     background: url(%%header-logo%%) no-repeat center center / contain;
 }
 .pagename a:hover {
-    background-position-y: 100%;
+    transform: scale(1.1);
 }
 .pagename:after {
     content: "";
