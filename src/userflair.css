@@ -16,7 +16,11 @@
     border-radius: 0;
     z-index: 2;
     font-size: 0 !important;
-    image-rendering: pixelated;
+}
+
+.flair-kantoflair, .flair-johtoflair, .flair-hoennflair,
+.flair-sinnohflair, .flair-unovaflair, .flair-kalosflair {
+	image-rendering: pixelated;
 }
 
 .res-nightmode .flair {
