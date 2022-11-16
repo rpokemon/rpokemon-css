@@ -76,13 +76,6 @@ span.flairemoji {width: 30px;height: 28px;margin: 2px 5px;}
     left: -2px
 }
 
-/* hide flairs in moderator box
---------------------------------------------------------------------------------*/
-.sidecontentbox .flair {
-    background: none !important;
-}
-
-
 /* hide flair in search page, wiki page revision listing, and crossposts
 --------------------------------------------------------------------------------*/
 .search-result-group .flair,

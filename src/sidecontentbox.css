@@ -21,14 +21,14 @@
 
 /* sidecontentbox moderators
 --------------------------------------------------------------------------------*/
-.sidecontentbox .helplink ~ .content {
+.sidecontentbox:not(.collapsible) .content {
     background: hsl(210,20%,96%);
     margin: 10px;
     border-radius: 10px;
 }
 
 /* item */
-.sidecontentbox .helplink ~ .content li:not(.more) {
+.sidecontentbox li.message-button~li:not(.more) {
     position: relative;
     background: white;
     border: 1px solid hsl(210,20%,86%);
@@ -39,7 +39,7 @@
 }
 
 /* item pokeball */
-.sidecontentbox .helplink~.content li:not(.more):before {
+.sidecontentbox li.message-button~li:not(.more):before {
     content: '';
     display: block;
     position: absolute;
@@ -55,21 +55,21 @@
 }
 
 /* author link */
-.sidecontentbox .helplink~.content li:not(.more) > a {
+.sidecontentbox li.message-button~li:not(.more) > a {
     top: -3px;
     position: relative
 }
 
 /* message the moderators link */
-.sidecontentbox a.helplink {
+.sidecontentbox a.c-btn {
     display: block;
     float: none;
-    margin: 10px 15px 20px;
+    margin: 10px 15px 5px;
     width: auto;
 }
 
 /* strong selector to override specific-user styles */
-html body .sidecontentbox .helplink~.content li .flair:before {
+html body .sidecontentbox .li.message-button~.content li .flair:before {
     color: #99a2a8 !important;
 }
 
@@ -142,21 +142,21 @@ html body .sidecontentbox .helplink~.content li .flair:before {
     background: #131416 !important;
     color: #99a2a8!important;
 }
-[lang$=nm] .sidecontentbox .helplink~.content li:not(.more), .res-nightmode .sidecontentbox .helplink~.content li:not(.more) {
+[lang$=nm] .sidecontentbox li.message-button~li:not(.more), .res-nightmode .sidecontentbox li.message-button~li:not(.more) {
     border-color: hsl(216, 10%, 27%);
     background: hsl(220, 7%, 15%);
 }
-[lang$=nm] .sidecontentbox .helplink~.content li:not(.more) a, .res-nightmode .sidecontentbox .helplink~.content li:not(.more) a {
+[lang$=nm] .sidecontentbox li.message-button~li:not(.more) a, .res-nightmode .sidecontentbox li.message-button~li:not(.more) a {
     color: rgba(240,252,255,.7);
 }
-[lang$=nm] .sidecontentbox .helplink~.content li:before, .res-nightmode .sidecontentbox .helplink~.content li:before {
+[lang$=nm] .sidecontentbox li.message-button~li:before, .res-nightmode .sidecontentbox li.message-button~li:before {
     opacity: 0.5;
 }
 [lang$=nm] .account-activity-box, .res-nightmode .account-activity-box {
     border-color: #1a1a1a;
 }
 
-[lang$=nm] .sidecontentbox .helplink~.content li:not(.more):before, .res-nightmode .sidecontentbox .helplink~.content li:not(.more):before {
+[lang$=nm] .sidecontentbox li.message-button~li:not(.more):before, .res-nightmode .sidecontentbox li.message-button~li:not(.more):before {
     width: 100px;
     height: 100px;
     background-position: 0 -250px;

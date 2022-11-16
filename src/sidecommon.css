@@ -115,7 +115,7 @@ body:not(.loggedin) .side .md>h1~blockquote+hr {
 /* common sidebar button
 --------------------------------------------------------------------------------*/
 .side .md>h2+ul li a,
-.sidecontentbox a.helplink,
+.sidecontentbox a.c-btn,
 .side .md h6+blockquote h4 a,
 .submit-page button[name=submit] {
     display: block;
@@ -136,7 +136,7 @@ body:not(.loggedin) .side .md>h1~blockquote+hr {
 }
 
 html[lang] .side .md>h2+ul li a:hover,
-html[lang] .sidecontentbox a.helplink:hover,
+html[lang] .sidecontentbox a.c-btn:hover,
 html[lang] .side .md h6+blockquote h4 a:hover,
 html[lang] .submit-page button[name=submit]:hover {
     background: #2068ee;
@@ -144,7 +144,7 @@ html[lang] .submit-page button[name=submit]:hover {
 
 [lang$=nm] .side .md a[href$="#flair"], .res-nightmode .side .md a[href$="#flair"],
 [lang$=nm] .side .md>h2+ul li a, .res-nightmode .side .md>h2+ul li a,
-[lang$=nm] .sidecontentbox a.helplink, .res-nightmode .sidecontentbox a.helplink,
+[lang$=nm] .sidecontentbox a.c-btn, .res-nightmode .sidecontentbox a.c-btn,
 [lang$=nm] .side .md h6+blockquote h4 a, .res-nightmode .side .md h6+blockquote h4 a,
 [lang$=nm] .submit-page button[name=submit], .res-nightmode .submit-page button[name=submit] {
     box-shadow: 0 0 1px rgba(0,0,0,0.8);
