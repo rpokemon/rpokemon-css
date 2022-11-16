@@ -18,8 +18,8 @@
     font-size: 0 !important;
 }
 
-.flair-kantoflair, .flair-johtoflair, .flair-hoennflair,
-.flair-sinnohflair, .flair-unovaflair, .flair-kalosflair {
+.flair-kantoflair, .flair-johtoflair, .flair-hoennflair, .flair-sinnohflair,
+.flair-unovaflair, .flair-kalosflair, .flair-alolaflair {
 	image-rendering: pixelated;
 }
 
@@ -212,7 +212,7 @@ span.flairemoji {width: 30px;height: 28px;margin: 2px 5px;}
 
 /* Fable */
 .author[href$="/Draycen"]~.flair{
-    background:url(%%sp%%) -38px -126px !important;
+    background:url(%%sp%%) -40px -126px !important;
 }
 
 /* Lost */
