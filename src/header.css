@@ -26,7 +26,7 @@
 /* Header
 --------------------------------------------------------------------------------*/
 #header {
-    height: 166px;
+    height: 228px;
     overflow: visible!important
 }
 
@@ -58,7 +58,7 @@
     display: block;
     position: absolute;
     height: 46px;
-    top: 166px;
+    top: 228px;
     width: 100vw;
     right: -6px;
     box-sizing: border-box;

@@ -8,7 +8,7 @@ body>.content {
 *********************************************************************************/
 .side .md>blockquote:first-of-type {
     position: absolute;
-    top: 166px;
+    top: 228px;
     left: 0;
     display: -webkit-flex;
     display: flex;
@@ -66,7 +66,12 @@ body>.content {
 /********************************************************************************
 * ANNOUNCEMENT BAR
 *********************************************************************************/
+
 .side .md>blockquote:nth-of-type(2) {
+	display: none;
+}
+
+/* .side .md>blockquote:nth-of-type(2) {
     position: absolute;
     top: 29px;
     right: 5px;
@@ -85,17 +90,17 @@ body>.content {
     padding: 0 5px;
     position: relative;
     line-height: 25px;
-}
+} */
 /* title */
-.side .md>blockquote:nth-of-type(2) p:first-child {
+/* .side .md>blockquote:nth-of-type(2) p:first-child {
     font-weight: 700;
     font-size: 12px;
     padding: 1px 0;
     border: 0;
-}
+} */
 
 /* inner content shadow */
-.side .md>blockquote:nth-of-type(2):before {
+/* .side .md>blockquote:nth-of-type(2):before {
     content: '';
     display: block;
     position: absolute;
@@ -106,10 +111,10 @@ body>.content {
     background: rgba(255, 255, 255, .35);
     border-radius: 3px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, .15), inset 0 -1px 2px rgba(0, 0, 0, .1)
-}
+} */
 
 /* announcement bar nightmode */
-[lang$=nm] .side .md>blockquote:nth-of-type(2), .res-nightmode .side .md>blockquote:nth-of-type(2) {
+/* [lang$=nm] .side .md>blockquote:nth-of-type(2), .res-nightmode .side .md>blockquote:nth-of-type(2) {
     background: rgba(0,0,0,0.6);
 }
 
@@ -121,4 +126,4 @@ body>.content {
 [lang$=nm] .side .md>blockquote:nth-of-type(2):before, .res-nightmode .side .md>blockquote:nth-of-type(2):before {
     background: rgba(0,0,0,.35);
     box-shadow: inset 0 0 3px rgba(0, 0, 0, .6), inset 0 0 3px rgba(0, 0, 0, .35)
-}
+} */

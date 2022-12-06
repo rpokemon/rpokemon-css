@@ -29,7 +29,7 @@
 /* Search
 --------------------------------------------------------------------------------*/
 .side #search {
-    top: 200px;
+    top: 262px;
     right: 5px;
     z-index: 500;
 }
@@ -121,7 +121,7 @@
 
 /* side top-logo */
 .titlebox > h1 {
-    top: 274px;
+    top: 336px;
 }
 .titlebox > h1 a {
     display: block;
@@ -161,7 +161,7 @@
 .side .users-online {
     position: absolute;
     color: #333;
-    top: 357px;
+    top: 419px;
     width: 242px;
     box-sizing: border-box;
     right: 35px;
@@ -169,7 +169,7 @@
     line-height: 20px;
 }
 .side .users-online {
-    top: 377px;
+    top: 439px;
     background: hsl(210,20%,93%);
 }
 
@@ -217,7 +217,7 @@
 .titlebox > .subButtons .res-fancy-toggle-button.RESshortcutside,
 .titlebox .fancy-toggle-button {
     position: absolute;
-    top: 407px;
+    top: 469px;
 }
 .titlebox .fancy-toggle-button {
     right: 191px;
@@ -449,7 +449,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
 --------------------------------------------------------------------------------*/
 .side .md > p:first-of-type {
     position: absolute;
-    top: 437px;
+    top: 499px;
     margin: 0;
     width: 266px;
     right: 22px;
@@ -495,7 +495,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
 --------------------------------------------------------------------------------*/
 .side .md > h1 {
     position: absolute;
-    top: 517px;
+    top: 579px;
     width: 266px;
     right: 22px;
     margin: 0;

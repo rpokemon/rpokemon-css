@@ -6,22 +6,22 @@
     background: url(%%header%%) center/cover no-repeat;
 }
 
-[lang$=nm] #header, .res-nightmode #header {
+/* [lang$=nm] #header, .res-nightmode #header {
     background: url(%%header-night%%) center center/cover no-repeat;
-}
+} */
 
 .pagename a {
-    top: 19px;
+    top: 45px;
     width: 294px;
-    height: 147px;
+    height: 140px;
     display: block;
-    left: 215px;
+    left: 15%;
     background: url(%%header-logo%%) no-repeat center center / contain;
 }
 .pagename a:hover {
     transform: scale(1.1);
 }
-.pagename:after {
+/* .pagename:after {
     content: "";
     width: 300px;
     height: 150px;
@@ -29,4 +29,4 @@
     position: absolute;
     left: calc(50% - 150px);
     top: 16px;
-}
+} */
