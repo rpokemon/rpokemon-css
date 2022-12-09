@@ -290,9 +290,9 @@ for index, flair in enumerate(flairs):
     if flair.get("text", None):
         cc = ImageFont.truetype('chocolate_cake.ttf', 50)
         draw = ImageDraw.Draw(im)
-        w, h = draw.textsize(flair["text"], font=cc)
+        w = draw.textlength(flair["text"], font=cc)
 
-        draw.text((925 - w, -5), flair["text"], font=cc, fill=flair.get("top_squares", flair["bottom_section"]))
+        draw.text((919 - w, -5), flair["text"], font=cc, fill=flair.get("top_squares", flair["bottom_section"]))
 
     # paste image in spritesheet
     ss.paste(im, (0, index * 144))
