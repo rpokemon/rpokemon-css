@@ -424,7 +424,7 @@ body:not(.loggedin) .side a[href*="#flair"] {
 .side .md a[href*="/questions/"]:before {
     background: url(%%johtoflair%%) -640px -32px
 }
-.side .md a[href*="pokemontrades"]:before {
+.side .md a[href*="#wiki_trading_subreddits"]:before {
     background: url(%%unovaflair%%) -920px -96px
 }
 .side .md a[href*="pokememes"]:before {
