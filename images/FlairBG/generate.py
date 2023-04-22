@@ -62,7 +62,7 @@ flairs = [
         "top_section": (211, 79, 21),
         "bottom_section": (255, 113, 30),
         "top_squares": (35, 31, 32),
-        "text": "Moderator" 
+        "text": "Former Mod" 
     },
     {   # DLH
         "top_section": (17, 17, 17),
