@@ -58,9 +58,9 @@
     display: block;
     position: absolute;
     height: 46px;
+    width: 100%;
     top: 228px;
-    width: 100vw;
-    right: -6px;
+    right: 0;
     box-sizing: border-box;
     border-top: 1px solid rgba(128, 128, 128, 0.22);
 }

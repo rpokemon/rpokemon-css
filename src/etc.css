@@ -31,6 +31,7 @@ body > .debuginfo:before {
     content: 'CSS by /u/technophonix1, /u/kwwxis, /u/AtooZ, /u/Haruka-Sama; design mockup by /u/Hero_of_Legend';
     float: left;
     color: rgba(0,0,0,0.35);
+    margin-left: 5px;
     padding: 4px 5px;
     background: rgba(255,255,255,0.5);
 }
