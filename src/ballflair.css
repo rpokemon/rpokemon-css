@@ -1,4 +1,18 @@
 /********************************************************************************
+* HIGH-RESOLUTION FLAIRS
+*********************************************************************************/
+.flair.flair-10logo:after,
+.flair.flair-currymark:after,
+.flair.flair-gigantamax:after,
+.flair.flair-snapcontest-gold:after,
+.flair.flair-snapcontest-silver:after,
+.flair.flair-snapcontest-bronze:after {
+    background-image: url(%%2xballflair%%)!important;
+    background-size: 180px 30px!important;
+    image-rendering: auto;
+}
+
+/********************************************************************************
 * CUSTOM BALL FLAIRS
 *********************************************************************************/
 
@@ -343,23 +357,31 @@ body .flair:after {
 
 /* 10th anniversary logo*/
 .flair.flair-10logo:after {
-    background: -523px -34px;
-    background-size: 660px 64px;
-    image-rendering: auto;
-}
-
-/* Curry Mark */
-.flair.flair-currymark:after {
-    background: -492px -34px;
-    background-size: 660px 64px;
-    image-rendering: auto;
+    background: 0;
 }
 
 /* Gigantamax Symbol */
 .flair.flair-gigantamax:after {
-    background: -459px -34px;
-    background-size: 660px 64px;
-    image-rendering: auto;
+    background: -30px 0;
+}
+
+/* Curry Mark */
+.flair.flair-currymark:after {
+    background: -60px 0;
+}
+
+/* New Pokemon Snap Contest Winners */
+
+.flair.flair-snapcontest-gold:after {
+    background: -90px 0;
+}
+
+.flair.flair-snapcontest-silver:after {
+    background: -120px 0;
+}
+
+.flair.flair-snapcontest-bronze:after {
+    background: -150px 0;
 }
 
 /* Fog Badge - 2018 halloween contest */
